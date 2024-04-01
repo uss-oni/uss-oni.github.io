@@ -32,7 +32,7 @@ function summaryLine(div, name, value) {
   left.appendChild(d);
   d.className = "detailsGrid";
   getElementsByTag(name).forEach(element => {
-    displayProperty({ div:d, name: element, icon: image(element)});
+    displayProperty({ div: d, name: element, icon: image(element) });
   });
 }
 
@@ -168,22 +168,22 @@ function recipePhase(div, tag) {
 function vrac(div, name, cat) {
   for (const value of recipes[cat]) {
     if (value.origin == name) {
-      displayProperty({div, name:value.origin, value:value.dest})
+      displayProperty({ div, name: value.origin, value: value.dest })
     }
   }
   for (const value of recipes[cat]) {
     if (value.dest == name) {
-      displayProperty({div, name:value.origin, value:value.dest})
+      displayProperty({ div, name: value.origin, value: value.dest })
     }
   }
   for (const value of recipes[cat]) {
     if (Object.keys(value.origin).includes(name)) {
-      displayProperty({div, name:value.origin, value:value.dest})
+      displayProperty({ div, name: value.origin, value: value.dest })
     }
   }
   for (const value of recipes[cat]) {
     if (Object.keys(value.dest).includes(name)) {
-      displayProperty({div, name:value.origin, value:value.dest})
+      displayProperty({ div, name: value.origin, value: value.dest })
     }
   }
 }
@@ -246,20 +246,26 @@ const type = {
     div.appendChild(v);
   },
   gmol: (div, value) => {
-    var v = document.createTextNode(value + " g/mol");
+    let v = document.createTextNode(value + " g/mol");
     div.appendChild(v);
   },
   percent: (div, value) => {
-    var v = document.createTextNode(Number((value * 100).toFixed(3)) + " %");
+    let v = document.createTextNode(Number((value * 100).toFixed(3)) + " %");
     div.appendChild(v);
   },
   kcal: (div, value) => {
-    var v = document.createTextNode(value / 1000 + " kcal");
+    let v = document.createTextNode(value / 1000 + " kcal");
     div.appendChild(v);
   },
   peuchy: (div, value) => {
-    var v = document.createTextNode(value / 600 + " peuchy");
-    div.appendChild(v);
+    if (value > 0) {
+      let v = document.createTextNode(value / 600 + " peuchy");
+      div.appendChild(v);
+    }
+    else {
+      let v = document.createTextNode("never");
+      div.appendChild(v);
+    }
   },
 }
 

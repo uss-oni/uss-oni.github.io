@@ -38440,7 +38440,7 @@ var db = {
     primaryElement: "Creature",
     quality: -1.0,
     calories: 800000.0,
-    rot: false
+    spoilTime: 0.0
   },
   BasicForagePlantPlanted: {
     tag: "BasicForagePlantPlanted",
@@ -39552,7 +39552,7 @@ var db = {
     primaryElement: "Creature",
     quality: -1.0,
     calories: 6400000.0,
-    rot: false
+    spoilTime: 0.0
   },
   ForestForagePlantPlanted: {
     tag: "ForestForagePlantPlanted",
@@ -44324,7 +44324,7 @@ var db = {
     primaryElement: "Creature",
     quality: -1.0,
     calories: 800000.0,
-    rot: false
+    spoilTime: 0.0
   },
   CompostFishMeat: {
     tag: "CompostFishMeat",
@@ -44571,7 +44571,7 @@ var db = {
     primaryElement: "Creature",
     quality: 3.0,
     calories: 4000000.0,
-    rot: false
+    spoilTime: 0.0
   },
   CompostBurger: {
     tag: "CompostBurger",
@@ -46999,7 +46999,7 @@ var db = {
     primaryElement: "Creature",
     quality: -1.0,
     calories: 2400000.0,
-    rot: false
+    spoilTime: 0.0
   },
   OilWell: {
     tag: "OilWell",

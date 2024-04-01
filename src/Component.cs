@@ -479,7 +479,7 @@ namespace USS
       }
       else
       {
-        entity.rot = false;
+        entity.spoilTime = 0;
       }
       entity.menu = Category.Food.Cooked;
     }
