@@ -101,7 +101,7 @@ namespace USS
       public static void Postfix()
       {
         var dir = Assembly.GetExecutingAssembly().GetCustomAttribute<SolutionDir>().dir;
-        Png.imagesPath = Path.Combine(dir, "html", "images");
+        Png.imagesPath = Path.Combine(dir, "docs", "images");
 
         //AllImages();
         //return;
@@ -119,9 +119,9 @@ namespace USS
 
           //Cleaning useless properties
           var newDico = Reorganisation();
-          WriteJS(newDico, "db", Path.Combine(dir, "html", "db", "uss.js"));
-          WriteJS(recipes.GroupBy(g => g.GetType().Name).ToDictionary(d => d.Key, d => d), "recipes", Path.Combine(dir, "html", "db", "recipes.js"));
-          //WriteJS(translations.dico, null, Path.Combine(dir, "html", "translation.json"));
+          WriteJS(newDico, "db", Path.Combine(dir, "docs", "db", "uss.js"));
+          WriteJS(recipes.GroupBy(g => g.GetType().Name).ToDictionary(d => d.Key, d => d), "recipes", Path.Combine(dir, "docs", "db", "recipes.js"));
+          //WriteJS(translations.dico, null, Path.Combine(dir, "docs", "translation.json"));
           Dictionary<string, string> newMenu = [];
           foreach (var (category, subDico) in Category.menu)
             foreach (var (subCategory, value) in subDico)
@@ -135,7 +135,7 @@ namespace USS
                 newMenu[subCategory] = value;
               }
             }
-          //WriteJS(newMenu, null, Path.Combine(dir, "html", "ui.json"));
+          //WriteJS(newMenu, null, Path.Combine(dir, "docs", "ui.json"));
         }
         else
         {
