@@ -13656,7 +13656,7 @@ var db = {
         primaryElement: "Creature",
         quality: -1.0,
         calories: 800000.0,
-        spoilTime: 4800.0
+        rot: false
       },
       ForestForagePlant: {
         menuOrder: -1.0,
@@ -13668,7 +13668,7 @@ var db = {
         primaryElement: "Creature",
         quality: -1.0,
         calories: 6400000.0,
-        spoilTime: 4800.0
+        rot: false
       },
       ColdWheatBread: {
         menuOrder: 2.0,
@@ -13740,7 +13740,7 @@ var db = {
         primaryElement: "Creature",
         quality: -1.0,
         calories: 800000.0,
-        spoilTime: 19200.0
+        rot: false
       },
       FishMeat: {
         menuOrder: 2.0,
@@ -13788,7 +13788,7 @@ var db = {
         primaryElement: "Creature",
         quality: 3.0,
         calories: 4000000.0,
-        spoilTime: 19200.0
+        rot: false
       },
       Burger: {
         menuOrder: 6.0,
@@ -13969,7 +13969,7 @@ var db = {
         primaryElement: "Creature",
         quality: -1.0,
         calories: 2400000.0,
-        spoilTime: 4800.0
+        rot: false
       },
       BasicPlantFood: {
         menuOrder: -1.0,

@@ -78,7 +78,7 @@ function displayProperty({ div = null, icon = null, name = null, value = null, u
     label.innerText = name;
   }
   div.appendChild(label);
-  if (value) {
+  if (value != null) {
     var right = document.createElement("div");
     right.className = "propValue";
     if (unit) {
@@ -409,6 +409,7 @@ const propertiesOrder = {
   miserable: simpleLine(type.none),
   quality: simpleLine(type.none),
   calories: simpleLine(type.kcal),
+  rot: simpleLine(type.none),
   spoilTime: simpleLine(type.peuchy)
 }
 

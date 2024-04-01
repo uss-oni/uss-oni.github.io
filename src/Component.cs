@@ -472,8 +472,15 @@ namespace USS
       var info = component.FoodInfo;
       entity.calories = info.CaloriesPerUnit;
       entity.quality = info.Quality;
-      entity.spoilTime = info.SpoilTime;
       entity.menuOrder = info.Quality;
+      if (info.CanRot)
+      {
+        entity.spoilTime = info.SpoilTime;
+      }
+      else
+      {
+        entity.rot = false;
+      }
       entity.menu = Category.Food.Cooked;
     }
     public static void Get(Entity entity, HasSortOrder component) { }
