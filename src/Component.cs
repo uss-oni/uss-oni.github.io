@@ -587,7 +587,7 @@ namespace USS
     {
       entity.highTempFatal = component.TemperatureLethalHigh;
       entity.highTempWarning = component.TemperatureWarningHigh;
-      entity.lowTempFatal = component.TemperatureLethalHigh;
+      entity.lowTempFatal = component.TemperatureLethalLow;
       entity.lowTempWarning = component.TemperatureWarningLow;
     }
     public static void Get(Entity entity, DrowningMonitor component) { }
