@@ -39,7 +39,7 @@ namespace USS
         var serializer = JsonSerializer.CreateDefault();
         serializer.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
         serializer.NullValueHandling = NullValueHandling.Ignore;
-        //serializer.Formatting = Formatting.Indented;
+        serializer.Formatting = Formatting.Indented;
         using var writer = new JsonTextWriter(file);
         if (name is not null)
         {
@@ -81,21 +81,21 @@ namespace USS
       {
         var dir = Assembly.GetExecutingAssembly().GetCustomAttribute<SolutionDir>().dir;
         Png.imagesPath = Path.Combine(dir, "images3");
-      //  foreach (var (hash, asset) in Assets.Sprites)
-      //  {
-      //    Png.Create(asset.name, asset);
-      //  }
-      //  foreach (var asset in Assets.TintedSprites)
-      //  {
-      //    Png.Create(asset.sprite.name, asset.sprite, asset.color);
-      //  }
+        //  foreach (var (hash, asset) in Assets.Sprites)
+        //  {
+        //    Png.Create(asset.name, asset);
+        //  }
+        //  foreach (var asset in Assets.TintedSprites)
+        //  {
+        //    Png.Create(asset.sprite.name, asset.sprite, asset.color);
+        //  }
         foreach (var asset in Assets.Anims)
         {
           var data = asset.GetData();
           Debug.Log("Asset name: " + data.name);
           Debug.Log("Asset: " + data.elementCount);
           Debug.Log("Asset: " + data.animCount);
-      //    Png.Create(asset.sprite.name, asset.sprite, asset.color);
+          //    Png.Create(asset.sprite.name, asset.sprite, asset.color);
         }
       }
       public static void Postfix()
@@ -121,7 +121,7 @@ namespace USS
           var newDico = Reorganisation();
           WriteJS(newDico, "db", Path.Combine(dir, "docs", "db", "uss.js"));
           WriteJS(recipes.GroupBy(g => g.GetType().Name).ToDictionary(d => d.Key, d => d), "recipes", Path.Combine(dir, "docs", "db", "recipes.js"));
-          //WriteJS(translations.dico, null, Path.Combine(dir, "docs", "translation.json"));
+          WriteJS(translations.dico, null, Path.Combine(dir, "docs", "translation.json"));
           Dictionary<string, string> newMenu = [];
           foreach (var (category, subDico) in Category.menu)
             foreach (var (subCategory, value) in subDico)
@@ -178,7 +178,7 @@ namespace USS
             var age = prefab.GetComponent<ClusterGridEntity>();
             if (age is not null && prefab.GetComponent<ClusterMapMeteorShowerVisualizer>() is null)
             {
-              
+
               Debug.Log("AGEEEEE");
               Png.Create(prefab.PrefabTag.Name, Def.GetUISpriteFromMultiObjectAnim(age.AnimConfigs[0].animFile, age.AnimConfigs[0].initialAnim));
             }
@@ -2211,7 +2211,10 @@ namespace USS
       {
         foreach (var tag in tags)
         {
-          translations[tag] = (Strings.Get("STRINGS.MISC.TAGS." + tag.ToUpper()), "");
+          if (translations[tag].name == "")
+          {
+            translations[tag] = (Strings.Get("STRINGS.MISC.TAGS." + tag.ToUpper()), "");
+          }
           switch (tag)
           {
             case "Life":
@@ -2537,7 +2540,10 @@ namespace USS
               break;
             case "Suit":
               break;
+            case "NotConversationTopic":
+              break;
             default:
+              Debug.Log("Unknow tag: " + tag);
               break;
           }
         }

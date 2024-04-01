@@ -17,8 +17,8 @@
 
 <body>
   <div id="top">
-    <select onChange="onChangeSelect(this.options[this.selectedIndex].dataset.ui)">
-      <option data-ui="Element" selected="selected">Éléments</option>
+    <select id="selectCategory" onChange="onChangeSelect(this.options[this.selectedIndex].dataset.ui)">
+      <option data-ui="Element">Éléments</option>
       <option data-ui="Building">Constructions</option>
       <option data-ui="Food">Aliments</option>
       <option data-ui="Critter">Créatures</option>
@@ -30,14 +30,14 @@
       <option data-ui="Misc">Divers</option>
       <option data-ui="NONE">NONE</option>
     </select>
-    <select onChange="setTranslation(this.options[this.selectedIndex].value)">
-      <option value="fr">FR</option>
-      <option value="en">EN</option>
-    </select>
+  </div>
+  <div id="options">
     <select onChange="selectDegree(this.options[this.selectedIndex].value)">
       <option value="°C">°C</option>
       <option value="K">K</option>
       <option value="°F">°F</option>
+    </select>
+    <select id="selectTranslation" onChange="setTranslation(this.options[this.selectedIndex].value)">
     </select>
   </div>
   <div id="list"></div>

@@ -108,5 +108,9 @@ namespace USS
     public float? happy;
     public float? glum;
     public float? miserable; 
+    public float? quality;
+    public float? calories;
+    public float? spoilTime;
+
   }
 }

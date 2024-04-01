@@ -168,22 +168,22 @@ function recipePhase(div, tag) {
 function vrac(div, name, cat) {
   for (const value of recipes[cat]) {
     if (value.origin == name) {
-      displayTemp(div, value)
+      displayProperty({div, name:value.origin, value:value.dest})
     }
   }
   for (const value of recipes[cat]) {
     if (value.dest == name) {
-      displayTemp(div, value)
+      displayProperty({div, name:value.origin, value:value.dest})
     }
   }
   for (const value of recipes[cat]) {
     if (Object.keys(value.origin).includes(name)) {
-      displayTemp(div, value)
+      displayProperty({div, name:value.origin, value:value.dest})
     }
   }
   for (const value of recipes[cat]) {
     if (Object.keys(value.dest).includes(name)) {
-      displayTemp(div, value)
+      displayProperty({div, name:value.origin, value:value.dest})
     }
   }
 }
@@ -251,6 +251,14 @@ const type = {
   },
   percent: (div, value) => {
     var v = document.createTextNode(Number((value * 100).toFixed(3)) + " %");
+    div.appendChild(v);
+  },
+  kcal: (div, value) => {
+    var v = document.createTextNode(value / 1000 + " kcal");
+    div.appendChild(v);
+  },
+  peuchy: (div, value) => {
+    var v = document.createTextNode(value / 600 + " peuchy");
     div.appendChild(v);
   },
 }
@@ -398,7 +406,10 @@ const propertiesOrder = {
   friends: simpleLine(type.none),
   happy: simpleLine(type.none),
   glum: simpleLine(type.none),
-  miserable: simpleLine(type.none)
+  miserable: simpleLine(type.none),
+  quality: simpleLine(type.none),
+  calories: simpleLine(type.kcal),
+  spoilTime: simpleLine(type.peuchy)
 }
 
 

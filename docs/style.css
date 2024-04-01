@@ -24,9 +24,16 @@ body {
   color: white;
 }
 
-#top,
 #options {
+  grid-area: options;    
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top {
   grid-area: top;
+  display: flex;
+  justify-content: flex-start;
 }
 
 #bot {
@@ -37,7 +44,8 @@ body {
 }
 
 #top,
-#bot {
+#bot,
+#options {
   background-color: #f8f8f82a;
 }
 

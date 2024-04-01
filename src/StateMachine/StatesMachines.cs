@@ -77,7 +77,7 @@ namespace USS
     }
     public static void Get(Entity entity, BuildingInternalConstructor.Def sm)
     {
-      Debug.Log(entity.tag);
+      //Debug.Log(entity.tag);
     }
     public static void Get(Entity entity, JettisonableCargoModule.Def sm) { }
     public static void Get(Entity entity, RefrigeratorController.Def sm)

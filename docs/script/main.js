@@ -10,9 +10,9 @@ function onChangeSelect(choice) {
     category.className = "category";
     list.appendChild(category);
     Object.entries(db[choice][subCategory])
-          .sort((a, b) => a[1].menuOrder != b[1].menuOrder ?
-            a[1].menuOrder - b[1].menuOrder :
-            translationTag[a[0]].name.localeCompare(translationTag[b[0]].name))
+      .sort((a, b) => a[1].menuOrder != b[1].menuOrder ?
+        a[1].menuOrder - b[1].menuOrder :
+        translationTag[a[0]].name.localeCompare(translationTag[b[0]].name))
       .forEach(([tag, _]) => {
         var box = document.createElement("div");
         box.className = "box";
@@ -76,8 +76,9 @@ function displayProperties(tag, entity) {
 
 
 function init() {
-  //favicon();
-  setTranslation("fr").then(() => onChangeSelect("Element"));
+  let select = document.getElementById("selectCategory");
+  console.log(select.options[select.selectedIndex].dataset.ui);
+  initTranslation().then(() => onChangeSelect(select.options[select.selectedIndex].dataset.ui));
 }
 
 window.addEventListener('DOMContentLoaded', () => init());
@@ -156,7 +157,7 @@ const menuOrder = {
   ],
   Food: [
     "Cooked",
-    "Raw",
+//    "Raw",
     "Ingredient",
     "Dehydrated",
   ],

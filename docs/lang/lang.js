@@ -1,10 +1,22 @@
-let translations = [
-  "fr",
-  "en",
+const translations = [
+  {fr: "🇫🇷"},
+  {en: "🇬🇧"},
 ]
 
 let translationUI = {};
 let translationTag = {};
+
+async function initTranslation() {
+  let select = document.getElementById("selectTranslation");
+  for (const translation of translations) {
+    let [value, flag] = Object.entries(translation)[0];
+    let opt = document.createElement("option");
+    opt.value = value;
+    opt.textContent = flag;
+    select.appendChild(opt);
+  }
+  await setTranslation("fr");
+}
 
 async function setTranslation(currentTranslation) {
   const [responseUI, responseTag] = await Promise.all([

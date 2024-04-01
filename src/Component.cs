@@ -470,6 +470,9 @@ namespace USS
     public static void Get(Entity entity, Edible component)
     {
       var info = component.FoodInfo;
+      entity.calories = info.CaloriesPerUnit;
+      entity.quality = info.Quality;
+      entity.spoilTime = info.SpoilTime;
       entity.menuOrder = info.Quality;
       entity.menu = Category.Food.Cooked;
     }
