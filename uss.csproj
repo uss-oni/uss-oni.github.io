@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Condition="$(OS) == 'Unix'">
+    <SteamPath>$(HOME)/.steam/steam</SteamPath>
+    <ModPath>$(HOME)/.config/unity3d</ModPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OniLibPath>$(SteamPath)/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/Managed</OniLibPath>
+    <TargetFramework>net471</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <PublishDir>$(ModPath)/Klei/Oxygen Not Included/mods/Dev/$(SolutionName)/</PublishDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AssemblyCSharp" HintPath="$(OniLibPath)/Assembly-CSharp.dll"
+      Private="false"/>
+    <Reference Include="Assembly-CSharp-firstpass"
+      HintPath="$(OniLibPath)/Assembly-CSharp-firstpass.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(OniLibPath)/UnityEngine.CoreModule.dll"
+      Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(OniLibPath)/UnityEngine.UI.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(OniLibPath)/0Harmony.dll" Private="false" />
+    <Reference Include="FMODUnity" HintPath="$(OniLibPath)/FMODUnity.dll" Private="false" />
+    <Reference Include="UnityEngine.ImageConversionModule"
+      HintPath="$(OniLibPath)/UnityEngine.ImageConversionModule.dll" Private="false" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net471" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <Target Name="ModFiles" AfterTargets="Publish">
+    <Copy SourceFiles="static/mod/mod.yaml" DestinationFolder="$(PublishDir)" />
+    <Copy SourceFiles="static/mod/mod_info.yaml" DestinationFolder="$(PublishDir)" />
+  </Target>
+  <ItemGroup>
+    <AssemblyAttribute Include="SolutionDir">
+      <_Parameter1>$(SolutionDir)</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,259 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vb;
+  width: 100vw;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "top  top  top "
+    "list imgd desc"
+    "list prop prop"
+    "bot  bot  bot ";
+  grid-template-rows: 30px 140px 1fr 30px;
+  grid-template-columns: 1fr 140px 360px;
+  background-color: #363a4c;
+  color: white;
+}
+
+#top {
+  grid-area: top;
+}
+
+#bot {
+  grid-area: bot;
+}
+
+#top,
+#bot {
+  background-color: #252834;
+}
+
+#list {
+  grid-area: list;
+  overflow: auto;
+
+  h3 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 75px);
+  justify-content: center;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.box {
+  display: grid;
+  border-radius: 5px;
+
+  grid-template-rows: 75px 55px;
+  background-color: #3e4357;
+
+  img {
+    grid-row: 1;
+    object-fit: contain;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+  }
+
+  .align {
+    width: inherit;
+    align-self: end;
+    grid-row: 2;
+    display: table;
+    min-height: 55px;
+
+    p {
+      color: rgba(255, 255, 255, 0.9);
+      width: inherit;
+      height: inherit;
+      background-color: rgba(0, 0, 0, 0.4);
+      font-size: 14px;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+#properties {
+  grid-area: prop;
+  display: grid;
+  grid-auto-flow: row;
+  /* spacing icon label spacing value arrow icon element amount spacing*/
+  grid-template-columns: 10px 30px 183px 5px max-content max-content 25px 1fr max-content 10px;
+  grid-auto-rows: min-content;
+  row-gap: 3px;
+  width: 100%;
+  background-color: #3e4357;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-auto-flow: row;
+  /* spacing icon label spacing value arrow icon element amount spacing*/
+  grid-template-columns: 0px 30px 183px;
+  grid-auto-rows: min-content;
+  row-gap: 3px;
+  width: 100%;
+  background-color: #3e4357;
+  font-size: 14px;
+  padding-top: 3px;
+}
+
+.propAmount,
+.propArrow,
+.propElement,
+.propLabel,
+.propLeft,
+.propRight,
+.propTemp,
+.propValue,
+summary{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.propIcon,
+.propLabel {
+  background-color: #363a4c;
+}
+
+.propIcon {
+  grid-column: 2;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  img {
+    padding-top: 2px;
+    height: 19px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+}
+
+.propIconRight {
+  grid-column: 7;
+  height: 19px;
+  width: 23px;
+  padding-top: 2px;
+  object-fit: contain;
+}
+
+.smallImg {
+  height: 19px;
+  object-fit: contain;
+  display: block;
+  padding-right: 2px;
+}
+
+.propLabel {
+  grid-column: 3;
+  text-align: right;
+  border-radius: 0px 5px 5px 0px;
+  padding-right: 5px;
+}
+
+.propTemp {
+  grid-column: 5;
+}
+
+.propArrow {
+  padding-left: 3px;
+  grid-column: 6;
+}
+
+.propValue {
+  grid-column: 5 / -1;
+}
+
+.propAmount {
+  text-align: right;
+  padding-left: 5px;
+}
+
+#properties h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: #874566;
+  margin: 10px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.propSummary {
+  grid-column: 2 / 4;
+  text-align: right;
+}
+
+summary {
+  background-color: #363a4c;
+  padding-right: 5px;
+  border-radius: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+summary::before {
+  padding-left: 11px;
+  content: '▸';
+  text-align: top;
+  line-height: 95%;
+}
+
+details[open] + .propValue + details
+{
+  padding-top: 5px;
+}
+
+details[open] + .propValue + details + .propValue {
+  padding-top: 7px;
+}
+
+details[open]>summary::before {
+  content: '▾';
+}
+
+.fullSize {
+  width: 380px;
+}
+
+#desc {
+  grid-area: desc;
+  text-align: center;
+  padding: 2%;
+  background-color: #3e4357;
+  width: 96%;
+  height: 96%;
+}
+
+#descimg {
+  grid-area: imgd;
+  object-fit: contain;
+  padding: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: #3e4357;
+}
