@@ -14,27 +14,31 @@ body {
 body {
   display: grid;
   grid-template-areas:
-    "top  top  top "
+    "top  top  options"
     "list imgd desc"
     "list prop prop"
     "bot  bot  bot ";
-  grid-template-rows: 30px 140px 1fr 30px;
+  grid-template-rows: 30px 140px 1fr 20px;
   grid-template-columns: 1fr 140px 360px;
   background-color: #363a4c;
   color: white;
 }
 
-#top {
+#top,
+#options {
   grid-area: top;
 }
 
 #bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: bot;
 }
 
 #top,
 #bot {
-  background-color: #252834;
+  background-color: #f8f8f82a;
 }
 
 #list {
@@ -129,7 +133,7 @@ body {
 .propRight,
 .propTemp,
 .propValue,
-summary{
+summary {
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -144,6 +148,7 @@ summary{
   border-radius: 5px 0px 0px 5px;
   padding-left: 5px;
   padding-right: 5px;
+
   img {
     padding-top: 2px;
     height: 19px;
@@ -223,12 +228,11 @@ summary::before {
   line-height: 95%;
 }
 
-details[open] + .propValue + details
-{
+details[open]+.propValue+details {
   padding-top: 5px;
 }
 
-details[open] + .propValue + details + .propValue {
+details[open]+.propValue+details+.propValue {
   padding-top: 7px;
 }
 
