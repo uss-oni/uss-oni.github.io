@@ -111,6 +111,6 @@ namespace USS
     public float? quality;
     public float? calories;
     public float? spoilTime;
-    public bool? rot;
+    public float? lightAbsorption;
   }
 }

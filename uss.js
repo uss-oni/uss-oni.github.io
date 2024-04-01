@@ -23470,7 +23470,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Algae",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   BleachStone: {
     tag: "BleachStone",
@@ -23518,7 +23519,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "BleachStone",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   DirtyWater: {
     tag: "DirtyWater",
@@ -23571,7 +23573,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "DirtyWater",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.7
   },
   NuclearWaste: {
     tag: "NuclearWaste",
@@ -23621,7 +23624,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "NuclearWaste",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   OxyRock: {
     tag: "OxyRock",
@@ -23670,7 +23674,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "OxyRock",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SlimeMold: {
     tag: "SlimeMold",
@@ -23718,7 +23723,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SlimeMold",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   ToxicSand: {
     tag: "ToxicSand",
@@ -23767,7 +23773,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ToxicSand",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   CrushedIce: {
     tag: "CrushedIce",
@@ -23815,7 +23822,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CrushedIce",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   Diamond: {
     tag: "Diamond",
@@ -23864,7 +23872,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Diamond",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   Isoresin: {
     tag: "Isoresin",
@@ -23911,7 +23920,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Isoresin",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Sucrose: {
     tag: "Sucrose",
@@ -23956,7 +23966,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Sucrose",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MilkFat: {
     tag: "MilkFat",
@@ -24002,7 +24013,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MilkFat",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Niobium: {
     tag: "Niobium",
@@ -24051,7 +24063,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Niobium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MilkIce: {
     tag: "MilkIce",
@@ -24098,7 +24111,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MilkIce",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.33333
   },
   Cuprite: {
     tag: "Cuprite",
@@ -24146,7 +24160,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Cuprite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Copper: {
     tag: "Copper",
@@ -24193,7 +24208,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Copper",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   CrushedRock: {
     tag: "CrushedRock",
@@ -24241,7 +24257,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CrushedRock",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SuperInsulator: {
     tag: "SuperInsulator",
@@ -24292,7 +24309,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SuperInsulator",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   BrineIce: {
     tag: "BrineIce",
@@ -24339,7 +24357,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "BrineIce",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.33333
   },
   SolidViscoGel: {
     tag: "SolidViscoGel",
@@ -24385,7 +24404,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidViscoGel",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.2
   },
   Ceramic: {
     tag: "Ceramic",
@@ -24435,7 +24455,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Ceramic",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Cobaltite: {
     tag: "Cobaltite",
@@ -24482,7 +24503,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Cobaltite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Fertilizer: {
     tag: "Fertilizer",
@@ -24529,7 +24551,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fertilizer",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidCrudeOil: {
     tag: "SolidCrudeOil",
@@ -24574,7 +24597,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidCrudeOil",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Wolframite: {
     tag: "Wolframite",
@@ -24622,7 +24646,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Wolframite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Polypropylene: {
     tag: "Polypropylene",
@@ -24671,7 +24696,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Polypropylene",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidNaphtha: {
     tag: "SolidNaphtha",
@@ -24716,7 +24742,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidNaphtha",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Tungsten: {
     tag: "Tungsten",
@@ -24764,7 +24791,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Tungsten",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   RefinedCarbon: {
     tag: "RefinedCarbon",
@@ -24811,7 +24839,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "RefinedCarbon",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Steel: {
     tag: "Steel",
@@ -24860,7 +24889,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Steel",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Phosphorite: {
     tag: "Phosphorite",
@@ -24907,7 +24937,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Phosphorite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidHydrogen: {
     tag: "SolidHydrogen",
@@ -24952,7 +24983,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidHydrogen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.75
   },
   Lead: {
     tag: "Lead",
@@ -24999,7 +25031,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Lead",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Sulfur: {
     tag: "Sulfur",
@@ -25045,7 +25078,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Sulfur",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Lime: {
     tag: "Lime",
@@ -25091,7 +25125,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Lime",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidChlorine: {
     tag: "SolidChlorine",
@@ -25136,7 +25171,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidChlorine",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidNuclearWaste: {
     tag: "SolidNuclearWaste",
@@ -25181,7 +25217,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidNuclearWaste",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Obsidian: {
     tag: "Obsidian",
@@ -25231,7 +25268,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Obsidian",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidPetroleum: {
     tag: "SolidPetroleum",
@@ -25276,7 +25314,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidPetroleum",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidSuperCoolant: {
     tag: "SolidSuperCoolant",
@@ -25321,7 +25360,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidSuperCoolant",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   IgneousRock: {
     tag: "IgneousRock",
@@ -25370,7 +25410,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "IgneousRock",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   EnrichedUranium: {
     tag: "EnrichedUranium",
@@ -25415,7 +25456,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "EnrichedUranium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Gold: {
     tag: "Gold",
@@ -25462,7 +25504,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Gold",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Rust: {
     tag: "Rust",
@@ -25508,7 +25551,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Rust",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Corium: {
     tag: "Corium",
@@ -25553,7 +25597,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Corium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Phosphorus: {
     tag: "Phosphorus",
@@ -25600,7 +25645,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Phosphorus",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Granite: {
     tag: "Granite",
@@ -25650,7 +25696,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Granite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidCarbonDioxide: {
     tag: "SolidCarbonDioxide",
@@ -25695,7 +25742,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidCarbonDioxide",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Cobalt: {
     tag: "Cobalt",
@@ -25741,7 +25789,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Cobalt",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   UraniumOre: {
     tag: "UraniumOre",
@@ -25788,7 +25837,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "UraniumOre",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   AluminumOre: {
     tag: "AluminumOre",
@@ -25836,7 +25886,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "AluminumOre",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SedimentaryRock: {
     tag: "SedimentaryRock",
@@ -25885,7 +25936,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SedimentaryRock",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Fullerene: {
     tag: "Fullerene",
@@ -25931,7 +25983,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fullerene",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   GoldAmalgam: {
     tag: "GoldAmalgam",
@@ -25979,7 +26032,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "GoldAmalgam",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Salt: {
     tag: "Salt",
@@ -26025,7 +26079,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Salt",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Sand: {
     tag: "Sand",
@@ -26073,7 +26128,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Sand",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Snow: {
     tag: "Snow",
@@ -26121,7 +26177,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Snow",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SandStone: {
     tag: "SandStone",
@@ -26170,7 +26227,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SandStone",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Glass: {
     tag: "Glass",
@@ -26218,7 +26276,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Glass",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   Clay: {
     tag: "Clay",
@@ -26265,7 +26324,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Clay",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Ice: {
     tag: "Ice",
@@ -26312,7 +26372,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Ice",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.33333
   },
   Graphite: {
     tag: "Graphite",
@@ -26357,7 +26418,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Graphite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   ToxicMud: {
     tag: "ToxicMud",
@@ -26404,7 +26466,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ToxicMud",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Mud: {
     tag: "Mud",
@@ -26451,7 +26514,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Mud",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Carbon: {
     tag: "Carbon",
@@ -26499,7 +26563,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Carbon",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidOxygen: {
     tag: "SolidOxygen",
@@ -26544,7 +26609,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidOxygen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.75
   },
   Creature: {
     tag: "Creature",
@@ -26589,7 +26655,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Creature",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   DepletedUranium: {
     tag: "DepletedUranium",
@@ -26635,7 +26702,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "DepletedUranium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Katairite: {
     tag: "Katairite",
@@ -26681,7 +26749,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Katairite",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidMethane: {
     tag: "SolidMethane",
@@ -26726,7 +26795,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidMethane",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   HardPolypropylene: {
     tag: "HardPolypropylene",
@@ -26775,7 +26845,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "HardPolypropylene",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MaficRock: {
     tag: "MaficRock",
@@ -26822,7 +26893,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MaficRock",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Iron: {
     tag: "Iron",
@@ -26869,7 +26941,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Iron",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Regolith: {
     tag: "Regolith",
@@ -26917,7 +26990,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Regolith",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidResin: {
     tag: "SolidResin",
@@ -26961,7 +27035,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidResin",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   TempConductorSolid: {
     tag: "TempConductorSolid",
@@ -27011,7 +27086,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "TempConductorSolid",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   IronOre: {
     tag: "IronOre",
@@ -27059,7 +27135,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "IronOre",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Dirt: {
     tag: "Dirt",
@@ -27106,7 +27183,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Dirt",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   DirtyIce: {
     tag: "DirtyIce",
@@ -27154,7 +27232,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "DirtyIce",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.8
   },
   Fossil: {
     tag: "Fossil",
@@ -27200,7 +27279,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fossil",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Unobtanium: {
     tag: "Unobtanium",
@@ -27245,7 +27325,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Unobtanium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SolidEthanol: {
     tag: "SolidEthanol",
@@ -27292,7 +27373,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidEthanol",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   FoolsGold: {
     tag: "FoolsGold",
@@ -27340,7 +27422,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "FoolsGold",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Aluminum: {
     tag: "Aluminum",
@@ -27387,7 +27470,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Aluminum",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   LiquidOxygen: {
     tag: "LiquidOxygen",
@@ -27437,7 +27521,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LiquidOxygen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   ViscoGel: {
     tag: "ViscoGel",
@@ -27487,7 +27572,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ViscoGel",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   MoltenAluminum: {
     tag: "MoltenAluminum",
@@ -27539,7 +27625,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenAluminum",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MoltenLead: {
     tag: "MoltenLead",
@@ -27591,7 +27678,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenLead",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   LiquidCarbonDioxide: {
     tag: "LiquidCarbonDioxide",
@@ -27640,7 +27728,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LiquidCarbonDioxide",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   CrudeOil: {
     tag: "CrudeOil",
@@ -27690,7 +27779,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CrudeOil",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MoltenGlass: {
     tag: "MoltenGlass",
@@ -27740,7 +27830,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenGlass",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.7
   },
   LiquidSulfur: {
     tag: "LiquidSulfur",
@@ -27789,7 +27880,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LiquidSulfur",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   MoltenGold: {
     tag: "MoltenGold",
@@ -27841,7 +27933,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenGold",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Magma: {
     tag: "Magma",
@@ -27891,7 +27984,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Magma",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Chlorine: {
     tag: "Chlorine",
@@ -27940,7 +28034,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Chlorine",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   LiquidHydrogen: {
     tag: "LiquidHydrogen",
@@ -27989,7 +28084,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LiquidHydrogen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Resin: {
     tag: "Resin",
@@ -28038,7 +28134,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Resin",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.8
   },
   MoltenTungsten: {
     tag: "MoltenTungsten",
@@ -28089,7 +28186,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenTungsten",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.7
   },
   Petroleum: {
     tag: "Petroleum",
@@ -28140,7 +28238,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Petroleum",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.8
   },
   MoltenSalt: {
     tag: "MoltenSalt",
@@ -28189,7 +28288,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenSalt",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   MoltenCobalt: {
     tag: "MoltenCobalt",
@@ -28240,7 +28340,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenCobalt",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Brine: {
     tag: "Brine",
@@ -28291,7 +28392,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Brine",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.25
   },
   SuperCoolant: {
     tag: "SuperCoolant",
@@ -28341,7 +28443,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SuperCoolant",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.9
   },
   Ethanol: {
     tag: "Ethanol",
@@ -28392,7 +28495,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Ethanol",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.25
   },
   Milk: {
     tag: "Milk",
@@ -28442,7 +28546,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Milk",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.8
   },
   LiquidMethane: {
     tag: "LiquidMethane",
@@ -28491,7 +28596,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LiquidMethane",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.6
   },
   MoltenIron: {
     tag: "MoltenIron",
@@ -28543,7 +28649,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenIron",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MoltenCarbon: {
     tag: "MoltenCarbon",
@@ -28592,7 +28699,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenCarbon",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Naphtha: {
     tag: "Naphtha",
@@ -28643,7 +28751,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Naphtha",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.8
   },
   MoltenSucrose: {
     tag: "MoltenSucrose",
@@ -28691,7 +28800,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenSucrose",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   LiquidPhosphorus: {
     tag: "LiquidPhosphorus",
@@ -28741,7 +28851,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LiquidPhosphorus",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MoltenSteel: {
     tag: "MoltenSteel",
@@ -28793,7 +28904,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenSteel",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MoltenNiobium: {
     tag: "MoltenNiobium",
@@ -28845,7 +28957,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenNiobium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   Water: {
     tag: "Water",
@@ -28896,7 +29009,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Water",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.25
   },
   SaltWater: {
     tag: "SaltWater",
@@ -28947,7 +29061,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SaltWater",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.25
   },
   MoltenUranium: {
     tag: "MoltenUranium",
@@ -28998,7 +29113,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenUranium",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   MoltenCopper: {
     tag: "MoltenCopper",
@@ -29050,7 +29166,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MoltenCopper",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 1.0
   },
   SulfurGas: {
     tag: "SulfurGas",
@@ -29097,7 +29214,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SulfurGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   SaltGas: {
     tag: "SaltGas",
@@ -29144,7 +29262,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SaltGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   NiobiumGas: {
     tag: "NiobiumGas",
@@ -29194,7 +29313,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "NiobiumGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   Oxygen: {
     tag: "Oxygen",
@@ -29242,7 +29362,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Oxygen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.0
   },
   CobaltGas: {
     tag: "CobaltGas",
@@ -29291,7 +29412,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CobaltGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   SteelGas: {
     tag: "SteelGas",
@@ -29342,7 +29464,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SteelGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   ChlorineGas: {
     tag: "ChlorineGas",
@@ -29390,7 +29513,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ChlorineGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.2
   },
   Hydrogen: {
     tag: "Hydrogen",
@@ -29438,7 +29562,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Hydrogen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   SourGas: {
     tag: "SourGas",
@@ -29486,7 +29611,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SourGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.25
   },
   Steam: {
     tag: "Steam",
@@ -29533,7 +29659,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Steam",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   Methane: {
     tag: "Methane",
@@ -29582,7 +29709,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Methane",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.25
   },
   GoldGas: {
     tag: "GoldGas",
@@ -29632,7 +29760,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "GoldGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   EthanolGas: {
     tag: "EthanolGas",
@@ -29679,7 +29808,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "EthanolGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   RockGas: {
     tag: "RockGas",
@@ -29727,7 +29857,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "RockGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   CarbonGas: {
     tag: "CarbonGas",
@@ -29775,7 +29906,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CarbonGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.3
   },
   SuperCoolantGas: {
     tag: "SuperCoolantGas",
@@ -29822,7 +29954,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SuperCoolantGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   AluminumGas: {
     tag: "AluminumGas",
@@ -29872,7 +30005,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "AluminumGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   TungstenGas: {
     tag: "TungstenGas",
@@ -29921,7 +30055,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "TungstenGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   ContaminatedOxygen: {
     tag: "ContaminatedOxygen",
@@ -29969,7 +30104,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ContaminatedOxygen",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   LeadGas: {
     tag: "LeadGas",
@@ -30019,7 +30155,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "LeadGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   Fallout: {
     tag: "Fallout",
@@ -30066,7 +30203,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fallout",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   IronGas: {
     tag: "IronGas",
@@ -30116,7 +30254,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "IronGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   PhosphorusGas: {
     tag: "PhosphorusGas",
@@ -30164,7 +30303,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "PhosphorusGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   CarbonDioxide: {
     tag: "CarbonDioxide",
@@ -30212,7 +30352,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CarbonDioxide",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.1
   },
   CopperGas: {
     tag: "CopperGas",
@@ -30262,7 +30403,8 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CopperGas",
-    clearable: true
+    clearable: true,
+    lightAbsorption: 0.5
   },
   ClustercraftInteriorDoor: {
     tag: "ClustercraftInteriorDoor",
@@ -38314,8 +38456,8 @@ var db = {
   BasicFabricMaterialPlantSeed: {
     tag: "BasicFabricMaterialPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -38513,8 +38655,8 @@ var db = {
   BasicSingleHarvestPlantSeed: {
     tag: "BasicSingleHarvestPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -38639,8 +38781,8 @@ var db = {
   BeanPlantSeed: {
     tag: "BeanPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -38772,8 +38914,8 @@ var db = {
   CactusPlantSeed: {
     tag: "CactusPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -38886,8 +39028,8 @@ var db = {
   ColdBreatherSeed: {
     tag: "ColdBreatherSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -38999,8 +39141,8 @@ var db = {
   ColdWheatSeed: {
     tag: "ColdWheatSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -39132,8 +39274,8 @@ var db = {
   CritterTrapPlantSeed: {
     tag: "CritterTrapPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -39259,8 +39401,8 @@ var db = {
   CylindricaSeed: {
     tag: "CylindricaSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -39373,8 +39515,8 @@ var db = {
   EvilFlowerSeed: {
     tag: "EvilFlowerSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -39486,40 +39628,6 @@ var db = {
     mass: 1.0,
     primaryElement: "Creature"
   },
-  FilterPlantSeed: {
-    tag: "FilterPlantSeed",
-    menu: {
-      category: "Seed",
-      subCategory: "Crop"
-    },
-    components: [
-      "KPrefabID",
-      "KSelectable",
-      "KBatchedAnimController",
-      "SaveLoadRoot",
-      "StateMachineController",
-      "PrimaryElement",
-      "SimTemperatureTransfer",
-      "InfoDescription",
-      "Notifier",
-      "KCircleCollider2D",
-      "Klei.AI.Modifiers",
-      "Pickupable",
-      "Movable",
-      "EntitySplitter",
-      "Compostable",
-      "PlantableSeed",
-      "MutantPlant"
-    ],
-    menuOrder: 177013.0,
-    tags: [
-      "CropSeed",
-      "Seed",
-      "PedestalDisplayable"
-    ],
-    mass: 1.0,
-    primaryElement: "Creature"
-  },
   ForestForagePlant: {
     tag: "ForestForagePlant",
     menu: {
@@ -39624,8 +39732,8 @@ var db = {
   BulbPlantSeed: {
     tag: "BulbPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -39740,8 +39848,8 @@ var db = {
   ForestTreeSeed: {
     tag: "ForestTreeSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -42717,8 +42825,8 @@ var db = {
   GasGrassSeed: {
     tag: "GasGrassSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -46059,8 +46167,8 @@ var db = {
   PrickleGrassSeed: {
     tag: "PrickleGrassSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -46174,8 +46282,8 @@ var db = {
   SaltPlantSeed: {
     tag: "SaltPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -46305,8 +46413,8 @@ var db = {
   PrickleFlowerSeed: {
     tag: "PrickleFlowerSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -46553,8 +46661,8 @@ var db = {
   SeaLettuceSeed: {
     tag: "SeaLettuceSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -46684,8 +46792,8 @@ var db = {
   SpiceVineSeed: {
     tag: "SpiceVineSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -46814,8 +46922,8 @@ var db = {
   OxyfernSeed: {
     tag: "OxyfernSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -47106,8 +47214,8 @@ var db = {
   SwampHarvestPlantSeed: {
     tag: "SwampHarvestPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -47236,8 +47344,8 @@ var db = {
   SwampLilySeed: {
     tag: "SwampLilySeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -47361,8 +47469,8 @@ var db = {
   WineCupsSeed: {
     tag: "WineCupsSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -47475,8 +47583,8 @@ var db = {
   ToePlantSeed: {
     tag: "ToePlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -47590,8 +47698,8 @@ var db = {
   WormPlantSeed: {
     tag: "WormPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",
@@ -47818,8 +47926,8 @@ var db = {
   LeafyPlantSeed: {
     tag: "LeafyPlantSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Decor"
+      category: "Plant",
+      subCategory: "DecorSeed"
     },
     components: [
       "KPrefabID",
@@ -48004,8 +48112,8 @@ var db = {
   MushroomSeed: {
     tag: "MushroomSeed",
     menu: {
-      category: "Seed",
-      subCategory: "Crop"
+      category: "Plant",
+      subCategory: "CropSeed"
     },
     components: [
       "KPrefabID",

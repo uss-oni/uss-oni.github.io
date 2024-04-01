@@ -2511,10 +2511,10 @@ namespace USS
               break;
             case "WaterSeed":
             case "CropSeed":
-              entity.menu = Category.Seed.Crop;
+              entity.menu = Category.Plant.CropSeed;
               break;
             case "DecorSeed":
-              entity.menu = Category.Seed.Decor;
+              entity.menu = Category.Plant.DecorSeed;
               break;
             case "Flyer":
               break;

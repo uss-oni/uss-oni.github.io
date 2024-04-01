@@ -263,7 +263,7 @@ const type = {
       div.appendChild(v);
     }
     else {
-      let v = document.createTextNode("never");
+      let v = document.createTextNode(translationUI["infinite"]);
       div.appendChild(v);
     }
   },
@@ -341,6 +341,7 @@ const propertiesOrder = {
   viscosity: simpleLine(type.none),
   minHorizontalFlow: simpleLine(type.none),
   minVerticalFlow: simpleLine(type.none),
+  lightAbsorption: simpleLine(type.percent),
   radiationAbsorptionFactor: simpleLine(type.percent, icon("radiation")),
   massPerUnit: simpleLine(type.none),
   chunkMass: simpleLine(type.none),

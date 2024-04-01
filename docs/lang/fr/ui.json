@@ -78,7 +78,7 @@
   "ArtifactPOI": "Exploration",
   "BuildingMaterial": "Matériaux",
   "mass": "Masse",
-  "radiationAbsorptionFactor": "Absorbtion de radiation",
+  "radiationAbsorptionFactor": "Absorption de radiation",
   "thermalConductivity": "Conductivité thermique",
   "vaporization": "Vaporisation",
   "condensation": "Liquefaction",
@@ -93,5 +93,12 @@
   "width": "Largeur",
   "locationRule": "Regle de placement",
   "hp": "Points de vie",
-  "primaryElement": "Element principal"
+  "primaryElement": "Element principal",
+  "quality": "Qualite",
+  "calories": "Calories",
+  "spoilTime": "Durée de conservation",
+  "infinite": "Infinie",
+  "CropSeed": "Graines d'agriculture",
+  "DecorSeed": "Graines decoratives",
+  "lightAbsorption": "Absorption lumineuse"
 }

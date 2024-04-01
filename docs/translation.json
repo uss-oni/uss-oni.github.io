@@ -3212,10 +3212,6 @@
     "name": "Graine d'Hydrocactus",
     "desc": "Une graine d'hydrocactus.<br>Déterrer des objets peut révéler une graine d'hydrocactus."
   },
-  "FilterPlantSeed": {
-    "name": "Graine d'Hydrocactus",
-    "desc": "Une graine d'hydrocactus.<br>Déterrer des objets peut révéler une graine d'hydrocactus."
-  },
   "ForestForagePlant": {
     "name": "Fruit d'Hexalent",
     "desc": "Un fruit sans pépin avec une texture caoutchouteuse.<br>Il ne peut pas être replanté.<br>Le fruit de l'hexalent est bien plus calorique que le tubercule boueux."

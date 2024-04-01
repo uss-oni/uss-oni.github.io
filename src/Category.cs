@@ -72,12 +72,8 @@ namespace USS
       public static Plant Crop = new("Crop", STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.ALL_NAME);
       public static Plant Foregeable = new("Forage", "Forage");
       public static Plant Decor = new("Decor", STRINGS.CODEX.BLISSBURST.SUBTITLE);
-    }
-    public class Seed(string sub, string translation)
-    : Category("Seed", STRINGS.UI.SANDBOXTOOLS.FILTERS.ENTITIES.SEEDS, sub, translation)
-    {
-      public static Seed Crop = new("Crop", STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.ALL_NAME);
-      public static Seed Decor = new("Decor", STRINGS.CODEX.BLISSBURST.SUBTITLE);
+      public static Plant CropSeed = new("CropSeed",  STRINGS.UI.COLONY_DIAGNOSTICS.FARMDIAGNOSTIC.ALL_NAME);
+      public static Plant DecorSeed = new("DecorSeed", STRINGS.CODEX.BLISSBURST.SUBTITLE);
     }
 
     public class Misc(string sub, string translation)

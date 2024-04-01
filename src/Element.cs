@@ -54,6 +54,7 @@ namespace USS
       {
         entity.menu = Category.Element.Solid;
       }
+      entity.lightAbsorption = element.lightAbsorptionFactor;
       entity.radiationAbsorptionFactor = element.radiationAbsorptionFactor;
       entity.shc = element.specificHeatCapacity;
       entity.thermalConductivity = element.thermalConductivity;

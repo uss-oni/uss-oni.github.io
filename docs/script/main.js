@@ -171,6 +171,8 @@ const menuOrder = {
     "Crop",
     "Forage",
     "Decor",
+    "CropSeed",
+    "DecorSeed",
   ],
   Geyser: [
     "Geyser"

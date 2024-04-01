@@ -9212,7 +9212,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       BleachStone: {
         menuOrder: 6.0,
@@ -9234,7 +9235,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       OxyRock: {
         menuOrder: 6.0,
@@ -9257,7 +9259,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SlimeMold: {
         menuOrder: 1.0,
@@ -9279,7 +9282,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       ToxicSand: {
         menuOrder: 1.0,
@@ -9302,7 +9306,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       CrushedIce: {
         menuOrder: 8.0,
@@ -9325,7 +9330,8 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       Diamond: {
         menuOrder: 12.0,
@@ -9349,7 +9355,8 @@ var db = {
         thermalConductivity: 80.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       Isoresin: {
         menuOrder: 10.0,
@@ -9371,7 +9378,8 @@ var db = {
         thermalConductivity: 0.17,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Sucrose: {
         menuOrder: 6.0,
@@ -9391,7 +9399,8 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MilkFat: {
         menuOrder: 6.0,
@@ -9412,7 +9421,8 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Niobium: {
         menuOrder: 5.0,
@@ -9436,7 +9446,8 @@ var db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MilkIce: {
         menuOrder: 8.0,
@@ -9458,7 +9469,8 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.33333
       },
       Cuprite: {
         menuOrder: 5.0,
@@ -9481,7 +9493,8 @@ var db = {
         thermalConductivity: 4.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Copper: {
         menuOrder: 4.0,
@@ -9503,7 +9516,8 @@ var db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       CrushedRock: {
         menuOrder: 15.0,
@@ -9526,7 +9540,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SuperInsulator: {
         menuOrder: 7.0,
@@ -9552,7 +9567,8 @@ var db = {
         thermalConductivity: 1E-05,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       BrineIce: {
         menuOrder: 8.0,
@@ -9574,7 +9590,8 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.33333
       },
       SolidViscoGel: {
         menuOrder: 9.0,
@@ -9595,7 +9612,8 @@ var db = {
         thermalConductivity: 0.45,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.2
       },
       Ceramic: {
         menuOrder: 7.0,
@@ -9620,7 +9638,8 @@ var db = {
         thermalConductivity: 0.62,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Cobaltite: {
         menuOrder: 5.0,
@@ -9642,7 +9661,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Fertilizer: {
         menuOrder: 3.0,
@@ -9664,7 +9684,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidCrudeOil: {
         menuOrder: 11.0,
@@ -9684,7 +9705,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Wolframite: {
         menuOrder: 5.0,
@@ -9707,7 +9729,8 @@ var db = {
         thermalConductivity: 15.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Polypropylene: {
         menuOrder: 9.0,
@@ -9731,7 +9754,8 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidNaphtha: {
         menuOrder: 11.0,
@@ -9751,7 +9775,8 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Tungsten: {
         menuOrder: 4.0,
@@ -9774,7 +9799,8 @@ var db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       RefinedCarbon: {
         menuOrder: 6.0,
@@ -9796,7 +9822,8 @@ var db = {
         thermalConductivity: 3.1,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Steel: {
         menuOrder: 5.0,
@@ -9820,7 +9847,8 @@ var db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Phosphorite: {
         menuOrder: 3.0,
@@ -9842,7 +9870,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidHydrogen: {
         menuOrder: 11.0,
@@ -9862,7 +9891,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.75
       },
       Lead: {
         menuOrder: 4.0,
@@ -9884,7 +9914,8 @@ var db = {
         thermalConductivity: 35.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Sulfur: {
         menuOrder: 12.0,
@@ -9905,7 +9936,8 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Lime: {
         menuOrder: 6.0,
@@ -9926,7 +9958,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidChlorine: {
         menuOrder: 11.0,
@@ -9946,7 +9979,8 @@ var db = {
         thermalConductivity: 0.75,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidNuclearWaste: {
         menuOrder: 12.0,
@@ -9966,7 +10000,8 @@ var db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Obsidian: {
         menuOrder: 7.0,
@@ -9991,7 +10026,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidPetroleum: {
         menuOrder: 11.0,
@@ -10011,7 +10047,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidSuperCoolant: {
         menuOrder: 9.0,
@@ -10031,7 +10068,8 @@ var db = {
         thermalConductivity: 9.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       IgneousRock: {
         menuOrder: 7.0,
@@ -10055,7 +10093,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       EnrichedUranium: {
         menuOrder: 9.0,
@@ -10075,7 +10114,8 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Gold: {
         menuOrder: 4.0,
@@ -10097,7 +10137,8 @@ var db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Rust: {
         menuOrder: 6.0,
@@ -10118,7 +10159,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Corium: {
         menuOrder: 12.0,
@@ -10138,7 +10180,8 @@ var db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Phosphorus: {
         menuOrder: 6.0,
@@ -10160,7 +10203,8 @@ var db = {
         thermalConductivity: 0.236,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Granite: {
         menuOrder: 7.0,
@@ -10185,7 +10229,8 @@ var db = {
         thermalConductivity: 3.39,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidCarbonDioxide: {
         menuOrder: 11.0,
@@ -10205,7 +10250,8 @@ var db = {
         thermalConductivity: 1.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Cobalt: {
         menuOrder: 4.0,
@@ -10226,7 +10272,8 @@ var db = {
         thermalConductivity: 100.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       UraniumOre: {
         menuOrder: 5.0,
@@ -10248,7 +10295,8 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       AluminumOre: {
         menuOrder: 5.0,
@@ -10271,7 +10319,8 @@ var db = {
         thermalConductivity: 20.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SedimentaryRock: {
         menuOrder: 7.0,
@@ -10295,7 +10344,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Fullerene: {
         menuOrder: 10.0,
@@ -10316,7 +10366,8 @@ var db = {
         thermalConductivity: 50.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       GoldAmalgam: {
         menuOrder: 5.0,
@@ -10339,7 +10390,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Salt: {
         menuOrder: 6.0,
@@ -10360,7 +10412,8 @@ var db = {
         thermalConductivity: 0.444,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Sand: {
         menuOrder: 3.5,
@@ -10383,7 +10436,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Snow: {
         menuOrder: 8.0,
@@ -10406,7 +10460,8 @@ var db = {
         thermalConductivity: 0.545,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SandStone: {
         menuOrder: 7.0,
@@ -10430,7 +10485,8 @@ var db = {
         thermalConductivity: 2.9,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Glass: {
         menuOrder: 9.0,
@@ -10453,7 +10509,8 @@ var db = {
         thermalConductivity: 1.11,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       Clay: {
         menuOrder: 2.0,
@@ -10475,7 +10532,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Ice: {
         menuOrder: 8.0,
@@ -10497,7 +10555,8 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.33333
       },
       Graphite: {
         menuOrder: 7.0,
@@ -10517,7 +10576,8 @@ var db = {
         thermalConductivity: 8.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       ToxicMud: {
         menuOrder: 1.0,
@@ -10539,7 +10599,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Mud: {
         menuOrder: 1.0,
@@ -10561,7 +10622,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Carbon: {
         menuOrder: 6.0,
@@ -10584,7 +10646,8 @@ var db = {
         thermalConductivity: 1.25,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidOxygen: {
         menuOrder: 11.0,
@@ -10604,7 +10667,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.75
       },
       Creature: {
         menuOrder: 15.0,
@@ -10624,7 +10688,8 @@ var db = {
         thermalConductivity: 0.6,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       DepletedUranium: {
         menuOrder: 4.0,
@@ -10645,7 +10710,8 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Katairite: {
         menuOrder: 12.0,
@@ -10666,7 +10732,8 @@ var db = {
         thermalConductivity: 1E-05,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidMethane: {
         menuOrder: 6.0,
@@ -10686,7 +10753,8 @@ var db = {
         thermalConductivity: 0.03,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       HardPolypropylene: {
         menuOrder: 9.0,
@@ -10710,7 +10778,8 @@ var db = {
         thermalConductivity: 0.25,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MaficRock: {
         menuOrder: 7.0,
@@ -10732,7 +10801,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Iron: {
         menuOrder: 4.0,
@@ -10754,7 +10824,8 @@ var db = {
         thermalConductivity: 55.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Regolith: {
         menuOrder: 3.5,
@@ -10777,7 +10848,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidResin: {
         menuOrder: 1.0,
@@ -10796,7 +10868,8 @@ var db = {
         thermalConductivity: 0.17,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       TempConductorSolid: {
         menuOrder: 5.0,
@@ -10821,7 +10894,8 @@ var db = {
         thermalConductivity: 220.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       IronOre: {
         menuOrder: 5.0,
@@ -10844,7 +10918,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Dirt: {
         menuOrder: 2.0,
@@ -10866,7 +10941,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       DirtyIce: {
         menuOrder: 8.0,
@@ -10889,7 +10965,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.8
       },
       Fossil: {
         menuOrder: 7.0,
@@ -10910,7 +10987,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Unobtanium: {
         menuOrder: 12.0,
@@ -10930,7 +11008,8 @@ var db = {
         thermalConductivity: 0.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       SolidEthanol: {
         menuOrder: 8.0,
@@ -10952,7 +11031,8 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       FoolsGold: {
         menuOrder: 5.0,
@@ -10975,7 +11055,8 @@ var db = {
         thermalConductivity: 4.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Aluminum: {
         menuOrder: 4.0,
@@ -10997,7 +11078,8 @@ var db = {
         thermalConductivity: 205.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       }
     },
     Liquid: {
@@ -11024,7 +11106,8 @@ var db = {
         thermalConductivity: 0.58,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.7
       },
       NuclearWaste: {
         menuOrder: 15.0,
@@ -11046,7 +11129,8 @@ var db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       LiquidOxygen: {
         menuOrder: 15.0,
@@ -11069,7 +11153,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       ViscoGel: {
         menuOrder: 15.0,
@@ -11092,7 +11177,8 @@ var db = {
         thermalConductivity: 0.45,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       MoltenAluminum: {
         menuOrder: 5.0,
@@ -11117,7 +11203,8 @@ var db = {
         thermalConductivity: 20.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MoltenLead: {
         menuOrder: 5.0,
@@ -11142,7 +11229,8 @@ var db = {
         thermalConductivity: 11.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       LiquidCarbonDioxide: {
         menuOrder: 15.0,
@@ -11164,7 +11252,8 @@ var db = {
         thermalConductivity: 1.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       CrudeOil: {
         menuOrder: 15.0,
@@ -11187,7 +11276,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MoltenGlass: {
         menuOrder: 15.0,
@@ -11210,7 +11300,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.7
       },
       LiquidSulfur: {
         menuOrder: 15.0,
@@ -11232,7 +11323,8 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       MoltenGold: {
         menuOrder: 5.0,
@@ -11257,7 +11349,8 @@ var db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Magma: {
         menuOrder: 15.0,
@@ -11280,7 +11373,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Chlorine: {
         menuOrder: 15.0,
@@ -11302,7 +11396,8 @@ var db = {
         thermalConductivity: 0.0081,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       LiquidHydrogen: {
         menuOrder: 15.0,
@@ -11324,7 +11419,8 @@ var db = {
         thermalConductivity: 0.1,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Resin: {
         menuOrder: 15.0,
@@ -11346,7 +11442,8 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.8
       },
       MoltenTungsten: {
         menuOrder: 5.0,
@@ -11370,7 +11467,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.7
       },
       Petroleum: {
         menuOrder: 15.0,
@@ -11394,7 +11492,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.8
       },
       MoltenSalt: {
         menuOrder: 15.0,
@@ -11416,7 +11515,8 @@ var db = {
         thermalConductivity: 0.444,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       MoltenCobalt: {
         menuOrder: 5.0,
@@ -11440,7 +11540,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Brine: {
         menuOrder: 15.0,
@@ -11464,7 +11565,8 @@ var db = {
         thermalConductivity: 0.609,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.25
       },
       SuperCoolant: {
         menuOrder: 15.0,
@@ -11487,7 +11589,8 @@ var db = {
         thermalConductivity: 9.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.9
       },
       Ethanol: {
         menuOrder: 15.0,
@@ -11511,7 +11614,8 @@ var db = {
         thermalConductivity: 0.171,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.25
       },
       Milk: {
         menuOrder: 15.0,
@@ -11534,7 +11638,8 @@ var db = {
         thermalConductivity: 0.609,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.8
       },
       LiquidMethane: {
         menuOrder: 15.0,
@@ -11556,7 +11661,8 @@ var db = {
         thermalConductivity: 0.03,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.6
       },
       MoltenIron: {
         menuOrder: 5.0,
@@ -11581,7 +11687,8 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MoltenCarbon: {
         menuOrder: 15.0,
@@ -11603,7 +11710,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Naphtha: {
         menuOrder: 15.0,
@@ -11627,7 +11735,8 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.8
       },
       MoltenSucrose: {
         menuOrder: 15.0,
@@ -11648,7 +11757,8 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       LiquidPhosphorus: {
         menuOrder: 15.0,
@@ -11671,7 +11781,8 @@ var db = {
         thermalConductivity: 0.236,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MoltenSteel: {
         menuOrder: 5.0,
@@ -11696,7 +11807,8 @@ var db = {
         thermalConductivity: 80.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MoltenNiobium: {
         menuOrder: 5.0,
@@ -11721,7 +11833,8 @@ var db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       Water: {
         menuOrder: 15.0,
@@ -11745,7 +11858,8 @@ var db = {
         thermalConductivity: 0.609,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.25
       },
       SaltWater: {
         menuOrder: 15.0,
@@ -11769,7 +11883,8 @@ var db = {
         thermalConductivity: 0.609,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.25
       },
       MoltenUranium: {
         menuOrder: 5.0,
@@ -11793,7 +11908,8 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       },
       MoltenCopper: {
         menuOrder: 5.0,
@@ -11818,7 +11934,8 @@ var db = {
         thermalConductivity: 12.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 1.0
       }
     },
     Gas: {
@@ -11840,7 +11957,8 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       SaltGas: {
         menuOrder: 15.0,
@@ -11860,7 +11978,8 @@ var db = {
         thermalConductivity: 0.444,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       NiobiumGas: {
         menuOrder: 5.0,
@@ -11883,7 +12002,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       Oxygen: {
         menuOrder: 15.0,
@@ -11904,7 +12024,8 @@ var db = {
         thermalConductivity: 0.024,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.0
       },
       CobaltGas: {
         menuOrder: 5.0,
@@ -11926,7 +12047,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       SteelGas: {
         menuOrder: 5.0,
@@ -11950,7 +12072,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       ChlorineGas: {
         menuOrder: 15.0,
@@ -11971,7 +12094,8 @@ var db = {
         thermalConductivity: 0.0081,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.2
       },
       Hydrogen: {
         menuOrder: 15.0,
@@ -11992,7 +12116,8 @@ var db = {
         thermalConductivity: 0.168,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       SourGas: {
         menuOrder: 15.0,
@@ -12013,7 +12138,8 @@ var db = {
         thermalConductivity: 0.018,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.25
       },
       Steam: {
         menuOrder: 15.0,
@@ -12033,7 +12159,8 @@ var db = {
         thermalConductivity: 0.184,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       Methane: {
         menuOrder: 15.0,
@@ -12055,7 +12182,8 @@ var db = {
         thermalConductivity: 0.035,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.25
       },
       GoldGas: {
         menuOrder: 5.0,
@@ -12078,7 +12206,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       EthanolGas: {
         menuOrder: 15.0,
@@ -12098,7 +12227,8 @@ var db = {
         thermalConductivity: 0.167,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       RockGas: {
         menuOrder: 15.0,
@@ -12119,7 +12249,8 @@ var db = {
         thermalConductivity: 0.1,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       CarbonGas: {
         menuOrder: 15.0,
@@ -12140,7 +12271,8 @@ var db = {
         thermalConductivity: 1.7,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.3
       },
       SuperCoolantGas: {
         menuOrder: 15.0,
@@ -12160,7 +12292,8 @@ var db = {
         thermalConductivity: 1.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       AluminumGas: {
         menuOrder: 5.0,
@@ -12183,7 +12316,8 @@ var db = {
         thermalConductivity: 2.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       TungstenGas: {
         menuOrder: 5.0,
@@ -12205,7 +12339,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       ContaminatedOxygen: {
         menuOrder: 15.0,
@@ -12226,7 +12361,8 @@ var db = {
         thermalConductivity: 0.024,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       LeadGas: {
         menuOrder: 5.0,
@@ -12249,7 +12385,8 @@ var db = {
         thermalConductivity: 3.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       Fallout: {
         menuOrder: 15.0,
@@ -12269,7 +12406,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       IronGas: {
         menuOrder: 5.0,
@@ -12292,7 +12430,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       PhosphorusGas: {
         menuOrder: 15.0,
@@ -12313,7 +12452,8 @@ var db = {
         thermalConductivity: 0.236,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       },
       CarbonDioxide: {
         menuOrder: 15.0,
@@ -12334,7 +12474,8 @@ var db = {
         thermalConductivity: 0.0146,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.1
       },
       CopperGas: {
         menuOrder: 5.0,
@@ -12357,7 +12498,8 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        lightAbsorption: 0.5
       }
     },
     Other: {
@@ -16492,8 +16634,8 @@ var db = {
       }
     }
   },
-  Seed: {
-    Crop: {
+  Plant: {
+    CropSeed: {
       BasicFabricMaterialPlantSeed: {
         menuOrder: 177013.0,
         tags: [
@@ -16545,16 +16687,6 @@ var db = {
         primaryElement: "Creature"
       },
       CritterTrapPlantSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "CropSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      FilterPlantSeed: {
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16675,90 +16807,6 @@ var db = {
         primaryElement: "Creature"
       }
     },
-    Decor: {
-      CactusPlantSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      CylindricaSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      EvilFlowerSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      BulbPlantSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      PrickleGrassSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      WineCupsSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      ToePlantSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      },
-      LeafyPlantSeed: {
-        menuOrder: 177013.0,
-        tags: [
-          "DecorSeed",
-          "Seed",
-          "PedestalDisplayable"
-        ],
-        mass: 1.0,
-        primaryElement: "Creature"
-      }
-    }
-  },
-  Plant: {
     Crop: {
       BasicFabricPlant: {
         menuOrder: 177013.0,
@@ -17044,6 +17092,88 @@ var db = {
         mass: 100.0,
         decor: 15.0,
         decorRadius: 2.0,
+        primaryElement: "Creature"
+      }
+    },
+    DecorSeed: {
+      CactusPlantSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      CylindricaSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      EvilFlowerSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      BulbPlantSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      PrickleGrassSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      WineCupsSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      ToePlantSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
+        primaryElement: "Creature"
+      },
+      LeafyPlantSeed: {
+        menuOrder: 177013.0,
+        tags: [
+          "DecorSeed",
+          "Seed",
+          "PedestalDisplayable"
+        ],
+        mass: 1.0,
         primaryElement: "Creature"
       }
     },
