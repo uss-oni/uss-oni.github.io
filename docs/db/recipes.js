@@ -5149,12 +5149,19 @@ export const recipes = {
       }
     }
   ],
-  Plant: [
+  Harvest: [
     {
       origin: "BasicFabricPlant",
       time: 1200.0,
       dest: {
         BasicFabric: 1.0
+      }
+    },
+    {
+      origin: "BasicForagePlantPlanted",
+      time: 1.0,
+      dest: {
+        BasicForagePlant: 1.0
       }
     },
     {
@@ -5172,10 +5179,38 @@ export const recipes = {
       }
     },
     {
+      origin: "BeanPlant",
+      time: 1.0,
+      dest: {
+        BeanPlantSeed: 1.0
+      }
+    },
+    {
+      origin: "CactusPlant",
+      time: 1.0,
+      dest: {
+        CactusPlantSeed: 1.0
+      }
+    },
+    {
+      origin: "ColdBreather",
+      time: 1.0,
+      dest: {
+        ColdBreatherSeed: 1.0
+      }
+    },
+    {
       origin: "ColdWheat",
       time: 10800.0,
       dest: {
         ColdWheatSeed: 18.0
+      }
+    },
+    {
+      origin: "ColdWheat",
+      time: 1.0,
+      dest: {
+        ColdWheatSeed: 1.0
       }
     },
     {
@@ -5186,6 +5221,41 @@ export const recipes = {
       }
     },
     {
+      origin: "CritterTrapPlant",
+      time: 1.0,
+      dest: {
+        CritterTrapPlantSeed: 1.0
+      }
+    },
+    {
+      origin: "Cylindrica",
+      time: 1.0,
+      dest: {
+        CylindricaSeed: 1.0
+      }
+    },
+    {
+      origin: "EvilFlower",
+      time: 1.0,
+      dest: {
+        EvilFlowerSeed: 1.0
+      }
+    },
+    {
+      origin: "ForestForagePlantPlanted",
+      time: 1.0,
+      dest: {
+        ForestForagePlant: 1.0
+      }
+    },
+    {
+      origin: "BulbPlant",
+      time: 1.0,
+      dest: {
+        BulbPlantSeed: 1.0
+      }
+    },
+    {
       origin: "ForestTree",
       time: 2700.0,
       dest: {
@@ -5193,10 +5263,24 @@ export const recipes = {
       }
     },
     {
+      origin: "ForestTree",
+      time: 1.0,
+      dest: {
+        ForestTreeSeed: 1.0
+      }
+    },
+    {
       origin: "GasGrass",
       time: 2400.0,
       dest: {
         GasGrassHarvested: 1.0
+      }
+    },
+    {
+      origin: "PrickleGrass",
+      time: 1.0,
+      dest: {
+        PrickleGrassSeed: 1.0
       }
     },
     {
@@ -5228,10 +5312,24 @@ export const recipes = {
       }
     },
     {
+      origin: "Oxyfern",
+      time: 1.0,
+      dest: {
+        OxyfernSeed: 1.0
+      }
+    },
+    {
       origin: "SuperWormPlant",
       time: 4800.0,
       dest: {
         WormSuperFruit: 8.0
+      }
+    },
+    {
+      origin: "SwampForagePlantPlanted",
+      time: 1.0,
+      dest: {
+        SwampForagePlant: 1.0
       }
     },
     {
@@ -5249,6 +5347,20 @@ export const recipes = {
       }
     },
     {
+      origin: "WineCups",
+      time: 1.0,
+      dest: {
+        WineCupsSeed: 1.0
+      }
+    },
+    {
+      origin: "ToePlant",
+      time: 1.0,
+      dest: {
+        ToePlantSeed: 1.0
+      }
+    },
+    {
       origin: "WormPlant",
       time: 2400.0,
       dest: {
@@ -5256,10 +5368,103 @@ export const recipes = {
       }
     },
     {
+      origin: "LeafyPlant",
+      time: 1.0,
+      dest: {
+        LeafyPlantSeed: 1.0
+      }
+    },
+    {
       origin: "MushroomPlant",
       time: 4500.0,
       dest: {
         Mushroom: 1.0
+      }
+    }
+  ],
+  Seeds: [
+    {
+      origin: "BasicFabricPlant",
+      time: 1.0,
+      dest: {
+        BasicFabricMaterialPlantSeed: 0.0
+      }
+    },
+    {
+      origin: "BasicSingleHarvestPlant",
+      time: 1.0,
+      dest: {
+        BasicSingleHarvestPlantSeed: 0.0
+      }
+    },
+    {
+      origin: "GasGrass",
+      time: 1.0,
+      dest: {
+        GasGrassSeed: 1.0
+      }
+    },
+    {
+      origin: "SaltPlant",
+      time: 1.0,
+      dest: {
+        SaltPlantSeed: 1.0
+      }
+    },
+    {
+      origin: "PrickleFlower",
+      time: 1.0,
+      dest: {
+        PrickleFlowerSeed: 0.0
+      }
+    },
+    {
+      origin: "SeaLettuce",
+      time: 1.0,
+      dest: {
+        SeaLettuceSeed: 0.0
+      }
+    },
+    {
+      origin: "SpiceVine",
+      time: 1.0,
+      dest: {
+        SpiceVineSeed: 1.0
+      }
+    },
+    {
+      origin: "SuperWormPlant",
+      time: 1.0,
+      dest: {
+        WormPlantSeed: 1.0
+      }
+    },
+    {
+      origin: "SwampHarvestPlant",
+      time: 1.0,
+      dest: {
+        SwampHarvestPlantSeed: 0.0
+      }
+    },
+    {
+      origin: "SwampLily",
+      time: 1.0,
+      dest: {
+        SwampLilySeed: 1.0
+      }
+    },
+    {
+      origin: "WormPlant",
+      time: 1.0,
+      dest: {
+        WormPlantSeed: 0.0
+      }
+    },
+    {
+      origin: "MushroomPlant",
+      time: 1.0,
+      dest: {
+        MushroomSeed: 0.0
       }
     }
   ],

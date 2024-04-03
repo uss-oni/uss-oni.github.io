@@ -9,6 +9,7 @@ function setIcon(div, path) {
   icon.src = path;
   iconContainer.appendChild(icon);
   div.appendChild(iconContainer);
+  return iconContainer;
 }
 
 function noIcon(div) {
@@ -22,6 +23,7 @@ function setLabel(div, labelName) {
   label.className = "propLabel";
   translation.ui(label, labelName);
   div.appendChild(label);
+  return label;
 }
 
 function setLabelSummary(div, labelName) {
@@ -39,12 +41,21 @@ function setValue(div, valueFn) {
   value.className = "propValue";
   valueFn(value);
   div.appendChild(value);
+  return value;
 }
 
 export function line(div, iconPath, labelName, valueFn) {
   setIcon(div, iconPath);
   setLabel(div, labelName);
   setValue(div, valueFn);
+}
+
+export function multiline(div, iconPath, labelName, valueFn) {
+  setIcon(div, iconPath).style.gridRow = "span " + valueFn.length;
+  setLabel(div, labelName).style.gridRow = "span " + valueFn.length;
+  for (const fn of valueFn) {
+    fn(div);
+  }
 }
 
 export function summary(div, labelName, valueFn, array) {

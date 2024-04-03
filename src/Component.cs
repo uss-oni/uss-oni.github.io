@@ -637,14 +637,26 @@ namespace USS
     {
       entity.menu = Category.Plant.Crop;
       List<(string, float)> drops = [(component.cropVal.cropId, component.cropVal.numProduced)];
-      var recipe = new Recipe.Plant(entity.tag, component.cropVal.cropDuration, drops.ToArray());
+      var recipe = new Recipe.Harvest(entity.tag, component.cropVal.cropDuration, drops.ToArray());
       recipes.Add(recipe);
     }
     public static void Get(Entity entity, Growing component) { }
     public static void Get(Entity entity, Harvestable component) { }
     public static void Get(Entity entity, HarvestDesignatable component) { }
     public static void Get(Entity entity, StandardCropPlant component) { }
-    public static void Get(Entity entity, SeedProducer component) { }
+    public static void Get(Entity entity, SeedProducer component)
+    {
+      List<(string, float)> drops = [(component.seedInfo.seedId, component.seedInfo.newSeedsProduced)];
+      if (component.seedInfo.productionType == SeedProducer.ProductionType.Harvest)
+      {
+        var recipe = new Recipe.Seeds(entity.tag, 1, drops.ToArray());
+        recipes.Add(recipe);
+      }
+      else {
+        var recipe = new Recipe.Harvest(entity.tag, 1, drops.ToArray());
+        recipes.Add(recipe);
+      }
+    }
     public static void Get(Entity entity, BasicForagePlantPlanted component)
     {
       entity.menu = Category.Plant.Foregeable;

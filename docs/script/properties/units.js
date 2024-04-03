@@ -47,12 +47,11 @@ export function dtumsc(value) {
 export function temperature(value) {
   return (div) => {
     var v = document.createElement("span");
-    v.textContent = convertDegree(value);
-    v.dataset.deg = value;
+    degrees.convertDegree(v, value);
     var text = document.createTextNode(" ");
     var unit = document.createElement("span");
     unit.dataset.degtext = "";
-    unit.textContent = " " + currentDegree;
+    unit.textContent = " " + degrees.currentDegree;
     div.appendChild(v);
     div.appendChild(text);
     div.appendChild(unit);
@@ -63,14 +62,12 @@ export function element(value) {
   return (div) => {
     var img = document.createElement("img");
     img.src = image.image(value).path();
-    img.className = "smallImg";
-    var v = document.createElement("div");
-    translation.text(v, value);
-    div.style.display = "flex";
-    div.style.paddingBottom = "0px";
-    v.style.paddingRight = "5px";
+    img.className = "propIconRight";
+    var name = document.createElement("div");
+    translation.text(name, value);
+    name.className = "propElement";
     div.appendChild(img);
-    div.appendChild(v);
+    div.appendChild(name);
   }
 }
 

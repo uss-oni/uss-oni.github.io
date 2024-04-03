@@ -16,15 +16,15 @@ export function molarMass(div, entity) {
 }
 
 export function hardness(div, entity) {
-  let icon = entity.hardness < 50 ?  image.icon("digIcon").path()   :
-             entity.hardness < 150 ? image.icon("digIcon_1").path() :
-             entity.hardness < 200 ? image.icon("digIcon_2").path() :
-                                     image.icon("digIcon_3").path()
+  let icon = entity.hardness < 50 ? image.icon("digIcon").path() :
+    entity.hardness < 150 ? image.icon("digIcon_1").path() :
+      entity.hardness < 200 ? image.icon("digIcon_2").path() :
+        image.icon("digIcon_3").path()
   display.line(div, icon, "hardness", units.none(entity.hardness));
 }
 
 export function size(div, entity) {
-  display.line(div, image.icon("size").path(), "size", units.none(entity.width + " x " + entity.height));  
+  display.line(div, image.icon("size").path(), "size", units.none(entity.width + " x " + entity.height));
 }
 
 export function plantAge(div, entity) {
@@ -32,19 +32,58 @@ export function plantAge(div, entity) {
     icon: image.icon("heatflow").path(),
     label: "domestic",
     value: units.time(entity.age * 600 / 4)
-  },{
+  }, {
     icon: image.icon("heatflow").path(),
     label: "savage",
     value: units.time(entity.age * 600)
   }
-];
+  ];
   display.summary(div, "cycleOfLife", units.time2(entity.age * 600 / 4, entity.age * 600), array);
 }
 
 export function harvest(div, entity) {
-  let dest = recipes.Plant.find(p => p.origin == entity.tag).dest;
+  let dest = recipes.Harvest.find(p => p.origin == entity.tag).dest;
   let [drop, amount] = Object.entries(dest)[0];
-  display.line(div, image.icon("harvest").path(), "harvest", units.entityKg(drop, amount));
+  let harvest = [units.entityKg(drop, amount)];
+
+  let seed = recipes.Seeds.find(p => p.origin == entity.tag);
+  if (seed != null) {
+    harvest = harvest.concat(units.element(Object.keys(seed.dest)[0]));
+  }
+  display.multiline(div, image.icon("harvest").path(), "harvest", harvest);
+}
+
+export function phase(div, entity) {
+  for (const recipe of recipes.Phase.filter(recipe => recipe.origin == entity.tag)) {
+    let dest = [(div) => {
+      var temp = document.createElement("div");
+      temp.className = "propTemp";
+      units.temperature(recipe.temp)(temp);
+      div.appendChild(temp);
+      var arrow = document.createElement("div");
+      arrow.textContent = "⟶";
+      arrow.className = "propArrow";
+      div.appendChild(arrow);;
+    }];
+    for (const [tag, percent] of Object.entries(recipe.dest)) {
+      dest.push(units.element(tag));
+      if (percent < 1) {
+        dest.push((div) => {
+          let perc = document.createElement("div");
+          perc.className = "propAmount";
+          units.percent(percent)(perc);
+          div.appendChild(perc);
+        });
+      }
+    }
+
+    if (recipe.type == "condensation" || recipe.type == "freezing" || recipe.type == "deposition") {
+      display.multiline(div, image.icon("tempDown").path(), recipe.type, dest);
+    }
+    else {
+      display.multiline(div, image.icon("tempUp").path(), recipe.type, dest);
+    }
+  }
 }
 
 /*

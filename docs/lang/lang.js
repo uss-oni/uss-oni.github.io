@@ -47,6 +47,8 @@ async function setTranslation(currentTranslation) {
 
 }
 
+window.setTranslation = setTranslation;
+
 function Text(div, text) {
 
 }

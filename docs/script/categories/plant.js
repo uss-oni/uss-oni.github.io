@@ -18,12 +18,16 @@ export const def = {
     {
       title: "Forage",
       sortOrder: alpha,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.harvest
+      ]),
     },
     {
       title: "Decor",
       sortOrder: alpha,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.harvest
+      ]),
     },
     {
       title: "CropSeed",

@@ -2,6 +2,7 @@ import { alpha } from "../sort.js"
 import * as properties from "../properties/def.js"
 
 const commonProperties = [
+  properties.phase,
   properties.shc,
   properties.thermalConductivity,
   properties.molarMass
