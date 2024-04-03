@@ -6,16 +6,12 @@
   <title>USS-Oni</title>
   <link rel='icon' type='image/png' href="favicon.png">
   <link rel="stylesheet" type="text/css" target="_blank" href="style.css">
-  <script src="lang/lang.js"></script>
-  <script src="db/recipes.js"></script>
-  <script src="db/uss.js"></script>
-  <script src="script/properties.js" defer></script>
-  <script src="script/main.js" defer></script>
+  <script src="script/main.js" type="module"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-<body>
+<body lang="fr">
   <div id="top">
     <select id="selectCategory" onChange="onChangeSelect(this.options[this.selectedIndex].dataset.ui)">
       <option data-ui="Element">Éléments</option>

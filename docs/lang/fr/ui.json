@@ -100,5 +100,17 @@
   "infinite": "Infinie",
   "CropSeed": "Graines d'agriculture",
   "DecorSeed": "Graines decoratives",
-  "lightAbsorption": "Absorption lumineuse"
+  "lightAbsorption": "Absorption lumineuse",
+  "FlipH": "Horizontale",
+  "R360": "90°",
+  "R90": "90°",
+  "rotations": "Rotation",
+  "onFloor": "Au sol",
+  "WallFloor": "Au sol et contre un mur",
+  "floodThreshold": "Seuil d'inondation",
+  "size": "Taille",
+  "cycleOfLife": "Cycle de vie",
+  "domestic": "Domestique",
+  "savage": "Sauvage",
+  "harvest": "Recolte"
 }

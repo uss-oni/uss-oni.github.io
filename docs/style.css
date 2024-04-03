@@ -90,6 +90,8 @@ body {
     min-height: 55px;
 
     p {
+      text-transform: lowercase;
+      width: 100%;
       color: rgba(255, 255, 255, 0.9);
       width: inherit;
       height: inherit;
@@ -102,6 +104,10 @@ body {
       padding-left: 2px;
       padding-right: 2px;
       border-radius: 0px 0px 5px 5px;
+    }
+
+    p:first-letter {
+      text-transform: capitalize;
     }
   }
 }
@@ -124,10 +130,10 @@ body {
   display: grid;
   grid-auto-flow: row;
   /* spacing icon label spacing value arrow icon element amount spacing*/
-  grid-template-columns: 0px 30px 183px;
+  grid-template-columns: 0px 30px 183px 5px max-content max-content 25px 1fr max-content 10px;
   grid-auto-rows: min-content;
   row-gap: 3px;
-  width: 100%;
+  width: 480px;
   background-color: #3e4357;
   font-size: 14px;
   padding-top: 3px;
@@ -199,6 +205,7 @@ summary {
 
 .propValue {
   grid-column: 5 / -1;
+  text-align: left;
 }
 
 .propAmount {

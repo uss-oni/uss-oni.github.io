@@ -1,207 +1,89 @@
+import * as artifact from "./categories/artifact.js"
+import * as building from "./categories/building.js"
+import * as critter from "./categories/critter.js"
+import * as element from "./categories/element.js"
+import * as equipment from "./categories/equipment.js"
+import * as food from "./categories/food.js"
+import * as geyser from "./categories/geyser.js"
+import * as misc from "./categories/misc.js"
+import * as none from "./categories/none.js"
+import * as plant from "./categories/plant.js"
+import * as space from "./categories/space.js"
+
+import * as translation from "../lang/lang.js";
+import * as sort from "./sort.js";
+import { db } from "../db/uss.js";
+import * as image from "./img.js";
+
 function onChangeSelect(choice) {
-  var list = document.getElementById("list");
-  list.replaceChildren();
-  menuOrder[choice].forEach(subCategory => {
-    var title = document.createElement("h3");
-    title.textContent = translationUI[subCategory];
-    title.dataset.ui = subCategory;
-    list.appendChild(title);
-    var category = document.createElement("div");
-    category.className = "category";
-    list.appendChild(category);
-    Object.entries(db[choice][subCategory])
-      .sort((a, b) => a[1].menuOrder != b[1].menuOrder ?
-        a[1].menuOrder - b[1].menuOrder :
-        translationTag[a[0]].name.localeCompare(translationTag[b[0]].name))
-      .forEach(([tag, _]) => {
-        var box = document.createElement("div");
-        box.className = "box";
-        var img = document.createElement("img");
-        img.src = image(tag).path();
-        var d = document.createElement("div");
-        d.className = "align";
-        var p = document.createElement("p");
-        if (translationTag[tag] == null)
-          p.textContent = tag;
-        else
-          p.innerHTML = translationTag[tag].name;
-        p.dataset.tag = tag;
-        d.appendChild(p);
-        box.appendChild(img);
-        box.appendChild(d);
-        category.appendChild(box);
-        box.addEventListener("click", () => displayProperties(tag, db[choice][subCategory][tag]));
-      });
-  });
-}
+  let page = document.getElementById("list");
+  page.replaceChildren();
 
-
-class info {
-  tbody;
-  add(left, right) {
-
-    this.tbody.appendChild
-  };
-  constructor(tbody) {
-    this.tbody = tbody;
-  }
-}
-
-function displayProperties(tag, entity) {
-  var img = document.getElementById("descimg");
-  img.src = image(tag).path();
-
-  var desc = document.getElementById("desc");
-  desc.dataset.desc = tag;
-  desc.innerHTML = translationTag[tag].desc;
-
-  var properties = document.getElementById("properties");
-  properties.replaceChildren();
-  var mainTitle = document.createElement("h3");
-  mainTitle.textContent = "Properties";
-  properties.appendChild(mainTitle);
-  recipePhase(properties, tag);
-  for (const [prop, fn] of Object.entries(propertiesOrder)) {
-    let value = entity[prop];
-    if (value != null) {
-      fn(properties, prop, value);
+  for (const categories of selectCategoryOrder) {
+    if (categories.def.title == choice) {
+      for (const category of categories.def.categories) {
+        let title = document.createElement("h3");
+        translation.ui(title, category.title);
+        page.appendChild(title);
+        let list = document.createElement("div");
+        list.className = "category";
+        page.appendChild(list);
+        for (const [tag, _] of Object
+          .entries(db[choice][category.title])
+          .sort(category.sortOrder)) {
+          var box = document.createElement("div");
+          box.className = "box";
+          var img = document.createElement("img");
+          img.src = image.image(tag).path();
+          var d = document.createElement("div");
+          d.className = "align";
+          var p = document.createElement("p");
+          d.appendChild(p);
+          box.appendChild(img);
+          box.appendChild(d);
+          list.appendChild(box);
+          box.addEventListener("click", () => displayProperties(category, tag, db[choice][category.title][tag]));
+          translation.textWithHyphens(p, tag);
+        }
+      }
     }
   }
-  recipeBuilding(properties, tag);
-  //recipeTemp(properties, tag);
-  //for (const key of Object.keys(recipes)) {
-  //  vrac(properties, tag, key);
-  //}
 }
 
+
+function displayProperties(category, tag, entity) {
+  let img = document.getElementById("descimg");
+  img.src = image.image(tag).path();
+  let desc = document.getElementById("desc");
+  translation.desc(desc, tag);
+  let properties = document.getElementById("properties");
+  properties.replaceChildren();
+  let mainTitle = document.createElement("h3");
+  mainTitle.textContent = "Properties";
+  properties.appendChild(mainTitle);
+  for (const prop of category.properties) {
+    prop(properties, entity);
+  }
+}
 
 function init() {
   let select = document.getElementById("selectCategory");
-  console.log(select.options[select.selectedIndex].dataset.ui);
-  initTranslation().then(() => onChangeSelect(select.options[select.selectedIndex].dataset.ui));
+  translation.init().then(() => onChangeSelect(select.options[select.selectedIndex].dataset.ui));
 }
 
+window.onChangeSelect = onChangeSelect;
 window.addEventListener('DOMContentLoaded', () => init());
 
-function favicon() {
-  var link = document.querySelector("link[rel~='icon']");
-  link.href = 'images/Favicon/' + [
-    'Abe.png',
-    'Ada.png',
-    'Amari.png',
-    'Ari.png',
-    'Ashkan.png',
-    'Banhi.png',
-    'Bubbles.png',
-    'Burt.png',
-    'Camille.png',
-    'Catalina.png',
-    'Devon.png',
-    'Ellie.png',
-    'Frankie.png',
-    'Gossmann.png',
-    'Gossman.png',
-    'Harold.png',
-    'Hassan.png',
-    'Jean.png',
-    'Jorge.png',
-    'Joshua.png',
-    'Leira.png',
-    'Liam.png',
-    'Lindsay.png',
-    'Mae.png',
-    'Marie.png',
-    'Max.png',
-    'Meep.png',
-    'Mi-Ma.png',
-    'Nails.png',
-    'Nikola.png',
-    'Nisbet.png',
-    'Otto.png',
-    'Pei.png',
-    'Quinn.png',
-    'Ren.png',
-    'Rowan.png',
-    'Ruby.png',
-    'Steve.png',
-    'Stinky.png',
-    'Travaldo.png',
-    'Turner.png'][Math.floor(Math.random() * 41)];
-}
-const menuOrder = {
-  Element: [
-    "Solid",
-    "Liquid",
-    "Gas",
-    "Other",
-  ],
-  Building: [
-    "base",
-    "oxygen",
-    "power",
-    "food",
-    "plumbing",
-    "hvac",
-    "refining",
-    "medical",
-    "furniture",
-    "equipment",
-    "utilities",
-    "automation",
-    "conveyance",
-    "rocketry",
-    "RocketModule",
-    "hep",
-    "Gravitas",
-    "Quest",
-  ],
-  Food: [
-    "Cooked",
-//    "Raw",
-    "Ingredient",
-    "Dehydrated",
-  ],
-  Critter: [
-    "Critter",
-    "Baby",
-    "Egg",
-    "Robot",
-  ],
-  Plant: [
-    "Crop",
-    "Forage",
-    "Decor",
-    "CropSeed",
-    "DecorSeed",
-  ],
-  Geyser: [
-    "Geyser"
-  ],
-  Space: [
-    "HarvestablePOI",
-    "Comet",
-    "Shower",
-    "ArtifactPOI",
-  ],
-  Equipment: [
-    "Clothes",
-    "Suit",
-    "Worn",
-  ],
-  Artifact: [
-    "Terrestrial",
-    "Space",
-    "Any",
-    "Quest",
-  ],
-  Misc: [
-    "Medicine",
-    "Industrial",
-    "Other",
-    "Quest",
-  ],
-  NONE: [
-    "NONE"
-  ]
-}
-
+const selectCategoryOrder = [
+  element,
+  building,
+  food,
+  critter,
+  plant,
+  geyser,
+  space,
+  equipment,
+  artifact,
+  misc,
+  none
+];

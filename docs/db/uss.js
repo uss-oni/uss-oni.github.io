@@ -1,7 +1,8 @@
-var db = {
+export const db = {
   Building: {
     medical: {
       AdvancedDoctorStation: {
+        tag: "AdvancedDoctorStation",
         menuOrder: 6.0,
         tags: [
           "Clinic"
@@ -27,6 +28,7 @@ var db = {
         enableable: true
       },
       Apothecary: {
+        tag: "Apothecary",
         menuOrder: 4.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -50,6 +52,7 @@ var db = {
         enableable: true
       },
       DecontaminationShower: {
+        tag: "DecontaminationShower",
         menuOrder: 3.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -71,6 +74,7 @@ var db = {
         enableable: true
       },
       DoctorStation: {
+        tag: "DoctorStation",
         menuOrder: 5.0,
         tags: [
           "Clinic"
@@ -89,6 +93,7 @@ var db = {
         enableable: true
       },
       Grave: {
+        tag: "Grave",
         menuOrder: 9.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -106,6 +111,7 @@ var db = {
         enableable: true
       },
       HandSanitizer: {
+        tag: "HandSanitizer",
         menuOrder: 2.0,
         tags: [
           "WashStation",
@@ -129,6 +135,7 @@ var db = {
         enableable: true
       },
       MassageTable: {
+        tag: "MassageTable",
         menuOrder: 8.0,
         tags: [
           "DeStressingBuilding"
@@ -154,6 +161,7 @@ var db = {
         enableable: true
       },
       MedicalCot: {
+        tag: "MedicalCot",
         menuOrder: 7.0,
         tags: [
           "Clinic",
@@ -173,6 +181,7 @@ var db = {
         enableable: true
       },
       WashBasin: {
+        tag: "WashBasin",
         menuOrder: 0.0,
         tags: [
           "WashStation"
@@ -195,6 +204,7 @@ var db = {
         enableable: true
       },
       WashSink: {
+        tag: "WashSink",
         menuOrder: 1.0,
         tags: [
           "WashStation",
@@ -220,6 +230,7 @@ var db = {
     },
     equipment: {
       AdvancedResearchCenter: {
+        tag: "AdvancedResearchCenter",
         menuOrder: 1.0,
         tags: [
           "ScienceBuilding"
@@ -245,6 +256,7 @@ var db = {
         enableable: true
       },
       ArtifactAnalysisStation: {
+        tag: "ArtifactAnalysisStation",
         menuOrder: 13.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -269,6 +281,7 @@ var db = {
         enableable: true
       },
       ClothingAlterationStation: {
+        tag: "ClothingAlterationStation",
         menuOrder: 17.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -290,6 +303,7 @@ var db = {
         enableable: true
       },
       ClothingFabricator: {
+        tag: "ClothingFabricator",
         menuOrder: 16.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -311,6 +325,7 @@ var db = {
         enableable: true
       },
       CraftingTable: {
+        tag: "CraftingTable",
         menuOrder: 15.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -332,6 +347,7 @@ var db = {
         enableable: true
       },
       DLC1CosmicResearchCenter: {
+        tag: "DLC1CosmicResearchCenter",
         menuOrder: 4.0,
         tags: [
           "ScienceBuilding"
@@ -357,6 +373,7 @@ var db = {
         enableable: true
       },
       FarmStation: {
+        tag: "FarmStation",
         menuOrder: 7.0,
         tags: [
           "FarmStationType"
@@ -375,6 +392,7 @@ var db = {
         enableable: true
       },
       GeneticAnalysisStation: {
+        tag: "GeneticAnalysisStation",
         menuOrder: 8.0,
         tags: [
           "ScienceBuilding"
@@ -400,6 +418,7 @@ var db = {
         enableable: true
       },
       GeoTuner: {
+        tag: "GeoTuner",
         menuOrder: 5.0,
         tags: [
           "ScienceBuilding"
@@ -424,6 +443,7 @@ var db = {
         enableable: true
       },
       JetSuitLocker: {
+        tag: "JetSuitLocker",
         menuOrder: 24.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -447,6 +467,7 @@ var db = {
         enableable: true
       },
       JetSuitMarker: {
+        tag: "JetSuitMarker",
         menuOrder: 23.0,
         tags: [
           "JetSuitBlocker"
@@ -470,6 +491,7 @@ var db = {
         enableable: true
       },
       LeadSuitLocker: {
+        tag: "LeadSuitLocker",
         menuOrder: 26.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -493,6 +515,7 @@ var db = {
         enableable: true
       },
       LeadSuitMarker: {
+        tag: "LeadSuitMarker",
         menuOrder: 25.0,
         tags: [
           "JetSuitBlocker"
@@ -516,6 +539,7 @@ var db = {
         enableable: true
       },
       MilkingStation: {
+        tag: "MilkingStation",
         menuOrder: 11.0,
         tags: [
           "RanchStationType"
@@ -538,6 +562,7 @@ var db = {
         workTime: 20.0
       },
       MissileFabricator: {
+        tag: "MissileFabricator",
         menuOrder: 14.0,
         tags: [
           "IndustrialMachinery"
@@ -564,6 +589,7 @@ var db = {
         enableable: true
       },
       NuclearResearchCenter: {
+        tag: "NuclearResearchCenter",
         menuOrder: 2.0,
         tags: [
           "ScienceBuilding"
@@ -589,6 +615,7 @@ var db = {
         enableable: true
       },
       OrbitalResearchCenter: {
+        tag: "OrbitalResearchCenter",
         menuOrder: 3.0,
         tags: [
           "ScienceBuilding",
@@ -616,6 +643,7 @@ var db = {
         enableable: true
       },
       OxygenMaskLocker: {
+        tag: "OxygenMaskLocker",
         menuOrder: 20.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -636,6 +664,7 @@ var db = {
         enableable: true
       },
       OxygenMaskMarker: {
+        tag: "OxygenMaskMarker",
         menuOrder: 19.0,
         tags: [
           "JetSuitBlocker"
@@ -659,6 +688,7 @@ var db = {
         enableable: true
       },
       PowerControlStation: {
+        tag: "PowerControlStation",
         menuOrder: 6.0,
         tags: [
           "PowerStation",
@@ -678,6 +708,7 @@ var db = {
         enableable: true
       },
       RanchStation: {
+        tag: "RanchStation",
         menuOrder: 9.0,
         tags: [
           "RanchStationType"
@@ -697,6 +728,7 @@ var db = {
         workTime: 12.0
       },
       ResearchCenter: {
+        tag: "ResearchCenter",
         menuOrder: 0.0,
         tags: [
           "ScienceBuilding"
@@ -722,6 +754,7 @@ var db = {
         enableable: true
       },
       ResetSkillsStation: {
+        tag: "ResetSkillsStation",
         menuOrder: 12.0,
         tags: [
           "IndustrialMachinery",
@@ -748,6 +781,7 @@ var db = {
         enableable: true
       },
       ShearingStation: {
+        tag: "ShearingStation",
         menuOrder: 10.0,
         tags: [
           "RanchStationType"
@@ -774,6 +808,7 @@ var db = {
         workTime: 12.0
       },
       SuitFabricator: {
+        tag: "SuitFabricator",
         menuOrder: 18.0,
         tags: [
           "IndustrialMachinery"
@@ -797,6 +832,7 @@ var db = {
         enableable: true
       },
       SuitLocker: {
+        tag: "SuitLocker",
         menuOrder: 22.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -820,6 +856,7 @@ var db = {
         enableable: true
       },
       SuitMarker: {
+        tag: "SuitMarker",
         menuOrder: 21.0,
         tags: [
           "JetSuitBlocker"
@@ -845,6 +882,7 @@ var db = {
     },
     food: {
       AirBorneCritterCondo: {
+        tag: "AirBorneCritterCondo",
         menuOrder: 24.0,
         tags: [
           "RanchStationType"
@@ -868,6 +906,7 @@ var db = {
         enableable: true
       },
       CookingStation: {
+        tag: "CookingStation",
         menuOrder: 1.0,
         tags: [
           "CookTop"
@@ -893,6 +932,7 @@ var db = {
         enableable: true
       },
       CreatureFeeder: {
+        tag: "CreatureFeeder",
         menuOrder: 14.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -913,6 +953,7 @@ var db = {
         enableable: true
       },
       CritterCondo: {
+        tag: "CritterCondo",
         menuOrder: 22.0,
         tags: [
           "RanchStationType"
@@ -937,6 +978,7 @@ var db = {
         enableable: true
       },
       CritterDropOff: {
+        tag: "CritterDropOff",
         menuOrder: 12.0,
         tags: [
           "CreatureRelocator"
@@ -959,6 +1001,7 @@ var db = {
         enableable: true
       },
       CritterPickUp: {
+        tag: "CritterPickUp",
         menuOrder: 11.0,
         tags: [
           "CreatureRelocator"
@@ -981,6 +1024,7 @@ var db = {
         enableable: true
       },
       EggCracker: {
+        tag: "EggCracker",
         menuOrder: 18.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1001,6 +1045,7 @@ var db = {
         enableable: true
       },
       EggIncubator: {
+        tag: "EggIncubator",
         menuOrder: 17.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1026,6 +1071,7 @@ var db = {
         enableable: true
       },
       FarmTile: {
+        tag: "FarmTile",
         menuOrder: 7.0,
         tags: [
           "FarmTiles"
@@ -1043,6 +1089,7 @@ var db = {
         deconstructable: true
       },
       FishDeliveryPoint: {
+        tag: "FishDeliveryPoint",
         menuOrder: 13.0,
         tags: [
           "CreatureRelocator"
@@ -1065,6 +1112,7 @@ var db = {
         enableable: true
       },
       FishFeeder: {
+        tag: "FishFeeder",
         menuOrder: 15.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1085,6 +1133,7 @@ var db = {
         enableable: true
       },
       FoodDehydrator: {
+        tag: "FoodDehydrator",
         menuOrder: 4.0,
         tags: [
           "IndustrialMachinery"
@@ -1107,6 +1156,7 @@ var db = {
         enableable: true
       },
       FoodRehydrator: {
+        tag: "FoodRehydrator",
         menuOrder: 5.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1131,6 +1181,7 @@ var db = {
         enableable: true
       },
       GourmetCookingStation: {
+        tag: "GourmetCookingStation",
         menuOrder: 2.0,
         tags: [
           "CookTop"
@@ -1156,6 +1207,7 @@ var db = {
         enableable: true
       },
       HydroponicFarm: {
+        tag: "HydroponicFarm",
         menuOrder: 8.0,
         tags: [
           "FarmTiles"
@@ -1176,6 +1228,7 @@ var db = {
         enableable: true
       },
       MicrobeMusher: {
+        tag: "MicrobeMusher",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1201,6 +1254,7 @@ var db = {
         enableable: true
       },
       MilkFeeder: {
+        tag: "MilkFeeder",
         menuOrder: 16.0,
         tags: [
           "RanchStationType"
@@ -1224,6 +1278,7 @@ var db = {
         enableable: true
       },
       PlanterBox: {
+        tag: "PlanterBox",
         menuOrder: 6.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1241,6 +1296,7 @@ var db = {
         enableable: true
       },
       RationBox: {
+        tag: "RationBox",
         menuOrder: 9.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1258,6 +1314,7 @@ var db = {
         enableable: true
       },
       Refrigerator: {
+        tag: "Refrigerator",
         menuOrder: 10.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1282,6 +1339,7 @@ var db = {
         enableable: true
       },
       SpiceGrinder: {
+        tag: "SpiceGrinder",
         menuOrder: 3.0,
         tags: [
           "SpiceStation"
@@ -1300,6 +1358,7 @@ var db = {
         enableable: true
       },
       UnderwaterCritterCondo: {
+        tag: "UnderwaterCritterCondo",
         menuOrder: 23.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1320,6 +1379,7 @@ var db = {
         enableable: true
       },
       CreatureAirTrap: {
+        tag: "CreatureAirTrap",
         menuOrder: 21.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1340,6 +1400,7 @@ var db = {
         enableable: true
       },
       CreatureGroundTrap: {
+        tag: "CreatureGroundTrap",
         menuOrder: 19.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1359,6 +1420,7 @@ var db = {
         enableable: true
       },
       WaterTrap: {
+        tag: "WaterTrap",
         menuOrder: 20.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1380,6 +1442,7 @@ var db = {
     },
     utilities: {
       AirConditioner: {
+        tag: "AirConditioner",
         menuOrder: 4.0,
         tags: [],
         thermalConductivity: 5.0,
@@ -1402,6 +1465,7 @@ var db = {
         enableable: true
       },
       IceCooledFan: {
+        tag: "IceCooledFan",
         menuOrder: 2.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1420,6 +1484,7 @@ var db = {
         enableable: true
       },
       IceMachine: {
+        tag: "IceMachine",
         menuOrder: 3.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1443,6 +1508,7 @@ var db = {
         enableable: true
       },
       LiquidConditioner: {
+        tag: "LiquidConditioner",
         menuOrder: 5.0,
         tags: [
           "OverlayBackLayer"
@@ -1466,6 +1532,7 @@ var db = {
         enableable: true
       },
       LiquidHeater: {
+        tag: "LiquidHeater",
         menuOrder: 1.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1490,6 +1557,7 @@ var db = {
         enableable: true
       },
       OilWellCap: {
+        tag: "OilWellCap",
         menuOrder: 7.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1511,6 +1579,7 @@ var db = {
         enableable: true
       },
       OreScrubber: {
+        tag: "OreScrubber",
         menuOrder: 6.0,
         tags: [
           "IndustrialMachinery"
@@ -1533,6 +1602,7 @@ var db = {
         enableable: true
       },
       SpaceHeater: {
+        tag: "SpaceHeater",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1558,6 +1628,7 @@ var db = {
         enableable: true
       },
       SweepBotStation: {
+        tag: "SweepBotStation",
         menuOrder: 9.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1581,6 +1652,7 @@ var db = {
         enableable: true
       },
       ThermalBlock: {
+        tag: "ThermalBlock",
         menuOrder: 8.0,
         tags: [
           "Backwall"
@@ -1600,6 +1672,7 @@ var db = {
     },
     oxygen: {
       AirFilter: {
+        tag: "AirFilter",
         menuOrder: 3.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1621,6 +1694,7 @@ var db = {
         enableable: true
       },
       AlgaeHabitat: {
+        tag: "AlgaeHabitat",
         menuOrder: 2.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1640,6 +1714,7 @@ var db = {
         enableable: true
       },
       CO2Scrubber: {
+        tag: "CO2Scrubber",
         menuOrder: 4.0,
         tags: [
           "IndustrialMachinery"
@@ -1667,6 +1742,7 @@ var db = {
         enableable: true
       },
       Electrolyzer: {
+        tag: "Electrolyzer",
         menuOrder: 5.0,
         tags: [
           "IndustrialMachinery"
@@ -1694,6 +1770,7 @@ var db = {
         enableable: true
       },
       MineralDeoxidizer: {
+        tag: "MineralDeoxidizer",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1719,6 +1796,7 @@ var db = {
         enableable: true
       },
       RustDeoxidizer: {
+        tag: "RustDeoxidizer",
         menuOrder: 6.0,
         tags: [
           "IndustrialMachinery"
@@ -1746,6 +1824,7 @@ var db = {
         enableable: true
       },
       SublimationStation: {
+        tag: "SublimationStation",
         menuOrder: 1.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1773,6 +1852,7 @@ var db = {
     },
     refining: {
       AlgaeDistillery: {
+        tag: "AlgaeDistillery",
         menuOrder: 4.0,
         tags: [
           "IndustrialMachinery"
@@ -1798,6 +1878,7 @@ var db = {
         enableable: true
       },
       Chlorinator: {
+        tag: "Chlorinator",
         menuOrder: 14.0,
         tags: [
           "IndustrialMachinery"
@@ -1826,6 +1907,7 @@ var db = {
         enableable: true
       },
       Compost: {
+        tag: "Compost",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1846,6 +1928,7 @@ var db = {
         enableable: true
       },
       DiamondPress: {
+        tag: "DiamondPress",
         menuOrder: 16.0,
         tags: [
           "IndustrialMachinery"
@@ -1872,6 +1955,7 @@ var db = {
         enableable: true
       },
       EthanolDistillery: {
+        tag: "EthanolDistillery",
         menuOrder: 5.0,
         tags: [
           "IndustrialMachinery"
@@ -1897,6 +1981,7 @@ var db = {
         enableable: true
       },
       FertilizerMaker: {
+        tag: "FertilizerMaker",
         menuOrder: 3.0,
         tags: [
           "IndustrialMachinery"
@@ -1924,6 +2009,7 @@ var db = {
         enableable: true
       },
       GlassForge: {
+        tag: "GlassForge",
         menuOrder: 10.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -1948,6 +2034,7 @@ var db = {
         enableable: true
       },
       Kiln: {
+        tag: "Kiln",
         menuOrder: 7.0,
         tags: [
           "IndustrialMachinery"
@@ -1970,6 +2057,7 @@ var db = {
         enableable: true
       },
       MetalRefinery: {
+        tag: "MetalRefinery",
         menuOrder: 9.0,
         tags: [
           "IndustrialMachinery"
@@ -1996,6 +2084,7 @@ var db = {
         enableable: true
       },
       MilkFatSeparator: {
+        tag: "MilkFatSeparator",
         menuOrder: 17.0,
         tags: [
           "IndustrialMachinery"
@@ -2032,6 +2121,7 @@ var db = {
         ]
       },
       MilkPress: {
+        tag: "MilkPress",
         menuOrder: 18.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -2053,6 +2143,7 @@ var db = {
         enableable: true
       },
       OilRefinery: {
+        tag: "OilRefinery",
         menuOrder: 11.0,
         tags: [
           "IndustrialMachinery"
@@ -2081,6 +2172,7 @@ var db = {
         enableable: true
       },
       OxyliteRefinery: {
+        tag: "OxyliteRefinery",
         menuOrder: 13.0,
         tags: [
           "IndustrialMachinery"
@@ -2107,6 +2199,7 @@ var db = {
         enableable: true
       },
       Polymerizer: {
+        tag: "Polymerizer",
         menuOrder: 12.0,
         tags: [
           "IndustrialMachinery"
@@ -2133,6 +2226,7 @@ var db = {
         enableable: true
       },
       RockCrusher: {
+        tag: "RockCrusher",
         menuOrder: 6.0,
         tags: [
           "IndustrialMachinery"
@@ -2159,6 +2253,7 @@ var db = {
         enableable: true
       },
       SludgePress: {
+        tag: "SludgePress",
         menuOrder: 8.0,
         tags: [
           "IndustrialMachinery"
@@ -2185,6 +2280,7 @@ var db = {
         enableable: true
       },
       SupermaterialRefinery: {
+        tag: "SupermaterialRefinery",
         menuOrder: 15.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -2209,6 +2305,7 @@ var db = {
         enableable: true
       },
       WaterPurifier: {
+        tag: "WaterPurifier",
         menuOrder: 1.0,
         tags: [
           "IndustrialMachinery",
@@ -2237,6 +2334,7 @@ var db = {
         enableable: true
       },
       Desalinator: {
+        tag: "Desalinator",
         menuOrder: 2.0,
         tags: [
           "IndustrialMachinery"
@@ -2265,6 +2363,7 @@ var db = {
     },
     furniture: {
       ArcadeMachine: {
+        tag: "ArcadeMachine",
         menuOrder: 9.0,
         tags: [
           "RecBuilding"
@@ -2291,6 +2390,7 @@ var db = {
         enableable: true
       },
       BeachChair: {
+        tag: "BeachChair",
         menuOrder: 16.0,
         tags: [
           "RecBuilding"
@@ -2314,6 +2414,7 @@ var db = {
         enableable: true
       },
       Bed: {
+        tag: "Bed",
         menuOrder: 0.0,
         tags: [
           "BedType"
@@ -2332,6 +2433,7 @@ var db = {
         enableable: true
       },
       Canvas: {
+        tag: "Canvas",
         menuOrder: 31.0,
         tags: [
           "Decoration"
@@ -2353,6 +2455,7 @@ var db = {
         enableable: true
       },
       CanvasTall: {
+        tag: "CanvasTall",
         menuOrder: 33.0,
         tags: [
           "Decoration"
@@ -2374,6 +2477,7 @@ var db = {
         enableable: true
       },
       CanvasWide: {
+        tag: "CanvasWide",
         menuOrder: 32.0,
         tags: [
           "Decoration"
@@ -2395,6 +2499,7 @@ var db = {
         enableable: true
       },
       CeilingLight: {
+        tag: "CeilingLight",
         menuOrder: 4.0,
         tags: [
           "LightSource"
@@ -2419,6 +2524,7 @@ var db = {
         enableable: true
       },
       CornerMoulding: {
+        tag: "CornerMoulding",
         menuOrder: 30.0,
         tags: [
           "Decoration"
@@ -2439,6 +2545,7 @@ var db = {
         enableable: true
       },
       CrownMoulding: {
+        tag: "CrownMoulding",
         menuOrder: 29.0,
         tags: [
           "Decoration"
@@ -2458,6 +2565,7 @@ var db = {
         enableable: true
       },
       DiningTable: {
+        tag: "DiningTable",
         menuOrder: 6.0,
         tags: [
           "MessTable"
@@ -2478,6 +2586,7 @@ var db = {
         enableable: true
       },
       EspressoMachine: {
+        tag: "EspressoMachine",
         menuOrder: 10.0,
         tags: [
           "RecBuilding"
@@ -2504,6 +2613,7 @@ var db = {
         enableable: true
       },
       FloorLamp: {
+        tag: "FloorLamp",
         menuOrder: 3.0,
         tags: [
           "LightSource"
@@ -2530,6 +2640,7 @@ var db = {
         enableable: true
       },
       FlowerVase: {
+        tag: "FlowerVase",
         menuOrder: 20.0,
         tags: [
           "Decoration"
@@ -2547,6 +2658,7 @@ var db = {
         enableable: true
       },
       FlowerVaseHanging: {
+        tag: "FlowerVaseHanging",
         menuOrder: 22.0,
         tags: [
           "Decoration"
@@ -2564,6 +2676,7 @@ var db = {
         enableable: true
       },
       FlowerVaseHangingFancy: {
+        tag: "FlowerVaseHangingFancy",
         menuOrder: 23.0,
         tags: [
           "Decoration"
@@ -2583,6 +2696,7 @@ var db = {
         enableable: true
       },
       FlowerVaseWall: {
+        tag: "FlowerVaseWall",
         menuOrder: 21.0,
         tags: [
           "Decoration"
@@ -2601,6 +2715,7 @@ var db = {
         enableable: true
       },
       HotTub: {
+        tag: "HotTub",
         menuOrder: 11.0,
         tags: [
           "RecBuilding"
@@ -2629,6 +2744,7 @@ var db = {
         enableable: true
       },
       IceSculpture: {
+        tag: "IceSculpture",
         menuOrder: 26.0,
         tags: [
           "Decoration"
@@ -2649,6 +2765,7 @@ var db = {
         enableable: true
       },
       ItemPedestal: {
+        tag: "ItemPedestal",
         menuOrder: 34.0,
         tags: [
           "Decoration"
@@ -2668,6 +2785,7 @@ var db = {
         enableable: true
       },
       Juicer: {
+        tag: "Juicer",
         menuOrder: 14.0,
         tags: [
           "RecBuilding"
@@ -2694,6 +2812,7 @@ var db = {
         enableable: true
       },
       LadderBed: {
+        tag: "LadderBed",
         menuOrder: 2.0,
         tags: [
           "BedType"
@@ -2713,6 +2832,7 @@ var db = {
         enableable: true
       },
       LuxuryBed: {
+        tag: "LuxuryBed",
         menuOrder: 1.0,
         tags: [
           "BedType",
@@ -2734,6 +2854,7 @@ var db = {
         enableable: true
       },
       MarbleSculpture: {
+        tag: "MarbleSculpture",
         menuOrder: 27.0,
         tags: [
           "Decoration"
@@ -2754,6 +2875,7 @@ var db = {
         enableable: true
       },
       MechanicalSurfboard: {
+        tag: "MechanicalSurfboard",
         menuOrder: 12.0,
         tags: [
           "RecBuilding"
@@ -2779,6 +2901,7 @@ var db = {
         enableable: true
       },
       MetalSculpture: {
+        tag: "MetalSculpture",
         menuOrder: 28.0,
         tags: [
           "Decoration"
@@ -2799,6 +2922,7 @@ var db = {
         enableable: true
       },
       MonumentBottom: {
+        tag: "MonumentBottom",
         menuOrder: 35.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -2820,6 +2944,7 @@ var db = {
         enableable: true
       },
       MonumentMiddle: {
+        tag: "MonumentMiddle",
         menuOrder: 36.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -2842,6 +2967,7 @@ var db = {
         enableable: true
       },
       MonumentTop: {
+        tag: "MonumentTop",
         menuOrder: 37.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -2864,6 +2990,7 @@ var db = {
         enableable: true
       },
       ParkSign: {
+        tag: "ParkSign",
         menuOrder: 38.0,
         tags: [
           "Park"
@@ -2884,6 +3011,7 @@ var db = {
         enableable: true
       },
       Phonobox: {
+        tag: "Phonobox",
         menuOrder: 8.0,
         tags: [
           "RecBuilding"
@@ -2910,6 +3038,7 @@ var db = {
         enableable: true
       },
       PixelPack: {
+        tag: "PixelPack",
         menuOrder: 18.0,
         tags: [
           "Backwall",
@@ -2935,6 +3064,7 @@ var db = {
         enableable: true
       },
       Sauna: {
+        tag: "Sauna",
         menuOrder: 13.0,
         tags: [
           "RecBuilding"
@@ -2962,6 +3092,7 @@ var db = {
         enableable: true
       },
       Sculpture: {
+        tag: "Sculpture",
         menuOrder: 25.0,
         tags: [
           "Decoration"
@@ -2982,6 +3113,7 @@ var db = {
         enableable: true
       },
       SmallSculpture: {
+        tag: "SmallSculpture",
         menuOrder: 24.0,
         tags: [
           "Decoration"
@@ -3002,6 +3134,7 @@ var db = {
         enableable: true
       },
       SodaFountain: {
+        tag: "SodaFountain",
         menuOrder: 15.0,
         tags: [
           "RecBuilding"
@@ -3028,6 +3161,7 @@ var db = {
         enableable: true
       },
       SunLamp: {
+        tag: "SunLamp",
         menuOrder: 5.0,
         tags: [
           "LightSource"
@@ -3056,6 +3190,7 @@ var db = {
         enableable: true
       },
       Telephone: {
+        tag: "Telephone",
         menuOrder: 19.0,
         tags: [
           "RecBuilding"
@@ -3082,6 +3217,7 @@ var db = {
         enableable: true
       },
       VerticalWindTunnel: {
+        tag: "VerticalWindTunnel",
         menuOrder: 17.0,
         tags: [
           "RecBuilding"
@@ -3108,6 +3244,7 @@ var db = {
         enableable: true
       },
       WaterCooler: {
+        tag: "WaterCooler",
         menuOrder: 7.0,
         tags: [
           "RecBuilding"
@@ -3129,6 +3266,7 @@ var db = {
     },
     RocketModule: {
       ArtifactCargoBay: {
+        tag: "ArtifactCargoBay",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3149,6 +3287,7 @@ var db = {
         enableable: true
       },
       BatteryModule: {
+        tag: "BatteryModule",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3169,6 +3308,7 @@ var db = {
         enableable: true
       },
       CO2Engine: {
+        tag: "CO2Engine",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3189,6 +3329,7 @@ var db = {
         enableable: true
       },
       GasCargoBayCluster: {
+        tag: "GasCargoBayCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3209,6 +3350,7 @@ var db = {
         enableable: true
       },
       GasCargoBaySmall: {
+        tag: "GasCargoBaySmall",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3229,6 +3371,7 @@ var db = {
         enableable: true
       },
       HEPEngine: {
+        tag: "HEPEngine",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3249,6 +3392,7 @@ var db = {
         enableable: true
       },
       HabitatModuleMedium: {
+        tag: "HabitatModuleMedium",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3270,6 +3414,7 @@ var db = {
         enableable: true
       },
       HabitatModuleSmall: {
+        tag: "HabitatModuleSmall",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3292,6 +3437,7 @@ var db = {
         enableable: true
       },
       HydrogenEngineCluster: {
+        tag: "HydrogenEngineCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3313,6 +3459,7 @@ var db = {
         enableable: true
       },
       KeroseneEngineCluster: {
+        tag: "KeroseneEngineCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3334,6 +3481,7 @@ var db = {
         enableable: true
       },
       KeroseneEngineClusterSmall: {
+        tag: "KeroseneEngineClusterSmall",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3355,6 +3503,7 @@ var db = {
         enableable: true
       },
       LiquidCargoBayCluster: {
+        tag: "LiquidCargoBayCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3375,6 +3524,7 @@ var db = {
         enableable: true
       },
       LiquidCargoBaySmall: {
+        tag: "LiquidCargoBaySmall",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3395,6 +3545,7 @@ var db = {
         enableable: true
       },
       LiquidFuelTankCluster: {
+        tag: "LiquidFuelTankCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3415,6 +3566,7 @@ var db = {
         enableable: true
       },
       NoseconeBasic: {
+        tag: "NoseconeBasic",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3437,6 +3589,7 @@ var db = {
         enableable: true
       },
       NoseconeHarvest: {
+        tag: "NoseconeHarvest",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3460,6 +3613,7 @@ var db = {
         workTime: 7.5
       },
       OrbitalCargoModule: {
+        tag: "OrbitalCargoModule",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3481,6 +3635,7 @@ var db = {
         numCapsules: 30.0
       },
       OxidizerTankCluster: {
+        tag: "OxidizerTankCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3501,6 +3656,7 @@ var db = {
         enableable: true
       },
       OxidizerTankLiquidCluster: {
+        tag: "OxidizerTankLiquidCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3521,6 +3677,7 @@ var db = {
         enableable: true
       },
       PioneerModule: {
+        tag: "PioneerModule",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3541,6 +3698,7 @@ var db = {
         enableable: true
       },
       ScannerModule: {
+        tag: "ScannerModule",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3563,6 +3721,7 @@ var db = {
         rangeMax: 0.0
       },
       ScoutModule: {
+        tag: "ScoutModule",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3583,6 +3742,7 @@ var db = {
         enableable: true
       },
       SmallOxidizerTank: {
+        tag: "SmallOxidizerTank",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3603,6 +3763,7 @@ var db = {
         enableable: true
       },
       SolarPanelModule: {
+        tag: "SolarPanelModule",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3624,6 +3785,7 @@ var db = {
         enableable: true
       },
       CargoBayCluster: {
+        tag: "CargoBayCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3644,6 +3806,7 @@ var db = {
         enableable: true
       },
       SolidCargoBaySmall: {
+        tag: "SolidCargoBaySmall",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3664,6 +3827,7 @@ var db = {
         enableable: true
       },
       SpecialCargoBayCluster: {
+        tag: "SpecialCargoBayCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3684,6 +3848,7 @@ var db = {
         enableable: true
       },
       SteamEngineCluster: {
+        tag: "SteamEngineCluster",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3705,6 +3870,7 @@ var db = {
         enableable: true
       },
       SugarEngine: {
+        tag: "SugarEngine",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -3728,6 +3894,7 @@ var db = {
     },
     conveyance: {
       AutoMiner: {
+        tag: "AutoMiner",
         menuOrder: 12.0,
         tags: [
           "IndustrialMachinery"
@@ -3754,6 +3921,7 @@ var db = {
         enableable: true
       },
       ModularLaunchpadPortSolid: {
+        tag: "ModularLaunchpadPortSolid",
         menuOrder: 13.0,
         tags: [
           "IndustrialMachinery",
@@ -3787,6 +3955,7 @@ var db = {
         mode: "Load"
       },
       ModularLaunchpadPortSolidUnloader: {
+        tag: "ModularLaunchpadPortSolidUnloader",
         menuOrder: 14.0,
         tags: [
           "IndustrialMachinery",
@@ -3820,6 +3989,7 @@ var db = {
         mode: "Unload"
       },
       SolidConduitBridge: {
+        tag: "SolidConduitBridge",
         menuOrder: 2.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3835,6 +4005,7 @@ var db = {
         deconstructable: true
       },
       SolidConduit: {
+        tag: "SolidConduit",
         menuOrder: 1.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3849,6 +4020,7 @@ var db = {
         deconstructable: true
       },
       SolidConduitInbox: {
+        tag: "SolidConduitInbox",
         menuOrder: 3.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3873,6 +4045,7 @@ var db = {
         enableable: true
       },
       SolidConduitOutbox: {
+        tag: "SolidConduitOutbox",
         menuOrder: 4.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3890,6 +4063,7 @@ var db = {
         deconstructable: true
       },
       SolidConduitDiseaseSensor: {
+        tag: "SolidConduitDiseaseSensor",
         menuOrder: 9.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3907,6 +4081,7 @@ var db = {
         deconstructable: true
       },
       SolidConduitElementSensor: {
+        tag: "SolidConduitElementSensor",
         menuOrder: 10.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3923,6 +4098,7 @@ var db = {
         deconstructable: true
       },
       SolidConduitTemperatureSensor: {
+        tag: "SolidConduitTemperatureSensor",
         menuOrder: 11.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3939,6 +4115,7 @@ var db = {
         deconstructable: true
       },
       SolidFilter: {
+        tag: "SolidFilter",
         menuOrder: 5.0,
         tags: [
           "IndustrialMachinery"
@@ -3964,6 +4141,7 @@ var db = {
         enableable: true
       },
       SolidLimitValve: {
+        tag: "SolidLimitValve",
         menuOrder: 8.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -3985,6 +4163,7 @@ var db = {
         deconstructable: true
       },
       SolidLogicValve: {
+        tag: "SolidLogicValve",
         menuOrder: 7.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4006,6 +4185,7 @@ var db = {
         enableable: true
       },
       SolidTransferArm: {
+        tag: "SolidTransferArm",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4030,6 +4210,7 @@ var db = {
         enableable: true
       },
       SolidVent: {
+        tag: "SolidVent",
         menuOrder: 6.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4049,6 +4230,7 @@ var db = {
     },
     power: {
       Battery: {
+        tag: "Battery",
         menuOrder: 16.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4071,6 +4253,7 @@ var db = {
         enableable: true
       },
       BatteryMedium: {
+        tag: "BatteryMedium",
         menuOrder: 17.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4093,6 +4276,7 @@ var db = {
         enableable: true
       },
       BatterySmart: {
+        tag: "BatterySmart",
         menuOrder: 18.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4114,6 +4298,7 @@ var db = {
         enableable: true
       },
       Generator: {
+        tag: "Generator",
         menuOrder: 1.0,
         tags: [
           "IndustrialMachinery"
@@ -4139,6 +4324,7 @@ var db = {
         enableable: true
       },
       HydrogenGenerator: {
+        tag: "HydrogenGenerator",
         menuOrder: 3.0,
         tags: [
           "IndustrialMachinery"
@@ -4164,6 +4350,7 @@ var db = {
         enableable: true
       },
       LogicPowerRelay: {
+        tag: "LogicPowerRelay",
         menuOrder: 22.0,
         tags: [
           "OverlayFrontLayer"
@@ -4180,6 +4367,7 @@ var db = {
         deconstructable: true
       },
       ManualGenerator: {
+        tag: "ManualGenerator",
         menuOrder: 0.0,
         tags: [
           "IndustrialMachinery"
@@ -4202,6 +4390,7 @@ var db = {
         enableable: true
       },
       MethaneGenerator: {
+        tag: "MethaneGenerator",
         menuOrder: 4.0,
         tags: [
           "IndustrialMachinery"
@@ -4227,6 +4416,7 @@ var db = {
         enableable: true
       },
       PetroleumGenerator: {
+        tag: "PetroleumGenerator",
         menuOrder: 5.0,
         tags: [
           "IndustrialMachinery"
@@ -4252,6 +4442,7 @@ var db = {
         enableable: true
       },
       PowerTransformer: {
+        tag: "PowerTransformer",
         menuOrder: 20.0,
         tags: [
           "IndustrialMachinery"
@@ -4277,6 +4468,7 @@ var db = {
         enableable: true
       },
       PowerTransformerSmall: {
+        tag: "PowerTransformerSmall",
         menuOrder: 19.0,
         tags: [
           "IndustrialMachinery"
@@ -4302,6 +4494,7 @@ var db = {
         enableable: true
       },
       SolarPanel: {
+        tag: "SolarPanel",
         menuOrder: 7.0,
         tags: [
           "IndustrialMachinery"
@@ -4325,6 +4518,7 @@ var db = {
         enableable: true
       },
       SteamTurbine2: {
+        tag: "SteamTurbine2",
         menuOrder: 6.0,
         tags: [
           "IndustrialMachinery"
@@ -4349,6 +4543,7 @@ var db = {
         enableable: true
       },
       Switch: {
+        tag: "Switch",
         menuOrder: 21.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4363,6 +4558,7 @@ var db = {
         deconstructable: true
       },
       WireBridge: {
+        tag: "WireBridge",
         menuOrder: 9.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4380,6 +4576,7 @@ var db = {
         deconstructable: true
       },
       WireBridgeHighWattage: {
+        tag: "WireBridgeHighWattage",
         menuOrder: 11.0,
         tags: [
           "WireBridges"
@@ -4399,6 +4596,7 @@ var db = {
         deconstructable: true
       },
       Wire: {
+        tag: "Wire",
         menuOrder: 8.0,
         tags: [],
         thermalConductivity: 0.05,
@@ -4415,6 +4613,7 @@ var db = {
         deconstructable: true
       },
       HighWattageWire: {
+        tag: "HighWattageWire",
         menuOrder: 10.0,
         tags: [],
         thermalConductivity: 0.05,
@@ -4431,6 +4630,7 @@ var db = {
         deconstructable: true
       },
       WireRefinedBridge: {
+        tag: "WireRefinedBridge",
         menuOrder: 13.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4448,6 +4648,7 @@ var db = {
         deconstructable: true
       },
       WireRefinedBridgeHighWattage: {
+        tag: "WireRefinedBridgeHighWattage",
         menuOrder: 15.0,
         tags: [
           "WireBridges"
@@ -4467,6 +4668,7 @@ var db = {
         deconstructable: true
       },
       WireRefined: {
+        tag: "WireRefined",
         menuOrder: 12.0,
         tags: [],
         thermalConductivity: 0.05,
@@ -4481,6 +4683,7 @@ var db = {
         deconstructable: true
       },
       WireRefinedHighWattage: {
+        tag: "WireRefinedHighWattage",
         menuOrder: 14.0,
         tags: [],
         thermalConductivity: 0.05,
@@ -4497,6 +4700,7 @@ var db = {
         deconstructable: true
       },
       WoodGasGenerator: {
+        tag: "WoodGasGenerator",
         menuOrder: 2.0,
         tags: [
           "IndustrialMachinery"
@@ -4524,6 +4728,7 @@ var db = {
     },
     plumbing: {
       BottleEmptier: {
+        tag: "BottleEmptier",
         menuOrder: 5.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4542,6 +4747,7 @@ var db = {
         enableable: true
       },
       LiquidConduitDiseaseSensor: {
+        tag: "LiquidConduitDiseaseSensor",
         menuOrder: 18.0,
         tags: [
           "OverlayFrontLayer"
@@ -4561,6 +4767,7 @@ var db = {
         deconstructable: true
       },
       LiquidConduitElementSensor: {
+        tag: "LiquidConduitElementSensor",
         menuOrder: 17.0,
         tags: [
           "OverlayFrontLayer"
@@ -4579,6 +4786,7 @@ var db = {
         deconstructable: true
       },
       LiquidConduitTemperatureSensor: {
+        tag: "LiquidConduitTemperatureSensor",
         menuOrder: 19.0,
         tags: [
           "OverlayFrontLayer"
@@ -4597,6 +4805,7 @@ var db = {
         deconstructable: true
       },
       ContactConductivePipeBridge: {
+        tag: "ContactConductivePipeBridge",
         menuOrder: 22.0,
         tags: [],
         thermalConductivity: 2.0,
@@ -4613,6 +4822,7 @@ var db = {
         enableable: true
       },
       FlushToilet: {
+        tag: "FlushToilet",
         menuOrder: 1.0,
         tags: [
           "ToiletType",
@@ -4636,6 +4846,7 @@ var db = {
         enableable: true
       },
       InsulatedLiquidConduit: {
+        tag: "InsulatedLiquidConduit",
         menuOrder: 7.0,
         tags: [
           "Pipes"
@@ -4654,6 +4865,7 @@ var db = {
         deconstructable: true
       },
       LiquidConduitBridge: {
+        tag: "LiquidConduitBridge",
         menuOrder: 9.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -4669,6 +4881,7 @@ var db = {
         deconstructable: true
       },
       LiquidConduit: {
+        tag: "LiquidConduit",
         menuOrder: 6.0,
         tags: [
           "Pipes"
@@ -4685,6 +4898,7 @@ var db = {
         deconstructable: true
       },
       LiquidConduitRadiant: {
+        tag: "LiquidConduitRadiant",
         menuOrder: 8.0,
         tags: [
           "Pipes"
@@ -4703,6 +4917,7 @@ var db = {
         deconstructable: true
       },
       LiquidFilter: {
+        tag: "LiquidFilter",
         menuOrder: 13.0,
         tags: [
           "IndustrialMachinery",
@@ -4730,6 +4945,7 @@ var db = {
         enableable: true
       },
       LiquidLimitValve: {
+        tag: "LiquidLimitValve",
         menuOrder: 16.0,
         tags: [
           "OverlayFrontLayer"
@@ -4755,6 +4971,7 @@ var db = {
         deconstructable: true
       },
       LiquidLogicValve: {
+        tag: "LiquidLogicValve",
         menuOrder: 15.0,
         tags: [
           "OverlayFrontLayer"
@@ -4779,6 +4996,7 @@ var db = {
         deconstructable: true
       },
       LiquidMiniPump: {
+        tag: "LiquidMiniPump",
         menuOrder: 11.0,
         tags: [
           "IndustrialMachinery",
@@ -4807,6 +5025,7 @@ var db = {
         enableable: true
       },
       LiquidPump: {
+        tag: "LiquidPump",
         menuOrder: 10.0,
         tags: [
           "IndustrialMachinery",
@@ -4834,6 +5053,7 @@ var db = {
         enableable: true
       },
       LiquidPumpingStation: {
+        tag: "LiquidPumpingStation",
         menuOrder: 4.0,
         tags: [
           "CorrosionProof"
@@ -4853,6 +5073,7 @@ var db = {
         enableable: true
       },
       LiquidValve: {
+        tag: "LiquidValve",
         menuOrder: 14.0,
         tags: [
           "OverlayFrontLayer"
@@ -4874,6 +5095,7 @@ var db = {
         deconstructable: true
       },
       LiquidVent: {
+        tag: "LiquidVent",
         menuOrder: 12.0,
         tags: [
           "OverlayFrontLayer"
@@ -4893,6 +5115,7 @@ var db = {
         enableable: true
       },
       ModularLaunchpadPortLiquid: {
+        tag: "ModularLaunchpadPortLiquid",
         menuOrder: 20.0,
         tags: [
           "IndustrialMachinery",
@@ -4926,6 +5149,7 @@ var db = {
         mode: "Load"
       },
       ModularLaunchpadPortLiquidUnloader: {
+        tag: "ModularLaunchpadPortLiquidUnloader",
         menuOrder: 21.0,
         tags: [
           "IndustrialMachinery",
@@ -4959,6 +5183,7 @@ var db = {
         mode: "Unload"
       },
       Outhouse: {
+        tag: "Outhouse",
         menuOrder: 0.0,
         tags: [
           "ToiletType"
@@ -4980,6 +5205,7 @@ var db = {
         enableable: true
       },
       Shower: {
+        tag: "Shower",
         menuOrder: 3.0,
         tags: [
           "WashStation",
@@ -5002,6 +5228,7 @@ var db = {
         enableable: true
       },
       WallToilet: {
+        tag: "WallToilet",
         menuOrder: 2.0,
         tags: [
           "ToiletType",
@@ -5027,6 +5254,7 @@ var db = {
     },
     hvac: {
       BottleEmptierGas: {
+        tag: "BottleEmptierGas",
         menuOrder: 13.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5045,6 +5273,7 @@ var db = {
         enableable: true
       },
       GasConduitDiseaseSensor: {
+        tag: "GasConduitDiseaseSensor",
         menuOrder: 17.0,
         tags: [
           "OverlayFrontLayer"
@@ -5064,6 +5293,7 @@ var db = {
         deconstructable: true
       },
       GasConduitElementSensor: {
+        tag: "GasConduitElementSensor",
         menuOrder: 16.0,
         tags: [
           "OverlayFrontLayer"
@@ -5082,6 +5312,7 @@ var db = {
         deconstructable: true
       },
       GasConduitTemperatureSensor: {
+        tag: "GasConduitTemperatureSensor",
         menuOrder: 18.0,
         tags: [
           "OverlayFrontLayer"
@@ -5100,6 +5331,7 @@ var db = {
         deconstructable: true
       },
       GasBottler: {
+        tag: "GasBottler",
         menuOrder: 12.0,
         tags: [
           "OverlayBackLayer"
@@ -5121,6 +5353,7 @@ var db = {
         enableable: true
       },
       GasConduitBridge: {
+        tag: "GasConduitBridge",
         menuOrder: 3.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5136,6 +5369,7 @@ var db = {
         deconstructable: true
       },
       GasConduit: {
+        tag: "GasConduit",
         menuOrder: 0.0,
         tags: [
           "Vents"
@@ -5152,6 +5386,7 @@ var db = {
         deconstructable: true
       },
       GasConduitRadiant: {
+        tag: "GasConduitRadiant",
         menuOrder: 2.0,
         tags: [
           "Vents"
@@ -5170,6 +5405,7 @@ var db = {
         deconstructable: true
       },
       GasFilter: {
+        tag: "GasFilter",
         menuOrder: 8.0,
         tags: [
           "IndustrialMachinery",
@@ -5196,6 +5432,7 @@ var db = {
         enableable: true
       },
       GasLimitValve: {
+        tag: "GasLimitValve",
         menuOrder: 11.0,
         tags: [
           "OverlayFrontLayer"
@@ -5221,6 +5458,7 @@ var db = {
         deconstructable: true
       },
       GasLogicValve: {
+        tag: "GasLogicValve",
         menuOrder: 10.0,
         tags: [
           "OverlayFrontLayer"
@@ -5245,6 +5483,7 @@ var db = {
         deconstructable: true
       },
       GasMiniPump: {
+        tag: "GasMiniPump",
         menuOrder: 5.0,
         tags: [
           "IndustrialMachinery",
@@ -5272,6 +5511,7 @@ var db = {
         enableable: true
       },
       GasPump: {
+        tag: "GasPump",
         menuOrder: 4.0,
         tags: [
           "IndustrialMachinery",
@@ -5298,6 +5538,7 @@ var db = {
         enableable: true
       },
       GasValve: {
+        tag: "GasValve",
         menuOrder: 9.0,
         tags: [
           "OverlayFrontLayer"
@@ -5319,6 +5560,7 @@ var db = {
         deconstructable: true
       },
       GasVent: {
+        tag: "GasVent",
         menuOrder: 6.0,
         tags: [
           "OverlayFrontLayer"
@@ -5338,6 +5580,7 @@ var db = {
         enableable: true
       },
       GasVentHighPressure: {
+        tag: "GasVentHighPressure",
         menuOrder: 7.0,
         tags: [
           "IndustrialMachinery",
@@ -5359,6 +5602,7 @@ var db = {
         enableable: true
       },
       InsulatedGasConduit: {
+        tag: "InsulatedGasConduit",
         menuOrder: 1.0,
         tags: [
           "Vents"
@@ -5377,6 +5621,7 @@ var db = {
         deconstructable: true
       },
       ModularLaunchpadPortGas: {
+        tag: "ModularLaunchpadPortGas",
         menuOrder: 14.0,
         tags: [
           "IndustrialMachinery",
@@ -5410,6 +5655,7 @@ var db = {
         mode: "Load"
       },
       ModularLaunchpadPortGasUnloader: {
+        tag: "ModularLaunchpadPortGasUnloader",
         menuOrder: 15.0,
         tags: [
           "IndustrialMachinery",
@@ -5445,6 +5691,7 @@ var db = {
     },
     base: {
       BunkerDoor: {
+        tag: "BunkerDoor",
         menuOrder: 18.0,
         tags: [
           "Bunker"
@@ -5468,6 +5715,7 @@ var db = {
         deconstructable: true
       },
       BunkerTile: {
+        tag: "BunkerTile",
         menuOrder: 11.0,
         tags: [
           "Bunker",
@@ -5487,6 +5735,7 @@ var db = {
         deconstructable: true
       },
       CarpetTile: {
+        tag: "CarpetTile",
         menuOrder: 12.0,
         tags: [
           "FloorTiles",
@@ -5507,6 +5756,7 @@ var db = {
         deconstructable: true
       },
       Door: {
+        tag: "Door",
         menuOrder: 15.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5524,6 +5774,7 @@ var db = {
         deconstructable: true
       },
       ExobaseHeadquarters: {
+        tag: "ExobaseHeadquarters",
         menuOrder: 14.0,
         tags: [
           "Telepad",
@@ -5545,6 +5796,7 @@ var db = {
         enableable: true
       },
       ExteriorWall: {
+        tag: "ExteriorWall",
         menuOrder: 13.0,
         tags: [
           "Backwall"
@@ -5564,6 +5816,7 @@ var db = {
         deconstructable: true
       },
       FirePole: {
+        tag: "FirePole",
         menuOrder: 1.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5580,6 +5833,7 @@ var db = {
         deconstructable: true
       },
       GasPermeableMembrane: {
+        tag: "GasPermeableMembrane",
         menuOrder: 4.0,
         tags: [
           "FloorTiles"
@@ -5598,6 +5852,7 @@ var db = {
         deconstructable: true
       },
       GasReservoir: {
+        tag: "GasReservoir",
         menuOrder: 22.0,
         tags: [
           "OverlayBackLayer"
@@ -5619,6 +5874,7 @@ var db = {
         enableable: true
       },
       GlassTile: {
+        tag: "GlassTile",
         menuOrder: 9.0,
         tags: [
           "Window",
@@ -5639,6 +5895,7 @@ var db = {
         deconstructable: true
       },
       InsulationTile: {
+        tag: "InsulationTile",
         menuOrder: 6.0,
         tags: [
           "FloorTiles"
@@ -5657,6 +5914,7 @@ var db = {
         deconstructable: true
       },
       Ladder: {
+        tag: "Ladder",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5673,6 +5931,7 @@ var db = {
         deconstructable: true
       },
       LadderFast: {
+        tag: "LadderFast",
         menuOrder: 2.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5689,6 +5948,7 @@ var db = {
         deconstructable: true
       },
       LiquidReservoir: {
+        tag: "LiquidReservoir",
         menuOrder: 21.0,
         tags: [
           "OverlayBackLayer"
@@ -5710,6 +5970,7 @@ var db = {
         enableable: true
       },
       ManualPressureDoor: {
+        tag: "ManualPressureDoor",
         menuOrder: 16.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5727,6 +5988,7 @@ var db = {
         deconstructable: true
       },
       MeshTile: {
+        tag: "MeshTile",
         menuOrder: 5.0,
         tags: [
           "FloorTiles"
@@ -5745,6 +6007,7 @@ var db = {
         deconstructable: true
       },
       MetalTile: {
+        tag: "MetalTile",
         menuOrder: 8.0,
         tags: [
           "FloorTiles"
@@ -5763,6 +6026,7 @@ var db = {
         deconstructable: true
       },
       ObjectDispenser: {
+        tag: "ObjectDispenser",
         menuOrder: 23.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5785,6 +6049,7 @@ var db = {
         enableable: true
       },
       PlasticTile: {
+        tag: "PlasticTile",
         menuOrder: 7.0,
         tags: [
           "FloorTiles"
@@ -5803,6 +6068,7 @@ var db = {
         deconstructable: true
       },
       PressureDoor: {
+        tag: "PressureDoor",
         menuOrder: 17.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5823,6 +6089,7 @@ var db = {
         deconstructable: true
       },
       StorageLocker: {
+        tag: "StorageLocker",
         menuOrder: 19.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5840,6 +6107,7 @@ var db = {
         enableable: true
       },
       StorageLockerSmart: {
+        tag: "StorageLockerSmart",
         menuOrder: 20.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5861,6 +6129,7 @@ var db = {
         enableable: true
       },
       StorageTile: {
+        tag: "StorageTile",
         menuOrder: 10.0,
         tags: [
           "FloorTiles"
@@ -5887,6 +6156,7 @@ var db = {
         ]
       },
       Tile: {
+        tag: "Tile",
         menuOrder: 3.0,
         tags: [
           "FloorTiles"
@@ -5905,6 +6175,7 @@ var db = {
         deconstructable: true
       },
       TravelTube: {
+        tag: "TravelTube",
         menuOrder: 24.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5921,6 +6192,7 @@ var db = {
         deconstructable: true
       },
       TravelTubeEntrance: {
+        tag: "TravelTubeEntrance",
         menuOrder: 25.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5942,6 +6214,7 @@ var db = {
         enableable: true
       },
       TravelTubeWallBridge: {
+        tag: "TravelTubeWallBridge",
         menuOrder: 26.0,
         tags: [
           "TravelTubeBridges"
@@ -5961,6 +6234,7 @@ var db = {
     },
     automation: {
       Checkpoint: {
+        tag: "Checkpoint",
         menuOrder: 27.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -5985,6 +6259,7 @@ var db = {
         enableable: true
       },
       CometDetector: {
+        tag: "CometDetector",
         menuOrder: 28.0,
         tags: [
           "IndustrialMachinery",
@@ -6009,6 +6284,7 @@ var db = {
         enableable: true
       },
       FloorSwitch: {
+        tag: "FloorSwitch",
         menuOrder: 26.0,
         tags: [
           "OverlayFrontLayer"
@@ -6027,6 +6303,7 @@ var db = {
         deconstructable: true
       },
       LogicAlarm: {
+        tag: "LogicAlarm",
         menuOrder: 20.0,
         tags: [
           "OverlayFrontLayer"
@@ -6045,6 +6322,7 @@ var db = {
         deconstructable: true
       },
       LogicCounter: {
+        tag: "LogicCounter",
         menuOrder: 19.0,
         tags: [
           "OverlayFrontLayer"
@@ -6064,6 +6342,7 @@ var db = {
         deconstructable: true
       },
       LogicCritterCountSensor: {
+        tag: "LogicCritterCountSensor",
         menuOrder: 16.0,
         tags: [
           "OverlayFrontLayer"
@@ -6082,6 +6361,7 @@ var db = {
         deconstructable: true
       },
       LogicDiseaseSensor: {
+        tag: "LogicDiseaseSensor",
         menuOrder: 13.0,
         tags: [
           "OverlayFrontLayer"
@@ -6101,6 +6381,7 @@ var db = {
         deconstructable: true
       },
       LogicDuplicantSensor: {
+        tag: "LogicDuplicantSensor",
         menuOrder: 5.0,
         tags: [
           "OverlayFrontLayer"
@@ -6120,6 +6401,7 @@ var db = {
         deconstructable: true
       },
       LogicElementSensorGas: {
+        tag: "LogicElementSensorGas",
         menuOrder: 14.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6138,6 +6420,7 @@ var db = {
         enableable: true
       },
       LogicElementSensorLiquid: {
+        tag: "LogicElementSensorLiquid",
         menuOrder: 15.0,
         tags: [
           "OverlayFrontLayer"
@@ -6157,6 +6440,7 @@ var db = {
         enableable: true
       },
       LogicGateAND: {
+        tag: "LogicGateAND",
         menuOrder: 30.0,
         tags: [
           "OverlayBackLayer"
@@ -6176,6 +6460,7 @@ var db = {
         deconstructable: true
       },
       LogicGateOR: {
+        tag: "LogicGateOR",
         menuOrder: 31.0,
         tags: [
           "OverlayBackLayer"
@@ -6195,6 +6480,7 @@ var db = {
         deconstructable: true
       },
       LogicGateXOR: {
+        tag: "LogicGateXOR",
         menuOrder: 34.0,
         tags: [
           "OverlayBackLayer"
@@ -6214,6 +6500,7 @@ var db = {
         deconstructable: true
       },
       LogicGateNOT: {
+        tag: "LogicGateNOT",
         menuOrder: 29.0,
         tags: [
           "OverlayBackLayer"
@@ -6233,6 +6520,7 @@ var db = {
         deconstructable: true
       },
       LogicGateBUFFER: {
+        tag: "LogicGateBUFFER",
         menuOrder: 32.0,
         tags: [
           "OverlayBackLayer"
@@ -6252,6 +6540,7 @@ var db = {
         deconstructable: true
       },
       LogicGateFILTER: {
+        tag: "LogicGateFILTER",
         menuOrder: 33.0,
         tags: [
           "OverlayBackLayer"
@@ -6271,6 +6560,7 @@ var db = {
         deconstructable: true
       },
       LogicGateMultiplexer: {
+        tag: "LogicGateMultiplexer",
         menuOrder: 36.0,
         tags: [
           "OverlayBackLayer"
@@ -6290,6 +6580,7 @@ var db = {
         deconstructable: true
       },
       LogicGateDemultiplexer: {
+        tag: "LogicGateDemultiplexer",
         menuOrder: 37.0,
         tags: [
           "OverlayBackLayer"
@@ -6309,6 +6600,7 @@ var db = {
         deconstructable: true
       },
       LogicHEPSensor: {
+        tag: "LogicHEPSensor",
         menuOrder: 18.0,
         tags: [
           "OverlayFrontLayer"
@@ -6327,6 +6619,7 @@ var db = {
         deconstructable: true
       },
       LogicHammer: {
+        tag: "LogicHammer",
         menuOrder: 21.0,
         tags: [
           "OverlayFrontLayer"
@@ -6350,6 +6643,7 @@ var db = {
         enableable: true
       },
       LogicInterasteroidReceiver: {
+        tag: "LogicInterasteroidReceiver",
         menuOrder: 23.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6367,6 +6661,7 @@ var db = {
         enableable: true
       },
       LogicInterasteroidSender: {
+        tag: "LogicInterasteroidSender",
         menuOrder: 22.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6384,6 +6679,7 @@ var db = {
         enableable: true
       },
       LogicLightSensor: {
+        tag: "LogicLightSensor",
         menuOrder: 9.0,
         tags: [
           "OverlayFrontLayer"
@@ -6403,6 +6699,7 @@ var db = {
         deconstructable: true
       },
       LogicMemory: {
+        tag: "LogicMemory",
         menuOrder: 35.0,
         tags: [
           "OverlayBackLayer"
@@ -6420,6 +6717,7 @@ var db = {
         deconstructable: true
       },
       LogicPressureSensorGas: {
+        tag: "LogicPressureSensorGas",
         menuOrder: 6.0,
         tags: [
           "OverlayFrontLayer"
@@ -6438,6 +6736,7 @@ var db = {
         deconstructable: true
       },
       LogicPressureSensorLiquid: {
+        tag: "LogicPressureSensorLiquid",
         menuOrder: 7.0,
         tags: [
           "OverlayFrontLayer"
@@ -6456,6 +6755,7 @@ var db = {
         deconstructable: true
       },
       LogicRadiationSensor: {
+        tag: "LogicRadiationSensor",
         menuOrder: 17.0,
         tags: [
           "OverlayFrontLayer"
@@ -6474,6 +6774,7 @@ var db = {
         deconstructable: true
       },
       LogicRibbonBridge: {
+        tag: "LogicRibbonBridge",
         menuOrder: 3.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6491,6 +6792,7 @@ var db = {
         deconstructable: true
       },
       LogicRibbon: {
+        tag: "LogicRibbon",
         menuOrder: 2.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6507,6 +6809,7 @@ var db = {
         deconstructable: true
       },
       LogicRibbonReader: {
+        tag: "LogicRibbonReader",
         menuOrder: 24.0,
         tags: [
           "OverlayFrontLayer"
@@ -6526,6 +6829,7 @@ var db = {
         deconstructable: true
       },
       LogicRibbonWriter: {
+        tag: "LogicRibbonWriter",
         menuOrder: 25.0,
         tags: [
           "OverlayFrontLayer"
@@ -6545,6 +6849,7 @@ var db = {
         deconstructable: true
       },
       LogicSwitch: {
+        tag: "LogicSwitch",
         menuOrder: 4.0,
         tags: [
           "OverlayFrontLayer"
@@ -6561,6 +6866,7 @@ var db = {
         deconstructable: true
       },
       LogicTemperatureSensor: {
+        tag: "LogicTemperatureSensor",
         menuOrder: 8.0,
         tags: [
           "OverlayFrontLayer"
@@ -6579,6 +6885,7 @@ var db = {
         deconstructable: true
       },
       LogicTimeOfDaySensor: {
+        tag: "LogicTimeOfDaySensor",
         menuOrder: 11.0,
         tags: [
           "OverlayFrontLayer"
@@ -6597,6 +6904,7 @@ var db = {
         deconstructable: true
       },
       LogicTimerSensor: {
+        tag: "LogicTimerSensor",
         menuOrder: 12.0,
         tags: [
           "OverlayFrontLayer"
@@ -6615,6 +6923,7 @@ var db = {
         deconstructable: true
       },
       LogicWattageSensor: {
+        tag: "LogicWattageSensor",
         menuOrder: 10.0,
         tags: [
           "OverlayFrontLayer"
@@ -6633,6 +6942,7 @@ var db = {
         deconstructable: true
       },
       LogicWireBridge: {
+        tag: "LogicWireBridge",
         menuOrder: 1.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6650,6 +6960,7 @@ var db = {
         deconstructable: true
       },
       LogicWire: {
+        tag: "LogicWire",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6668,6 +6979,7 @@ var db = {
     },
     rocketry: {
       ClusterTelescope: {
+        tag: "ClusterTelescope",
         menuOrder: 0.0,
         tags: [
           "ScienceBuilding"
@@ -6694,6 +7006,7 @@ var db = {
         rangeMax: 3.0
       },
       ClusterTelescopeEnclosed: {
+        tag: "ClusterTelescopeEnclosed",
         menuOrder: 1.0,
         tags: [
           "ScienceBuilding"
@@ -6720,6 +7033,7 @@ var db = {
         rangeMax: 4.0
       },
       Gantry: {
+        tag: "Gantry",
         menuOrder: 4.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6744,6 +7058,7 @@ var db = {
         enableable: true
       },
       LandingBeacon: {
+        tag: "LandingBeacon",
         menuOrder: 16.0,
         tags: [
           "IndustrialMachinery"
@@ -6768,6 +7083,7 @@ var db = {
         enableable: true
       },
       LaunchPad: {
+        tag: "LaunchPad",
         menuOrder: 3.0,
         tags: [
           "IndustrialMachinery",
@@ -6793,6 +7109,7 @@ var db = {
         ]
       },
       LogicClusterLocationSensor: {
+        tag: "LogicClusterLocationSensor",
         menuOrder: 13.0,
         tags: [
           "RocketInteriorBuilding",
@@ -6813,6 +7130,7 @@ var db = {
         deconstructable: true
       },
       MissileLauncher: {
+        tag: "MissileLauncher",
         menuOrder: 17.0,
         tags: [
           "IndustrialMachinery"
@@ -6841,6 +7159,7 @@ var db = {
         maxAngle: 80.0
       },
       MissionControlCluster: {
+        tag: "MissionControlCluster",
         menuOrder: 2.0,
         tags: [
           "ScienceBuilding"
@@ -6870,6 +7189,7 @@ var db = {
         scanRight: 1.0
       },
       ModularLaunchpadPortBridge: {
+        tag: "ModularLaunchpadPortBridge",
         menuOrder: 18.0,
         tags: [
           "ModularConduitPort",
@@ -6896,6 +7216,7 @@ var db = {
         ]
       },
       RailGun: {
+        tag: "RailGun",
         menuOrder: 14.0,
         tags: [
           "IndustrialMachinery"
@@ -6918,6 +7239,7 @@ var db = {
         enableable: true
       },
       RailGunPayloadOpener: {
+        tag: "RailGunPayloadOpener",
         menuOrder: 15.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -6937,6 +7259,7 @@ var db = {
         enableable: true
       },
       RocketControlStation: {
+        tag: "RocketControlStation",
         menuOrder: 5.0,
         tags: [
           "RocketInteriorBuilding",
@@ -6959,6 +7282,7 @@ var db = {
         enableable: true
       },
       RocketInteriorGasInput: {
+        tag: "RocketInteriorGasInput",
         menuOrder: 9.0,
         tags: [
           "RocketInteriorBuilding"
@@ -6980,6 +7304,7 @@ var db = {
         enableable: true
       },
       RocketInteriorGasOutput: {
+        tag: "RocketInteriorGasOutput",
         menuOrder: 10.0,
         tags: [
           "RocketInteriorBuilding"
@@ -7005,6 +7330,7 @@ var db = {
         enableable: true
       },
       RocketInteriorLiquidInput: {
+        tag: "RocketInteriorLiquidInput",
         menuOrder: 7.0,
         tags: [
           "RocketInteriorBuilding"
@@ -7026,6 +7352,7 @@ var db = {
         enableable: true
       },
       RocketInteriorLiquidOutput: {
+        tag: "RocketInteriorLiquidOutput",
         menuOrder: 8.0,
         tags: [
           "RocketInteriorBuilding"
@@ -7051,6 +7378,7 @@ var db = {
         enableable: true
       },
       RocketInteriorPowerPlug: {
+        tag: "RocketInteriorPowerPlug",
         menuOrder: 6.0,
         tags: [
           "RocketInteriorBuilding"
@@ -7072,6 +7400,7 @@ var db = {
         enableable: true
       },
       RocketInteriorSolidInput: {
+        tag: "RocketInteriorSolidInput",
         menuOrder: 11.0,
         tags: [
           "RocketInteriorBuilding"
@@ -7093,6 +7422,7 @@ var db = {
         enableable: true
       },
       RocketInteriorSolidOutput: {
+        tag: "RocketInteriorSolidOutput",
         menuOrder: 12.0,
         tags: [
           "RocketInteriorBuilding"
@@ -7120,6 +7450,7 @@ var db = {
     },
     Gravitas: {
       FacilityBackWallWindow: {
+        tag: "FacilityBackWallWindow",
         menuOrder: 177013.0,
         tags: [
           "BuildableAny",
@@ -7145,6 +7476,7 @@ var db = {
         enableable: true
       },
       FossilDig: {
+        tag: "FossilDig",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7167,6 +7499,7 @@ var db = {
         deconstructable: false
       },
       GravitasContainer: {
+        tag: "GravitasContainer",
         menuOrder: 177013.0,
         tags: [
           "Gravitas"
@@ -7186,6 +7519,7 @@ var db = {
         enableable: true
       },
       GravitasCreatureManipulator: {
+        tag: "GravitasCreatureManipulator",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -7211,6 +7545,7 @@ var db = {
         enableable: true
       },
       GravitasDoor: {
+        tag: "GravitasDoor",
         menuOrder: 177013.0,
         tags: [
           "Gravitas"
@@ -7230,6 +7565,7 @@ var db = {
         deconstructable: true
       },
       GravitasLabLight: {
+        tag: "GravitasLabLight",
         menuOrder: 177013.0,
         tags: [
           "Gravitas"
@@ -7249,6 +7585,7 @@ var db = {
         enableable: true
       },
       MassiveHeatSink: {
+        tag: "MassiveHeatSink",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -7277,6 +7614,7 @@ var db = {
         enableable: true
       },
       MegaBrainTank: {
+        tag: "MegaBrainTank",
         menuOrder: 177013.0,
         tags: [
           "IndustrialMachinery",
@@ -7304,6 +7642,7 @@ var db = {
         enableable: true
       },
       MorbRoverMaker: {
+        tag: "MorbRoverMaker",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7330,6 +7669,7 @@ var db = {
         enableable: true
       },
       POIDoorInternal: {
+        tag: "POIDoorInternal",
         menuOrder: 177013.0,
         tags: [
           "Gravitas"
@@ -7349,6 +7689,7 @@ var db = {
         deconstructable: true
       },
       PropGravitasLabWall: {
+        tag: "PropGravitasLabWall",
         menuOrder: 177013.0,
         tags: [
           "BuildableAny",
@@ -7374,6 +7715,7 @@ var db = {
         enableable: true
       },
       PropGravitasLabWindow: {
+        tag: "PropGravitasLabWindow",
         menuOrder: 177013.0,
         tags: [
           "BuildableAny",
@@ -7398,6 +7740,7 @@ var db = {
         enableable: true
       },
       PropGravitasLabWindowHorizontal: {
+        tag: "PropGravitasLabWindowHorizontal",
         menuOrder: 177013.0,
         tags: [
           "BuildableAny",
@@ -7422,6 +7765,7 @@ var db = {
         enableable: true
       },
       PropGravitasWall: {
+        tag: "PropGravitasWall",
         menuOrder: 177013.0,
         tags: [
           "Plumbable",
@@ -7449,6 +7793,7 @@ var db = {
         enableable: true
       },
       WarpConduitReceiver: {
+        tag: "WarpConduitReceiver",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -7469,6 +7814,7 @@ var db = {
         enableable: true
       },
       WarpConduitSender: {
+        tag: "WarpConduitSender",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7489,6 +7835,7 @@ var db = {
         enableable: true
       },
       ClustercraftInteriorDoor: {
+        tag: "ClustercraftInteriorDoor",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7502,6 +7849,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropLadder: {
+        tag: "PropLadder",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7517,6 +7865,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       GeneShuffler: {
+        tag: "GeneShuffler",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7530,6 +7879,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       FossilRock: {
+        tag: "FossilRock",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7542,6 +7892,7 @@ var db = {
         primaryElement: "Fossil"
       },
       FossilResin: {
+        tag: "FossilResin",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7554,6 +7905,7 @@ var db = {
         primaryElement: "Fossil"
       },
       FossilIce: {
+        tag: "FossilIce",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7566,6 +7918,7 @@ var db = {
         primaryElement: "Fossil"
       },
       PropGravitasLabTable: {
+        tag: "PropGravitasLabTable",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7582,6 +7935,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasJar2: {
+        tag: "PropGravitasJar2",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7598,6 +7952,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasJar1: {
+        tag: "PropGravitasJar1",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7614,6 +7969,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasHandScanner: {
+        tag: "PropGravitasHandScanner",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7630,6 +7986,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasFloorRobot: {
+        tag: "PropGravitasFloorRobot",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7646,6 +8003,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasFirstAidKit: {
+        tag: "PropGravitasFirstAidKit",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7662,6 +8020,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasDisplay4: {
+        tag: "PropGravitasDisplay4",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7678,6 +8037,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasRobitcTable: {
+        tag: "PropGravitasRobitcTable",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7694,6 +8054,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasDeskPodium: {
+        tag: "PropGravitasDeskPodium",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7710,6 +8071,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasCreaturePoster: {
+        tag: "PropGravitasCreaturePoster",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7726,6 +8088,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasCeilingRobot: {
+        tag: "PropGravitasCeilingRobot",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7742,6 +8105,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityWallDegree: {
+        tag: "PropFacilityWallDegree",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7758,6 +8122,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityTable: {
+        tag: "PropFacilityTable",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7773,6 +8138,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropFacilityStatue: {
+        tag: "PropFacilityStatue",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7789,6 +8155,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityPainting: {
+        tag: "PropFacilityPainting",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7805,6 +8172,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityHangingLight: {
+        tag: "PropFacilityHangingLight",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7820,6 +8188,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropGravitasDecorativeWindow: {
+        tag: "PropGravitasDecorativeWindow",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7834,6 +8203,7 @@ var db = {
         primaryElement: "Glass"
       },
       PropFacilityGlobeDroors: {
+        tag: "PropFacilityGlobeDroors",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7850,6 +8220,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropGravitasShelf: {
+        tag: "PropGravitasShelf",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7866,6 +8237,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropReceptionDesk: {
+        tag: "PropReceptionDesk",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7881,6 +8253,7 @@ var db = {
         primaryElement: "Steel"
       },
       WarpReceiver: {
+        tag: "WarpReceiver",
         menuOrder: 177013.0,
         tags: [
           "NotRoomAssignable",
@@ -7895,6 +8268,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       WarpPortal: {
+        tag: "WarpPortal",
         menuOrder: 177013.0,
         tags: [
           "NotRoomAssignable",
@@ -7909,6 +8283,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       VendingMachine: {
+        tag: "VendingMachine",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7921,6 +8296,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       SetLocker: {
+        tag: "SetLocker",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7933,6 +8309,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropGravitasSmallSeedLocker: {
+        tag: "PropGravitasSmallSeedLocker",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7945,6 +8322,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       CryoTank: {
+        tag: "CryoTank",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -7956,6 +8334,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropLight: {
+        tag: "PropLight",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7971,6 +8350,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropTallPlant: {
+        tag: "PropTallPlant",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7986,6 +8366,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       PropTable: {
+        tag: "PropTable",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -7998,6 +8379,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropSurfaceSatellite3: {
+        tag: "PropSurfaceSatellite3",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8010,6 +8392,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropSurfaceSatellite2: {
+        tag: "PropSurfaceSatellite2",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8022,6 +8405,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropSurfaceSatellite1: {
+        tag: "PropSurfaceSatellite1",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8034,6 +8418,7 @@ var db = {
         primaryElement: "Unobtanium"
       },
       PropSkeleton: {
+        tag: "PropSkeleton",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8045,6 +8430,7 @@ var db = {
         primaryElement: "Creature"
       },
       PropFacilityDisplay: {
+        tag: "PropFacilityDisplay",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8060,6 +8446,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropFacilityDisplay2: {
+        tag: "PropFacilityDisplay2",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8075,6 +8462,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropFacilityDisplay3: {
+        tag: "PropFacilityDisplay3",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8090,6 +8478,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropFacilityDesk: {
+        tag: "PropFacilityDesk",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8106,6 +8495,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityCouch: {
+        tag: "PropFacilityCouch",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8122,6 +8512,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityChandelier: {
+        tag: "PropFacilityChandelier",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8137,6 +8528,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropFacilityChairFlip: {
+        tag: "PropFacilityChairFlip",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8153,6 +8545,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropFacilityChair: {
+        tag: "PropFacilityChair",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8169,6 +8562,7 @@ var db = {
         primaryElement: "Granite"
       },
       PropElevator: {
+        tag: "PropElevator",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8184,6 +8578,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropDesk: {
+        tag: "PropDesk",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8199,6 +8594,7 @@ var db = {
         primaryElement: "Steel"
       },
       PropClock: {
+        tag: "PropClock",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8213,6 +8609,7 @@ var db = {
     },
     hep: {
       HEPBattery: {
+        tag: "HEPBattery",
         menuOrder: 6.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8238,6 +8635,7 @@ var db = {
         radboltStorage: 100.0
       },
       HEPBridgeTile: {
+        tag: "HEPBridgeTile",
         menuOrder: 7.0,
         tags: [
           "HEPPassThrough"
@@ -8257,6 +8655,7 @@ var db = {
         deconstructable: true
       },
       HighEnergyParticleRedirector: {
+        tag: "HighEnergyParticleRedirector",
         menuOrder: 5.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8275,6 +8674,7 @@ var db = {
         enableable: true
       },
       HighEnergyParticleSpawner: {
+        tag: "HighEnergyParticleSpawner",
         menuOrder: 4.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8298,6 +8698,7 @@ var db = {
         enableable: true
       },
       ManualHighEnergyParticleSpawner: {
+        tag: "ManualHighEnergyParticleSpawner",
         menuOrder: 1.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8315,6 +8716,7 @@ var db = {
         enableable: true
       },
       NuclearReactor: {
+        tag: "NuclearReactor",
         menuOrder: 2.0,
         tags: [
           "IndustrialMachinery",
@@ -8334,6 +8736,7 @@ var db = {
         deconstructable: true
       },
       RadiationLight: {
+        tag: "RadiationLight",
         menuOrder: 0.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8357,6 +8760,7 @@ var db = {
         enableable: true
       },
       UraniumCentrifuge: {
+        tag: "UraniumCentrifuge",
         menuOrder: 3.0,
         tags: [
           "IndustrialMachinery"
@@ -8385,6 +8789,7 @@ var db = {
     },
     Quest: {
       LonelyMinionHouse: {
+        tag: "LonelyMinionHouse",
         menuOrder: 177013.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8407,6 +8812,7 @@ var db = {
         deconstructable: false
       },
       LonelyMailBox: {
+        tag: "LonelyMailBox",
         menuOrder: 177013.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8424,6 +8830,7 @@ var db = {
         enableable: true
       },
       TemporalTearOpener: {
+        tag: "TemporalTearOpener",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -8448,6 +8855,7 @@ var db = {
         enableable: true
       },
       FossilBitsLarge: {
+        tag: "FossilBitsLarge",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8460,6 +8868,7 @@ var db = {
         primaryElement: "Fossil"
       },
       FossilBitsSmall: {
+        tag: "FossilBitsSmall",
         menuOrder: 177013.0,
         tags: [
           "Gravitas",
@@ -8472,6 +8881,7 @@ var db = {
         primaryElement: "Fossil"
       },
       SapTree: {
+        tag: "SapTree",
         menuOrder: 177013.0,
         tags: [
           "Decoration"
@@ -8488,6 +8898,7 @@ var db = {
     },
     Lander: {
       ScoutLander: {
+        tag: "ScoutLander",
         menuOrder: 177013.0,
         tags: [],
         mass: 400.0,
@@ -8497,6 +8908,7 @@ var db = {
         deconstructable: true
       },
       PioneerLander: {
+        tag: "PioneerLander",
         menuOrder: 177013.0,
         tags: [],
         mass: 400.0,
@@ -8612,6 +9024,7 @@ var db = {
         debug: true
       },
       GravitasPedestal: {
+        tag: "GravitasPedestal",
         menuOrder: 177013.0,
         tags: [
           "Decoration"
@@ -8631,6 +9044,7 @@ var db = {
         enableable: true
       },
       Headquarters: {
+        tag: "Headquarters",
         menuOrder: 177013.0,
         tags: [
           "Telepad",
@@ -8652,6 +9066,7 @@ var db = {
         enableable: true
       },
       POIBunkerExteriorDoor: {
+        tag: "POIBunkerExteriorDoor",
         menuOrder: 177013.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8670,6 +9085,7 @@ var db = {
         enableable: true
       },
       POIFacilityDoor: {
+        tag: "POIFacilityDoor",
         menuOrder: 177013.0,
         tags: [
           "Metal",
@@ -8695,6 +9111,7 @@ var db = {
         enableable: true
       },
       RocketEnvelopeWindowTile: {
+        tag: "RocketEnvelopeWindowTile",
         menuOrder: 177013.0,
         tags: [
           "Window",
@@ -8717,6 +9134,7 @@ var db = {
         deconstructable: false
       },
       RocketInteriorGasInputPort: {
+        tag: "RocketInteriorGasInputPort",
         menuOrder: 177013.0,
         tags: [
           "Bunker",
@@ -8737,6 +9155,7 @@ var db = {
         deconstructable: false
       },
       RocketInteriorGasOutputPort: {
+        tag: "RocketInteriorGasOutputPort",
         menuOrder: 177013.0,
         tags: [
           "Bunker",
@@ -8757,6 +9176,7 @@ var db = {
         deconstructable: false
       },
       RocketInteriorLiquidInputPort: {
+        tag: "RocketInteriorLiquidInputPort",
         menuOrder: 177013.0,
         tags: [
           "Bunker",
@@ -8777,6 +9197,7 @@ var db = {
         deconstructable: false
       },
       RocketInteriorLiquidOutputPort: {
+        tag: "RocketInteriorLiquidOutputPort",
         menuOrder: 177013.0,
         tags: [
           "Bunker",
@@ -8809,6 +9230,7 @@ var db = {
         debug: true
       },
       StaterpillarGenerator: {
+        tag: "StaterpillarGenerator",
         menuOrder: 177013.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8828,6 +9250,7 @@ var db = {
         enableable: true
       },
       StaterpillarGasConnector: {
+        tag: "StaterpillarGasConnector",
         menuOrder: 177013.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8844,6 +9267,7 @@ var db = {
         enableable: true
       },
       StaterpillarLiquidConnector: {
+        tag: "StaterpillarLiquidConnector",
         menuOrder: 177013.0,
         tags: [],
         thermalConductivity: 1.0,
@@ -8860,6 +9284,7 @@ var db = {
         enableable: true
       },
       TeleportalPad: {
+        tag: "TeleportalPad",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -8898,94 +9323,117 @@ var db = {
         debug: true
       },
       AnimForeground: {
+        tag: "AnimForeground",
         menuOrder: 177013.0,
         tags: []
       },
       CO2Explode: {
+        tag: "CO2Explode",
         menuOrder: 177013.0,
         tags: []
       },
       DebugPlacer: {
+        tag: "DebugPlacer",
         menuOrder: 177013.0,
         tags: []
       },
       FogOfWarMask: {
+        tag: "FogOfWarMask",
         menuOrder: 177013.0,
         tags: []
       },
       fx_capture_splash: {
+        tag: "fx_capture_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_dig_splash: {
+        tag: "fx_dig_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_disinfect_splash: {
+        tag: "fx_disinfect_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_harvest_splash: {
+        tag: "fx_harvest_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_meteorshower_bg: {
+        tag: "fx_meteorshower_bg",
         menuOrder: 177013.0,
         tags: []
       },
       fx_paint_splash: {
+        tag: "fx_paint_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_powertinker_splash: {
+        tag: "fx_powertinker_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_tend_splash: {
+        tag: "fx_tend_splash",
         menuOrder: 177013.0,
         tags: []
       },
       fx_whirlpool_splash: {
+        tag: "fx_whirlpool_splash",
         menuOrder: 177013.0,
         tags: []
       },
       SaveGame: {
+        tag: "SaveGame",
         menuOrder: 177013.0,
         tags: []
       },
       Spawner: {
+        tag: "Spawner",
         menuOrder: 177013.0,
         tags: []
       },
       WaterExplode: {
+        tag: "WaterExplode",
         menuOrder: 177013.0,
         tags: []
       },
       Clustercraft: {
+        tag: "Clustercraft",
         menuOrder: 177013.0,
         tags: []
       },
       BalloonStand: {
+        tag: "BalloonStand",
         menuOrder: 177013.0,
         tags: []
       },
       BackgroundEarth: {
+        tag: "BackgroundEarth",
         menuOrder: 177013.0,
         tags: []
       },
       Asteroid: {
+        tag: "Asteroid",
         menuOrder: 177013.0,
         tags: []
       },
       DeployingScoutLanderFXConfig: {
+        tag: "DeployingScoutLanderFXConfig",
         menuOrder: 177013.0,
         tags: []
       },
       DeployingPioneerLanderFX: {
+        tag: "DeployingPioneerLanderFX",
         menuOrder: 177013.0,
         tags: []
       },
       LandingPod: {
+        tag: "LandingPod",
         menuOrder: 177013.0,
         tags: [],
         mass: 2000.0,
@@ -8994,36 +9442,43 @@ var db = {
         primaryElement: "Creature"
       },
       ExplodingClusterShip: {
+        tag: "ExplodingClusterShip",
         menuOrder: 177013.0,
         tags: []
       },
       MachineParts: {
+        tag: "MachineParts",
         menuOrder: 177013.0,
         tags: [],
         mass: 5.0,
         primaryElement: "Creature"
       },
       FoodSplat: {
+        tag: "FoodSplat",
         menuOrder: 177013.0,
         tags: [],
         mass: 1.0,
         primaryElement: "Creature"
       },
       EyeAnimation: {
+        tag: "EyeAnimation",
         menuOrder: 177013.0,
         tags: []
       },
       FullMinionUIPortrait: {
+        tag: "FullMinionUIPortrait",
         menuOrder: 177013.0,
         tags: []
       },
       StickerBomb: {
+        tag: "StickerBomb",
         menuOrder: 177013.0,
         tags: [],
         mass: 1.0,
         primaryElement: "Creature"
       },
       RailGunPayload: {
+        tag: "RailGunPayload",
         menuOrder: 177013.0,
         tags: [
           "IgnoreMaterialCategory",
@@ -9033,10 +9488,12 @@ var db = {
         primaryElement: "Creature"
       },
       MinionUIPortrait: {
+        tag: "MinionUIPortrait",
         menuOrder: 177013.0,
         tags: []
       },
       MinionSelectPreview: {
+        tag: "MinionSelectPreview",
         menuOrder: 177013.0,
         tags: [],
         hp: 100,
@@ -9045,100 +9502,121 @@ var db = {
         carryAmount: 200.0
       },
       MinionAssignablesProxy: {
+        tag: "MinionAssignablesProxy",
         menuOrder: 177013.0,
         tags: []
       },
       Meter: {
+        tag: "Meter",
         menuOrder: 177013.0,
         tags: []
       },
       MannequinUIPortrait: {
+        tag: "MannequinUIPortrait",
         menuOrder: 177013.0,
         tags: []
       },
       MouthAnimation: {
+        tag: "MouthAnimation",
         menuOrder: 177013.0,
         tags: []
       },
       LonelyMinion: {
+        tag: "LonelyMinion",
         menuOrder: 177013.0,
         tags: []
       },
       SleepLocator: {
+        tag: "SleepLocator",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       ApproachableLocator: {
+        tag: "ApproachableLocator",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       TargetLocator: {
+        tag: "TargetLocator",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       OneshotReactableLocator: {
+        tag: "OneshotReactableLocator",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       OrbitalBG: {
+        tag: "OrbitalBG",
         menuOrder: 177013.0,
         tags: []
       },
       ResearchDestination: {
+        tag: "ResearchDestination",
         menuOrder: 177013.0,
         tags: []
       },
       RepairableStorageProxy: {
+        tag: "RepairableStorageProxy",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       MopPlacer: {
+        tag: "MopPlacer",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       DigPlacer: {
+        tag: "DigPlacer",
         menuOrder: 177013.0,
         tags: []
       },
       TemporalTear: {
+        tag: "TemporalTear",
         menuOrder: 177013.0,
         tags: []
       },
       TelescopeTarget: {
+        tag: "TelescopeTarget",
         menuOrder: 177013.0,
         tags: []
       },
       StoredMinion: {
+        tag: "StoredMinion",
         menuOrder: 177013.0,
         tags: []
       },
       SimpleFX: {
+        tag: "SimpleFX",
         menuOrder: 177013.0,
         tags: []
       },
       MovePickupablePlacer: {
+        tag: "MovePickupablePlacer",
         menuOrder: 177013.0,
         tags: [
           "NotConversationTopic"
         ]
       },
       FishFeederBot: {
+        tag: "FishFeederBot",
         menuOrder: 177013.0,
         tags: []
       },
       DebrisPayload: {
+        tag: "DebrisPayload",
         menuOrder: 177013.0,
         tags: [
           "IgnoreMaterialCategory",
@@ -9148,34 +9626,42 @@ var db = {
         primaryElement: "Creature"
       },
       EffectTemplateFx: {
+        tag: "EffectTemplateFx",
         menuOrder: 177013.0,
         tags: []
       },
       EffectTemplateOverrideFx: {
+        tag: "EffectTemplateOverrideFx",
         menuOrder: 177013.0,
         tags: []
       },
       AttackSplashFx: {
+        tag: "AttackSplashFx",
         menuOrder: 177013.0,
         tags: []
       },
       OreAbsorbFx: {
+        tag: "OreAbsorbFx",
         menuOrder: 177013.0,
         tags: []
       },
       PlantDeathFx: {
+        tag: "PlantDeathFx",
         menuOrder: 177013.0,
         tags: []
       },
       BuildSplashFx: {
+        tag: "BuildSplashFx",
         menuOrder: 177013.0,
         tags: []
       },
       DemolishSplashFx: {
+        tag: "DemolishSplashFx",
         menuOrder: 177013.0,
         tags: []
       },
       EscapePod: {
+        tag: "EscapePod",
         menuOrder: 177013.0,
         tags: [],
         mass: 100.0,
@@ -9185,6 +9671,7 @@ var db = {
         deconstructable: true
       },
       GeyserGeneric: {
+        tag: "GeyserGeneric",
         menuOrder: 177013.0,
         tags: []
       }
@@ -9193,6 +9680,7 @@ var db = {
   Element: {
     Solid: {
       Algae: {
+        tag: "Algae",
         menuOrder: 1.0,
         dlc: [
           "Base",
@@ -9212,10 +9700,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       BleachStone: {
+        tag: "BleachStone",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -9235,10 +9723,10 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       OxyRock: {
+        tag: "OxyRock",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -9259,10 +9747,10 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SlimeMold: {
+        tag: "SlimeMold",
         menuOrder: 1.0,
         dlc: [
           "Base",
@@ -9282,10 +9770,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       ToxicSand: {
+        tag: "ToxicSand",
         menuOrder: 1.0,
         dlc: [
           "Base",
@@ -9306,10 +9794,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       CrushedIce: {
+        tag: "CrushedIce",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -9330,10 +9818,10 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.5
+        clearable: true
       },
       Diamond: {
+        tag: "Diamond",
         menuOrder: 12.0,
         dlc: [
           "Base",
@@ -9355,10 +9843,10 @@ var db = {
         thermalConductivity: 80.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.1
+        clearable: true
       },
       Isoresin: {
+        tag: "Isoresin",
         menuOrder: 10.0,
         dlc: [
           "Base",
@@ -9378,10 +9866,10 @@ var db = {
         thermalConductivity: 0.17,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Sucrose: {
+        tag: "Sucrose",
         menuOrder: 6.0,
         dlc: [
           "Space Out"
@@ -9399,10 +9887,10 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       MilkFat: {
+        tag: "MilkFat",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -9421,10 +9909,10 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Niobium: {
+        tag: "Niobium",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -9446,10 +9934,10 @@ var db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       MilkIce: {
+        tag: "MilkIce",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -9469,10 +9957,10 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.33333
+        clearable: true
       },
       Cuprite: {
+        tag: "Cuprite",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -9493,10 +9981,10 @@ var db = {
         thermalConductivity: 4.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Copper: {
+        tag: "Copper",
         menuOrder: 4.0,
         dlc: [
           "Base",
@@ -9516,10 +10004,10 @@ var db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       CrushedRock: {
+        tag: "CrushedRock",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -9540,10 +10028,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SuperInsulator: {
+        tag: "SuperInsulator",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -9567,10 +10055,10 @@ var db = {
         thermalConductivity: 1E-05,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       BrineIce: {
+        tag: "BrineIce",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -9590,10 +10078,10 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.33333
+        clearable: true
       },
       SolidViscoGel: {
+        tag: "SolidViscoGel",
         menuOrder: 9.0,
         dlc: [
           "Base",
@@ -9612,10 +10100,10 @@ var db = {
         thermalConductivity: 0.45,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.2
+        clearable: true
       },
       Ceramic: {
+        tag: "Ceramic",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -9638,10 +10126,10 @@ var db = {
         thermalConductivity: 0.62,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Cobaltite: {
+        tag: "Cobaltite",
         menuOrder: 5.0,
         dlc: [
           "Space Out"
@@ -9661,10 +10149,10 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Fertilizer: {
+        tag: "Fertilizer",
         menuOrder: 3.0,
         dlc: [
           "Base",
@@ -9684,10 +10172,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidCrudeOil: {
+        tag: "SolidCrudeOil",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -9705,10 +10193,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Wolframite: {
+        tag: "Wolframite",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -9729,10 +10217,10 @@ var db = {
         thermalConductivity: 15.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Polypropylene: {
+        tag: "Polypropylene",
         menuOrder: 9.0,
         dlc: [
           "Base",
@@ -9754,10 +10242,10 @@ var db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidNaphtha: {
+        tag: "SolidNaphtha",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -9775,10 +10263,10 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Tungsten: {
+        tag: "Tungsten",
         menuOrder: 4.0,
         dlc: [
           "Base",
@@ -9799,10 +10287,10 @@ var db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       RefinedCarbon: {
+        tag: "RefinedCarbon",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -9822,10 +10310,10 @@ var db = {
         thermalConductivity: 3.1,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Steel: {
+        tag: "Steel",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -9847,10 +10335,10 @@ var db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Phosphorite: {
+        tag: "Phosphorite",
         menuOrder: 3.0,
         dlc: [
           "Base",
@@ -9870,10 +10358,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidHydrogen: {
+        tag: "SolidHydrogen",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -9891,10 +10379,10 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.75
+        clearable: true
       },
       Lead: {
+        tag: "Lead",
         menuOrder: 4.0,
         dlc: [
           "Base",
@@ -9914,10 +10402,10 @@ var db = {
         thermalConductivity: 35.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Sulfur: {
+        tag: "Sulfur",
         menuOrder: 12.0,
         dlc: [
           "Base",
@@ -9936,10 +10424,10 @@ var db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Lime: {
+        tag: "Lime",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -9958,10 +10446,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidChlorine: {
+        tag: "SolidChlorine",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -9979,10 +10467,10 @@ var db = {
         thermalConductivity: 0.75,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidNuclearWaste: {
+        tag: "SolidNuclearWaste",
         menuOrder: 12.0,
         dlc: [
           "Space Out"
@@ -10000,10 +10488,10 @@ var db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Obsidian: {
+        tag: "Obsidian",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10026,10 +10514,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidPetroleum: {
+        tag: "SolidPetroleum",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -10047,10 +10535,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidSuperCoolant: {
+        tag: "SolidSuperCoolant",
         menuOrder: 9.0,
         dlc: [
           "Base",
@@ -10068,10 +10556,10 @@ var db = {
         thermalConductivity: 9.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       IgneousRock: {
+        tag: "IgneousRock",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10093,10 +10581,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       EnrichedUranium: {
+        tag: "EnrichedUranium",
         menuOrder: 9.0,
         dlc: [
           "Space Out"
@@ -10114,10 +10602,10 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Gold: {
+        tag: "Gold",
         menuOrder: 4.0,
         dlc: [
           "Base",
@@ -10137,10 +10625,10 @@ var db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Rust: {
+        tag: "Rust",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -10159,10 +10647,10 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Corium: {
+        tag: "Corium",
         menuOrder: 12.0,
         dlc: [
           "Space Out"
@@ -10180,10 +10668,10 @@ var db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Phosphorus: {
+        tag: "Phosphorus",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -10203,10 +10691,10 @@ var db = {
         thermalConductivity: 0.236,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Granite: {
+        tag: "Granite",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10229,10 +10717,10 @@ var db = {
         thermalConductivity: 3.39,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidCarbonDioxide: {
+        tag: "SolidCarbonDioxide",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -10250,10 +10738,10 @@ var db = {
         thermalConductivity: 1.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Cobalt: {
+        tag: "Cobalt",
         menuOrder: 4.0,
         dlc: [
           "Space Out"
@@ -10272,10 +10760,10 @@ var db = {
         thermalConductivity: 100.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       UraniumOre: {
+        tag: "UraniumOre",
         menuOrder: 5.0,
         dlc: [
           "Space Out"
@@ -10295,10 +10783,10 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       AluminumOre: {
+        tag: "AluminumOre",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -10319,10 +10807,10 @@ var db = {
         thermalConductivity: 20.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SedimentaryRock: {
+        tag: "SedimentaryRock",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10344,10 +10832,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Fullerene: {
+        tag: "Fullerene",
         menuOrder: 10.0,
         dlc: [
           "Base",
@@ -10366,10 +10854,10 @@ var db = {
         thermalConductivity: 50.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       GoldAmalgam: {
+        tag: "GoldAmalgam",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -10390,10 +10878,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Salt: {
+        tag: "Salt",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -10412,10 +10900,10 @@ var db = {
         thermalConductivity: 0.444,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Sand: {
+        tag: "Sand",
         menuOrder: 3.5,
         dlc: [
           "Base",
@@ -10436,10 +10924,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Snow: {
+        tag: "Snow",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -10460,10 +10948,10 @@ var db = {
         thermalConductivity: 0.545,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SandStone: {
+        tag: "SandStone",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10485,10 +10973,10 @@ var db = {
         thermalConductivity: 2.9,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Glass: {
+        tag: "Glass",
         menuOrder: 9.0,
         dlc: [
           "Base",
@@ -10509,10 +10997,10 @@ var db = {
         thermalConductivity: 1.11,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.1
+        clearable: true
       },
       Clay: {
+        tag: "Clay",
         menuOrder: 2.0,
         dlc: [
           "Base",
@@ -10532,10 +11020,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Ice: {
+        tag: "Ice",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -10555,10 +11043,10 @@ var db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.33333
+        clearable: true
       },
       Graphite: {
+        tag: "Graphite",
         menuOrder: 7.0,
         dlc: [
           "Space Out"
@@ -10576,10 +11064,10 @@ var db = {
         thermalConductivity: 8.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       ToxicMud: {
+        tag: "ToxicMud",
         menuOrder: 1.0,
         dlc: [
           "Space Out"
@@ -10599,10 +11087,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Mud: {
+        tag: "Mud",
         menuOrder: 1.0,
         dlc: [
           "Space Out"
@@ -10622,10 +11110,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Carbon: {
+        tag: "Carbon",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -10646,10 +11134,10 @@ var db = {
         thermalConductivity: 1.25,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidOxygen: {
+        tag: "SolidOxygen",
         menuOrder: 11.0,
         dlc: [
           "Base",
@@ -10667,10 +11155,10 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.75
+        clearable: true
       },
       Creature: {
+        tag: "Creature",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -10688,10 +11176,10 @@ var db = {
         thermalConductivity: 0.6,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       DepletedUranium: {
+        tag: "DepletedUranium",
         menuOrder: 4.0,
         dlc: [
           "Space Out"
@@ -10710,10 +11198,10 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Katairite: {
+        tag: "Katairite",
         menuOrder: 12.0,
         dlc: [
           "Base",
@@ -10732,10 +11220,10 @@ var db = {
         thermalConductivity: 1E-05,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidMethane: {
+        tag: "SolidMethane",
         menuOrder: 6.0,
         dlc: [
           "Base",
@@ -10753,10 +11241,10 @@ var db = {
         thermalConductivity: 0.03,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       HardPolypropylene: {
+        tag: "HardPolypropylene",
         menuOrder: 9.0,
         dlc: [
           "Base",
@@ -10778,10 +11266,10 @@ var db = {
         thermalConductivity: 0.25,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       MaficRock: {
+        tag: "MaficRock",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10801,10 +11289,10 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Iron: {
+        tag: "Iron",
         menuOrder: 4.0,
         dlc: [
           "Base",
@@ -10824,10 +11312,10 @@ var db = {
         thermalConductivity: 55.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Regolith: {
+        tag: "Regolith",
         menuOrder: 3.5,
         dlc: [
           "Base",
@@ -10848,10 +11336,10 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidResin: {
+        tag: "SolidResin",
         menuOrder: 1.0,
         dlc: [
           "Space Out"
@@ -10868,10 +11356,10 @@ var db = {
         thermalConductivity: 0.17,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       TempConductorSolid: {
+        tag: "TempConductorSolid",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -10894,10 +11382,10 @@ var db = {
         thermalConductivity: 220.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       IronOre: {
+        tag: "IronOre",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -10918,10 +11406,10 @@ var db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Dirt: {
+        tag: "Dirt",
         menuOrder: 2.0,
         dlc: [
           "Base",
@@ -10941,10 +11429,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       DirtyIce: {
+        tag: "DirtyIce",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -10965,10 +11453,10 @@ var db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 0.8
+        clearable: true
       },
       Fossil: {
+        tag: "Fossil",
         menuOrder: 7.0,
         dlc: [
           "Base",
@@ -10987,10 +11475,10 @@ var db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Unobtanium: {
+        tag: "Unobtanium",
         menuOrder: 12.0,
         dlc: [
           "Base",
@@ -11008,10 +11496,10 @@ var db = {
         thermalConductivity: 0.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       SolidEthanol: {
+        tag: "SolidEthanol",
         menuOrder: 8.0,
         dlc: [
           "Base",
@@ -11031,10 +11519,10 @@ var db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       FoolsGold: {
+        tag: "FoolsGold",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11055,10 +11543,10 @@ var db = {
         thermalConductivity: 4.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       },
       Aluminum: {
+        tag: "Aluminum",
         menuOrder: 4.0,
         dlc: [
           "Base",
@@ -11078,12 +11566,12 @@ var db = {
         thermalConductivity: 205.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true,
-        lightAbsorption: 1.0
+        clearable: true
       }
     },
     Liquid: {
       DirtyWater: {
+        tag: "DirtyWater",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11096,7 +11584,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 20.0,
-        hardness: 0.0,
         shc: 4.179,
         maxCompression: 1.01,
         viscosity: 125.0,
@@ -11110,6 +11597,7 @@ var db = {
         lightAbsorption: 0.7
       },
       NuclearWaste: {
+        tag: "NuclearWaste",
         menuOrder: 15.0,
         dlc: [
           "Space Out"
@@ -11119,7 +11607,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 196.966568,
-        hardness: 0.0,
         shc: 7.44,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11133,6 +11620,7 @@ var db = {
         lightAbsorption: 1.0
       },
       LiquidOxygen: {
+        tag: "LiquidOxygen",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11143,7 +11631,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 15.9994,
-        hardness: 0.0,
         shc: 1.01,
         maxCompression: 1.01,
         viscosity: 200.0,
@@ -11157,6 +11644,7 @@ var db = {
         lightAbsorption: 1.0
       },
       ViscoGel: {
+        tag: "ViscoGel",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11167,7 +11655,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 10.0,
-        hardness: 0.0,
         shc: 1.55,
         maxCompression: 1.01,
         viscosity: 1.0,
@@ -11181,6 +11668,7 @@ var db = {
         lightAbsorption: 0.1
       },
       MoltenAluminum: {
+        tag: "MoltenAluminum",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11193,7 +11681,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 55.845,
-        hardness: 0.0,
         shc: 0.91,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11207,6 +11694,7 @@ var db = {
         lightAbsorption: 1.0
       },
       MoltenLead: {
+        tag: "MoltenLead",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11219,7 +11707,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 196.966568,
-        hardness: 0.0,
         shc: 0.128,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11233,6 +11720,7 @@ var db = {
         lightAbsorption: 1.0
       },
       LiquidCarbonDioxide: {
+        tag: "LiquidCarbonDioxide",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11242,7 +11730,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 44.01,
-        hardness: 0.0,
         shc: 0.846,
         maxCompression: 1.01,
         viscosity: 125.0,
@@ -11256,6 +11743,7 @@ var db = {
         lightAbsorption: 1.0
       },
       CrudeOil: {
+        tag: "CrudeOil",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11266,7 +11754,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 500.0,
-        hardness: 0.0,
         shc: 1.69,
         maxCompression: 1.01,
         viscosity: 50.0,
@@ -11280,6 +11767,7 @@ var db = {
         lightAbsorption: 1.0
       },
       MoltenGlass: {
+        tag: "MoltenGlass",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11290,7 +11778,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 50.0,
-        hardness: 0.0,
         shc: 0.2,
         maxCompression: 1.01,
         viscosity: 60.0,
@@ -11304,6 +11791,7 @@ var db = {
         lightAbsorption: 0.7
       },
       LiquidSulfur: {
+        tag: "LiquidSulfur",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11313,7 +11801,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 32.0,
-        hardness: 0.0,
         shc: 0.7,
         maxCompression: 1.01,
         viscosity: 50.0,
@@ -11327,6 +11814,7 @@ var db = {
         lightAbsorption: 0.1
       },
       MoltenGold: {
+        tag: "MoltenGold",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11339,7 +11827,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 196.966568,
-        hardness: 0.0,
         shc: 0.1291,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11353,6 +11840,7 @@ var db = {
         lightAbsorption: 1.0
       },
       Magma: {
+        tag: "Magma",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11363,7 +11851,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 50.0,
-        hardness: 0.0,
         shc: 1.0,
         maxCompression: 1.01,
         viscosity: 60.0,
@@ -11377,6 +11864,7 @@ var db = {
         lightAbsorption: 1.0
       },
       Chlorine: {
+        tag: "Chlorine",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11386,7 +11874,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 34.453,
-        hardness: 0.0,
         shc: 0.48,
         maxCompression: 1.01,
         viscosity: 180.0,
@@ -11400,6 +11887,7 @@ var db = {
         lightAbsorption: 1.0
       },
       LiquidHydrogen: {
+        tag: "LiquidHydrogen",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11409,7 +11897,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 1.00794,
-        hardness: 0.0,
         shc: 2.4,
         maxCompression: 1.01,
         viscosity: 180.0,
@@ -11423,6 +11910,7 @@ var db = {
         lightAbsorption: 1.0
       },
       Resin: {
+        tag: "Resin",
         menuOrder: 15.0,
         dlc: [
           "Space Out"
@@ -11432,7 +11920,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 52.5,
-        hardness: 0.0,
         shc: 1.11,
         maxCompression: 1.01,
         viscosity: 1.1,
@@ -11446,6 +11933,7 @@ var db = {
         lightAbsorption: 0.8
       },
       MoltenTungsten: {
+        tag: "MoltenTungsten",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11457,7 +11945,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 183.84,
-        hardness: 0.0,
         shc: 0.134,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11471,6 +11958,7 @@ var db = {
         lightAbsorption: 0.7
       },
       Petroleum: {
+        tag: "Petroleum",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11482,7 +11970,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 82.2,
-        hardness: 0.0,
         shc: 1.76,
         maxCompression: 1.01,
         viscosity: 50.0,
@@ -11496,6 +11983,7 @@ var db = {
         lightAbsorption: 0.8
       },
       MoltenSalt: {
+        tag: "MoltenSalt",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11505,7 +11993,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 32.0,
-        hardness: 0.0,
         shc: 0.7,
         maxCompression: 1.01,
         viscosity: 50.0,
@@ -11519,6 +12006,7 @@ var db = {
         lightAbsorption: 0.1
       },
       MoltenCobalt: {
+        tag: "MoltenCobalt",
         menuOrder: 5.0,
         dlc: [
           "Space Out"
@@ -11530,7 +12018,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 58.9,
-        hardness: 0.0,
         shc: 0.42,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11544,6 +12031,7 @@ var db = {
         lightAbsorption: 1.0
       },
       Brine: {
+        tag: "Brine",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11555,7 +12043,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 22.0,
-        hardness: 0.0,
         shc: 3.4,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11569,6 +12056,7 @@ var db = {
         lightAbsorption: 0.25
       },
       SuperCoolant: {
+        tag: "SuperCoolant",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11579,7 +12067,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 250.0,
-        hardness: 0.0,
         shc: 8.44,
         maxCompression: 1.01,
         viscosity: 150.0,
@@ -11593,6 +12080,7 @@ var db = {
         lightAbsorption: 0.9
       },
       Ethanol: {
+        tag: "Ethanol",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11604,7 +12092,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 46.07,
-        hardness: 0.0,
         shc: 2.46,
         maxCompression: 1.01,
         viscosity: 125.0,
@@ -11618,6 +12105,7 @@ var db = {
         lightAbsorption: 0.25
       },
       Milk: {
+        tag: "Milk",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11628,7 +12116,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 23.0,
-        hardness: 0.0,
         shc: 4.1,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11642,6 +12129,7 @@ var db = {
         lightAbsorption: 0.8
       },
       LiquidMethane: {
+        tag: "LiquidMethane",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11651,7 +12139,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 16.044,
-        hardness: 0.0,
         shc: 2.191,
         maxCompression: 1.01,
         viscosity: 180.0,
@@ -11665,6 +12152,7 @@ var db = {
         lightAbsorption: 0.6
       },
       MoltenIron: {
+        tag: "MoltenIron",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11677,7 +12165,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 55.845,
-        hardness: 0.0,
         shc: 0.449,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11691,6 +12178,7 @@ var db = {
         lightAbsorption: 1.0
       },
       MoltenCarbon: {
+        tag: "MoltenCarbon",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11700,7 +12188,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 12.0107,
-        hardness: 0.0,
         shc: 0.71,
         maxCompression: 1.01,
         viscosity: 150.0,
@@ -11714,6 +12201,7 @@ var db = {
         lightAbsorption: 1.0
       },
       Naphtha: {
+        tag: "Naphtha",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11725,7 +12213,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 102.2,
-        hardness: 0.0,
         shc: 2.191,
         maxCompression: 1.01,
         viscosity: 30.0,
@@ -11739,6 +12226,7 @@ var db = {
         lightAbsorption: 0.8
       },
       MoltenSucrose: {
+        tag: "MoltenSucrose",
         menuOrder: 15.0,
         dlc: [
           "Space Out"
@@ -11747,7 +12235,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 32.0,
-        hardness: 0.0,
         shc: 1.255,
         maxCompression: 1.01,
         viscosity: 50.0,
@@ -11761,6 +12248,7 @@ var db = {
         lightAbsorption: 0.1
       },
       LiquidPhosphorus: {
+        tag: "LiquidPhosphorus",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11771,7 +12259,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 30.9737625,
-        hardness: 0.0,
         shc: 0.7697,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11785,6 +12272,7 @@ var db = {
         lightAbsorption: 1.0
       },
       MoltenSteel: {
+        tag: "MoltenSteel",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11797,7 +12285,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 63.546,
-        hardness: 0.0,
         shc: 0.386,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11811,6 +12298,7 @@ var db = {
         lightAbsorption: 1.0
       },
       MoltenNiobium: {
+        tag: "MoltenNiobium",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11823,7 +12311,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 92.9,
-        hardness: 0.0,
         shc: 0.265,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11837,6 +12324,7 @@ var db = {
         lightAbsorption: 1.0
       },
       Water: {
+        tag: "Water",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11848,7 +12336,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 18.01528,
-        hardness: 0.0,
         shc: 4.179,
         maxCompression: 1.01,
         viscosity: 125.0,
@@ -11862,6 +12349,7 @@ var db = {
         lightAbsorption: 0.25
       },
       SaltWater: {
+        tag: "SaltWater",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11873,7 +12361,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 21.0,
-        hardness: 0.0,
         shc: 4.1,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11887,6 +12374,7 @@ var db = {
         lightAbsorption: 0.25
       },
       MoltenUranium: {
+        tag: "MoltenUranium",
         menuOrder: 5.0,
         dlc: [
           "Space Out"
@@ -11898,7 +12386,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 196.966568,
-        hardness: 0.0,
         shc: 1.69,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11912,6 +12399,7 @@ var db = {
         lightAbsorption: 1.0
       },
       MoltenCopper: {
+        tag: "MoltenCopper",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11924,7 +12412,6 @@ var db = {
           "Liquid"
         ],
         molarMass: 63.546,
-        hardness: 0.0,
         shc: 0.386,
         maxCompression: 1.01,
         viscosity: 100.0,
@@ -11940,6 +12427,7 @@ var db = {
     },
     Gas: {
       SulfurGas: {
+        tag: "SulfurGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11950,7 +12438,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 32.0,
-        hardness: 0.0,
         shc: 0.7,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -11961,6 +12448,7 @@ var db = {
         lightAbsorption: 0.1
       },
       SaltGas: {
+        tag: "SaltGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -11971,7 +12459,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 50.0,
-        hardness: 0.0,
         shc: 0.88,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -11982,6 +12469,7 @@ var db = {
         lightAbsorption: 0.1
       },
       NiobiumGas: {
+        tag: "NiobiumGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -11995,7 +12483,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 92.9,
-        hardness: 0.0,
         shc: 0.265,
         flow: 0.1,
         radiationAbsorptionFactor: 0.05,
@@ -12006,6 +12493,7 @@ var db = {
         lightAbsorption: 0.5
       },
       Oxygen: {
+        tag: "Oxygen",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12017,7 +12505,6 @@ var db = {
           "Breathable"
         ],
         molarMass: 15.9994,
-        hardness: 0.0,
         shc: 1.005,
         flow: 0.12,
         radiationAbsorptionFactor: 0.08,
@@ -12028,6 +12515,7 @@ var db = {
         lightAbsorption: 0.0
       },
       CobaltGas: {
+        tag: "CobaltGas",
         menuOrder: 5.0,
         dlc: [
           "Space Out"
@@ -12040,7 +12528,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 58.9,
-        hardness: 0.0,
         shc: 0.42,
         flow: 0.1,
         radiationAbsorptionFactor: 0.06,
@@ -12051,6 +12538,7 @@ var db = {
         lightAbsorption: 0.5
       },
       SteelGas: {
+        tag: "SteelGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12065,7 +12553,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 54.97,
-        hardness: 0.0,
         shc: 0.49,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12076,6 +12563,7 @@ var db = {
         lightAbsorption: 0.5
       },
       ChlorineGas: {
+        tag: "ChlorineGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12087,7 +12575,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 34.453,
-        hardness: 0.0,
         shc: 0.48,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12098,6 +12585,7 @@ var db = {
         lightAbsorption: 0.2
       },
       Hydrogen: {
+        tag: "Hydrogen",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12109,7 +12597,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 1.00794,
-        hardness: 0.0,
         shc: 2.4,
         flow: 0.1,
         radiationAbsorptionFactor: 0.09,
@@ -12120,6 +12607,7 @@ var db = {
         lightAbsorption: 0.1
       },
       SourGas: {
+        tag: "SourGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12131,7 +12619,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 19.044,
-        hardness: 0.0,
         shc: 1.898,
         flow: 0.1,
         radiationAbsorptionFactor: 0.05,
@@ -12142,6 +12629,7 @@ var db = {
         lightAbsorption: 0.25
       },
       Steam: {
+        tag: "Steam",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12152,7 +12640,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 18.01528,
-        hardness: 0.0,
         shc: 4.179,
         flow: 0.1,
         radiationAbsorptionFactor: 0.08,
@@ -12163,6 +12650,7 @@ var db = {
         lightAbsorption: 0.1
       },
       Methane: {
+        tag: "Methane",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12175,7 +12663,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 16.044,
-        hardness: 0.0,
         shc: 2.191,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12186,6 +12673,7 @@ var db = {
         lightAbsorption: 0.25
       },
       GoldGas: {
+        tag: "GoldGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12199,7 +12687,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 196.966568,
-        hardness: 0.0,
         shc: 0.1291,
         flow: 0.1,
         radiationAbsorptionFactor: 0.03,
@@ -12210,6 +12697,7 @@ var db = {
         lightAbsorption: 0.5
       },
       EthanolGas: {
+        tag: "EthanolGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12220,7 +12708,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 46.07,
-        hardness: 0.0,
         shc: 2.148,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12231,6 +12718,7 @@ var db = {
         lightAbsorption: 0.5
       },
       RockGas: {
+        tag: "RockGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12242,7 +12730,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 50.0,
-        hardness: 0.0,
         shc: 1.0,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12253,6 +12740,7 @@ var db = {
         lightAbsorption: 0.5
       },
       CarbonGas: {
+        tag: "CarbonGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12264,7 +12752,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 12.0107,
-        hardness: 0.0,
         shc: 0.71,
         flow: 0.1,
         radiationAbsorptionFactor: 0.08,
@@ -12275,6 +12762,7 @@ var db = {
         lightAbsorption: 0.3
       },
       SuperCoolantGas: {
+        tag: "SuperCoolantGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12285,7 +12773,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 190.0,
-        hardness: 0.0,
         shc: 8.44,
         flow: 0.1,
         radiationAbsorptionFactor: 0.06,
@@ -12296,6 +12783,7 @@ var db = {
         lightAbsorption: 0.5
       },
       AluminumGas: {
+        tag: "AluminumGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12309,7 +12797,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 63.546,
-        hardness: 0.0,
         shc: 0.91,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12320,6 +12807,7 @@ var db = {
         lightAbsorption: 0.5
       },
       TungstenGas: {
+        tag: "TungstenGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12332,7 +12820,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 183.84,
-        hardness: 0.0,
         shc: 0.134,
         flow: 0.1,
         radiationAbsorptionFactor: 0.03,
@@ -12343,6 +12830,7 @@ var db = {
         lightAbsorption: 0.5
       },
       ContaminatedOxygen: {
+        tag: "ContaminatedOxygen",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12354,7 +12842,6 @@ var db = {
           "Breathable"
         ],
         molarMass: 15.9994,
-        hardness: 0.0,
         shc: 1.01,
         flow: 0.12,
         radiationAbsorptionFactor: 0.08,
@@ -12365,6 +12852,7 @@ var db = {
         lightAbsorption: 0.1
       },
       LeadGas: {
+        tag: "LeadGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12378,7 +12866,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 196.966568,
-        hardness: 0.0,
         shc: 0.128,
         flow: 0.1,
         radiationAbsorptionFactor: 0.08,
@@ -12389,6 +12876,7 @@ var db = {
         lightAbsorption: 0.5
       },
       Fallout: {
+        tag: "Fallout",
         menuOrder: 15.0,
         dlc: [
           "Space Out"
@@ -12399,7 +12887,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 92.9,
-        hardness: 0.0,
         shc: 0.265,
         flow: 0.1,
         radiationAbsorptionFactor: 0.03,
@@ -12410,6 +12897,7 @@ var db = {
         lightAbsorption: 0.5
       },
       IronGas: {
+        tag: "IronGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12423,7 +12911,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 55.845,
-        hardness: 0.0,
         shc: 0.449,
         flow: 0.1,
         radiationAbsorptionFactor: 0.06,
@@ -12434,6 +12921,7 @@ var db = {
         lightAbsorption: 0.5
       },
       PhosphorusGas: {
+        tag: "PhosphorusGas",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12445,7 +12933,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 30.9737625,
-        hardness: 0.0,
         shc: 0.7697,
         flow: 0.1,
         radiationAbsorptionFactor: 0.07,
@@ -12456,6 +12943,7 @@ var db = {
         lightAbsorption: 0.5
       },
       CarbonDioxide: {
+        tag: "CarbonDioxide",
         menuOrder: 15.0,
         dlc: [
           "Base",
@@ -12467,7 +12955,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 44.01,
-        hardness: 0.0,
         shc: 0.846,
         flow: 0.1,
         radiationAbsorptionFactor: 0.08,
@@ -12478,6 +12965,7 @@ var db = {
         lightAbsorption: 0.1
       },
       CopperGas: {
+        tag: "CopperGas",
         menuOrder: 5.0,
         dlc: [
           "Base",
@@ -12491,7 +12979,6 @@ var db = {
           "Unbreathable"
         ],
         molarMass: 63.546,
-        hardness: 0.0,
         shc: 0.386,
         flow: 0.1,
         radiationAbsorptionFactor: 0.06,
@@ -12504,6 +12991,7 @@ var db = {
     },
     Other: {
       HighEnergyParticle: {
+        tag: "HighEnergyParticle",
         menuOrder: 177013.0,
         tags: []
       }
@@ -12512,6 +13000,7 @@ var db = {
   Space: {
     Comet: {
       RockComet: {
+        tag: "RockComet",
         menuOrder: 177013.0,
         tags: [
           "Unstable",
@@ -12523,6 +13012,7 @@ var db = {
         primaryElement: "Regolith"
       },
       IronComet: {
+        tag: "IronComet",
         menuOrder: 177013.0,
         tags: [
           "BuildableAny",
@@ -12534,6 +13024,7 @@ var db = {
         primaryElement: "Iron"
       },
       CopperCometConfig: {
+        tag: "CopperCometConfig",
         menuOrder: 177013.0,
         tags: [
           "Ore",
@@ -12546,6 +13037,7 @@ var db = {
         primaryElement: "Cuprite"
       },
       GoldComet: {
+        tag: "GoldComet",
         menuOrder: 177013.0,
         tags: [
           "Ore",
@@ -12558,6 +13050,7 @@ var db = {
         primaryElement: "GoldAmalgam"
       },
       FullereneComet: {
+        tag: "FullereneComet",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -12568,6 +13061,7 @@ var db = {
         primaryElement: "Fullerene"
       },
       BleachStoneComet: {
+        tag: "BleachStoneComet",
         menuOrder: 177013.0,
         tags: [
           "FlyingCritterEdible",
@@ -12579,6 +13073,7 @@ var db = {
         primaryElement: "BleachStone"
       },
       OxyliteComet: {
+        tag: "OxyliteComet",
         menuOrder: 177013.0,
         tags: [
           "FlyingCritterEdible",
@@ -12591,6 +13086,7 @@ var db = {
         primaryElement: "OxyRock"
       },
       PhosphoricComet: {
+        tag: "PhosphoricComet",
         menuOrder: 177013.0,
         tags: [
           "FlyingCritterEdible",
@@ -12602,6 +13098,7 @@ var db = {
         primaryElement: "Phosphorite"
       },
       AlgaeComet: {
+        tag: "AlgaeComet",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -12612,6 +13109,7 @@ var db = {
         primaryElement: "Algae"
       },
       LightDustComet: {
+        tag: "LightDustComet",
         menuOrder: 177013.0,
         tags: [
           "Unstable",
@@ -12623,6 +13121,7 @@ var db = {
         primaryElement: "Regolith"
       },
       HardIceComet: {
+        tag: "HardIceComet",
         menuOrder: 177013.0,
         tags: [
           "IceOre",
@@ -12635,6 +13134,7 @@ var db = {
         primaryElement: "CrushedIce"
       },
       SlimeComet: {
+        tag: "SlimeComet",
         menuOrder: 177013.0,
         tags: [
           "FlyingCritterEdible",
@@ -12646,6 +13146,7 @@ var db = {
         primaryElement: "SlimeMold"
       },
       UraniumComet: {
+        tag: "UraniumComet",
         menuOrder: 177013.0,
         tags: [
           "BuildableAny",
@@ -12658,6 +13159,7 @@ var db = {
         primaryElement: "UraniumOre"
       },
       GassyMoo: {
+        tag: "GassyMoo",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -12667,6 +13169,7 @@ var db = {
         primaryElement: "Creature"
       },
       NuclearWasteComet: {
+        tag: "NuclearWasteComet",
         menuOrder: 177013.0,
         tags: [
           "Solid",
@@ -12677,6 +13180,7 @@ var db = {
         primaryElement: "Corium"
       },
       DustComet: {
+        tag: "DustComet",
         menuOrder: 177013.0,
         tags: [
           "Unstable",
@@ -12688,6 +13192,7 @@ var db = {
         primaryElement: "Regolith"
       },
       SnowballComet: {
+        tag: "SnowballComet",
         menuOrder: 177013.0,
         tags: [
           "IceOre",
@@ -12702,206 +13207,250 @@ var db = {
     },
     ArtifactPOI: {
       ArtifactSpacePOI_GravitasSpaceStation1: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation1",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation2: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation2",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation3: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation3",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation4: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation4",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation5: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation5",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation6: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation6",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation7: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation7",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_GravitasSpaceStation8: {
+        tag: "ArtifactSpacePOI_GravitasSpaceStation8",
         menuOrder: 177013.0,
         tags: []
       },
       ArtifactSpacePOI_RussellsTeapot: {
+        tag: "ArtifactSpacePOI_RussellsTeapot",
         menuOrder: 177013.0,
         tags: []
       }
     },
     HarvestablePOI: {
       HarvestableSpacePOI_MetallicAsteroidField: {
+        tag: "HarvestableSpacePOI_MetallicAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_SatelliteField: {
+        tag: "HarvestableSpacePOI_SatelliteField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_RockyAsteroidField: {
+        tag: "HarvestableSpacePOI_RockyAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_InterstellarIceField: {
+        tag: "HarvestableSpacePOI_InterstellarIceField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_OrganicMassField: {
+        tag: "HarvestableSpacePOI_OrganicMassField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_IceAsteroidField: {
+        tag: "HarvestableSpacePOI_IceAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_GasGiantCloud: {
+        tag: "HarvestableSpacePOI_GasGiantCloud",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_ChlorineCloud: {
+        tag: "HarvestableSpacePOI_ChlorineCloud",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_GildedAsteroidField: {
+        tag: "HarvestableSpacePOI_GildedAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_GlimmeringAsteroidField: {
+        tag: "HarvestableSpacePOI_GlimmeringAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_HeliumCloud: {
+        tag: "HarvestableSpacePOI_HeliumCloud",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_OilyAsteroidField: {
+        tag: "HarvestableSpacePOI_OilyAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_OxidizedAsteroidField: {
+        tag: "HarvestableSpacePOI_OxidizedAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_SaltyAsteroidField: {
+        tag: "HarvestableSpacePOI_SaltyAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_FrozenOreField: {
+        tag: "HarvestableSpacePOI_FrozenOreField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_ForestyOreField: {
+        tag: "HarvestableSpacePOI_ForestyOreField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_SwampyOreField: {
+        tag: "HarvestableSpacePOI_SwampyOreField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_SandyOreField: {
+        tag: "HarvestableSpacePOI_SandyOreField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_RadioactiveGasCloud: {
+        tag: "HarvestableSpacePOI_RadioactiveGasCloud",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_RadioactiveAsteroidField: {
+        tag: "HarvestableSpacePOI_RadioactiveAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_OxygenRichAsteroidField: {
+        tag: "HarvestableSpacePOI_OxygenRichAsteroidField",
         menuOrder: 177013.0,
         tags: []
       },
       HarvestableSpacePOI_InterstellarOcean: {
+        tag: "HarvestableSpacePOI_InterstellarOcean",
         menuOrder: 177013.0,
         tags: []
       }
     },
     Shower: {
       ClusterMapMeteorShower_Biological: {
+        tag: "ClusterMapMeteorShower_Biological",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Snow: {
+        tag: "ClusterMapMeteorShower_Snow",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Ice: {
+        tag: "ClusterMapMeteorShower_Ice",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Copper: {
+        tag: "ClusterMapMeteorShower_Copper",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Iron: {
+        tag: "ClusterMapMeteorShower_Iron",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Gold: {
+        tag: "ClusterMapMeteorShower_Gold",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Uranium: {
+        tag: "ClusterMapMeteorShower_Uranium",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_HeavyDust: {
+        tag: "ClusterMapMeteorShower_HeavyDust",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_LightDust: {
+        tag: "ClusterMapMeteorShower_LightDust",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Moo: {
+        tag: "ClusterMapMeteorShower_Moo",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Regolith: {
+        tag: "ClusterMapMeteorShower_Regolith",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_Oxylite: {
+        tag: "ClusterMapMeteorShower_Oxylite",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
         primaryElement: "Unobtanium"
       },
       ClusterMapMeteorShower_BleachStone: {
+        tag: "ClusterMapMeteorShower_BleachStone",
         menuOrder: 177013.0,
         tags: [],
         mass: 25.0,
@@ -12912,6 +13461,7 @@ var db = {
   Artifact: {
     Any: {
       artifact_sandstone: {
+        tag: "artifact_sandstone",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12924,6 +13474,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_officemug: {
+        tag: "artifact_officemug",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12936,6 +13487,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_modernart: {
+        tag: "artifact_modernart",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12948,6 +13500,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_shieldgenerator: {
+        tag: "artifact_shieldgenerator",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12960,6 +13513,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_grubstatue: {
+        tag: "artifact_grubstatue",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12972,6 +13526,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_eggrock: {
+        tag: "artifact_eggrock",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12984,6 +13539,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_hatchfossil: {
+        tag: "artifact_hatchfossil",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -12996,6 +13552,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_rocktornado: {
+        tag: "artifact_rocktornado",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13008,6 +13565,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_magmalamp: {
+        tag: "artifact_magmalamp",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13020,6 +13578,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_rainboweggrock: {
+        tag: "artifact_rainboweggrock",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13032,6 +13591,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_plasmalamp: {
+        tag: "artifact_plasmalamp",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13044,6 +13604,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_moodring: {
+        tag: "artifact_moodring",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13056,6 +13617,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_reactormodel: {
+        tag: "artifact_reactormodel",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13070,6 +13632,7 @@ var db = {
     },
     Terrestrial: {
       artifact_sink: {
+        tag: "artifact_sink",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13082,6 +13645,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_rubikscube: {
+        tag: "artifact_rubikscube",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13094,6 +13658,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_okayxray: {
+        tag: "artifact_okayxray",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13106,6 +13671,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_blender: {
+        tag: "artifact_blender",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13118,6 +13684,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_vhs: {
+        tag: "artifact_vhs",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13130,6 +13697,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_honeyjar: {
+        tag: "artifact_honeyjar",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13142,6 +13710,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_brickphone: {
+        tag: "artifact_brickphone",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13154,6 +13723,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_stethoscope: {
+        tag: "artifact_stethoscope",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13166,6 +13736,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_oracle: {
+        tag: "artifact_oracle",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13178,6 +13749,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_dnamodel: {
+        tag: "artifact_dnamodel",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13192,6 +13764,7 @@ var db = {
     },
     Space: {
       artifact_obelisk: {
+        tag: "artifact_obelisk",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13204,6 +13777,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_moldavite: {
+        tag: "artifact_moldavite",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13216,6 +13790,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_saxophone: {
+        tag: "artifact_saxophone",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13228,6 +13803,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_ameliaswatch: {
+        tag: "artifact_ameliaswatch",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13240,6 +13816,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_teapot: {
+        tag: "artifact_teapot",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13252,6 +13829,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_robotarm: {
+        tag: "artifact_robotarm",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13264,6 +13842,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_bioluminescentrock: {
+        tag: "artifact_bioluminescentrock",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13276,6 +13855,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_pacupercolator: {
+        tag: "artifact_pacupercolator",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13288,6 +13868,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_solarsystem: {
+        tag: "artifact_solarsystem",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13300,6 +13881,7 @@ var db = {
         primaryElement: "Creature"
       },
       artifact_moonmoonmoon: {
+        tag: "artifact_moonmoonmoon",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13314,6 +13896,7 @@ var db = {
     },
     Quest: {
       keepsake_megabrain: {
+        tag: "keepsake_megabrain",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13326,6 +13909,7 @@ var db = {
         primaryElement: "Creature"
       },
       keepsake_crittermanipulator: {
+        tag: "keepsake_crittermanipulator",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13338,6 +13922,7 @@ var db = {
         primaryElement: "Creature"
       },
       keepsake_lonelyminion: {
+        tag: "keepsake_lonelyminion",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13350,6 +13935,7 @@ var db = {
         primaryElement: "Creature"
       },
       keepsake_fossilhunt: {
+        tag: "keepsake_fossilhunt",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13362,6 +13948,7 @@ var db = {
         primaryElement: "Creature"
       },
       keepsake_morbrovermaker: {
+        tag: "keepsake_morbrovermaker",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable",
@@ -13378,6 +13965,7 @@ var db = {
   Misc: {
     Medicine: {
       IntermediateCure: {
+        tag: "IntermediateCure",
         menuOrder: 177013.0,
         tags: [
           "MedicalSupplies",
@@ -13387,6 +13975,7 @@ var db = {
         primaryElement: "Creature"
       },
       IntermediateBooster: {
+        tag: "IntermediateBooster",
         menuOrder: 177013.0,
         tags: [
           "Medicine"
@@ -13395,6 +13984,7 @@ var db = {
         primaryElement: "Creature"
       },
       BasicRadPill: {
+        tag: "BasicRadPill",
         menuOrder: 177013.0,
         tags: [
           "Medicine"
@@ -13403,6 +13993,7 @@ var db = {
         primaryElement: "Creature"
       },
       BasicCure: {
+        tag: "BasicCure",
         menuOrder: 177013.0,
         tags: [
           "Medicine"
@@ -13411,6 +14002,7 @@ var db = {
         primaryElement: "Creature"
       },
       BasicBooster: {
+        tag: "BasicBooster",
         menuOrder: 177013.0,
         tags: [
           "Medicine"
@@ -13419,6 +14011,7 @@ var db = {
         primaryElement: "Creature"
       },
       Antihistamine: {
+        tag: "Antihistamine",
         menuOrder: 177013.0,
         tags: [
           "Medicine"
@@ -13427,6 +14020,7 @@ var db = {
         primaryElement: "Creature"
       },
       AdvancedCure: {
+        tag: "AdvancedCure",
         menuOrder: 177013.0,
         tags: [
           "MedicalSupplies",
@@ -13438,6 +14032,7 @@ var db = {
     },
     Industrial: {
       WoodLog: {
+        tag: "WoodLog",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13449,6 +14044,7 @@ var db = {
         primaryElement: "Creature"
       },
       SwampLilyFlower: {
+        tag: "SwampLilyFlower",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient"
@@ -13457,6 +14053,7 @@ var db = {
         primaryElement: "Creature"
       },
       ResearchDatabank: {
+        tag: "ResearchDatabank",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13466,6 +14063,7 @@ var db = {
         primaryElement: "Creature"
       },
       OrbitalResearchDatabank: {
+        tag: "OrbitalResearchDatabank",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13475,6 +14073,7 @@ var db = {
         primaryElement: "Creature"
       },
       CrabWoodShell: {
+        tag: "CrabWoodShell",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13486,6 +14085,7 @@ var db = {
         primaryElement: "Creature"
       },
       BabyCrabWoodShell: {
+        tag: "BabyCrabWoodShell",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13497,6 +14097,7 @@ var db = {
         primaryElement: "Creature"
       },
       BabyCrabShell: {
+        tag: "BabyCrabShell",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13507,6 +14108,7 @@ var db = {
         primaryElement: "Creature"
       },
       CrabShell: {
+        tag: "CrabShell",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13517,6 +14119,7 @@ var db = {
         primaryElement: "Creature"
       },
       MissileBasic: {
+        tag: "MissileBasic",
         menuOrder: 177013.0,
         tags: [
           "IndustrialProduct"
@@ -13525,6 +14128,7 @@ var db = {
         primaryElement: "Iron"
       },
       GeneShufflerRecharge: {
+        tag: "GeneShufflerRecharge",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient"
@@ -13533,6 +14137,7 @@ var db = {
         primaryElement: "Creature"
       },
       BasicFabric: {
+        tag: "BasicFabric",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient",
@@ -13542,6 +14147,7 @@ var db = {
         primaryElement: "Creature"
       },
       GingerConfig: {
+        tag: "GingerConfig",
         menuOrder: 177013.0,
         tags: [
           "IndustrialIngredient"
@@ -13552,6 +14158,7 @@ var db = {
     },
     Other: {
       TableSalt: {
+        tag: "TableSalt",
         menuOrder: 177013.0,
         tags: [
           "Other"
@@ -13560,6 +14167,7 @@ var db = {
         primaryElement: "Salt"
       },
       PowerStationTools: {
+        tag: "PowerStationTools",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable"
@@ -13568,6 +14176,7 @@ var db = {
         primaryElement: "Creature"
       },
       FarmStationTools: {
+        tag: "FarmStationTools",
         menuOrder: 177013.0,
         tags: [
           "MiscPickupable"
@@ -13576,6 +14185,7 @@ var db = {
         primaryElement: "Creature"
       },
       EggShell: {
+        tag: "EggShell",
         menuOrder: 177013.0,
         tags: [
           "Organics"
@@ -13585,6 +14195,7 @@ var db = {
         primaryElement: "Creature"
       },
       GasGrassHarvested: {
+        tag: "GasGrassHarvested",
         menuOrder: 177013.0,
         tags: [
           "Other"
@@ -13593,6 +14204,7 @@ var db = {
         primaryElement: "Creature"
       },
       RotPile: {
+        tag: "RotPile",
         menuOrder: 177013.0,
         tags: [
           "Organics",
@@ -13606,6 +14218,7 @@ var db = {
     },
     Quest: {
       DreamJournal: {
+        tag: "DreamJournal",
         menuOrder: 177013.0,
         tags: [
           "StoryTraitResource"
@@ -13616,6 +14229,7 @@ var db = {
     },
     Dupe: {
       Minion: {
+        tag: "Minion",
         menuOrder: 177013.0,
         tags: [
           "DupeBrain",
@@ -13633,6 +14247,7 @@ var db = {
   Food: {
     Cooked: {
       WormBasicFruit: {
+        tag: "WormBasicFruit",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -13645,6 +14260,7 @@ var db = {
         spoilTime: 4800.0
       },
       WormBasicFood: {
+        tag: "WormBasicFood",
         menuOrder: 1.0,
         tags: [
           "PedestalDisplayable",
@@ -13657,6 +14273,7 @@ var db = {
         spoilTime: 4800.0
       },
       Tofu: {
+        tag: "Tofu",
         menuOrder: 2.0,
         tags: [
           "PedestalDisplayable",
@@ -13669,6 +14286,7 @@ var db = {
         spoilTime: 2400.0
       },
       SwampFruit: {
+        tag: "SwampFruit",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -13681,6 +14299,7 @@ var db = {
         spoilTime: 2400.0
       },
       SwampDelights: {
+        tag: "SwampDelights",
         menuOrder: 1.0,
         tags: [
           "PedestalDisplayable",
@@ -13693,6 +14312,7 @@ var db = {
         spoilTime: 4800.0
       },
       WormSuperFood: {
+        tag: "WormSuperFood",
         menuOrder: 3.0,
         tags: [
           "PedestalDisplayable",
@@ -13705,6 +14325,7 @@ var db = {
         spoilTime: 19200.0
       },
       SpicyTofu: {
+        tag: "SpicyTofu",
         menuOrder: 5.0,
         tags: [
           "PedestalDisplayable",
@@ -13717,6 +14338,7 @@ var db = {
         spoilTime: 2400.0
       },
       SpiceBread: {
+        tag: "SpiceBread",
         menuOrder: 5.0,
         tags: [
           "PedestalDisplayable",
@@ -13729,6 +14351,7 @@ var db = {
         spoilTime: 4800.0
       },
       ShellfishMeat: {
+        tag: "ShellfishMeat",
         menuOrder: 2.0,
         tags: [
           "PedestalDisplayable",
@@ -13741,6 +14364,7 @@ var db = {
         spoilTime: 2400.0
       },
       SurfAndTurf: {
+        tag: "SurfAndTurf",
         menuOrder: 4.0,
         tags: [
           "PedestalDisplayable",
@@ -13753,6 +14377,7 @@ var db = {
         spoilTime: 2400.0
       },
       WormSuperFruit: {
+        tag: "WormSuperFruit",
         menuOrder: 1.0,
         tags: [
           "PedestalDisplayable",
@@ -13765,6 +14390,7 @@ var db = {
         spoilTime: 2400.0
       },
       Salsa: {
+        tag: "Salsa",
         menuOrder: 4.0,
         tags: [
           "PedestalDisplayable",
@@ -13777,6 +14403,7 @@ var db = {
         spoilTime: 2400.0
       },
       RawEgg: {
+        tag: "RawEgg",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -13789,6 +14416,7 @@ var db = {
         spoilTime: 4800.0
       },
       BasicForagePlant: {
+        tag: "BasicForagePlant",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -13801,6 +14429,7 @@ var db = {
         spoilTime: 0.0
       },
       ForestForagePlant: {
+        tag: "ForestForagePlant",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -13813,6 +14442,7 @@ var db = {
         spoilTime: 0.0
       },
       ColdWheatBread: {
+        tag: "ColdWheatBread",
         menuOrder: 2.0,
         tags: [
           "PedestalDisplayable",
@@ -13825,6 +14455,7 @@ var db = {
         spoilTime: 4800.0
       },
       CookedEgg: {
+        tag: "CookedEgg",
         menuOrder: 2.0,
         tags: [
           "PedestalDisplayable",
@@ -13837,6 +14468,7 @@ var db = {
         spoilTime: 2400.0
       },
       CookedFish: {
+        tag: "CookedFish",
         menuOrder: 3.0,
         tags: [
           "PedestalDisplayable",
@@ -13849,6 +14481,7 @@ var db = {
         spoilTime: 2400.0
       },
       CookedMeat: {
+        tag: "CookedMeat",
         menuOrder: 3.0,
         tags: [
           "PedestalDisplayable",
@@ -13861,6 +14494,7 @@ var db = {
         spoilTime: 2400.0
       },
       Curry: {
+        tag: "Curry",
         menuOrder: 4.0,
         tags: [
           "PedestalDisplayable",
@@ -13873,6 +14507,7 @@ var db = {
         spoilTime: 9600.0
       },
       FieldRation: {
+        tag: "FieldRation",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -13885,6 +14520,7 @@ var db = {
         spoilTime: 0.0
       },
       FishMeat: {
+        tag: "FishMeat",
         menuOrder: 2.0,
         tags: [
           "PedestalDisplayable",
@@ -13897,6 +14533,7 @@ var db = {
         spoilTime: 2400.0
       },
       FriedMushBar: {
+        tag: "FriedMushBar",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -13909,6 +14546,7 @@ var db = {
         spoilTime: 4800.0
       },
       FriedMushroom: {
+        tag: "FriedMushroom",
         menuOrder: 1.0,
         tags: [
           "PedestalDisplayable",
@@ -13921,6 +14559,7 @@ var db = {
         spoilTime: 4800.0
       },
       FruitCake: {
+        tag: "FruitCake",
         menuOrder: 3.0,
         tags: [
           "PedestalDisplayable",
@@ -13933,6 +14572,7 @@ var db = {
         spoilTime: 0.0
       },
       Burger: {
+        tag: "Burger",
         menuOrder: 6.0,
         tags: [
           "PedestalDisplayable",
@@ -13945,6 +14585,7 @@ var db = {
         spoilTime: 2400.0
       },
       Lettuce: {
+        tag: "Lettuce",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -13957,6 +14598,7 @@ var db = {
         spoilTime: 2400.0
       },
       Meat: {
+        tag: "Meat",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -13969,6 +14611,7 @@ var db = {
         spoilTime: 4800.0
       },
       MushBar: {
+        tag: "MushBar",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -13981,6 +14624,7 @@ var db = {
         spoilTime: 4800.0
       },
       Mushroom: {
+        tag: "Mushroom",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -13993,6 +14637,7 @@ var db = {
         spoilTime: 4800.0
       },
       MushroomWrap: {
+        tag: "MushroomWrap",
         menuOrder: 4.0,
         tags: [
           "PedestalDisplayable",
@@ -14005,6 +14650,7 @@ var db = {
         spoilTime: 2400.0
       },
       PacuFillet: {
+        tag: "PacuFillet",
         menuOrder: 2.0,
         tags: [
           "PedestalDisplayable",
@@ -14017,6 +14663,7 @@ var db = {
         spoilTime: 2400.0
       },
       Pancakes: {
+        tag: "Pancakes",
         menuOrder: 3.0,
         tags: [
           "PedestalDisplayable",
@@ -14029,6 +14676,7 @@ var db = {
         spoilTime: 4800.0
       },
       PickledMeal: {
+        tag: "PickledMeal",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -14042,6 +14690,7 @@ var db = {
         spoilTime: 19200.0
       },
       PlantMeat: {
+        tag: "PlantMeat",
         menuOrder: 1.0,
         tags: [
           "PedestalDisplayable",
@@ -14054,6 +14703,7 @@ var db = {
         spoilTime: 2400.0
       },
       PrickleFruit: {
+        tag: "PrickleFruit",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -14066,6 +14716,7 @@ var db = {
         spoilTime: 4800.0
       },
       Quiche: {
+        tag: "Quiche",
         menuOrder: 5.0,
         tags: [
           "PedestalDisplayable",
@@ -14078,6 +14729,7 @@ var db = {
         spoilTime: 2400.0
       },
       GrilledPrickleFruit: {
+        tag: "GrilledPrickleFruit",
         menuOrder: 1.0,
         tags: [
           "PedestalDisplayable",
@@ -14090,6 +14742,7 @@ var db = {
         spoilTime: 4800.0
       },
       BerryPie: {
+        tag: "BerryPie",
         menuOrder: 5.0,
         tags: [
           "PedestalDisplayable",
@@ -14102,6 +14755,7 @@ var db = {
         spoilTime: 2400.0
       },
       SwampForagePlant: {
+        tag: "SwampForagePlant",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -14114,6 +14768,7 @@ var db = {
         spoilTime: 0.0
       },
       BasicPlantFood: {
+        tag: "BasicPlantFood",
         menuOrder: -1.0,
         tags: [
           "PedestalDisplayable",
@@ -14126,6 +14781,7 @@ var db = {
         spoilTime: 4800.0
       },
       BasicPlantBar: {
+        tag: "BasicPlantBar",
         menuOrder: 0.0,
         tags: [
           "PedestalDisplayable",
@@ -14140,6 +14796,7 @@ var db = {
     },
     Dehydrated: {
       DehydratedSurfAndTurf: {
+        tag: "DehydratedSurfAndTurf",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14149,6 +14806,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedSpicyTofu: {
+        tag: "DehydratedSpicyTofu",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14158,6 +14816,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedSpiceBread: {
+        tag: "DehydratedSpiceBread",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14167,6 +14826,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedSalsa: {
+        tag: "DehydratedSalsa",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14176,6 +14836,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedQuiche: {
+        tag: "DehydratedQuiche",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14185,6 +14846,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedFoodPackage: {
+        tag: "DehydratedFoodPackage",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14194,6 +14856,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedMushroomWrap: {
+        tag: "DehydratedMushroomWrap",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14203,6 +14866,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedBerryPie: {
+        tag: "DehydratedBerryPie",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14212,6 +14876,7 @@ var db = {
         primaryElement: "Polypropylene"
       },
       DehydratedCurry: {
+        tag: "DehydratedCurry",
         menuOrder: 177013.0,
         tags: [
           "Dehydrated",
@@ -14223,6 +14888,7 @@ var db = {
     },
     Ingredient: {
       SpiceNut: {
+        tag: "SpiceNut",
         menuOrder: 177013.0,
         tags: [
           "PedestalDisplayable",
@@ -14236,6 +14902,7 @@ var db = {
   Critter: {
     Robot: {
       SweepBot: {
+        tag: "SweepBot",
         menuOrder: -1.0,
         tags: [
           "Creature",
@@ -14249,6 +14916,7 @@ var db = {
         batteryLoss: -17.1428566
       },
       ScoutRover: {
+        tag: "ScoutRover",
         menuOrder: -1.0,
         tags: [
           "Experimental",
@@ -14264,6 +14932,7 @@ var db = {
         deconstructable: true
       },
       MorbRover: {
+        tag: "MorbRover",
         menuOrder: -1.0,
         tags: [
           "Experimental",
@@ -14281,6 +14950,7 @@ var db = {
     },
     Egg: {
       SquirrelEgg: {
+        tag: "SquirrelEgg",
         menuOrder: 8.0,
         tags: [
           "Egg",
@@ -14291,6 +14961,7 @@ var db = {
         primaryElement: "Creature"
       },
       SquirrelHugEgg: {
+        tag: "SquirrelHugEgg",
         menuOrder: 8.0,
         tags: [
           "Egg",
@@ -14301,6 +14972,7 @@ var db = {
         primaryElement: "Creature"
       },
       StaterpillarEgg: {
+        tag: "StaterpillarEgg",
         menuOrder: 10.0,
         tags: [
           "Egg",
@@ -14311,6 +14983,7 @@ var db = {
         primaryElement: "Creature"
       },
       StaterpillarLiquidEgg: {
+        tag: "StaterpillarLiquidEgg",
         menuOrder: 10.0,
         tags: [
           "Egg",
@@ -14321,6 +14994,7 @@ var db = {
         primaryElement: "Creature"
       },
       PuftEgg: {
+        tag: "PuftEgg",
         menuOrder: 4.0,
         tags: [
           "Egg",
@@ -14331,6 +15005,7 @@ var db = {
         primaryElement: "Creature"
       },
       DreckoEgg: {
+        tag: "DreckoEgg",
         menuOrder: 2.0,
         tags: [
           "Egg",
@@ -14341,6 +15016,7 @@ var db = {
         primaryElement: "Creature"
       },
       DreckoPlasticEgg: {
+        tag: "DreckoPlasticEgg",
         menuOrder: 2.0,
         tags: [
           "Egg",
@@ -14351,6 +15027,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugBlackEgg: {
+        tag: "LightBugBlackEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14361,6 +15038,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugBlueEgg: {
+        tag: "LightBugBlueEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14371,6 +15049,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugEgg: {
+        tag: "LightBugEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14381,6 +15060,7 @@ var db = {
         primaryElement: "Creature"
       },
       PuftOxyliteEgg: {
+        tag: "PuftOxyliteEgg",
         menuOrder: 4.0,
         tags: [
           "Egg",
@@ -14391,6 +15071,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugCrystalEgg: {
+        tag: "LightBugCrystalEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14401,6 +15082,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugPinkEgg: {
+        tag: "LightBugPinkEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14411,6 +15093,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugPurpleEgg: {
+        tag: "LightBugPurpleEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14421,6 +15104,7 @@ var db = {
         primaryElement: "Creature"
       },
       MoleEgg: {
+        tag: "MoleEgg",
         menuOrder: 7.0,
         tags: [
           "Egg",
@@ -14431,6 +15115,7 @@ var db = {
         primaryElement: "Creature"
       },
       MoleDelicacyEgg: {
+        tag: "MoleDelicacyEgg",
         menuOrder: 7.0,
         tags: [
           "Egg",
@@ -14441,6 +15126,7 @@ var db = {
         primaryElement: "Creature"
       },
       OilfloaterEgg: {
+        tag: "OilfloaterEgg",
         menuOrder: 6.0,
         tags: [
           "Egg",
@@ -14451,6 +15137,7 @@ var db = {
         primaryElement: "Creature"
       },
       OilfloaterDecorEgg: {
+        tag: "OilfloaterDecorEgg",
         menuOrder: 6.0,
         tags: [
           "Egg",
@@ -14461,6 +15148,7 @@ var db = {
         primaryElement: "Creature"
       },
       OilfloaterHighTempEgg: {
+        tag: "OilfloaterHighTempEgg",
         menuOrder: 6.0,
         tags: [
           "Egg",
@@ -14471,6 +15159,7 @@ var db = {
         primaryElement: "Creature"
       },
       PuftAlphaEgg: {
+        tag: "PuftAlphaEgg",
         menuOrder: 4.0,
         tags: [
           "Egg",
@@ -14481,6 +15170,7 @@ var db = {
         primaryElement: "Creature"
       },
       PuftBleachstoneEgg: {
+        tag: "PuftBleachstoneEgg",
         menuOrder: 4.0,
         tags: [
           "Egg",
@@ -14491,6 +15181,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugOrangeEgg: {
+        tag: "LightBugOrangeEgg",
         menuOrder: 0.0,
         tags: [
           "Egg",
@@ -14501,6 +15192,7 @@ var db = {
         primaryElement: "Creature"
       },
       StaterpillarGasEgg: {
+        tag: "StaterpillarGasEgg",
         menuOrder: 10.0,
         tags: [
           "Egg",
@@ -14511,6 +15203,7 @@ var db = {
         primaryElement: "Creature"
       },
       HatchVeggieEgg: {
+        tag: "HatchVeggieEgg",
         menuOrder: 1.0,
         tags: [
           "Egg",
@@ -14521,6 +15214,7 @@ var db = {
         primaryElement: "Creature"
       },
       HatchEgg: {
+        tag: "HatchEgg",
         menuOrder: 1.0,
         tags: [
           "Egg",
@@ -14531,6 +15225,7 @@ var db = {
         primaryElement: "Creature"
       },
       CrabEgg: {
+        tag: "CrabEgg",
         menuOrder: 5.0,
         tags: [
           "Egg",
@@ -14541,6 +15236,7 @@ var db = {
         primaryElement: "Creature"
       },
       CrabWoodEgg: {
+        tag: "CrabWoodEgg",
         menuOrder: 5.0,
         tags: [
           "Egg",
@@ -14551,6 +15247,7 @@ var db = {
         primaryElement: "Creature"
       },
       CrabFreshWaterEgg: {
+        tag: "CrabFreshWaterEgg",
         menuOrder: 5.0,
         tags: [
           "Egg",
@@ -14561,6 +15258,7 @@ var db = {
         primaryElement: "Creature"
       },
       PacuCleanerEgg: {
+        tag: "PacuCleanerEgg",
         menuOrder: 3.0,
         tags: [
           "Egg",
@@ -14571,6 +15269,7 @@ var db = {
         primaryElement: "Creature"
       },
       DivergentBeetleEgg: {
+        tag: "DivergentBeetleEgg",
         menuOrder: 9.0,
         tags: [
           "Egg",
@@ -14581,6 +15280,7 @@ var db = {
         primaryElement: "Creature"
       },
       HatchHardEgg: {
+        tag: "HatchHardEgg",
         menuOrder: 1.0,
         tags: [
           "Egg",
@@ -14591,6 +15291,7 @@ var db = {
         primaryElement: "Creature"
       },
       PacuTropicalEgg: {
+        tag: "PacuTropicalEgg",
         menuOrder: 3.0,
         tags: [
           "Egg",
@@ -14601,6 +15302,7 @@ var db = {
         primaryElement: "Creature"
       },
       DivergentWormEgg: {
+        tag: "DivergentWormEgg",
         menuOrder: 9.0,
         tags: [
           "Egg",
@@ -14611,6 +15313,7 @@ var db = {
         primaryElement: "Creature"
       },
       HatchMetalEgg: {
+        tag: "HatchMetalEgg",
         menuOrder: 1.0,
         tags: [
           "Egg",
@@ -14621,6 +15324,7 @@ var db = {
         primaryElement: "Creature"
       },
       PacuEgg: {
+        tag: "PacuEgg",
         menuOrder: 3.0,
         tags: [
           "Egg",
@@ -14633,6 +15337,7 @@ var db = {
     },
     Critter: {
       Squirrel: {
+        tag: "Squirrel",
         menuOrder: 8.0,
         tags: [
           "Creature",
@@ -14668,6 +15373,7 @@ var db = {
         miserable: -10.0
       },
       SquirrelHug: {
+        tag: "SquirrelHug",
         menuOrder: 8.0,
         tags: [
           "Creature",
@@ -14702,6 +15408,7 @@ var db = {
         miserable: -10.0
       },
       Staterpillar: {
+        tag: "Staterpillar",
         menuOrder: 10.0,
         tags: [
           "Walker",
@@ -14730,6 +15437,7 @@ var db = {
         miserable: -10.0
       },
       StaterpillarLiquid: {
+        tag: "StaterpillarLiquid",
         menuOrder: 10.0,
         tags: [
           "Walker",
@@ -14757,6 +15465,7 @@ var db = {
         miserable: -10.0
       },
       Puft: {
+        tag: "Puft",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -14784,6 +15493,7 @@ var db = {
         miserable: -10.0
       },
       BeeHive: {
+        tag: "BeeHive",
         menuOrder: 11.0,
         tags: [
           "Experimental",
@@ -14803,6 +15513,7 @@ var db = {
         caloriesLoss: -2500.0
       },
       Bee: {
+        tag: "Bee",
         menuOrder: 11.0,
         tags: [
           "Creature",
@@ -14826,6 +15537,7 @@ var db = {
         glum: -1.0
       },
       Drecko: {
+        tag: "Drecko",
         menuOrder: 2.0,
         tags: [
           "Walker",
@@ -14853,6 +15565,7 @@ var db = {
         miserable: -10.0
       },
       DreckoPlastic: {
+        tag: "DreckoPlastic",
         menuOrder: 2.0,
         tags: [
           "Walker",
@@ -14879,6 +15592,7 @@ var db = {
         miserable: -10.0
       },
       Glom: {
+        tag: "Glom",
         menuOrder: 13.0,
         tags: [
           "Walker",
@@ -14898,6 +15612,7 @@ var db = {
         primaryElement: "Creature"
       },
       LightBugBlack: {
+        tag: "LightBugBlack",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -14924,6 +15639,7 @@ var db = {
         miserable: -10.0
       },
       LightBugBlue: {
+        tag: "LightBugBlue",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -14950,6 +15666,7 @@ var db = {
         miserable: -10.0
       },
       LightBug: {
+        tag: "LightBug",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -14978,6 +15695,7 @@ var db = {
         miserable: -10.0
       },
       PuftOxylite: {
+        tag: "PuftOxylite",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -15004,6 +15722,7 @@ var db = {
         miserable: -10.0
       },
       LightBugCrystal: {
+        tag: "LightBugCrystal",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -15030,6 +15749,7 @@ var db = {
         miserable: -10.0
       },
       LightBugPink: {
+        tag: "LightBugPink",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -15056,6 +15776,7 @@ var db = {
         miserable: -10.0
       },
       LightBugPurple: {
+        tag: "LightBugPurple",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -15082,6 +15803,7 @@ var db = {
         miserable: -10.0
       },
       Mole: {
+        tag: "Mole",
         menuOrder: 7.0,
         tags: [
           "Creature",
@@ -15107,6 +15829,7 @@ var db = {
         miserable: -10.0
       },
       MoleDelicacy: {
+        tag: "MoleDelicacy",
         menuOrder: 7.0,
         tags: [
           "Creature",
@@ -15131,6 +15854,7 @@ var db = {
         miserable: -10.0
       },
       Moo: {
+        tag: "Moo",
         menuOrder: 12.0,
         tags: [
           "Creature",
@@ -15158,6 +15882,7 @@ var db = {
         miserable: -10.0
       },
       Oilfloater: {
+        tag: "Oilfloater",
         menuOrder: 6.0,
         tags: [
           "Hoverer",
@@ -15185,6 +15910,7 @@ var db = {
         miserable: -10.0
       },
       OilfloaterDecor: {
+        tag: "OilfloaterDecor",
         menuOrder: 6.0,
         tags: [
           "Hoverer",
@@ -15211,6 +15937,7 @@ var db = {
         miserable: -10.0
       },
       OilfloaterHighTemp: {
+        tag: "OilfloaterHighTemp",
         menuOrder: 6.0,
         tags: [
           "Hoverer",
@@ -15237,6 +15964,7 @@ var db = {
         miserable: -10.0
       },
       PuftAlpha: {
+        tag: "PuftAlpha",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -15263,6 +15991,7 @@ var db = {
         miserable: -10.0
       },
       PuftBleachstone: {
+        tag: "PuftBleachstone",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -15289,6 +16018,7 @@ var db = {
         miserable: -10.0
       },
       LightBugOrange: {
+        tag: "LightBugOrange",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -15315,6 +16045,7 @@ var db = {
         miserable: -10.0
       },
       StaterpillarGas: {
+        tag: "StaterpillarGas",
         menuOrder: 10.0,
         tags: [
           "Walker",
@@ -15342,6 +16073,7 @@ var db = {
         miserable: -10.0
       },
       HatchVeggie: {
+        tag: "HatchVeggie",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -15368,6 +16100,7 @@ var db = {
         miserable: -10.0
       },
       Hatch: {
+        tag: "Hatch",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -15395,6 +16128,7 @@ var db = {
         miserable: -10.0
       },
       Crab: {
+        tag: "Crab",
         menuOrder: 5.0,
         tags: [
           "Creature",
@@ -15427,6 +16161,7 @@ var db = {
         miserable: -10.0
       },
       CrabWood: {
+        tag: "CrabWood",
         menuOrder: 5.0,
         tags: [
           "Creature",
@@ -15458,6 +16193,7 @@ var db = {
         miserable: -10.0
       },
       CrabFreshWater: {
+        tag: "CrabFreshWater",
         menuOrder: 5.0,
         tags: [
           "Creature",
@@ -15489,6 +16225,7 @@ var db = {
         miserable: -10.0
       },
       PacuCleaner: {
+        tag: "PacuCleaner",
         menuOrder: 3.0,
         tags: [
           "SwimmingCreature",
@@ -15515,6 +16252,7 @@ var db = {
         miserable: -10.0
       },
       DivergentBeetle: {
+        tag: "DivergentBeetle",
         menuOrder: 9.0,
         tags: [
           "Creature",
@@ -15542,6 +16280,7 @@ var db = {
         miserable: -10.0
       },
       HatchHard: {
+        tag: "HatchHard",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -15568,6 +16307,7 @@ var db = {
         miserable: -10.0
       },
       PacuTropical: {
+        tag: "PacuTropical",
         menuOrder: 3.0,
         tags: [
           "SwimmingCreature",
@@ -15594,6 +16334,7 @@ var db = {
         miserable: -10.0
       },
       DivergentWorm: {
+        tag: "DivergentWorm",
         menuOrder: 9.0,
         tags: [
           "Creature",
@@ -15620,6 +16361,7 @@ var db = {
         miserable: -10.0
       },
       HatchMetal: {
+        tag: "HatchMetal",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -15646,6 +16388,7 @@ var db = {
         miserable: -10.0
       },
       Pacu: {
+        tag: "Pacu",
         menuOrder: 3.0,
         tags: [
           "SwimmingCreature",
@@ -15675,6 +16418,7 @@ var db = {
     },
     Baby: {
       DreckoPlasticBaby: {
+        tag: "DreckoPlasticBaby",
         menuOrder: 2.0,
         tags: [
           "Walker",
@@ -15701,6 +16445,7 @@ var db = {
         miserable: -10.0
       },
       DivergentWormBaby: {
+        tag: "DivergentWormBaby",
         menuOrder: 9.0,
         tags: [
           "Creature",
@@ -15727,6 +16472,7 @@ var db = {
         miserable: -10.0
       },
       BeeBaby: {
+        tag: "BeeBaby",
         menuOrder: 11.0,
         tags: [
           "Creature",
@@ -15750,6 +16496,7 @@ var db = {
         glum: -1.0
       },
       DivergentBeetleBaby: {
+        tag: "DivergentBeetleBaby",
         menuOrder: 9.0,
         tags: [
           "Creature",
@@ -15777,6 +16524,7 @@ var db = {
         miserable: -10.0
       },
       CrabFreshWaterBaby: {
+        tag: "CrabFreshWaterBaby",
         menuOrder: 5.0,
         tags: [
           "Creature",
@@ -15808,6 +16556,7 @@ var db = {
         miserable: -10.0
       },
       DreckoBaby: {
+        tag: "DreckoBaby",
         menuOrder: 2.0,
         tags: [
           "Walker",
@@ -15835,6 +16584,7 @@ var db = {
         miserable: -10.0
       },
       HatchBaby: {
+        tag: "HatchBaby",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -15862,6 +16612,7 @@ var db = {
         miserable: -10.0
       },
       CrabWoodBaby: {
+        tag: "CrabWoodBaby",
         menuOrder: 5.0,
         tags: [
           "Creature",
@@ -15893,6 +16644,7 @@ var db = {
         miserable: -10.0
       },
       CrabBaby: {
+        tag: "CrabBaby",
         menuOrder: 5.0,
         tags: [
           "Creature",
@@ -15925,6 +16677,7 @@ var db = {
         miserable: -10.0
       },
       LightBugBaby: {
+        tag: "LightBugBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -15953,6 +16706,7 @@ var db = {
         miserable: -10.0
       },
       HatchMetalBaby: {
+        tag: "HatchMetalBaby",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -15979,6 +16733,7 @@ var db = {
         miserable: -10.0
       },
       PuftOxyliteBaby: {
+        tag: "PuftOxyliteBaby",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -16005,6 +16760,7 @@ var db = {
         miserable: -10.0
       },
       SquirrelHugBaby: {
+        tag: "SquirrelHugBaby",
         menuOrder: 8.0,
         tags: [
           "Creature",
@@ -16031,6 +16787,7 @@ var db = {
         miserable: -10.0
       },
       PuftBaby: {
+        tag: "PuftBaby",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -16058,6 +16815,7 @@ var db = {
         miserable: -10.0
       },
       PuftBleachstoneBaby: {
+        tag: "PuftBleachstoneBaby",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -16084,6 +16842,7 @@ var db = {
         miserable: -10.0
       },
       StaterpillarBaby: {
+        tag: "StaterpillarBaby",
         menuOrder: 10.0,
         tags: [
           "Walker",
@@ -16112,6 +16871,7 @@ var db = {
         miserable: -10.0
       },
       PuftAlphaBaby: {
+        tag: "PuftAlphaBaby",
         menuOrder: 4.0,
         tags: [
           "Creature",
@@ -16138,6 +16898,7 @@ var db = {
         miserable: -10.0
       },
       PacuTropicalBaby: {
+        tag: "PacuTropicalBaby",
         menuOrder: 3.0,
         tags: [
           "SwimmingCreature",
@@ -16164,6 +16925,7 @@ var db = {
         miserable: -10.0
       },
       PacuBaby: {
+        tag: "PacuBaby",
         menuOrder: 3.0,
         tags: [
           "SwimmingCreature",
@@ -16190,6 +16952,7 @@ var db = {
         miserable: -10.0
       },
       PacuCleanerBaby: {
+        tag: "PacuCleanerBaby",
         menuOrder: 3.0,
         tags: [
           "SwimmingCreature",
@@ -16216,6 +16979,7 @@ var db = {
         miserable: -10.0
       },
       OilfloaterHighTempBaby: {
+        tag: "OilfloaterHighTempBaby",
         menuOrder: 6.0,
         tags: [
           "Hoverer",
@@ -16242,6 +17006,7 @@ var db = {
         miserable: -10.0
       },
       StaterpillarGasBaby: {
+        tag: "StaterpillarGasBaby",
         menuOrder: 10.0,
         tags: [
           "Walker",
@@ -16269,6 +17034,7 @@ var db = {
         miserable: -10.0
       },
       OilfloaterDecorBaby: {
+        tag: "OilfloaterDecorBaby",
         menuOrder: 6.0,
         tags: [
           "Hoverer",
@@ -16295,6 +17061,7 @@ var db = {
         miserable: -10.0
       },
       OilfloaterBaby: {
+        tag: "OilfloaterBaby",
         menuOrder: 6.0,
         tags: [
           "Hoverer",
@@ -16322,6 +17089,7 @@ var db = {
         miserable: -10.0
       },
       StaterpillarLiquidBaby: {
+        tag: "StaterpillarLiquidBaby",
         menuOrder: 10.0,
         tags: [
           "Walker",
@@ -16349,6 +17117,7 @@ var db = {
         miserable: -10.0
       },
       MoleDelicacyBaby: {
+        tag: "MoleDelicacyBaby",
         menuOrder: 7.0,
         tags: [
           "Creature",
@@ -16373,6 +17142,7 @@ var db = {
         miserable: -10.0
       },
       MoleBaby: {
+        tag: "MoleBaby",
         menuOrder: 7.0,
         tags: [
           "Creature",
@@ -16398,6 +17168,7 @@ var db = {
         miserable: -10.0
       },
       LightBugPurpleBaby: {
+        tag: "LightBugPurpleBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -16424,6 +17195,7 @@ var db = {
         miserable: -10.0
       },
       LightBugPinkBaby: {
+        tag: "LightBugPinkBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -16450,6 +17222,7 @@ var db = {
         miserable: -10.0
       },
       LightBugOrangeBaby: {
+        tag: "LightBugOrangeBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -16476,6 +17249,7 @@ var db = {
         miserable: -10.0
       },
       LightBugCrystalBaby: {
+        tag: "LightBugCrystalBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -16502,6 +17276,7 @@ var db = {
         miserable: -10.0
       },
       LightBugBlueBaby: {
+        tag: "LightBugBlueBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -16528,6 +17303,7 @@ var db = {
         miserable: -10.0
       },
       LightBugBlackBaby: {
+        tag: "LightBugBlackBaby",
         menuOrder: 0.0,
         tags: [
           "Creature",
@@ -16554,6 +17330,7 @@ var db = {
         miserable: -10.0
       },
       HatchVeggieBaby: {
+        tag: "HatchVeggieBaby",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -16580,6 +17357,7 @@ var db = {
         miserable: -10.0
       },
       HatchHardBaby: {
+        tag: "HatchHardBaby",
         menuOrder: 1.0,
         tags: [
           "Creature",
@@ -16606,6 +17384,7 @@ var db = {
         miserable: -10.0
       },
       SquirrelBaby: {
+        tag: "SquirrelBaby",
         menuOrder: 8.0,
         tags: [
           "Creature",
@@ -16637,6 +17416,7 @@ var db = {
   Plant: {
     CropSeed: {
       BasicFabricMaterialPlantSeed: {
+        tag: "BasicFabricMaterialPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "WaterSeed",
@@ -16647,6 +17427,7 @@ var db = {
         primaryElement: "Creature"
       },
       BasicSingleHarvestPlantSeed: {
+        tag: "BasicSingleHarvestPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16657,6 +17438,7 @@ var db = {
         primaryElement: "Creature"
       },
       BeanPlantSeed: {
+        tag: "BeanPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16667,6 +17449,7 @@ var db = {
         primaryElement: "Creature"
       },
       ColdBreatherSeed: {
+        tag: "ColdBreatherSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16677,6 +17460,7 @@ var db = {
         primaryElement: "Creature"
       },
       ColdWheatSeed: {
+        tag: "ColdWheatSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16687,6 +17471,7 @@ var db = {
         primaryElement: "Creature"
       },
       CritterTrapPlantSeed: {
+        tag: "CritterTrapPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16697,6 +17482,7 @@ var db = {
         primaryElement: "Creature"
       },
       ForestTreeSeed: {
+        tag: "ForestTreeSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16707,6 +17493,7 @@ var db = {
         primaryElement: "Creature"
       },
       GasGrassSeed: {
+        tag: "GasGrassSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16717,6 +17504,7 @@ var db = {
         primaryElement: "Creature"
       },
       SaltPlantSeed: {
+        tag: "SaltPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16727,6 +17515,7 @@ var db = {
         primaryElement: "Creature"
       },
       PrickleFlowerSeed: {
+        tag: "PrickleFlowerSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16737,6 +17526,7 @@ var db = {
         primaryElement: "Creature"
       },
       SeaLettuceSeed: {
+        tag: "SeaLettuceSeed",
         menuOrder: 177013.0,
         tags: [
           "WaterSeed",
@@ -16747,6 +17537,7 @@ var db = {
         primaryElement: "Creature"
       },
       SpiceVineSeed: {
+        tag: "SpiceVineSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16757,6 +17548,7 @@ var db = {
         primaryElement: "Creature"
       },
       OxyfernSeed: {
+        tag: "OxyfernSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16767,6 +17559,7 @@ var db = {
         primaryElement: "Creature"
       },
       SwampHarvestPlantSeed: {
+        tag: "SwampHarvestPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16777,6 +17570,7 @@ var db = {
         primaryElement: "Creature"
       },
       SwampLilySeed: {
+        tag: "SwampLilySeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16787,6 +17581,7 @@ var db = {
         primaryElement: "Creature"
       },
       WormPlantSeed: {
+        tag: "WormPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16797,6 +17592,7 @@ var db = {
         primaryElement: "Creature"
       },
       MushroomSeed: {
+        tag: "MushroomSeed",
         menuOrder: 177013.0,
         tags: [
           "CropSeed",
@@ -16809,6 +17605,7 @@ var db = {
     },
     Crop: {
       BasicFabricPlant: {
+        tag: "BasicFabricPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16825,6 +17622,7 @@ var db = {
         age: 2.0
       },
       BasicSingleHarvestPlant: {
+        tag: "BasicSingleHarvestPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16841,6 +17639,7 @@ var db = {
         age: 3.0
       },
       BeanPlant: {
+        tag: "BeanPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16857,6 +17656,7 @@ var db = {
         age: 21.0
       },
       ColdWheat: {
+        tag: "ColdWheat",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16873,6 +17673,7 @@ var db = {
         age: 18.0
       },
       CritterTrapPlant: {
+        tag: "CritterTrapPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16889,6 +17690,7 @@ var db = {
         age: 30.0
       },
       ForestTree: {
+        tag: "ForestTree",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16905,6 +17707,7 @@ var db = {
         age: 4.5
       },
       GasGrass: {
+        tag: "GasGrass",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16922,6 +17725,7 @@ var db = {
         minLight: 10000.0
       },
       SaltPlant: {
+        tag: "SaltPlant",
         menuOrder: 177013.0,
         tags: [
           "Hanging",
@@ -16939,6 +17743,7 @@ var db = {
         age: 6.0
       },
       PrickleFlower: {
+        tag: "PrickleFlower",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16956,6 +17761,7 @@ var db = {
         minLight: 200.0
       },
       SeaLettuce: {
+        tag: "SeaLettuce",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -16972,6 +17778,7 @@ var db = {
         age: 12.0
       },
       SpiceVine: {
+        tag: "SpiceVine",
         menuOrder: 177013.0,
         tags: [
           "Hanging",
@@ -16989,6 +17796,7 @@ var db = {
         age: 8.0
       },
       SuperWormPlant: {
+        tag: "SuperWormPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17005,6 +17813,7 @@ var db = {
         age: 8.0
       },
       SwampHarvestPlant: {
+        tag: "SwampHarvestPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17021,6 +17830,7 @@ var db = {
         age: 6.6
       },
       SwampLily: {
+        tag: "SwampLily",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17037,6 +17847,7 @@ var db = {
         age: 12.0
       },
       WormPlant: {
+        tag: "WormPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17053,6 +17864,7 @@ var db = {
         age: 4.0
       },
       MushroomPlant: {
+        tag: "MushroomPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17071,6 +17883,7 @@ var db = {
     },
     Forage: {
       BasicForagePlantPlanted: {
+        tag: "BasicForagePlantPlanted",
         menuOrder: 177013.0,
         tags: [],
         mass: 100.0,
@@ -17079,6 +17892,7 @@ var db = {
         primaryElement: "Creature"
       },
       ForestForagePlantPlanted: {
+        tag: "ForestForagePlantPlanted",
         menuOrder: 177013.0,
         tags: [],
         mass: 100.0,
@@ -17087,6 +17901,7 @@ var db = {
         primaryElement: "Creature"
       },
       SwampForagePlantPlanted: {
+        tag: "SwampForagePlantPlanted",
         menuOrder: 177013.0,
         tags: [],
         mass: 100.0,
@@ -17097,6 +17912,7 @@ var db = {
     },
     DecorSeed: {
       CactusPlantSeed: {
+        tag: "CactusPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17107,6 +17923,7 @@ var db = {
         primaryElement: "Creature"
       },
       CylindricaSeed: {
+        tag: "CylindricaSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17117,6 +17934,7 @@ var db = {
         primaryElement: "Creature"
       },
       EvilFlowerSeed: {
+        tag: "EvilFlowerSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17127,6 +17945,7 @@ var db = {
         primaryElement: "Creature"
       },
       BulbPlantSeed: {
+        tag: "BulbPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17137,6 +17956,7 @@ var db = {
         primaryElement: "Creature"
       },
       PrickleGrassSeed: {
+        tag: "PrickleGrassSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17147,6 +17967,7 @@ var db = {
         primaryElement: "Creature"
       },
       WineCupsSeed: {
+        tag: "WineCupsSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17157,6 +17978,7 @@ var db = {
         primaryElement: "Creature"
       },
       ToePlantSeed: {
+        tag: "ToePlantSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17167,6 +17989,7 @@ var db = {
         primaryElement: "Creature"
       },
       LeafyPlantSeed: {
+        tag: "LeafyPlantSeed",
         menuOrder: 177013.0,
         tags: [
           "DecorSeed",
@@ -17179,6 +18002,7 @@ var db = {
     },
     Decor: {
       CactusPlant: {
+        tag: "CactusPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17194,6 +18018,7 @@ var db = {
         maxRadiation: 2200.0
       },
       ColdBreather: {
+        tag: "ColdBreather",
         menuOrder: 177013.0,
         tags: [],
         lowTempWarning: 213.15,
@@ -17206,6 +18031,7 @@ var db = {
         primaryElement: "Creature"
       },
       Cylindrica: {
+        tag: "Cylindrica",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17221,6 +18047,7 @@ var db = {
         maxRadiation: 2200.0
       },
       EvilFlower: {
+        tag: "EvilFlower",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17236,6 +18063,7 @@ var db = {
         maxRadiation: 12200.0
       },
       BulbPlant: {
+        tag: "BulbPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17251,6 +18079,7 @@ var db = {
         maxRadiation: 2200.0
       },
       PrickleGrass: {
+        tag: "PrickleGrass",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17266,6 +18095,7 @@ var db = {
         maxRadiation: 900.0
       },
       Oxyfern: {
+        tag: "Oxyfern",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17281,6 +18111,7 @@ var db = {
         maxRadiation: 2200.0
       },
       WineCups: {
+        tag: "WineCups",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17296,6 +18127,7 @@ var db = {
         maxRadiation: 900.0
       },
       ToePlant: {
+        tag: "ToePlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17311,6 +18143,7 @@ var db = {
         maxRadiation: 2200.0
       },
       LeafyPlant: {
+        tag: "LeafyPlant",
         menuOrder: 177013.0,
         tags: [
           "Plant"
@@ -17330,6 +18163,7 @@ var db = {
   Geyser: {
     Geyser: {
       GeyserGeneric_steam: {
+        tag: "GeyserGeneric_steam",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17342,6 +18176,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_hot_steam: {
+        tag: "GeyserGeneric_hot_steam",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17354,6 +18189,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_hot_water: {
+        tag: "GeyserGeneric_hot_water",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17366,6 +18202,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_slush_water: {
+        tag: "GeyserGeneric_slush_water",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17378,6 +18215,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_filthy_water: {
+        tag: "GeyserGeneric_filthy_water",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17390,6 +18228,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_slush_salt_water: {
+        tag: "GeyserGeneric_slush_salt_water",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17402,6 +18241,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_salt_water: {
+        tag: "GeyserGeneric_salt_water",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17414,6 +18254,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_small_volcano: {
+        tag: "GeyserGeneric_small_volcano",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17426,6 +18267,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_big_volcano: {
+        tag: "GeyserGeneric_big_volcano",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17438,6 +18280,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_liquid_co2: {
+        tag: "GeyserGeneric_liquid_co2",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17450,6 +18293,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_hot_co2: {
+        tag: "GeyserGeneric_hot_co2",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17462,6 +18306,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_hot_hydrogen: {
+        tag: "GeyserGeneric_hot_hydrogen",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17474,6 +18319,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_hot_po2: {
+        tag: "GeyserGeneric_hot_po2",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17486,6 +18332,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_slimy_po2: {
+        tag: "GeyserGeneric_slimy_po2",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17498,6 +18345,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_chlorine_gas: {
+        tag: "GeyserGeneric_chlorine_gas",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17510,6 +18358,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_methane: {
+        tag: "GeyserGeneric_methane",
         menuOrder: 0.0,
         tags: [
           "GeyserFeature",
@@ -17522,6 +18371,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_copper: {
+        tag: "GeyserGeneric_molten_copper",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17534,6 +18384,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_iron: {
+        tag: "GeyserGeneric_molten_iron",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17546,6 +18397,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_gold: {
+        tag: "GeyserGeneric_molten_gold",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17558,6 +18410,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_aluminum: {
+        tag: "GeyserGeneric_molten_aluminum",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17570,6 +18423,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_tungsten: {
+        tag: "GeyserGeneric_molten_tungsten",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17582,6 +18436,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_niobium: {
+        tag: "GeyserGeneric_molten_niobium",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17594,6 +18449,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_molten_cobalt: {
+        tag: "GeyserGeneric_molten_cobalt",
         menuOrder: 2.0,
         tags: [
           "GeyserFeature",
@@ -17606,6 +18462,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_oil_drip: {
+        tag: "GeyserGeneric_oil_drip",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17618,6 +18475,7 @@ var db = {
         primaryElement: "Katairite"
       },
       GeyserGeneric_liquid_sulfur: {
+        tag: "GeyserGeneric_liquid_sulfur",
         menuOrder: 1.0,
         tags: [
           "GeyserFeature",
@@ -17630,6 +18488,7 @@ var db = {
         primaryElement: "Katairite"
       },
       OilWell: {
+        tag: "OilWell",
         menuOrder: 177013.0,
         tags: [
           "Plumbable",
@@ -17648,6 +18507,7 @@ var db = {
   Equipment: {
     Suit: {
       Atmo_Suit: {
+        tag: "Atmo_Suit",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17658,6 +18518,7 @@ var db = {
         primaryElement: "Dirt"
       },
       Jet_Suit: {
+        tag: "Jet_Suit",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17668,6 +18529,7 @@ var db = {
         primaryElement: "Steel"
       },
       Lead_Suit: {
+        tag: "Lead_Suit",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17678,6 +18540,7 @@ var db = {
         primaryElement: "Dirt"
       },
       Oxygen_Mask: {
+        tag: "Oxygen_Mask",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17689,6 +18552,7 @@ var db = {
     },
     Worn: {
       Worn_Atmo_Suit: {
+        tag: "Worn_Atmo_Suit",
         menuOrder: 177013.0,
         tags: [
           "Suit",
@@ -17700,6 +18564,7 @@ var db = {
         primaryElement: "Creature"
       },
       Worn_Jet_Suit: {
+        tag: "Worn_Jet_Suit",
         menuOrder: 177013.0,
         tags: [
           "Suit",
@@ -17709,6 +18574,7 @@ var db = {
         primaryElement: "Creature"
       },
       Worn_Lead_Suit: {
+        tag: "Worn_Lead_Suit",
         menuOrder: 177013.0,
         tags: [
           "Suit",
@@ -17718,6 +18584,7 @@ var db = {
         primaryElement: "Creature"
       },
       Worn_Oxygen_Mask: {
+        tag: "Worn_Oxygen_Mask",
         menuOrder: 177013.0,
         tags: [
           "Suit",
@@ -17729,6 +18596,7 @@ var db = {
     },
     Clothes: {
       Cool_Vest: {
+        tag: "Cool_Vest",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17738,6 +18606,7 @@ var db = {
         primaryElement: "Carbon"
       },
       CustomClothing: {
+        tag: "CustomClothing",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17747,6 +18616,7 @@ var db = {
         primaryElement: "Carbon"
       },
       Funky_Vest: {
+        tag: "Funky_Vest",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17756,6 +18626,7 @@ var db = {
         primaryElement: "Carbon"
       },
       SleepClinicPajamas: {
+        tag: "SleepClinicPajamas",
         menuOrder: 177013.0,
         tags: [
           "Clothes",
@@ -17765,6 +18636,7 @@ var db = {
         primaryElement: "Carbon"
       },
       Warm_Vest: {
+        tag: "Warm_Vest",
         menuOrder: 177013.0,
         tags: [
           "Clothes",

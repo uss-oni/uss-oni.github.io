@@ -44,7 +44,7 @@ namespace USS
         if (name is not null)
         {
           writer.QuoteName = false;
-          file.Write("var " + name + " = ");
+          file.Write("export const " + name + " = ");
         }
         serializer.Serialize(writer, obj);
       }
@@ -60,7 +60,7 @@ namespace USS
           foreach (var (_, subCategory) in category)
             foreach (var (_, entity) in subCategory)
             {
-              entity.tag = null;
+              //entity.tag = null;
               entity.fr = null;
               entity.menu = null;
               entity.components = null;
@@ -2211,7 +2211,7 @@ namespace USS
       {
         foreach (var tag in tags)
         {
-          if (translations[tag].name == "")
+          if (translations[tag].name is null || translations[tag].name.Length == 0)
           {
             translations[tag] = (Strings.Get("STRINGS.MISC.TAGS." + tag.ToUpper()), "");
           }

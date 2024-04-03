@@ -636,6 +636,9 @@ namespace USS
     public static void Get(Entity entity, Crop component)
     {
       entity.menu = Category.Plant.Crop;
+      List<(string, float)> drops = [(component.cropVal.cropId, component.cropVal.numProduced)];
+      var recipe = new Recipe.Plant(entity.tag, component.cropVal.cropDuration, drops.ToArray());
+      recipes.Add(recipe);
     }
     public static void Get(Entity entity, Growing component) { }
     public static void Get(Entity entity, Harvestable component) { }

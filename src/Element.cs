@@ -54,12 +54,18 @@ namespace USS
       {
         entity.menu = Category.Element.Solid;
       }
-      entity.lightAbsorption = element.lightAbsorptionFactor;
       entity.radiationAbsorptionFactor = element.radiationAbsorptionFactor;
       entity.shc = element.specificHeatCapacity;
       entity.thermalConductivity = element.thermalConductivity;
       entity.molarMass = element.molarMass;
-      entity.hardness = element.hardness;
+      if (!element.IsLiquid && !element.IsGas)
+      {
+        entity.hardness = element.hardness;
+      }
+      else
+      {
+        entity.lightAbsorption = element.lightAbsorptionFactor;
+      }
       if (element.strength > 0f)
         entity.strength = element.strength;
       if (element.flow > 0f)
@@ -109,7 +115,8 @@ namespace USS
 
       if (element.sublimateId != 0)
       {
-        if (element.IsSolid) {
+        if (element.IsSolid)
+        {
           var recipe = new Recipe.SublimateSolid(
             origin: entity.tag,
             probability: element.sublimateProbability,
@@ -120,7 +127,8 @@ namespace USS
           );
           recipes.Add(recipe);
         }
-        else {
+        else
+        {
           var recipe = new Recipe.SublimateLiquid(
             origin: entity.tag,
             probability: element.sublimateProbability,

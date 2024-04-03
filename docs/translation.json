@@ -1523,33 +1523,66 @@
     "name": "Algue",
     "desc": "L'algue est un amas de formes de vie monocellulaires et non-mobiles.<br>Elle peut être utilisée pour produire de l'oxygène lorsqu'elle est utilisée dans un diffuseur d'oxygène"
   },
-  "Life": {},
-  "PedestalDisplayable": {},
-  "Solid": {},
-  "Organics": {},
+  "Life": {
+    "name": "Vie",
+    "desc": ""
+  },
+  "PedestalDisplayable": {
+    "name": "MISSING.STRINGS.MISC.TAGS.PEDESTALDISPLAYABLE",
+    "desc": ""
+  },
+  "Solid": {
+    "name": "Solide",
+    "desc": ""
+  },
+  "Organics": {
+    "name": "Organique",
+    "desc": ""
+  },
   "BleachStone": {
     "name": "Roche Chlorée",
     "desc": "La roche chlorée est un composant instable qui diffuse du chlore gazeux irrespirable<br>Elle a des applications hygiéniques."
   },
-  "FlyingCritterEdible": {},
-  "ConsumableOre": {},
+  "FlyingCritterEdible": {
+    "name": "Appât",
+    "desc": ""
+  },
+  "ConsumableOre": {
+    "name": "Minerai consommable",
+    "desc": ""
+  },
   "DirtyWater": {
     "name": "Eau Polluée",
     "desc": "L'eau polluée est consituée d'eau sale, non filtrée.<br>Elle est impropre à la consommation."
   },
-  "Mixture": {},
-  "AnyWater": {},
-  "Liquid": {},
+  "Mixture": {
+    "name": "Mélange",
+    "desc": ""
+  },
+  "AnyWater": {
+    "name": "À base d'eau",
+    "desc": ""
+  },
+  "Liquid": {
+    "name": "Liquide",
+    "desc": ""
+  },
   "NuclearWaste": {
     "name": "Déchet Nucléaire Liquide",
     "desc": "Liquide hautement toxique chargé en contaminants radioactifs. Émet des radiations qui peuvent être absorbées par un générateur à radbolts."
   },
-  "EmitsLight": {},
+  "EmitsLight": {
+    "name": "Source de Lumière",
+    "desc": ""
+  },
   "OxyRock": {
     "name": "Oxylite",
     "desc": "L'oxylite (Ir<sub>3</sub>O<sub>2</sub>) est un composé chimique qui diffuse de l'oxygène lentement.<br>Le taux d'oxygène augmente lorsque l'oxylite est excavé, mais cela épuise le minerai plus rapidement."
   },
-  "Oxidizer": {},
+  "Oxidizer": {
+    "name": "Comburant",
+    "desc": ""
+  },
   "SlimeMold": {
     "name": "Vase",
     "desc": "La vase est un mélange biologique épais d'algue, de champignon et de mucopolysaccharides.<br>Elle peut être distillée en algue et émet de l'oxygène pollué lorsqu'elle est creusée."
@@ -1558,27 +1591,54 @@
     "name": "Terre Polluée",
     "desc": "La terre polluée est un déchet toxique non traité.<br>Elle émet de l'oxygène pollué."
   },
-  "Compostable": {},
+  "Compostable": {
+    "name": "Compostable",
+    "desc": ""
+  },
   "CrushedIce": {
     "name": "Glace pilée",
     "desc": "(H<sub>2</sub>O) Une bouillie de glace à moitié solide."
   },
-  "IceOre": {},
-  "Unstable": {},
-  "Liquifiable": {},
+  "IceOre": {
+    "name": "Glace",
+    "desc": ""
+  },
+  "Unstable": {
+    "name": "Instable",
+    "desc": ""
+  },
+  "Liquifiable": {
+    "name": "Liquéfiable",
+    "desc": ""
+  },
   "Diamond": {
     "name": "Diamant",
     "desc": "Le diamant (C) est un carbone de haute densité de niveau industriel<br>Il est très difficile à extraire."
   },
-  "BuildableAny": {},
-  "Transparent": {},
-  "Other": {},
+  "BuildableAny": {
+    "name": "Constructibles",
+    "desc": ""
+  },
+  "Transparent": {
+    "name": "Transparent",
+    "desc": ""
+  },
+  "Other": {
+    "name": "Divers",
+    "desc": ""
+  },
   "Isoresin": {
     "name": "Isorésine",
     "desc": "L'isorésine est une sève cristallisée composée de chaînes  de polymères longues.<br>Elle est utilisée dans la production de matériaux rares de haute qualité."
   },
-  "BuildableRaw": {},
-  "RareMaterials": {},
+  "BuildableRaw": {
+    "name": "Matériau Brut",
+    "desc": ""
+  },
+  "RareMaterials": {
+    "name": "Ressource rare",
+    "desc": ""
+  },
   "Sucrose": {
     "name": "Saccharose",
     "desc": "Le saccharose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) est la forme brute du sucre.<br>Il peut être utilisé tel quel pour la cuisine, ou raffiné pour accompagner les repas, ce qui améliorera le Moral du Duplicant."
@@ -1591,8 +1651,14 @@
     "name": "Niobium",
     "desc": "Le niobium (Nb) est un métal rare avec beaucoup d'applications pratiques en métallurgie et dans la Recherche sur les supraconducteurs."
   },
-  "Metal": {},
-  "RefinedMetal": {},
+  "Metal": {
+    "name": "Minerai de Métal",
+    "desc": ""
+  },
+  "RefinedMetal": {
+    "name": "Métal Raffiné",
+    "desc": ""
+  },
   "MilkIce": {
     "name": "Brackène Gelé",
     "desc": "Le brackène gelé est constitué de brackène congelé à l'état Solide."
@@ -1601,7 +1667,10 @@
     "name": "Minerai de Cuivre",
     "desc": "Le minerai de cuivre (Cu<sub>2</sub>O) est un métal conducteur.<br>Il peut être utilisé pour construire des systèmes d'énergie."
   },
-  "Ore": {},
+  "Ore": {
+    "name": "Minerai",
+    "desc": ""
+  },
   "Copper": {
     "name": "Cuivre",
     "desc": "Le Cuivre (Cu) est un métal conducteur.<br>Il est adapté pour fabriquer des systèmes électriques."
@@ -1610,15 +1679,30 @@
     "name": "Roche Concassée",
     "desc": "La roche concassée est une roche magmatique écrasée en un mélange mécanique."
   },
-  "BuildableProcessed": {},
+  "BuildableProcessed": {
+    "name": "Minéral Raffiné",
+    "desc": ""
+  },
   "SuperInsulator": {
     "name": "Insulite",
     "desc": "L'insulite réduit les Transferts de Chaleur et est composée d'Abyssalite recristallisée."
   },
-  "Plumbable": {},
-  "Crushable": {},
-  "Insulator": {},
-  "ManufacturedMaterial": {},
+  "Plumbable": {
+    "name": "Alimentation en eau",
+    "desc": ""
+  },
+  "Crushable": {
+    "name": "Concassable",
+    "desc": ""
+  },
+  "Insulator": {
+    "name": "Isolant",
+    "desc": ""
+  },
+  "ManufacturedMaterial": {
+    "name": "Matériau manufacturé",
+    "desc": ""
+  },
   "BrineIce": {
     "name": "Glace saumurée",
     "desc": "La glace saumurée est une solution naturelle contenant une concentration élevée de sel dissout dans l'eau et gelée jusqu'à atteindre un état solide.<br>Elle peut être utilisée dans les processus de dessalement afin de séparer le sel utilisable."
@@ -1627,7 +1711,10 @@
     "name": "Visco-Gel Solide",
     "desc": "Le visco-gel est un polymère possédant une tension de surface élevée lorsqu'il est dans sa forme liquide.<br>Celui-ci est à l'état solide."
   },
-  "Plastic": {},
+  "Plastic": {
+    "name": "Plastiques",
+    "desc": ""
+  },
   "Ceramic": {
     "name": "Céramique",
     "desc": "La céramique est un matériau fragile et dur formé à partir d'argile chauffée.<br>C'est un <b>matériau de construction</b> fiable."
@@ -1640,7 +1727,10 @@
     "name": "Engrais",
     "desc": "L'engrais est un mélange de nutriments biologiques.<br>Il permet à certaines plantes de pousser."
   },
-  "Agriculture": {},
+  "Agriculture": {
+    "name": "Agriculture",
+    "desc": ""
+  },
   "SolidCrudeOil": {
     "name": "Pétrole Brut Solide",
     "desc": ""
@@ -1653,7 +1743,10 @@
     "name": "Plastique",
     "desc": "Le plastique (C<sub>3</sub>H<sub>6</sub>)<sub>n</sub> est un polymère thermoplastique.<br>Il est utilisé pour construire une grande quantité d'équipements."
   },
-  "Antiseptic": {},
+  "Antiseptic": {
+    "name": "Antiseptique",
+    "desc": ""
+  },
   "SolidNaphtha": {
     "name": "Naphtha Solide",
     "desc": "Le naphta est un mélange d'hydrocarbures distillés à l'état solide."
@@ -1702,7 +1795,10 @@
     "name": "Obsidienne",
     "desc": "L'obsidienne est un composite fragile de verre volcanique."
   },
-  "PreciousRock": {},
+  "PreciousRock": {
+    "name": "Roche Précieuse",
+    "desc": ""
+  },
   "SolidPetroleum": {
     "name": "Pétrole Solide",
     "desc": "Le pétrole est une source d'énergie.<br>Celui-ci est à l'état solide."
@@ -1751,7 +1847,10 @@
     "name": "Minerai d'Uranium",
     "desc": "Le minerai d'uranium (U) est une substance hautement radioactive.<br>Il peut être raffiné avant d'être utilisé dans des réacteurs nucléaires."
   },
-  "Noncrushable": {},
+  "Noncrushable": {
+    "name": "Incassable",
+    "desc": ""
+  },
   "AluminumOre": {
     "name": "Minerai d'Aluminium",
     "desc": "Le minerai d'aluminium, aussi appelé bauxite, est une roche sédimentaire riche en métaux.<br>Il peut être raffiné pour obtenir de l'aluminum."
@@ -1776,7 +1875,10 @@
     "name": "Sable",
     "desc": "Le sable est un composite de roche granulaire.<br>Il est utilisé comme milieu filtrant."
   },
-  "Filter": {},
+  "Filter": {
+    "name": "Matériau Filtrant",
+    "desc": ""
+  },
   "Snow": {
     "name": "Neige",
     "desc": "La neige (H<sub>2</sub>O) est une masse de particules de glace cristalline.<br>Elle se transforme en eau lorsqu'elle fond."
@@ -1793,7 +1895,10 @@
     "name": "Argile",
     "desc": "L'argile est un mélange naturel de pierre et de terre qui durcit à haute Température.<br>C'est un <b>matériau de construction</b> fiable."
   },
-  "Farmable": {},
+  "Farmable": {
+    "name": "Sol Cultivable",
+    "desc": ""
+  },
   "Ice": {
     "name": "Glace",
     "desc": "La glace (H<sub>2</sub>O) est de l'eau propre gelée à l'état Solide."
@@ -1814,7 +1919,10 @@
     "name": "Charbon",
     "desc": "Le charbon (C) est un combustible fossile composé de carbone.<br>Il est utilisé pour la production d'énergie."
   },
-  "Coal": {},
+  "Coal": {
+    "name": "Charbon",
+    "desc": ""
+  },
   "SolidOxygen": {
     "name": "Oxygène Solide",
     "desc": "L'Oxygène solide (O<sub>2</sub>) est un élément respirable à l'état Solide."
@@ -1879,7 +1987,10 @@
     "name": "Neutronium",
     "desc": "Le neutronium (Nt) est un élément mystérieux et extrêmement résilient.<br>Il ne peut être excavé par aucun outil de Duplicant."
   },
-  "Special": {},
+  "Special": {
+    "name": "Spécial",
+    "desc": ""
+  },
   "SolidEthanol": {
     "name": "Éthanol Solide",
     "desc": "L'éthanol (C<sub>2</sub>H<sub>6</sub>O) est un composé chimique avancé.<br>Lorsqu'il est brûlé, il devient un carburant très efficace."
@@ -1952,7 +2063,10 @@
     "name": "Pétrole",
     "desc": "Le pétrole est une source d'énergie, raffinée à partir de pétrole brut.<br>C'est aussi un ingrédient essentiel pour la production de plastique."
   },
-  "CombustibleLiquid": {},
+  "CombustibleLiquid": {
+    "name": "Liquide Combustible",
+    "desc": ""
+  },
   "MoltenSalt": {
     "name": "Sel Fondu",
     "desc": "Le sel fondu (NaCl) est un composé chimique comestible qui a été chauffé pour atteindre un état liquide."
@@ -1993,7 +2107,10 @@
     "name": "Naphtha Liquide",
     "desc": "Le naphta est un mélange d'hydrocarbures distillés, produit par la combustion du plastique."
   },
-  "Oil": {},
+  "Oil": {
+    "name": "Hydrocarbure",
+    "desc": ""
+  },
   "MoltenSucrose": {
     "name": "Saccharose Liquide",
     "desc": "Le saccharose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) est la forme brute du sucre, qui, une fois chauffé, passe à l'état liquide.<br>Il peut être utilisé tel quel pour la cuisine, ou raffiné pour accompagner les repas, ce qui améliorera le Moral du Duplicant."
@@ -2030,8 +2147,14 @@
     "name": "Gaz de Soufre",
     "desc": "Le soufre (S) est un élément chimique commun et un sous-produit issu de la production de gaz naturel.<br>Celui-ci est à l'état gazeux."
   },
-  "Gas": {},
-  "Unbreathable": {},
+  "Gas": {
+    "name": "Gaz",
+    "desc": ""
+  },
+  "Unbreathable": {
+    "name": "Gaz irrespirable",
+    "desc": ""
+  },
   "SaltGas": {
     "name": "Gaz de Sel",
     "desc": "Le gaz de sel (NaCl) est un composé chimique comestible passée à l'état gazeux après avoir été surchauffée."
@@ -2044,7 +2167,10 @@
     "name": "Oxygène",
     "desc": "L'Oxygène (O<sub>2</sub>) est un gaz atomiquement léger et respirable, nécessaire pour rester en vie.<br>Il a tendance à s'élever au dessus des autres gaz."
   },
-  "Breathable": {},
+  "Breathable": {
+    "name": "Gaz respirable",
+    "desc": ""
+  },
   "CobaltGas": {
     "name": "Gaz de Cobalt",
     "desc": "Le cobalt (Co) est un métal raffiné qui, une fois chauffé, se transforme en gaz."
@@ -2053,7 +2179,10 @@
     "name": "Gaz d'Acier",
     "desc": "Le gaz d'acier est un gaz métallique surchauffé qui est composé de fer et de carbone."
   },
-  "Alloy": {},
+  "Alloy": {
+    "name": "Alliage",
+    "desc": ""
+  },
   "ChlorineGas": {
     "name": "Chlore Gazeux",
     "desc": "Le Chlore (Cl) est un élément tueur de germes naturel à l'état gazeux."
@@ -2074,7 +2203,10 @@
     "name": "Gaz Naturel",
     "desc": "Le gaz naturel est un mélange de plusieurs alcanes à l'état gazeux.<br>Il est utilisé pour la production d'énergie."
   },
-  "CombustibleGas": {},
+  "CombustibleGas": {
+    "name": "Gaz combustible",
+    "desc": ""
+  },
   "GoldGas": {
     "name": "Gaz d'Or",
     "desc": "Le gaz d'or (Au) est un métal conducteur précieux qui a été chauffé pour passer à l'état gazeux."
@@ -2131,61 +2263,214 @@
     "name": "Gaz de Cuivre",
     "desc": "Le gaz de cuivre (Cu) est un métal conducteur qui a été chauffé pour passer à l'état gazeux."
   },
-  "Clinic": {},
-  "ScienceBuilding": {},
-  "RanchStationType": {},
-  "IndustrialMachinery": {},
-  "RecBuilding": {},
-  "RocketModule": {},
-  "BedType": {},
-  "Bunker": {},
-  "FloorTiles": {},
-  "Decoration": {},
-  "Carpeted": {},
-  "LightSource": {},
-  "OverlayBackLayer": {},
-  "OverlayFrontLayer": {},
-  "CookTop": {},
-  "CreatureRelocator": {},
-  "MessTable": {},
-  "Telepad": {},
-  "Experimental": {},
-  "Backwall": {},
-  "Gravitas": {},
-  "FarmStationType": {},
-  "FarmTiles": {},
-  "ToiletType": {},
-  "FlushToiletType": {},
-  "Vents": {},
-  "Window": {},
-  "HEPPassThrough": {},
-  "LaunchButtonRocketModule": {},
-  "NoseRocketModule": {},
-  "WashStation": {},
-  "AdvancedWashStation": {},
-  "Pipes": {},
-  "JetSuitBlocker": {},
-  "NotRocketInteriorBuilding": {},
-  "CorrosionProof": {},
-  "RocketInteriorBuilding": {},
-  "LuxuryBedType": {},
-  "DeStressingBuilding": {},
-  "ModularConduitPort": {},
-  "ModularLaunchpadPort": {},
-  "Park": {},
-  "PowerStation": {},
-  "NotRoomAssignable": {},
-  "UniquePerWorld": {},
-  "RocketInterior": {},
-  "NoRocketRefund": {},
-  "SpiceStation": {},
-  "TravelTubeBridges": {},
-  "WireBridges": {},
+  "Clinic": {
+    "name": "Clinique",
+    "desc": ""
+  },
+  "ScienceBuilding": {
+    "name": "MISSING.STRINGS.MISC.TAGS.SCIENCEBUILDING",
+    "desc": ""
+  },
+  "RanchStationType": {
+    "name": "MISSING.STRINGS.MISC.TAGS.RANCHSTATIONTYPE",
+    "desc": ""
+  },
+  "IndustrialMachinery": {
+    "name": "MISSING.STRINGS.MISC.TAGS.INDUSTRIALMACHINERY",
+    "desc": ""
+  },
+  "RecBuilding": {
+    "name": "MISSING.STRINGS.MISC.TAGS.RECBUILDING",
+    "desc": ""
+  },
+  "RocketModule": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ROCKETMODULE",
+    "desc": ""
+  },
+  "BedType": {
+    "name": "MISSING.STRINGS.MISC.TAGS.BEDTYPE",
+    "desc": ""
+  },
+  "Bunker": {
+    "name": "MISSING.STRINGS.MISC.TAGS.BUNKER",
+    "desc": ""
+  },
+  "FloorTiles": {
+    "name": "MISSING.STRINGS.MISC.TAGS.FLOORTILES",
+    "desc": ""
+  },
+  "Decoration": {
+    "name": "Décoration",
+    "desc": ""
+  },
+  "Carpeted": {
+    "name": "MISSING.STRINGS.MISC.TAGS.CARPETED",
+    "desc": ""
+  },
+  "LightSource": {
+    "name": "MISSING.STRINGS.MISC.TAGS.LIGHTSOURCE",
+    "desc": ""
+  },
+  "OverlayBackLayer": {
+    "name": "MISSING.STRINGS.MISC.TAGS.OVERLAYBACKLAYER",
+    "desc": ""
+  },
+  "OverlayFrontLayer": {
+    "name": "MISSING.STRINGS.MISC.TAGS.OVERLAYFRONTLAYER",
+    "desc": ""
+  },
+  "CookTop": {
+    "name": "MISSING.STRINGS.MISC.TAGS.COOKTOP",
+    "desc": ""
+  },
+  "CreatureRelocator": {
+    "name": "MISSING.STRINGS.MISC.TAGS.CREATURERELOCATOR",
+    "desc": ""
+  },
+  "MessTable": {
+    "name": "MISSING.STRINGS.MISC.TAGS.MESSTABLE",
+    "desc": ""
+  },
+  "Telepad": {
+    "name": "MISSING.STRINGS.MISC.TAGS.TELEPAD",
+    "desc": ""
+  },
+  "Experimental": {
+    "name": "MISSING.STRINGS.MISC.TAGS.EXPERIMENTAL",
+    "desc": ""
+  },
+  "Backwall": {
+    "name": "MISSING.STRINGS.MISC.TAGS.BACKWALL",
+    "desc": ""
+  },
+  "Gravitas": {
+    "name": "MISSING.STRINGS.MISC.TAGS.GRAVITAS",
+    "desc": ""
+  },
+  "FarmStationType": {
+    "name": "MISSING.STRINGS.MISC.TAGS.FARMSTATIONTYPE",
+    "desc": ""
+  },
+  "FarmTiles": {
+    "name": "MISSING.STRINGS.MISC.TAGS.FARMTILES",
+    "desc": ""
+  },
+  "ToiletType": {
+    "name": "MISSING.STRINGS.MISC.TAGS.TOILETTYPE",
+    "desc": ""
+  },
+  "FlushToiletType": {
+    "name": "MISSING.STRINGS.MISC.TAGS.FLUSHTOILETTYPE",
+    "desc": ""
+  },
+  "Vents": {
+    "name": "MISSING.STRINGS.MISC.TAGS.VENTS",
+    "desc": ""
+  },
+  "Window": {
+    "name": "MISSING.STRINGS.MISC.TAGS.WINDOW",
+    "desc": ""
+  },
+  "HEPPassThrough": {
+    "name": "MISSING.STRINGS.MISC.TAGS.HEPPASSTHROUGH",
+    "desc": ""
+  },
+  "LaunchButtonRocketModule": {
+    "name": "MISSING.STRINGS.MISC.TAGS.LAUNCHBUTTONROCKETMODULE",
+    "desc": ""
+  },
+  "NoseRocketModule": {
+    "name": "MISSING.STRINGS.MISC.TAGS.NOSEROCKETMODULE",
+    "desc": ""
+  },
+  "WashStation": {
+    "name": "MISSING.STRINGS.MISC.TAGS.WASHSTATION",
+    "desc": ""
+  },
+  "AdvancedWashStation": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ADVANCEDWASHSTATION",
+    "desc": ""
+  },
+  "Pipes": {
+    "name": "MISSING.STRINGS.MISC.TAGS.PIPES",
+    "desc": ""
+  },
+  "JetSuitBlocker": {
+    "name": "MISSING.STRINGS.MISC.TAGS.JETSUITBLOCKER",
+    "desc": ""
+  },
+  "NotRocketInteriorBuilding": {
+    "name": "MISSING.STRINGS.MISC.TAGS.NOTROCKETINTERIORBUILDING",
+    "desc": ""
+  },
+  "CorrosionProof": {
+    "name": "MISSING.STRINGS.MISC.TAGS.CORROSIONPROOF",
+    "desc": ""
+  },
+  "RocketInteriorBuilding": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ROCKETINTERIORBUILDING",
+    "desc": ""
+  },
+  "LuxuryBedType": {
+    "name": "MISSING.STRINGS.MISC.TAGS.LUXURYBEDTYPE",
+    "desc": ""
+  },
+  "DeStressingBuilding": {
+    "name": "MISSING.STRINGS.MISC.TAGS.DESTRESSINGBUILDING",
+    "desc": ""
+  },
+  "ModularConduitPort": {
+    "name": "MISSING.STRINGS.MISC.TAGS.MODULARCONDUITPORT",
+    "desc": ""
+  },
+  "ModularLaunchpadPort": {
+    "name": "MISSING.STRINGS.MISC.TAGS.MODULARLAUNCHPADPORT",
+    "desc": ""
+  },
+  "Park": {
+    "name": "MISSING.STRINGS.MISC.TAGS.PARK",
+    "desc": ""
+  },
+  "PowerStation": {
+    "name": "Centrale d'énergie",
+    "desc": ""
+  },
+  "NotRoomAssignable": {
+    "name": "MISSING.STRINGS.MISC.TAGS.NOTROOMASSIGNABLE",
+    "desc": ""
+  },
+  "UniquePerWorld": {
+    "name": "MISSING.STRINGS.MISC.TAGS.UNIQUEPERWORLD",
+    "desc": ""
+  },
+  "RocketInterior": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ROCKETINTERIOR",
+    "desc": ""
+  },
+  "NoRocketRefund": {
+    "name": "MISSING.STRINGS.MISC.TAGS.NOROCKETREFUND",
+    "desc": ""
+  },
+  "SpiceStation": {
+    "name": "MISSING.STRINGS.MISC.TAGS.SPICESTATION",
+    "desc": ""
+  },
+  "TravelTubeBridges": {
+    "name": "MISSING.STRINGS.MISC.TAGS.TRAVELTUBEBRIDGES",
+    "desc": ""
+  },
+  "WireBridges": {
+    "name": "MISSING.STRINGS.MISC.TAGS.WIREBRIDGES",
+    "desc": ""
+  },
   "ClustercraftInteriorDoor": {
     "name": "écoutille intérieure",
     "desc": "Une écoutille pour entrer et sortir de la fusée."
   },
-  "Comet": {},
+  "Comet": {
+    "name": "MISSING.STRINGS.MISC.TAGS.COMET",
+    "desc": ""
+  },
   "RockComet": {
     "name": "Météore rocheux",
     "desc": "Météore rocheux"
@@ -2226,8 +2511,14 @@
     "name": "Théière de Russell",
     "desc": "Il n'est pas possible de prouver sa non-existence."
   },
-  "MiscPickupable": {},
-  "Artifact": {},
+  "MiscPickupable": {
+    "name": "MISSING.STRINGS.MISC.TAGS.MISCPICKUPABLE",
+    "desc": ""
+  },
+  "Artifact": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ARTIFACT",
+    "desc": ""
+  },
   "artifact_sandstone": {
     "name": "Grès",
     "desc": "Une très jolie pierre composée de multiples couches de sédiment."
@@ -2360,13 +2651,22 @@
     "name": "Modèle de Centrale Électrique",
     "desc": "Ça se prononce nu-clé-aire."
   },
-  "MedicalSupplies": {},
-  "DoctorStationMedicalSupplies": {},
+  "MedicalSupplies": {
+    "name": "Fournitures médicales",
+    "desc": ""
+  },
+  "DoctorStationMedicalSupplies": {
+    "name": "Pack médical",
+    "desc": ""
+  },
   "IntermediateCure": {
     "name": "Pack médical",
     "desc": "Un traitement administré par un docteur pour traiter les affections légères."
   },
-  "Medicine": {},
+  "Medicine": {
+    "name": "Médicament",
+    "desc": ""
+  },
   "IntermediateBooster": {
     "name": "Booster d'immunité",
     "desc": "Réduit significativement le risque de tomber malade."
@@ -2423,7 +2723,10 @@
     "name": "Météore cotonneux de poussière",
     "desc": "Météore cotonneux de poussière"
   },
-  "AdvancedDoctorStationMedicalSupplies": {},
+  "AdvancedDoctorStationMedicalSupplies": {
+    "name": "Flacon de sérum",
+    "desc": ""
+  },
   "AdvancedCure": {
     "name": "Flacon de sérum",
     "desc": "Un traitement administré par un docteur pour traiter les affections sévères."
@@ -2464,8 +2767,14 @@
     "name": "Échelle",
     "desc": "Une échelle en plastique dur."
   },
-  "IndustrialIngredient": {},
-  "BuildingWood": {},
+  "IndustrialIngredient": {
+    "name": "Ingrédient Industriel",
+    "desc": ""
+  },
+  "BuildingWood": {
+    "name": "Bois",
+    "desc": ""
+  },
   "WoodLog": {
     "name": "Bois",
     "desc": "Bois provenant d'un arbor ou d'un Oakshell."
@@ -2474,7 +2783,10 @@
     "name": "Fruitver Chétif",
     "desc": "Un Fruitver qui n'a pas réussi à se développer correctement.<br>Il est néanmoins comestible et a un peu de goût."
   },
-  "Edible": {},
+  "Edible": {
+    "name": "Comestible",
+    "desc": ""
+  },
   "WormBasicFruit": {
     "name": "Fruitver Chétif",
     "desc": "Un Fruitver qui n'a pas réussi à se développer correctement.<br>Il est néanmoins comestible et a un peu de goût."
@@ -2531,8 +2843,14 @@
     "name": "Conserve de Fruitver",
     "desc": "Une marmelade de longue conservation à base de Grubfruits conservés dans le saccharose.<br>La marmelade épaisse et gluante garde l'aspect du réservoir lorsqu'on la sort, mais sa saveur douce est sans égale."
   },
-  "Dehydrated": {},
-  "PickupableStorage": {},
+  "Dehydrated": {
+    "name": "Déshydraté",
+    "desc": ""
+  },
+  "PickupableStorage": {
+    "name": "MISSING.STRINGS.MISC.TAGS.PICKUPABLESTORAGE",
+    "desc": ""
+  },
   "DehydratedSurfAndTurf": {
     "name": "Surf'n'Turf déshydraté",
     "desc": "Une portion de surf'n'turf déshydratée. Elle doit être réhydratée avant de pouvoir être considérée comme un aliment.<br>Les rations sèches n'ont pas de  date de péremption."
@@ -2553,7 +2871,10 @@
     "name": "Noix Poivrée Pincha",
     "desc": "Toute la saveur du poivre pincha.<br>La coque amère dissimule un noyau riche et poivré, utilisé en cuisine."
   },
-  "CookingIngredient": {},
+  "CookingIngredient": {
+    "name": "Ingrédient",
+    "desc": ""
+  },
   "SpiceNut": {
     "name": "Noix Poivrée Pincha",
     "desc": "Toute la saveur du poivre pincha.<br>La coque amère dissimule un noyau riche et poivré, utilisé en cuisine."
@@ -2630,7 +2951,10 @@
     "name": "Coquille d'œuf",
     "desc": "Peut être écrasée pour produire de la chaux."
   },
-  "StoryTraitResource": {},
+  "StoryTraitResource": {
+    "name": "Attributs d'Histoire",
+    "desc": ""
+  },
   "DreamJournal": {
     "name": "Journal de Rêve",
     "desc": "La retranscription d'un rêve provoqué par le port d'un pyjama.<br>Peut être analysée à l'aide du synthétiseur somnium."
@@ -2643,7 +2967,10 @@
     "name": "Mue d'un oakshell",
     "desc": "Peut être écrasée pour produire du <link=\"WOOD\">bois</link."
   },
-  "MoltShell": {},
+  "MoltShell": {
+    "name": "MISSING.STRINGS.MISC.TAGS.MOLTSHELL",
+    "desc": ""
+  },
   "CrabWoodShell": {
     "name": "Mue d'un oakshell",
     "desc": "Peut être écrasée pour produire du <link=\"WOOD\">bois</link."
@@ -2776,7 +3103,10 @@
     "name": "Guichet d'accueil",
     "desc": "Une tasse de café pleine et une note abandonnée au milieu d'une phrase se trouvent derrière le bureau.<br>Ça me donne une impression étrange, comme si le réceptionniste s'était absenté et allait revenir à n'importe quel moment."
   },
-  "WarpTech": {},
+  "WarpTech": {
+    "name": "MISSING.STRINGS.MISC.TAGS.WARPTECH",
+    "desc": ""
+  },
   "WarpReceiver": {
     "name": "Réceptacle de Téléporteur",
     "desc": "Les vestiges encore fonctionnels de ce qui fut un système de téléportation complexe.<br>Ceci est le côté entrant."
@@ -2813,7 +3143,10 @@
     "name": "Atterrisseur pour Rover",
     "desc": "Pose un rover sur un planétoïde lorsque le module de rover est en orbite."
   },
-  "IgnoreMaterialCategory": {},
+  "IgnoreMaterialCategory": {
+    "name": "MISSING.STRINGS.MISC.TAGS.IGNOREMATERIALCATEGORY",
+    "desc": ""
+  },
   "RailGunPayload": {
     "name": "Chargement Interplanétaire",
     "desc": "Contient des ressources empaquetées destinées à l'envoi interstellaire.<br>Peut être expédié par unlanceur interplanétaire ou déballé à l'aide d'un ouvre-conteneur."
@@ -2842,9 +3175,18 @@
     "name": "Modèle de squelette",
     "desc": "Un modèle anatomique détaillé.<br>Il semble être fait en résine."
   },
-  "Robot": {},
-  "Walker": {},
-  "CreatureBrain": {},
+  "Robot": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ROBOT",
+    "desc": ""
+  },
+  "Walker": {
+    "name": "MISSING.STRINGS.MISC.TAGS.WALKER",
+    "desc": ""
+  },
+  "CreatureBrain": {
+    "name": "MISSING.STRINGS.MISC.TAGS.CREATUREBRAIN",
+    "desc": ""
+  },
   "SweepBot": {
     "name": "Sweepy",
     "desc": "Un robot nettoyeur automatisé.<br>Ramasse les débris solides et les résidus liquides puis stocke les matériaux dans sa base."
@@ -2865,14 +3207,26 @@
     "name": "Afficheur électronique",
     "desc": "Un afficheur électronique projetant le schéma d'un appareil familier.<br>Cela ressemble à un pistolet de minage."
   },
-  "IndustrialProduct": {},
+  "IndustrialProduct": {
+    "name": "Produit Industriel",
+    "desc": ""
+  },
   "MissileBasic": {
     "name": "Missile Explosif",
     "desc": "Un projectile explosif conçu pour se défendre contre les pluies de météores.<br>Doit être lancée par un Atomiseur de Météore."
   },
-  "DupeBrain": {},
-  "NotConversationTopic": {},
-  "Keepsake": {},
+  "DupeBrain": {
+    "name": "MISSING.STRINGS.MISC.TAGS.DUPEBRAIN",
+    "desc": ""
+  },
+  "NotConversationTopic": {
+    "name": "MISSING.STRINGS.MISC.TAGS.NOTCONVERSATIONTOPIC",
+    "desc": ""
+  },
+  "Keepsake": {
+    "name": "MISSING.STRINGS.MISC.TAGS.KEEPSAKE",
+    "desc": ""
+  },
   "keepsake_megabrain": {
     "name": "Modèle d'avion",
     "desc": "Un souvenir précieux qui, autrefois, accompagnait souvent le repas des enfants pendant les vols commerciaux. Il y a un trou dans le fond fait par le docteur Holland lorsqu'il l'avait monté sur un support."
@@ -3041,14 +3395,26 @@
     "name": "Quiche aux Champignons Déshydratée",
     "desc": "Une portion de quiche aux champignons déshydratée. Elle doit être réhydratée avant de pouvoir être considérée comme un aliment.<br>Les rations sèches n'ont pas de  date de péremption."
   },
-  "Egg": {},
-  "IncubatableEgg": {},
+  "Egg": {
+    "name": "Œuf de créature",
+    "desc": ""
+  },
+  "IncubatableEgg": {
+    "name": "MISSING.STRINGS.MISC.TAGS.INCUBATABLEEGG",
+    "desc": ""
+  },
   "SquirrelEgg": {
     "name": "Œuf de Pip",
     "desc": "Les pips sont de petites créatures espiègles et pacifiques qui vivent près des roseaux et dans les branches d'arbors.<br>Ils sont connus pour enterrer des graines dans le sol s'ils trouvent une zone propice avec suffisamment d'espace."
   },
-  "BagableCreature": {},
-  "OriginalCreature": {},
+  "BagableCreature": {
+    "name": "Créature",
+    "desc": ""
+  },
+  "OriginalCreature": {
+    "name": "MISSING.STRINGS.MISC.TAGS.ORIGINALCREATURE",
+    "desc": ""
+  },
   "Squirrel": {
     "name": "Pip",
     "desc": "Les pips sont de petites créatures espiègles et pacifiques qui vivent près des roseaux et dans les branches d'arbors.<br>Ils sont connus pour enterrer des graines dans le sol s'ils trouvent une zone propice avec suffisamment d'espace."
@@ -3065,7 +3431,10 @@
     "name": "Œuf de Limace",
     "desc": "Les électrolimaces sont des créatures dynamiques qui génèrent de l'énergie électrique pendant la nuit.<br>Leur énergie peut être canalisée en laissant un fil exposé près des zones où elles aiment dormir."
   },
-  "Amphibious": {},
+  "Amphibious": {
+    "name": "MISSING.STRINGS.MISC.TAGS.AMPHIBIOUS",
+    "desc": ""
+  },
   "Staterpillar": {
     "name": "Électrolimace",
     "desc": "Les électrolimaces sont des créatures dynamiques qui génèrent de l'énergie électrique pendant la nuit.<br>Leur énergie peut être canalisée en laissant un fil exposé près des zones où elles aiment dormir."
@@ -3082,7 +3451,10 @@
     "name": "Limace Éponge",
     "desc": "Les limaces éponges sont des créatures assoiffées qui stockent des liquides au cours de la journée.<br>Elles déposent les liquides dans les canalisations à côté desquelles elles dorment la nuit."
   },
-  "BuildingFiber": {},
+  "BuildingFiber": {
+    "name": "Fibre",
+    "desc": ""
+  },
   "BasicFabric": {
     "name": "Fibre de Roseau",
     "desc": "Une boule de cellulose brute utilisée dans la production de vêtements et autres textiles."
@@ -3091,13 +3463,22 @@
     "name": "Graine de Roseau",
     "desc": "Une graine de roseau.<br>Déterrer des objets peut révéler une graine de roseau."
   },
-  "WaterSeed": {},
-  "Seed": {},
+  "WaterSeed": {
+    "name": "MISSING.STRINGS.MISC.TAGS.WATERSEED",
+    "desc": ""
+  },
+  "Seed": {
+    "name": "Graine",
+    "desc": ""
+  },
   "BasicFabricMaterialPlantSeed": {
     "name": "Graine de Roseau",
     "desc": "Une graine de roseau.<br>Déterrer des objets peut révéler une graine de roseau."
   },
-  "Plant": {},
+  "Plant": {
+    "name": "MISSING.STRINGS.MISC.TAGS.PLANT",
+    "desc": ""
+  },
   "BasicFabricPlant": {
     "name": "Roseau",
     "desc": "Les roseaux produisent une fibre de roseau incroyablement douce qui est utilisée pour la production de vêtements."
@@ -3114,7 +3495,10 @@
     "name": "Graine d'Arbre à Poux",
     "desc": "Une graine d'arbre à poux.<br>Déterrer des objets peut révéler une graine d'arbre à poux."
   },
-  "CropSeed": {},
+  "CropSeed": {
+    "name": "MISSING.STRINGS.MISC.TAGS.CROPSEED",
+    "desc": ""
+  },
   "BasicSingleHarvestPlantSeed": {
     "name": "Graine d'Arbre à Poux",
     "desc": "Une graine d'arbre à poux.<br>Déterrer des objets peut révéler une graine d'arbre à poux."
@@ -3139,7 +3523,10 @@
     "name": "Graine de Joya",
     "desc": "Une graine de joya sauteur.<br>Déterrer des objets peut révéler une graine de joya."
   },
-  "DecorSeed": {},
+  "DecorSeed": {
+    "name": "MISSING.STRINGS.MISC.TAGS.DECORSEED",
+    "desc": ""
+  },
   "CactusPlantSeed": {
     "name": "Graine de Joya",
     "desc": "Une graine de joya sauteur.<br>Déterrer des objets peut révéler une graine de joya."
@@ -3252,7 +3639,10 @@
     "name": "Œuf de Bouffette",
     "desc": "Les Bouffettes sont des créatures pacifiques qui excrètent des boules de vase à chaque respiration."
   },
-  "Flyer": {},
+  "Flyer": {
+    "name": "MISSING.STRINGS.MISC.TAGS.FLYER",
+    "desc": ""
+  },
   "Puft": {
     "name": "Bouffette",
     "desc": "Les Bouffettes sont des créatures pacifiques qui excrètent des boules de vase à chaque respiration."
@@ -3353,7 +3743,10 @@
     "name": "Œuf de Rat Taupier",
     "desc": "Les rats taupiers sont des créatures fouisseuses qui mangent le régolithe qui se trouve sur les surfaces terrestres.<br>Ils ne peuvent creuser les métaux raffinés."
   },
-  "Digger": {},
+  "Digger": {
+    "name": "MISSING.STRINGS.MISC.TAGS.DIGGER",
+    "desc": ""
+  },
   "Mole": {
     "name": "Rat Taupier",
     "desc": "Les rats taupiers sont des créatures fouisseuses qui mangent le régolithe qui se trouve sur les surfaces terrestres.<br>Ils ne peuvent creuser les métaux raffinés."
@@ -3378,7 +3771,10 @@
     "name": "Œuf de Gluant",
     "desc": "Les gluants sont des créatures visqueuses qui consomment du dioxyde de carbone et exsudent du pétrole brut."
   },
-  "Hoverer": {},
+  "Hoverer": {
+    "name": "MISSING.STRINGS.MISC.TAGS.HOVERER",
+    "desc": ""
+  },
   "Oilfloater": {
     "name": "Gluant",
     "desc": "Les gluants sont des créatures visqueuses qui consomment du dioxyde de carbone et exsudent du pétrole brut."
@@ -3443,7 +3839,10 @@
     "name": "Limace Brumeuse",
     "desc": "Les limaces brumeuses sont des créatures poreuses qui inhalent des gaz irrespirables pendant la journée.<br>La nuit, elles dorment près des conduites de gaz ouvertes, où elles déposent leurs résidus."
   },
-  "GeyserFeature": {},
+  "GeyserFeature": {
+    "name": "MISSING.STRINGS.MISC.TAGS.GEYSERFEATURE",
+    "desc": ""
+  },
   "GeyserGeneric_steam": {
     "name": "Cheminée de Vapeur Refroidie",
     "desc": "Une cheminée sous haute pression qui rejette périodiquement de la vapeur."
@@ -3696,7 +4095,10 @@
     "name": "Repas Mariné",
     "desc": "Des larves de farine conservées dans le vinaigre.<br>Le goût est très inhabituel."
   },
-  "Pickled": {},
+  "Pickled": {
+    "name": "Décapage",
+    "desc": ""
+  },
   "PickledMeal": {
     "name": "Repas Mariné",
     "desc": "Des larves de farine conservées dans le vinaigre.<br>Le goût est très inhabituel."
@@ -3813,7 +4215,10 @@
     "name": "Graine de Vigne Saline",
     "desc": "Une graine de vigne saline.<br>Déterrer des objets peut révéler une graine de vigne saline."
   },
-  "Hanging": {},
+  "Hanging": {
+    "name": "MISSING.STRINGS.MISC.TAGS.HANGING",
+    "desc": ""
+  },
   "SaltPlant": {
     "name": "Vigne Saline",
     "desc": "Les vignes salines consomment de petites quantités de chlore gazeux et forment des dépôts de sodium en poussant, produisant ainsi du sel récoltable."
@@ -4018,7 +4423,10 @@
     "name": "Œuf de Carapoke",
     "desc": "Les carapokes sont des créatures non-hostiles, sauf si leurs œufs se trouvent à proximité.<br>Ils se nourrissent de terre polluée et de tas de pourriture.<br>La carapace qu'ils abandonnent après chaque mue peut être broyée pour obtenir de la chaux."
   },
-  "CrabFriend": {},
+  "CrabFriend": {
+    "name": "MISSING.STRINGS.MISC.TAGS.CRABFRIEND",
+    "desc": ""
+  },
   "Crab": {
     "name": "Carapoke",
     "desc": "Les carapokes sont des créatures non-hostiles, sauf si leurs œufs se trouvent à proximité.<br>Ils se nourrissent de terre polluée et de tas de pourriture.<br>La carapace qu'ils abandonnent après chaque mue peut être broyée pour obtenir de la chaux."
@@ -4043,8 +4451,14 @@
     "name": "Œuf de Poisson Gobeur",
     "desc": "Tous les organismes dans l'univers connu trouvent le pacu particulièrement délicieux."
   },
-  "SwimmingCreature": {},
-  "Swimmer": {},
+  "SwimmingCreature": {
+    "name": "Créature aquatique",
+    "desc": ""
+  },
+  "Swimmer": {
+    "name": "MISSING.STRINGS.MISC.TAGS.SWIMMER",
+    "desc": ""
+  },
   "PacuCleaner": {
     "name": "Poisson Gobeur",
     "desc": "Tous les organismes dans l'univers connu trouvent le pacu particulièrement délicieux."
@@ -4241,13 +4655,22 @@
     "name": "Pipsqueak",
     "desc": "Un bébé pipsqueak ronronnant.<br>Il deviendra un pip en grandissant."
   },
-  "Clothes": {},
-  "AirtightSuit": {},
+  "Clothes": {
+    "name": "Vêtement",
+    "desc": ""
+  },
+  "AirtightSuit": {
+    "name": "MISSING.STRINGS.MISC.TAGS.AIRTIGHTSUIT",
+    "desc": ""
+  },
   "Atmo_Suit": {
     "name": "Combinaison Atmo",
     "desc": "Fournit de l'oxygène aux Duplicants dans les environnements toxiques et difficilement respirables."
   },
-  "Suit": {},
+  "Suit": {
+    "name": "Combinaison",
+    "desc": ""
+  },
   "Worn_Atmo_Suit": {
     "name": "Combinaison Atmo usagée",
     "desc": "Une combinaison atmo usagée.<br>Les combinaisons peuvent être réparées en utilisant la forge d'exosuit."

@@ -1,4 +1,4 @@
-var recipes = [
+export const recipes = [
   {
     origin: {
       RefinedMetal: 200.0
@@ -4298,6 +4298,48 @@ var recipes = [
     }
   },
   {
+    origin: "BasicFabricPlant",
+    time: 1200.0,
+    dest: {
+      BasicFabric: 1.0
+    }
+  },
+  {
+    origin: "BasicSingleHarvestPlant",
+    time: 1800.0,
+    dest: {
+      BasicPlantFood: 1.0
+    }
+  },
+  {
+    origin: "BeanPlant",
+    time: 12600.0,
+    dest: {
+      BeanPlantSeed: 12.0
+    }
+  },
+  {
+    origin: "ColdWheat",
+    time: 10800.0,
+    dest: {
+      ColdWheatSeed: 18.0
+    }
+  },
+  {
+    origin: "CritterTrapPlant",
+    time: 18000.0,
+    dest: {
+      PlantMeat: 10.0
+    }
+  },
+  {
+    origin: "ForestTree",
+    time: 2700.0,
+    dest: {
+      WoodLog: 300.0
+    }
+  },
+  {
     origin: "PuftEgg",
     time: 9000.0,
     dest: {
@@ -4670,6 +4712,13 @@ var recipes = [
     }
   },
   {
+    origin: "GasGrass",
+    time: 2400.0,
+    dest: {
+      GasGrassHarvested: 1.0
+    }
+  },
+  {
     origin: "StaterpillarGasEgg",
     time: 11999.999,
     dest: {
@@ -4690,6 +4739,69 @@ var recipes = [
     origin: "StaterpillarGas",
     dest: {
       Meat: 2.0
+    }
+  },
+  {
+    origin: "SaltPlant",
+    time: 3600.0,
+    dest: {
+      Salt: 65.0
+    }
+  },
+  {
+    origin: "PrickleFlower",
+    time: 3600.0,
+    dest: {
+      PrickleFruit: 1.0
+    }
+  },
+  {
+    origin: "SeaLettuce",
+    time: 7200.0,
+    dest: {
+      Lettuce: 12.0
+    }
+  },
+  {
+    origin: "SpiceVine",
+    time: 4800.0,
+    dest: {
+      SpiceNut: 4.0
+    }
+  },
+  {
+    origin: "SuperWormPlant",
+    time: 4800.0,
+    dest: {
+      WormSuperFruit: 8.0
+    }
+  },
+  {
+    origin: "SwampHarvestPlant",
+    time: 3960.0,
+    dest: {
+      SwampFruit: 1.0
+    }
+  },
+  {
+    origin: "SwampLily",
+    time: 7200.0,
+    dest: {
+      SwampLilyFlower: 2.0
+    }
+  },
+  {
+    origin: "WormPlant",
+    time: 2400.0,
+    dest: {
+      WormBasicFruit: 1.0
+    }
+  },
+  {
+    origin: "MushroomPlant",
+    time: 4500.0,
+    dest: {
+      Mushroom: 1.0
     }
   },
   {

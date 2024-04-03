@@ -1,4 +1,4 @@
-var db = {
+export const db = {
   AdvancedDoctorStation: {
     tag: "AdvancedDoctorStation",
     menu: {
@@ -23470,8 +23470,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Algae",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   BleachStone: {
     tag: "BleachStone",
@@ -23519,8 +23518,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "BleachStone",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   DirtyWater: {
     tag: "DirtyWater",
@@ -23561,7 +23559,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 20.0,
-    hardness: 0.0,
     shc: 4.179,
     maxCompression: 1.01,
     viscosity: 125.0,
@@ -23612,7 +23609,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 196.966568,
-    hardness: 0.0,
     shc: 7.44,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -23674,8 +23670,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "OxyRock",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SlimeMold: {
     tag: "SlimeMold",
@@ -23723,8 +23718,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SlimeMold",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   ToxicSand: {
     tag: "ToxicSand",
@@ -23773,8 +23767,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ToxicSand",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   CrushedIce: {
     tag: "CrushedIce",
@@ -23822,8 +23815,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CrushedIce",
-    clearable: true,
-    lightAbsorption: 0.5
+    clearable: true
   },
   Diamond: {
     tag: "Diamond",
@@ -23872,8 +23864,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Diamond",
-    clearable: true,
-    lightAbsorption: 0.1
+    clearable: true
   },
   Isoresin: {
     tag: "Isoresin",
@@ -23920,8 +23911,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Isoresin",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Sucrose: {
     tag: "Sucrose",
@@ -23966,8 +23956,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Sucrose",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   MilkFat: {
     tag: "MilkFat",
@@ -24013,8 +24002,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MilkFat",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Niobium: {
     tag: "Niobium",
@@ -24063,8 +24051,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Niobium",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   MilkIce: {
     tag: "MilkIce",
@@ -24111,8 +24098,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MilkIce",
-    clearable: true,
-    lightAbsorption: 0.33333
+    clearable: true
   },
   Cuprite: {
     tag: "Cuprite",
@@ -24160,8 +24146,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Cuprite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Copper: {
     tag: "Copper",
@@ -24208,8 +24193,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Copper",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   CrushedRock: {
     tag: "CrushedRock",
@@ -24257,8 +24241,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "CrushedRock",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SuperInsulator: {
     tag: "SuperInsulator",
@@ -24309,8 +24292,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SuperInsulator",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   BrineIce: {
     tag: "BrineIce",
@@ -24357,8 +24339,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "BrineIce",
-    clearable: true,
-    lightAbsorption: 0.33333
+    clearable: true
   },
   SolidViscoGel: {
     tag: "SolidViscoGel",
@@ -24404,8 +24385,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidViscoGel",
-    clearable: true,
-    lightAbsorption: 0.2
+    clearable: true
   },
   Ceramic: {
     tag: "Ceramic",
@@ -24455,8 +24435,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Ceramic",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Cobaltite: {
     tag: "Cobaltite",
@@ -24503,8 +24482,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Cobaltite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Fertilizer: {
     tag: "Fertilizer",
@@ -24551,8 +24529,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fertilizer",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidCrudeOil: {
     tag: "SolidCrudeOil",
@@ -24597,8 +24574,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidCrudeOil",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Wolframite: {
     tag: "Wolframite",
@@ -24646,8 +24622,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Wolframite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Polypropylene: {
     tag: "Polypropylene",
@@ -24696,8 +24671,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Polypropylene",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidNaphtha: {
     tag: "SolidNaphtha",
@@ -24742,8 +24716,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidNaphtha",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Tungsten: {
     tag: "Tungsten",
@@ -24791,8 +24764,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Tungsten",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   RefinedCarbon: {
     tag: "RefinedCarbon",
@@ -24839,8 +24811,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "RefinedCarbon",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Steel: {
     tag: "Steel",
@@ -24889,8 +24860,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Steel",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Phosphorite: {
     tag: "Phosphorite",
@@ -24937,8 +24907,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Phosphorite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidHydrogen: {
     tag: "SolidHydrogen",
@@ -24983,8 +24952,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidHydrogen",
-    clearable: true,
-    lightAbsorption: 0.75
+    clearable: true
   },
   Lead: {
     tag: "Lead",
@@ -25031,8 +24999,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Lead",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Sulfur: {
     tag: "Sulfur",
@@ -25078,8 +25045,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Sulfur",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Lime: {
     tag: "Lime",
@@ -25125,8 +25091,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Lime",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidChlorine: {
     tag: "SolidChlorine",
@@ -25171,8 +25136,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidChlorine",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidNuclearWaste: {
     tag: "SolidNuclearWaste",
@@ -25217,8 +25181,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidNuclearWaste",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Obsidian: {
     tag: "Obsidian",
@@ -25268,8 +25231,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Obsidian",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidPetroleum: {
     tag: "SolidPetroleum",
@@ -25314,8 +25276,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidPetroleum",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidSuperCoolant: {
     tag: "SolidSuperCoolant",
@@ -25360,8 +25321,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidSuperCoolant",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   IgneousRock: {
     tag: "IgneousRock",
@@ -25410,8 +25370,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "IgneousRock",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   EnrichedUranium: {
     tag: "EnrichedUranium",
@@ -25456,8 +25415,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "EnrichedUranium",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Gold: {
     tag: "Gold",
@@ -25504,8 +25462,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Gold",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Rust: {
     tag: "Rust",
@@ -25551,8 +25508,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Rust",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Corium: {
     tag: "Corium",
@@ -25597,8 +25553,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Corium",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Phosphorus: {
     tag: "Phosphorus",
@@ -25645,8 +25600,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Phosphorus",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Granite: {
     tag: "Granite",
@@ -25696,8 +25650,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Granite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidCarbonDioxide: {
     tag: "SolidCarbonDioxide",
@@ -25742,8 +25695,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidCarbonDioxide",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Cobalt: {
     tag: "Cobalt",
@@ -25789,8 +25741,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Cobalt",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   UraniumOre: {
     tag: "UraniumOre",
@@ -25837,8 +25788,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "UraniumOre",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   AluminumOre: {
     tag: "AluminumOre",
@@ -25886,8 +25836,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "AluminumOre",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SedimentaryRock: {
     tag: "SedimentaryRock",
@@ -25936,8 +25885,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SedimentaryRock",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Fullerene: {
     tag: "Fullerene",
@@ -25983,8 +25931,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fullerene",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   GoldAmalgam: {
     tag: "GoldAmalgam",
@@ -26032,8 +25979,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "GoldAmalgam",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Salt: {
     tag: "Salt",
@@ -26079,8 +26025,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Salt",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Sand: {
     tag: "Sand",
@@ -26128,8 +26073,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Sand",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Snow: {
     tag: "Snow",
@@ -26177,8 +26121,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Snow",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SandStone: {
     tag: "SandStone",
@@ -26227,8 +26170,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SandStone",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Glass: {
     tag: "Glass",
@@ -26276,8 +26218,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Glass",
-    clearable: true,
-    lightAbsorption: 0.1
+    clearable: true
   },
   Clay: {
     tag: "Clay",
@@ -26324,8 +26265,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Clay",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Ice: {
     tag: "Ice",
@@ -26372,8 +26312,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Ice",
-    clearable: true,
-    lightAbsorption: 0.33333
+    clearable: true
   },
   Graphite: {
     tag: "Graphite",
@@ -26418,8 +26357,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Graphite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   ToxicMud: {
     tag: "ToxicMud",
@@ -26466,8 +26404,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "ToxicMud",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Mud: {
     tag: "Mud",
@@ -26514,8 +26451,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Mud",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Carbon: {
     tag: "Carbon",
@@ -26563,8 +26499,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Carbon",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidOxygen: {
     tag: "SolidOxygen",
@@ -26609,8 +26544,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidOxygen",
-    clearable: true,
-    lightAbsorption: 0.75
+    clearable: true
   },
   Creature: {
     tag: "Creature",
@@ -26655,8 +26589,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Creature",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   DepletedUranium: {
     tag: "DepletedUranium",
@@ -26702,8 +26635,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "DepletedUranium",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Katairite: {
     tag: "Katairite",
@@ -26749,8 +26681,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Katairite",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidMethane: {
     tag: "SolidMethane",
@@ -26795,8 +26726,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidMethane",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   HardPolypropylene: {
     tag: "HardPolypropylene",
@@ -26845,8 +26775,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "HardPolypropylene",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   MaficRock: {
     tag: "MaficRock",
@@ -26893,8 +26822,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "MaficRock",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Iron: {
     tag: "Iron",
@@ -26941,8 +26869,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Iron",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Regolith: {
     tag: "Regolith",
@@ -26990,8 +26917,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Regolith",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidResin: {
     tag: "SolidResin",
@@ -27035,8 +26961,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidResin",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   TempConductorSolid: {
     tag: "TempConductorSolid",
@@ -27086,8 +27011,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "TempConductorSolid",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   IronOre: {
     tag: "IronOre",
@@ -27135,8 +27059,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "IronOre",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Dirt: {
     tag: "Dirt",
@@ -27183,8 +27106,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Dirt",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   DirtyIce: {
     tag: "DirtyIce",
@@ -27232,8 +27154,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "DirtyIce",
-    clearable: true,
-    lightAbsorption: 0.8
+    clearable: true
   },
   Fossil: {
     tag: "Fossil",
@@ -27279,8 +27200,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Fossil",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Unobtanium: {
     tag: "Unobtanium",
@@ -27325,8 +27245,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Unobtanium",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   SolidEthanol: {
     tag: "SolidEthanol",
@@ -27373,8 +27292,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "SolidEthanol",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   FoolsGold: {
     tag: "FoolsGold",
@@ -27422,8 +27340,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "FoolsGold",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   Aluminum: {
     tag: "Aluminum",
@@ -27470,8 +27387,7 @@ var db = {
     decor: -10.0,
     decorRadius: 1.0,
     primaryElement: "Aluminum",
-    clearable: true,
-    lightAbsorption: 1.0
+    clearable: true
   },
   LiquidOxygen: {
     tag: "LiquidOxygen",
@@ -27509,7 +27425,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 15.9994,
-    hardness: 0.0,
     shc: 1.01,
     maxCompression: 1.01,
     viscosity: 200.0,
@@ -27560,7 +27475,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 10.0,
-    hardness: 0.0,
     shc: 1.55,
     maxCompression: 1.01,
     viscosity: 1.0,
@@ -27613,7 +27527,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 55.845,
-    hardness: 0.0,
     shc: 0.91,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -27666,7 +27579,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 196.966568,
-    hardness: 0.0,
     shc: 0.128,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -27716,7 +27628,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 44.01,
-    hardness: 0.0,
     shc: 0.846,
     maxCompression: 1.01,
     viscosity: 125.0,
@@ -27767,7 +27678,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 500.0,
-    hardness: 0.0,
     shc: 1.69,
     maxCompression: 1.01,
     viscosity: 50.0,
@@ -27818,7 +27728,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 50.0,
-    hardness: 0.0,
     shc: 0.2,
     maxCompression: 1.01,
     viscosity: 60.0,
@@ -27868,7 +27777,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 32.0,
-    hardness: 0.0,
     shc: 0.7,
     maxCompression: 1.01,
     viscosity: 50.0,
@@ -27921,7 +27829,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 196.966568,
-    hardness: 0.0,
     shc: 0.1291,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -27972,7 +27879,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 50.0,
-    hardness: 0.0,
     shc: 1.0,
     maxCompression: 1.01,
     viscosity: 60.0,
@@ -28022,7 +27928,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 34.453,
-    hardness: 0.0,
     shc: 0.48,
     maxCompression: 1.01,
     viscosity: 180.0,
@@ -28072,7 +27977,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 1.00794,
-    hardness: 0.0,
     shc: 2.4,
     maxCompression: 1.01,
     viscosity: 180.0,
@@ -28122,7 +28026,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 52.5,
-    hardness: 0.0,
     shc: 1.11,
     maxCompression: 1.01,
     viscosity: 1.1,
@@ -28174,7 +28077,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 183.84,
-    hardness: 0.0,
     shc: 0.134,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28226,7 +28128,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 82.2,
-    hardness: 0.0,
     shc: 1.76,
     maxCompression: 1.01,
     viscosity: 50.0,
@@ -28276,7 +28177,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 32.0,
-    hardness: 0.0,
     shc: 0.7,
     maxCompression: 1.01,
     viscosity: 50.0,
@@ -28328,7 +28228,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 58.9,
-    hardness: 0.0,
     shc: 0.42,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28380,7 +28279,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 22.0,
-    hardness: 0.0,
     shc: 3.4,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28431,7 +28329,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 250.0,
-    hardness: 0.0,
     shc: 8.44,
     maxCompression: 1.01,
     viscosity: 150.0,
@@ -28483,7 +28380,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 46.07,
-    hardness: 0.0,
     shc: 2.46,
     maxCompression: 1.01,
     viscosity: 125.0,
@@ -28534,7 +28430,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 23.0,
-    hardness: 0.0,
     shc: 4.1,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28584,7 +28479,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 16.044,
-    hardness: 0.0,
     shc: 2.191,
     maxCompression: 1.01,
     viscosity: 180.0,
@@ -28637,7 +28531,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 55.845,
-    hardness: 0.0,
     shc: 0.449,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28687,7 +28580,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 12.0107,
-    hardness: 0.0,
     shc: 0.71,
     maxCompression: 1.01,
     viscosity: 150.0,
@@ -28739,7 +28631,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 102.2,
-    hardness: 0.0,
     shc: 2.191,
     maxCompression: 1.01,
     viscosity: 30.0,
@@ -28788,7 +28679,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 32.0,
-    hardness: 0.0,
     shc: 1.255,
     maxCompression: 1.01,
     viscosity: 50.0,
@@ -28839,7 +28729,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 30.9737625,
-    hardness: 0.0,
     shc: 0.7697,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28892,7 +28781,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 63.546,
-    hardness: 0.0,
     shc: 0.386,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28945,7 +28833,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 92.9,
-    hardness: 0.0,
     shc: 0.265,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -28997,7 +28884,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 18.01528,
-    hardness: 0.0,
     shc: 4.179,
     maxCompression: 1.01,
     viscosity: 125.0,
@@ -29049,7 +28935,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 21.0,
-    hardness: 0.0,
     shc: 4.1,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -29101,7 +28986,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 196.966568,
-    hardness: 0.0,
     shc: 1.69,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -29154,7 +29038,6 @@ var db = {
       "Liquid"
     ],
     molarMass: 63.546,
-    hardness: 0.0,
     shc: 0.386,
     maxCompression: 1.01,
     viscosity: 100.0,
@@ -29205,7 +29088,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 32.0,
-    hardness: 0.0,
     shc: 0.7,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29253,7 +29135,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 50.0,
-    hardness: 0.0,
     shc: 0.88,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29304,7 +29185,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 92.9,
-    hardness: 0.0,
     shc: 0.265,
     flow: 0.1,
     radiationAbsorptionFactor: 0.05,
@@ -29353,7 +29233,6 @@ var db = {
       "Breathable"
     ],
     molarMass: 15.9994,
-    hardness: 0.0,
     shc: 1.005,
     flow: 0.12,
     radiationAbsorptionFactor: 0.08,
@@ -29403,7 +29282,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 58.9,
-    hardness: 0.0,
     shc: 0.42,
     flow: 0.1,
     radiationAbsorptionFactor: 0.06,
@@ -29455,7 +29333,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 54.97,
-    hardness: 0.0,
     shc: 0.49,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29504,7 +29381,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 34.453,
-    hardness: 0.0,
     shc: 0.48,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29553,7 +29429,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 1.00794,
-    hardness: 0.0,
     shc: 2.4,
     flow: 0.1,
     radiationAbsorptionFactor: 0.09,
@@ -29602,7 +29477,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 19.044,
-    hardness: 0.0,
     shc: 1.898,
     flow: 0.1,
     radiationAbsorptionFactor: 0.05,
@@ -29650,7 +29524,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 18.01528,
-    hardness: 0.0,
     shc: 4.179,
     flow: 0.1,
     radiationAbsorptionFactor: 0.08,
@@ -29700,7 +29573,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 16.044,
-    hardness: 0.0,
     shc: 2.191,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29751,7 +29623,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 196.966568,
-    hardness: 0.0,
     shc: 0.1291,
     flow: 0.1,
     radiationAbsorptionFactor: 0.03,
@@ -29799,7 +29670,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 46.07,
-    hardness: 0.0,
     shc: 2.148,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29848,7 +29718,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 50.0,
-    hardness: 0.0,
     shc: 1.0,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -29897,7 +29766,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 12.0107,
-    hardness: 0.0,
     shc: 0.71,
     flow: 0.1,
     radiationAbsorptionFactor: 0.08,
@@ -29945,7 +29813,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 190.0,
-    hardness: 0.0,
     shc: 8.44,
     flow: 0.1,
     radiationAbsorptionFactor: 0.06,
@@ -29996,7 +29863,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 63.546,
-    hardness: 0.0,
     shc: 0.91,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -30046,7 +29912,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 183.84,
-    hardness: 0.0,
     shc: 0.134,
     flow: 0.1,
     radiationAbsorptionFactor: 0.03,
@@ -30095,7 +29960,6 @@ var db = {
       "Breathable"
     ],
     molarMass: 15.9994,
-    hardness: 0.0,
     shc: 1.01,
     flow: 0.12,
     radiationAbsorptionFactor: 0.08,
@@ -30146,7 +30010,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 196.966568,
-    hardness: 0.0,
     shc: 0.128,
     flow: 0.1,
     radiationAbsorptionFactor: 0.08,
@@ -30194,7 +30057,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 92.9,
-    hardness: 0.0,
     shc: 0.265,
     flow: 0.1,
     radiationAbsorptionFactor: 0.03,
@@ -30245,7 +30107,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 55.845,
-    hardness: 0.0,
     shc: 0.449,
     flow: 0.1,
     radiationAbsorptionFactor: 0.06,
@@ -30294,7 +30155,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 30.9737625,
-    hardness: 0.0,
     shc: 0.7697,
     flow: 0.1,
     radiationAbsorptionFactor: 0.07,
@@ -30343,7 +30203,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 44.01,
-    hardness: 0.0,
     shc: 0.846,
     flow: 0.1,
     radiationAbsorptionFactor: 0.08,
@@ -30394,7 +30253,6 @@ var db = {
       "Unbreathable"
     ],
     molarMass: 63.546,
-    hardness: 0.0,
     shc: 0.386,
     flow: 0.1,
     radiationAbsorptionFactor: 0.06,
