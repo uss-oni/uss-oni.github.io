@@ -23,14 +23,16 @@ export const def = {
       title: "Liquid",
       sortOrder: alpha,
       properties: commonProperties.concat([
-        properties.lightAbsorption
+        properties.lightAbsorption,
+        properties.maxCompression,
+        properties.viscosity
       ]),
     },
     {
       title: "Gas",
       sortOrder: alpha,
       properties: commonProperties.concat([
-        properties.lightAbsorption
+        properties.lightAbsorption,
       ]),
     },
     {

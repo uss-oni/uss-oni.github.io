@@ -4,7 +4,9 @@ import { buildingMaterials } from "../properties/buildingMaterials.js"
 
 const commonProperties = [
   properties.thermalConductivity,
-  properties.size
+  properties.size,
+  properties.mass,
+  properties.floodThreshold
 ]
 
 export const def = {
@@ -141,12 +143,16 @@ export const def = {
     {
       title: "Gravitas",
       sortOrder: menuOrder,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.primaryElement
+      ]),
     },
     {
       title: "Quest",
       sortOrder: menuOrder,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.primaryElement
+      ]),
     },
   ]
 }

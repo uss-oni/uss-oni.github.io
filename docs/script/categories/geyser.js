@@ -1,7 +1,8 @@
-import { alpha } from "../sort.js"
+import { alpha, menuOrder } from "../sort.js"
 import * as properties from "../properties/def.js"
 
 const commonProperties = [
+  properties.primaryElement
 ]
 
 export const def = {
@@ -9,7 +10,7 @@ export const def = {
   categories: [
     {
       title: "Geyser",
-      sortOrder: alpha,
+      sortOrder: menuOrder,
       properties: commonProperties,
     }
   ]

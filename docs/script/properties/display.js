@@ -50,6 +50,12 @@ export function line(div, iconPath, labelName, valueFn) {
   setValue(div, valueFn);
 }
 
+export function lineNoValue(div, iconPath, labelName, valueFn) {
+  setIcon(div, iconPath);
+  setLabel(div, labelName);
+  valueFn(div);
+}
+
 export function multiline(div, iconPath, labelName, valueFn) {
   setIcon(div, iconPath).style.gridRow = "span " + valueFn.length;
   setLabel(div, labelName).style.gridRow = "span " + valueFn.length;

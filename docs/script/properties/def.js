@@ -31,14 +31,14 @@ export function plantAge(div, entity) {
   let array = [{
     icon: image.icon("heatflow").path(),
     label: "domestic",
-    value: units.time(entity.age * 600 / 4)
+    value: units.time(entity.age * 600)
   }, {
     icon: image.icon("heatflow").path(),
     label: "savage",
-    value: units.time(entity.age * 600)
+    value: units.time(entity.age * 600 * 4)
   }
   ];
-  display.summary(div, "cycleOfLife", units.time2(entity.age * 600 / 4, entity.age * 600), array);
+  display.summary(div, "cycleOfLife", units.time2(entity.age * 600, entity.age * 600 * 4), array);
 }
 
 export function harvest(div, entity) {
@@ -63,7 +63,7 @@ export function phase(div, entity) {
       var arrow = document.createElement("div");
       arrow.textContent = "⟶";
       arrow.className = "propArrow";
-      div.appendChild(arrow);;
+      div.appendChild(arrow);
     }];
     for (const [tag, percent] of Object.entries(recipe.dest)) {
       dest.push(units.element(tag));
@@ -102,6 +102,30 @@ export function quality(div, entity) {
 
 export function calories(div, entity) {
   display.line(div, image.icon("heatflow").path(), "calories", units.kcal(entity.calories));
+}
+
+export function primaryElement(div, entity) {
+  if (entity.primaryElement != null) {
+    display.lineNoValue(div, image.icon("heatflow").path(), "primaryElement", units.element(entity.primaryElement));
+  }
+}
+
+export function mass(div, entity) {
+  display.line(div, image.icon("heatflow").path(), "mass", units.kg(entity.mass));
+}
+
+export function floodThreshold(div, entity) {
+  if (entity.floodThreshold != null) {
+    display.line(div, image.icon("heatflow").path(), "floodThreshold", units.percent(entity.floodThreshold));
+  }
+}
+
+export function maxCompression(div, entity) {
+  display.line(div, image.icon("heatflow").path(), "maxCompression", units.none(entity.maxCompression));
+}
+
+export function viscosity(div, entity) {
+  display.line(div, image.icon("heatflow").path(), "viscosity", units.none(entity.viscosity));
 }
 
 /*

@@ -116,5 +116,7 @@
   "seed": "Graine",
   "moral": "Bonus de moral",
   "buildingMaterials": "Matériaux de constructions",
-  "Properties": "Propriétés"
+  "Properties": "Propriétés",
+  "maxCompression": "Compression",
+  "viscosity": "Viscosité"
 }

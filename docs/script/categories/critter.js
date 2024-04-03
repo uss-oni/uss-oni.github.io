@@ -2,6 +2,7 @@ import { alpha, menuOrder } from "../sort.js"
 import * as properties from "../properties/def.js"
 
 const commonProperties = [
+  properties.primaryElement
 ]
 
 export const def = {
