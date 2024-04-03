@@ -2,6 +2,8 @@ import * as units from "./units.js"
 import * as display from "./display.js"
 import * as image from "../img.js"
 import { recipes } from "../../db/recipes.js";
+import { db } from "../../db/uss.js";
+import * as translation from "../../lang/lang.js"
 
 export function shc(div, entity) {
   display.line(div, image.icon("heatflow").path(), "shc", units.dtugc(entity.shc));
@@ -50,7 +52,7 @@ export function harvest(div, entity) {
   if (seed != null) {
     harvest = harvest.concat(units.element(Object.keys(seed.dest)[0]));
   }
-  display.multiline(div, image.icon("harvest").path(), "harvest", harvest);
+  display.multiline(div, image.icon("harvest").path(), "harvest", harvest.length, harvest);
 }
 
 export function phase(div, entity) {
@@ -76,12 +78,23 @@ export function phase(div, entity) {
         });
       }
     }
+    let span = Object.entries(recipe.dest).length;
 
     if (recipe.type == "condensation" || recipe.type == "freezing" || recipe.type == "deposition") {
-      display.multiline(div, image.icon("tempDown").path(), recipe.type, dest);
+      display.multiline(div, image.icon("tempDown").path(), recipe.type, span, dest);
     }
     else {
-      display.multiline(div, image.icon("tempUp").path(), recipe.type, dest);
+      display.multiline(div, image.icon("tempUp").path(), recipe.type, span, dest);
+    }
+
+    if (recipe.type == "freezing"
+      && Object.entries(recipe.dest).length == 1) {
+      let kg = db.Element.Solid[Object.keys(recipe.dest)[0]].defaultMass * 0.8;
+      display.line(div, image.icon("tempDown").path(), "massForTile", units.kg(kg));
+    }
+
+    if (recipe.type == "solidification") {
+      display.line(div, image.icon("tempUp").path(), "massForTile", units.kg(0.001));
     }
   }
 }

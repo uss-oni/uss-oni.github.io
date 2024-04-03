@@ -86,6 +86,7 @@
   "melting": "Fusion",
   "sublimation": "Sublimation",
   "deposition": "Condensation",
+  "solidification": "Solidification",
   "cooking": "Cuisson",
   "decor": "Decor",
   "decorRadius": "Décor taille",
@@ -118,5 +119,6 @@
   "buildingMaterials": "Matériaux de constructions",
   "Properties": "Propriétés",
   "maxCompression": "Compression",
-  "viscosity": "Viscosité"
+  "viscosity": "Viscosité",
+  "massForTile": "Création de tuile"
 }

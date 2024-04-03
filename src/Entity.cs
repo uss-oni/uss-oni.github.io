@@ -112,5 +112,6 @@ namespace USS
     public float? calories;
     public float? spoilTime;
     public float? lightAbsorption;
+    public float? defaultMass;
   }
 }

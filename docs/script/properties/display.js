@@ -18,7 +18,7 @@ function noIcon(div) {
   div.appendChild(iconContainer);
 }
 
-function setLabel(div, labelName) {
+export function setLabel(div, labelName) {
   let label = document.createElement("div");
   label.className = "propLabel";
   translation.ui(label, labelName);
@@ -56,12 +56,14 @@ export function lineNoValue(div, iconPath, labelName, valueFn) {
   valueFn(div);
 }
 
-export function multiline(div, iconPath, labelName, valueFn) {
-  setIcon(div, iconPath).style.gridRow = "span " + valueFn.length;
-  setLabel(div, labelName).style.gridRow = "span " + valueFn.length;
+export function multiline(div, iconPath, labelName, span, valueFn) {
+  let icon = setIcon(div, iconPath);
+  let label = setLabel(div, labelName);
   for (const fn of valueFn) {
     fn(div);
   }
+  icon.style.gridRow = "span " + span;
+  label.style.gridRow = "span " + span;
 }
 
 export function summary(div, labelName, valueFn, array) {

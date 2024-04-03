@@ -2699,7 +2699,7 @@ export const recipes = {
   Phase: [
     {
       origin: "Algae",
-      type: "vaporization",
+      type: "solidification",
       temp: 398.15,
       dest: {
         Dirt: 1.0
@@ -2756,7 +2756,7 @@ export const recipes = {
     },
     {
       origin: "SlimeMold",
-      type: "vaporization",
+      type: "solidification",
       temp: 398.15,
       dest: {
         Dirt: 1.0
@@ -2893,7 +2893,7 @@ export const recipes = {
     },
     {
       origin: "Fertilizer",
-      type: "vaporization",
+      type: "solidification",
       temp: 398.15,
       dest: {
         Dirt: 1.0
@@ -3189,7 +3189,7 @@ export const recipes = {
     },
     {
       origin: "Clay",
-      type: "vaporization",
+      type: "solidification",
       temp: 1200.0,
       dest: {
         Ceramic: 1.0
@@ -3205,7 +3205,7 @@ export const recipes = {
     },
     {
       origin: "Graphite",
-      type: "vaporization",
+      type: "solidification",
       temp: 550.0,
       dest: {
         RefinedCarbon: 1.0
@@ -3231,7 +3231,7 @@ export const recipes = {
     },
     {
       origin: "Carbon",
-      type: "vaporization",
+      type: "solidification",
       temp: 550.0,
       dest: {
         RefinedCarbon: 1.0
@@ -3328,7 +3328,7 @@ export const recipes = {
     },
     {
       origin: "Dirt",
-      type: "vaporization",
+      type: "solidification",
       temp: 600.0,
       dest: {
         Sand: 1.0

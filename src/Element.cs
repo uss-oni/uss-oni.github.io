@@ -78,7 +78,7 @@ namespace USS
         entity.minHorizontalFlow = element.minHorizontalFlow;
       if (element.minVerticalFlow > 0f)
         entity.minVerticalFlow = element.minVerticalFlow;
-
+      entity.defaultMass = element.defaultValues.mass;
       foreach (var oreTag in element.oreTags)
       {
         entity.tags ??= [];
@@ -108,7 +108,8 @@ namespace USS
         }
         var target = ElementLoader.FindElementByHash(element.highTempTransitionTarget);
         string phase = (element.IsSolid && target.IsLiquid) ? "melting" :
-                       (element.IsSolid && target.IsGas) ? "sublimation" : "vaporization";
+                       (element.IsSolid && target.IsGas) ? "sublimation" :
+                       (element.IsSolid && target.IsSolid) ? "solidification" : "vaporization";
         Recipe.Phase recipe = new(entity.tag, phase, element.highTemp, [.. output]);
         recipes.Add(recipe);
       }

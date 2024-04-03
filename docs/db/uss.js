@@ -9700,7 +9700,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       BleachStone: {
         tag: "BleachStone",
@@ -9723,7 +9724,8 @@ export const db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 50.0
       },
       OxyRock: {
         tag: "OxyRock",
@@ -9747,7 +9749,8 @@ export const db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       SlimeMold: {
         tag: "SlimeMold",
@@ -9770,7 +9773,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       ToxicSand: {
         tag: "ToxicSand",
@@ -9794,7 +9798,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       CrushedIce: {
         tag: "CrushedIce",
@@ -9818,7 +9823,8 @@ export const db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 10.0
       },
       Diamond: {
         tag: "Diamond",
@@ -9843,7 +9849,8 @@ export const db = {
         thermalConductivity: 80.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 700.0
       },
       Isoresin: {
         tag: "Isoresin",
@@ -9866,7 +9873,8 @@ export const db = {
         thermalConductivity: 0.17,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 30.0
       },
       Sucrose: {
         tag: "Sucrose",
@@ -9887,7 +9895,8 @@ export const db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       MilkFat: {
         tag: "MilkFat",
@@ -9909,7 +9918,8 @@ export const db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 913.0
       },
       Niobium: {
         tag: "Niobium",
@@ -9934,7 +9944,8 @@ export const db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 30.0
       },
       MilkIce: {
         tag: "MilkIce",
@@ -9957,7 +9968,8 @@ export const db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Cuprite: {
         tag: "Cuprite",
@@ -9981,7 +9993,8 @@ export const db = {
         thermalConductivity: 4.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       Copper: {
         tag: "Copper",
@@ -10004,7 +10017,8 @@ export const db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 900.0
       },
       CrushedRock: {
         tag: "CrushedRock",
@@ -10028,7 +10042,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       SuperInsulator: {
         tag: "SuperInsulator",
@@ -10055,7 +10070,8 @@ export const db = {
         thermalConductivity: 1E-05,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 900.0
       },
       BrineIce: {
         tag: "BrineIce",
@@ -10078,7 +10094,8 @@ export const db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       SolidViscoGel: {
         tag: "SolidViscoGel",
@@ -10100,7 +10117,8 @@ export const db = {
         thermalConductivity: 0.45,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 100.0
       },
       Ceramic: {
         tag: "Ceramic",
@@ -10126,7 +10144,8 @@ export const db = {
         thermalConductivity: 0.62,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Cobaltite: {
         tag: "Cobaltite",
@@ -10149,7 +10168,8 @@ export const db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1250.0
       },
       Fertilizer: {
         tag: "Fertilizer",
@@ -10172,7 +10192,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       SolidCrudeOil: {
         tag: "SolidCrudeOil",
@@ -10193,7 +10214,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 870.0
       },
       Wolframite: {
         tag: "Wolframite",
@@ -10217,7 +10239,8 @@ export const db = {
         thermalConductivity: 15.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       Polypropylene: {
         tag: "Polypropylene",
@@ -10242,7 +10265,8 @@ export const db = {
         thermalConductivity: 0.15,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 913.0
       },
       SolidNaphtha: {
         tag: "SolidNaphtha",
@@ -10263,7 +10287,8 @@ export const db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 740.0
       },
       Tungsten: {
         tag: "Tungsten",
@@ -10287,7 +10312,8 @@ export const db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       RefinedCarbon: {
         tag: "RefinedCarbon",
@@ -10310,7 +10336,8 @@ export const db = {
         thermalConductivity: 3.1,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       Steel: {
         tag: "Steel",
@@ -10335,7 +10362,8 @@ export const db = {
         thermalConductivity: 54.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 400.0
       },
       Phosphorite: {
         tag: "Phosphorite",
@@ -10358,7 +10386,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       SolidHydrogen: {
         tag: "SolidHydrogen",
@@ -10379,7 +10408,8 @@ export const db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       Lead: {
         tag: "Lead",
@@ -10402,7 +10432,8 @@ export const db = {
         thermalConductivity: 35.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 2000.0
       },
       Sulfur: {
         tag: "Sulfur",
@@ -10424,7 +10455,8 @@ export const db = {
         thermalConductivity: 0.2,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       Lime: {
         tag: "Lime",
@@ -10446,7 +10478,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       SolidChlorine: {
         tag: "SolidChlorine",
@@ -10467,7 +10500,8 @@ export const db = {
         thermalConductivity: 0.75,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       SolidNuclearWaste: {
         tag: "SolidNuclearWaste",
@@ -10488,7 +10522,8 @@ export const db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1840.0
       },
       Obsidian: {
         tag: "Obsidian",
@@ -10514,7 +10549,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       SolidPetroleum: {
         tag: "SolidPetroleum",
@@ -10535,7 +10571,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 740.0
       },
       SolidSuperCoolant: {
         tag: "SolidSuperCoolant",
@@ -10556,7 +10593,8 @@ export const db = {
         thermalConductivity: 9.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 740.0
       },
       IgneousRock: {
         tag: "IgneousRock",
@@ -10581,7 +10619,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1840.0
       },
       EnrichedUranium: {
         tag: "EnrichedUranium",
@@ -10602,7 +10641,8 @@ export const db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 100.0
       },
       Gold: {
         tag: "Gold",
@@ -10625,7 +10665,8 @@ export const db = {
         thermalConductivity: 60.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 870.0
       },
       Rust: {
         tag: "Rust",
@@ -10647,7 +10688,8 @@ export const db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       Corium: {
         tag: "Corium",
@@ -10668,7 +10710,8 @@ export const db = {
         thermalConductivity: 6.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       Phosphorus: {
         tag: "Phosphorus",
@@ -10691,7 +10734,8 @@ export const db = {
         thermalConductivity: 0.236,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       Granite: {
         tag: "Granite",
@@ -10717,7 +10761,8 @@ export const db = {
         thermalConductivity: 3.39,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1840.0
       },
       SolidCarbonDioxide: {
         tag: "SolidCarbonDioxide",
@@ -10738,7 +10783,8 @@ export const db = {
         thermalConductivity: 1.46,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       Cobalt: {
         tag: "Cobalt",
@@ -10760,7 +10806,8 @@ export const db = {
         thermalConductivity: 100.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       UraniumOre: {
         tag: "UraniumOre",
@@ -10783,7 +10830,8 @@ export const db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 100.0
       },
       AluminumOre: {
         tag: "AluminumOre",
@@ -10807,7 +10855,8 @@ export const db = {
         thermalConductivity: 20.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       SedimentaryRock: {
         tag: "SedimentaryRock",
@@ -10832,7 +10881,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1840.0
       },
       Fullerene: {
         tag: "Fullerene",
@@ -10854,7 +10904,8 @@ export const db = {
         thermalConductivity: 50.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 30.0
       },
       GoldAmalgam: {
         tag: "GoldAmalgam",
@@ -10878,7 +10929,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       Salt: {
         tag: "Salt",
@@ -10900,7 +10952,8 @@ export const db = {
         thermalConductivity: 0.444,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       Sand: {
         tag: "Sand",
@@ -10924,7 +10977,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Snow: {
         tag: "Snow",
@@ -10948,7 +11002,8 @@ export const db = {
         thermalConductivity: 0.545,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 10.0
       },
       SandStone: {
         tag: "SandStone",
@@ -10973,7 +11028,8 @@ export const db = {
         thermalConductivity: 2.9,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Glass: {
         tag: "Glass",
@@ -10997,7 +11053,8 @@ export const db = {
         thermalConductivity: 1.11,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       Clay: {
         tag: "Clay",
@@ -11020,7 +11077,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Ice: {
         tag: "Ice",
@@ -11043,7 +11101,8 @@ export const db = {
         thermalConductivity: 2.18,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Graphite: {
         tag: "Graphite",
@@ -11064,7 +11123,8 @@ export const db = {
         thermalConductivity: 8.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       },
       ToxicMud: {
         tag: "ToxicMud",
@@ -11087,7 +11147,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Mud: {
         tag: "Mud",
@@ -11110,7 +11171,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Carbon: {
         tag: "Carbon",
@@ -11134,7 +11196,8 @@ export const db = {
         thermalConductivity: 1.25,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 600.0
       },
       SolidOxygen: {
         tag: "SolidOxygen",
@@ -11155,7 +11218,8 @@ export const db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       Creature: {
         tag: "Creature",
@@ -11176,7 +11240,8 @@ export const db = {
         thermalConductivity: 0.6,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 40.0
       },
       DepletedUranium: {
         tag: "DepletedUranium",
@@ -11198,7 +11263,8 @@ export const db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 100.0
       },
       Katairite: {
         tag: "Katairite",
@@ -11220,7 +11286,8 @@ export const db = {
         thermalConductivity: 1E-05,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       SolidMethane: {
         tag: "SolidMethane",
@@ -11241,7 +11308,8 @@ export const db = {
         thermalConductivity: 0.03,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       HardPolypropylene: {
         tag: "HardPolypropylene",
@@ -11266,7 +11334,8 @@ export const db = {
         thermalConductivity: 0.25,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 913.0
       },
       MaficRock: {
         tag: "MaficRock",
@@ -11289,7 +11358,8 @@ export const db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1840.0
       },
       Iron: {
         tag: "Iron",
@@ -11312,7 +11382,8 @@ export const db = {
         thermalConductivity: 55.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       Regolith: {
         tag: "Regolith",
@@ -11336,7 +11407,8 @@ export const db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1000.0
       },
       SolidResin: {
         tag: "SolidResin",
@@ -11356,7 +11428,8 @@ export const db = {
         thermalConductivity: 0.17,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 30.0
       },
       TempConductorSolid: {
         tag: "TempConductorSolid",
@@ -11382,7 +11455,8 @@ export const db = {
         thermalConductivity: 220.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 900.0
       },
       IronOre: {
         tag: "IronOre",
@@ -11406,7 +11480,8 @@ export const db = {
         thermalConductivity: 4.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       Dirt: {
         tag: "Dirt",
@@ -11429,7 +11504,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 1840.0
       },
       DirtyIce: {
         tag: "DirtyIce",
@@ -11453,7 +11529,8 @@ export const db = {
         thermalConductivity: 1.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       Fossil: {
         tag: "Fossil",
@@ -11475,7 +11552,8 @@ export const db = {
         thermalConductivity: 2.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 500.0
       },
       Unobtanium: {
         tag: "Unobtanium",
@@ -11496,7 +11574,8 @@ export const db = {
         thermalConductivity: 0.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 20000.0
       },
       SolidEthanol: {
         tag: "SolidEthanol",
@@ -11519,7 +11598,8 @@ export const db = {
         thermalConductivity: 20.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 100.0
       },
       FoolsGold: {
         tag: "FoolsGold",
@@ -11543,7 +11623,8 @@ export const db = {
         thermalConductivity: 4.5,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 800.0
       },
       Aluminum: {
         tag: "Aluminum",
@@ -11566,7 +11647,8 @@ export const db = {
         thermalConductivity: 205.0,
         decor: -10.0,
         decorRadius: 1.0,
-        clearable: true
+        clearable: true,
+        defaultMass: 200.0
       }
     },
     Liquid: {
@@ -11594,7 +11676,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.7
+        lightAbsorption: 0.7,
+        defaultMass: 1000.0
       },
       NuclearWaste: {
         tag: "NuclearWaste",
@@ -11617,7 +11700,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 500.0
       },
       LiquidOxygen: {
         tag: "LiquidOxygen",
@@ -11641,7 +11725,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 300.0
       },
       ViscoGel: {
         tag: "ViscoGel",
@@ -11665,7 +11750,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 100.0
       },
       MoltenAluminum: {
         tag: "MoltenAluminum",
@@ -11691,7 +11777,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 1000.0
       },
       MoltenLead: {
         tag: "MoltenLead",
@@ -11717,7 +11804,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 3000.0
       },
       LiquidCarbonDioxide: {
         tag: "LiquidCarbonDioxide",
@@ -11740,7 +11828,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 600.0
       },
       CrudeOil: {
         tag: "CrudeOil",
@@ -11764,7 +11853,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 870.0
       },
       MoltenGlass: {
         tag: "MoltenGlass",
@@ -11788,7 +11878,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.7
+        lightAbsorption: 0.7,
+        defaultMass: 200.0
       },
       LiquidSulfur: {
         tag: "LiquidSulfur",
@@ -11811,7 +11902,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 190.0
       },
       MoltenGold: {
         tag: "MoltenGold",
@@ -11837,7 +11929,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 870.0
       },
       Magma: {
         tag: "Magma",
@@ -11861,7 +11954,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 1840.0
       },
       Chlorine: {
         tag: "Chlorine",
@@ -11884,7 +11978,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 600.0
       },
       LiquidHydrogen: {
         tag: "LiquidHydrogen",
@@ -11907,7 +12002,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 600.0
       },
       Resin: {
         tag: "Resin",
@@ -11930,7 +12026,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.8
+        lightAbsorption: 0.8,
+        defaultMass: 920.0
       },
       MoltenTungsten: {
         tag: "MoltenTungsten",
@@ -11955,7 +12052,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.7
+        lightAbsorption: 0.7,
+        defaultMass: 200.0
       },
       Petroleum: {
         tag: "Petroleum",
@@ -11980,7 +12078,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.8
+        lightAbsorption: 0.8,
+        defaultMass: 740.0
       },
       MoltenSalt: {
         tag: "MoltenSalt",
@@ -12003,7 +12102,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 190.0
       },
       MoltenCobalt: {
         tag: "MoltenCobalt",
@@ -12028,7 +12128,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 1000.0
       },
       Brine: {
         tag: "Brine",
@@ -12053,7 +12154,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.25
+        lightAbsorption: 0.25,
+        defaultMass: 1200.0
       },
       SuperCoolant: {
         tag: "SuperCoolant",
@@ -12077,7 +12179,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.9
+        lightAbsorption: 0.9,
+        defaultMass: 800.0
       },
       Ethanol: {
         tag: "Ethanol",
@@ -12102,7 +12205,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.25
+        lightAbsorption: 0.25,
+        defaultMass: 1000.0
       },
       Milk: {
         tag: "Milk",
@@ -12126,7 +12230,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.8
+        lightAbsorption: 0.8,
+        defaultMass: 1100.0
       },
       LiquidMethane: {
         tag: "LiquidMethane",
@@ -12149,7 +12254,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.6
+        lightAbsorption: 0.6,
+        defaultMass: 600.0
       },
       MoltenIron: {
         tag: "MoltenIron",
@@ -12175,7 +12281,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 1000.0
       },
       MoltenCarbon: {
         tag: "MoltenCarbon",
@@ -12198,7 +12305,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 600.0
       },
       Naphtha: {
         tag: "Naphtha",
@@ -12223,7 +12331,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.8
+        lightAbsorption: 0.8,
+        defaultMass: 740.0
       },
       MoltenSucrose: {
         tag: "MoltenSucrose",
@@ -12245,7 +12354,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 190.0
       },
       LiquidPhosphorus: {
         tag: "LiquidPhosphorus",
@@ -12269,7 +12379,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 200.0
       },
       MoltenSteel: {
         tag: "MoltenSteel",
@@ -12295,7 +12406,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 900.0
       },
       MoltenNiobium: {
         tag: "MoltenNiobium",
@@ -12321,7 +12433,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 900.0
       },
       Water: {
         tag: "Water",
@@ -12346,7 +12459,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.25
+        lightAbsorption: 0.25,
+        defaultMass: 1000.0
       },
       SaltWater: {
         tag: "SaltWater",
@@ -12371,7 +12485,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.25
+        lightAbsorption: 0.25,
+        defaultMass: 1100.0
       },
       MoltenUranium: {
         tag: "MoltenUranium",
@@ -12396,7 +12511,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 3000.0
       },
       MoltenCopper: {
         tag: "MoltenCopper",
@@ -12422,7 +12538,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 1.0
+        lightAbsorption: 1.0,
+        defaultMass: 900.0
       }
     },
     Gas: {
@@ -12445,7 +12562,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 1.0
       },
       SaltGas: {
         tag: "SaltGas",
@@ -12466,7 +12584,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 1.0
       },
       NiobiumGas: {
         tag: "NiobiumGas",
@@ -12490,7 +12609,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       Oxygen: {
         tag: "Oxygen",
@@ -12512,7 +12632,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.0
+        lightAbsorption: 0.0,
+        defaultMass: 1.0
       },
       CobaltGas: {
         tag: "CobaltGas",
@@ -12535,7 +12656,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       SteelGas: {
         tag: "SteelGas",
@@ -12560,7 +12682,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       ChlorineGas: {
         tag: "ChlorineGas",
@@ -12582,7 +12705,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.2
+        lightAbsorption: 0.2,
+        defaultMass: 1.0
       },
       Hydrogen: {
         tag: "Hydrogen",
@@ -12604,7 +12728,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 1.0
       },
       SourGas: {
         tag: "SourGas",
@@ -12626,7 +12751,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.25
+        lightAbsorption: 0.25,
+        defaultMass: 1.0
       },
       Steam: {
         tag: "Steam",
@@ -12647,7 +12773,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 1.0
       },
       Methane: {
         tag: "Methane",
@@ -12670,7 +12797,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.25
+        lightAbsorption: 0.25,
+        defaultMass: 1.0
       },
       GoldGas: {
         tag: "GoldGas",
@@ -12694,7 +12822,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       EthanolGas: {
         tag: "EthanolGas",
@@ -12715,7 +12844,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       RockGas: {
         tag: "RockGas",
@@ -12737,7 +12867,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       CarbonGas: {
         tag: "CarbonGas",
@@ -12759,7 +12890,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.3
+        lightAbsorption: 0.3,
+        defaultMass: 1.0
       },
       SuperCoolantGas: {
         tag: "SuperCoolantGas",
@@ -12780,7 +12912,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       AluminumGas: {
         tag: "AluminumGas",
@@ -12804,7 +12937,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       TungstenGas: {
         tag: "TungstenGas",
@@ -12827,7 +12961,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       ContaminatedOxygen: {
         tag: "ContaminatedOxygen",
@@ -12849,7 +12984,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 1.0
       },
       LeadGas: {
         tag: "LeadGas",
@@ -12873,7 +13009,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       Fallout: {
         tag: "Fallout",
@@ -12894,7 +13031,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       IronGas: {
         tag: "IronGas",
@@ -12918,7 +13056,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       PhosphorusGas: {
         tag: "PhosphorusGas",
@@ -12940,7 +13079,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       },
       CarbonDioxide: {
         tag: "CarbonDioxide",
@@ -12962,7 +13102,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.1
+        lightAbsorption: 0.1,
+        defaultMass: 1.0
       },
       CopperGas: {
         tag: "CopperGas",
@@ -12986,7 +13127,8 @@ export const db = {
         decor: -10.0,
         decorRadius: 1.0,
         clearable: true,
-        lightAbsorption: 0.5
+        lightAbsorption: 0.5,
+        defaultMass: 1.0
       }
     },
     Other: {
