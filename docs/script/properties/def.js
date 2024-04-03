@@ -86,6 +86,24 @@ export function phase(div, entity) {
   }
 }
 
+export function lightAbsorption(div, entity) {
+  display.line(div, image.icon("light").path(), "lightAbsorption", units.percent(entity.lightAbsorption));
+}
+
+export function radiationAbsorption(div, entity) {
+  display.line(div, image.icon("radiation").path(), "radiationAbsorption", units.percent(entity.radiationAbsorptionFactor));
+}
+
+export function quality(div, entity) {
+  display.line(div, image.icon("heatflow").path(), "quality", units.none(entity.quality));
+  let moral = [-1, 0, 1, 4, 8, 12, 16, 16][entity.quality + 1];
+  display.line(div, image.icon("heatflow").path(), "moral", units.none(moral));
+}
+
+export function calories(div, entity) {
+  display.line(div, image.icon("heatflow").path(), "calories", units.kcal(entity.calories));
+}
+
 /*
 export const strength = simpleLine(type.none);
 export const mass = simpleLine(type.kg);
@@ -94,8 +112,6 @@ export const maxCompression = simpleLine(type.none);
 export const viscosity = simpleLine(type.none);
 export const minHorizontalFlow = simpleLine(type.none);
 export const minVerticalFlow = simpleLine(type.none);
-export const lightAbsorption = simpleLine(type.percent);
-export const radiationAbsorptionFactor = simpleLine(type.percent, icon("radiation"));
 export const massPerUnit = simpleLine(type.none);
 export const chunkMass = simpleLine(type.none);
 export const locationRule = simpleLine(type.none);

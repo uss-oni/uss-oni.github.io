@@ -77,6 +77,12 @@ export function desc(div, text) {
 }
 
 export function ui(div, text) {
-  div.textContent = translationUI[text];
-  div.dataset.ui = text;
+  if (Object.keys(translationUI).includes(text)) {
+    div.textContent = translationUI[text];
+    div.dataset.ui = text;
+  }
+  else {
+    div.textContent = translationTag[text].name;
+    div.dataset.tag = text;
+  }
 }

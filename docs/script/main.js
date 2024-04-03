@@ -59,10 +59,18 @@ function displayProperties(category, tag, entity) {
   let properties = document.getElementById("properties");
   properties.replaceChildren();
   let mainTitle = document.createElement("h3");
-  mainTitle.textContent = "Properties";
+  translation.ui(mainTitle, "Properties");
   properties.appendChild(mainTitle);
   for (const prop of category.properties) {
     prop(properties, entity);
+  }
+  if (category.additionals != null) {
+    for (const fn of category.additionals) {
+      let title = document.createElement("h3");
+      translation.ui(title, fn.name);
+      properties.appendChild(title);
+      fn(properties, entity);
+    }
   }
 }
 

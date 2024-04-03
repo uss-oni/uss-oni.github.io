@@ -5,7 +5,8 @@ const commonProperties = [
   properties.phase,
   properties.shc,
   properties.thermalConductivity,
-  properties.molarMass
+  properties.molarMass,
+  properties.radiationAbsorption
 ]
 
 export const def = {
@@ -21,12 +22,16 @@ export const def = {
     {
       title: "Liquid",
       sortOrder: alpha,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.lightAbsorption
+      ]),
     },
     {
       title: "Gas",
       sortOrder: alpha,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.lightAbsorption
+      ]),
     },
     {
       title: "Other",

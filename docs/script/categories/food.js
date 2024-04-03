@@ -10,7 +10,10 @@ export const def = {
     {
       title: "Cooked",
       sortOrder: menuOrder,
-      properties: commonProperties,
+      properties: commonProperties.concat([
+        properties.quality,
+        properties.calories
+      ]),
     },
   //  {
   //    title: "Raw",

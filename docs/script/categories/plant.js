@@ -12,21 +12,24 @@ export const def = {
       sortOrder: alpha,
       properties: commonProperties.concat([
         properties.plantAge,
-        properties.harvest
+        properties.harvest,
+        properties.size
       ]),
     },
     {
       title: "Forage",
       sortOrder: alpha,
       properties: commonProperties.concat([
-        properties.harvest
+        properties.harvest,
+        properties.size
       ]),
     },
     {
       title: "Decor",
       sortOrder: alpha,
       properties: commonProperties.concat([
-        properties.harvest
+        properties.harvest,
+        properties.size
       ]),
     },
     {
