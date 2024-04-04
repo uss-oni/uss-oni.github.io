@@ -72,7 +72,35 @@ function displayProperties(category, tag, entity) {
       fn(properties, entity);
     }
   }
+  let debugTitle = document.createElement("h3");
+  translation.ui(debugTitle, "Debug");
+  properties.appendChild(debugTitle);
+  for (const debug of Object.keys(entity)) {
+    if (!done.includes(debug)) {
+      let iconContainer = document.createElement("div");
+      iconContainer.className = "propIcon";
+      let icon = document.createElement("img");
+      icon.src = image.icon("noIdea").path();
+      iconContainer.appendChild(icon);
+      properties.appendChild(iconContainer);
+      let label = document.createElement("div");
+      label.className = "propLabel";
+      label.textContent = debug;
+      properties.appendChild(label);
+      let value = document.createElement("div");
+      value.className = "propValue";
+      value.textContent = entity[debug];
+      properties.appendChild(value);
+    }
+  }
 }
+
+const done = [
+  "tag",
+  "menuOrder",
+  "molarMass",
+  "hardness"
+]
 
 function init() {
   let select = document.getElementById("selectCategory");

@@ -113,5 +113,6 @@ namespace USS
     public float? spoilTime;
     public float? lightAbsorption;
     public float? defaultMass;
+    public List<string> trapCritters;
   }
 }

@@ -16,6 +16,15 @@ export function kg(value) {
   }
 }
 
+export function kgs(value) {
+  return (div) => {
+    value *= 600;
+    value = Number(value.toFixed(3));
+    var v = document.createTextNode(value + " kg/peuchy");
+    div.appendChild(v);
+  }
+}
+
 export function dtugc(value) {
   return (div) => {
     var v = document.createElement("span");
@@ -143,5 +152,11 @@ export function peuchy(value) {
       let v = document.createTextNode(translationUI["infinite"]);
       div.appendChild(v);
     }
+  }
+}
+
+export function translate(value) {
+  return (div) => {
+    translation.ui(div, value);
   }
 }

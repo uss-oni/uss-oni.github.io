@@ -1,7 +1,9 @@
 import { alpha, menuOrder } from "../sort.js"
 import * as properties from "../properties/def.js"
+import { recipesList } from "../properties/recipes.js"
 
 const commonProperties = [
+  properties.phase,
   properties.primaryElement
 ]
 
@@ -15,6 +17,9 @@ export const def = {
         properties.quality,
         properties.calories
       ]),
+      additionals: [
+        recipesList
+      ]
     },
   //  {
   //    title: "Raw",

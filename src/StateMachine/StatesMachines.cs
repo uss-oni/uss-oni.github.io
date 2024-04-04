@@ -167,7 +167,7 @@ namespace USS
       entity.menuOrder = Array.IndexOf(order, Assets.GetPrefab(sm.spawnedCreature).GetComponent<CreatureBrain>().species);
       entity.menu = Category.Critter.Egg;
       var recipe = new Recipe.Birth(
-        origin: entity.tag, 
+        origin: entity.tag,
         time: 100 / sm.baseIncubationRate,
         dest: [
           ("EggShell", entity.mass.Value / 2.0f),
@@ -206,7 +206,7 @@ namespace USS
     }
     public static void Get(Entity entity, FertilityMonitor.Def sm)
     {
-      var recipe = new Recipe.Egg (
+      var recipe = new Recipe.Egg(
         origin: entity.tag,
         time: sm.baseFertileCycles * 600,
         dest: sm.initialBreedingWeights
@@ -217,8 +217,20 @@ namespace USS
     }
     public static void Get(Entity entity, HugMonitor.Def sm) { }
     public static void Get(Entity entity, GasAndLiquidConsumerMonitor.Def sm) { }
-    public static void Get(Entity entity, IrrigationMonitor.Def sm) { }
-    public static void Get(Entity entity, FertilizationMonitor.Def sm) { }
+    public static void Get(Entity entity, IrrigationMonitor.Def sm)
+    {
+      var recipe = new Recipe.Irrigation(
+        sm.consumedElements.Select(e => (e.tag.Name, e.massConsumptionRate)).ToArray(),
+        entity.tag);
+      recipes.Add(recipe);
+    }
+    public static void Get(Entity entity, FertilizationMonitor.Def sm)
+    {
+      var recipe = new Recipe.Fertilization(
+        sm.consumedElements.Select(e => (e.tag.Name, e.massConsumptionRate)).ToArray(),
+        entity.tag);
+      recipes.Add(recipe);
+    }
     public static void Get(Entity entity, DiseaseDropper.Def sm) { }
     public static void Get(Entity entity, RobotAi.Def sm) { }
     public static void Get(Entity entity, LureableMonitor.Def sm) { }
@@ -253,7 +265,7 @@ namespace USS
       entity.age = sm.adultThreshold;
       List<(string, float)> dest = sm.onGrowDropID is not null ? [(sm.onGrowDropID, 1)] : [];
       dest.Add((sm.adultPrefab.Name, 1));
-      var recipe = new Recipe.Adult (
+      var recipe = new Recipe.Adult(
         origin: entity.tag,
         time: sm.adultThreshold * 600,
         dest: [.. dest]

@@ -1397,7 +1397,10 @@ export const db = {
         decor: -15.0,
         decorRadius: 3.0,
         deconstructable: true,
-        enableable: true
+        enableable: true,
+        trapCritters: [
+          "Flyer"
+        ]
       },
       CreatureGroundTrap: {
         tag: "CreatureGroundTrap",
@@ -1417,7 +1420,12 @@ export const db = {
         decor: -15.0,
         decorRadius: 3.0,
         deconstructable: true,
-        enableable: true
+        enableable: true,
+        trapCritters: [
+          "Walker",
+          "Hoverer",
+          "Swimmer"
+        ]
       },
       WaterTrap: {
         tag: "WaterTrap",
@@ -1437,7 +1445,10 @@ export const db = {
         decor: -15.0,
         decorRadius: 3.0,
         deconstructable: true,
-        enableable: true
+        enableable: true,
+        trapCritters: [
+          "Swimmer"
+        ]
       }
     },
     utilities: {
@@ -10020,31 +10031,6 @@ export const db = {
         clearable: true,
         defaultMass: 900.0
       },
-      CrushedRock: {
-        tag: "CrushedRock",
-        menuOrder: 15.0,
-        dlc: [
-          "Base",
-          "Space Out"
-        ],
-        tags: [
-          "PedestalDisplayable",
-          "Unstable",
-          "Solid",
-          "BuildableProcessed"
-        ],
-        molarMass: 50.0,
-        hardness: 10.0,
-        shc: 0.2,
-        strength: 0.7,
-        minHorizontalFlow: 50.0,
-        radiationAbsorptionFactor: 0.7,
-        thermalConductivity: 2.0,
-        decor: -10.0,
-        decorRadius: 1.0,
-        clearable: true,
-        defaultMass: 1000.0
-      },
       SuperInsulator: {
         tag: "SuperInsulator",
         menuOrder: 7.0,
@@ -11600,31 +11586,6 @@ export const db = {
         decorRadius: 1.0,
         clearable: true,
         defaultMass: 100.0
-      },
-      FoolsGold: {
-        tag: "FoolsGold",
-        menuOrder: 5.0,
-        dlc: [
-          "Base",
-          "Space Out"
-        ],
-        tags: [
-          "PedestalDisplayable",
-          "Ore",
-          "BuildableAny",
-          "Solid",
-          "Metal"
-        ],
-        molarMass: 95.61,
-        hardness: 25.0,
-        shc: 0.386,
-        strength: 0.7,
-        radiationAbsorptionFactor: 0.7,
-        thermalConductivity: 4.5,
-        decor: -10.0,
-        decorRadius: 1.0,
-        clearable: true,
-        defaultMass: 800.0
       },
       Aluminum: {
         tag: "Aluminum",
@@ -17829,7 +17790,11 @@ export const db = {
         decorRadius: 2.0,
         primaryElement: "Creature",
         maxRadiation: 2200.0,
-        age: 30.0
+        age: 30.0,
+        trapCritters: [
+          "Walker",
+          "Hoverer"
+        ]
       },
       ForestTree: {
         tag: "ForestTree",

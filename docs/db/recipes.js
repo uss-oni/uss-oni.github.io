@@ -2843,14 +2843,6 @@ export const recipes = {
       }
     },
     {
-      origin: "CrushedRock",
-      type: "melting",
-      temp: 1683.0,
-      dest: {
-        Magma: 1.0
-      }
-    },
-    {
       origin: "SuperInsulator",
       type: "melting",
       temp: 3895.0,
@@ -3356,14 +3348,6 @@ export const recipes = {
       temp: 159.1,
       dest: {
         Ethanol: 1.0
-      }
-    },
-    {
-      origin: "FoolsGold",
-      type: "melting",
-      temp: 1357.0,
-      dest: {
-        MoltenIron: 1.0
       }
     },
     {
@@ -4215,6 +4199,1910 @@ export const recipes = {
       efficiency: 0.2,
       probability: 0.05,
       dest: "ContaminatedOxygen"
+    }
+  ],
+  Complex: [
+    {
+      origin: {
+        Carbon: 1.0
+      },
+      time: 50.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        BasicBooster: 1.0
+      }
+    },
+    {
+      origin: {
+        SpiceNut: 1.0
+      },
+      time: 100.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        IntermediateBooster: 1.0
+      }
+    },
+    {
+      origin: {
+        Carbon: 1.0
+      },
+      time: 50.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        BasicRadPill: 1.0
+      }
+    },
+    {
+      origin: {
+        Carbon: 1.0,
+        Water: 1.0
+      },
+      time: 50.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        BasicCure: 1.0
+      }
+    },
+    {
+      origin: {
+        PrickleFlowerSeed: 1.0,
+        Dirt: 1.0
+      },
+      time: 100.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        Antihistamine: 10.0
+      }
+    },
+    {
+      origin: {
+        SwampLilyFlower: 1.0,
+        Phosphorite: 1.0
+      },
+      time: 100.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        IntermediateCure: 1.0
+      }
+    },
+    {
+      origin: {
+        Steel: 1.0,
+        LightBugOrangeEgg: 1.0
+      },
+      time: 200.0,
+      converter: "Apothecary",
+      temperature: 2.0,
+      dest: {
+        AdvancedCure: 1.0
+      }
+    },
+    {
+      origin: {
+        Salt: 30.0,
+        Gold: 0.5
+      },
+      time: 40.0,
+      converter: "Chlorinator",
+      temperature: 2.0,
+      dest: {
+        BleachStone: 10.0,
+        Sand: 19.9999981
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        Funky_Vest: 1.0,
+        BasicFabric: 3.0
+      },
+      time: 180.0,
+      converter: "ClothingAlterationStation",
+      temperature: 2.0,
+      dest: {
+        CustomClothing: 1.0
+      }
+    },
+    {
+      origin: {
+        BasicFabric: 4.0
+      },
+      time: 180.0,
+      converter: "ClothingFabricator",
+      temperature: 2.0,
+      dest: {
+        Cool_Vest: 1.0
+      }
+    },
+    {
+      origin: {
+        BasicFabric: 4.0
+      },
+      time: 180.0,
+      converter: "ClothingFabricator",
+      temperature: 2.0,
+      dest: {
+        Funky_Vest: 1.0
+      }
+    },
+    {
+      origin: {
+        BasicFabric: 4.0
+      },
+      time: 180.0,
+      converter: "ClothingFabricator",
+      temperature: 2.0,
+      dest: {
+        Warm_Vest: 1.0
+      }
+    },
+    {
+      origin: {
+        MushBar: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        FriedMushBar: 1.0
+      }
+    },
+    {
+      origin: {
+        RawEgg: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        CookedEgg: 1.0
+      }
+    },
+    {
+      origin: {
+        Mushroom: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        FriedMushroom: 1.0
+      }
+    },
+    {
+      origin: {
+        PrickleFruit: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        GrilledPrickleFruit: 1.0
+      }
+    },
+    {
+      origin: {
+        RawEgg: 1.0,
+        ColdWheatSeed: 2.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        Pancakes: 1.0
+      }
+    },
+    {
+      origin: {
+        SwampFruit: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        SwampDelights: 1.0
+      }
+    },
+    {
+      origin: {
+        WormBasicFruit: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        WormBasicFood: 1.0
+      }
+    },
+    {
+      origin: {
+        WormSuperFruit: 8.0,
+        Sucrose: 4.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        WormSuperFood: 1.0
+      }
+    },
+    {
+      origin: {
+        BasicPlantFood: 3.0
+      },
+      time: 30.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        PickledMeal: 1.0
+      }
+    },
+    {
+      origin: {
+        Meat: 2.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        CookedMeat: 1.0
+      }
+    },
+    {
+      origin: {
+        FishMeat: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        CookedFish: 1.0
+      }
+    },
+    {
+      origin: {
+        ShellfishMeat: 1.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        CookedFish: 1.0
+      }
+    },
+    {
+      origin: {
+        ColdWheatSeed: 3.0
+      },
+      time: 50.0,
+      converter: "CookingStation",
+      temperature: 2.0,
+      dest: {
+        ColdWheatBread: 1.0
+      }
+    },
+    {
+      origin: {
+        AluminumOre: 50.0
+      },
+      time: 20.0,
+      converter: "CraftingTable",
+      temperature: 2.0,
+      dest: {
+        Oxygen_Mask: 1.0
+      }
+    },
+    {
+      origin: {
+        Cobaltite: 50.0
+      },
+      time: 20.0,
+      converter: "CraftingTable",
+      temperature: 2.0,
+      dest: {
+        Oxygen_Mask: 1.0
+      }
+    },
+    {
+      origin: {
+        Cuprite: 50.0
+      },
+      time: 20.0,
+      converter: "CraftingTable",
+      temperature: 2.0,
+      dest: {
+        Oxygen_Mask: 1.0
+      }
+    },
+    {
+      origin: {
+        IronOre: 50.0
+      },
+      time: 20.0,
+      converter: "CraftingTable",
+      temperature: 2.0,
+      dest: {
+        Oxygen_Mask: 1.0
+      }
+    },
+    {
+      origin: {
+        Worn_Oxygen_Mask: 1.0
+      },
+      time: 20.0,
+      converter: "CraftingTable",
+      temperature: 2.0,
+      dest: {
+        Oxygen_Mask: 1.0
+      }
+    },
+    {
+      origin: {
+        RefinedCarbon: 100.0
+      },
+      time: 80.0,
+      converter: "DiamondPress",
+      temperature: 2.0,
+      dest: {
+        Diamond: 100.0
+      }
+    },
+    {
+      origin: {
+        CrabEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        CrabFreshWaterEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        CrabWoodEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        DivergentBeetleEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        DivergentWormEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        DreckoEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        DreckoPlasticEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        HatchEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        HatchHardEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        HatchMetalEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        HatchVeggieEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        LightBugBlackEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        LightBugBlueEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        LightBugCrystalEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        LightBugEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        LightBugOrangeEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        LightBugPinkEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        LightBugPurpleEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.1,
+        EggShell: 0.1
+      }
+    },
+    {
+      origin: {
+        MoleDelicacyEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        MoleEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        OilfloaterDecorEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        OilfloaterEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        OilfloaterHighTempEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        PacuCleanerEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 2.0,
+        EggShell: 2.0
+      }
+    },
+    {
+      origin: {
+        PacuEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 2.0,
+        EggShell: 2.0
+      }
+    },
+    {
+      origin: {
+        PacuTropicalEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 2.0,
+        EggShell: 2.0
+      }
+    },
+    {
+      origin: {
+        PuftAlphaEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.25,
+        EggShell: 0.25
+      }
+    },
+    {
+      origin: {
+        PuftBleachstoneEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.25,
+        EggShell: 0.25
+      }
+    },
+    {
+      origin: {
+        PuftEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.25,
+        EggShell: 0.25
+      }
+    },
+    {
+      origin: {
+        PuftOxyliteEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 0.25,
+        EggShell: 0.25
+      }
+    },
+    {
+      origin: {
+        SquirrelEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        SquirrelHugEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        StaterpillarEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        StaterpillarGasEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        StaterpillarLiquidEgg: 1.0
+      },
+      time: 5.0,
+      converter: "EggCracker",
+      temperature: 2.0,
+      dest: {
+        RawEgg: 1.0,
+        EggShell: 1.0
+      }
+    },
+    {
+      origin: {
+        Salsa: 1.36363637,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedSalsa: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        MushroomWrap: 1.25,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedMushroomWrap: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        SurfAndTurf: 1.0,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedSurfAndTurf: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        SpiceBread: 1.5,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedSpiceBread: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        Quiche: 0.9375,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedQuiche: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        Curry: 1.2,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedCurry: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        SpicyTofu: 1.5,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedSpicyTofu: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        Burger: 1.0,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedFoodPackage: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        BerryPie: 1.42857146,
+        Polypropylene: 12.0
+      },
+      time: 250.0,
+      converter: "FoodDehydrator",
+      temperature: 2.0,
+      dest: {
+        DehydratedBerryPie: 6.0,
+        Water: 6.0
+      }
+    },
+    {
+      origin: {
+        Diamond: 1.0
+      },
+      time: 80.0,
+      converter: "FossilDig",
+      temperature: 2.0,
+      dest: {
+        Fossil: 100.0
+      }
+    },
+    {
+      origin: {
+        Sand: 100.0
+      },
+      time: 40.0,
+      converter: "GlassForge",
+      temperature: 2.0,
+      dest: {
+        MoltenGlass: 25.0
+      }
+    },
+    {
+      origin: {
+        GrilledPrickleFruit: 2.0,
+        SpiceNut: 2.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        Salsa: 1.0
+      }
+    },
+    {
+      origin: {
+        FriedMushroom: 1.0,
+        Lettuce: 4.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        MushroomWrap: 1.0
+      }
+    },
+    {
+      origin: {
+        CookedMeat: 1.0,
+        CookedFish: 1.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        SurfAndTurf: 1.0
+      }
+    },
+    {
+      origin: {
+        ColdWheatSeed: 10.0,
+        SpiceNut: 1.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        SpiceBread: 1.0
+      }
+    },
+    {
+      origin: {
+        CookedEgg: 1.0,
+        Lettuce: 1.0,
+        FriedMushroom: 1.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        Quiche: 1.0
+      }
+    },
+    {
+      origin: {
+        GingerConfig: 4.0,
+        BeanPlantSeed: 4.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        Curry: 1.0
+      }
+    },
+    {
+      origin: {
+        Tofu: 1.0,
+        SpiceNut: 1.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        SpicyTofu: 1.0
+      }
+    },
+    {
+      origin: {
+        ColdWheatBread: 1.0,
+        Lettuce: 1.0,
+        CookedMeat: 1.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        Burger: 1.0
+      }
+    },
+    {
+      origin: {
+        ColdWheatSeed: 3.0,
+        WormSuperFruit: 4.0,
+        GrilledPrickleFruit: 1.0
+      },
+      time: 50.0,
+      converter: "GourmetCookingStation",
+      temperature: 2.0,
+      dest: {
+        BerryPie: 1.0
+      }
+    },
+    {
+      origin: {
+        Carbon: 125.0
+      },
+      time: 40.0,
+      converter: "Kiln",
+      temperature: 2.0,
+      dest: {
+        RefinedCarbon: 100.0
+      }
+    },
+    {
+      origin: {
+        Clay: 100.0,
+        Carbon: 25.0
+      },
+      time: 40.0,
+      converter: "Kiln",
+      temperature: 2.0,
+      dest: {
+        Ceramic: 100.0
+      }
+    },
+    {
+      origin: {
+        EnrichedUranium: 1.0
+      },
+      time: 40.0,
+      converter: "ManualHighEnergyParticleSpawner",
+      temperature: 2.0,
+      dest: {
+        DepletedUranium: 0.8
+      }
+    },
+    {
+      origin: {
+        UraniumOre: 1.0
+      },
+      time: 40.0,
+      converter: "ManualHighEnergyParticleSpawner",
+      temperature: 2.0,
+      dest: {
+        DepletedUranium: 0.5
+      }
+    },
+    {
+      origin: {
+        AluminumOre: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Aluminum: 100.0
+      }
+    },
+    {
+      origin: {
+        Cobaltite: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Cobalt: 100.0
+      }
+    },
+    {
+      origin: {
+        Cuprite: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Copper: 100.0
+      }
+    },
+    {
+      origin: {
+        GoldAmalgam: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Gold: 100.0
+      }
+    },
+    {
+      origin: {
+        Iron: 70.0,
+        RefinedCarbon: 20.0,
+        Lime: 10.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Steel: 100.0
+      }
+    },
+    {
+      origin: {
+        IronOre: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Iron: 100.0
+      }
+    },
+    {
+      origin: {
+        TempConductorSolid: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Niobium: 100.0
+      }
+    },
+    {
+      origin: {
+        Wolframite: 100.0
+      },
+      time: 40.0,
+      converter: "MetalRefinery",
+      temperature: 2.0,
+      dest: {
+        Tungsten: 100.0
+      }
+    },
+    {
+      origin: {
+        Dirt: 75.0,
+        Water: 75.0
+      },
+      time: 40.0,
+      converter: "MicrobeMusher",
+      temperature: 2.0,
+      dest: {
+        MushBar: 1.0
+      }
+    },
+    {
+      origin: {
+        BasicPlantFood: 2.0,
+        Water: 50.0
+      },
+      time: 50.0,
+      converter: "MicrobeMusher",
+      temperature: 2.0,
+      dest: {
+        BasicPlantBar: 1.0
+      }
+    },
+    {
+      origin: {
+        BeanPlantSeed: 6.0,
+        Water: 50.0
+      },
+      time: 50.0,
+      converter: "MicrobeMusher",
+      temperature: 2.0,
+      dest: {
+        Tofu: 1.0
+      }
+    },
+    {
+      origin: {
+        ColdWheatSeed: 5.0,
+        PrickleFruit: 1.0
+      },
+      time: 50.0,
+      converter: "MicrobeMusher",
+      temperature: 2.0,
+      dest: {
+        FruitCake: 1.0
+      }
+    },
+    {
+      origin: {
+        BeanPlantSeed: 2.0,
+        Water: 18.0
+      },
+      time: 40.0,
+      converter: "MilkPress",
+      temperature: 2.0,
+      dest: {
+        Milk: 20.0
+      }
+    },
+    {
+      origin: {
+        ColdWheatSeed: 10.0,
+        Water: 15.0
+      },
+      time: 40.0,
+      converter: "MilkPress",
+      temperature: 2.0,
+      dest: {
+        Milk: 20.0
+      }
+    },
+    {
+      origin: {
+        SpiceNut: 3.0,
+        Water: 17.0
+      },
+      time: 40.0,
+      converter: "MilkPress",
+      temperature: 2.0,
+      dest: {
+        Milk: 20.0
+      }
+    },
+    {
+      origin: {
+        Aluminum: 25.0,
+        Petroleum: 50.0
+      },
+      time: 80.0,
+      converter: "MissileFabricator",
+      temperature: 2.0,
+      dest: {
+        MissileBasic: 5.0
+      }
+    },
+    {
+      origin: {
+        Cobalt: 25.0,
+        Petroleum: 50.0
+      },
+      time: 80.0,
+      converter: "MissileFabricator",
+      temperature: 2.0,
+      dest: {
+        MissileBasic: 5.0
+      }
+    },
+    {
+      origin: {
+        Copper: 25.0,
+        Petroleum: 50.0
+      },
+      time: 80.0,
+      converter: "MissileFabricator",
+      temperature: 2.0,
+      dest: {
+        MissileBasic: 5.0
+      }
+    },
+    {
+      origin: {
+        Iron: 25.0,
+        Petroleum: 50.0
+      },
+      time: 80.0,
+      converter: "MissileFabricator",
+      temperature: 2.0,
+      dest: {
+        MissileBasic: 5.0
+      }
+    },
+    {
+      origin: {
+        Polypropylene: 5.0
+      },
+      time: 33.0,
+      converter: "OrbitalResearchCenter",
+      temperature: 2.0,
+      dest: {
+        OrbitalResearchDatabank: 1.0
+      }
+    },
+    {
+      origin: {
+        AluminumOre: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Aluminum: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        BabyCrabShell: 1.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Lime: 5.0
+      }
+    },
+    {
+      origin: {
+        BabyCrabWoodShell: 1.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        WoodLog: 10.0
+      }
+    },
+    {
+      origin: {
+        Ceramic: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        Cobaltite: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Cobalt: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        CrabShell: 1.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Lime: 10.0
+      }
+    },
+    {
+      origin: {
+        CrabWoodShell: 5.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        WoodLog: 500.0
+      }
+    },
+    {
+      origin: {
+        Cuprite: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Copper: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        EggShell: 5.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Lime: 5.0
+      }
+    },
+    {
+      origin: {
+        Fossil: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Lime: 5.0,
+        SedimentaryRock: 95.0
+      }
+    },
+    {
+      origin: {
+        Fullerene: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Graphite: 90.0,
+        Sand: 10.0000019
+      }
+    },
+    {
+      origin: {
+        GoldAmalgam: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Gold: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        Granite: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        IgneousRock: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        IronOre: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Iron: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        Obsidian: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        Salt: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        TableSalt: 0.005,
+        Sand: 99.995
+      }
+    },
+    {
+      origin: {
+        SandStone: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        SedimentaryRock: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        SuperInsulator: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Sand: 100.0
+      }
+    },
+    {
+      origin: {
+        TempConductorSolid: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Niobium: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        Wolframite: 100.0
+      },
+      time: 40.0,
+      converter: "RockCrusher",
+      temperature: 2.0,
+      dest: {
+        Tungsten: 50.0,
+        Sand: 50.0
+      }
+    },
+    {
+      origin: {
+        Mud: 150.0
+      },
+      time: 20.0,
+      converter: "SludgePress",
+      temperature: 2.0,
+      dest: {
+        Dirt: 60.0,
+        Water: 90.0
+      }
+    },
+    {
+      origin: {
+        ToxicMud: 150.0
+      },
+      time: 20.0,
+      converter: "SludgePress",
+      temperature: 2.0,
+      dest: {
+        ToxicSand: 60.0,
+        DirtyWater: 90.0
+      }
+    },
+    {
+      origin: {
+        Aluminum: 300.0,
+        BasicFabric: 2.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Atmo_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Cobalt: 300.0,
+        BasicFabric: 2.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Atmo_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Copper: 300.0,
+        BasicFabric: 2.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Atmo_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Iron: 300.0,
+        BasicFabric: 2.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Atmo_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Worn_Atmo_Suit: 1.0,
+        BasicFabric: 1.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Atmo_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Steel: 200.0,
+        Petroleum: 25.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Jet_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Worn_Jet_Suit: 1.0,
+        BasicFabric: 1.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Jet_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Lead: 200.0,
+        Glass: 10.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Lead_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Worn_Lead_Suit: 1.0,
+        Glass: 5.0
+      },
+      time: 40.0,
+      converter: "SuitFabricator",
+      temperature: 2.0,
+      dest: {
+        Lead_Suit: 1.0
+      }
+    },
+    {
+      origin: {
+        Fullerene: 1.0,
+        Gold: 49.5,
+        Petroleum: 49.5
+      },
+      time: 80.0,
+      converter: "SupermaterialRefinery",
+      temperature: 2.0,
+      dest: {
+        SuperCoolant: 100.0
+      }
+    },
+    {
+      origin: {
+        Graphite: 90.0,
+        Sulfur: 5.000001,
+        Aluminum: 5.000001
+      },
+      time: 80.0,
+      converter: "SupermaterialRefinery",
+      temperature: 2.0,
+      dest: {
+        Fullerene: 100.0
+      }
+    },
+    {
+      origin: {
+        Isoresin: 15.000001,
+        Katairite: 80.0,
+        BasicFabric: 5.0
+      },
+      time: 80.0,
+      converter: "SupermaterialRefinery",
+      temperature: 2.0,
+      dest: {
+        SuperInsulator: 100.0
+      }
+    },
+    {
+      origin: {
+        Isoresin: 35.0,
+        Petroleum: 65.0
+      },
+      time: 80.0,
+      converter: "SupermaterialRefinery",
+      temperature: 2.0,
+      dest: {
+        ViscoGel: 100.0
+      }
+    },
+    {
+      origin: {
+        Niobium: 5.0,
+        Tungsten: 95.0
+      },
+      time: 80.0,
+      converter: "SupermaterialRefinery",
+      temperature: 2.0,
+      dest: {
+        TempConductorSolid: 100.0
+      }
+    },
+    {
+      origin: {
+        TempConductorSolid: 15.000001,
+        Polypropylene: 70.0,
+        MilkFat: 15.000001
+      },
+      time: 80.0,
+      converter: "SupermaterialRefinery",
+      temperature: 2.0,
+      dest: {
+        HardPolypropylene: 100.0
+      }
+    },
+    {
+      origin: {
+        UraniumOre: 10.0
+      },
+      time: 40.0,
+      converter: "UraniumCentrifuge",
+      temperature: 2.0,
+      dest: {
+        EnrichedUranium: 2.0,
+        MoltenUranium: 8.0
+      }
     }
   ],
   Birth: [
@@ -5149,6 +7037,74 @@ export const recipes = {
       }
     }
   ],
+  Irrigation: [
+    {
+      origin: {
+        DirtyWater: 0.266666681
+      },
+      dest: "BasicFabricPlant"
+    },
+    {
+      origin: {
+        Ethanol: 0.0333333351
+      },
+      dest: "BeanPlant"
+    },
+    {
+      origin: {
+        Water: 0.0333333351
+      },
+      dest: "ColdWheat"
+    },
+    {
+      origin: {
+        DirtyWater: 0.0166666675
+      },
+      dest: "CritterTrapPlant"
+    },
+    {
+      origin: {
+        DirtyWater: 0.116666667
+      },
+      dest: "ForestTree"
+    },
+    {
+      origin: {
+        Chlorine: 0.000833333354
+      },
+      dest: "GasGrass"
+    },
+    {
+      origin: {
+        Water: 0.0333333351
+      },
+      dest: "PrickleFlower"
+    },
+    {
+      origin: {
+        SaltWater: 0.008333334
+      },
+      dest: "SeaLettuce"
+    },
+    {
+      origin: {
+        DirtyWater: 0.0583333336
+      },
+      dest: "SpiceVine"
+    },
+    {
+      origin: {
+        Water: 0.0316666663
+      },
+      dest: "Oxyfern"
+    },
+    {
+      origin: {
+        DirtyWater: 0.06666667
+      },
+      dest: "SwampHarvestPlant"
+    }
+  ],
   Harvest: [
     {
       origin: "BasicFabricPlant",
@@ -5466,6 +7422,86 @@ export const recipes = {
       dest: {
         MushroomSeed: 0.0
       }
+    }
+  ],
+  Fertilization: [
+    {
+      origin: {
+        Dirt: 0.0166666675
+      },
+      dest: "BasicSingleHarvestPlant"
+    },
+    {
+      origin: {
+        Dirt: 0.008333334
+      },
+      dest: "BeanPlant"
+    },
+    {
+      origin: {
+        Phosphorite: 0.006666667
+      },
+      dest: "ColdBreather"
+    },
+    {
+      origin: {
+        Dirt: 0.008333334
+      },
+      dest: "ColdWheat"
+    },
+    {
+      origin: {
+        Dirt: 0.0166666675
+      },
+      dest: "ForestTree"
+    },
+    {
+      origin: {
+        Dirt: 0.0416666679
+      },
+      dest: "GasGrass"
+    },
+    {
+      origin: {
+        Sand: 0.0116666667
+      },
+      dest: "SaltPlant"
+    },
+    {
+      origin: {
+        BleachStone: 0.000833333354
+      },
+      dest: "SeaLettuce"
+    },
+    {
+      origin: {
+        Phosphorite: 0.00166666671
+      },
+      dest: "SpiceVine"
+    },
+    {
+      origin: {
+        Dirt: 0.006666667
+      },
+      dest: "Oxyfern"
+    },
+    {
+      origin: {
+        Sulfur: 0.0166666675
+      },
+      dest: "SuperWormPlant"
+    },
+    {
+      origin: {
+        Sulfur: 0.0166666675
+      },
+      dest: "WormPlant"
+    },
+    {
+      origin: {
+        SlimeMold: 0.006666667
+      },
+      dest: "MushroomPlant"
     }
   ],
   Adult: [

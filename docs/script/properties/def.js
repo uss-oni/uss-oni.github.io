@@ -119,7 +119,7 @@ export function calories(div, entity) {
 
 export function primaryElement(div, entity) {
   if (entity.primaryElement != null) {
-    display.lineNoValue(div, image.icon("heatflow").path(), "primaryElement", units.element(entity.primaryElement));
+    display.lineNoValue(div, image.icon("noIdea").path(), "primaryElement", units.element(entity.primaryElement));
   }
 }
 
@@ -141,9 +141,66 @@ export function viscosity(div, entity) {
   display.line(div, image.icon("heatflow").path(), "viscosity", units.none(entity.viscosity));
 }
 
+export function comfortTemp(div, entity) {
+  display.line(div, image.icon("temperature").path(), "comfortTemp", (div) => {
+    units.temperature(entity.lowTempWarning)(div);
+    units.none(" ↔ ")(div);
+    units.temperature(entity.highTempWarning)(div);
+  });
+}
+
+export function limitTemp(div, entity) {
+  display.line(div, image.icon("temperature").path(), "limitTemp", (div) => {
+    units.temperature(entity.lowTempFatal)(div);
+    units.none(" ↔ ")(div);
+    units.temperature(entity.highTempFatal)(div);
+  });
+}
+
+export function hp(div, entity) {
+  if (entity.invincible != null) {
+    display.line(div, image.icon("hp").path(), "hp", units.translate("invincible"));
+  }
+  else if (entity.hp != null) {
+    display.line(div, image.icon("hp").path(), "hp", units.none(entity.hp));
+  }
+}
+
+export function maxRadiation(div, entity) {
+  display.line(div, image.icon("radiation").path(), "maxRadiation", units.none(entity.maxRadiation));
+}
+
+export function irrigation(div, entity) {
+  let irrigations = recipes.Irrigation
+    .filter(i => i.dest == entity.tag)
+    .flatMap(i => i.origin)
+    .map(o => (div) => {
+      let entry = Object.entries(o)[0];
+      units.element(entry[0])(div);
+      units.kgs(entry[1])(div);
+    });
+  if (irrigations.length > 0) {
+    display.multiline(div, image.icon("noIdea").path(), "irrigation", irrigations.length, irrigations);
+  }
+}
+
+export function fertilization(div, entity) {
+  let fertilizations = recipes.Fertilization
+    .filter(i => i.dest == entity.tag)
+    .flatMap(i => i.origin)
+    .map(o => (div) => {
+      let entry = Object.entries(o)[0];
+      units.element(entry[0])(div);
+      units.kgs(entry[1])(div);
+    });
+  if (fertilizations.length > 0) {
+    display.multiline(div, image.icon("noIdea").path(), "fertilization", fertilizations.length, fertilizations);
+  }
+}
+
+
 /*
 export const strength = simpleLine(type.none);
-export const mass = simpleLine(type.kg);
 export const flow = simpleLine(type.none);
 export const maxCompression = simpleLine(type.none);
 export const viscosity = simpleLine(type.none);
@@ -161,10 +218,6 @@ export const externalHeat = simpleLine(type.none);
 export const internalHeat = simpleLine(type.none);
 export const invincible = simpleLine(type.none);
 export const hp = simpleLine(type.none, icon("hp"));
-export const lowTempWarning = simpleLine(type.temperature);
-export const lowTempFatal = simpleLine(type.temperature);
-export const highTempWarning = simpleLine(type.temperature);
-export const highTempFatal = simpleLine(type.temperature);
 export const transparent = simpleLine(type.none);
 export const repairable = simpleLine(type.none);
 export const breakable = simpleLine(type.none);
@@ -173,13 +226,11 @@ export const entombable = simpleLine(type.none);
 export const disinfectable = simpleLine(type.none);
 export const decor = simpleLine(type.none, icon("decor"));
 export const decorRadius = simpleLine(type.none, icon("decor"));
-export const primaryElement = simpleLine(type.element);
 export const clearable = simpleLine(type.none);
 export const surfaceArea = simpleLine(type.none);
 export const thickness = simpleLine(type.none);
 export const groundTransferScale = simpleLine(type.none);
 export const maxRadiation = simpleLine(type.none);
-export const age = simpleLine(type.none);
 export const batteryLoss = simpleLine(type.none);
 export const caloriesMax = simpleLine(type.none);
 export const caloriesLoss = simpleLine(type.none);

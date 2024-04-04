@@ -14,8 +14,16 @@ export const def = {
       properties: commonProperties.concat([
         properties.plantAge,
         properties.harvest,
-        properties.size
+        properties.size,
+        properties.comfortTemp,
+        properties.limitTemp,
+        properties.maxRadiation,
+        properties.irrigation,
+        properties.fertilization
       ]),
+      additionals: [
+        
+      ]
     },
     {
       title: "Forage",
@@ -30,7 +38,11 @@ export const def = {
       sortOrder: alpha,
       properties: commonProperties.concat([
         properties.harvest,
-        properties.size
+        properties.size,
+        properties.comfortTemp,
+        properties.limitTemp,
+        properties.irrigation,
+        properties.fertilization
       ]),
     },
     {

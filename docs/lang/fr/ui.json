@@ -95,7 +95,7 @@
   "locationRule": "Regle de placement",
   "hp": "Points de vie",
   "primaryElement": "Élément principal",
-  "quality": "Qualite",
+  "quality": "Qualité",
   "calories": "Calories",
   "spoilTime": "Durée de conservation",
   "infinite": "Infinie",
@@ -120,5 +120,15 @@
   "Properties": "Propriétés",
   "maxCompression": "Compression",
   "viscosity": "Viscosité",
-  "massForTile": "Création de tuile"
+  "massForTile": "Création de tuile",
+  "comfortTemp": "Température de pousse",
+  "limitTemp": "Température vivable",
+  "highTempWarning": "highTempWarning",
+  "lowTempWarning": "lowTempWarning",
+  "invincible": "Invincible",
+  "maxRadiation": "Radiations maximales",
+  "Debug": "Todo",
+  "irrigation": "Irrigation",
+  "fertilization": "Fertilisation",
+  "recipesList": "Recettes"
 }

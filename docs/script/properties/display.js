@@ -12,12 +12,6 @@ function setIcon(div, path) {
   return iconContainer;
 }
 
-function noIcon(div) {
-  let iconContainer = document.createElement("div");
-  iconContainer.className = "propIcon";
-  div.appendChild(iconContainer);
-}
-
 export function setLabel(div, labelName) {
   let label = document.createElement("div");
   label.className = "propLabel";

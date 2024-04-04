@@ -1675,14 +1675,6 @@
     "name": "Cuivre",
     "desc": "Le Cuivre (Cu) est un métal conducteur.<br>Il est adapté pour fabriquer des systèmes électriques."
   },
-  "CrushedRock": {
-    "name": "Roche Concassée",
-    "desc": "La roche concassée est une roche magmatique écrasée en un mélange mécanique."
-  },
-  "BuildableProcessed": {
-    "name": "Minéral Raffiné",
-    "desc": ""
-  },
   "SuperInsulator": {
     "name": "Insulite",
     "desc": "L'insulite réduit les Transferts de Chaleur et est composée d'Abyssalite recristallisée."
@@ -1994,10 +1986,6 @@
   "SolidEthanol": {
     "name": "Éthanol Solide",
     "desc": "L'éthanol (C<sub>2</sub>H<sub>6</sub>O) est un composé chimique avancé.<br>Lorsqu'il est brûlé, il devient un carburant très efficace."
-  },
-  "FoolsGold": {
-    "name": "Pyrite",
-    "desc": "La pyrite (FeS<sub>2</sub>) est un métal conducteur.<br>Aussi connu comme \"l'or des fous\", elle peut être utilisée pour construire des systèmes d'énergie."
   },
   "Aluminum": {
     "name": "Aluminum",

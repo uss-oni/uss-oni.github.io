@@ -26,6 +26,8 @@ namespace USS
        || tag == "EquippableBalloon"
        || tag == "HarvestableSpacePOI_CarbonAsteroidField"
        || tag == "FilterPlantSeed"
+       || tag == "FoolsGold"
+       || tag == "CrushedRock"
        )
         return true;
       var asset = Assets.GetPrefab(tag);

@@ -96,7 +96,10 @@ namespace USS
     public static void Get(Entity entity, BuildingCellVisualizer component) { }
     public static void Get(Entity entity, Toggleable component) { }
     public static void Get(Entity entity, Storage component) { }
-    public static void Get(Entity entity, ManualDeliveryKG component) { }
+    public static void Get(Entity entity, ManualDeliveryKG component)
+    {
+
+    }
     public static void Get(Entity entity, DoctorStation component) { }
     public static void Get(Entity entity, RoomTracker component) { }
     public static void Get(Entity entity, DoctorStationDoctorWorkable component) { }
@@ -157,7 +160,31 @@ namespace USS
     public static void Get(Entity entity, Painting component) { }
     public static void Get(Entity entity, Light2D component) { }
     public static void Get(Entity entity, Checkpoint component) { }
-    public static void Get(Entity entity, ComplexFabricator component) { }
+    public static void Get(Entity entity, ComplexFabricator component)
+    {
+      foreach (var recipe in component.GetRecipes())
+      {
+        bool flag = false;
+        foreach (var i in recipe.ingredients)
+        {
+          flag |= Dlc.DoNotWant(i.material.Name);
+        }
+        foreach (var i in recipe.results)
+        {
+          flag |= Dlc.DoNotWant(i.material.Name);
+        }
+        if (!flag)
+        {
+          var r = new Recipe.Complex(
+            converter: entity.tag,
+            time: recipe.time,
+            origin: recipe.ingredients.Select(i => (i.material.Name, i.amount)).ToArray(),
+            temperature: 2,
+            dest: recipe.results.Select(i => (i.material.Name, i.amount)).ToArray());
+          recipes.Add(r);
+        }
+      }
+    }
     public static void Get(Entity entity, SkyVisibilityVisualizer component) { }
     public static void Get(Entity entity, ScannerNetworkVisualizer component) { }
     public static void Get(Entity entity, Compost component) { }
@@ -428,7 +455,10 @@ namespace USS
     public static void Get(Entity entity, WireUtilityNetworkLink component) { }
     public static void Get(Entity entity, Wire component) { }
     public static void Get(Entity entity, ArmTrapWorkable component) { }
-    public static void Get(Entity entity, TrapTrigger component) { }
+    public static void Get(Entity entity, TrapTrigger component)
+    {
+      entity.trapCritters = component.trappableCreatures.Select(t => t.Name).ToList();
+    }
     public static void Get(Entity entity, Desalinator component) { }
     public static void Get(Entity entity, DesalinatorWorkableEmpty component) { }
     public static void Get(Entity entity, InfoDescription component)
@@ -652,7 +682,8 @@ namespace USS
         var recipe = new Recipe.Seeds(entity.tag, 1, drops.ToArray());
         recipes.Add(recipe);
       }
-      else {
+      else
+      {
         var recipe = new Recipe.Harvest(entity.tag, 1, drops.ToArray());
         recipes.Add(recipe);
       }
