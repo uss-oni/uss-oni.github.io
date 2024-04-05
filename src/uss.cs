@@ -32,7 +32,6 @@ namespace USS
     [HarmonyPatch("OnSpawn")]
     public class Db_Initialize_Patch
     {
-
       public static void WriteJS(object obj, string name, string path)
       {
         using var file = new StreamWriter(path);

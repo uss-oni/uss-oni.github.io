@@ -1,0 +1,23 @@
+[package]
+name = "uss-oni"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "*"
+
+[dependencies.web-sys]
+version = "*"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+  'Window',
+]
+
+[profile.release]
+panic = "abort"
