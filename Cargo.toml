@@ -1,0 +1,38 @@
+[package]
+name = "uss-oni"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "*"
+
+[dependencies.web-sys]
+version = "*"
+features = [
+  'console',
+  'Document',
+  'Element',
+  'HtmlElement',
+  'HtmlDivElement',
+  'HtmlImageElement',
+  'HtmlParagraphElement',
+  'HtmlHeadingElement',
+  'HtmlSelectElement',
+  'HtmlOptionElement',
+  'Text',
+  'CssStyleDeclaration',
+  'Event',
+  'EventTarget',
+  'Node',
+  'Window',
+]
+
+[profile.release]
+#panic = "abort"
+lto = true
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = true

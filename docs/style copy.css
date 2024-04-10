@@ -26,7 +26,7 @@ body {
 }
 
 #options {
-  grid-area: options;
+  grid-area: options;    
   display: flex;
   justify-content: flex-end;
 }
@@ -117,109 +117,14 @@ body {
   grid-area: prop;
   display: grid;
   grid-auto-flow: row;
-  /* spacing icon label spacing value amount spacing*/
-  grid-template-columns: 10px 30px 183px 5px 1fr max-content 10px;
+  /* spacing icon label spacing value arrow icon element amount spacing*/
+  grid-template-columns: 10px 30px 183px 5px max-content max-content 25px 1fr max-content 10px;
   grid-auto-rows: min-content;
   row-gap: 3px;
   width: 100%;
   background-color: #3e4357;
   overflow: auto;
   font-size: 14px;
-
-  .label {
-    grid-column: 3;
-    justify-content: right;
-    border-radius: 0px 5px 5px 0px;
-    padding-right: 5px;
-    display: flex;
-    background-color: #363a4c;
-  }
-
-  .grid {
-    grid-column: 5;
-    display: grid;
-    grid-template-columns: min-content;
-    gap: 3px;
-    background-color: #363a4c;
-  }
-
-  .g1 {
-    grid-column: 1;
-  }
-
-  .g2 {
-    grid-column: 2;
-  }
-
-  .g3 {
-    grid-column: 3;
-  }
-
-  .g4 {
-    grid-column: 4;
-  }
-
-  .g5 {
-    grid-column: 5;
-  }
-
-  img {
-    height: 19px;
-    width: 23px;
-    margin-top: -1px;
-    object-fit: contain;
-  }
-
-  .icon {
-    border-radius: 5px 0px 0px 5px;
-    background-color: #363a4c;
-  }
-}
-
-.propValuePhase {
-  display: grid;
-  /* icon temp arrow icon element percent */
-  grid-template-columns: max-content max-content max-content max-content 1fr max-content 10px;
-  grid-auto-rows: min-content;
-  row-gap: 3px;
-  width: 100%;
-  padding-top: 2px;
-}
-
-.valuePhaseTempIcon {
-  grid-column: 1;
-  height: 19px;
-  width: 23px;
-  margin-top: -1px;
-  object-fit: contain;
-  padding-right: 2px;
-}
-
-.valuePhaseTemp {
-  grid-column: 2;
-  padding-right: 2px;
-}
-
-.valuePhaseArrow {
-  grid-column: 3;
-  margin-top: -1px;
-}
-
-.valuePhaseIcon {
-  grid-column: 4;
-  height: 19px;
-  width: 23px;
-  margin-top: -1px;
-  object-fit: contain;
-}
-
-.valuePhaseElement {
-  grid-column: 5;
-}
-
-.valuePhasePercent {
-  grid-column: 6;
-  text-align: right;
 }
 
 #recipes {
@@ -320,7 +225,8 @@ summary {
 .propLabel,
 .recLeftIcon,
 .recLeft,
-.recLeftAmount {
+.recLeftAmount 
+{
   background-color: #363a4c;
 }
 
@@ -349,13 +255,12 @@ summary {
   object-fit: contain;
 }
 
-.propValueImg,
+.propValueElementImg,
 .smallImg {
   height: 19px;
   object-fit: contain;
   display: block;
   padding-right: 2px;
-  padding-top: 1px;
 }
 
 .propLabel {
@@ -374,14 +279,13 @@ summary {
   grid-column: 6;
 }
 
-.propValues,
-.propValue,
-.propValuePhase {
+.propValueElement,
+.propValue {
   grid-column: 5 / -1;
   text-align: left;
 }
 
-.propValues {
+.propValueElement {
   display: flex;
   flex-direction: row;
 }

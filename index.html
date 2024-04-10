@@ -20,33 +20,27 @@
     run();
   </script>
   <div id="top">
-    <select id="selectCategory">
-      <option value="Element">Éléments</option>
-      <option value="Building">Constructions</option>
-      <option value="Food">Aliments</option>
-      <option value="Critter">Créatures</option>
-      <option value="Plant">Plantes</option>
-      <option value="Geyser">Geysers</option>
-      <option value="Space">Espace</option>
-      <option value="Equipment">Équipement</option>
-      <option value="Artifact">Artefacts</option>
-      <option value="Misc">Divers</option>
-      <option value="NONE">NONE</option>
+    <select id="selectCategory" onChange="onChangeSelect(this.options[this.selectedIndex].dataset.ui)">
+      <option data-ui="Element">Éléments</option>
+      <option data-ui="Building">Constructions</option>
+      <option data-ui="Food">Aliments</option>
+      <option data-ui="Critter">Créatures</option>
+      <option data-ui="Plant">Plantes</option>
+      <option data-ui="Geyser">Geysers</option>
+      <option data-ui="Space">Espace</option>
+      <option data-ui="Equipment">Équipement</option>
+      <option data-ui="Artifact">Artefacts</option>
+      <option data-ui="Misc">Divers</option>
+      <option data-ui="NONE">NONE</option>
     </select>
   </div>
   <div id="options">
-    <select id="selectDegree">
-      <option value="C">°C</option>
+    <select onChange="selectDegree(this.options[this.selectedIndex].value)">
+      <option value="°C">°C</option>
       <option value="K">K</option>
-      <option value="F">°F</option>
+      <option value="°F">°F</option>
     </select>
-    <select id="selectTime">
-      <option value="second">Seconde</option>
-      <option value="cycle">Cycle</option>
-    </select>
-    <select id="selectTranslation">
-      <option value="fr">🇫🇷</option>
-      <option value="en">🇬🇧</option>
+    <select id="selectTranslation" onChange="setTranslation(this.options[this.selectedIndex].value)">
     </select>
   </div>
   <div id="list"></div>

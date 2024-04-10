@@ -2696,7 +2696,7 @@ export const recipes = [
   },
   {
     origin: "Algae",
-    type: "solidification",
+    type: "transmutation",
     temp: 398.15,
     dest: {
       Dirt: 1.0
@@ -2805,7 +2805,7 @@ export const recipes = [
   },
   {
     origin: "SlimeMold",
-    type: "solidification",
+    type: "transmutation",
     temp: 398.15,
     dest: {
       Dirt: 1.0
@@ -2960,7 +2960,7 @@ export const recipes = [
   },
   {
     origin: "Fertilizer",
-    type: "solidification",
+    type: "transmutation",
     temp: 398.15,
     dest: {
       Dirt: 1.0
@@ -3264,7 +3264,7 @@ export const recipes = [
   },
   {
     origin: "Clay",
-    type: "solidification",
+    type: "transmutation",
     temp: 1200.0,
     dest: {
       Ceramic: 1.0
@@ -3280,7 +3280,7 @@ export const recipes = [
   },
   {
     origin: "Graphite",
-    type: "solidification",
+    type: "transmutation",
     temp: 550.0,
     dest: {
       RefinedCarbon: 1.0
@@ -3314,7 +3314,7 @@ export const recipes = [
   },
   {
     origin: "Carbon",
-    type: "solidification",
+    type: "transmutation",
     temp: 550.0,
     dest: {
       RefinedCarbon: 1.0
@@ -3411,7 +3411,7 @@ export const recipes = [
   },
   {
     origin: "Dirt",
-    type: "solidification",
+    type: "transmutation",
     temp: 600.0,
     dest: {
       Sand: 1.0
