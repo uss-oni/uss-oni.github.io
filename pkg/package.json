@@ -1,0 +1,14 @@
+{
+  "name": "uss-oni",
+  "version": "0.1.0",
+  "files": [
+    "uss_oni_bg.wasm",
+    "uss_oni.js",
+    "uss_oni.d.ts"
+  ],
+  "module": "uss_oni.js",
+  "types": "uss_oni.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
