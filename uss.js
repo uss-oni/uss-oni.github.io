@@ -2,7 +2,7 @@ export const db = {
   AdvancedDoctorStation: {
     tag: "AdvancedDoctorStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -44,34 +44,34 @@ export const db = {
       "RoomTracker",
       "DoctorStationDoctorWorkable"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Clinic"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 0.5,
+    external_heat: 0.25,
+    internal_heat: 0.5,
     width: 2,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   AdvancedResearchCenter: {
     tag: "AdvancedResearchCenter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -116,34 +116,34 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   AirBorneCritterCondo: {
     tag: "AirBorneCritterCondo",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -180,32 +180,32 @@ export const db = {
     smdef: [
       "CritterCondo+Def"
     ],
-    menuOrder: 24.0,
+    menu_order: 24.0,
     tags: [
       "RanchStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnCeiling",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnCeiling",
+    material_category: [
       "Plastic"
     ],
     rotations: "FlipH",
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   AirConditioner: {
     tag: "AirConditioner",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -252,31 +252,31 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [],
-    thermalConductivity: 5.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 5.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
     width: 2,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   AirFilter: {
     tag: "AirFilter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -321,30 +321,30 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       5.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 0.5,
+    external_heat: 0.125,
+    internal_heat: 0.5,
     width: 1,
     height: 1,
     hp: 30,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   AlgaeDistillery: {
     tag: "AlgaeDistillery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -390,34 +390,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 1.0,
+    external_heat: 0.5,
+    internal_heat: 1.0,
     width: 3,
     height: 4,
     hp: 100,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   AlgaeHabitat: {
     tag: "AlgaeHabitat",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -459,28 +459,28 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Farmable"
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Apothecary: {
     tag: "Apothecary",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -529,32 +529,32 @@ export const db = {
     smdef: [
       "PoweredActiveStoppableController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 0.5,
+    external_heat: 0.25,
+    internal_heat: 0.5,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   ArcadeMachine: {
     tag: "ArcadeMachine",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -596,35 +596,35 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   ArtifactAnalysisStation: {
     tag: "ArtifactAnalysisStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -669,34 +669,34 @@ export const db = {
     smdef: [
       "ArtifactAnalysisStation+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 4,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   ArtifactCargoBay: {
     tag: "ArtifactCargoBay",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -738,21 +738,21 @@ export const db = {
     smdef: [
       "ArtifactHarvestModule+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
     height: 1,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -760,7 +760,7 @@ export const db = {
   AutoMiner: {
     tag: "AutoMiner",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -800,35 +800,35 @@ export const db = {
       "AutoMiner",
       "RangeVisualizer"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFoundationRotatable",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFoundationRotatable",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 2,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   Battery: {
     tag: "Battery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -865,31 +865,31 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   BatteryMedium: {
     tag: "BatteryMedium",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -925,32 +925,32 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   BatteryModule: {
     tag: "BatteryModule",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -989,21 +989,21 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 2,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true
@@ -1011,7 +1011,7 @@ export const db = {
   BatterySmart: {
     tag: "BatterySmart",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -1048,30 +1048,30 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   BeachChair: {
     tag: "BeachChair",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -1110,32 +1110,32 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw",
       "BuildingFiber"
     ],
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 402.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 25.0,
-    decorRadius: 5.0,
+    decor_radius: 5.0,
     deconstructable: true,
     enableable: true
   },
   Bed: {
     tag: "Bed",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -1172,27 +1172,27 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "BedType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 2,
     height: 2,
     hp: 10,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   BottleEmptier: {
     tag: "BottleEmptier",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -1227,11 +1227,11 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "FlipH",
@@ -1240,14 +1240,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   BottleEmptierGas: {
     tag: "BottleEmptierGas",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -1282,11 +1282,11 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
@@ -1295,14 +1295,14 @@ export const db = {
     hp: 30,
     mass: 100.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   BunkerDoor: {
     tag: "BunkerDoor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -1340,32 +1340,32 @@ export const db = {
       "Door",
       "ZoneTile"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "Bunker"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Steel"
     ],
     rotations: "R90",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 4,
     height: 1,
     hp: 1000,
-    highTempWarning: 1273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 1273.15,
+    high_temp_fatal: 533.15,
     mass: 500.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true
   },
   BunkerTile: {
     tag: "BunkerTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -1393,14 +1393,14 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "Bunker",
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Steel"
     ],
     width: 1,
@@ -1408,14 +1408,14 @@ export const db = {
     hp: 1000,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   CO2Engine: {
     tag: "CO2Engine",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -1459,21 +1459,21 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 2,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 500.0,
     deconstructable: true,
     enableable: true
@@ -1481,7 +1481,7 @@ export const db = {
   CO2Scrubber: {
     tag: "CO2Scrubber",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -1530,36 +1530,36 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Canvas: {
     tag: "Canvas",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -1592,13 +1592,13 @@ export const db = {
       "SymbolOverrideController",
       "Painting"
     ],
-    menuOrder: 31.0,
+    menu_order: 31.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal",
       "BuildingFiber"
     ],
@@ -1608,14 +1608,14 @@ export const db = {
     hp: 30,
     mass: 401.0,
     decor: 10.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true,
     enableable: true
   },
   CanvasTall: {
     tag: "CanvasTall",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -1648,13 +1648,13 @@ export const db = {
       "SymbolOverrideController",
       "Painting"
     ],
-    menuOrder: 33.0,
+    menu_order: 33.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal",
       "BuildingFiber"
     ],
@@ -1664,14 +1664,14 @@ export const db = {
     hp: 30,
     mass: 401.0,
     decor: 15.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true,
     enableable: true
   },
   CanvasWide: {
     tag: "CanvasWide",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -1704,13 +1704,13 @@ export const db = {
       "SymbolOverrideController",
       "Painting"
     ],
-    menuOrder: 32.0,
+    menu_order: 32.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal",
       "BuildingFiber"
     ],
@@ -1720,14 +1720,14 @@ export const db = {
     hp: 30,
     mass: 401.0,
     decor: 15.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true,
     enableable: true
   },
   CarpetTile: {
     tag: "CarpetTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -1755,14 +1755,14 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "FloorTiles",
       "Carpeted"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "BuildableRaw",
       "BuildingFiber"
     ],
@@ -1771,13 +1771,13 @@ export const db = {
     hp: 100,
     mass: 202.0,
     decor: 20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true
   },
   CeilingLight: {
     tag: "CeilingLight",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -1818,33 +1818,33 @@ export const db = {
     smdef: [
       "LightController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "LightSource"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnCeiling",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnCeiling",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 1,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   Checkpoint: {
     tag: "Checkpoint",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -1882,33 +1882,33 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 27.0,
+    menu_order: 27.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Chlorinator: {
     tag: "Chlorinator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -1956,37 +1956,37 @@ export const db = {
     smdef: [
       "Chlorinator+Def"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 2.0,
+    external_heat: 1.0,
+    internal_heat: 2.0,
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   ClothingAlterationStation: {
     tag: "ClothingAlterationStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -2032,30 +2032,30 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   ClothingFabricator: {
     tag: "ClothingFabricator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -2101,30 +2101,30 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   ClusterTelescope: {
     tag: "ClusterTelescope",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -2167,35 +2167,35 @@ export const db = {
       "ClusterTelescope+Def",
       "PoweredController+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.125,
+    external_heat: 0.125,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true,
-    providesO2: false,
-    rangeMax: 3.0
+    provides_o2: false,
+    range_max: 3.0
   },
   ClusterTelescopeEnclosed: {
     tag: "ClusterTelescopeEnclosed",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -2240,35 +2240,35 @@ export const db = {
       "PoweredController+Def",
       "ClusterTelescope+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.125,
+    external_heat: 0.125,
     width: 4,
     height: 6,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true,
-    providesO2: true,
-    rangeMax: 4.0
+    provides_o2: true,
+    range_max: 4.0
   },
   CometDetector: {
     tag: "CometDetector",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -2307,33 +2307,33 @@ export const db = {
     smdef: [
       "ClusterCometDetector+Def"
     ],
-    menuOrder: 28.0,
+    menu_order: 28.0,
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 2,
     height: 4,
     hp: 30,
     mass: 25.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   Compost: {
     tag: "Compost",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -2370,29 +2370,29 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    externalHeat: 0.125,
-    internalHeat: 1.0,
+    external_heat: 0.125,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   GasConduitDiseaseSensor: {
     tag: "GasConduitDiseaseSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -2421,13 +2421,13 @@ export const db = {
       "LogicPorts",
       "ConduitDiseaseSensor"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
@@ -2436,13 +2436,13 @@ export const db = {
     hp: 30,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidConduitDiseaseSensor: {
     tag: "LiquidConduitDiseaseSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -2471,13 +2471,13 @@ export const db = {
       "LogicPorts",
       "ConduitDiseaseSensor"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
@@ -2486,13 +2486,13 @@ export const db = {
     hp: 30,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasConduitElementSensor: {
     tag: "GasConduitElementSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -2522,13 +2522,13 @@ export const db = {
       "Filterable",
       "ConduitElementSensor"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -2536,13 +2536,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidConduitElementSensor: {
     tag: "LiquidConduitElementSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -2572,13 +2572,13 @@ export const db = {
       "Filterable",
       "ConduitElementSensor"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -2586,13 +2586,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasConduitTemperatureSensor: {
     tag: "GasConduitTemperatureSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -2621,13 +2621,13 @@ export const db = {
       "LogicPorts",
       "ConduitTemperatureSensor"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -2635,13 +2635,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidConduitTemperatureSensor: {
     tag: "LiquidConduitTemperatureSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -2670,13 +2670,13 @@ export const db = {
       "LogicPorts",
       "ConduitTemperatureSensor"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -2684,13 +2684,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   ContactConductivePipeBridge: {
     tag: "ContactConductivePipeBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -2726,11 +2726,11 @@ export const db = {
     smdef: [
       "ContactConductivePipeBridge+Def"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [],
-    thermalConductivity: 2.0,
-    locationRule: "NoLiquidConduitAtOrigin",
-    materialCategory: [
+    thermal_conductivity: 2.0,
+    location_rule: "NoLiquidConduitAtOrigin",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -2744,7 +2744,7 @@ export const db = {
   CookingStation: {
     tag: "CookingStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -2794,34 +2794,34 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "CookTop"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 3,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   CornerMoulding: {
     tag: "CornerMoulding",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -2852,13 +2852,13 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 30.0,
+    menu_order: 30.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "InCorner",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "InCorner",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "FlipH",
@@ -2867,14 +2867,14 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   CraftingTable: {
     tag: "CraftingTable",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -2920,30 +2920,30 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
     width: 2,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   CreatureFeeder: {
     tag: "CreatureFeeder",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -2984,29 +2984,29 @@ export const db = {
     smdef: [
       "StorageController+Def"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   CritterCondo: {
     tag: "CritterCondo",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -3043,13 +3043,13 @@ export const db = {
     smdef: [
       "CritterCondo+Def"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [
       "RanchStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw",
       "BuildingFiber"
     ],
@@ -3057,19 +3057,19 @@ export const db = {
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 210.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   CritterDropOff: {
     tag: "CritterDropOff",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -3107,31 +3107,31 @@ export const db = {
       "CopyBuildingSettings",
       "LogicPorts"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "CreatureRelocator"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 3,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   CritterPickUp: {
     tag: "CritterPickUp",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -3171,31 +3171,31 @@ export const db = {
     smdef: [
       "FixedCapturePoint+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "CreatureRelocator"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 3,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   CrownMoulding: {
     tag: "CrownMoulding",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -3226,13 +3226,13 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 29.0,
+    menu_order: 29.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnCeiling",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnCeiling",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -3240,14 +3240,14 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   DLC1CosmicResearchCenter: {
     tag: "DLC1CosmicResearchCenter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -3292,34 +3292,34 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 4,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   DecontaminationShower: {
     tag: "DecontaminationShower",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -3363,54 +3363,54 @@ export const db = {
     smdef: [
       "AutoStorageDropper+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal",
       "Lead"
     ],
     width: 2,
     height: 4,
     hp: 250,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 900.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   DevGenerator: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 100000.0,
+    generator_wattage_rating: 100000.0,
     width: 1,
     height: 1,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 25.0,
     debug: true
   },
   DevHEPSpawner: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
@@ -3421,13 +3421,13 @@ export const db = {
   },
   DevLifeSupport: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -3437,31 +3437,31 @@ export const db = {
   },
   DevLightGenerator: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 1,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 25.0,
     debug: true
   },
   DevPumpGas: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 2,
@@ -3471,13 +3471,13 @@ export const db = {
   },
   DevPumpLiquid: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 2,
@@ -3487,13 +3487,13 @@ export const db = {
   },
   DevPumpSolid: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 2,
@@ -3503,13 +3503,13 @@ export const db = {
   },
   DevRadiationGenerator: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -3520,7 +3520,7 @@ export const db = {
   DiamondPress: {
     tag: "DiamondPress",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -3569,35 +3569,35 @@ export const db = {
       "HighEnergyParticlePort",
       "SymbolOverrideController"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    internalHeat: 16.0,
+    internal_heat: 16.0,
     width: 3,
     height: 5,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   DiningTable: {
     tag: "DiningTable",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -3636,29 +3636,29 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "MessTable"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 1,
     hp: 10,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   DoctorStation: {
     tag: "DoctorStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -3694,27 +3694,27 @@ export const db = {
       "RoomTracker",
       "DoctorStationDoctorWorkable"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Clinic"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 3,
     height: 2,
     hp: 10,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   Door: {
     tag: "Door",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -3750,26 +3750,26 @@ export const db = {
       "CopyBuildingSettings",
       "ZoneTile"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     rotations: "R90",
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     deconstructable: true
   },
   EggCracker: {
     tag: "EggCracker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -3813,29 +3813,29 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   EggIncubator: {
     tag: "EggIncubator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -3876,34 +3876,34 @@ export const db = {
       "EggIncubatorWorkable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 363.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 363.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   Electrolyzer: {
     tag: "Electrolyzer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -3948,36 +3948,36 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   EspressoMachine: {
     tag: "EspressoMachine",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -4021,35 +4021,35 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   EthanolDistillery: {
     tag: "EthanolDistillery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -4095,34 +4095,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 4,
     height: 3,
     hp: 100,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   ExobaseHeadquarters: {
     tag: "ExobaseHeadquarters",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -4159,15 +4159,15 @@ export const db = {
       "Toggleable",
       "Notifier"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "Telepad",
       "LightSource",
       "Experimental"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 3,
@@ -4175,14 +4175,14 @@ export const db = {
     hp: 250,
     mass: 50.0,
     decor: 30.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true,
     enableable: true
   },
   ExteriorWall: {
     tag: "ExteriorWall",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -4211,13 +4211,13 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "Backwall"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
@@ -4226,14 +4226,14 @@ export const db = {
     hp: 30,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 0.0,
+    decor_radius: 0.0,
     deconstructable: true
   },
   FacilityBackWallWindow: {
     tag: "FacilityBackWallWindow",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -4265,7 +4265,7 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "BuildableAny",
       "Transparent",
@@ -4273,9 +4273,9 @@ export const db = {
       "ManufacturedMaterial",
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "Glass"
     ],
     rotations: "R90",
@@ -4284,15 +4284,15 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Glass",
+    decor_radius: 4.0,
+    primary_element: "Glass",
     deconstructable: true,
     enableable: true
   },
   FarmStation: {
     tag: "FarmStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -4329,27 +4329,27 @@ export const db = {
       "TinkerStation",
       "RoomTracker"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "FarmStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 3,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   FarmTile: {
     tag: "FarmTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -4382,13 +4382,13 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "FarmTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Farmable"
     ],
     rotations: "FlipV",
@@ -4401,7 +4401,7 @@ export const db = {
   FertilizerMaker: {
     tag: "FertilizerMaker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -4450,36 +4450,36 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 2.0,
+    external_heat: 1.0,
+    internal_heat: 2.0,
     width: 4,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   FirePole: {
     tag: "FirePole",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -4508,11 +4508,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -4520,13 +4520,13 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   FishDeliveryPoint: {
     tag: "FishDeliveryPoint",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -4566,31 +4566,31 @@ export const db = {
     smdef: [
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "CreatureRelocator"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 3,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   FishFeeder: {
     tag: "FishFeeder",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -4635,29 +4635,29 @@ export const db = {
       "FishFeeder+Def",
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   FloorLamp: {
     tag: "FloorLamp",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -4698,35 +4698,35 @@ export const db = {
     smdef: [
       "LightController+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "LightSource"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       8.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   FloorSwitch: {
     tag: "FloorSwitch",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -4756,13 +4756,13 @@ export const db = {
       "LogicPorts",
       "LogicMassSensor"
     ],
-    menuOrder: 26.0,
+    menu_order: 26.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -4770,13 +4770,13 @@ export const db = {
     hp: 30,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   FlowerVase: {
     tag: "FlowerVase",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -4810,13 +4810,13 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -4829,7 +4829,7 @@ export const db = {
   FlowerVaseHanging: {
     tag: "FlowerVaseHanging",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -4863,13 +4863,13 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnCeiling",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnCeiling",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -4882,7 +4882,7 @@ export const db = {
   FlowerVaseHangingFancy: {
     tag: "FlowerVaseHangingFancy",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -4916,13 +4916,13 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 23.0,
+    menu_order: 23.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnCeiling",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnCeiling",
+    material_category: [
       "Transparent"
     ],
     width: 1,
@@ -4930,14 +4930,14 @@ export const db = {
     hp: 10,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   FlowerVaseWall: {
     tag: "FlowerVaseWall",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -4971,13 +4971,13 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnWall",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnWall",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
@@ -4991,7 +4991,7 @@ export const db = {
   FlushToilet: {
     tag: "FlushToilet",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -5036,32 +5036,32 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "ToiletType",
       "FlushToiletType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    externalHeat: 0.25,
+    external_heat: 0.25,
     width: 2,
     height: 3,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   FoodDehydrator: {
     tag: "FoodDehydrator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -5113,31 +5113,31 @@ export const db = {
     smdef: [
       "FoodDehydrator+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
-    internalHeat: 4.0,
+    internal_heat: 4.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 300.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   FoodRehydrator: {
     tag: "FoodRehydrator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -5186,34 +5186,34 @@ export const db = {
       "FoodRehydratorSM+Def",
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 150.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   FossilDig: {
     tag: "FossilDig",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -5256,31 +5256,31 @@ export const db = {
       "MajorFossilDigSite+Def",
       "FossilHuntInitializer+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
       "BuildableRaw"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Fossil"
     ],
     width: 5,
     height: 3,
     hp: 30,
     mass: 2000.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Fossil",
+    decor_radius: 2.0,
+    primary_element: "Fossil",
     deconstructable: false
   },
   Gantry: {
     tag: "Gantry",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -5322,33 +5322,33 @@ export const db = {
     smdef: [
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 1.0,
+    external_heat: 1.0,
+    internal_heat: 1.0,
     width: 6,
     height: 2,
     hp: 30,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   GasBottler: {
     tag: "GasBottler",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5386,31 +5386,31 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   GasCargoBayCluster: {
     tag: "GasCargoBayCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -5448,21 +5448,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 1000.0,
     deconstructable: true,
     enableable: true
@@ -5470,8 +5470,8 @@ export const db = {
   GasCargoBaySmall: {
     tag: "GasCargoBaySmall",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -5510,21 +5510,21 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -5532,7 +5532,7 @@ export const db = {
   GasConduitBridge: {
     tag: "GasConduitBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5564,11 +5564,11 @@ export const db = {
       "Disinfectable",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Conduit",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Conduit",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
@@ -5581,7 +5581,7 @@ export const db = {
   GasConduit: {
     tag: "GasConduit",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5609,13 +5609,13 @@ export const db = {
       "EmptyConduitWorkable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Vents"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -5627,7 +5627,7 @@ export const db = {
   GasConduitRadiant: {
     tag: "GasConduitRadiant",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5655,13 +5655,13 @@ export const db = {
       "EmptyConduitWorkable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Vents"
     ],
-    thermalConductivity: 2.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 2.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -5669,13 +5669,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasFilter: {
     tag: "GasFilter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5721,35 +5721,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "IndustrialMachinery",
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 3,
     height: 1,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   GasLimitValve: {
     tag: "GasLimitValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5792,34 +5792,34 @@ export const db = {
     smdef: [
       "PoweredActiveTransitionController+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasLogicValve: {
     tag: "GasLogicValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5857,33 +5857,33 @@ export const db = {
       "LogicOperationalController",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasMiniPump: {
     tag: "GasMiniPump",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -5930,36 +5930,36 @@ export const db = {
     smdef: [
       "OperationalController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Plastic"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   GasPermeableMembrane: {
     tag: "GasPermeableMembrane",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -5989,13 +5989,13 @@ export const db = {
       "Disinfectable",
       "ZoneTile"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -6003,13 +6003,13 @@ export const db = {
     hp: 100,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasPump: {
     tag: "GasPump",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -6055,35 +6055,35 @@ export const db = {
     smdef: [
       "OperationalController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   GasReservoir: {
     tag: "GasReservoir",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -6128,30 +6128,30 @@ export const db = {
     smdef: [
       "StorageController+Def"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 5,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   GasValve: {
     tag: "GasValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -6187,30 +6187,30 @@ export const db = {
       "BuildingCellVisualizer",
       "CopyBuildingSettings"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GasVent: {
     tag: "GasVent",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -6253,13 +6253,13 @@ export const db = {
     smdef: [
       "VentController+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -6267,14 +6267,14 @@ export const db = {
     hp: 30,
     mass: 50.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   GasVentHighPressure: {
     tag: "GasVentHighPressure",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -6317,14 +6317,14 @@ export const db = {
     smdef: [
       "VentController+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "IndustrialMachinery",
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
@@ -6333,14 +6333,14 @@ export const db = {
     hp: 30,
     mass: 250.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Generator: {
     tag: "Generator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -6384,34 +6384,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 600.0,
-    externalHeat: 8.0,
-    internalHeat: 1.0,
+    generator_wattage_rating: 600.0,
+    external_heat: 8.0,
+    internal_heat: 1.0,
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   GeneticAnalysisStation: {
     tag: "GeneticAnalysisStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -6458,34 +6458,34 @@ export const db = {
       "GeneticAnalysisStation+Def",
       "PoweredActiveController+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 7,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   GeoTuner: {
     tag: "GeoTuner",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -6531,33 +6531,33 @@ export const db = {
     smdef: [
       "GeoTuner+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 4,
     height: 3,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   GlassForge: {
     tag: "GlassForge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -6610,33 +6610,33 @@ export const db = {
     smdef: [
       "PoweredActiveStoppableController+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
-    internalHeat: 16.0,
+    internal_heat: 16.0,
     width: 5,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   GlassTile: {
     tag: "GlassTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -6664,14 +6664,14 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Window",
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Transparent"
     ],
     width: 1,
@@ -6680,13 +6680,13 @@ export const db = {
     transparent: true,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   GourmetCookingStation: {
     tag: "GourmetCookingStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -6739,34 +6739,34 @@ export const db = {
     smdef: [
       "PoweredActiveStoppableController+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "CookTop"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 8.0,
+    external_heat: 1.0,
+    internal_heat: 8.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   Grave: {
     tag: "Grave",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -6798,11 +6798,11 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -6810,15 +6810,15 @@ export const db = {
     hp: 30,
     mass: 800.0,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   GravitasContainer: {
     tag: "GravitasContainer",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -6849,20 +6849,20 @@ export const db = {
       "PajamaDispenser",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 2,
     invincible: true,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: false,
     enableable: true
@@ -6870,8 +6870,8 @@ export const db = {
   GravitasCreatureManipulator: {
     tag: "GravitasCreatureManipulator",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -6907,7 +6907,7 @@ export const db = {
       "GravitasCreatureManipulator+Def",
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "Metal",
@@ -6916,9 +6916,9 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
@@ -6926,16 +6926,16 @@ export const db = {
     hp: 250,
     mass: 800.0,
     decor: 15.0,
-    decorRadius: 3.0,
-    primaryElement: "Steel",
+    decor_radius: 3.0,
+    primary_element: "Steel",
     deconstructable: false,
     enableable: true
   },
   GravitasDoor: {
     tag: "GravitasDoor",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -6968,29 +6968,29 @@ export const db = {
       "Overheatable",
       "LogicPorts"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     rotations: "R90",
     width: 1,
     height: 3,
     invincible: true,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     deconstructable: true
   },
   GravitasLabLight: {
     tag: "GravitasLabLight",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -7019,20 +7019,20 @@ export const db = {
       "Overheatable",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnCeiling",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnCeiling",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 1,
     invincible: true,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 25.0,
     deconstructable: true,
     enableable: true
@@ -7040,8 +7040,8 @@ export const db = {
   GravitasPedestal: {
     tag: "GravitasPedestal",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -7074,13 +7074,13 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -7088,14 +7088,14 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   HEPBattery: {
     tag: "HEPBattery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -7135,34 +7135,34 @@ export const db = {
     smdef: [
       "HEPBattery+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 3,
     height: 3,
     hp: 30,
     mass: 400.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true,
-    launchRate: 1.0,
-    radboltDecay: 0.5,
-    radboltStorage: 100.0
+    launch_rate: 1.0,
+    radbolt_decay: 0.5,
+    radbolt_storage: 100.0
   },
   HEPBridgeTile: {
     tag: "HEPBridgeTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -7199,13 +7199,13 @@ export const db = {
     smdef: [
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "HEPPassThrough"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Plastic"
     ],
     rotations: "R360",
@@ -7214,14 +7214,14 @@ export const db = {
     hp: 100,
     mass: 200.0,
     decor: -25.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true
   },
   HEPEngine: {
     tag: "HEPEngine",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -7263,21 +7263,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 500.0,
     deconstructable: true,
     enableable: true
@@ -7285,8 +7285,8 @@ export const db = {
   HabitatModuleMedium: {
     tag: "HabitatModuleMedium",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -7344,22 +7344,22 @@ export const db = {
     smdef: [
       "SimpleDoorController+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "LaunchButtonRocketModule",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 5,
     height: 4,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 500.0,
     deconstructable: true,
     enableable: true
@@ -7367,8 +7367,8 @@ export const db = {
   HabitatModuleSmall: {
     tag: "HabitatModuleSmall",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -7426,23 +7426,23 @@ export const db = {
     smdef: [
       "SimpleDoorController+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "NoseRocketModule",
       "LaunchButtonRocketModule",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -7450,7 +7450,7 @@ export const db = {
   HandSanitizer: {
     tag: "HandSanitizer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -7491,33 +7491,33 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "WashStation",
       "AdvancedWashStation"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Headquarters: {
     tag: "Headquarters",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -7552,15 +7552,15 @@ export const db = {
       "Toggleable",
       "Notifier"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Telepad",
       "LightSource",
       "Experimental"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 4,
@@ -7568,14 +7568,14 @@ export const db = {
     hp: 250,
     mass: 2000.0,
     decor: 30.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true,
     enableable: true
   },
   HighEnergyParticleRedirector: {
     tag: "HighEnergyParticleRedirector",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -7612,11 +7612,11 @@ export const db = {
       "HighEnergyParticlePort",
       "LogicPorts"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
@@ -7625,14 +7625,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   HighEnergyParticleSpawner: {
     tag: "HighEnergyParticleSpawner",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -7672,32 +7672,32 @@ export const db = {
       "CopyBuildingSettings",
       "HighEnergyParticlePort"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 4.0,
+    external_heat: 1.0,
+    internal_heat: 4.0,
     width: 1,
     height: 2,
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   HotTub: {
     tag: "HotTub",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -7745,38 +7745,38 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal",
       "BuildingWood"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 4.0,
+    external_heat: 1.0,
+    internal_heat: 4.0,
     width: 5,
     height: 2,
     hp: 30,
-    highTempWarning: 310.85,
-    highTempFatal: 533.15,
+    high_temp_warning: 310.85,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   HydrogenEngineCluster: {
     tag: "HydrogenEngineCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -7813,22 +7813,22 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
-    generatorWattageRating: 600.0,
+    generator_wattage_rating: 600.0,
     width: 7,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 500.0,
     deconstructable: true,
     enableable: true
@@ -7836,7 +7836,7 @@ export const db = {
   HydrogenGenerator: {
     tag: "HydrogenGenerator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -7882,34 +7882,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 800.0,
-    externalHeat: 2.0,
-    internalHeat: 2.0,
+    generator_wattage_rating: 800.0,
+    external_heat: 2.0,
+    internal_heat: 2.0,
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   HydroponicFarm: {
     tag: "HydroponicFarm",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -7951,13 +7951,13 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "FarmTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipV",
@@ -7966,14 +7966,14 @@ export const db = {
     hp: 100,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   IceCooledFan: {
     tag: "IceCooledFan",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -8010,27 +8010,27 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    externalHeat: -24.0,
-    internalHeat: -8.0,
+    external_heat: -24.0,
+    internal_heat: -8.0,
     width: 2,
     height: 2,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   IceMachine: {
     tag: "IceMachine",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -8071,32 +8071,32 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 4.0,
-    internalHeat: 12.0,
+    external_heat: 4.0,
+    internal_heat: 12.0,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   IceSculpture: {
     tag: "IceSculpture",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -8128,13 +8128,13 @@ export const db = {
       "Toggleable",
       "Sculpture"
     ],
-    menuOrder: 26.0,
+    menu_order: 26.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Ice"
     ],
     rotations: "FlipH",
@@ -8143,14 +8143,14 @@ export const db = {
     hp: 10,
     mass: 400.0,
     decor: 20.0,
-    decorRadius: 8.0,
+    decor_radius: 8.0,
     deconstructable: true,
     enableable: true
   },
   InsulatedGasConduit: {
     tag: "InsulatedGasConduit",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -8178,13 +8178,13 @@ export const db = {
       "EmptyConduitWorkable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Vents"
     ],
-    thermalConductivity: 0.03125,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.03125,
+    location_rule: "Anywhere",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -8192,13 +8192,13 @@ export const db = {
     hp: 10,
     mass: 400.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   InsulatedLiquidConduit: {
     tag: "InsulatedLiquidConduit",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -8226,13 +8226,13 @@ export const db = {
       "EmptyConduitWorkable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Pipes"
     ],
-    thermalConductivity: 0.03125,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.03125,
+    location_rule: "Anywhere",
+    material_category: [
       "Plumbable"
     ],
     width: 1,
@@ -8240,13 +8240,13 @@ export const db = {
     hp: 10,
     mass: 400.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   InsulationTile: {
     tag: "InsulationTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -8276,13 +8276,13 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 0.01,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 0.01,
+    location_rule: "Tile",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -8290,13 +8290,13 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   ItemPedestal: {
     tag: "ItemPedestal",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -8329,13 +8329,13 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 34.0,
+    menu_order: 34.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -8343,14 +8343,14 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   JetSuitLocker: {
     tag: "JetSuitLocker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -8395,32 +8395,32 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menuOrder: 24.0,
+    menu_order: 24.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 2,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   JetSuitMarker: {
     tag: "JetSuitMarker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -8457,32 +8457,32 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menuOrder: 23.0,
+    menu_order: 23.0,
     tags: [
       "JetSuitBlocker"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
     width: 2,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Juicer: {
     tag: "Juicer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -8531,36 +8531,36 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 3,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   KeroseneEngineCluster: {
     tag: "KeroseneEngineCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -8597,22 +8597,22 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
-    generatorWattageRating: 480.0,
+    generator_wattage_rating: 480.0,
     width: 7,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -8620,8 +8620,8 @@ export const db = {
   KeroseneEngineClusterSmall: {
     tag: "KeroseneEngineClusterSmall",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -8665,22 +8665,22 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
-    generatorWattageRating: 240.0,
+    generator_wattage_rating: 240.0,
     width: 3,
     height: 4,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -8688,7 +8688,7 @@ export const db = {
   Kiln: {
     tag: "Kiln",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -8733,31 +8733,31 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    externalHeat: 16.0,
-    internalHeat: 4.0,
+    external_heat: 16.0,
+    internal_heat: 4.0,
     width: 2,
     height: 2,
     hp: 100,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LadderBed: {
     tag: "LadderBed",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -8800,13 +8800,13 @@ export const db = {
       "LadderBed+Def",
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "BedType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloorOrBuildingAttachPoint",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloorOrBuildingAttachPoint",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
@@ -8814,14 +8814,14 @@ export const db = {
     height: 2,
     hp: 10,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   Ladder: {
     tag: "Ladder",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -8850,11 +8850,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -8862,13 +8862,13 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LadderFast: {
     tag: "LadderFast",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -8897,11 +8897,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Plastic"
     ],
     width: 1,
@@ -8909,13 +8909,13 @@ export const db = {
     hp: 10,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LandingBeacon: {
     tag: "LandingBeacon",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -8956,33 +8956,33 @@ export const db = {
     smdef: [
       "LandingBeacon+Def"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
     width: 1,
     height: 3,
     invincible: true,
-    highTempWarning: 398.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 398.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LaunchPad: {
     tag: "LaunchPad",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -9026,22 +9026,22 @@ export const db = {
       "ChainedBuilding+Def",
       "LaunchPadMaterialDistributor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "IndustrialMachinery",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
+    not_in_rocket: true,
     width: 7,
     height: 2,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
     deconstructable: true,
     enableable: true,
@@ -9053,7 +9053,7 @@ export const db = {
   LeadSuitLocker: {
     tag: "LeadSuitLocker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -9098,32 +9098,32 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menuOrder: 26.0,
+    menu_order: 26.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 2,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LeadSuitMarker: {
     tag: "LeadSuitMarker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -9160,33 +9160,33 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menuOrder: 25.0,
+    menu_order: 25.0,
     tags: [
       "JetSuitBlocker"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
     width: 2,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LiquidCargoBayCluster: {
     tag: "LiquidCargoBayCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -9224,21 +9224,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 1000.0,
     deconstructable: true,
     enableable: true
@@ -9246,8 +9246,8 @@ export const db = {
   LiquidCargoBaySmall: {
     tag: "LiquidCargoBaySmall",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -9286,21 +9286,21 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -9308,7 +9308,7 @@ export const db = {
   LiquidConditioner: {
     tag: "LiquidConditioner",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -9354,24 +9354,24 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
     width: 2,
     height: 2,
     hp: 100,
-    highTempWarning: 398.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 398.15,
+    high_temp_fatal: 533.15,
     mass: 1200.0,
     deconstructable: true,
     enableable: true
@@ -9379,7 +9379,7 @@ export const db = {
   LiquidConduitBridge: {
     tag: "LiquidConduitBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9411,11 +9411,11 @@ export const db = {
       "Disinfectable",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Conduit",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Conduit",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
@@ -9428,7 +9428,7 @@ export const db = {
   LiquidConduit: {
     tag: "LiquidConduit",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9456,13 +9456,13 @@ export const db = {
       "EmptyConduitWorkable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Pipes"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Plumbable"
     ],
     width: 1,
@@ -9474,7 +9474,7 @@ export const db = {
   LiquidConduitRadiant: {
     tag: "LiquidConduitRadiant",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9502,13 +9502,13 @@ export const db = {
       "EmptyConduitWorkable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Pipes"
     ],
-    thermalConductivity: 2.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 2.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -9516,13 +9516,13 @@ export const db = {
     hp: 10,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidFilter: {
     tag: "LiquidFilter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9568,37 +9568,37 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "IndustrialMachinery",
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 4.0,
+    internal_heat: 4.0,
     width: 3,
     height: 1,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   LiquidFuelTankCluster: {
     tag: "LiquidFuelTankCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -9642,21 +9642,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     deconstructable: true,
     enableable: true
@@ -9664,7 +9664,7 @@ export const db = {
   LiquidHeater: {
     tag: "LiquidHeater",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -9704,33 +9704,33 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       960.0
     ],
-    externalHeat: 4000.0,
-    internalHeat: 64.0,
+    external_heat: 4000.0,
+    internal_heat: 64.0,
     width: 4,
     height: 1,
     hp: 30,
-    highTempWarning: 398.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 398.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LiquidLimitValve: {
     tag: "LiquidLimitValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9773,34 +9773,34 @@ export const db = {
     smdef: [
       "PoweredActiveTransitionController+Def"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidLogicValve: {
     tag: "LiquidLogicValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9838,33 +9838,33 @@ export const db = {
       "LogicOperationalController",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidMiniPump: {
     tag: "LiquidMiniPump",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9910,37 +9910,37 @@ export const db = {
     smdef: [
       "OperationalController+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "IndustrialMachinery",
       "CorrosionProof",
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Plastic"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LiquidPump: {
     tag: "LiquidPump",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -9985,36 +9985,36 @@ export const db = {
     smdef: [
       "OperationalController+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "IndustrialMachinery",
       "CorrosionProof",
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 2,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LiquidPumpingStation: {
     tag: "LiquidPumpingStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -10048,20 +10048,20 @@ export const db = {
       "Toggleable",
       "FakeFloorAdder"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "CorrosionProof"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "BuildableRaw"
     ],
     width: 2,
     height: 4,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true
@@ -10069,7 +10069,7 @@ export const db = {
   LiquidReservoir: {
     tag: "LiquidReservoir",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -10114,30 +10114,30 @@ export const db = {
     smdef: [
       "StorageController+Def"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LiquidValve: {
     tag: "LiquidValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -10173,30 +10173,30 @@ export const db = {
       "BuildingCellVisualizer",
       "CopyBuildingSettings"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LiquidVent: {
     tag: "LiquidVent",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -10239,13 +10239,13 @@ export const db = {
     smdef: [
       "VentController+Def"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -10253,14 +10253,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   LogicAlarm: {
     tag: "LogicAlarm",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10289,13 +10289,13 @@ export const db = {
       "LogicPorts",
       "LogicAlarm"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -10303,13 +10303,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicClusterLocationSensor: {
     tag: "LogicClusterLocationSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -10338,29 +10338,29 @@ export const db = {
       "LogicPorts",
       "LogicClusterLocationSensor"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "RocketInteriorBuilding",
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
-    onlyInRocket: true,
+    only_in_rocket: true,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicCounter: {
     tag: "LogicCounter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10390,13 +10390,13 @@ export const db = {
       "LogicPorts",
       "LogicCounter"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipV",
@@ -10405,13 +10405,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicCritterCountSensor: {
     tag: "LogicCritterCountSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10440,13 +10440,13 @@ export const db = {
       "LogicPorts",
       "LogicCritterCountSensor"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -10454,13 +10454,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicDiseaseSensor: {
     tag: "LogicDiseaseSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10489,13 +10489,13 @@ export const db = {
       "LogicPorts",
       "LogicDiseaseSensor"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
@@ -10504,13 +10504,13 @@ export const db = {
     hp: 30,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicDuplicantSensor: {
     tag: "LogicDuplicantSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10541,13 +10541,13 @@ export const db = {
       "LogicDuplicantSensor",
       "RangeVisualizer"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFoundationRotatable",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFoundationRotatable",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10556,13 +10556,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicElementSensorGas: {
     tag: "LogicElementSensorGas",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10596,27 +10596,27 @@ export const db = {
       "Filterable",
       "LogicElementSensor"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   LogicElementSensorLiquid: {
     tag: "LogicElementSensorLiquid",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10649,13 +10649,13 @@ export const db = {
       "Filterable",
       "LogicElementSensor"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -10663,14 +10663,14 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   LogicGateAND: {
     tag: "LogicGateAND",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10699,13 +10699,13 @@ export const db = {
       "Disinfectable",
       "LogicGate"
     ],
-    menuOrder: 30.0,
+    menu_order: 30.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10714,13 +10714,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateOR: {
     tag: "LogicGateOR",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10749,13 +10749,13 @@ export const db = {
       "Disinfectable",
       "LogicGate"
     ],
-    menuOrder: 31.0,
+    menu_order: 31.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10764,13 +10764,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateXOR: {
     tag: "LogicGateXOR",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10799,13 +10799,13 @@ export const db = {
       "Disinfectable",
       "LogicGate"
     ],
-    menuOrder: 34.0,
+    menu_order: 34.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10814,13 +10814,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateNOT: {
     tag: "LogicGateNOT",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10849,13 +10849,13 @@ export const db = {
       "Disinfectable",
       "LogicGate"
     ],
-    menuOrder: 29.0,
+    menu_order: 29.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10864,13 +10864,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateBUFFER: {
     tag: "LogicGateBUFFER",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10899,13 +10899,13 @@ export const db = {
       "Disinfectable",
       "LogicGateBuffer"
     ],
-    menuOrder: 32.0,
+    menu_order: 32.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10914,13 +10914,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateFILTER: {
     tag: "LogicGateFILTER",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10949,13 +10949,13 @@ export const db = {
       "Disinfectable",
       "LogicGateFilter"
     ],
-    menuOrder: 33.0,
+    menu_order: 33.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -10964,13 +10964,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateMultiplexer: {
     tag: "LogicGateMultiplexer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -10999,13 +10999,13 @@ export const db = {
       "Disinfectable",
       "LogicGate"
     ],
-    menuOrder: 36.0,
+    menu_order: 36.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -11014,13 +11014,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicGateDemultiplexer: {
     tag: "LogicGateDemultiplexer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11049,13 +11049,13 @@ export const db = {
       "Disinfectable",
       "LogicGate"
     ],
-    menuOrder: 37.0,
+    menu_order: 37.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -11064,13 +11064,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicHEPSensor: {
     tag: "LogicHEPSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11099,13 +11099,13 @@ export const db = {
       "LogicPorts",
       "LogicHEPSensor"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11113,13 +11113,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicHammer: {
     tag: "LogicHammer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11155,17 +11155,17 @@ export const db = {
       "Toggleable",
       "LogicHammer"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
     width: 1,
@@ -11173,14 +11173,14 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   LogicInterasteroidReceiver: {
     tag: "LogicInterasteroidReceiver",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11213,11 +11213,11 @@ export const db = {
       "LogicBroadcastReceiver",
       "SkyVisibilityVisualizer"
     ],
-    menuOrder: 23.0,
+    menu_order: 23.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11225,14 +11225,14 @@ export const db = {
     hp: 30,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   LogicInterasteroidSender: {
     tag: "LogicInterasteroidSender",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11266,11 +11266,11 @@ export const db = {
       "LogicPorts",
       "SkyVisibilityVisualizer"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11278,14 +11278,14 @@ export const db = {
     hp: 30,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   LogicLightSensor: {
     tag: "LogicLightSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11314,13 +11314,13 @@ export const db = {
       "LogicPorts",
       "LogicLightSensor"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Transparent"
     ],
@@ -11329,13 +11329,13 @@ export const db = {
     hp: 30,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicMemory: {
     tag: "LogicMemory",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11365,13 +11365,13 @@ export const db = {
       "LogicPorts",
       "LogicMemory"
     ],
-    menuOrder: 35.0,
+    menu_order: 35.0,
     tags: [
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -11384,7 +11384,7 @@ export const db = {
   LogicPowerRelay: {
     tag: "LogicPowerRelay",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -11415,13 +11415,13 @@ export const db = {
       "LogicOperationalController",
       "OperationalControlledSwitch"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -11433,7 +11433,7 @@ export const db = {
   LogicPressureSensorGas: {
     tag: "LogicPressureSensorGas",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11462,13 +11462,13 @@ export const db = {
       "LogicPorts",
       "LogicPressureSensor"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11476,13 +11476,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicPressureSensorLiquid: {
     tag: "LogicPressureSensorLiquid",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11511,13 +11511,13 @@ export const db = {
       "LogicPorts",
       "LogicPressureSensor"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11525,13 +11525,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicRadiationSensor: {
     tag: "LogicRadiationSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11560,13 +11560,13 @@ export const db = {
       "LogicPorts",
       "LogicRadiationSensor"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11574,13 +11574,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicRibbonBridge: {
     tag: "LogicRibbonBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11612,11 +11612,11 @@ export const db = {
       "BuildingCellVisualizer",
       "LogicRibbonBridge"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "LogicBridge",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "LogicBridge",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -11625,13 +11625,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicRibbon: {
     tag: "LogicRibbon",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11659,11 +11659,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11671,13 +11671,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicRibbonReader: {
     tag: "LogicRibbonReader",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11707,13 +11707,13 @@ export const db = {
       "LogicPorts",
       "LogicRibbonReader"
     ],
-    menuOrder: 24.0,
+    menu_order: 24.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -11722,13 +11722,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicRibbonWriter: {
     tag: "LogicRibbonWriter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11758,13 +11758,13 @@ export const db = {
       "LogicPorts",
       "LogicRibbonWriter"
     ],
-    menuOrder: 25.0,
+    menu_order: 25.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -11773,13 +11773,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicSwitch: {
     tag: "LogicSwitch",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11808,13 +11808,13 @@ export const db = {
       "LogicPorts",
       "LogicSwitch"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11826,7 +11826,7 @@ export const db = {
   LogicTemperatureSensor: {
     tag: "LogicTemperatureSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11855,13 +11855,13 @@ export const db = {
       "LogicPorts",
       "LogicTemperatureSensor"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11869,13 +11869,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicTimeOfDaySensor: {
     tag: "LogicTimeOfDaySensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11904,13 +11904,13 @@ export const db = {
       "LogicPorts",
       "LogicTimeOfDaySensor"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11918,13 +11918,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicTimerSensor: {
     tag: "LogicTimerSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -11953,13 +11953,13 @@ export const db = {
       "LogicPorts",
       "LogicTimerSensor"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -11967,13 +11967,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicWattageSensor: {
     tag: "LogicWattageSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -12002,13 +12002,13 @@ export const db = {
       "LogicPorts",
       "LogicWattageSensor"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "OverlayFrontLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -12016,13 +12016,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicWireBridge: {
     tag: "LogicWireBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -12053,11 +12053,11 @@ export const db = {
       "LogicUtilityNetworkLink",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "LogicBridge",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "LogicBridge",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -12066,13 +12066,13 @@ export const db = {
     hp: 30,
     mass: 5.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LogicWire: {
     tag: "LogicWire",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "automation"
     },
     components: [
@@ -12100,11 +12100,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -12112,14 +12112,14 @@ export const db = {
     hp: 10,
     mass: 5.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   LonelyMinionHouse: {
     tag: "LonelyMinionHouse",
     menu: {
-      category: "Building",
-      subCategory: "Quest"
+      category: "building",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -12157,32 +12157,32 @@ export const db = {
     smdef: [
       "LonelyMinionHouse+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Steel"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
     width: 4,
     height: 6,
     hp: 1000,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -25.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: false
   },
   LonelyMailBox: {
     tag: "LonelyMailBox",
     menu: {
-      category: "Building",
-      subCategory: "Quest"
+      category: "building",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -12214,11 +12214,11 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
@@ -12226,14 +12226,14 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: false,
     enableable: true
   },
   LuxuryBed: {
     tag: "LuxuryBed",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -12270,30 +12270,30 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "BedType",
       "LuxuryBedType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Plastic"
     ],
     width: 4,
     height: 2,
     hp: 10,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   ManualGenerator: {
     tag: "ManualGenerator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -12335,31 +12335,31 @@ export const db = {
       "Storage",
       "Klei.AI.Effects"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 400.0,
-    internalHeat: 1.0,
+    generator_wattage_rating: 400.0,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   ManualHighEnergyParticleSpawner: {
     tag: "ManualHighEnergyParticleSpawner",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -12405,11 +12405,11 @@ export const db = {
       "HighEnergyParticlePort",
       "LogicPorts"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -12417,14 +12417,14 @@ export const db = {
     hp: 30,
     mass: 800.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   ManualPressureDoor: {
     tag: "ManualPressureDoor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -12456,11 +12456,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     rotations: "R90",
@@ -12469,13 +12469,13 @@ export const db = {
     hp: 30,
     mass: 200.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true
   },
   MarbleSculpture: {
     tag: "MarbleSculpture",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -12507,13 +12507,13 @@ export const db = {
       "Toggleable",
       "Sculpture"
     ],
-    menuOrder: 27.0,
+    menu_order: 27.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "PreciousRock"
     ],
     rotations: "FlipH",
@@ -12522,14 +12522,14 @@ export const db = {
     hp: 10,
     mass: 400.0,
     decor: 20.0,
-    decorRadius: 8.0,
+    decor_radius: 8.0,
     deconstructable: true,
     enableable: true
   },
   MassageTable: {
     tag: "MassageTable",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -12570,35 +12570,35 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "DeStressingBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 0.5,
+    external_heat: 0.125,
+    internal_heat: 0.5,
     width: 2,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   MassiveHeatSink: {
     tag: "MassiveHeatSink",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -12640,37 +12640,37 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "BuildableAny",
       "Solid",
       "RefinedMetal"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    externalHeat: -16.0,
-    internalHeat: -64.0,
+    external_heat: -16.0,
+    internal_heat: -64.0,
     width: 4,
     height: 4,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 15.0,
-    decorRadius: 3.0,
-    primaryElement: "Iron",
+    decor_radius: 3.0,
+    primary_element: "Iron",
     deconstructable: false,
     enableable: true
   },
   MechanicalSurfboard: {
     tag: "MechanicalSurfboard",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -12715,34 +12715,34 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   MedicalCot: {
     tag: "MedicalCot",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -12778,29 +12778,29 @@ export const db = {
       "DoctorChoreWorkable",
       "Ownable"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Clinic",
       "BedType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 3,
     height: 2,
     hp: 10,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   MegaBrainTank: {
     tag: "MegaBrainTank",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -12841,7 +12841,7 @@ export const db = {
       "ManualDeliveryKG",
       "ElementConverter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "Gravitas",
@@ -12851,26 +12851,26 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 7,
     height: 7,
     invincible: true,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -20.0,
-    decorRadius: 5.0,
-    primaryElement: "Steel",
+    decor_radius: 5.0,
+    primary_element: "Steel",
     deconstructable: false,
     enableable: true
   },
   MeshTile: {
     tag: "MeshTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -12900,13 +12900,13 @@ export const db = {
       "SimTemperatureTransfer",
       "ZoneTile"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -12914,13 +12914,13 @@ export const db = {
     hp: 100,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   MetalRefinery: {
     tag: "MetalRefinery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -12974,35 +12974,35 @@ export const db = {
     smdef: [
       "PoweredActiveStoppableController+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
-    internalHeat: 16.0,
+    internal_heat: 16.0,
     width: 3,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   MetalSculpture: {
     tag: "MetalSculpture",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -13034,13 +13034,13 @@ export const db = {
       "Toggleable",
       "Sculpture"
     ],
-    menuOrder: 28.0,
+    menu_order: 28.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
@@ -13049,14 +13049,14 @@ export const db = {
     hp: 10,
     mass: 400.0,
     decor: 20.0,
-    decorRadius: 8.0,
+    decor_radius: 8.0,
     deconstructable: true,
     enableable: true
   },
   MetalTile: {
     tag: "MetalTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -13084,13 +13084,13 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -13098,13 +13098,13 @@ export const db = {
     hp: 100,
     mass: 100.0,
     decor: 15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true
   },
   MethaneGenerator: {
     tag: "MethaneGenerator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -13152,34 +13152,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 800.0,
-    externalHeat: 2.0,
-    internalHeat: 8.0,
+    generator_wattage_rating: 800.0,
+    external_heat: 2.0,
+    internal_heat: 8.0,
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   MicrobeMusher: {
     tag: "MicrobeMusher",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -13228,34 +13228,34 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 2.0,
+    external_heat: 0.5,
+    internal_heat: 2.0,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   MilkFatSeparator: {
     tag: "MilkFatSeparator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -13303,29 +13303,29 @@ export const db = {
     smdef: [
       "MilkSeparator+Def"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    internalHeat: 8.0,
+    internal_heat: 8.0,
     width: 4,
     height: 4,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true,
     storages: [
@@ -13341,7 +13341,7 @@ export const db = {
   MilkFeeder: {
     tag: "MilkFeeder",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -13385,32 +13385,32 @@ export const db = {
     smdef: [
       "MilkFeeder+Def"
     ],
-    menuOrder: 16.0,
+    menu_order: 16.0,
     tags: [
       "RanchStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   MilkPress: {
     tag: "MilkPress",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -13458,30 +13458,30 @@ export const db = {
       "LogicPorts",
       "SymbolOverrideController"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 2,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   MilkingStation: {
     tag: "MilkingStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -13523,13 +13523,13 @@ export const db = {
     smdef: [
       "RanchStation+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "RanchStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
@@ -13537,17 +13537,17 @@ export const db = {
     height: 4,
     hp: 30,
     mass: 600.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true,
-    workTime: 20.0
+    work_time: 20.0
   },
   MineralDeoxidizer: {
     tag: "MineralDeoxidizer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -13592,34 +13592,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 1.0,
+    external_heat: 0.5,
+    internal_heat: 1.0,
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   MissileLauncher: {
     tag: "MissileLauncher",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -13665,37 +13665,37 @@ export const db = {
     smdef: [
       "MissileLauncher+Def"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 2.0,
+    external_heat: 0.5,
+    internal_heat: 2.0,
     width: 3,
     height: 5,
     hp: 250,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
-    lauchSpeed: 30.0,
-    rotationSpeed: 100.0,
-    rangeMax: 32.0,
-    rangeMin: 16.0,
-    scanningAngle: 50.0,
-    maxAngle: 80.0
+    lauch_speed: 30.0,
+    rotation_speed: 100.0,
+    range_max: 32.0,
+    range_min: 16.0,
+    scanning_angle: 50.0,
+    max_angle: 80.0
   },
   MissileFabricator: {
     tag: "MissileFabricator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -13744,35 +13744,35 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       960.0
     ],
-    internalHeat: 8.0,
+    internal_heat: 8.0,
     width: 5,
     height: 4,
     hp: 250,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   MissionControlCluster: {
     tag: "MissionControlCluster",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -13817,38 +13817,38 @@ export const db = {
       "SkyVisibilityMonitor+Def",
       "MissionControlCluster+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       960.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 2.0,
+    external_heat: 0.5,
+    internal_heat: 2.0,
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true,
-    scanLeft: 1.0,
-    scanRight: 1.0
+    scan_left: 1.0,
+    scan_right: 1.0
   },
   ModularLaunchpadPortBridge: {
     tag: "ModularLaunchpadPortBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -13882,23 +13882,23 @@ export const db = {
     smdef: [
       "ChainedBuilding+Def"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "ModularConduitPort",
       "NotRocketInteriorBuilding",
       "ModularLaunchpadPort"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
+    not_in_rocket: true,
     width: 1,
     height: 2,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true,
@@ -13910,7 +13910,7 @@ export const db = {
   ModularLaunchpadPortGas: {
     tag: "ModularLaunchpadPortGas",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -13953,29 +13953,29 @@ export const db = {
       "ModularConduitPortController+Def",
       "ChainedBuilding+Def"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
       "ModularConduitPort",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
-    electrityConsummation: [
+    not_in_rocket: true,
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
@@ -13988,7 +13988,7 @@ export const db = {
   ModularLaunchpadPortGasUnloader: {
     tag: "ModularLaunchpadPortGasUnloader",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hvac"
     },
     components: [
@@ -14034,29 +14034,29 @@ export const db = {
       "ModularConduitPortController+Def",
       "ChainedBuilding+Def"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
       "ModularConduitPort",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
-    electrityConsummation: [
+    not_in_rocket: true,
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 3,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
@@ -14069,7 +14069,7 @@ export const db = {
   ModularLaunchpadPortLiquid: {
     tag: "ModularLaunchpadPortLiquid",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -14112,29 +14112,29 @@ export const db = {
       "ModularConduitPortController+Def",
       "ChainedBuilding+Def"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
       "ModularConduitPort",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
-    electrityConsummation: [
+    not_in_rocket: true,
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
@@ -14147,7 +14147,7 @@ export const db = {
   ModularLaunchpadPortLiquidUnloader: {
     tag: "ModularLaunchpadPortLiquidUnloader",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -14193,29 +14193,29 @@ export const db = {
       "ModularConduitPortController+Def",
       "ChainedBuilding+Def"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
       "ModularConduitPort",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
-    electrityConsummation: [
+    not_in_rocket: true,
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 3,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
@@ -14228,7 +14228,7 @@ export const db = {
   ModularLaunchpadPortSolid: {
     tag: "ModularLaunchpadPortSolid",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -14271,29 +14271,29 @@ export const db = {
       "ModularConduitPortController+Def",
       "ChainedBuilding+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
       "ModularConduitPort",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
-    electrityConsummation: [
+    not_in_rocket: true,
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
@@ -14306,7 +14306,7 @@ export const db = {
   ModularLaunchpadPortSolidUnloader: {
     tag: "ModularLaunchpadPortSolidUnloader",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -14352,29 +14352,29 @@ export const db = {
       "ModularConduitPortController+Def",
       "ChainedBuilding+Def"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
       "ModularConduitPort",
       "NotRocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    notInRocket: true,
-    electrityConsummation: [
+    not_in_rocket: true,
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.25,
-    internalHeat: 1.0,
+    external_heat: 0.25,
+    internal_heat: 1.0,
     width: 2,
     height: 3,
     hp: 1000,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
@@ -14387,7 +14387,7 @@ export const db = {
   MonumentBottom: {
     tag: "MonumentBottom",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -14423,11 +14423,11 @@ export const db = {
       "AttachableBuilding",
       "Toggleable"
     ],
-    menuOrder: 35.0,
+    menu_order: 35.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Steel",
       "Obsidian"
     ],
@@ -14435,18 +14435,18 @@ export const db = {
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 10000.0,
     decor: 10.0,
-    decorRadius: 5.0,
+    decor_radius: 5.0,
     deconstructable: true,
     enableable: true
   },
   MonumentMiddle: {
     tag: "MonumentMiddle",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -14482,11 +14482,11 @@ export const db = {
       "AttachableBuilding",
       "Toggleable"
     ],
-    menuOrder: 36.0,
+    menu_order: 36.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "BuildingAttachPoint",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
       "Ceramic",
       "Polypropylene",
       "Steel"
@@ -14495,18 +14495,18 @@ export const db = {
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 10000.0,
     decor: 10.0,
-    decorRadius: 5.0,
+    decor_radius: 5.0,
     deconstructable: true,
     enableable: true
   },
   MonumentTop: {
     tag: "MonumentTop",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -14541,11 +14541,11 @@ export const db = {
       "AttachableBuilding",
       "Toggleable"
     ],
-    menuOrder: 37.0,
+    menu_order: 37.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "BuildingAttachPoint",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
       "Glass",
       "Diamond",
       "Steel"
@@ -14554,19 +14554,19 @@ export const db = {
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 10000.0,
     decor: 10.0,
-    decorRadius: 5.0,
+    decor_radius: 5.0,
     deconstructable: true,
     enableable: true
   },
   MorbRoverMaker: {
     tag: "MorbRoverMaker",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -14610,7 +14610,7 @@ export const db = {
       "MorbRoverMakerStorytrait+Def",
       "MorbRoverMakerDisplay+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -14619,27 +14619,27 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     width: 5,
     height: 4,
     hp: 250,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Steel",
+    decor_radius: 2.0,
+    primary_element: "Steel",
     deconstructable: false,
     enableable: true
   },
   NoseconeBasic: {
     tag: "NoseconeBasic",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -14673,23 +14673,23 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "NoseRocketModule",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Insulator"
     ],
     width: 5,
     height: 2,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 600.0,
     deconstructable: true,
     enableable: true
@@ -14697,8 +14697,8 @@ export const db = {
   NoseconeHarvest: {
     tag: "NoseconeHarvest",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -14737,32 +14737,32 @@ export const db = {
     smdef: [
       "ResourceHarvestModule+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "NoseRocketModule",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
     width: 5,
     height: 4,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 600.0,
     deconstructable: true,
     enableable: true,
-    workTime: 7.5
+    work_time: 7.5
   },
   NuclearReactor: {
     tag: "NuclearReactor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -14801,14 +14801,14 @@ export const db = {
       "Toggleable",
       "LogicPorts"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "IndustrialMachinery",
       "CorrosionProof"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     width: 5,
@@ -14816,13 +14816,13 @@ export const db = {
     invincible: true,
     mass: 800.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true
   },
   NuclearResearchCenter: {
     tag: "NuclearResearchCenter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -14866,34 +14866,34 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 5,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   ObjectDispenser: {
     tag: "ObjectDispenser",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -14931,31 +14931,31 @@ export const db = {
       "Storage",
       "CopyBuildingSettings"
     ],
-    menuOrder: 23.0,
+    menu_order: 23.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.125,
+    external_heat: 0.125,
     width: 1,
     height: 2,
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   OilRefinery: {
     tag: "OilRefinery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -15001,37 +15001,37 @@ export const db = {
       "Toggleable",
       "OilRefinery+WorkableTarget"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 2.0,
-    internalHeat: 8.0,
+    external_heat: 2.0,
+    internal_heat: 8.0,
     width: 4,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   OilWellCap: {
     tag: "OilWellCap",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -15075,22 +15075,22 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "BuildingAttachPoint",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 4,
     height: 4,
     hp: 100,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -15098,8 +15098,8 @@ export const db = {
   OrbitalCargoModule: {
     tag: "OrbitalCargoModule",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -15141,30 +15141,30 @@ export const db = {
     smdef: [
       "OrbitalDeployCargoModule+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 2,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     deconstructable: true,
     enableable: true,
-    numCapsules: 30.0
+    num_capsules: 30.0
   },
   OrbitalResearchCenter: {
     tag: "OrbitalResearchCenter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -15211,36 +15211,36 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "ScienceBuilding",
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Plastic"
     ],
-    onlyInRocket: true,
-    electrityConsummation: [
+    only_in_rocket: true,
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 0.5,
+    external_heat: 0.125,
+    internal_heat: 0.5,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   OreScrubber: {
     tag: "OreScrubber",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -15281,31 +15281,31 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Outhouse: {
     tag: "Outhouse",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -15346,31 +15346,31 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "ToiletType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    externalHeat: 0.25,
+    external_heat: 0.25,
     width: 2,
     height: 3,
     hp: 30,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -20.0,
-    decorRadius: 5.0,
+    decor_radius: 5.0,
     deconstructable: true,
     enableable: true
   },
   OxidizerTankCluster: {
     tag: "OxidizerTankCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -15410,21 +15410,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     deconstructable: true,
     enableable: true
@@ -15432,8 +15432,8 @@ export const db = {
   OxidizerTankLiquidCluster: {
     tag: "OxidizerTankLiquidCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -15476,21 +15476,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 2,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     deconstructable: true,
     enableable: true
@@ -15498,7 +15498,7 @@ export const db = {
   OxygenMaskLocker: {
     tag: "OxygenMaskLocker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -15539,29 +15539,29 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   OxygenMaskMarker: {
     tag: "OxygenMaskMarker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -15598,32 +15598,32 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [
       "JetSuitBlocker"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   OxyliteRefinery: {
     tag: "OxyliteRefinery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -15668,90 +15668,52 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
-    externalHeat: 8.0,
-    internalHeat: 4.0,
+    external_heat: 8.0,
+    internal_heat: 4.0,
     width: 3,
     height: 4,
     hp: 100,
     mass: 900.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   POIBunkerExteriorDoor: {
-    tag: "POIBunkerExteriorDoor",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    components: [
-      "KPrefabID",
-      "KSelectable",
-      "Klei.AI.Modifiers",
-      "PrimaryElement",
-      "BuildingComplete",
-      "StateMachineController",
-      "Deconstructable",
-      "Reconstructable",
-      "SaveLoadRoot",
-      "OccupyArea",
-      "DecorProvider",
-      "Operational",
-      "BuildingEnabledButton",
-      "Prioritizable",
-      "BuildingHP",
-      "LoopingSounds",
-      "InvalidPortReporter",
-      "Door",
-      "ZoneTile",
-      "AccessControl",
-      "Unsealable",
-      "KBoxCollider2D",
-      "KBatchedAnimController",
-      "BuildingFacade",
-      "Rotatable",
-      "AutoDisinfectable",
-      "Disinfectable",
-      "Toggleable",
-      "CopyBuildingSettings"
-    ],
-    menuOrder: 177013.0,
-    tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
     width: 1,
     height: 2,
-    invincible: true,
-    mass: 200.0,
-    decor: -15.0,
-    decorRadius: 3.0,
-    deconstructable: false,
-    enableable: true
+    mass: 200.0
   },
   POIDoorInternal: {
     tag: "POIDoorInternal",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -15784,90 +15746,44 @@ export const db = {
       "CopyBuildingSettings",
       "LogicPorts"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     rotations: "R90",
     width: 1,
     height: 2,
     invincible: true,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
     deconstructable: true
   },
   POIFacilityDoor: {
-    tag: "POIFacilityDoor",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    components: [
-      "KPrefabID",
-      "KSelectable",
-      "Klei.AI.Modifiers",
-      "PrimaryElement",
-      "BuildingComplete",
-      "StateMachineController",
-      "Deconstructable",
-      "Reconstructable",
-      "SaveLoadRoot",
-      "OccupyArea",
-      "DecorProvider",
-      "Operational",
-      "BuildingEnabledButton",
-      "Prioritizable",
-      "BuildingHP",
-      "LoopingSounds",
-      "InvalidPortReporter",
-      "Door",
-      "ZoneTile",
-      "AccessControl",
-      "Unsealable",
-      "KBoxCollider2D",
-      "KBatchedAnimController",
-      "BuildingFacade",
-      "Rotatable",
-      "AutoDisinfectable",
-      "Disinfectable",
-      "Structure",
-      "Toggleable",
-      "CopyBuildingSettings"
-    ],
-    menuOrder: 177013.0,
-    tags: [
-      "Metal",
-      "RefinedMetal",
-      "BuildableAny",
-      "Solid",
-      "ManufacturedMaterial"
-    ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R90",
     width: 2,
     height: 3,
-    invincible: true,
-    mass: 200.0,
-    decor: -15.0,
-    decorRadius: 3.0,
-    primaryElement: "Steel",
-    deconstructable: true,
-    enableable: true
+    mass: 200.0
   },
   ParkSign: {
     tag: "ParkSign",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -15900,29 +15816,29 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 38.0,
+    menu_order: 38.0,
     tags: [
       "Park"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableAny"
     ],
     width: 1,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   PetroleumGenerator: {
     tag: "PetroleumGenerator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -15968,34 +15884,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 2000.0,
-    externalHeat: 4.0,
-    internalHeat: 16.0,
+    generator_wattage_rating: 2000.0,
+    external_heat: 4.0,
+    internal_heat: 16.0,
     width: 3,
     height: 4,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   Phonobox: {
     tag: "Phonobox",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -16037,36 +15953,36 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       960.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 5,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   PioneerModule: {
     tag: "PioneerModule",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -16110,21 +16026,21 @@ export const db = {
       "BuildingInternalConstructor+Def",
       "JettisonableCargoModule+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -16132,7 +16048,7 @@ export const db = {
   PixelPack: {
     tag: "PixelPack",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -16170,19 +16086,19 @@ export const db = {
       "Toggleable",
       "PixelPack"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "Backwall",
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "Glass",
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 4,
@@ -16190,14 +16106,14 @@ export const db = {
     hp: 30,
     mass: 125.0,
     decor: 20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   PlanterBox: {
     tag: "PlanterBox",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -16233,11 +16149,11 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Farmable"
     ],
     width: 1,
@@ -16245,14 +16161,14 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   PlasticTile: {
     tag: "PlasticTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -16280,13 +16196,13 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Plastic"
     ],
     width: 1,
@@ -16294,13 +16210,13 @@ export const db = {
     hp: 100,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   Polymerizer: {
     tag: "Polymerizer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -16350,35 +16266,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 32.0,
+    external_heat: 0.5,
+    internal_heat: 32.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   PowerControlStation: {
     tag: "PowerControlStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -16414,28 +16330,28 @@ export const db = {
       "TinkerStation",
       "RoomTracker"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "PowerStation",
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     width: 2,
     height: 4,
     hp: 30,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   PowerTransformer: {
     tag: "PowerTransformer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -16477,34 +16393,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
-    generatorWattageRating: 4000.0,
-    internalHeat: 1.0,
+    generator_wattage_rating: 4000.0,
+    internal_heat: 1.0,
     width: 3,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   PowerTransformerSmall: {
     tag: "PowerTransformerSmall",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -16546,34 +16462,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    generatorWattageRating: 1000.0,
-    internalHeat: 1.0,
+    generator_wattage_rating: 1000.0,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   PressureDoor: {
     tag: "PressureDoor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -16611,15 +16527,15 @@ export const db = {
       "AccessControl",
       "CopyBuildingSettings"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Metal"
     ],
     rotations: "R90",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 1,
@@ -16627,14 +16543,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true
   },
   PropGravitasLabWall: {
     tag: "PropGravitasLabWall",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -16665,7 +16581,7 @@ export const db = {
       "Disinfectable",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "BuildableAny",
       "Transparent",
@@ -16673,9 +16589,9 @@ export const db = {
       "ManufacturedMaterial",
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R90",
@@ -16684,16 +16600,16 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Glass",
+    decor_radius: 1.0,
+    primary_element: "Glass",
     deconstructable: true,
     enableable: true
   },
   PropGravitasLabWindow: {
     tag: "PropGravitasLabWindow",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -16723,7 +16639,7 @@ export const db = {
       "Disinfectable",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "BuildableAny",
       "Transparent",
@@ -16731,9 +16647,9 @@ export const db = {
       "ManufacturedMaterial",
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "Glass"
     ],
     width: 2,
@@ -16741,16 +16657,16 @@ export const db = {
     hp: 30,
     mass: 5.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Glass",
+    decor_radius: 1.0,
+    primary_element: "Glass",
     deconstructable: true,
     enableable: true
   },
   PropGravitasLabWindowHorizontal: {
     tag: "PropGravitasLabWindowHorizontal",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -16780,7 +16696,7 @@ export const db = {
       "Disinfectable",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "BuildableAny",
       "Transparent",
@@ -16788,9 +16704,9 @@ export const db = {
       "ManufacturedMaterial",
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "Glass"
     ],
     width: 3,
@@ -16798,16 +16714,16 @@ export const db = {
     hp: 30,
     mass: 5.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Glass",
+    decor_radius: 1.0,
+    primary_element: "Glass",
     deconstructable: true,
     enableable: true
   },
   PropGravitasWall: {
     tag: "PropGravitasWall",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -16838,7 +16754,7 @@ export const db = {
       "Disinfectable",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plumbable",
       "Crushable",
@@ -16848,9 +16764,9 @@ export const db = {
       "BuildableRaw",
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "R360",
@@ -16859,15 +16775,15 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite",
+    decor_radius: 1.0,
+    primary_element: "Granite",
     deconstructable: true,
     enableable: true
   },
   RadiationLight: {
     tag: "RadiationLight",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -16911,32 +16827,32 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnWall",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnWall",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 1,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   RailGun: {
     tag: "RailGun",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -16977,20 +16893,20 @@ export const db = {
       "Storage",
       "SkyVisibilityVisualizer"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 2.0,
+    external_heat: 0.5,
+    internal_heat: 2.0,
     width: 5,
     height: 6,
     hp: 250,
@@ -17001,7 +16917,7 @@ export const db = {
   RailGunPayloadOpener: {
     tag: "RailGunPayloadOpener",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -17041,17 +16957,17 @@ export const db = {
       "Toggleable",
       "DropAllWorkable"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 3,
     height: 3,
     hp: 250,
@@ -17062,7 +16978,7 @@ export const db = {
   RanchStation: {
     tag: "RanchStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -17100,28 +17016,28 @@ export const db = {
     smdef: [
       "RanchStation+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "RanchStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 3,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true,
-    workTime: 12.0
+    work_time: 12.0
   },
   RationBox: {
     tag: "RationBox",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -17160,11 +17076,11 @@ export const db = {
       "RocketUsageRestriction+Def",
       "StorageController+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 2,
@@ -17172,14 +17088,14 @@ export const db = {
     hp: 10,
     mass: 400.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   Refrigerator: {
     tag: "Refrigerator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -17225,33 +17141,33 @@ export const db = {
       "RocketUsageRestriction+Def",
       "StorageController+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0,
       20.0
     ],
-    internalHeat: 0.125,
+    internal_heat: 0.125,
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   ResearchCenter: {
     tag: "ResearchCenter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -17296,34 +17212,34 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "ScienceBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 1.0,
+    external_heat: 0.125,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   ResetSkillsStation: {
     tag: "ResetSkillsStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -17362,35 +17278,35 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "IndustrialMachinery",
       "NotRoomAssignable"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 4.0,
+    external_heat: 0.5,
+    internal_heat: 4.0,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   RockCrusher: {
     tag: "RockCrusher",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -17437,35 +17353,35 @@ export const db = {
       "ComplexFabricatorSM",
       "SymbolOverrideController"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    internalHeat: 16.0,
+    internal_heat: 16.0,
     width: 4,
     height: 4,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketControlStation: {
     tag: "RocketControlStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -17501,32 +17417,32 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "RocketInteriorBuilding",
       "UniquePerWorld",
       "RocketInterior"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    onlyInRocket: true,
+    only_in_rocket: true,
     width: 2,
     height: 2,
     hp: 30,
     mass: 100.0,
     decor: 15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketEnvelopeWindowTile: {
     tag: "RocketEnvelopeWindowTile",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -17553,16 +17469,16 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Window",
       "Bunker",
       "FloorTiles",
       "NoRocketRefund"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Transparent"
     ],
     width: 1,
@@ -17571,13 +17487,13 @@ export const db = {
     transparent: true,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: false
   },
   RocketInteriorGasInput: {
     tag: "RocketInteriorGasInput",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -17616,31 +17532,31 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
+    only_in_rocket: true,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketInteriorGasInputPort: {
     tag: "RocketInteriorGasInputPort",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -17673,15 +17589,15 @@ export const db = {
       "AutoStorageDropper+Def",
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Bunker",
       "FloorTiles",
       "NoRocketRefund"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -17689,13 +17605,13 @@ export const db = {
     invincible: true,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: false
   },
   RocketInteriorGasOutput: {
     tag: "RocketInteriorGasOutput",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -17739,35 +17655,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
-    electrityConsummation: [
+    only_in_rocket: true,
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketInteriorGasOutputPort: {
     tag: "RocketInteriorGasOutputPort",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -17798,15 +17714,15 @@ export const db = {
     smdef: [
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Bunker",
       "FloorTiles",
       "NoRocketRefund"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -17814,13 +17730,13 @@ export const db = {
     invincible: true,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: false
   },
   RocketInteriorLiquidInput: {
     tag: "RocketInteriorLiquidInput",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -17859,31 +17775,31 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
+    only_in_rocket: true,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketInteriorLiquidInputPort: {
     tag: "RocketInteriorLiquidInputPort",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -17916,15 +17832,15 @@ export const db = {
       "AutoStorageDropper+Def",
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Bunker",
       "FloorTiles",
       "NoRocketRefund"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -17932,13 +17848,13 @@ export const db = {
     invincible: true,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: false
   },
   RocketInteriorLiquidOutput: {
     tag: "RocketInteriorLiquidOutput",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -17982,35 +17898,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
-    electrityConsummation: [
+    only_in_rocket: true,
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketInteriorLiquidOutputPort: {
     tag: "RocketInteriorLiquidOutputPort",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -18041,15 +17957,15 @@ export const db = {
     smdef: [
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Bunker",
       "FloorTiles",
       "NoRocketRefund"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -18057,13 +17973,13 @@ export const db = {
     invincible: true,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: false
   },
   RocketInteriorPowerPlug: {
     tag: "RocketInteriorPowerPlug",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -18098,30 +18014,30 @@ export const db = {
     smdef: [
       "OperationalController+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
+    only_in_rocket: true,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketInteriorSolidInput: {
     tag: "RocketInteriorSolidInput",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -18159,30 +18075,30 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
+    only_in_rocket: true,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketInteriorSolidOutput: {
     tag: "RocketInteriorSolidOutput",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "rocketry"
     },
     components: [
@@ -18226,39 +18142,39 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "RocketInteriorBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnRocketEnvelope",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnRocketEnvelope",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    onlyInRocket: true,
-    electrityConsummation: [
+    only_in_rocket: true,
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 1,
     hp: 30,
     mass: 25.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   RocketWallTile: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Steel"
     ],
     width: 1,
@@ -18269,7 +18185,7 @@ export const db = {
   RustDeoxidizer: {
     tag: "RustDeoxidizer",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -18315,36 +18231,36 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 1.0,
+    external_heat: 0.125,
+    internal_heat: 1.0,
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Sauna: {
     tag: "Sauna",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -18392,37 +18308,37 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal",
       "BuildingWood"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 3,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   ScannerModule: {
     tag: "ScannerModule",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -18460,32 +18376,32 @@ export const db = {
     smdef: [
       "ScannerModule+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel",
       "Polypropylene"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 1350.0,
     deconstructable: true,
     enableable: true,
-    rangeMax: 0.0
+    range_max: 0.0
   },
   ScoutModule: {
     tag: "ScoutModule",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -18527,21 +18443,21 @@ export const db = {
       "BuildingInternalConstructor+Def",
       "JettisonableCargoModule+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -18549,7 +18465,7 @@ export const db = {
   Sculpture: {
     tag: "Sculpture",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -18581,13 +18497,13 @@ export const db = {
       "Toggleable",
       "Sculpture"
     ],
-    menuOrder: 25.0,
+    menu_order: 25.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "FlipH",
@@ -18596,14 +18512,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: 10.0,
-    decorRadius: 8.0,
+    decor_radius: 8.0,
     deconstructable: true,
     enableable: true
   },
   ShearingStation: {
     tag: "ShearingStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -18645,35 +18561,35 @@ export const db = {
     smdef: [
       "RanchStation+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "RanchStationType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 0.5,
+    external_heat: 0.125,
+    internal_heat: 0.5,
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true,
-    workTime: 12.0
+    work_time: 12.0
   },
   Shower: {
     tag: "Shower",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -18716,31 +18632,31 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "WashStation",
       "AdvancedWashStation"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    externalHeat: 0.25,
+    external_heat: 0.25,
     width: 2,
     height: 4,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SludgePress: {
     tag: "SludgePress",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -18790,36 +18706,36 @@ export const db = {
       "ComplexFabricatorSM",
       "SymbolOverrideController"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 4.0,
+    internal_heat: 4.0,
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SmallOxidizerTank: {
     tag: "SmallOxidizerTank",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -18860,21 +18776,21 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 2,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -18882,7 +18798,7 @@ export const db = {
   SmallSculpture: {
     tag: "SmallSculpture",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -18914,13 +18830,13 @@ export const db = {
       "Toggleable",
       "Sculpture"
     ],
-    menuOrder: 24.0,
+    menu_order: 24.0,
     tags: [
       "Decoration"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     rotations: "FlipH",
@@ -18929,14 +18845,14 @@ export const db = {
     hp: 10,
     mass: 200.0,
     decor: 5.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   SodaFountain: {
     tag: "SodaFountain",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -18983,35 +18899,35 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SolarPanel: {
     tag: "SolarPanel",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -19049,33 +18965,33 @@ export const db = {
       "PoweredActiveController+Def",
       "MakeBaseSolid+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Glass"
     ],
-    generatorWattageRating: 380.0,
+    generator_wattage_rating: 380.0,
     width: 7,
     height: 3,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   SolarPanelModule: {
     tag: "SolarPanelModule",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -19114,22 +19030,22 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Glass"
     ],
-    generatorWattageRating: 60.0,
+    generator_wattage_rating: 60.0,
     width: 3,
     height: 1,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -19137,8 +19053,8 @@ export const db = {
   CargoBayCluster: {
     tag: "CargoBayCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -19176,21 +19092,21 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Steel"
     ],
     width: 5,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 1000.0,
     deconstructable: true,
     enableable: true
@@ -19198,8 +19114,8 @@ export const db = {
   SolidCargoBaySmall: {
     tag: "SolidCargoBaySmall",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -19238,21 +19154,21 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -19260,7 +19176,7 @@ export const db = {
   SolidConduitBridge: {
     tag: "SolidConduitBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19292,11 +19208,11 @@ export const db = {
       "BuildingCellVisualizer",
       "SolidConduitBridge"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Conduit",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Conduit",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
@@ -19309,7 +19225,7 @@ export const db = {
   SolidConduit: {
     tag: "SolidConduit",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19337,11 +19253,11 @@ export const db = {
       "KAnimGraphTileVisualizer",
       "EmptySolidConduitWorkable"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -19353,7 +19269,7 @@ export const db = {
   SolidConduitInbox: {
     tag: "SolidConduitInbox",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19397,33 +19313,33 @@ export const db = {
       "SolidConduitInbox",
       "SolidConduitDispenser"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 1,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SolidConduitOutbox: {
     tag: "SolidConduitOutbox",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19459,11 +19375,11 @@ export const db = {
       "BuildingCellVisualizer",
       "Automatable"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
@@ -19472,13 +19388,13 @@ export const db = {
     hp: 30,
     mass: 200.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true
   },
   SolidConduitDiseaseSensor: {
     tag: "SolidConduitDiseaseSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19507,11 +19423,11 @@ export const db = {
       "LogicPorts",
       "ConduitDiseaseSensor"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
@@ -19520,13 +19436,13 @@ export const db = {
     hp: 30,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   SolidConduitElementSensor: {
     tag: "SolidConduitElementSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19556,11 +19472,11 @@ export const db = {
       "Filterable",
       "ConduitElementSensor"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -19568,13 +19484,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   SolidConduitTemperatureSensor: {
     tag: "SolidConduitTemperatureSensor",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19603,11 +19519,11 @@ export const db = {
       "LogicPorts",
       "ConduitTemperatureSensor"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -19615,13 +19531,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   SolidFilter: {
     tag: "SolidFilter",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19666,34 +19582,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 3,
     height: 1,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   SolidLimitValve: {
     tag: "SolidLimitValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19733,16 +19649,16 @@ export const db = {
     smdef: [
       "PoweredActiveTransitionController+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 1,
@@ -19750,13 +19666,13 @@ export const db = {
     hp: 30,
     mass: 75.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   SolidLogicValve: {
     tag: "SolidLogicValve",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19795,15 +19711,15 @@ export const db = {
       "SolidConduitBridge",
       "SolidLogicValve"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       10.0
     ],
     width: 1,
@@ -19811,14 +19727,14 @@ export const db = {
     hp: 30,
     mass: 100.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   SolidTransferArm: {
     tag: "SolidTransferArm",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19857,33 +19773,33 @@ export const db = {
       "SolidTransferArm",
       "RangeVisualizer"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 3,
     height: 1,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   SolidVent: {
     tag: "SolidVent",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "conveyance"
     },
     components: [
@@ -19921,11 +19837,11 @@ export const db = {
       "SolidConduitDropper",
       "Storage"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -19933,14 +19849,14 @@ export const db = {
     hp: 30,
     mass: 200.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SpaceHeater: {
     tag: "SpaceHeater",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -19981,35 +19897,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    externalHeat: 2.0,
-    internalHeat: 16.0,
+    external_heat: 2.0,
+    internal_heat: 16.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 398.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 398.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SpecialCargoBayCluster: {
     tag: "SpecialCargoBayCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -20053,21 +19969,21 @@ export const db = {
     smdef: [
       "SpecialCargoBayCluster+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "BuildingAttachPoint",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
       "RefinedMetal"
     ],
     width: 3,
     height: 1,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -20075,7 +19991,7 @@ export const db = {
   SpiceGrinder: {
     tag: "SpiceGrinder",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -20117,191 +20033,79 @@ export const db = {
     smdef: [
       "SpiceGrinder+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SpiceStation"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 3,
     hp: 30,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   StaterpillarGenerator: {
-    tag: "StaterpillarGenerator",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    components: [
-      "KPrefabID",
-      "KSelectable",
-      "Klei.AI.Modifiers",
-      "PrimaryElement",
-      "BuildingComplete",
-      "StateMachineController",
-      "Deconstructable",
-      "Reconstructable",
-      "SaveLoadRoot",
-      "OccupyArea",
-      "DecorProvider",
-      "Operational",
-      "BuildingEnabledButton",
-      "Prioritizable",
-      "BuildingHP",
-      "LoopingSounds",
-      "InvalidPortReporter",
-      "Repairable",
-      "KBatchedAnimController",
-      "KBoxCollider2D",
-      "BuildingFacade",
-      "Rotatable",
-      "AutoDisinfectable",
-      "Disinfectable",
-      "Structure",
-      "BuildingCellVisualizer",
-      "Toggleable",
-      "StaterpillarGenerator",
-      "Klei.AI.Effects"
-    ],
-    menuOrder: 177013.0,
-    tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFoundationRotatable",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "OnFoundationRotatable",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipV",
-    generatorWattageRating: 1600.0,
-    externalHeat: 2.0,
-    internalHeat: 4.0,
+    generator_wattage_rating: 1600.0,
+    external_heat: 2.0,
+    internal_heat: 4.0,
     width: 1,
     height: 2,
-    hp: 1000,
-    mass: 200.0,
-    deconstructable: false,
-    enableable: true
+    mass: 200.0
   },
   StaterpillarGasConnector: {
-    tag: "StaterpillarGasConnector",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    components: [
-      "KPrefabID",
-      "KSelectable",
-      "Klei.AI.Modifiers",
-      "PrimaryElement",
-      "BuildingComplete",
-      "StateMachineController",
-      "Deconstructable",
-      "Reconstructable",
-      "SaveLoadRoot",
-      "OccupyArea",
-      "DecorProvider",
-      "Operational",
-      "BuildingEnabledButton",
-      "Prioritizable",
-      "BuildingHP",
-      "LoopingSounds",
-      "InvalidPortReporter",
-      "Repairable",
-      "BuildingConduitEndpoints",
-      "KBatchedAnimController",
-      "KBoxCollider2D",
-      "BuildingFacade",
-      "Rotatable",
-      "RequireOutputs",
-      "AutoDisinfectable",
-      "Disinfectable",
-      "Structure",
-      "BuildingCellVisualizer",
-      "Toggleable",
-      "Storage",
-      "ConduitDispenser"
-    ],
-    menuOrder: 177013.0,
-    tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFoundationRotatable",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "OnFoundationRotatable",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipV",
     width: 1,
     height: 2,
-    hp: 1000,
-    mass: 200.0,
-    deconstructable: false,
-    enableable: true
+    mass: 200.0
   },
   StaterpillarLiquidConnector: {
-    tag: "StaterpillarLiquidConnector",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    components: [
-      "KPrefabID",
-      "KSelectable",
-      "Klei.AI.Modifiers",
-      "PrimaryElement",
-      "BuildingComplete",
-      "StateMachineController",
-      "Deconstructable",
-      "Reconstructable",
-      "SaveLoadRoot",
-      "OccupyArea",
-      "DecorProvider",
-      "Operational",
-      "BuildingEnabledButton",
-      "Prioritizable",
-      "BuildingHP",
-      "LoopingSounds",
-      "InvalidPortReporter",
-      "Repairable",
-      "BuildingConduitEndpoints",
-      "KBatchedAnimController",
-      "KBoxCollider2D",
-      "BuildingFacade",
-      "Rotatable",
-      "RequireOutputs",
-      "AutoDisinfectable",
-      "Disinfectable",
-      "Structure",
-      "BuildingCellVisualizer",
-      "Toggleable",
-      "Storage",
-      "ConduitDispenser"
-    ],
-    menuOrder: 177013.0,
-    tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFoundationRotatable",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "OnFoundationRotatable",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipV",
     width: 1,
     height: 2,
-    hp: 1000,
-    mass: 200.0,
-    deconstructable: false,
-    enableable: true
+    mass: 200.0
   },
   SteamEngineCluster: {
     tag: "SteamEngineCluster",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -20345,22 +20149,22 @@ export const db = {
       "RocketModuleCluster",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
-    generatorWattageRating: 600.0,
+    generator_wattage_rating: 600.0,
     width: 7,
     height: 5,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     deconstructable: true,
     enableable: true
@@ -20368,7 +20172,7 @@ export const db = {
   SteamTurbine2: {
     tag: "SteamTurbine2",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -20414,33 +20218,33 @@ export const db = {
       "Klei.AI.Effects",
       "RangeVisualizer"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
     rotations: "FlipH",
-    generatorWattageRating: 850.0,
-    internalHeat: 4.0,
+    generator_wattage_rating: 850.0,
+    internal_heat: 4.0,
     width: 5,
     height: 3,
     hp: 30,
-    highTempWarning: 1273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 1273.15,
+    high_temp_fatal: 533.15,
     mass: 1000.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   StorageLocker: {
     tag: "StorageLocker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -20478,11 +20282,11 @@ export const db = {
       "RocketUsageRestriction+Def",
       "StorageController+Def"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -20490,14 +20294,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   StorageLockerSmart: {
     tag: "StorageLockerSmart",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -20539,30 +20343,30 @@ export const db = {
       "StorageController+Def",
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.125,
+    external_heat: 0.125,
     width: 1,
     height: 2,
     hp: 30,
     mass: 200.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   StorageTile: {
     tag: "StorageTile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -20598,13 +20402,13 @@ export const db = {
       "StorageTile+Def",
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "RefinedMetal",
       "Glass"
     ],
@@ -20613,7 +20417,7 @@ export const db = {
     hp: 30,
     mass: 200.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     storages: [
       {
@@ -20626,7 +20430,7 @@ export const db = {
   SublimationStation: {
     tag: "SublimationStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "oxygen"
     },
     components: [
@@ -20671,35 +20475,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       60.0
     ],
-    externalHeat: 0.5,
-    internalHeat: 1.0,
+    external_heat: 0.5,
+    internal_heat: 1.0,
     width: 2,
     height: 1,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SugarEngine: {
     tag: "SugarEngine",
     menu: {
-      category: "Building",
-      subCategory: "RocketModule"
+      category: "building",
+      subCategory: "rocketModule"
     },
     components: [
       "KPrefabID",
@@ -20741,22 +20545,22 @@ export const db = {
       "VerticalModuleTiler",
       "ReorderableBuilding"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
-    thermalConductivity: 0.1,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.1,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 60.0,
+    generator_wattage_rating: 60.0,
     width: 3,
     height: 3,
     invincible: true,
-    highTempWarning: 2273.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
     mass: 500.0,
     deconstructable: true,
     enableable: true
@@ -20764,7 +20568,7 @@ export const db = {
   SuitFabricator: {
     tag: "SuitFabricator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -20810,32 +20614,32 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 18.0,
+    menu_order: 18.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
   SuitLocker: {
     tag: "SuitLocker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -20879,32 +20683,32 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menuOrder: 22.0,
+    menu_order: 22.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
     width: 1,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SuitMarker: {
     tag: "SuitMarker",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "equipment"
     },
     components: [
@@ -20941,32 +20745,32 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [
       "JetSuitBlocker"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "FlipH",
     width: 1,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   SunLamp: {
     tag: "SunLamp",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -21007,37 +20811,37 @@ export const db = {
     smdef: [
       "LightController+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "LightSource"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Glass"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       960.0
     ],
-    externalHeat: 1.0,
-    internalHeat: 4.0,
+    external_heat: 1.0,
+    internal_heat: 4.0,
     width: 2,
     height: 4,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 250.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   SupermaterialRefinery: {
     tag: "SupermaterialRefinery",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -21083,33 +20887,33 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1600.0
     ],
-    internalHeat: 16.0,
+    internal_heat: 16.0,
     width: 4,
     height: 5,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   SweepBotStation: {
     tag: "SweepBotStation",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -21152,32 +20956,32 @@ export const db = {
     smdef: [
       "StorageController+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       240.0
     ],
-    internalHeat: 1.0,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 75.0,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   Switch: {
     tag: "Switch",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -21209,11 +21013,11 @@ export const db = {
       "Toggleable",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -21225,7 +21029,7 @@ export const db = {
   Telephone: {
     tag: "Telephone",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -21268,36 +21072,36 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 0.5,
+    internal_heat: 0.5,
     width: 1,
     height: 2,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   TeleportalPad: {
     tag: "TeleportalPad",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -21333,36 +21137,36 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Special"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1600.0
     ],
-    externalHeat: 16.0,
-    internalHeat: 64.0,
+    external_heat: 16.0,
+    internal_heat: 64.0,
     width: 4,
     height: 4,
     hp: 250,
     mass: 2000.0,
     decor: 30.0,
-    decorRadius: 6.0,
-    primaryElement: "Unobtanium",
+    decor_radius: 6.0,
+    primary_element: "Unobtanium",
     deconstructable: true,
     enableable: true
   },
   TemporalTearOpener: {
     tag: "TemporalTearOpener",
     menu: {
-      category: "Building",
-      subCategory: "Quest"
+      category: "building",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -21399,33 +21203,33 @@ export const db = {
     smdef: [
       "TemporalTearOpener+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Special"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 3,
     height: 4,
     invincible: true,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 15.0,
-    decorRadius: 3.0,
-    primaryElement: "Unobtanium",
+    decor_radius: 3.0,
+    primary_element: "Unobtanium",
     deconstructable: false,
     enableable: true
   },
   ThermalBlock: {
     tag: "ThermalBlock",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "utilities"
     },
     components: [
@@ -21457,13 +21261,13 @@ export const db = {
       "Structure",
       "Toggleable"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Backwall"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "BuildableAny"
     ],
     width: 1,
@@ -21476,7 +21280,7 @@ export const db = {
   Tile: {
     tag: "Tile",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -21504,13 +21308,13 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "FloorTiles"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -21518,18 +21322,18 @@ export const db = {
     hp: 100,
     mass: 200.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   TilePOI: {
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
-    menuOrder: 177013.0,
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    menu_order: 177013.0,
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "BuildableRaw"
     ],
     width: 1,
@@ -21540,7 +21344,7 @@ export const db = {
   TravelTube: {
     tag: "TravelTube",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -21568,11 +21372,11 @@ export const db = {
       "Disinfectable",
       "KAnimGraphTileVisualizer"
     ],
-    menuOrder: 24.0,
+    menu_order: 24.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "NotInTiles",
+    material_category: [
       "Plastic"
     ],
     width: 1,
@@ -21580,13 +21384,13 @@ export const db = {
     hp: 30,
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   TravelTubeEntrance: {
     tag: "TravelTubeEntrance",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -21626,30 +21430,30 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menuOrder: 25.0,
+    menu_order: 25.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       960.0
     ],
     width: 3,
     height: 2,
     hp: 100,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   TravelTubeWallBridge: {
     tag: "TravelTubeWallBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "base"
     },
     components: [
@@ -21682,13 +21486,13 @@ export const db = {
       "TravelTubeUtilityNetworkLink",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 26.0,
+    menu_order: 26.0,
     tags: [
       "TravelTubeBridges"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "Tile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Tile",
+    material_category: [
       "Plastic"
     ],
     rotations: "R90",
@@ -21701,7 +21505,7 @@ export const db = {
   UnderwaterCritterCondo: {
     tag: "UnderwaterCritterCondo",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -21737,29 +21541,29 @@ export const db = {
     smdef: [
       "CritterCondo+Def"
     ],
-    menuOrder: 23.0,
+    menu_order: 23.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Plastic"
     ],
     rotations: "FlipH",
     width: 3,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: 20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true,
     enableable: true
   },
   UraniumCentrifuge: {
     tag: "UraniumCentrifuge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "hep"
     },
     components: [
@@ -21807,35 +21611,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "RefinedMetal",
       "Plastic"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    externalHeat: 0.125,
-    internalHeat: 0.5,
+    external_heat: 0.125,
+    internal_heat: 0.5,
     width: 3,
     height: 4,
     hp: 100,
     mass: 900.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   VerticalWindTunnel: {
     tag: "VerticalWindTunnel",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -21879,35 +21683,35 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 17.0,
+    menu_order: 17.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Plastic"
     ],
-    electrityConsummation: [
+    electrity_consummation: [
       1200.0
     ],
-    internalHeat: 2.0,
+    internal_heat: 2.0,
     width: 5,
     height: 6,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 1200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   WallToilet: {
     tag: "WallToilet",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "plumbing"
     },
     components: [
@@ -21951,33 +21755,33 @@ export const db = {
       "AutoStorageDropper+Def",
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "ToiletType",
       "FlushToiletType"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "WallFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "WallFloor",
+    material_category: [
       "Plastic"
     ],
     rotations: "FlipH",
-    externalHeat: 0.25,
+    external_heat: 0.25,
     width: 1,
     height: 3,
     hp: 30,
     mass: 100.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   WarpConduitReceiver: {
     tag: "WarpConduitReceiver",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -22007,30 +21811,30 @@ export const db = {
       "Toggleable",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Special",
       "Gravitas"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 4,
     height: 3,
     invincible: true,
     mass: 100.0,
-    primaryElement: "Unobtanium",
+    primary_element: "Unobtanium",
     deconstructable: false,
     enableable: true
   },
   WarpConduitSender: {
     tag: "WarpConduitSender",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -22065,29 +21869,29 @@ export const db = {
       "Toggleable",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
       "Special"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 4,
     height: 3,
     invincible: true,
     mass: 400.0,
-    primaryElement: "Unobtanium",
+    primary_element: "Unobtanium",
     deconstructable: false,
     enableable: true
   },
   WashBasin: {
     tag: "WashBasin",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -22125,31 +21929,31 @@ export const db = {
       "Toggleable",
       "CopyBuildingSettings"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "WashStation"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   WashSink: {
     tag: "WashSink",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "medical"
     },
     components: [
@@ -22195,32 +21999,32 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "WashStation",
       "AdvancedWashStation"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 400.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   WaterCooler: {
     tag: "WaterCooler",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "furniture"
     },
     components: [
@@ -22257,13 +22061,13 @@ export const db = {
     smdef: [
       "RocketUsageRestriction+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "RecBuilding"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "BuildableRaw"
     ],
     width: 2,
@@ -22271,14 +22075,14 @@ export const db = {
     hp: 30,
     mass: 400.0,
     decor: 10.0,
-    decorRadius: 2.0,
+    decor_radius: 2.0,
     deconstructable: true,
     enableable: true
   },
   WaterPurifier: {
     tag: "WaterPurifier",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -22328,37 +22132,37 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       120.0
     ],
-    internalHeat: 4.0,
+    internal_heat: 4.0,
     width: 4,
     height: 3,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   WireBridge: {
     tag: "WireBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22388,11 +22192,11 @@ export const db = {
       "WireUtilityNetworkLink",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "WireBridge",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "WireBridge",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
@@ -22401,13 +22205,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   WireBridgeHighWattage: {
     tag: "WireBridgeHighWattage",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22439,13 +22243,13 @@ export const db = {
       "WireUtilityNetworkLink",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "WireBridges"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "HighWattBridgeTile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "HighWattBridgeTile",
+    material_category: [
       "Metal"
     ],
     rotations: "R360",
@@ -22454,13 +22258,13 @@ export const db = {
     hp: 100,
     mass: 200.0,
     decor: -25.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true
   },
   Wire: {
     tag: "Wire",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22488,11 +22292,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -22500,13 +22304,13 @@ export const db = {
     hp: 10,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   HighWattageWire: {
     tag: "HighWattageWire",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22534,11 +22338,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [],
-    thermalConductivity: 0.05,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "NotInTiles",
+    material_category: [
       "Metal"
     ],
     width: 1,
@@ -22546,13 +22350,13 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: -25.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true
   },
   WireRefinedBridge: {
     tag: "WireRefinedBridge",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22582,11 +22386,11 @@ export const db = {
       "WireUtilityNetworkLink",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "WireBridge",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "WireBridge",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -22595,13 +22399,13 @@ export const db = {
     hp: 30,
     mass: 25.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true
   },
   WireRefinedBridgeHighWattage: {
     tag: "WireRefinedBridgeHighWattage",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22633,13 +22437,13 @@ export const db = {
       "WireUtilityNetworkLink",
       "BuildingCellVisualizer"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     tags: [
       "WireBridges"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "HighWattBridgeTile",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "HighWattBridgeTile",
+    material_category: [
       "RefinedMetal"
     ],
     rotations: "R360",
@@ -22648,13 +22452,13 @@ export const db = {
     hp: 100,
     mass: 100.0,
     decor: -25.0,
-    decorRadius: 6.0,
+    decor_radius: 6.0,
     deconstructable: true
   },
   WireRefined: {
     tag: "WireRefined",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22682,11 +22486,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [],
-    thermalConductivity: 0.05,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "Anywhere",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -22698,7 +22502,7 @@ export const db = {
   WireRefinedHighWattage: {
     tag: "WireRefinedHighWattage",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22726,11 +22530,11 @@ export const db = {
       "AutoDisinfectable",
       "Disinfectable"
     ],
-    menuOrder: 14.0,
+    menu_order: 14.0,
     tags: [],
-    thermalConductivity: 0.05,
-    locationRule: "NotInTiles",
-    materialCategory: [
+    thermal_conductivity: 0.05,
+    location_rule: "NotInTiles",
+    material_category: [
       "RefinedMetal"
     ],
     width: 1,
@@ -22738,13 +22542,13 @@ export const db = {
     hp: 10,
     mass: 100.0,
     decor: -20.0,
-    decorRadius: 4.0,
+    decor_radius: 4.0,
     deconstructable: true
   },
   WoodGasGenerator: {
     tag: "WoodGasGenerator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "power"
     },
     components: [
@@ -22788,34 +22592,34 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
-    generatorWattageRating: 300.0,
-    externalHeat: 8.0,
-    internalHeat: 1.0,
+    generator_wattage_rating: 300.0,
+    external_heat: 8.0,
+    internal_heat: 1.0,
     width: 2,
     height: 2,
     hp: 100,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 800.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true
   },
   CreatureAirTrap: {
     tag: "CreatureAirTrap",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -22857,32 +22661,32 @@ export const db = {
       "ReusableTrap+Def",
       "Lure+Def"
     ],
-    menuOrder: 21.0,
+    menu_order: 21.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 50.0,
-    floodThreshold: 0.35,
+    flood_threshold: 0.35,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true,
-    trapCritters: [
+    trap_critters: [
       "Flyer"
     ]
   },
   Desalinator: {
     tag: "Desalinator",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "refining"
     },
     components: [
@@ -22931,35 +22735,35 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "IndustrialMachinery"
     ],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     rotations: "FlipH",
-    electrityConsummation: [
+    electrity_consummation: [
       480.0
     ],
-    internalHeat: 8.0,
+    internal_heat: 8.0,
     width: 4,
     height: 3,
     hp: 30,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -5.0,
-    decorRadius: 1.0,
+    decor_radius: 1.0,
     deconstructable: true,
     enableable: true
   },
   CreatureGroundTrap: {
     tag: "CreatureGroundTrap",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -22998,24 +22802,24 @@ export const db = {
     smdef: [
       "ReusableTrap+Def"
     ],
-    menuOrder: 19.0,
+    menu_order: 19.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "OnFloor",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
       "Metal"
     ],
     width: 2,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true,
-    trapCritters: [
+    trap_critters: [
       "Walker",
       "Hoverer",
       "Swimmer"
@@ -23024,7 +22828,7 @@ export const db = {
   WaterTrap: {
     tag: "WaterTrap",
     menu: {
-      category: "Building",
+      category: "building",
       subCategory: "food"
     },
     components: [
@@ -23067,32 +22871,32 @@ export const db = {
       "ReusableTrap+Def",
       "Lure+Def"
     ],
-    menuOrder: 20.0,
+    menu_order: 20.0,
     tags: [],
-    thermalConductivity: 1.0,
-    locationRule: "Anywhere",
-    materialCategory: [
+    thermal_conductivity: 1.0,
+    location_rule: "Anywhere",
+    material_category: [
       "Metal"
     ],
     width: 1,
     height: 2,
     hp: 10,
-    highTempWarning: 348.15,
-    highTempFatal: 533.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
     mass: 200.0,
     decor: -15.0,
-    decorRadius: 3.0,
+    decor_radius: 3.0,
     deconstructable: true,
     enableable: true,
-    trapCritters: [
+    trap_critters: [
       "Swimmer"
     ]
   },
   AnimForeground: {
     tag: "AnimForeground",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KBatchedAnimController",
@@ -23100,27 +22904,27 @@ export const db = {
       "KBatchedAnimController",
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   CO2Explode: {
     tag: "CO2Explode",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   DebugPlacer: {
     tag: "DebugPlacer",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23128,14 +22932,14 @@ export const db = {
       "KPrefabID",
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   FogOfWarMask: {
     tag: "FogOfWarMask",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "SaveLoadRoot",
@@ -23145,14 +22949,14 @@ export const db = {
       "KPrefabID",
       "FogOfWarMask"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_capture_splash: {
     tag: "fx_capture_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23162,14 +22966,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_dig_splash: {
     tag: "fx_dig_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KBatchedAnimController",
@@ -23177,14 +22981,14 @@ export const db = {
       "KBatchedAnimController",
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_disinfect_splash: {
     tag: "fx_disinfect_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23194,14 +22998,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_harvest_splash: {
     tag: "fx_harvest_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23211,27 +23015,27 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_meteorshower_bg: {
     tag: "fx_meteorshower_bg",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_paint_splash: {
     tag: "fx_paint_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23241,14 +23045,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_powertinker_splash: {
     tag: "fx_powertinker_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23258,14 +23062,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_tend_splash: {
     tag: "fx_tend_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23275,14 +23079,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   fx_whirlpool_splash: {
     tag: "fx_whirlpool_splash",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23292,14 +23096,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   SaveGame: {
     tag: "SaveGame",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "SaveGame",
@@ -23403,14 +23207,14 @@ export const db = {
       "StoryManager",
       "QuestManager"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   Spawner: {
     tag: "Spawner",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -23420,27 +23224,27 @@ export const db = {
       "SaveLoadRoot",
       "Spawner"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   WaterExplode: {
     tag: "WaterExplode",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   Algae: {
     tag: "Algae",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23460,7 +23264,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23471,24 +23275,24 @@ export const db = {
       "Solid",
       "Organics"
     ],
-    molarMass: 4.0,
+    molar_mass: 4.0,
     hardness: 2.0,
     shc: 0.2,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Algae",
+    decor_radius: 1.0,
+    primary_element: "Algae",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   BleachStone: {
     tag: "BleachStone",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23509,7 +23313,7 @@ export const db = {
       "KCircleCollider2D",
       "Sublimates"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23520,24 +23324,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 43.0,
+    molar_mass: 43.0,
     hardness: 50.0,
     shc: 0.5,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.73,
-    thermalConductivity: 4.0,
+    radiation_absorption_factor: 0.73,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "BleachStone",
+    decor_radius: 1.0,
+    primary_element: "BleachStone",
     clearable: true,
-    defaultMass: 50.0
+    default_mass: 50.0
   },
   DirtyWater: {
     tag: "DirtyWater",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -23560,7 +23364,7 @@ export const db = {
       "SubstanceChunk",
       "Sublimates"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23571,27 +23375,27 @@ export const db = {
       "AnyWater",
       "Liquid"
     ],
-    molarMass: 20.0,
+    molar_mass: 20.0,
     shc: 4.179,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 125.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 0.58,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 0.58,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "DirtyWater",
+    decor_radius: 1.0,
+    primary_element: "DirtyWater",
     clearable: true,
-    lightAbsorption: 0.7,
-    defaultMass: 1000.0
+    light_absorption: 0.7,
+    default_mass: 1000.0
   },
   NuclearWaste: {
     tag: "NuclearWaste",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -23614,7 +23418,7 @@ export const db = {
       "SubstanceChunk",
       "Sublimates"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Space Out"
     ],
@@ -23622,27 +23426,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     shc: 7.44,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 25.0,
-    minVerticalFlow: 1.0,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 6.0,
+    min_horizontal_flow: 25.0,
+    min_vertical_flow: 1.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 6.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "NuclearWaste",
+    decor_radius: 1.0,
+    primary_element: "NuclearWaste",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 500.0
+    light_absorption: 1.0,
+    default_mass: 500.0
   },
   OxyRock: {
     tag: "OxyRock",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23663,7 +23467,7 @@ export const db = {
       "KCircleCollider2D",
       "Sublimates"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23675,24 +23479,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 43.0,
+    molar_mass: 43.0,
     hardness: 10.0,
     shc: 1.0,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.82,
-    thermalConductivity: 4.0,
+    radiation_absorption_factor: 0.82,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "OxyRock",
+    decor_radius: 1.0,
+    primary_element: "OxyRock",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   SlimeMold: {
     tag: "SlimeMold",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23713,7 +23517,7 @@ export const db = {
       "KCircleCollider2D",
       "Sublimates"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23724,24 +23528,24 @@ export const db = {
       "Solid",
       "Organics"
     ],
-    molarMass: 4.0,
+    molar_mass: 4.0,
     hardness: 2.0,
     shc: 0.2,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SlimeMold",
+    decor_radius: 1.0,
+    primary_element: "SlimeMold",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   ToxicSand: {
     tag: "ToxicSand",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23762,7 +23566,7 @@ export const db = {
       "KCircleCollider2D",
       "Sublimates"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23773,25 +23577,25 @@ export const db = {
       "Solid",
       "Organics"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 10.0,
     shc: 0.83,
     strength: 0.25,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "ToxicSand",
+    decor_radius: 1.0,
+    primary_element: "ToxicSand",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   CrushedIce: {
     tag: "CrushedIce",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23811,7 +23615,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23822,25 +23626,25 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     hardness: 10.0,
     shc: 2.05,
     strength: 0.4,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.18,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.18,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "CrushedIce",
+    decor_radius: 1.0,
+    primary_element: "CrushedIce",
     clearable: true,
-    defaultMass: 10.0
+    default_mass: 10.0
   },
   Diamond: {
     tag: "Diamond",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23860,7 +23664,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23873,24 +23677,24 @@ export const db = {
       "Solid",
       "Other"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     hardness: 250.0,
     shc: 0.516,
     strength: 2.5,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 80.0,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 80.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Diamond",
+    decor_radius: 1.0,
+    primary_element: "Diamond",
     clearable: true,
-    defaultMass: 700.0
+    default_mass: 700.0
   },
   Isoresin: {
     tag: "Isoresin",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23910,7 +23714,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     dlc: [
       "Base",
       "Space Out"
@@ -23921,24 +23725,24 @@ export const db = {
       "Solid",
       "RareMaterials"
     ],
-    molarMass: 162.14,
+    molar_mass: 162.14,
     hardness: 10.0,
     shc: 1.3,
     strength: 0.4,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.17,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.17,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Isoresin",
+    decor_radius: 1.0,
+    primary_element: "Isoresin",
     clearable: true,
-    defaultMass: 30.0
+    default_mass: 30.0
   },
   Sucrose: {
     tag: "Sucrose",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -23958,7 +23762,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Space Out"
     ],
@@ -23967,24 +23771,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 342.3,
+    molar_mass: 342.3,
     hardness: 5.0,
     shc: 1.255,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 0.15,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 0.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Sucrose",
+    decor_radius: 1.0,
+    primary_element: "Sucrose",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   MilkFat: {
     tag: "MilkFat",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24004,7 +23808,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24014,24 +23818,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 42.08,
+    molar_mass: 42.08,
     hardness: 1.0,
     shc: 1.92,
     strength: 0.4,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 0.15,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 0.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MilkFat",
+    decor_radius: 1.0,
+    primary_element: "MilkFat",
     clearable: true,
-    defaultMass: 913.0
+    default_mass: 913.0
   },
   Niobium: {
     tag: "Niobium",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24051,7 +23855,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24064,24 +23868,24 @@ export const db = {
       "Solid",
       "RareMaterials"
     ],
-    molarMass: 92.9,
+    molar_mass: 92.9,
     hardness: 50.0,
     shc: 0.265,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.49,
-    thermalConductivity: 54.0,
+    radiation_absorption_factor: 0.49,
+    thermal_conductivity: 54.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Niobium",
+    decor_radius: 1.0,
+    primary_element: "Niobium",
     clearable: true,
-    defaultMass: 30.0
+    default_mass: 30.0
   },
   MilkIce: {
     tag: "MilkIce",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24101,7 +23905,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24112,24 +23916,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     hardness: 25.0,
     shc: 3.4,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.18,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.18,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MilkIce",
+    decor_radius: 1.0,
+    primary_element: "MilkIce",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Cuprite: {
     tag: "Cuprite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24149,7 +23953,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24161,24 +23965,24 @@ export const db = {
       "Solid",
       "Metal"
     ],
-    molarMass: 143.09,
+    molar_mass: 143.09,
     hardness: 25.0,
     shc: 0.386,
     strength: 0.7,
-    radiationAbsorptionFactor: 0.56,
-    thermalConductivity: 4.5,
+    radiation_absorption_factor: 0.56,
+    thermal_conductivity: 4.5,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Cuprite",
+    decor_radius: 1.0,
+    primary_element: "Cuprite",
     clearable: true,
-    defaultMass: 800.0
+    default_mass: 800.0
   },
   Copper: {
     tag: "Copper",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24198,7 +24002,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24209,24 +24013,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 63.546,
+    molar_mass: 63.546,
     hardness: 25.0,
     shc: 0.385,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.61,
-    thermalConductivity: 60.0,
+    radiation_absorption_factor: 0.61,
+    thermal_conductivity: 60.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Copper",
+    decor_radius: 1.0,
+    primary_element: "Copper",
     clearable: true,
-    defaultMass: 900.0
+    default_mass: 900.0
   },
   SuperInsulator: {
     tag: "SuperInsulator",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24246,7 +24050,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24261,24 +24065,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 341.76,
+    molar_mass: 341.76,
     hardness: 200.0,
     shc: 5.57,
     strength: 2.0,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 1E-05,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 1E-05,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SuperInsulator",
+    decor_radius: 1.0,
+    primary_element: "SuperInsulator",
     clearable: true,
-    defaultMass: 900.0
+    default_mass: 900.0
   },
   BrineIce: {
     tag: "BrineIce",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24298,7 +24102,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24309,24 +24113,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     hardness: 25.0,
     shc: 3.4,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.18,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.18,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "BrineIce",
+    decor_radius: 1.0,
+    primary_element: "BrineIce",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   SolidViscoGel: {
     tag: "SolidViscoGel",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24346,7 +24150,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24356,24 +24160,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 95.0,
+    molar_mass: 95.0,
     hardness: 2.0,
     shc: 1.55,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 0.45,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 0.45,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidViscoGel",
+    decor_radius: 1.0,
+    primary_element: "SolidViscoGel",
     clearable: true,
-    defaultMass: 100.0
+    default_mass: 100.0
   },
   Ceramic: {
     tag: "Ceramic",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24393,7 +24197,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24407,24 +24211,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 25.0,
+    molar_mass: 25.0,
     hardness: 50.0,
     shc: 0.84,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 0.62,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 0.62,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Ceramic",
+    decor_radius: 1.0,
+    primary_element: "Ceramic",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Cobaltite: {
     tag: "Cobaltite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24444,7 +24248,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Space Out"
     ],
@@ -24455,24 +24259,24 @@ export const db = {
       "Solid",
       "Metal"
     ],
-    molarMass: 165.9,
+    molar_mass: 165.9,
     hardness: 25.0,
     shc: 0.42,
     strength: 0.9,
-    radiationAbsorptionFactor: 0.58,
-    thermalConductivity: 4.0,
+    radiation_absorption_factor: 0.58,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Cobaltite",
+    decor_radius: 1.0,
+    primary_element: "Cobaltite",
     clearable: true,
-    defaultMass: 1250.0
+    default_mass: 1250.0
   },
   Fertilizer: {
     tag: "Fertilizer",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24492,7 +24296,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24503,24 +24307,24 @@ export const db = {
       "Solid",
       "Agriculture"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 2.0,
     shc: 0.83,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Fertilizer",
+    decor_radius: 1.0,
+    primary_element: "Fertilizer",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   SolidCrudeOil: {
     tag: "SolidCrudeOil",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24540,7 +24344,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24549,24 +24353,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 500.0,
+    molar_mass: 500.0,
     hardness: 2.0,
     shc: 1.69,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidCrudeOil",
+    decor_radius: 1.0,
+    primary_element: "SolidCrudeOil",
     clearable: true,
-    defaultMass: 870.0
+    default_mass: 870.0
   },
   Wolframite: {
     tag: "Wolframite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24586,7 +24390,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24598,24 +24402,24 @@ export const db = {
       "Solid",
       "Metal"
     ],
-    molarMass: 150.0,
+    molar_mass: 150.0,
     hardness: 150.0,
     shc: 0.134,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 15.0,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 15.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Wolframite",
+    decor_radius: 1.0,
+    primary_element: "Wolframite",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   Polypropylene: {
     tag: "Polypropylene",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24635,7 +24439,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24648,24 +24452,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 42.08,
+    molar_mass: 42.08,
     hardness: 1.0,
     shc: 1.92,
     strength: 0.4,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 0.15,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 0.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Polypropylene",
+    decor_radius: 1.0,
+    primary_element: "Polypropylene",
     clearable: true,
-    defaultMass: 913.0
+    default_mass: 913.0
   },
   SolidNaphtha: {
     tag: "SolidNaphtha",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24685,7 +24489,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24694,24 +24498,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 102.2,
+    molar_mass: 102.2,
     hardness: 2.0,
     shc: 2.191,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 0.2,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 0.2,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidNaphtha",
+    decor_radius: 1.0,
+    primary_element: "SolidNaphtha",
     clearable: true,
-    defaultMass: 740.0
+    default_mass: 740.0
   },
   Tungsten: {
     tag: "Tungsten",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24731,7 +24535,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24743,24 +24547,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 183.84,
+    molar_mass: 183.84,
     hardness: 200.0,
     shc: 0.134,
     strength: 0.9,
-    radiationAbsorptionFactor: 0.35,
-    thermalConductivity: 60.0,
+    radiation_absorption_factor: 0.35,
+    thermal_conductivity: 60.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Tungsten",
+    decor_radius: 1.0,
+    primary_element: "Tungsten",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   RefinedCarbon: {
     tag: "RefinedCarbon",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24780,7 +24584,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24791,24 +24595,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     hardness: 2.0,
     shc: 1.74,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.84,
-    thermalConductivity: 3.1,
+    radiation_absorption_factor: 0.84,
+    thermal_conductivity: 3.1,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "RefinedCarbon",
+    decor_radius: 1.0,
+    primary_element: "RefinedCarbon",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   Steel: {
     tag: "Steel",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24828,7 +24632,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24841,24 +24645,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 54.97,
+    molar_mass: 54.97,
     hardness: 50.0,
     shc: 0.49,
     strength: 2.0,
-    radiationAbsorptionFactor: 0.74,
-    thermalConductivity: 54.0,
+    radiation_absorption_factor: 0.74,
+    thermal_conductivity: 54.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel",
+    decor_radius: 1.0,
+    primary_element: "Steel",
     clearable: true,
-    defaultMass: 400.0
+    default_mass: 400.0
   },
   Phosphorite: {
     tag: "Phosphorite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24878,7 +24682,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24889,24 +24693,24 @@ export const db = {
       "Solid",
       "Agriculture"
     ],
-    molarMass: 95.61,
+    molar_mass: 95.61,
     hardness: 25.0,
     shc: 0.15,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Phosphorite",
+    decor_radius: 1.0,
+    primary_element: "Phosphorite",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   SolidHydrogen: {
     tag: "SolidHydrogen",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24926,7 +24730,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24935,24 +24739,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 44.1,
+    molar_mass: 44.1,
     hardness: 2.0,
     shc: 2.4,
     strength: 0.25,
-    radiationAbsorptionFactor: 0.9,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.9,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidHydrogen",
+    decor_radius: 1.0,
+    primary_element: "SolidHydrogen",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   Lead: {
     tag: "Lead",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -24972,7 +24776,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Base",
       "Space Out"
@@ -24983,24 +24787,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 55.845,
+    molar_mass: 55.845,
     hardness: 10.0,
     shc: 0.128,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 35.0,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 35.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Lead",
+    decor_radius: 1.0,
+    primary_element: "Lead",
     clearable: true,
-    defaultMass: 2000.0
+    default_mass: 2000.0
   },
   Sulfur: {
     tag: "Sulfur",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25020,7 +24824,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25030,24 +24834,24 @@ export const db = {
       "Solid",
       "Other"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 5.0,
     shc: 0.7,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.74,
-    thermalConductivity: 0.2,
+    radiation_absorption_factor: 0.74,
+    thermal_conductivity: 0.2,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Sulfur",
+    decor_radius: 1.0,
+    primary_element: "Sulfur",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   Lime: {
     tag: "Lime",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25067,7 +24871,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25077,24 +24881,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 200.0,
+    molar_mass: 200.0,
     hardness: 50.0,
     shc: 0.834,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Lime",
+    decor_radius: 1.0,
+    primary_element: "Lime",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   SolidChlorine: {
     tag: "SolidChlorine",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25114,7 +24918,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25123,24 +24927,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 34.453,
+    molar_mass: 34.453,
     hardness: 25.0,
     shc: 0.48,
     strength: 0.5,
-    radiationAbsorptionFactor: 0.73,
-    thermalConductivity: 0.75,
+    radiation_absorption_factor: 0.73,
+    thermal_conductivity: 0.75,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidChlorine",
+    decor_radius: 1.0,
+    primary_element: "SolidChlorine",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   SolidNuclearWaste: {
     tag: "SolidNuclearWaste",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25160,7 +24964,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     dlc: [
       "Space Out"
     ],
@@ -25170,23 +24974,23 @@ export const db = {
       "Solid",
       "Other"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     hardness: 0.0,
     shc: 7.44,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 6.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 6.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidNuclearWaste",
+    decor_radius: 1.0,
+    primary_element: "SolidNuclearWaste",
     clearable: true,
-    defaultMass: 1840.0
+    default_mass: 1840.0
   },
   Obsidian: {
     tag: "Obsidian",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25206,7 +25010,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25220,24 +25024,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 200.0,
     shc: 0.2,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Obsidian",
+    decor_radius: 1.0,
+    primary_element: "Obsidian",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   SolidPetroleum: {
     tag: "SolidPetroleum",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25257,7 +25061,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25266,24 +25070,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 82.2,
+    molar_mass: 82.2,
     hardness: 2.0,
     shc: 1.76,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidPetroleum",
+    decor_radius: 1.0,
+    primary_element: "SolidPetroleum",
     clearable: true,
-    defaultMass: 740.0
+    default_mass: 740.0
   },
   SolidSuperCoolant: {
     tag: "SolidSuperCoolant",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25303,7 +25107,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25312,24 +25116,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 250.0,
+    molar_mass: 250.0,
     hardness: 2.0,
     shc: 8.44,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 9.46,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 9.46,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidSuperCoolant",
+    decor_radius: 1.0,
+    primary_element: "SolidSuperCoolant",
     clearable: true,
-    defaultMass: 740.0
+    default_mass: 740.0
   },
   IgneousRock: {
     tag: "IgneousRock",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25349,7 +25153,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25362,24 +25166,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 25.0,
     shc: 1.0,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "IgneousRock",
+    decor_radius: 1.0,
+    primary_element: "IgneousRock",
     clearable: true,
-    defaultMass: 1840.0
+    default_mass: 1840.0
   },
   EnrichedUranium: {
     tag: "EnrichedUranium",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25399,7 +25203,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     dlc: [
       "Space Out"
     ],
@@ -25408,24 +25212,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 120.0,
+    molar_mass: 120.0,
     hardness: 250.0,
     shc: 1.0,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 20.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 20.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "EnrichedUranium",
+    decor_radius: 1.0,
+    primary_element: "EnrichedUranium",
     clearable: true,
-    defaultMass: 100.0
+    default_mass: 100.0
   },
   Gold: {
     tag: "Gold",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25445,7 +25249,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25456,24 +25260,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     hardness: 2.0,
     shc: 0.129,
     strength: 0.7,
-    radiationAbsorptionFactor: 0.35,
-    thermalConductivity: 60.0,
+    radiation_absorption_factor: 0.35,
+    thermal_conductivity: 60.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Gold",
+    decor_radius: 1.0,
+    primary_element: "Gold",
     clearable: true,
-    defaultMass: 870.0
+    default_mass: 870.0
   },
   Rust: {
     tag: "Rust",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25493,7 +25297,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25503,24 +25307,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 159.6882,
+    molar_mass: 159.6882,
     hardness: 25.0,
     shc: 0.449,
     strength: 0.9,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 4.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Rust",
+    decor_radius: 1.0,
+    primary_element: "Rust",
     clearable: true,
-    defaultMass: 800.0
+    default_mass: 800.0
   },
   Corium: {
     tag: "Corium",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25540,7 +25344,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     dlc: [
       "Space Out"
     ],
@@ -25549,24 +25353,24 @@ export const db = {
       "Solid",
       "Other"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     hardness: 251.0,
     shc: 7.44,
     strength: 0.45,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 6.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 6.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Corium",
+    decor_radius: 1.0,
+    primary_element: "Corium",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   Phosphorus: {
     tag: "Phosphorus",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25586,7 +25390,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25597,24 +25401,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 30.9737625,
+    molar_mass: 30.9737625,
     hardness: 0.0,
     shc: 0.7697,
     strength: 0.85,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.236,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.236,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Phosphorus",
+    decor_radius: 1.0,
+    primary_element: "Phosphorus",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   Granite: {
     tag: "Granite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25634,7 +25438,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25648,24 +25452,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 80.0,
     shc: 0.79,
     strength: 1.5,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 3.39,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 3.39,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite",
+    decor_radius: 1.0,
+    primary_element: "Granite",
     clearable: true,
-    defaultMass: 1840.0
+    default_mass: 1840.0
   },
   SolidCarbonDioxide: {
     tag: "SolidCarbonDioxide",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25685,7 +25489,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25694,24 +25498,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 44.01,
+    molar_mass: 44.01,
     hardness: 2.0,
     shc: 0.846,
     strength: 0.6,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 1.46,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 1.46,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidCarbonDioxide",
+    decor_radius: 1.0,
+    primary_element: "SolidCarbonDioxide",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   Cobalt: {
     tag: "Cobalt",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25731,7 +25535,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Space Out"
     ],
@@ -25741,24 +25545,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 58.9,
+    molar_mass: 58.9,
     hardness: 75.0,
     shc: 0.42,
     strength: 0.9,
-    radiationAbsorptionFactor: 0.63,
-    thermalConductivity: 100.0,
+    radiation_absorption_factor: 0.63,
+    thermal_conductivity: 100.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Cobalt",
+    decor_radius: 1.0,
+    primary_element: "Cobalt",
     clearable: true,
-    defaultMass: 800.0
+    default_mass: 800.0
   },
   UraniumOre: {
     tag: "UraniumOre",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25778,7 +25582,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Space Out"
     ],
@@ -25789,24 +25593,24 @@ export const db = {
       "Noncrushable",
       "Solid"
     ],
-    molarMass: 120.0,
+    molar_mass: 120.0,
     hardness: 150.0,
     shc: 1.0,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 20.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 20.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "UraniumOre",
+    decor_radius: 1.0,
+    primary_element: "UraniumOre",
     clearable: true,
-    defaultMass: 100.0
+    default_mass: 100.0
   },
   AluminumOre: {
     tag: "AluminumOre",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25826,7 +25630,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25838,24 +25642,24 @@ export const db = {
       "Solid",
       "Metal"
     ],
-    molarMass: 143.09,
+    molar_mass: 143.09,
     hardness: 25.0,
     shc: 0.91,
     strength: 0.7,
-    radiationAbsorptionFactor: 0.72,
-    thermalConductivity: 20.5,
+    radiation_absorption_factor: 0.72,
+    thermal_conductivity: 20.5,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "AluminumOre",
+    decor_radius: 1.0,
+    primary_element: "AluminumOre",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   SedimentaryRock: {
     tag: "SedimentaryRock",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25875,7 +25679,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25888,24 +25692,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 2.0,
     shc: 0.2,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SedimentaryRock",
+    decor_radius: 1.0,
+    primary_element: "SedimentaryRock",
     clearable: true,
-    defaultMass: 1840.0
+    default_mass: 1840.0
   },
   Fullerene: {
     tag: "Fullerene",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25925,7 +25729,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25935,24 +25739,24 @@ export const db = {
       "Solid",
       "RareMaterials"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     hardness: 250.0,
     shc: 0.95,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 50.0,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 50.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Fullerene",
+    decor_radius: 1.0,
+    primary_element: "Fullerene",
     clearable: true,
-    defaultMass: 30.0
+    default_mass: 30.0
   },
   GoldAmalgam: {
     tag: "GoldAmalgam",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -25972,7 +25776,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -25984,24 +25788,24 @@ export const db = {
       "Solid",
       "Metal"
     ],
-    molarMass: 95.61,
+    molar_mass: 95.61,
     hardness: 2.0,
     shc: 0.15,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "GoldAmalgam",
+    decor_radius: 1.0,
+    primary_element: "GoldAmalgam",
     clearable: true,
-    defaultMass: 800.0
+    default_mass: 800.0
   },
   Salt: {
     tag: "Salt",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26021,7 +25825,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26031,24 +25835,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 5.0,
     shc: 0.7,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.444,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.444,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Salt",
+    decor_radius: 1.0,
+    primary_element: "Salt",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   Sand: {
     tag: "Sand",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26068,7 +25872,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 3.5,
+    menu_order: 3.5,
     dlc: [
       "Base",
       "Space Out"
@@ -26079,25 +25883,25 @@ export const db = {
       "Solid",
       "Filter"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 10.0,
     shc: 0.83,
     strength: 0.25,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Sand",
+    decor_radius: 1.0,
+    primary_element: "Sand",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Snow: {
     tag: "Snow",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26117,7 +25921,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26128,25 +25932,25 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     hardness: 10.0,
     shc: 2.05,
     strength: 0.3,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 0.545,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 0.545,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Snow",
+    decor_radius: 1.0,
+    primary_element: "Snow",
     clearable: true,
-    defaultMass: 10.0
+    default_mass: 10.0
   },
   SandStone: {
     tag: "SandStone",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26166,7 +25970,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26179,24 +25983,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 10.0,
     shc: 0.8,
     strength: 0.5,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.9,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.9,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SandStone",
+    decor_radius: 1.0,
+    primary_element: "SandStone",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Glass: {
     tag: "Glass",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26216,7 +26020,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26228,24 +26032,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 25.0,
+    molar_mass: 25.0,
     hardness: 10.0,
     shc: 0.84,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 1.11,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 1.11,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Glass",
+    decor_radius: 1.0,
+    primary_element: "Glass",
     clearable: true,
-    defaultMass: 800.0
+    default_mass: 800.0
   },
   Clay: {
     tag: "Clay",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26265,7 +26069,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26276,24 +26080,24 @@ export const db = {
       "Solid",
       "Farmable"
     ],
-    molarMass: 200.0,
+    molar_mass: 200.0,
     hardness: 5.0,
     shc: 0.92,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Clay",
+    decor_radius: 1.0,
+    primary_element: "Clay",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Ice: {
     tag: "Ice",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26313,7 +26117,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26324,24 +26128,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     hardness: 25.0,
     shc: 2.05,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.18,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.18,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Ice",
+    decor_radius: 1.0,
+    primary_element: "Ice",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Graphite: {
     tag: "Graphite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26361,7 +26165,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Space Out"
     ],
@@ -26370,24 +26174,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     hardness: 0.0,
     shc: 0.71,
     strength: 0.1,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 8.0,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 8.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Graphite",
+    decor_radius: 1.0,
+    primary_element: "Graphite",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   ToxicMud: {
     tag: "ToxicMud",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26407,7 +26211,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     dlc: [
       "Space Out"
     ],
@@ -26417,25 +26221,25 @@ export const db = {
       "Solid",
       "Organics"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 10.0,
     shc: 0.83,
     strength: 0.25,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "ToxicMud",
+    decor_radius: 1.0,
+    primary_element: "ToxicMud",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Mud: {
     tag: "Mud",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26455,7 +26259,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     dlc: [
       "Space Out"
     ],
@@ -26465,25 +26269,25 @@ export const db = {
       "Solid",
       "Organics"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 10.0,
     shc: 0.83,
     strength: 0.25,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Mud",
+    decor_radius: 1.0,
+    primary_element: "Mud",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Carbon: {
     tag: "Carbon",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26503,7 +26307,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26515,24 +26319,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     hardness: 2.0,
     shc: 0.71,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.84,
-    thermalConductivity: 1.25,
+    radiation_absorption_factor: 0.84,
+    thermal_conductivity: 1.25,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Carbon",
+    decor_radius: 1.0,
+    primary_element: "Carbon",
     clearable: true,
-    defaultMass: 600.0
+    default_mass: 600.0
   },
   SolidOxygen: {
     tag: "SolidOxygen",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26552,7 +26356,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26561,24 +26365,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 2.0,
     shc: 1.01,
     strength: 0.5,
-    radiationAbsorptionFactor: 0.82,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.82,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidOxygen",
+    decor_radius: 1.0,
+    primary_element: "SolidOxygen",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   Creature: {
     tag: "Creature",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26598,7 +26402,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26607,24 +26411,24 @@ export const db = {
       "PedestalDisplayable",
       "Solid"
     ],
-    molarMass: 25.0,
+    molar_mass: 25.0,
     hardness: 10.0,
     shc: 3.47,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.25,
-    thermalConductivity: 0.6,
+    radiation_absorption_factor: 0.25,
+    thermal_conductivity: 0.6,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     clearable: true,
-    defaultMass: 40.0
+    default_mass: 40.0
   },
   DepletedUranium: {
     tag: "DepletedUranium",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26644,7 +26448,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Space Out"
     ],
@@ -26654,24 +26458,24 @@ export const db = {
       "RefinedMetal",
       "Solid"
     ],
-    molarMass: 120.0,
+    molar_mass: 120.0,
     hardness: 250.0,
     shc: 1.0,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 20.0,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 20.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "DepletedUranium",
+    decor_radius: 1.0,
+    primary_element: "DepletedUranium",
     clearable: true,
-    defaultMass: 100.0
+    default_mass: 100.0
   },
   Katairite: {
     tag: "Katairite",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26691,7 +26495,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26701,24 +26505,24 @@ export const db = {
       "Solid",
       "Other"
     ],
-    molarMass: 341.76,
+    molar_mass: 341.76,
     hardness: 150.0,
     shc: 4.0,
     strength: 2.0,
-    radiationAbsorptionFactor: 0.9,
-    thermalConductivity: 1E-05,
+    radiation_absorption_factor: 0.9,
+    thermal_conductivity: 1E-05,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Katairite",
+    decor_radius: 1.0,
+    primary_element: "Katairite",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   SolidMethane: {
     tag: "SolidMethane",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26738,7 +26542,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26747,24 +26551,24 @@ export const db = {
       "Solid",
       "ConsumableOre"
     ],
-    molarMass: 16.044,
+    molar_mass: 16.044,
     hardness: 2.0,
     shc: 2.191,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.03,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.03,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidMethane",
+    decor_radius: 1.0,
+    primary_element: "SolidMethane",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   HardPolypropylene: {
     tag: "HardPolypropylene",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26784,7 +26588,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26797,24 +26601,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 100.016,
+    molar_mass: 100.016,
     hardness: 1.0,
     shc: 1.5,
     strength: 0.4,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 0.25,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 0.25,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "HardPolypropylene",
+    decor_radius: 1.0,
+    primary_element: "HardPolypropylene",
     clearable: true,
-    defaultMass: 913.0
+    default_mass: 913.0
   },
   MaficRock: {
     tag: "MaficRock",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26834,7 +26638,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26845,24 +26649,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 2.0,
     shc: 0.2,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MaficRock",
+    decor_radius: 1.0,
+    primary_element: "MaficRock",
     clearable: true,
-    defaultMass: 1840.0
+    default_mass: 1840.0
   },
   Iron: {
     tag: "Iron",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26882,7 +26686,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Base",
       "Space Out"
@@ -26893,24 +26697,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 55.845,
+    molar_mass: 55.845,
     hardness: 50.0,
     shc: 0.449,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.66,
-    thermalConductivity: 55.0,
+    radiation_absorption_factor: 0.66,
+    thermal_conductivity: 55.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Iron",
+    decor_radius: 1.0,
+    primary_element: "Iron",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   Regolith: {
     tag: "Regolith",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26930,7 +26734,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 3.5,
+    menu_order: 3.5,
     dlc: [
       "Base",
       "Space Out"
@@ -26941,25 +26745,25 @@ export const db = {
       "Solid",
       "Filter"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 2.0,
     shc: 0.2,
     strength: 0.5,
-    minHorizontalFlow: 50.0,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 1.0,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Regolith",
+    decor_radius: 1.0,
+    primary_element: "Regolith",
     clearable: true,
-    defaultMass: 1000.0
+    default_mass: 1000.0
   },
   SolidResin: {
     tag: "SolidResin",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -26979,7 +26783,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     dlc: [
       "Space Out"
     ],
@@ -26987,24 +26791,24 @@ export const db = {
       "Solid",
       "Organics"
     ],
-    molarMass: 52.5,
+    molar_mass: 52.5,
     hardness: 10.0,
     shc: 1.3,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.17,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.17,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidResin",
+    decor_radius: 1.0,
+    primary_element: "SolidResin",
     clearable: true,
-    defaultMass: 30.0
+    default_mass: 30.0
   },
   TempConductorSolid: {
     tag: "TempConductorSolid",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27024,7 +26828,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27038,24 +26842,24 @@ export const db = {
       "Solid",
       "ManufacturedMaterial"
     ],
-    molarMass: 174.35,
+    molar_mass: 174.35,
     hardness: 80.0,
     shc: 0.622,
     strength: 0.8,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 220.0,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 220.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "TempConductorSolid",
+    decor_radius: 1.0,
+    primary_element: "TempConductorSolid",
     clearable: true,
-    defaultMass: 900.0
+    default_mass: 900.0
   },
   IronOre: {
     tag: "IronOre",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27075,7 +26879,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27087,24 +26891,24 @@ export const db = {
       "Solid",
       "Metal"
     ],
-    molarMass: 159.6882,
+    molar_mass: 159.6882,
     hardness: 25.0,
     shc: 0.449,
     strength: 0.9,
-    radiationAbsorptionFactor: 0.61,
-    thermalConductivity: 4.0,
+    radiation_absorption_factor: 0.61,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "IronOre",
+    decor_radius: 1.0,
+    primary_element: "IronOre",
     clearable: true,
-    defaultMass: 800.0
+    default_mass: 800.0
   },
   Dirt: {
     tag: "Dirt",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27124,7 +26928,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27135,24 +26939,24 @@ export const db = {
       "Solid",
       "Farmable"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     hardness: 2.0,
     shc: 1.48,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Dirt",
+    decor_radius: 1.0,
+    primary_element: "Dirt",
     clearable: true,
-    defaultMass: 1840.0
+    default_mass: 1840.0
   },
   DirtyIce: {
     tag: "DirtyIce",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27172,7 +26976,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27184,24 +26988,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 25.0,
+    molar_mass: 25.0,
     hardness: 10.0,
     shc: 3.05,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "DirtyIce",
+    decor_radius: 1.0,
+    primary_element: "DirtyIce",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   Fossil: {
     tag: "Fossil",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27221,7 +27025,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27231,24 +27035,24 @@ export const db = {
       "Solid",
       "BuildableRaw"
     ],
-    molarMass: 200.0,
+    molar_mass: 200.0,
     hardness: 50.0,
     shc: 0.91,
     strength: 0.2,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 2.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Fossil",
+    decor_radius: 1.0,
+    primary_element: "Fossil",
     clearable: true,
-    defaultMass: 500.0
+    default_mass: 500.0
   },
   Unobtanium: {
     tag: "Unobtanium",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27268,7 +27072,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27278,23 +27082,23 @@ export const db = {
       "Solid",
       "Special"
     ],
-    molarMass: 10000.0,
+    molar_mass: 10000.0,
     hardness: 255.0,
     shc: 0.0,
-    radiationAbsorptionFactor: 0.9,
-    thermalConductivity: 0.0,
+    radiation_absorption_factor: 0.9,
+    thermal_conductivity: 0.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium",
+    decor_radius: 1.0,
+    primary_element: "Unobtanium",
     clearable: true,
-    defaultMass: 20000.0
+    default_mass: 20000.0
   },
   SolidEthanol: {
     tag: "SolidEthanol",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27314,7 +27118,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27325,24 +27129,24 @@ export const db = {
       "Solid",
       "Liquifiable"
     ],
-    molarMass: 46.07,
+    molar_mass: 46.07,
     hardness: 250.0,
     shc: 2.46,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 20.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 20.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SolidEthanol",
+    decor_radius: 1.0,
+    primary_element: "SolidEthanol",
     clearable: true,
-    defaultMass: 100.0
+    default_mass: 100.0
   },
   Aluminum: {
     tag: "Aluminum",
     menu: {
-      category: "Element",
-      subCategory: "Solid"
+      category: "element",
+      subCategory: "solid"
     },
     components: [
       "KPrefabID",
@@ -27362,7 +27166,7 @@ export const db = {
       "ElementChunk",
       "KCircleCollider2D"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27373,24 +27177,24 @@ export const db = {
       "Solid",
       "RefinedMetal"
     ],
-    molarMass: 55.845,
+    molar_mass: 55.845,
     hardness: 25.0,
     shc: 0.91,
     strength: 1.0,
-    radiationAbsorptionFactor: 0.77,
-    thermalConductivity: 205.0,
+    radiation_absorption_factor: 0.77,
+    thermal_conductivity: 205.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Aluminum",
+    decor_radius: 1.0,
+    primary_element: "Aluminum",
     clearable: true,
-    defaultMass: 200.0
+    default_mass: 200.0
   },
   LiquidOxygen: {
     tag: "LiquidOxygen",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27412,7 +27216,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27421,27 +27225,27 @@ export const db = {
       "Oxidizer",
       "Liquid"
     ],
-    molarMass: 15.9994,
+    molar_mass: 15.9994,
     shc: 1.01,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 200.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.82,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.82,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LiquidOxygen",
+    decor_radius: 1.0,
+    primary_element: "LiquidOxygen",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 300.0
+    light_absorption: 1.0,
+    default_mass: 300.0
   },
   ViscoGel: {
     tag: "ViscoGel",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27463,7 +27267,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27472,27 +27276,27 @@ export const db = {
       "PedestalDisplayable",
       "Liquid"
     ],
-    molarMass: 10.0,
+    molar_mass: 10.0,
     shc: 1.55,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 1.0,
-    minHorizontalFlow: 10.0,
-    minVerticalFlow: 10.0,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 0.45,
+    min_horizontal_flow: 10.0,
+    min_vertical_flow: 10.0,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 0.45,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "ViscoGel",
+    decor_radius: 1.0,
+    primary_element: "ViscoGel",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 100.0
+    light_absorption: 0.1,
+    default_mass: 100.0
   },
   MoltenAluminum: {
     tag: "MoltenAluminum",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27514,7 +27318,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27525,27 +27329,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 55.845,
+    molar_mass: 55.845,
     shc: 0.91,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 30.0,
-    minVerticalFlow: 3.0,
-    radiationAbsorptionFactor: 0.77,
-    thermalConductivity: 20.5,
+    min_horizontal_flow: 30.0,
+    min_vertical_flow: 3.0,
+    radiation_absorption_factor: 0.77,
+    thermal_conductivity: 20.5,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenAluminum",
+    decor_radius: 1.0,
+    primary_element: "MoltenAluminum",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 1000.0
+    light_absorption: 1.0,
+    default_mass: 1000.0
   },
   MoltenLead: {
     tag: "MoltenLead",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27567,7 +27371,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27578,27 +27382,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     shc: 0.128,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 25.0,
-    minVerticalFlow: 1.0,
-    radiationAbsorptionFactor: 0.85,
-    thermalConductivity: 11.0,
+    min_horizontal_flow: 25.0,
+    min_vertical_flow: 1.0,
+    radiation_absorption_factor: 0.85,
+    thermal_conductivity: 11.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenLead",
+    decor_radius: 1.0,
+    primary_element: "MoltenLead",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 3000.0
+    light_absorption: 1.0,
+    default_mass: 3000.0
   },
   LiquidCarbonDioxide: {
     tag: "LiquidCarbonDioxide",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27620,7 +27424,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27628,27 +27432,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 44.01,
+    molar_mass: 44.01,
     shc: 0.846,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 125.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 1.46,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 1.46,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LiquidCarbonDioxide",
+    decor_radius: 1.0,
+    primary_element: "LiquidCarbonDioxide",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 600.0
+    light_absorption: 1.0,
+    default_mass: 600.0
   },
   CrudeOil: {
     tag: "CrudeOil",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27670,7 +27474,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27679,27 +27483,27 @@ export const db = {
       "PedestalDisplayable",
       "Liquid"
     ],
-    molarMass: 500.0,
+    molar_mass: 500.0,
     shc: 1.69,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 50.0,
-    minHorizontalFlow: 0.1,
-    minVerticalFlow: 0.1,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 0.1,
+    min_vertical_flow: 0.1,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "CrudeOil",
+    decor_radius: 1.0,
+    primary_element: "CrudeOil",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 870.0
+    light_absorption: 1.0,
+    default_mass: 870.0
   },
   MoltenGlass: {
     tag: "MoltenGlass",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27721,7 +27525,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27730,27 +27534,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     shc: 0.2,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 60.0,
-    minHorizontalFlow: 50.0,
-    minVerticalFlow: 20.0,
-    radiationAbsorptionFactor: 0.65,
-    thermalConductivity: 1.0,
+    min_horizontal_flow: 50.0,
+    min_vertical_flow: 20.0,
+    radiation_absorption_factor: 0.65,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenGlass",
+    decor_radius: 1.0,
+    primary_element: "MoltenGlass",
     clearable: true,
-    lightAbsorption: 0.7,
-    defaultMass: 200.0
+    light_absorption: 0.7,
+    default_mass: 200.0
   },
   LiquidSulfur: {
     tag: "LiquidSulfur",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27772,7 +27576,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27780,27 +27584,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 32.0,
+    molar_mass: 32.0,
     shc: 0.7,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 50.0,
-    minHorizontalFlow: 0.1,
-    minVerticalFlow: 0.1,
-    radiationAbsorptionFactor: 0.74,
-    thermalConductivity: 0.2,
+    min_horizontal_flow: 0.1,
+    min_vertical_flow: 0.1,
+    radiation_absorption_factor: 0.74,
+    thermal_conductivity: 0.2,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LiquidSulfur",
+    decor_radius: 1.0,
+    primary_element: "LiquidSulfur",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 190.0
+    light_absorption: 0.1,
+    default_mass: 190.0
   },
   MoltenGold: {
     tag: "MoltenGold",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27822,7 +27626,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27833,27 +27637,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     shc: 0.1291,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 25.0,
-    minVerticalFlow: 1.0,
-    radiationAbsorptionFactor: 0.35,
-    thermalConductivity: 6.0,
+    min_horizontal_flow: 25.0,
+    min_vertical_flow: 1.0,
+    radiation_absorption_factor: 0.35,
+    thermal_conductivity: 6.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenGold",
+    decor_radius: 1.0,
+    primary_element: "MoltenGold",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 870.0
+    light_absorption: 1.0,
+    default_mass: 870.0
   },
   Magma: {
     tag: "Magma",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27875,7 +27679,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27884,27 +27688,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     shc: 1.0,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 60.0,
-    minHorizontalFlow: 50.0,
-    minVerticalFlow: 20.0,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 1.0,
+    min_horizontal_flow: 50.0,
+    min_vertical_flow: 20.0,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Magma",
+    decor_radius: 1.0,
+    primary_element: "Magma",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 1840.0
+    light_absorption: 1.0,
+    default_mass: 1840.0
   },
   Chlorine: {
     tag: "Chlorine",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27926,7 +27730,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27934,27 +27738,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 34.453,
+    molar_mass: 34.453,
     shc: 0.48,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 180.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.73,
-    thermalConductivity: 0.0081,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.73,
+    thermal_conductivity: 0.0081,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Chlorine",
+    decor_radius: 1.0,
+    primary_element: "Chlorine",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 600.0
+    light_absorption: 1.0,
+    default_mass: 600.0
   },
   LiquidHydrogen: {
     tag: "LiquidHydrogen",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -27976,7 +27780,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -27984,27 +27788,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 1.00794,
+    molar_mass: 1.00794,
     shc: 2.4,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 180.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.9,
-    thermalConductivity: 0.1,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.9,
+    thermal_conductivity: 0.1,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LiquidHydrogen",
+    decor_radius: 1.0,
+    primary_element: "LiquidHydrogen",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 600.0
+    light_absorption: 1.0,
+    default_mass: 600.0
   },
   Resin: {
     tag: "Resin",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28026,7 +27830,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Space Out"
     ],
@@ -28034,27 +27838,27 @@ export const db = {
       "PedestalDisplayable",
       "Liquid"
     ],
-    molarMass: 52.5,
+    molar_mass: 52.5,
     shc: 1.11,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 1.1,
-    minHorizontalFlow: 1.1,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.15,
+    min_horizontal_flow: 1.1,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Resin",
+    decor_radius: 1.0,
+    primary_element: "Resin",
     clearable: true,
-    lightAbsorption: 0.8,
-    defaultMass: 920.0
+    light_absorption: 0.8,
+    default_mass: 920.0
   },
   MoltenTungsten: {
     tag: "MoltenTungsten",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28076,7 +27880,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28086,27 +27890,27 @@ export const db = {
       "RefinedMetal",
       "Liquid"
     ],
-    molarMass: 183.84,
+    molar_mass: 183.84,
     shc: 0.134,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 20.0,
-    minVerticalFlow: 10.0,
-    radiationAbsorptionFactor: 0.35,
-    thermalConductivity: 4.0,
+    min_horizontal_flow: 20.0,
+    min_vertical_flow: 10.0,
+    radiation_absorption_factor: 0.35,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenTungsten",
+    decor_radius: 1.0,
+    primary_element: "MoltenTungsten",
     clearable: true,
-    lightAbsorption: 0.7,
-    defaultMass: 200.0
+    light_absorption: 0.7,
+    default_mass: 200.0
   },
   Petroleum: {
     tag: "Petroleum",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28128,7 +27932,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28138,27 +27942,27 @@ export const db = {
       "CombustibleLiquid",
       "Liquid"
     ],
-    molarMass: 82.2,
+    molar_mass: 82.2,
     shc: 1.76,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 50.0,
-    minHorizontalFlow: 0.1,
-    minVerticalFlow: 0.1,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 0.1,
+    min_vertical_flow: 0.1,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Petroleum",
+    decor_radius: 1.0,
+    primary_element: "Petroleum",
     clearable: true,
-    lightAbsorption: 0.8,
-    defaultMass: 740.0
+    light_absorption: 0.8,
+    default_mass: 740.0
   },
   MoltenSalt: {
     tag: "MoltenSalt",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28180,7 +27984,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28188,27 +27992,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 32.0,
+    molar_mass: 32.0,
     shc: 0.7,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 50.0,
-    minHorizontalFlow: 0.1,
-    minVerticalFlow: 0.1,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.444,
+    min_horizontal_flow: 0.1,
+    min_vertical_flow: 0.1,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.444,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenSalt",
+    decor_radius: 1.0,
+    primary_element: "MoltenSalt",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 190.0
+    light_absorption: 0.1,
+    default_mass: 190.0
   },
   MoltenCobalt: {
     tag: "MoltenCobalt",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28230,7 +28034,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Space Out"
     ],
@@ -28240,27 +28044,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 58.9,
+    molar_mass: 58.9,
     shc: 0.42,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 30.0,
-    minVerticalFlow: 3.0,
-    radiationAbsorptionFactor: 0.63,
-    thermalConductivity: 4.0,
+    min_horizontal_flow: 30.0,
+    min_vertical_flow: 3.0,
+    radiation_absorption_factor: 0.63,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenCobalt",
+    decor_radius: 1.0,
+    primary_element: "MoltenCobalt",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 1000.0
+    light_absorption: 1.0,
+    default_mass: 1000.0
   },
   Brine: {
     tag: "Brine",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28282,7 +28086,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28292,27 +28096,27 @@ export const db = {
       "AnyWater",
       "Liquid"
     ],
-    molarMass: 22.0,
+    molar_mass: 22.0,
     shc: 3.4,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 0.609,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 0.609,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Brine",
+    decor_radius: 1.0,
+    primary_element: "Brine",
     clearable: true,
-    lightAbsorption: 0.25,
-    defaultMass: 1200.0
+    light_absorption: 0.25,
+    default_mass: 1200.0
   },
   SuperCoolant: {
     tag: "SuperCoolant",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28334,7 +28138,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28343,27 +28147,27 @@ export const db = {
       "PedestalDisplayable",
       "Liquid"
     ],
-    molarMass: 250.0,
+    molar_mass: 250.0,
     shc: 8.44,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 150.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 9.46,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 9.46,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SuperCoolant",
+    decor_radius: 1.0,
+    primary_element: "SuperCoolant",
     clearable: true,
-    lightAbsorption: 0.9,
-    defaultMass: 800.0
+    light_absorption: 0.9,
+    default_mass: 800.0
   },
   Ethanol: {
     tag: "Ethanol",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28385,7 +28189,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28395,27 +28199,27 @@ export const db = {
       "CombustibleLiquid",
       "Liquid"
     ],
-    molarMass: 46.07,
+    molar_mass: 46.07,
     shc: 2.46,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 125.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 0.171,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 0.171,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Ethanol",
+    decor_radius: 1.0,
+    primary_element: "Ethanol",
     clearable: true,
-    lightAbsorption: 0.25,
-    defaultMass: 1000.0
+    light_absorption: 0.25,
+    default_mass: 1000.0
   },
   Milk: {
     tag: "Milk",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28437,7 +28241,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28446,27 +28250,27 @@ export const db = {
       "PedestalDisplayable",
       "Liquid"
     ],
-    molarMass: 23.0,
+    molar_mass: 23.0,
     shc: 4.1,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 0.609,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 0.609,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Milk",
+    decor_radius: 1.0,
+    primary_element: "Milk",
     clearable: true,
-    lightAbsorption: 0.8,
-    defaultMass: 1100.0
+    light_absorption: 0.8,
+    default_mass: 1100.0
   },
   LiquidMethane: {
     tag: "LiquidMethane",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28488,7 +28292,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28496,27 +28300,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 16.044,
+    molar_mass: 16.044,
     shc: 2.191,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 180.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.03,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.03,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LiquidMethane",
+    decor_radius: 1.0,
+    primary_element: "LiquidMethane",
     clearable: true,
-    lightAbsorption: 0.6,
-    defaultMass: 600.0
+    light_absorption: 0.6,
+    default_mass: 600.0
   },
   MoltenIron: {
     tag: "MoltenIron",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28538,7 +28342,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28549,27 +28353,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 55.845,
+    molar_mass: 55.845,
     shc: 0.449,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 30.0,
-    minVerticalFlow: 3.0,
-    radiationAbsorptionFactor: 0.66,
-    thermalConductivity: 4.0,
+    min_horizontal_flow: 30.0,
+    min_vertical_flow: 3.0,
+    radiation_absorption_factor: 0.66,
+    thermal_conductivity: 4.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenIron",
+    decor_radius: 1.0,
+    primary_element: "MoltenIron",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 1000.0
+    light_absorption: 1.0,
+    default_mass: 1000.0
   },
   MoltenCarbon: {
     tag: "MoltenCarbon",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28591,7 +28395,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28599,27 +28403,27 @@ export const db = {
     tags: [
       "Liquid"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     shc: 0.71,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 150.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.84,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.84,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenCarbon",
+    decor_radius: 1.0,
+    primary_element: "MoltenCarbon",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 600.0
+    light_absorption: 1.0,
+    default_mass: 600.0
   },
   Naphtha: {
     tag: "Naphtha",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28641,7 +28445,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28651,27 +28455,27 @@ export const db = {
       "Oil",
       "Liquid"
     ],
-    molarMass: 102.2,
+    molar_mass: 102.2,
     shc: 2.191,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 30.0,
-    minHorizontalFlow: 10.0,
-    minVerticalFlow: 10.0,
-    radiationAbsorptionFactor: 0.6,
-    thermalConductivity: 0.2,
+    min_horizontal_flow: 10.0,
+    min_vertical_flow: 10.0,
+    radiation_absorption_factor: 0.6,
+    thermal_conductivity: 0.2,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Naphtha",
+    decor_radius: 1.0,
+    primary_element: "Naphtha",
     clearable: true,
-    lightAbsorption: 0.8,
-    defaultMass: 740.0
+    light_absorption: 0.8,
+    default_mass: 740.0
   },
   MoltenSucrose: {
     tag: "MoltenSucrose",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28693,34 +28497,34 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Space Out"
     ],
     tags: [
       "Liquid"
     ],
-    molarMass: 32.0,
+    molar_mass: 32.0,
     shc: 1.255,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 50.0,
-    minHorizontalFlow: 0.1,
-    minVerticalFlow: 0.1,
-    radiationAbsorptionFactor: 0.7,
-    thermalConductivity: 0.15,
+    min_horizontal_flow: 0.1,
+    min_vertical_flow: 0.1,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 0.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenSucrose",
+    decor_radius: 1.0,
+    primary_element: "MoltenSucrose",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 190.0
+    light_absorption: 0.1,
+    default_mass: 190.0
   },
   LiquidPhosphorus: {
     tag: "LiquidPhosphorus",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28742,7 +28546,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28751,27 +28555,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 30.9737625,
+    molar_mass: 30.9737625,
     shc: 0.7697,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 2.0,
-    minVerticalFlow: 1.0,
-    radiationAbsorptionFactor: 0.75,
-    thermalConductivity: 0.236,
+    min_horizontal_flow: 2.0,
+    min_vertical_flow: 1.0,
+    radiation_absorption_factor: 0.75,
+    thermal_conductivity: 0.236,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LiquidPhosphorus",
+    decor_radius: 1.0,
+    primary_element: "LiquidPhosphorus",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 200.0
+    light_absorption: 1.0,
+    default_mass: 200.0
   },
   MoltenSteel: {
     tag: "MoltenSteel",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28793,7 +28597,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28804,27 +28608,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 63.546,
+    molar_mass: 63.546,
     shc: 0.386,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 20.0,
-    minVerticalFlow: 10.0,
-    radiationAbsorptionFactor: 0.74,
-    thermalConductivity: 80.0,
+    min_horizontal_flow: 20.0,
+    min_vertical_flow: 10.0,
+    radiation_absorption_factor: 0.74,
+    thermal_conductivity: 80.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenSteel",
+    decor_radius: 1.0,
+    primary_element: "MoltenSteel",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 900.0
+    light_absorption: 1.0,
+    default_mass: 900.0
   },
   MoltenNiobium: {
     tag: "MoltenNiobium",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28846,7 +28650,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28857,27 +28661,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 92.9,
+    molar_mass: 92.9,
     shc: 0.265,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 20.0,
-    minVerticalFlow: 10.0,
-    radiationAbsorptionFactor: 0.49,
-    thermalConductivity: 54.0,
+    min_horizontal_flow: 20.0,
+    min_vertical_flow: 10.0,
+    radiation_absorption_factor: 0.49,
+    thermal_conductivity: 54.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenNiobium",
+    decor_radius: 1.0,
+    primary_element: "MoltenNiobium",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 900.0
+    light_absorption: 1.0,
+    default_mass: 900.0
   },
   Water: {
     tag: "Water",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28899,7 +28703,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28909,27 +28713,27 @@ export const db = {
       "AnyWater",
       "Liquid"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     shc: 4.179,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 125.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 0.609,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 0.609,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Water",
+    decor_radius: 1.0,
+    primary_element: "Water",
     clearable: true,
-    lightAbsorption: 0.25,
-    defaultMass: 1000.0
+    light_absorption: 0.25,
+    default_mass: 1000.0
   },
   SaltWater: {
     tag: "SaltWater",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -28951,7 +28755,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -28961,27 +28765,27 @@ export const db = {
       "AnyWater",
       "Liquid"
     ],
-    molarMass: 21.0,
+    molar_mass: 21.0,
     shc: 4.1,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 0.01,
-    minVerticalFlow: 0.01,
-    radiationAbsorptionFactor: 0.8,
-    thermalConductivity: 0.609,
+    min_horizontal_flow: 0.01,
+    min_vertical_flow: 0.01,
+    radiation_absorption_factor: 0.8,
+    thermal_conductivity: 0.609,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SaltWater",
+    decor_radius: 1.0,
+    primary_element: "SaltWater",
     clearable: true,
-    lightAbsorption: 0.25,
-    defaultMass: 1100.0
+    light_absorption: 0.25,
+    default_mass: 1100.0
   },
   MoltenUranium: {
     tag: "MoltenUranium",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -29003,7 +28807,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Space Out"
     ],
@@ -29013,27 +28817,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     shc: 1.69,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 25.0,
-    minVerticalFlow: 1.0,
-    radiationAbsorptionFactor: 0.3,
-    thermalConductivity: 2.0,
+    min_horizontal_flow: 25.0,
+    min_vertical_flow: 1.0,
+    radiation_absorption_factor: 0.3,
+    thermal_conductivity: 2.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenUranium",
+    decor_radius: 1.0,
+    primary_element: "MoltenUranium",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 3000.0
+    light_absorption: 1.0,
+    default_mass: 3000.0
   },
   MoltenCopper: {
     tag: "MoltenCopper",
     menu: {
-      category: "Element",
-      subCategory: "Liquid"
+      category: "element",
+      subCategory: "liquid"
     },
     components: [
       "KPrefabID",
@@ -29055,7 +28859,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29066,27 +28870,27 @@ export const db = {
       "EmitsLight",
       "Liquid"
     ],
-    molarMass: 63.546,
+    molar_mass: 63.546,
     shc: 0.386,
-    maxCompression: 1.01,
+    max_compression: 1.01,
     viscosity: 100.0,
-    minHorizontalFlow: 20.0,
-    minVerticalFlow: 2.0,
-    radiationAbsorptionFactor: 0.61,
-    thermalConductivity: 12.0,
+    min_horizontal_flow: 20.0,
+    min_vertical_flow: 2.0,
+    radiation_absorption_factor: 0.61,
+    thermal_conductivity: 12.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "MoltenCopper",
+    decor_radius: 1.0,
+    primary_element: "MoltenCopper",
     clearable: true,
-    lightAbsorption: 1.0,
-    defaultMass: 900.0
+    light_absorption: 1.0,
+    default_mass: 900.0
   },
   SulfurGas: {
     tag: "SulfurGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29108,7 +28912,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29117,24 +28921,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 32.0,
+    molar_mass: 32.0,
     shc: 0.7,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.2,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.2,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SulfurGas",
+    decor_radius: 1.0,
+    primary_element: "SulfurGas",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 1.0
+    light_absorption: 0.1,
+    default_mass: 1.0
   },
   SaltGas: {
     tag: "SaltGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29156,7 +28960,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29165,24 +28969,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     shc: 0.88,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.444,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.444,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SaltGas",
+    decor_radius: 1.0,
+    primary_element: "SaltGas",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 1.0
+    light_absorption: 0.1,
+    default_mass: 1.0
   },
   NiobiumGas: {
     tag: "NiobiumGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29204,7 +29008,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29216,24 +29020,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 92.9,
+    molar_mass: 92.9,
     shc: 0.265,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.05,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.05,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "NiobiumGas",
+    decor_radius: 1.0,
+    primary_element: "NiobiumGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   Oxygen: {
     tag: "Oxygen",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29255,7 +29059,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29265,24 +29069,24 @@ export const db = {
       "Gas",
       "Breathable"
     ],
-    molarMass: 15.9994,
+    molar_mass: 15.9994,
     shc: 1.005,
     flow: 0.12,
-    radiationAbsorptionFactor: 0.08,
-    thermalConductivity: 0.024,
+    radiation_absorption_factor: 0.08,
+    thermal_conductivity: 0.024,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Oxygen",
+    decor_radius: 1.0,
+    primary_element: "Oxygen",
     clearable: true,
-    lightAbsorption: 0.0,
-    defaultMass: 1.0
+    light_absorption: 0.0,
+    default_mass: 1.0
   },
   CobaltGas: {
     tag: "CobaltGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29304,7 +29108,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Space Out"
     ],
@@ -29315,24 +29119,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 58.9,
+    molar_mass: 58.9,
     shc: 0.42,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.06,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.06,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "CobaltGas",
+    decor_radius: 1.0,
+    primary_element: "CobaltGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   SteelGas: {
     tag: "SteelGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29354,7 +29158,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29367,24 +29171,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 54.97,
+    molar_mass: 54.97,
     shc: 0.49,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SteelGas",
+    decor_radius: 1.0,
+    primary_element: "SteelGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   ChlorineGas: {
     tag: "ChlorineGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29406,7 +29210,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29416,24 +29220,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 34.453,
+    molar_mass: 34.453,
     shc: 0.48,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.0081,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.0081,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "ChlorineGas",
+    decor_radius: 1.0,
+    primary_element: "ChlorineGas",
     clearable: true,
-    lightAbsorption: 0.2,
-    defaultMass: 1.0
+    light_absorption: 0.2,
+    default_mass: 1.0
   },
   Hydrogen: {
     tag: "Hydrogen",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29455,7 +29259,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29465,24 +29269,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 1.00794,
+    molar_mass: 1.00794,
     shc: 2.4,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.09,
-    thermalConductivity: 0.168,
+    radiation_absorption_factor: 0.09,
+    thermal_conductivity: 0.168,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Hydrogen",
+    decor_radius: 1.0,
+    primary_element: "Hydrogen",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 1.0
+    light_absorption: 0.1,
+    default_mass: 1.0
   },
   SourGas: {
     tag: "SourGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29504,7 +29308,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29514,24 +29318,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 19.044,
+    molar_mass: 19.044,
     shc: 1.898,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.05,
-    thermalConductivity: 0.018,
+    radiation_absorption_factor: 0.05,
+    thermal_conductivity: 0.018,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SourGas",
+    decor_radius: 1.0,
+    primary_element: "SourGas",
     clearable: true,
-    lightAbsorption: 0.25,
-    defaultMass: 1.0
+    light_absorption: 0.25,
+    default_mass: 1.0
   },
   Steam: {
     tag: "Steam",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29553,7 +29357,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29562,24 +29366,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 18.01528,
+    molar_mass: 18.01528,
     shc: 4.179,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.08,
-    thermalConductivity: 0.184,
+    radiation_absorption_factor: 0.08,
+    thermal_conductivity: 0.184,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Steam",
+    decor_radius: 1.0,
+    primary_element: "Steam",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 1.0
+    light_absorption: 0.1,
+    default_mass: 1.0
   },
   Methane: {
     tag: "Methane",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29601,7 +29405,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29612,24 +29416,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 16.044,
+    molar_mass: 16.044,
     shc: 2.191,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.035,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.035,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Methane",
+    decor_radius: 1.0,
+    primary_element: "Methane",
     clearable: true,
-    lightAbsorption: 0.25,
-    defaultMass: 1.0
+    light_absorption: 0.25,
+    default_mass: 1.0
   },
   GoldGas: {
     tag: "GoldGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29651,7 +29455,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29663,24 +29467,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     shc: 0.1291,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.03,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.03,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "GoldGas",
+    decor_radius: 1.0,
+    primary_element: "GoldGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   EthanolGas: {
     tag: "EthanolGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29702,7 +29506,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29711,24 +29515,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 46.07,
+    molar_mass: 46.07,
     shc: 2.148,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.167,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.167,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "EthanolGas",
+    decor_radius: 1.0,
+    primary_element: "EthanolGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   RockGas: {
     tag: "RockGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29750,7 +29554,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29760,24 +29564,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 50.0,
+    molar_mass: 50.0,
     shc: 1.0,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.1,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.1,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "RockGas",
+    decor_radius: 1.0,
+    primary_element: "RockGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   CarbonGas: {
     tag: "CarbonGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29799,7 +29603,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29809,24 +29613,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 12.0107,
+    molar_mass: 12.0107,
     shc: 0.71,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.08,
-    thermalConductivity: 1.7,
+    radiation_absorption_factor: 0.08,
+    thermal_conductivity: 1.7,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "CarbonGas",
+    decor_radius: 1.0,
+    primary_element: "CarbonGas",
     clearable: true,
-    lightAbsorption: 0.3,
-    defaultMass: 1.0
+    light_absorption: 0.3,
+    default_mass: 1.0
   },
   SuperCoolantGas: {
     tag: "SuperCoolantGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29848,7 +29652,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29857,24 +29661,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 190.0,
+    molar_mass: 190.0,
     shc: 8.44,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.06,
-    thermalConductivity: 1.2,
+    radiation_absorption_factor: 0.06,
+    thermal_conductivity: 1.2,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "SuperCoolantGas",
+    decor_radius: 1.0,
+    primary_element: "SuperCoolantGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   AluminumGas: {
     tag: "AluminumGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29896,7 +29700,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29908,24 +29712,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 63.546,
+    molar_mass: 63.546,
     shc: 0.91,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 2.5,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 2.5,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "AluminumGas",
+    decor_radius: 1.0,
+    primary_element: "AluminumGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   TungstenGas: {
     tag: "TungstenGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29947,7 +29751,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -29958,24 +29762,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 183.84,
+    molar_mass: 183.84,
     shc: 0.134,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.03,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.03,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "TungstenGas",
+    decor_radius: 1.0,
+    primary_element: "TungstenGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   ContaminatedOxygen: {
     tag: "ContaminatedOxygen",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -29997,7 +29801,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -30007,24 +29811,24 @@ export const db = {
       "Gas",
       "Breathable"
     ],
-    molarMass: 15.9994,
+    molar_mass: 15.9994,
     shc: 1.01,
     flow: 0.12,
-    radiationAbsorptionFactor: 0.08,
-    thermalConductivity: 0.024,
+    radiation_absorption_factor: 0.08,
+    thermal_conductivity: 0.024,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "ContaminatedOxygen",
+    decor_radius: 1.0,
+    primary_element: "ContaminatedOxygen",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 1.0
+    light_absorption: 0.1,
+    default_mass: 1.0
   },
   LeadGas: {
     tag: "LeadGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -30046,7 +29850,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -30058,24 +29862,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 196.966568,
+    molar_mass: 196.966568,
     shc: 0.128,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.08,
-    thermalConductivity: 3.5,
+    radiation_absorption_factor: 0.08,
+    thermal_conductivity: 3.5,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "LeadGas",
+    decor_radius: 1.0,
+    primary_element: "LeadGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   Fallout: {
     tag: "Fallout",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -30097,7 +29901,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Space Out"
     ],
@@ -30106,24 +29910,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 92.9,
+    molar_mass: 92.9,
     shc: 0.265,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.03,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.03,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "Fallout",
+    decor_radius: 1.0,
+    primary_element: "Fallout",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   IronGas: {
     tag: "IronGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -30145,7 +29949,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -30157,24 +29961,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 55.845,
+    molar_mass: 55.845,
     shc: 0.449,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.06,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.06,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "IronGas",
+    decor_radius: 1.0,
+    primary_element: "IronGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   PhosphorusGas: {
     tag: "PhosphorusGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -30196,7 +30000,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -30206,24 +30010,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 30.9737625,
+    molar_mass: 30.9737625,
     shc: 0.7697,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.07,
-    thermalConductivity: 0.236,
+    radiation_absorption_factor: 0.07,
+    thermal_conductivity: 0.236,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "PhosphorusGas",
+    decor_radius: 1.0,
+    primary_element: "PhosphorusGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   CarbonDioxide: {
     tag: "CarbonDioxide",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -30245,7 +30049,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 15.0,
+    menu_order: 15.0,
     dlc: [
       "Base",
       "Space Out"
@@ -30255,24 +30059,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 44.01,
+    molar_mass: 44.01,
     shc: 0.846,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.08,
-    thermalConductivity: 0.0146,
+    radiation_absorption_factor: 0.08,
+    thermal_conductivity: 0.0146,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "CarbonDioxide",
+    decor_radius: 1.0,
+    primary_element: "CarbonDioxide",
     clearable: true,
-    lightAbsorption: 0.1,
-    defaultMass: 1.0
+    light_absorption: 0.1,
+    default_mass: 1.0
   },
   CopperGas: {
     tag: "CopperGas",
     menu: {
-      category: "Element",
-      subCategory: "Gas"
+      category: "element",
+      subCategory: "gas"
     },
     components: [
       "KPrefabID",
@@ -30294,7 +30098,7 @@ export const db = {
       "Dumpable",
       "SubstanceChunk"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     dlc: [
       "Base",
       "Space Out"
@@ -30306,24 +30110,24 @@ export const db = {
       "Gas",
       "Unbreathable"
     ],
-    molarMass: 63.546,
+    molar_mass: 63.546,
     shc: 0.386,
     flow: 0.1,
-    radiationAbsorptionFactor: 0.06,
-    thermalConductivity: 1.0,
+    radiation_absorption_factor: 0.06,
+    thermal_conductivity: 1.0,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 1.0,
-    primaryElement: "CopperGas",
+    decor_radius: 1.0,
+    primary_element: "CopperGas",
     clearable: true,
-    lightAbsorption: 0.5,
-    defaultMass: 1.0
+    light_absorption: 0.5,
+    default_mass: 1.0
   },
   ClustercraftInteriorDoor: {
     tag: "ClustercraftInteriorDoor",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -30347,7 +30151,7 @@ export const db = {
       "NavTeleporter",
       "AccessControl"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "NotRoomAssignable",
@@ -30356,14 +30160,14 @@ export const db = {
     ],
     mass: 400.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   RockComet: {
     tag: "RockComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -30375,7 +30179,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Unstable",
       "Solid",
@@ -30383,13 +30187,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Regolith"
+    primary_element: "Regolith"
   },
   Clustercraft: {
     tag: "Clustercraft",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -30407,27 +30211,27 @@ export const db = {
       "AlertStateManager+Def",
       "RocketSelfDestructMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   BalloonStand: {
     tag: "BalloonStand",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "GetBalloonWorkable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   BackgroundEarth: {
     tag: "BackgroundEarth",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -30435,14 +30239,14 @@ export const db = {
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   Asteroid: {
     tag: "Asteroid",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -30458,14 +30262,14 @@ export const db = {
       "GameplaySeasonManager+Def",
       "AlertStateManager+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation1: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation1",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30479,14 +30283,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation2: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation2",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30500,14 +30304,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation3: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation3",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30521,14 +30325,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation4: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation4",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30542,14 +30346,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation5: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation5",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30563,14 +30367,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation6: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation6",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30584,14 +30388,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation7: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation7",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30605,14 +30409,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_GravitasSpaceStation8: {
     tag: "ArtifactSpacePOI_GravitasSpaceStation8",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30626,14 +30430,14 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ArtifactSpacePOI_RussellsTeapot: {
     tag: "ArtifactSpacePOI_RussellsTeapot",
     menu: {
-      category: "Space",
-      subCategory: "ArtifactPOI"
+      category: "space",
+      subCategory: "artifact"
     },
     components: [
       "KPrefabID",
@@ -30647,13 +30451,13 @@ export const db = {
     smdef: [
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   artifact_sandstone: {
     tag: "artifact_sandstone",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -30674,7 +30478,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30682,13 +30486,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature"
+    decor_radius: 1.0,
+    primary_element: "Creature"
   },
   artifact_sink: {
     tag: "artifact_sink",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -30709,7 +30513,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30717,13 +30521,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature"
+    decor_radius: 1.0,
+    primary_element: "Creature"
   },
   artifact_rubikscube: {
     tag: "artifact_rubikscube",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -30744,7 +30548,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30752,13 +30556,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature"
+    decor_radius: 1.0,
+    primary_element: "Creature"
   },
   artifact_officemug: {
     tag: "artifact_officemug",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -30779,7 +30583,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30787,13 +30591,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature"
+    decor_radius: 1.0,
+    primary_element: "Creature"
   },
   artifact_obelisk: {
     tag: "artifact_obelisk",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -30814,7 +30618,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30822,13 +30626,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_okayxray: {
     tag: "artifact_okayxray",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -30849,7 +30653,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30857,13 +30661,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_blender: {
     tag: "artifact_blender",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -30884,7 +30688,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30892,13 +30696,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_moldavite: {
     tag: "artifact_moldavite",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -30919,7 +30723,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30927,13 +30731,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_vhs: {
     tag: "artifact_vhs",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -30954,7 +30758,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30962,13 +30766,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_saxophone: {
     tag: "artifact_saxophone",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -30989,7 +30793,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -30997,13 +30801,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_modernart: {
     tag: "artifact_modernart",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31024,7 +30828,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31032,13 +30836,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_honeyjar: {
     tag: "artifact_honeyjar",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -31059,7 +30863,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31067,13 +30871,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 20.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   artifact_ameliaswatch: {
     tag: "artifact_ameliaswatch",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31094,7 +30898,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31102,13 +30906,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_teapot: {
     tag: "artifact_teapot",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31129,7 +30933,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31137,13 +30941,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_brickphone: {
     tag: "artifact_brickphone",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -31164,7 +30968,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31172,13 +30976,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_robotarm: {
     tag: "artifact_robotarm",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31199,7 +31003,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31207,13 +31011,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_shieldgenerator: {
     tag: "artifact_shieldgenerator",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31235,7 +31039,7 @@ export const db = {
       "SpaceArtifact",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31243,13 +31047,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_bioluminescentrock: {
     tag: "artifact_bioluminescentrock",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31271,7 +31075,7 @@ export const db = {
       "SpaceArtifact",
       "Light2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31279,13 +31083,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_grubstatue: {
     tag: "artifact_grubstatue",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31306,7 +31110,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31314,13 +31118,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature"
+    decor_radius: 5.0,
+    primary_element: "Creature"
   },
   artifact_stethoscope: {
     tag: "artifact_stethoscope",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -31341,7 +31145,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31349,13 +31153,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_eggrock: {
     tag: "artifact_eggrock",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31376,7 +31180,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31384,13 +31188,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_hatchfossil: {
     tag: "artifact_hatchfossil",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31411,7 +31215,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31419,13 +31223,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_rocktornado: {
     tag: "artifact_rocktornado",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31446,7 +31250,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31454,13 +31258,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_pacupercolator: {
     tag: "artifact_pacupercolator",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31481,7 +31285,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31489,13 +31293,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_magmalamp: {
     tag: "artifact_magmalamp",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31517,7 +31321,7 @@ export const db = {
       "SpaceArtifact",
       "Light2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31525,13 +31329,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_oracle: {
     tag: "artifact_oracle",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -31552,7 +31356,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31560,13 +31364,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   artifact_dnamodel: {
     tag: "artifact_dnamodel",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Terrestrial"
     },
     components: [
@@ -31587,7 +31391,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31595,13 +31399,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   artifact_rainboweggrock: {
     tag: "artifact_rainboweggrock",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31622,7 +31426,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31630,13 +31434,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   artifact_plasmalamp: {
     tag: "artifact_plasmalamp",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31659,7 +31463,7 @@ export const db = {
       "LoopingSounds",
       "Light2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31667,13 +31471,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   artifact_moodring: {
     tag: "artifact_moodring",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31694,7 +31498,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31702,13 +31506,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   artifact_solarsystem: {
     tag: "artifact_solarsystem",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31730,7 +31534,7 @@ export const db = {
       "SpaceArtifact",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31738,13 +31542,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 80.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   artifact_moonmoonmoon: {
     tag: "artifact_moonmoonmoon",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Space"
     },
     components: [
@@ -31765,7 +31569,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31773,13 +31577,13 @@ export const db = {
     ],
     mass: 25.0,
     decor: 80.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   artifact_reactormodel: {
     tag: "artifact_reactormodel",
     menu: {
-      category: "Artifact",
+      category: "artifact",
       subCategory: "Any"
     },
     components: [
@@ -31800,7 +31604,7 @@ export const db = {
       "DecorProvider",
       "SpaceArtifact"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -31808,14 +31612,14 @@ export const db = {
     ],
     mass: 25.0,
     decor: 80.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature"
+    decor_radius: 7.0,
+    primary_element: "Creature"
   },
   IntermediateCure: {
     tag: "IntermediateCure",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -31834,19 +31638,19 @@ export const db = {
       "EntitySplitter",
       "MedicinalPill"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MedicalSupplies",
       "DoctorStationMedicalSupplies"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   IntermediateBooster: {
     tag: "IntermediateBooster",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -31866,18 +31670,18 @@ export const db = {
       "MedicinalPill",
       "MedicinalPillWorkable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Medicine"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicRadPill: {
     tag: "BasicRadPill",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -31897,18 +31701,18 @@ export const db = {
       "MedicinalPill",
       "MedicinalPillWorkable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Medicine"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicCure: {
     tag: "BasicCure",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -31928,18 +31732,18 @@ export const db = {
       "MedicinalPill",
       "MedicinalPillWorkable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Medicine"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicBooster: {
     tag: "BasicBooster",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -31959,18 +31763,18 @@ export const db = {
       "MedicinalPill",
       "MedicinalPillWorkable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Medicine"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Antihistamine: {
     tag: "Antihistamine",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -31990,18 +31794,18 @@ export const db = {
       "MedicinalPill",
       "MedicinalPillWorkable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Medicine"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   IronComet: {
     tag: "IronComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32013,7 +31817,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "BuildableAny",
       "Solid",
@@ -32021,13 +31825,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Iron"
+    primary_element: "Iron"
   },
   CopperCometConfig: {
     tag: "CopperCometConfig",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32039,7 +31843,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Ore",
       "BuildableAny",
@@ -32048,13 +31852,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Cuprite"
+    primary_element: "Cuprite"
   },
   GoldComet: {
     tag: "GoldComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32066,7 +31870,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Ore",
       "BuildableAny",
@@ -32075,13 +31879,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "GoldAmalgam"
+    primary_element: "GoldAmalgam"
   },
   FullereneComet: {
     tag: "FullereneComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32093,46 +31897,46 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "RareMaterials",
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Fullerene"
+    primary_element: "Fullerene"
   },
   DeployingScoutLanderFXConfig: {
     tag: "DeployingScoutLanderFXConfig",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "ClusterFXEntity"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   DeployingPioneerLanderFX: {
     tag: "DeployingPioneerLanderFX",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "ClusterFXEntity"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   BleachStoneComet: {
     tag: "BleachStoneComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32144,7 +31948,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "FlyingCritterEdible",
       "Solid",
@@ -32152,13 +31956,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "BleachStone"
+    primary_element: "BleachStone"
   },
   OxyliteComet: {
     tag: "OxyliteComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32170,7 +31974,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "FlyingCritterEdible",
       "Oxidizer",
@@ -32179,13 +31983,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "OxyRock"
+    primary_element: "OxyRock"
   },
   PhosphoricComet: {
     tag: "PhosphoricComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32197,7 +32001,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "FlyingCritterEdible",
       "Solid",
@@ -32205,13 +32009,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Phosphorite"
+    primary_element: "Phosphorite"
   },
   AlgaeComet: {
     tag: "AlgaeComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32223,20 +32027,20 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Organics",
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Algae"
+    primary_element: "Algae"
   },
   LightDustComet: {
     tag: "LightDustComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32248,7 +32052,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Unstable",
       "Solid",
@@ -32256,13 +32060,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Regolith"
+    primary_element: "Regolith"
   },
   AdvancedCure: {
     tag: "AdvancedCure",
     menu: {
-      category: "Misc",
-      subCategory: "Medicine"
+      category: "misc",
+      subCategory: "medicine"
     },
     components: [
       "KPrefabID",
@@ -32281,19 +32085,19 @@ export const db = {
       "EntitySplitter",
       "MedicinalPill"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MedicalSupplies",
       "AdvancedDoctorStationMedicalSupplies"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   HardIceComet: {
     tag: "HardIceComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32305,7 +32109,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IceOre",
       "Unstable",
@@ -32314,13 +32118,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "CrushedIce"
+    primary_element: "CrushedIce"
   },
   SlimeComet: {
     tag: "SlimeComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32332,7 +32136,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "FlyingCritterEdible",
       "Solid",
@@ -32340,13 +32144,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "SlimeMold"
+    primary_element: "SlimeMold"
   },
   UraniumComet: {
     tag: "UraniumComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32358,7 +32162,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "BuildableAny",
       "Metal",
@@ -32367,13 +32171,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "UraniumOre"
+    primary_element: "UraniumOre"
   },
   GassyMoo: {
     tag: "GassyMoo",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32385,19 +32189,19 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   NuclearWasteComet: {
     tag: "NuclearWasteComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32409,20 +32213,20 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Other",
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Corium"
+    primary_element: "Corium"
   },
   DustComet: {
     tag: "DustComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32434,7 +32238,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Unstable",
       "Solid",
@@ -32442,13 +32246,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Regolith"
+    primary_element: "Regolith"
   },
   SnowballComet: {
     tag: "SnowballComet",
     menu: {
-      category: "Space",
-      subCategory: "Comet"
+      category: "space",
+      subCategory: "comet"
     },
     components: [
       "KPrefabID",
@@ -32460,7 +32264,7 @@ export const db = {
       "KBatchedAnimController",
       "KCircleCollider2D"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IceOre",
       "Unstable",
@@ -32469,13 +32273,13 @@ export const db = {
       "Comet"
     ],
     mass: 1.0,
-    primaryElement: "Snow"
+    primary_element: "Snow"
   },
   LandingPod: {
     tag: "LandingPod",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -32494,18 +32298,18 @@ export const db = {
       "PodLander",
       "MinionStorage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 2000.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature"
+    decor_radius: 1.0,
+    primary_element: "Creature"
   },
   PropLadder: {
     tag: "PropLadder",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -32527,7 +32331,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Antiseptic",
@@ -32538,14 +32342,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Polypropylene"
+    decor_radius: 1.0,
+    primary_element: "Polypropylene"
   },
   WoodLog: {
     tag: "WoodLog",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -32564,20 +32368,20 @@ export const db = {
       "EntitySplitter",
       "SimpleMassStatusItem"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Organics",
       "BuildingWood"
     ],
-    massPerUnit: 1.0,
+    mass_per_unit: 1.0,
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostWormBasicFruit: {
     tag: "CompostWormBasicFruit",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -32600,18 +32404,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WormBasicFruit: {
     tag: "WormBasicFruit",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -32634,21 +32438,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 800000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostWormBasicFood: {
     tag: "CompostWormBasicFood",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -32671,18 +32475,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WormBasicFood: {
     tag: "WormBasicFood",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -32705,21 +32509,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 1.0,
     calories: 1200000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostTofu: {
     tag: "CompostTofu",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -32742,18 +32546,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Tofu: {
     tag: "Tofu",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -32776,22 +32580,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 2.0,
     calories: 3600000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   TableSalt: {
     tag: "TableSalt",
     menu: {
-      category: "Misc",
-      subCategory: "Other"
+      category: "misc",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -32809,17 +32613,17 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Other"
     ],
     mass: 1.0,
-    primaryElement: "Salt"
+    primary_element: "Salt"
   },
   CompostSwampLilyFlower: {
     tag: "CompostSwampLilyFlower",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -32838,18 +32642,18 @@ export const db = {
       "Movable",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampLilyFlower: {
     tag: "SwampLilyFlower",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -32868,17 +32672,17 @@ export const db = {
       "Compostable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostSwampFruit: {
     tag: "CompostSwampFruit",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -32901,18 +32705,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampFruit: {
     tag: "SwampFruit",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -32935,21 +32739,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 1840000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostSwampDelights: {
     tag: "CompostSwampDelights",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -32972,18 +32776,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampDelights: {
     tag: "SwampDelights",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33006,21 +32810,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 1.0,
     calories: 2240000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostWormSuperFood: {
     tag: "CompostWormSuperFood",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33043,18 +32847,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WormSuperFood: {
     tag: "WormSuperFood",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33077,22 +32881,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 3.0,
     calories: 2400000.0,
-    spoilTime: 19200.0
+    spoil_time: 19200.0
   },
   DehydratedSurfAndTurf: {
     tag: "DehydratedSurfAndTurf",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -33111,19 +32915,19 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   DehydratedSpicyTofu: {
     tag: "DehydratedSpicyTofu",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -33142,18 +32946,18 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   CompostSpicyTofu: {
     tag: "CompostSpicyTofu",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33176,18 +32980,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SpicyTofu: {
     tag: "SpicyTofu",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33210,21 +33014,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 5.0,
     calories: 4000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostSpiceNut: {
     tag: "CompostSpiceNut",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33247,18 +33051,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SpiceNut: {
     tag: "SpiceNut",
     menu: {
-      category: "Food",
-      subCategory: "Ingredient"
+      category: "food",
+      subCategory: "ingredient"
     },
     components: [
       "KPrefabID",
@@ -33281,19 +33085,19 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "PedestalDisplayable",
       "CookingIngredient"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   DehydratedSpiceBread: {
     tag: "DehydratedSpiceBread",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -33312,18 +33116,18 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   CompostSpiceBread: {
     tag: "CompostSpiceBread",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33346,18 +33150,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SpiceBread: {
     tag: "SpiceBread",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33380,21 +33184,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 5.0,
     calories: 4000000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostShellfishMeat: {
     tag: "CompostShellfishMeat",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33417,18 +33221,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ShellfishMeat: {
     tag: "ShellfishMeat",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33451,22 +33255,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 2.0,
     calories: 1000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   DehydratedSalsa: {
     tag: "DehydratedSalsa",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -33485,18 +33289,18 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   CompostSurfAndTurf: {
     tag: "CompostSurfAndTurf",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33519,18 +33323,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SurfAndTurf: {
     tag: "SurfAndTurf",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33553,34 +33357,34 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 4.0,
     calories: 6000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   ExplodingClusterShip: {
     tag: "ExplodingClusterShip",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "ClusterFXEntity"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   CompostWormSuperFruit: {
     tag: "CompostWormSuperFruit",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33603,18 +33407,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WormSuperFruit: {
     tag: "WormSuperFruit",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -33637,22 +33441,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 1.0,
     calories: 250000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   FossilBitsLarge: {
     tag: "FossilBitsLarge",
     menu: {
-      category: "Building",
-      subCategory: "Quest"
+      category: "building",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -33674,7 +33478,7 @@ export const db = {
       "Prioritizable",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -33682,14 +33486,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Fossil"
+    decor_radius: 1.0,
+    primary_element: "Fossil"
   },
   ResearchDatabank: {
     tag: "ResearchDatabank",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -33707,19 +33511,19 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Experimental"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PowerStationTools: {
     tag: "PowerStationTools",
     menu: {
-      category: "Misc",
-      subCategory: "Other"
+      category: "misc",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -33737,18 +33541,18 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable"
     ],
     mass: 5.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   OrbitalResearchDatabank: {
     tag: "OrbitalResearchDatabank",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -33766,19 +33570,19 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Experimental"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   MachineParts: {
     tag: "MachineParts",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -33795,16 +33599,16 @@ export const db = {
       "Pickupable",
       "Movable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 5.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   FarmStationTools: {
     tag: "FarmStationTools",
     menu: {
-      category: "Misc",
-      subCategory: "Other"
+      category: "misc",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -33822,17 +33626,17 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable"
     ],
     mass: 5.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostEggShell: {
     tag: "CompostEggShell",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33853,19 +33657,19 @@ export const db = {
       "SimpleMassStatusItem",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
-    massPerUnit: 1.0,
+    mass_per_unit: 1.0,
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   EggShell: {
     tag: "EggShell",
     menu: {
-      category: "Misc",
-      subCategory: "Other"
+      category: "misc",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -33885,19 +33689,19 @@ export const db = {
       "SimpleMassStatusItem",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Organics"
     ],
-    massPerUnit: 1.0,
+    mass_per_unit: 1.0,
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   DreamJournal: {
     tag: "DreamJournal",
     menu: {
-      category: "Misc",
-      subCategory: "Quest"
+      category: "misc",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -33915,18 +33719,18 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "StoryTraitResource"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   FoodSplat: {
     tag: "FoodSplat",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -33939,15 +33743,15 @@ export const db = {
       "InfoDescription",
       "Notifier"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostCrabWoodShell: {
     tag: "CompostCrabWoodShell",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -33969,19 +33773,19 @@ export const db = {
       "SymbolOverrideController",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
-    massPerUnit: 100.0,
+    mass_per_unit: 100.0,
     mass: 100.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CrabWoodShell: {
     tag: "CrabWoodShell",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -34002,20 +33806,20 @@ export const db = {
       "SymbolOverrideController",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Organics",
       "MoltShell"
     ],
-    massPerUnit: 100.0,
+    mass_per_unit: 100.0,
     mass: 100.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostBabyCrabWoodShell: {
     tag: "CompostBabyCrabWoodShell",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -34037,19 +33841,19 @@ export const db = {
       "SymbolOverrideController",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
-    massPerUnit: 10.0,
+    mass_per_unit: 10.0,
     mass: 10.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BabyCrabWoodShell: {
     tag: "BabyCrabWoodShell",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -34070,20 +33874,20 @@ export const db = {
       "SymbolOverrideController",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Organics",
       "MoltShell"
     ],
-    massPerUnit: 10.0,
+    mass_per_unit: 10.0,
     mass: 10.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostBabyCrabShell: {
     tag: "CompostBabyCrabShell",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -34104,19 +33908,19 @@ export const db = {
       "SimpleMassStatusItem",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
-    massPerUnit: 5.0,
+    mass_per_unit: 5.0,
     mass: 5.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BabyCrabShell: {
     tag: "BabyCrabShell",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -34136,20 +33940,20 @@ export const db = {
       "SimpleMassStatusItem",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Organics"
     ],
-    massPerUnit: 5.0,
+    mass_per_unit: 5.0,
     mass: 5.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   GeneShuffler: {
     tag: "GeneShuffler",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34175,7 +33979,7 @@ export const db = {
       "Storage",
       "ManualDeliveryKG"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "NotRoomAssignable",
@@ -34184,14 +33988,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   FossilRock: {
     tag: "FossilRock",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34218,7 +34022,7 @@ export const db = {
       "MinorFossilDigSite+Def",
       "FossilHuntInitializer+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -34226,14 +34030,14 @@ export const db = {
     ],
     mass: 4000.0,
     decor: 25.0,
-    decorRadius: 5.0,
-    primaryElement: "Fossil"
+    decor_radius: 5.0,
+    primary_element: "Fossil"
   },
   FossilResin: {
     tag: "FossilResin",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34260,7 +34064,7 @@ export const db = {
       "MinorFossilDigSite+Def",
       "FossilHuntInitializer+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -34268,14 +34072,14 @@ export const db = {
     ],
     mass: 4000.0,
     decor: 25.0,
-    decorRadius: 5.0,
-    primaryElement: "Fossil"
+    decor_radius: 5.0,
+    primary_element: "Fossil"
   },
   FossilIce: {
     tag: "FossilIce",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34302,7 +34106,7 @@ export const db = {
       "MinorFossilDigSite+Def",
       "FossilHuntInitializer+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -34310,14 +34114,14 @@ export const db = {
     ],
     mass: 4000.0,
     decor: 25.0,
-    decorRadius: 5.0,
-    primaryElement: "Fossil"
+    decor_radius: 5.0,
+    primary_element: "Fossil"
   },
   FossilBitsSmall: {
     tag: "FossilBitsSmall",
     menu: {
-      category: "Building",
-      subCategory: "Quest"
+      category: "building",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -34339,7 +34143,7 @@ export const db = {
       "Prioritizable",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -34347,13 +34151,13 @@ export const db = {
     ],
     mass: 1500.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Fossil"
+    decor_radius: 1.0,
+    primary_element: "Fossil"
   },
   CompostCrabShell: {
     tag: "CompostCrabShell",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -34374,19 +34178,19 @@ export const db = {
       "SimpleMassStatusItem",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
-    massPerUnit: 10.0,
+    mass_per_unit: 10.0,
     mass: 10.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CrabShell: {
     tag: "CrabShell",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -34406,33 +34210,33 @@ export const db = {
       "SimpleMassStatusItem",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "Organics"
     ],
-    massPerUnit: 10.0,
+    mass_per_unit: 10.0,
     mass: 10.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   EyeAnimation: {
     tag: "EyeAnimation",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   FullMinionUIPortrait: {
     tag: "FullMinionUIPortrait",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -34444,14 +34248,14 @@ export const db = {
       "KBatchedAnimController",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   GasGrassHarvested: {
     tag: "GasGrassHarvested",
     menu: {
-      category: "Misc",
-      subCategory: "Other"
+      category: "misc",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -34469,18 +34273,18 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Other"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PropGravitasLabTable: {
     tag: "PropGravitasLabTable",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34500,7 +34304,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34512,14 +34316,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasJar2: {
     tag: "PropGravitasJar2",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34539,7 +34343,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34551,14 +34355,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasJar1: {
     tag: "PropGravitasJar1",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34578,7 +34382,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34590,14 +34394,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasHandScanner: {
     tag: "PropGravitasHandScanner",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34616,7 +34420,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34628,14 +34432,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasFloorRobot: {
     tag: "PropGravitasFloorRobot",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34655,7 +34459,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34667,14 +34471,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasFirstAidKit: {
     tag: "PropGravitasFirstAidKit",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34695,7 +34499,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34707,14 +34511,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasDisplay4: {
     tag: "PropGravitasDisplay4",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34734,7 +34538,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34746,14 +34550,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasRobitcTable: {
     tag: "PropGravitasRobitcTable",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34773,7 +34577,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34785,14 +34589,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasDeskPodium: {
     tag: "PropGravitasDeskPodium",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34812,7 +34616,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34824,14 +34628,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasCreaturePoster: {
     tag: "PropGravitasCreaturePoster",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34851,7 +34655,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34863,14 +34667,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasCeilingRobot: {
     tag: "PropGravitasCeilingRobot",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34889,7 +34693,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34901,14 +34705,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityWallDegree: {
     tag: "PropFacilityWallDegree",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34928,7 +34732,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -34940,14 +34744,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityTable: {
     tag: "PropFacilityTable",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -34967,7 +34771,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -34978,14 +34782,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   PropFacilityStatue: {
     tag: "PropFacilityStatue",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35005,7 +34809,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -35017,14 +34821,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityPainting: {
     tag: "PropFacilityPainting",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35044,7 +34848,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -35056,14 +34860,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityHangingLight: {
     tag: "PropFacilityHangingLight",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35083,7 +34887,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -35094,14 +34898,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   PropGravitasDecorativeWindow: {
     tag: "PropGravitasDecorativeWindow",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35120,7 +34924,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "BuildableAny",
@@ -35130,14 +34934,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 15.0,
-    decorRadius: 3.0,
-    primaryElement: "Glass"
+    decor_radius: 3.0,
+    primary_element: "Glass"
   },
   PropFacilityGlobeDroors: {
     tag: "PropFacilityGlobeDroors",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35158,7 +34962,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -35170,14 +34974,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropGravitasShelf: {
     tag: "PropGravitasShelf",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35196,7 +35000,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -35208,14 +35012,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropReceptionDesk: {
     tag: "PropReceptionDesk",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35236,7 +35040,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -35247,14 +35051,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   WarpReceiver: {
     tag: "WarpReceiver",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35276,7 +35080,7 @@ export const db = {
       "Prioritizable",
       "LoreBearer"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotRoomAssignable",
       "WarpTech",
@@ -35286,14 +35090,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   WarpPortal: {
     tag: "WarpPortal",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35316,7 +35120,7 @@ export const db = {
       "LoreBearer",
       "Prioritizable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotRoomAssignable",
       "WarpTech",
@@ -35326,14 +35130,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   StickerBomb: {
     tag: "StickerBomb",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -35348,16 +35152,16 @@ export const db = {
       "KBoxCollider2D",
       "StickerBomb"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   VendingMachine: {
     tag: "VendingMachine",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35380,7 +35184,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35388,14 +35192,14 @@ export const db = {
     ],
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   SetLocker: {
     tag: "SetLocker",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35418,7 +35222,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35426,14 +35230,14 @@ export const db = {
     ],
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   PropGravitasSmallSeedLocker: {
     tag: "PropGravitasSmallSeedLocker",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35459,7 +35263,7 @@ export const db = {
     smdef: [
       "GravitasLocker+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35467,14 +35271,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   CryoTank: {
     tag: "CryoTank",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35496,21 +35300,21 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Solid",
       "Special"
     ],
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   PropLight: {
     tag: "PropLight",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35530,7 +35334,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -35541,14 +35345,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   ScoutLander: {
     tag: "ScoutLander",
     menu: {
-      category: "Building",
-      subCategory: "Lander"
+      category: "building",
+      subCategory: "lander"
     },
     components: [
       "KPrefabID",
@@ -35575,19 +35379,19 @@ export const db = {
       "CargoLander+Def",
       "CargoDropperStorage+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 400.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     deconstructable: true
   },
   RailGunPayload: {
     tag: "RailGunPayload",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -35613,19 +35417,19 @@ export const db = {
     smdef: [
       "RailGunPayload+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IgnoreMaterialCategory",
       "Experimental"
     ],
     mass: 200.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PropTallPlant: {
     tag: "PropTallPlant",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35645,7 +35449,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Antiseptic",
@@ -35656,14 +35460,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Polypropylene"
+    decor_radius: 1.0,
+    primary_element: "Polypropylene"
   },
   PropTable: {
     tag: "PropTable",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35683,7 +35487,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35691,14 +35495,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   PropSurfaceSatellite3: {
     tag: "PropSurfaceSatellite3",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35720,7 +35524,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35728,14 +35532,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   PropSurfaceSatellite2: {
     tag: "PropSurfaceSatellite2",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35757,7 +35561,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35765,14 +35569,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   PropSurfaceSatellite1: {
     tag: "PropSurfaceSatellite1",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35794,7 +35598,7 @@ export const db = {
       "Demolishable",
       "LoreBearer"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -35802,14 +35606,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   PropSkeleton: {
     tag: "PropSkeleton",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35828,21 +35632,21 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid"
     ],
     mass: 50.0,
     decor: 30.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   SweepBot: {
     tag: "SweepBot",
     menu: {
-      category: "Critter",
-      subCategory: "Robot"
+      category: "critter",
+      subCategory: "robot"
     },
     components: [
       "KPrefabID",
@@ -35885,7 +35689,7 @@ export const db = {
       "SweepBotTrappedMonitor+Def",
       "DrinkMilkMonitor+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "Creature",
       "Robot",
@@ -35894,13 +35698,13 @@ export const db = {
     ],
     battery: 9000.0,
     mass: 25.0,
-    primaryElement: "Creature",
-    batteryLoss: -17.1428566
+    primary_element: "Creature",
+    battery_loss: -17.1428566
   },
   CompostSalsa: {
     tag: "CompostSalsa",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -35923,18 +35727,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Salsa: {
     tag: "Salsa",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -35957,22 +35761,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 4.0,
     calories: 4400000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   PropFacilityDisplay: {
     tag: "PropFacilityDisplay",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -35993,7 +35797,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -36004,14 +35808,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   PropFacilityDisplay2: {
     tag: "PropFacilityDisplay2",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -36032,7 +35836,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -36043,14 +35847,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   MissileBasic: {
     tag: "MissileBasic",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -36071,18 +35875,18 @@ export const db = {
     smdef: [
       "MissileProjectile+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialProduct"
     ],
     mass: 10.0,
-    primaryElement: "Iron"
+    primary_element: "Iron"
   },
   MinionUIPortrait: {
     tag: "MinionUIPortrait",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -36093,14 +35897,14 @@ export const db = {
       "KBatchedAnimController",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   MinionSelectPreview: {
     tag: "MinionSelectPreview",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -36118,18 +35922,18 @@ export const db = {
       "KBatchedAnimController",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     hp: 100,
-    caloriesMax: 4000000.0,
-    caloriesLoss: -1666.66663,
-    carryAmount: 200.0
+    calories_max: 4000000.0,
+    calories_loss: -1666.66663,
+    carry_amount: 200.0
   },
   Minion: {
     tag: "Minion",
     menu: {
-      category: "Misc",
-      subCategory: "Dupe"
+      category: "misc",
+      subCategory: "dupe"
     },
     components: [
       "KPrefabID",
@@ -36186,23 +35990,23 @@ export const db = {
       "DebugGoToMonitor+Def",
       "EntityLuminescence+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DupeBrain",
       "CorrosionProof"
     ],
     hp: 100,
     mass: 30.0,
-    primaryElement: "Creature",
-    caloriesMax: 4000000.0,
-    caloriesLoss: -1666.66663,
-    carryAmount: 200.0
+    primary_element: "Creature",
+    calories_max: 4000000.0,
+    calories_loss: -1666.66663,
+    carry_amount: 200.0
   },
   MinionAssignablesProxy: {
     tag: "MinionAssignablesProxy",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -36212,28 +36016,28 @@ export const db = {
       "Equipment",
       "MinionAssignablesProxy"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   Meter: {
     tag: "Meter",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "KBatchedAnimTracker"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   MannequinUIPortrait: {
     tag: "MannequinUIPortrait",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -36244,27 +36048,27 @@ export const db = {
       "KBatchedAnimController",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   MouthAnimation: {
     tag: "MouthAnimation",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   LonelyMinion: {
     tag: "LonelyMinion",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -36279,21 +36083,21 @@ export const db = {
     smdef: [
       "LonelyMinion+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   SleepLocator: {
     tag: "SleepLocator",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "Approachable",
       "Sleepable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -36301,14 +36105,14 @@ export const db = {
   ApproachableLocator: {
     tag: "ApproachableLocator",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "Approachable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -36316,13 +36120,13 @@ export const db = {
   TargetLocator: {
     tag: "TargetLocator",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -36330,8 +36134,8 @@ export const db = {
   keepsake_megabrain: {
     tag: "keepsake_megabrain",
     menu: {
-      category: "Artifact",
-      subCategory: "Quest"
+      category: "artifact",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -36350,7 +36154,7 @@ export const db = {
       "OccupyArea",
       "DecorProvider"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -36358,14 +36162,14 @@ export const db = {
     ],
     mass: 25.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   keepsake_crittermanipulator: {
     tag: "keepsake_crittermanipulator",
     menu: {
-      category: "Artifact",
-      subCategory: "Quest"
+      category: "artifact",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -36384,7 +36188,7 @@ export const db = {
       "OccupyArea",
       "DecorProvider"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -36392,14 +36196,14 @@ export const db = {
     ],
     mass: 25.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   keepsake_lonelyminion: {
     tag: "keepsake_lonelyminion",
     menu: {
-      category: "Artifact",
-      subCategory: "Quest"
+      category: "artifact",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -36418,7 +36222,7 @@ export const db = {
       "OccupyArea",
       "DecorProvider"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -36426,14 +36230,14 @@ export const db = {
     ],
     mass: 25.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   keepsake_fossilhunt: {
     tag: "keepsake_fossilhunt",
     menu: {
-      category: "Artifact",
-      subCategory: "Quest"
+      category: "artifact",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -36452,7 +36256,7 @@ export const db = {
       "OccupyArea",
       "DecorProvider"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -36460,14 +36264,14 @@ export const db = {
     ],
     mass: 25.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   keepsake_morbrovermaker: {
     tag: "keepsake_morbrovermaker",
     menu: {
-      category: "Artifact",
-      subCategory: "Quest"
+      category: "artifact",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -36489,7 +36293,7 @@ export const db = {
     smdef: [
       "MorbRoverMakerKeepsake+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "MiscPickupable",
       "PedestalDisplayable",
@@ -36497,14 +36301,14 @@ export const db = {
     ],
     mass: 25.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   HarvestableSpacePOI_MetallicAsteroidField: {
     tag: "HarvestableSpacePOI_MetallicAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36520,14 +36324,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_SatelliteField: {
     tag: "HarvestableSpacePOI_SatelliteField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36543,14 +36347,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_RockyAsteroidField: {
     tag: "HarvestableSpacePOI_RockyAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36566,14 +36370,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_InterstellarIceField: {
     tag: "HarvestableSpacePOI_InterstellarIceField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36589,14 +36393,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_OrganicMassField: {
     tag: "HarvestableSpacePOI_OrganicMassField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36612,14 +36416,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_IceAsteroidField: {
     tag: "HarvestableSpacePOI_IceAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36635,14 +36439,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_GasGiantCloud: {
     tag: "HarvestableSpacePOI_GasGiantCloud",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36658,14 +36462,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_ChlorineCloud: {
     tag: "HarvestableSpacePOI_ChlorineCloud",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36681,14 +36485,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_GildedAsteroidField: {
     tag: "HarvestableSpacePOI_GildedAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36704,14 +36508,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_GlimmeringAsteroidField: {
     tag: "HarvestableSpacePOI_GlimmeringAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36727,14 +36531,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_HeliumCloud: {
     tag: "HarvestableSpacePOI_HeliumCloud",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36750,14 +36554,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_OilyAsteroidField: {
     tag: "HarvestableSpacePOI_OilyAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36773,14 +36577,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_OxidizedAsteroidField: {
     tag: "HarvestableSpacePOI_OxidizedAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36796,14 +36600,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_SaltyAsteroidField: {
     tag: "HarvestableSpacePOI_SaltyAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36819,14 +36623,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_FrozenOreField: {
     tag: "HarvestableSpacePOI_FrozenOreField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36842,14 +36646,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_ForestyOreField: {
     tag: "HarvestableSpacePOI_ForestyOreField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36865,14 +36669,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_SwampyOreField: {
     tag: "HarvestableSpacePOI_SwampyOreField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36888,14 +36692,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_SandyOreField: {
     tag: "HarvestableSpacePOI_SandyOreField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36911,14 +36715,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_RadioactiveGasCloud: {
     tag: "HarvestableSpacePOI_RadioactiveGasCloud",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36934,14 +36738,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_RadioactiveAsteroidField: {
     tag: "HarvestableSpacePOI_RadioactiveAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36957,14 +36761,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_OxygenRichAsteroidField: {
     tag: "HarvestableSpacePOI_OxygenRichAsteroidField",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -36980,14 +36784,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   HarvestableSpacePOI_InterstellarOcean: {
     tag: "HarvestableSpacePOI_InterstellarOcean",
     menu: {
-      category: "Space",
-      subCategory: "HarvestablePOI"
+      category: "space",
+      subCategory: "harvestable"
     },
     components: [
       "KPrefabID",
@@ -37003,14 +36807,14 @@ export const db = {
       "HarvestablePOIStates+Def",
       "ArtifactPOIStates+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   GeneShufflerRecharge: {
     tag: "GeneShufflerRecharge",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -37027,24 +36831,24 @@ export const db = {
       "Pickupable",
       "Movable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient"
     ],
     mass: 5.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   OneshotReactableLocator: {
     tag: "OneshotReactableLocator",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "OneshotReactableHost"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -37052,8 +36856,8 @@ export const db = {
   PropFacilityDisplay3: {
     tag: "PropFacilityDisplay3",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37074,7 +36878,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -37085,14 +36889,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   OrbitalBG: {
     tag: "OrbitalBG",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37100,14 +36904,14 @@ export const db = {
       "OrbitalObject",
       "SaveLoadRoot"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   ResearchDestination: {
     tag: "ResearchDestination",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37115,14 +36919,14 @@ export const db = {
       "SaveLoadRoot",
       "ResearchDestination"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   PropFacilityDesk: {
     tag: "PropFacilityDesk",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37143,7 +36947,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -37155,14 +36959,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityCouch: {
     tag: "PropFacilityCouch",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37182,7 +36986,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -37194,14 +36998,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityChandelier: {
     tag: "PropFacilityChandelier",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37221,7 +37025,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -37232,14 +37036,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   PropFacilityChairFlip: {
     tag: "PropFacilityChairFlip",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37259,7 +37063,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -37271,14 +37075,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropFacilityChair: {
     tag: "PropFacilityChair",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37298,7 +37102,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Plumbable",
@@ -37310,14 +37114,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Granite"
+    decor_radius: 1.0,
+    primary_element: "Granite"
   },
   PropElevator: {
     tag: "PropElevator",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37337,7 +37141,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -37348,14 +37152,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   PropDesk: {
     tag: "PropDesk",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37376,7 +37180,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Metal",
@@ -37387,21 +37191,21 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Steel"
+    decor_radius: 1.0,
+    primary_element: "Steel"
   },
   RepairableStorageProxy: {
     tag: "RepairableStorageProxy",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KSelectable",
       "Storage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -37409,8 +37213,8 @@ export const db = {
   PropClock: {
     tag: "PropClock",
     menu: {
-      category: "Building",
-      subCategory: "Gravitas"
+      category: "building",
+      subCategory: "gravitas"
     },
     components: [
       "KPrefabID",
@@ -37430,7 +37234,7 @@ export const db = {
       "Prioritizable",
       "Demolishable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Gravitas",
       "Solid",
@@ -37438,14 +37242,14 @@ export const db = {
     ],
     mass: 50.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Unobtanium"
+    decor_radius: 1.0,
+    primary_element: "Unobtanium"
   },
   MopPlacer: {
     tag: "MopPlacer",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37457,7 +37261,7 @@ export const db = {
       "Moppable",
       "Cancellable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -37465,8 +37269,8 @@ export const db = {
   DigPlacer: {
     tag: "DigPlacer",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37478,14 +37282,14 @@ export const db = {
       "Diggable",
       "CancellableDig"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   PioneerLander: {
     tag: "PioneerLander",
     menu: {
-      category: "Building",
-      subCategory: "Lander"
+      category: "building",
+      subCategory: "lander"
     },
     components: [
       "KPrefabID",
@@ -37512,19 +37316,19 @@ export const db = {
       "CargoLander+Def",
       "CargoDropperMinion+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 400.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     deconstructable: true
   },
   TemporalTear: {
     tag: "TemporalTear",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37532,28 +37336,28 @@ export const db = {
       "SaveLoadRoot",
       "TemporalTear"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   TelescopeTarget: {
     tag: "TelescopeTarget",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KSelectable",
       "TelescopeTarget"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   StoredMinion: {
     tag: "StoredMinion",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37564,27 +37368,27 @@ export const db = {
       "StoredMinionIdentity",
       "MinionModifiers"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   SimpleFX: {
     tag: "SimpleFX",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   MovePickupablePlacer: {
     tag: "MovePickupablePlacer",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -37597,7 +37401,7 @@ export const db = {
       "Storage",
       "Approachable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "NotConversationTopic"
     ]
@@ -37605,8 +37409,8 @@ export const db = {
   RotPile: {
     tag: "RotPile",
     menu: {
-      category: "Misc",
-      subCategory: "Other"
+      category: "misc",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -37627,20 +37431,20 @@ export const db = {
       "RotPile",
       "DecorProvider"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Organics",
       "Compostable"
     ],
     mass: 1.0,
     decor: -15.0,
-    decorRadius: 3.0,
-    primaryElement: "Creature"
+    decor_radius: 3.0,
+    primary_element: "Creature"
   },
   CompostRawEgg: {
     tag: "CompostRawEgg",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -37663,18 +37467,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   RawEgg: {
     tag: "RawEgg",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -37698,22 +37502,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 1600000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   DehydratedQuiche: {
     tag: "DehydratedQuiche",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -37732,19 +37536,19 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   SquirrelEgg: {
     tag: "SquirrelEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -37767,20 +37571,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Squirrel: {
     tag: "Squirrel",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -37841,7 +37645,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -37850,24 +37654,24 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
-    timeWaitPlantSeed: {
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
+    time_wait_plant_seed: {
       Item1: 60.0,
       Item2: 300.0
     },
-    timeWaitClimbTree: {
+    time_wait_climb_tree: {
       Item1: 60.0,
       Item2: 120.0
     },
@@ -37878,8 +37682,8 @@ export const db = {
   SquirrelHugEgg: {
     tag: "SquirrelHugEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -37902,20 +37706,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SquirrelHug: {
     tag: "SquirrelHug",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -37977,7 +37781,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -37985,24 +37789,24 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
+    decor_radius: 4.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 4.0,
-    timeWaitPlantSeed: {
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 4.0,
+    time_wait_plant_seed: {
       Item1: 60.0,
       Item2: 300.0
     },
-    timeWaitClimbTree: {
+    time_wait_climb_tree: {
       Item1: 60.0,
       Item2: 120.0
     },
@@ -38013,8 +37817,8 @@ export const db = {
   StaterpillarEgg: {
     tag: "StaterpillarEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -38037,20 +37841,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Staterpillar: {
     tag: "Staterpillar",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -38109,7 +37913,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Walker",
       "Amphibious",
@@ -38119,19 +37923,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -38139,8 +37943,8 @@ export const db = {
   HighEnergyParticle: {
     tag: "HighEnergyParticle",
     menu: {
-      category: "Element",
-      subCategory: "Other"
+      category: "element",
+      subCategory: "other"
     },
     components: [
       "KPrefabID",
@@ -38157,16 +37961,16 @@ export const db = {
       "RadiationEmitter",
       "HighEnergyParticle"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   StaterpillarLiquidEgg: {
     tag: "StaterpillarLiquidEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -38189,20 +37993,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   StaterpillarLiquid: {
     tag: "StaterpillarLiquid",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -38263,7 +38067,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Walker",
       "Amphibious",
@@ -38272,19 +38076,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 263.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 363.15,
+    low_temp_warning: 263.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 363.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -38292,8 +38096,8 @@ export const db = {
   FishFeederBot: {
     tag: "FishFeederBot",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -38301,14 +38105,14 @@ export const db = {
       "KBatchedAnimController",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   BasicFabric: {
     tag: "BasicFabric",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -38327,18 +38131,18 @@ export const db = {
       "EntitySplitter",
       "Klei.AI.PrefabAttributeModifiers"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient",
       "BuildingFiber"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostBasicFabricMaterialPlantSeed: {
     tag: "CompostBasicFabricMaterialPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -38359,18 +38163,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicFabricMaterialPlantSeed: {
     tag: "BasicFabricMaterialPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -38391,20 +38195,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "WaterSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicFabricPlant: {
     tag: "BasicFabricPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -38448,26 +38252,26 @@ export const db = {
       "RadiationVulnerable+Def",
       "IrrigationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 295.15,
-    lowTempFatal: 248.15,
-    highTempWarning: 310.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 295.15,
+    low_temp_fatal: 248.15,
+    high_temp_warning: 310.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
-    maxRadiation: 4600.0,
+    decor_radius: 1.0,
+    primary_element: "Creature",
+    max_radiation: 4600.0,
     age: 2.0
   },
   BasicForagePlant: {
     tag: "BasicForagePlant",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -38486,22 +38290,22 @@ export const db = {
       "EntitySplitter",
       "Edible"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 800000.0,
-    spoilTime: 0.0
+    spoil_time: 0.0
   },
   BasicForagePlantPlanted: {
     tag: "BasicForagePlantPlanted",
     menu: {
-      category: "Plant",
-      subCategory: "Forage"
+      category: "plant",
+      subCategory: "forage"
     },
     components: [
       "KPrefabID",
@@ -38527,17 +38331,17 @@ export const db = {
       "SeedProducer",
       "BasicForagePlantPlanted"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 100.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   CompostBasicSingleHarvestPlantSeed: {
     tag: "CompostBasicSingleHarvestPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -38558,18 +38362,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicSingleHarvestPlantSeed: {
     tag: "BasicSingleHarvestPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -38590,20 +38394,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicSingleHarvestPlant: {
     tag: "BasicSingleHarvestPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -38645,25 +38449,25 @@ export const db = {
       "RadiationVulnerable+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 283.15,
-    lowTempFatal: 218.15,
-    highTempWarning: 303.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 218.15,
+    high_temp_warning: 303.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 4600.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 4600.0,
     age: 3.0
   },
   CompostBeanPlantSeed: {
     tag: "CompostBeanPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -38684,18 +38488,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BeanPlantSeed: {
     tag: "BeanPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -38720,20 +38524,20 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "PedestalDisplayable",
       "CookingIngredient"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BeanPlant: {
     tag: "BeanPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -38779,25 +38583,25 @@ export const db = {
       "IrrigationMonitor+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 248.15,
-    lowTempFatal: 198.15,
-    highTempWarning: 273.15,
-    highTempFatal: 323.15,
+    low_temp_warning: 248.15,
+    low_temp_fatal: 198.15,
+    high_temp_warning: 273.15,
+    high_temp_fatal: 323.15,
     mass: 2.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 9800.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 9800.0,
     age: 21.0
   },
   CompostCactusPlantSeed: {
     tag: "CompostCactusPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -38817,18 +38621,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CactusPlantSeed: {
     tag: "CactusPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -38848,20 +38652,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CactusPlant: {
     tag: "CactusPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -38894,24 +38698,24 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 273.15,
-    lowTempFatal: 200.0,
-    highTempWarning: 373.15,
-    highTempFatal: 400.0,
+    low_temp_warning: 273.15,
+    low_temp_fatal: 200.0,
+    high_temp_warning: 373.15,
+    high_temp_fatal: 400.0,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0
   },
   CompostColdBreatherSeed: {
     tag: "CompostColdBreatherSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -38931,18 +38735,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ColdBreatherSeed: {
     tag: "ColdBreatherSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -38962,20 +38766,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ColdBreather: {
     tag: "ColdBreather",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -39009,21 +38813,21 @@ export const db = {
     smdef: [
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
-    lowTempWarning: 213.15,
-    lowTempFatal: 183.15,
-    highTempWarning: 368.15,
-    highTempFatal: 463.15,
+    low_temp_warning: 213.15,
+    low_temp_fatal: 183.15,
+    high_temp_warning: 368.15,
+    high_temp_fatal: 463.15,
     mass: 400.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   CompostColdWheatSeed: {
     tag: "CompostColdWheatSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39044,18 +38848,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ColdWheatSeed: {
     tag: "ColdWheatSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -39080,20 +38884,20 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "PedestalDisplayable",
       "CookingIngredient"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ColdWheat: {
     tag: "ColdWheat",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -39139,25 +38943,25 @@ export const db = {
       "FertilizationMonitor+Def",
       "IrrigationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 218.15,
-    lowTempFatal: 118.149994,
-    highTempWarning: 278.15,
-    highTempFatal: 358.15,
+    low_temp_warning: 218.15,
+    low_temp_fatal: 118.149994,
+    high_temp_warning: 278.15,
+    high_temp_fatal: 358.15,
     mass: 1.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 12200.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 12200.0,
     age: 18.0
   },
   CompostCritterTrapPlantSeed: {
     tag: "CompostCritterTrapPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39177,18 +38981,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CritterTrapPlantSeed: {
     tag: "CritterTrapPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -39208,20 +39012,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CritterTrapPlant: {
     tag: "CritterTrapPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -39266,21 +39070,21 @@ export const db = {
       "RadiationVulnerable+Def",
       "IrrigationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 183.0,
-    lowTempFatal: 173.0,
-    highTempWarning: 273.0,
-    highTempFatal: 283.0,
+    low_temp_warning: 183.0,
+    low_temp_fatal: 173.0,
+    high_temp_warning: 273.0,
+    high_temp_fatal: 283.0,
     mass: 4.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0,
     age: 30.0,
-    trapCritters: [
+    trap_critters: [
       "Walker",
       "Hoverer"
     ]
@@ -39288,7 +39092,7 @@ export const db = {
   CompostCylindricaSeed: {
     tag: "CompostCylindricaSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39308,18 +39112,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CylindricaSeed: {
     tag: "CylindricaSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -39339,20 +39143,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Cylindrica: {
     tag: "Cylindrica",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -39385,24 +39189,24 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 293.15,
-    lowTempFatal: 288.15,
-    highTempWarning: 323.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 293.15,
+    low_temp_fatal: 288.15,
+    high_temp_warning: 323.15,
+    high_temp_fatal: 373.15,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0
   },
   CompostEvilFlowerSeed: {
     tag: "CompostEvilFlowerSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39422,18 +39226,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   EvilFlowerSeed: {
     tag: "EvilFlowerSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -39453,20 +39257,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   EvilFlower: {
     tag: "EvilFlower",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -39500,24 +39304,24 @@ export const db = {
       "RadiationVulnerable+Def",
       "DiseaseDropper+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 258.15,
-    lowTempFatal: 168.15,
-    highTempWarning: 513.15,
-    highTempFatal: 563.15,
+    low_temp_warning: 258.15,
+    low_temp_fatal: 168.15,
+    high_temp_warning: 513.15,
+    high_temp_fatal: 563.15,
     mass: 1.0,
     decor: 80.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
-    maxRadiation: 12200.0
+    decor_radius: 7.0,
+    primary_element: "Creature",
+    max_radiation: 12200.0
   },
   CompostFilterPlantSeed: {
     tag: "CompostFilterPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39538,18 +39342,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ForestForagePlant: {
     tag: "ForestForagePlant",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -39568,22 +39372,22 @@ export const db = {
       "EntitySplitter",
       "Edible"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 6400000.0,
-    spoilTime: 0.0
+    spoil_time: 0.0
   },
   ForestForagePlantPlanted: {
     tag: "ForestForagePlantPlanted",
     menu: {
-      category: "Plant",
-      subCategory: "Forage"
+      category: "plant",
+      subCategory: "forage"
     },
     components: [
       "KPrefabID",
@@ -39609,17 +39413,17 @@ export const db = {
       "SeedProducer",
       "BasicForagePlantPlanted"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 100.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   CompostBulbPlantSeed: {
     tag: "CompostBulbPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39639,18 +39443,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BulbPlantSeed: {
     tag: "BulbPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -39670,20 +39474,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BulbPlant: {
     tag: "BulbPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -39717,24 +39521,24 @@ export const db = {
       "RadiationVulnerable+Def",
       "DiseaseDropper+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 293.15,
-    lowTempFatal: 288.0,
-    highTempWarning: 313.15,
-    highTempFatal: 333.15,
+    low_temp_warning: 293.15,
+    low_temp_fatal: 288.0,
+    high_temp_warning: 313.15,
+    high_temp_fatal: 333.15,
     mass: 1.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0
   },
   CompostForestTreeSeed: {
     tag: "CompostForestTreeSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -39755,18 +39559,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ForestTreeSeed: {
     tag: "ForestTreeSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -39787,20 +39591,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ForestTree: {
     tag: "ForestTree",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -39846,26 +39650,26 @@ export const db = {
       "IrrigationMonitor+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 288.15,
-    lowTempFatal: 258.15,
-    highTempWarning: 313.15,
-    highTempFatal: 448.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 258.15,
+    high_temp_warning: 313.15,
+    high_temp_fatal: 448.15,
     mass: 2.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 9800.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 9800.0,
     age: 4.5
   },
   ScoutRover: {
     tag: "ScoutRover",
     menu: {
-      category: "Critter",
-      subCategory: "Robot"
+      category: "critter",
+      subCategory: "robot"
     },
     components: [
       "KPrefabID",
@@ -39902,7 +39706,7 @@ export const db = {
       "CreatureDebugGoToMonitor+Def",
       "RobotAi+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "Experimental",
       "DupeBrain",
@@ -39911,16 +39715,16 @@ export const db = {
     battery: 180000.0,
     hp: 100,
     mass: 100.0,
-    primaryElement: "Creature",
-    batteryLoss: -30.0,
-    carryAmount: 200.0,
+    primary_element: "Creature",
+    battery_loss: -30.0,
+    carry_amount: 200.0,
     deconstructable: true
   },
   PuftEgg: {
     tag: "PuftEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -39943,20 +39747,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.5,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Puft: {
     tag: "Puft",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40016,7 +39820,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -40025,19 +39829,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 328.15,
-    highTempFatal: 378.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 328.15,
+    high_temp_fatal: 378.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -40045,8 +39849,8 @@ export const db = {
   DebrisPayload: {
     tag: "DebrisPayload",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -40073,33 +39877,33 @@ export const db = {
     smdef: [
       "RailGunPayload+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IgnoreMaterialCategory",
       "Experimental"
     ],
     mass: 100.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   EffectTemplateFx: {
     tag: "EffectTemplateFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   EffectTemplateOverrideFx: {
     tag: "EffectTemplateOverrideFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -40107,84 +39911,84 @@ export const db = {
       "SymbolOverrideController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   AttackSplashFx: {
     tag: "AttackSplashFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   OreAbsorbFx: {
     tag: "OreAbsorbFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   PlantDeathFx: {
     tag: "PlantDeathFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   BuildSplashFx: {
     tag: "BuildSplashFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   DemolishSplashFx: {
     tag: "DemolishSplashFx",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KBatchedAnimController",
       "LoopingSounds"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   EscapePod: {
     tag: "EscapePod",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
@@ -40212,19 +40016,19 @@ export const db = {
       "TravellingCargoLander+Def",
       "CargoDropperMinion+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     deconstructable: true
   },
   BeeHive: {
     tag: "BeeHive",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40266,29 +40070,29 @@ export const db = {
       "HiveHarvestMonitor+Def",
       "BeehiveCalorieMonitor+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "Experimental",
       "Creature",
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 183.0,
-    lowTempFatal: 173.0,
-    highTempWarning: 263.0,
-    highTempFatal: 273.0,
+    low_temp_warning: 183.0,
+    low_temp_fatal: 173.0,
+    high_temp_warning: 263.0,
+    high_temp_fatal: 273.0,
     mass: 100.0,
     decor: 5.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
-    caloriesMax: 4.5E+07,
-    caloriesLoss: -2500.0
+    decor_radius: 1.0,
+    primary_element: "Creature",
+    calories_max: 4.5E+07,
+    calories_loss: -2500.0
   },
   Bee: {
     tag: "Bee",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40342,7 +40146,7 @@ export const db = {
       "BeeSleepMonitor+Def",
       "BeeForagingMonitor+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -40351,24 +40155,24 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 5,
-    lowTempWarning: 183.0,
-    lowTempFatal: 173.0,
-    highTempWarning: 263.0,
-    highTempFatal: 273.0,
+    low_temp_warning: 183.0,
+    low_temp_fatal: 173.0,
+    high_temp_warning: 263.0,
+    high_temp_fatal: 273.0,
     mass: 5.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature",
+    decor_radius: 5.0,
+    primary_element: "Creature",
     age: 5.0,
-    spacePerCritter: 4.0,
+    space_per_critter: 4.0,
     happy: 4.0,
     glum: -1.0
   },
   DreckoEgg: {
     tag: "DreckoEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -40391,20 +40195,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Drecko: {
     tag: "Drecko",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40463,7 +40267,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Walker",
       "Creature",
@@ -40472,19 +40276,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 308.15,
-    lowTempFatal: 288.15,
-    highTempWarning: 363.15,
-    highTempFatal: 383.15,
+    low_temp_warning: 308.15,
+    low_temp_fatal: 288.15,
+    high_temp_warning: 363.15,
+    high_temp_fatal: 383.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 150.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -40492,8 +40296,8 @@ export const db = {
   DreckoPlasticEgg: {
     tag: "DreckoPlasticEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -40516,20 +40320,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   DreckoPlastic: {
     tag: "DreckoPlastic",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40588,7 +40392,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Walker",
       "Creature",
@@ -40596,19 +40400,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 298.15,
-    lowTempFatal: 278.15,
-    highTempWarning: 333.15,
-    highTempFatal: 353.15,
+    low_temp_warning: 298.15,
+    low_temp_fatal: 278.15,
+    high_temp_warning: 333.15,
+    high_temp_fatal: 353.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 150.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -40616,8 +40420,8 @@ export const db = {
   Glom: {
     tag: "Glom",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40666,7 +40470,7 @@ export const db = {
       "ElementDropperMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 13.0,
+    menu_order: 13.0,
     tags: [
       "Walker",
       "OriginalCreature",
@@ -40675,20 +40479,20 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 293.15,
-    lowTempFatal: 273.15,
-    highTempWarning: 393.15,
-    highTempFatal: 423.15,
+    low_temp_warning: 293.15,
+    low_temp_fatal: 273.15,
+    high_temp_warning: 393.15,
+    high_temp_fatal: 423.15,
     mass: 25.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature"
+    decor_radius: 1.0,
+    primary_element: "Creature"
   },
   LightBugBlackEgg: {
     tag: "LightBugBlackEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -40711,20 +40515,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBugBlack: {
     tag: "LightBugBlack",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40783,7 +40587,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -40791,19 +40595,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 80.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -40811,8 +40615,8 @@ export const db = {
   LightBugBlueEgg: {
     tag: "LightBugBlueEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -40835,20 +40639,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBugBlue: {
     tag: "LightBugBlue",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -40910,7 +40714,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -40918,19 +40722,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -40938,8 +40742,8 @@ export const db = {
   LightBugEgg: {
     tag: "LightBugEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -40962,20 +40766,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBug: {
     tag: "LightBug",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41037,7 +40841,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -41047,19 +40851,19 @@ export const db = {
       "LightSource"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature",
+    decor_radius: 5.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41067,8 +40871,8 @@ export const db = {
   PuftOxyliteEgg: {
     tag: "PuftOxyliteEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41091,20 +40895,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.5,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PuftOxylite: {
     tag: "PuftOxylite",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41163,7 +40967,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -41171,19 +40975,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 303.15,
-    lowTempFatal: 258.15,
-    highTempWarning: 338.15,
-    highTempFatal: 388.15,
+    low_temp_warning: 303.15,
+    low_temp_fatal: 258.15,
+    high_temp_warning: 338.15,
+    high_temp_fatal: 388.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41191,8 +40995,8 @@ export const db = {
   LightBugCrystalEgg: {
     tag: "LightBugCrystalEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41215,20 +41019,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBugCrystal: {
     tag: "LightBugCrystal",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41290,7 +41094,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -41298,19 +41102,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 200.0,
-    decorRadius: 8.0,
-    primaryElement: "Creature",
+    decor_radius: 8.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41318,8 +41122,8 @@ export const db = {
   LightBugPinkEgg: {
     tag: "LightBugPinkEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41342,20 +41146,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBugPink: {
     tag: "LightBugPink",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41417,7 +41221,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -41425,19 +41229,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41445,8 +41249,8 @@ export const db = {
   LightBugPurpleEgg: {
     tag: "LightBugPurpleEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41469,20 +41273,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBugPurple: {
     tag: "LightBugPurple",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41544,7 +41348,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -41552,19 +41356,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41572,8 +41376,8 @@ export const db = {
   MoleEgg: {
     tag: "MoleEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41596,20 +41400,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Mole: {
     tag: "Mole",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41666,7 +41470,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -41676,16 +41480,16 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 123.149994,
-    lowTempFatal: 73.1499939,
-    highTempWarning: 673.15,
-    highTempFatal: 773.15,
+    low_temp_warning: 123.149994,
+    low_temp_fatal: 73.1499939,
+    high_temp_warning: 673.15,
+    high_temp_fatal: 773.15,
     mass: 25.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 4.8E+07,
-    caloriesLoss: -8000.0,
-    milkConsummer: true,
+    calories_max: 4.8E+07,
+    calories_loss: -8000.0,
+    milk_consummer: true,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41693,8 +41497,8 @@ export const db = {
   MoleDelicacyEgg: {
     tag: "MoleDelicacyEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41717,20 +41521,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   MoleDelicacy: {
     tag: "MoleDelicacy",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41788,7 +41592,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -41797,16 +41601,16 @@ export const db = {
       "Digger"
     ],
     hp: 25,
-    lowTempWarning: 123.149994,
-    lowTempFatal: 73.1499939,
-    highTempWarning: 673.15,
-    highTempFatal: 773.15,
+    low_temp_warning: 123.149994,
+    low_temp_fatal: 73.1499939,
+    high_temp_warning: 673.15,
+    high_temp_fatal: 773.15,
     mass: 25.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 2.4E+07,
-    caloriesLoss: -8000.0,
-    milkConsummer: true,
+    calories_max: 2.4E+07,
+    calories_loss: -8000.0,
+    milk_consummer: true,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41814,8 +41618,8 @@ export const db = {
   Moo: {
     tag: "Moo",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -41875,7 +41679,7 @@ export const db = {
       "CreatureCalorieMonitor+Def",
       "SolidConsumerMonitor+Def"
     ],
-    menuOrder: 12.0,
+    menu_order: 12.0,
     tags: [
       "Creature",
       "Flyer",
@@ -41884,19 +41688,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 123.149994,
-    lowTempFatal: 73.1499939,
-    highTempWarning: 423.15,
-    highTempFatal: 473.15,
+    low_temp_warning: 123.149994,
+    low_temp_fatal: 73.1499939,
+    high_temp_warning: 423.15,
+    high_temp_fatal: 473.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -41904,8 +41708,8 @@ export const db = {
   MorbRover: {
     tag: "MorbRover",
     menu: {
-      category: "Critter",
-      subCategory: "Robot"
+      category: "critter",
+      subCategory: "robot"
     },
     components: [
       "KPrefabID",
@@ -41942,7 +41746,7 @@ export const db = {
       "CreatureDebugGoToMonitor+Def",
       "RobotAi+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "Experimental",
       "DupeBrain",
@@ -41951,16 +41755,16 @@ export const db = {
     battery: 180000.0,
     hp: 100,
     mass: 300.0,
-    primaryElement: "Steel",
-    batteryLoss: -30.0,
-    carryAmount: 400.0,
+    primary_element: "Steel",
+    battery_loss: -30.0,
+    carry_amount: 400.0,
     deconstructable: true
   },
   OilfloaterEgg: {
     tag: "OilfloaterEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -41983,20 +41787,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Oilfloater: {
     tag: "Oilfloater",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42056,7 +41860,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Hoverer",
       "Creature",
@@ -42065,19 +41869,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 323.15,
-    lowTempFatal: 308.15,
-    highTempWarning: 413.15,
-    highTempFatal: 433.15,
+    low_temp_warning: 323.15,
+    low_temp_fatal: 308.15,
+    high_temp_warning: 413.15,
+    high_temp_fatal: 433.15,
     mass: 50.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
+    decor_radius: 2.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 600000.0,
-    caloriesLoss: -200.0,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 600000.0,
+    calories_loss: -200.0,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42085,8 +41889,8 @@ export const db = {
   OilfloaterDecorEgg: {
     tag: "OilfloaterDecorEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -42109,20 +41913,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   OilfloaterDecor: {
     tag: "OilfloaterDecor",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42182,7 +41986,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Hoverer",
       "Creature",
@@ -42190,19 +41994,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 268.15,
-    highTempWarning: 343.15,
-    highTempFatal: 363.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 268.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 363.15,
     mass: 50.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 150.0,
-    caloriesMax: 600000.0,
-    caloriesLoss: -200.0,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 600000.0,
+    calories_loss: -200.0,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42210,8 +42014,8 @@ export const db = {
   OilfloaterHighTempEgg: {
     tag: "OilfloaterHighTempEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -42234,20 +42038,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   OilfloaterHighTemp: {
     tag: "OilfloaterHighTemp",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42307,7 +42111,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Hoverer",
       "Creature",
@@ -42315,19 +42119,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 363.15,
-    lowTempFatal: 348.15,
-    highTempWarning: 523.15,
-    highTempFatal: 543.15,
+    low_temp_warning: 363.15,
+    low_temp_fatal: 348.15,
+    high_temp_warning: 523.15,
+    high_temp_fatal: 543.15,
     mass: 50.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
+    decor_radius: 2.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 600000.0,
-    caloriesLoss: -200.0,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 600000.0,
+    calories_loss: -200.0,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42335,8 +42139,8 @@ export const db = {
   PuftAlphaEgg: {
     tag: "PuftAlphaEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -42359,20 +42163,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.5,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PuftAlpha: {
     tag: "PuftAlpha",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42432,7 +42236,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -42440,19 +42244,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 258.15,
-    lowTempFatal: 213.15,
-    highTempWarning: 338.15,
-    highTempFatal: 388.15,
+    low_temp_warning: 258.15,
+    low_temp_fatal: 213.15,
+    high_temp_warning: 338.15,
+    high_temp_fatal: 388.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42460,8 +42264,8 @@ export const db = {
   PuftBleachstoneEgg: {
     tag: "PuftBleachstoneEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -42484,20 +42288,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.5,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PuftBleachstone: {
     tag: "PuftBleachstone",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42556,7 +42360,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -42564,19 +42368,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 258.15,
-    lowTempFatal: 213.15,
-    highTempWarning: 308.15,
-    highTempFatal: 358.15,
+    low_temp_warning: 258.15,
+    low_temp_fatal: 213.15,
+    high_temp_warning: 308.15,
+    high_temp_fatal: 358.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42584,8 +42388,8 @@ export const db = {
   LightBugOrangeEgg: {
     tag: "LightBugOrangeEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -42608,20 +42412,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 0.2,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LightBugOrange: {
     tag: "LightBugOrange",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42683,7 +42487,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -42691,19 +42495,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42711,7 +42515,7 @@ export const db = {
   CompostGasGrassSeed: {
     tag: "CompostGasGrassSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -42732,18 +42536,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   GasGrassSeed: {
     tag: "GasGrassSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -42764,20 +42568,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   GasGrass: {
     tag: "GasGrass",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -42824,27 +42628,27 @@ export const db = {
       "IrrigationMonitor+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 0.0,
-    lowTempFatal: 218.15,
-    highTempWarning: 348.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 0.0,
+    low_temp_fatal: 218.15,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 373.15,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 12200.0,
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 12200.0,
     age: 4.0,
-    minLight: 10000.0
+    min_light: 10000.0
   },
   StaterpillarGasEgg: {
     tag: "StaterpillarGasEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -42867,20 +42671,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   StaterpillarGas: {
     tag: "StaterpillarGas",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -42941,7 +42745,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Walker",
       "Amphibious",
@@ -42950,19 +42754,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 263.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 363.15,
+    low_temp_warning: 263.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 363.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -42970,8 +42774,8 @@ export const db = {
   GeyserGeneric_steam: {
     tag: "GeyserGeneric_steam",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -42994,7 +42798,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43002,14 +42806,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_hot_steam: {
     tag: "GeyserGeneric_hot_steam",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43032,7 +42836,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43040,14 +42844,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_hot_water: {
     tag: "GeyserGeneric_hot_water",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43070,7 +42874,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43078,14 +42882,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_slush_water: {
     tag: "GeyserGeneric_slush_water",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43108,7 +42912,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43116,14 +42920,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_filthy_water: {
     tag: "GeyserGeneric_filthy_water",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43146,7 +42950,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43154,14 +42958,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_slush_salt_water: {
     tag: "GeyserGeneric_slush_salt_water",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43184,7 +42988,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43192,14 +42996,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_salt_water: {
     tag: "GeyserGeneric_salt_water",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43222,7 +43026,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43230,14 +43034,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_small_volcano: {
     tag: "GeyserGeneric_small_volcano",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43260,7 +43064,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43268,14 +43072,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_big_volcano: {
     tag: "GeyserGeneric_big_volcano",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43298,7 +43102,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43306,14 +43110,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_liquid_co2: {
     tag: "GeyserGeneric_liquid_co2",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43336,7 +43140,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43344,14 +43148,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_hot_co2: {
     tag: "GeyserGeneric_hot_co2",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43374,7 +43178,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43382,14 +43186,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_hot_hydrogen: {
     tag: "GeyserGeneric_hot_hydrogen",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43412,7 +43216,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43420,14 +43224,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_hot_po2: {
     tag: "GeyserGeneric_hot_po2",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43450,7 +43254,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43458,14 +43262,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_slimy_po2: {
     tag: "GeyserGeneric_slimy_po2",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43488,7 +43292,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43496,14 +43300,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_chlorine_gas: {
     tag: "GeyserGeneric_chlorine_gas",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43526,7 +43330,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43534,14 +43338,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_methane: {
     tag: "GeyserGeneric_methane",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43564,7 +43368,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43572,14 +43376,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_copper: {
     tag: "GeyserGeneric_molten_copper",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43602,7 +43406,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43610,14 +43414,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_iron: {
     tag: "GeyserGeneric_molten_iron",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43640,7 +43444,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43648,14 +43452,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_gold: {
     tag: "GeyserGeneric_molten_gold",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43678,7 +43482,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43686,14 +43490,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_aluminum: {
     tag: "GeyserGeneric_molten_aluminum",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43716,7 +43520,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43724,14 +43528,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_tungsten: {
     tag: "GeyserGeneric_molten_tungsten",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43754,7 +43558,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43762,14 +43566,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_niobium: {
     tag: "GeyserGeneric_molten_niobium",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43792,7 +43596,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43800,14 +43604,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_molten_cobalt: {
     tag: "GeyserGeneric_molten_cobalt",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43830,7 +43634,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43838,14 +43642,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_oil_drip: {
     tag: "GeyserGeneric_oil_drip",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43868,7 +43672,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43876,14 +43680,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric_liquid_sulfur: {
     tag: "GeyserGeneric_liquid_sulfur",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -43906,7 +43710,7 @@ export const db = {
       "Studyable",
       "LoopingSounds"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "GeyserFeature",
       "Solid",
@@ -43914,28 +43718,28 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "Katairite"
+    decor_radius: 2.0,
+    primary_element: "Katairite"
   },
   GeyserGeneric: {
     tag: "GeyserGeneric",
     menu: {
-      category: "NONE",
-      subCategory: "NONE"
+      category: "none",
+      subCategory: "none"
     },
     components: [
       "KPrefabID",
       "KSelectable",
       "SaveLoadRoot"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: []
   },
   DehydratedFoodPackage: {
     tag: "DehydratedFoodPackage",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -43954,18 +43758,18 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   CompostColdWheatBread: {
     tag: "CompostColdWheatBread",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -43988,18 +43792,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ColdWheatBread: {
     tag: "ColdWheatBread",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44022,21 +43826,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 2.0,
     calories: 1200000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostCookedEgg: {
     tag: "CompostCookedEgg",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44059,18 +43863,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CookedEgg: {
     tag: "CookedEgg",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44093,21 +43897,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 2.0,
     calories: 2800000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostCookedFish: {
     tag: "CompostCookedFish",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44130,18 +43934,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CookedFish: {
     tag: "CookedFish",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44164,21 +43968,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 3.0,
     calories: 1600000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostCookedMeat: {
     tag: "CompostCookedMeat",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44201,18 +44005,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CookedMeat: {
     tag: "CookedMeat",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44235,21 +44039,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 3.0,
     calories: 4000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostCurry: {
     tag: "CompostCurry",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44272,18 +44076,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Curry: {
     tag: "Curry",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44306,22 +44110,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 4.0,
     calories: 5000000.0,
-    spoilTime: 9600.0
+    spoil_time: 9600.0
   },
   FieldRation: {
     tag: "FieldRation",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44340,21 +44144,21 @@ export const db = {
       "EntitySplitter",
       "Edible"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 800000.0,
-    spoilTime: 0.0
+    spoil_time: 0.0
   },
   CompostFishMeat: {
     tag: "CompostFishMeat",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44377,18 +44181,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   FishMeat: {
     tag: "FishMeat",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44411,21 +44215,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 2.0,
     calories: 1000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostFriedMushBar: {
     tag: "CompostFriedMushBar",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44448,18 +44252,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   FriedMushBar: {
     tag: "FriedMushBar",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44482,21 +44286,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 1050000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostFriedMushroom: {
     tag: "CompostFriedMushroom",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44519,18 +44323,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   FriedMushroom: {
     tag: "FriedMushroom",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44553,22 +44357,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 1.0,
     calories: 2800000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   FruitCake: {
     tag: "FruitCake",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44587,21 +44391,21 @@ export const db = {
       "EntitySplitter",
       "Edible"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 3.0,
     calories: 4000000.0,
-    spoilTime: 0.0
+    spoil_time: 0.0
   },
   CompostBurger: {
     tag: "CompostBurger",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44624,18 +44428,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Burger: {
     tag: "Burger",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44658,21 +44462,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 6.0,
     calories: 6000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostGammaMush: {
     tag: "CompostGammaMush",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44695,17 +44499,17 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostLettuce: {
     tag: "CompostLettuce",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44728,18 +44532,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Lettuce: {
     tag: "Lettuce",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44762,21 +44566,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 400000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostMeat: {
     tag: "CompostMeat",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44799,18 +44603,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Meat: {
     tag: "Meat",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44833,21 +44637,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 1600000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostMushBar: {
     tag: "CompostMushBar",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44870,18 +44674,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   MushBar: {
     tag: "MushBar",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44904,21 +44708,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 800000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostMushroom: {
     tag: "CompostMushroom",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -44941,18 +44745,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Mushroom: {
     tag: "Mushroom",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -44975,21 +44779,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 2400000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostMushroomWrap: {
     tag: "CompostMushroomWrap",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45012,18 +44816,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   MushroomWrap: {
     tag: "MushroomWrap",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45046,22 +44850,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 4.0,
     calories: 4800000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   DehydratedMushroomWrap: {
     tag: "DehydratedMushroomWrap",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -45080,18 +44884,18 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   CompostPacuFillet: {
     tag: "CompostPacuFillet",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45114,18 +44918,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PacuFillet: {
     tag: "PacuFillet",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45148,21 +44952,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 2.0,
     calories: 1000000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostPancakes: {
     tag: "CompostPancakes",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45185,18 +44989,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Pancakes: {
     tag: "Pancakes",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45219,21 +45023,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 3.0,
     calories: 3600000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostPickledMeal: {
     tag: "CompostPickledMeal",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45256,18 +45060,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PickledMeal: {
     tag: "PickledMeal",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45290,22 +45094,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible",
       "Pickled"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 1800000.0,
-    spoilTime: 19200.0
+    spoil_time: 19200.0
   },
   CompostPlantMeat: {
     tag: "CompostPlantMeat",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45328,18 +45132,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PlantMeat: {
     tag: "PlantMeat",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45362,21 +45166,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 1.0,
     calories: 1200000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostPrickleFruit: {
     tag: "CompostPrickleFruit",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45399,18 +45203,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PrickleFruit: {
     tag: "PrickleFruit",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45433,21 +45237,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 1600000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostQuiche: {
     tag: "CompostQuiche",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45470,18 +45274,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Quiche: {
     tag: "Quiche",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45504,21 +45308,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 5.0,
     calories: 6400000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostGrilledPrickleFruit: {
     tag: "CompostGrilledPrickleFruit",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -45541,18 +45345,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   GrilledPrickleFruit: {
     tag: "GrilledPrickleFruit",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -45575,22 +45379,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 1.0,
     calories: 2000000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   DehydratedBerryPie: {
     tag: "DehydratedBerryPie",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -45609,19 +45413,19 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   DehydratedCurry: {
     tag: "DehydratedCurry",
     menu: {
-      category: "Food",
-      subCategory: "Dehydrated"
+      category: "food",
+      subCategory: "dehydrated"
     },
     components: [
       "KPrefabID",
@@ -45640,19 +45444,19 @@ export const db = {
       "Storage",
       "DehydratedFoodPackage"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Dehydrated",
       "PickupableStorage"
     ],
     mass: 1.0,
-    primaryElement: "Polypropylene"
+    primary_element: "Polypropylene"
   },
   ClusterMapMeteorShower_Biological: {
     tag: "ClusterMapMeteorShower_Biological",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45674,16 +45478,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Snow: {
     tag: "ClusterMapMeteorShower_Snow",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45705,16 +45509,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Ice: {
     tag: "ClusterMapMeteorShower_Ice",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45736,16 +45540,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Copper: {
     tag: "ClusterMapMeteorShower_Copper",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45767,16 +45571,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Iron: {
     tag: "ClusterMapMeteorShower_Iron",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45798,16 +45602,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Gold: {
     tag: "ClusterMapMeteorShower_Gold",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45829,16 +45633,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Uranium: {
     tag: "ClusterMapMeteorShower_Uranium",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45860,16 +45664,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_HeavyDust: {
     tag: "ClusterMapMeteorShower_HeavyDust",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45891,16 +45695,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_LightDust: {
     tag: "ClusterMapMeteorShower_LightDust",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45922,16 +45726,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Moo: {
     tag: "ClusterMapMeteorShower_Moo",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45953,16 +45757,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Regolith: {
     tag: "ClusterMapMeteorShower_Regolith",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -45984,16 +45788,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_Oxylite: {
     tag: "ClusterMapMeteorShower_Oxylite",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -46015,16 +45819,16 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   ClusterMapMeteorShower_BleachStone: {
     tag: "ClusterMapMeteorShower_BleachStone",
     menu: {
-      category: "Space",
-      subCategory: "Shower"
+      category: "space",
+      subCategory: "shower"
     },
     components: [
       "KPrefabID",
@@ -46046,15 +45850,15 @@ export const db = {
     smdef: [
       "ClusterMapMeteorShower+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 25.0,
-    primaryElement: "Unobtanium"
+    primary_element: "Unobtanium"
   },
   CompostPrickleGrassSeed: {
     tag: "CompostPrickleGrassSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46074,18 +45878,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PrickleGrassSeed: {
     tag: "PrickleGrassSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -46105,20 +45909,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PrickleGrass: {
     tag: "PrickleGrass",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -46151,24 +45955,24 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 283.15,
-    lowTempFatal: 218.15,
-    highTempWarning: 303.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 218.15,
+    high_temp_warning: 303.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 900.0
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 900.0
   },
   CompostSaltPlantSeed: {
     tag: "CompostSaltPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46189,18 +45993,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SaltPlantSeed: {
     tag: "SaltPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -46221,20 +46025,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SaltPlant: {
     tag: "SaltPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -46280,26 +46084,26 @@ export const db = {
       "RadiationVulnerable+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Hanging",
       "Plant"
     ],
-    lowTempWarning: 248.15,
-    lowTempFatal: 198.15,
-    highTempWarning: 323.15,
-    highTempFatal: 393.15,
+    low_temp_warning: 248.15,
+    low_temp_fatal: 198.15,
+    high_temp_warning: 323.15,
+    high_temp_fatal: 393.15,
     mass: 2.0,
     decor: -10.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 7400.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 7400.0,
     age: 6.0
   },
   CompostPrickleFlowerSeed: {
     tag: "CompostPrickleFlowerSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46320,18 +46124,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PrickleFlowerSeed: {
     tag: "PrickleFlowerSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -46352,20 +46156,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PrickleFlower: {
     tag: "PrickleFlower",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -46412,27 +46216,27 @@ export const db = {
       "IrrigationMonitor+Def",
       "DiseaseDropper+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 278.15,
-    lowTempFatal: 218.15,
-    highTempWarning: 303.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 278.15,
+    low_temp_fatal: 218.15,
+    high_temp_warning: 303.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 4600.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 4600.0,
     age: 6.0,
-    minLight: 200.0
+    min_light: 200.0
   },
   SapTree: {
     tag: "SapTree",
     menu: {
-      category: "Building",
-      subCategory: "Quest"
+      category: "building",
+      subCategory: "quest"
     },
     components: [
       "KPrefabID",
@@ -46460,23 +46264,23 @@ export const db = {
     smdef: [
       "SapTree+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Decoration"
     ],
-    lowTempWarning: 173.15,
-    lowTempFatal: 0.0,
-    highTempWarning: 373.15,
-    highTempFatal: 1023.15,
+    low_temp_warning: 173.15,
+    low_temp_fatal: 0.0,
+    high_temp_warning: 373.15,
+    high_temp_fatal: 1023.15,
     mass: 1.0,
     decor: 35.0,
-    decorRadius: 6.0,
-    primaryElement: "Creature"
+    decor_radius: 6.0,
+    primary_element: "Creature"
   },
   CompostBerryPie: {
     tag: "CompostBerryPie",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46499,18 +46303,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BerryPie: {
     tag: "BerryPie",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -46533,21 +46337,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 5.0,
     calories: 4200000.0,
-    spoilTime: 2400.0
+    spoil_time: 2400.0
   },
   CompostSeaLettuceSeed: {
     tag: "CompostSeaLettuceSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46568,18 +46372,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SeaLettuceSeed: {
     tag: "SeaLettuceSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -46600,20 +46404,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "WaterSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SeaLettuce: {
     tag: "SeaLettuce",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -46660,25 +46464,25 @@ export const db = {
       "IrrigationMonitor+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 295.15,
-    lowTempFatal: 248.15,
-    highTempWarning: 338.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 295.15,
+    low_temp_fatal: 248.15,
+    high_temp_warning: 338.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
-    maxRadiation: 7400.0,
+    decor_radius: 1.0,
+    primary_element: "Creature",
+    max_radiation: 7400.0,
     age: 12.0
   },
   CompostSpiceVineSeed: {
     tag: "CompostSpiceVineSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46699,18 +46503,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SpiceVineSeed: {
     tag: "SpiceVineSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -46731,20 +46535,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SpiceVine: {
     tag: "SpiceVine",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -46790,26 +46594,26 @@ export const db = {
       "IrrigationMonitor+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Hanging",
       "Plant"
     ],
-    lowTempWarning: 308.15,
-    lowTempFatal: 258.15,
-    highTempWarning: 358.15,
-    highTempFatal: 448.15,
+    low_temp_warning: 308.15,
+    low_temp_fatal: 258.15,
+    high_temp_warning: 358.15,
+    high_temp_fatal: 448.15,
     mass: 2.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 9800.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 9800.0,
     age: 8.0
   },
   CompostOxyfernSeed: {
     tag: "CompostOxyfernSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -46829,18 +46633,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   OxyfernSeed: {
     tag: "OxyfernSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -46860,20 +46664,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Oxyfern: {
     tag: "Oxyfern",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -46914,25 +46718,25 @@ export const db = {
       "IrrigationMonitor+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 273.15,
-    lowTempFatal: 253.15,
-    highTempWarning: 313.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 273.15,
+    low_temp_fatal: 253.15,
+    high_temp_warning: 313.15,
+    high_temp_fatal: 373.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0
   },
   SuperWormPlant: {
     tag: "SuperWormPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -46977,26 +46781,26 @@ export const db = {
       "RadiationVulnerable+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 288.15,
-    lowTempFatal: 273.15,
-    highTempWarning: 323.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 273.15,
+    high_temp_warning: 323.15,
+    high_temp_fatal: 373.15,
     mass: 1.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 9800.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 9800.0,
     age: 8.0
   },
   SwampForagePlant: {
     tag: "SwampForagePlant",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -47015,22 +46819,22 @@ export const db = {
       "EntitySplitter",
       "Edible"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 2400000.0,
-    spoilTime: 0.0
+    spoil_time: 0.0
   },
   OilWell: {
     tag: "OilWell",
     menu: {
-      category: "Geyser",
-      subCategory: "Geyser"
+      category: "geyser",
+      subCategory: "geyser"
     },
     components: [
       "KPrefabID",
@@ -47048,7 +46852,7 @@ export const db = {
       "DecorProvider",
       "BuildingAttachPoint"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plumbable",
       "Crushable",
@@ -47058,14 +46862,14 @@ export const db = {
     ],
     mass: 2000.0,
     decor: 10.0,
-    decorRadius: 2.0,
-    primaryElement: "SedimentaryRock"
+    decor_radius: 2.0,
+    primary_element: "SedimentaryRock"
   },
   SwampForagePlantPlanted: {
     tag: "SwampForagePlantPlanted",
     menu: {
-      category: "Plant",
-      subCategory: "Forage"
+      category: "plant",
+      subCategory: "forage"
     },
     components: [
       "KPrefabID",
@@ -47090,17 +46894,17 @@ export const db = {
       "SeedProducer",
       "BasicForagePlantPlanted"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [],
     mass: 100.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature"
+    decor_radius: 2.0,
+    primary_element: "Creature"
   },
   CompostSwampHarvestPlantSeed: {
     tag: "CompostSwampHarvestPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47121,18 +46925,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampHarvestPlantSeed: {
     tag: "SwampHarvestPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -47153,20 +46957,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampHarvestPlant: {
     tag: "SwampHarvestPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -47212,25 +47016,25 @@ export const db = {
       "RadiationVulnerable+Def",
       "IrrigationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 283.15,
-    lowTempFatal: 218.15,
-    highTempWarning: 303.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 218.15,
+    high_temp_warning: 303.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: -10.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 4600.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 4600.0,
     age: 6.6
   },
   CompostSwampLilySeed: {
     tag: "CompostSwampLilySeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47251,18 +47055,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampLilySeed: {
     tag: "SwampLilySeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -47283,20 +47087,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SwampLily: {
     tag: "SwampLily",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -47338,25 +47142,25 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 308.15,
-    lowTempFatal: 258.15,
-    highTempWarning: 358.15,
-    highTempFatal: 448.15,
+    low_temp_warning: 308.15,
+    low_temp_fatal: 258.15,
+    high_temp_warning: 358.15,
+    high_temp_fatal: 448.15,
     mass: 1.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 4600.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 4600.0,
     age: 12.0
   },
   CompostWineCupsSeed: {
     tag: "CompostWineCupsSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47376,18 +47180,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WineCupsSeed: {
     tag: "WineCupsSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -47407,20 +47211,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WineCups: {
     tag: "WineCups",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -47453,24 +47257,24 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 283.15,
-    lowTempFatal: 218.15,
-    highTempWarning: 303.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 218.15,
+    high_temp_warning: 303.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 900.0
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 900.0
   },
   CompostToePlantSeed: {
     tag: "CompostToePlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47490,18 +47294,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ToePlantSeed: {
     tag: "ToePlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -47521,20 +47325,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   ToePlant: {
     tag: "ToePlant",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -47567,24 +47371,24 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 183.0,
-    lowTempFatal: 173.0,
-    highTempWarning: 273.0,
-    highTempFatal: 283.0,
+    low_temp_warning: 183.0,
+    low_temp_fatal: 173.0,
+    high_temp_warning: 273.0,
+    high_temp_fatal: 283.0,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0
   },
   CompostWormPlantSeed: {
     tag: "CompostWormPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47605,18 +47409,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WormPlantSeed: {
     tag: "WormPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -47637,20 +47441,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   WormPlant: {
     tag: "WormPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -47695,25 +47499,25 @@ export const db = {
       "RadiationVulnerable+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 288.15,
-    lowTempFatal: 273.15,
-    highTempWarning: 323.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 273.15,
+    high_temp_warning: 323.15,
+    high_temp_fatal: 373.15,
     mass: 1.0,
     decor: -5.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
-    maxRadiation: 9800.0,
+    decor_radius: 1.0,
+    primary_element: "Creature",
+    max_radiation: 9800.0,
     age: 4.0
   },
   CompostBasicPlantFood: {
     tag: "CompostBasicPlantFood",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47736,18 +47540,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicPlantFood: {
     tag: "BasicPlantFood",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -47770,22 +47574,22 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: -1.0,
+    menu_order: -1.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: -1.0,
     calories: 600000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   GingerConfig: {
     tag: "GingerConfig",
     menu: {
-      category: "Misc",
-      subCategory: "Industrial"
+      category: "misc",
+      subCategory: "industrial"
     },
     components: [
       "KPrefabID",
@@ -47803,17 +47607,17 @@ export const db = {
       "Movable",
       "EntitySplitter"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "IndustrialIngredient"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CompostLeafyPlantSeed: {
     tag: "CompostLeafyPlantSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47833,18 +47637,18 @@ export const db = {
       "EntitySplitter",
       "Compostable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LeafyPlantSeed: {
     tag: "LeafyPlantSeed",
     menu: {
-      category: "Plant",
-      subCategory: "DecorSeed"
+      category: "plant",
+      subCategory: "decorSeed"
     },
     components: [
       "KPrefabID",
@@ -47864,20 +47668,20 @@ export const db = {
       "Compostable",
       "PlantableSeed"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "DecorSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   LeafyPlant: {
     tag: "LeafyPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Decor"
+      category: "plant",
+      subCategory: "decor"
     },
     components: [
       "KPrefabID",
@@ -47910,24 +47714,24 @@ export const db = {
     smdef: [
       "RadiationVulnerable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 293.15,
-    lowTempFatal: 288.0,
-    highTempWarning: 323.15,
-    highTempFatal: 373.0,
+    low_temp_warning: 293.15,
+    low_temp_fatal: 288.0,
+    high_temp_warning: 323.15,
+    high_temp_fatal: 373.0,
     mass: 1.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
-    maxRadiation: 2200.0
+    decor_radius: 4.0,
+    primary_element: "Creature",
+    max_radiation: 2200.0
   },
   CompostBasicPlantBar: {
     tag: "CompostBasicPlantBar",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -47950,18 +47754,18 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   BasicPlantBar: {
     tag: "BasicPlantBar",
     menu: {
-      category: "Food",
-      subCategory: "Cooked"
+      category: "food",
+      subCategory: "cooked"
     },
     components: [
       "KPrefabID",
@@ -47984,21 +47788,21 @@ export const db = {
     smdef: [
       "Rottable+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "PedestalDisplayable",
       "Edible"
     ],
     mass: 1.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     quality: 0.0,
     calories: 1700000.0,
-    spoilTime: 4800.0
+    spoil_time: 4800.0
   },
   CompostMushroomSeed: {
     tag: "CompostMushroomSeed",
     menu: {
-      category: "NONE",
+      category: "none",
       subCategory: "TOREMOVE"
     },
     components: [
@@ -48019,18 +47823,18 @@ export const db = {
       "Compostable",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Compostable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   MushroomSeed: {
     tag: "MushroomSeed",
     menu: {
-      category: "Plant",
-      subCategory: "CropSeed"
+      category: "plant",
+      subCategory: "cropSeed"
     },
     components: [
       "KPrefabID",
@@ -48051,20 +47855,20 @@ export const db = {
       "PlantableSeed",
       "MutantPlant"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "CropSeed",
       "Seed",
       "PedestalDisplayable"
     ],
     mass: 1.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   MushroomPlant: {
     tag: "MushroomPlant",
     menu: {
-      category: "Plant",
-      subCategory: "Crop"
+      category: "plant",
+      subCategory: "crop"
     },
     components: [
       "KPrefabID",
@@ -48109,26 +47913,26 @@ export const db = {
       "RadiationVulnerable+Def",
       "FertilizationMonitor+Def"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Plant"
     ],
-    lowTempWarning: 278.15,
-    lowTempFatal: 228.15,
-    highTempWarning: 308.15,
-    highTempFatal: 398.15,
+    low_temp_warning: 278.15,
+    low_temp_fatal: 228.15,
+    high_temp_warning: 308.15,
+    high_temp_fatal: 398.15,
     mass: 1.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
-    maxRadiation: 4600.0,
+    decor_radius: 2.0,
+    primary_element: "Creature",
+    max_radiation: 4600.0,
     age: 7.5
   },
   HatchVeggieEgg: {
     tag: "HatchVeggieEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48151,20 +47955,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   HatchVeggie: {
     tag: "HatchVeggie",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48223,7 +48027,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -48231,19 +48035,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -48251,8 +48055,8 @@ export const db = {
   HatchEgg: {
     tag: "HatchEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48275,20 +48079,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Hatch: {
     tag: "Hatch",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48347,7 +48151,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -48356,19 +48160,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -48376,8 +48180,8 @@ export const db = {
   CrabEgg: {
     tag: "CrabEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48400,20 +48204,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Crab: {
     tag: "Crab",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48471,7 +48275,7 @@ export const db = {
       "RanchableMonitor+Def",
       "EggProtectionMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -48482,19 +48286,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 373.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     friends: [
       "CrabFriend"
     ],
@@ -48505,8 +48309,8 @@ export const db = {
   CrabWoodEgg: {
     tag: "CrabWoodEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48529,20 +48333,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CrabWood: {
     tag: "CrabWood",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48601,7 +48405,7 @@ export const db = {
       "EggProtectionMonitor+Def",
       "MoltDropperMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -48611,19 +48415,19 @@ export const db = {
       "Amphibious"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 373.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     friends: [
       "CrabFriend"
     ],
@@ -48634,8 +48438,8 @@ export const db = {
   CrabFreshWaterEgg: {
     tag: "CrabFreshWaterEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48658,20 +48462,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   CrabFreshWater: {
     tag: "CrabFreshWater",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48731,7 +48535,7 @@ export const db = {
       "EggProtectionMonitor+Def",
       "CleaningMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -48741,19 +48545,19 @@ export const db = {
       "Amphibious"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 373.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     friends: [
       "CrabFriend"
     ],
@@ -48764,8 +48568,8 @@ export const db = {
   PacuCleanerEgg: {
     tag: "PacuCleanerEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48789,20 +48593,20 @@ export const db = {
       "OvercrowdingMonitor+Def",
       "FishOvercrowdingMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PacuCleaner: {
     tag: "PacuCleaner",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48862,7 +48666,7 @@ export const db = {
       "OvercrowdingMonitor+Def",
       "FertilityMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SwimmingCreature",
       "Swimmer",
@@ -48871,18 +48675,18 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 243.15,
-    lowTempFatal: 223.15,
-    highTempWarning: 278.15,
-    highTempFatal: 298.15,
+    low_temp_warning: 243.15,
+    low_temp_fatal: 223.15,
+    high_temp_warning: 278.15,
+    high_temp_fatal: 298.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 500000.0,
-    caloriesLoss: -166.666672,
-    spacePerCritter: 8.0,
+    calories_max: 500000.0,
+    calories_loss: -166.666672,
+    space_per_critter: 8.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -48890,8 +48694,8 @@ export const db = {
   DivergentBeetleEgg: {
     tag: "DivergentBeetleEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -48914,20 +48718,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   DivergentBeetle: {
     tag: "DivergentBeetle",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -48986,7 +48790,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -48995,19 +48799,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 75.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49015,8 +48819,8 @@ export const db = {
   HatchHardEgg: {
     tag: "HatchHardEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -49039,20 +48843,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   HatchHard: {
     tag: "HatchHard",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -49111,7 +48915,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -49119,19 +48923,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 200,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49139,8 +48943,8 @@ export const db = {
   PacuTropicalEgg: {
     tag: "PacuTropicalEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -49164,20 +48968,20 @@ export const db = {
       "OvercrowdingMonitor+Def",
       "FishOvercrowdingMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   PacuTropical: {
     tag: "PacuTropical",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -49232,7 +49036,7 @@ export const db = {
       "OvercrowdingMonitor+Def",
       "FertilityMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SwimmingCreature",
       "Swimmer",
@@ -49241,18 +49045,18 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 303.15,
-    lowTempFatal: 283.15,
-    highTempWarning: 353.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 303.15,
+    low_temp_fatal: 283.15,
+    high_temp_warning: 353.15,
+    high_temp_fatal: 373.15,
     mass: 200.0,
     decor: 25.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature",
+    decor_radius: 5.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 500000.0,
-    caloriesLoss: -166.666672,
-    spacePerCritter: 8.0,
+    calories_max: 500000.0,
+    calories_loss: -166.666672,
+    space_per_critter: 8.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49260,8 +49064,8 @@ export const db = {
   DivergentWormEgg: {
     tag: "DivergentWormEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -49284,20 +49088,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   DivergentWorm: {
     tag: "DivergentWorm",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -49358,7 +49162,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -49366,19 +49170,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 150.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49386,8 +49190,8 @@ export const db = {
   HatchMetalEgg: {
     tag: "HatchMetalEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -49410,20 +49214,20 @@ export const db = {
       "IncubationMonitor+Def",
       "OvercrowdingMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 2.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   HatchMetal: {
     tag: "HatchMetal",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -49482,7 +49286,7 @@ export const db = {
       "FertilityMonitor+Def",
       "RanchableMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -49490,19 +49294,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 400,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 100.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49510,8 +49314,8 @@ export const db = {
   PacuEgg: {
     tag: "PacuEgg",
     menu: {
-      category: "Critter",
-      subCategory: "Egg"
+      category: "critter",
+      subCategory: "egg"
     },
     components: [
       "KPrefabID",
@@ -49535,20 +49339,20 @@ export const db = {
       "OvercrowdingMonitor+Def",
       "FishOvercrowdingMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "Egg",
       "IncubatableEgg",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Pacu: {
     tag: "Pacu",
     menu: {
-      category: "Critter",
-      subCategory: "Critter"
+      category: "critter",
+      subCategory: "critter"
     },
     components: [
       "KPrefabID",
@@ -49603,7 +49407,7 @@ export const db = {
       "OvercrowdingMonitor+Def",
       "FertilityMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SwimmingCreature",
       "Swimmer",
@@ -49613,18 +49417,18 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 273.15,
-    lowTempFatal: 253.15,
-    highTempWarning: 333.15,
-    highTempFatal: 353.15,
+    low_temp_warning: 273.15,
+    low_temp_fatal: 253.15,
+    high_temp_warning: 333.15,
+    high_temp_fatal: 353.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 25.0,
-    caloriesMax: 500000.0,
-    caloriesLoss: -166.666672,
-    spacePerCritter: 8.0,
+    calories_max: 500000.0,
+    calories_loss: -166.666672,
+    space_per_critter: 8.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49632,8 +49436,8 @@ export const db = {
   DreckoPlasticBaby: {
     tag: "DreckoPlasticBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -49693,7 +49497,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Walker",
       "Creature",
@@ -49701,19 +49505,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 298.15,
-    lowTempFatal: 278.15,
-    highTempWarning: 333.15,
-    highTempFatal: 353.15,
+    low_temp_warning: 298.15,
+    low_temp_fatal: 278.15,
+    high_temp_warning: 333.15,
+    high_temp_fatal: 353.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49721,8 +49525,8 @@ export const db = {
   DivergentWormBaby: {
     tag: "DivergentWormBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -49784,7 +49588,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -49792,19 +49596,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49812,8 +49616,8 @@ export const db = {
   BeeBaby: {
     tag: "BeeBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -49873,7 +49677,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 11.0,
+    menu_order: 11.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -49882,24 +49686,24 @@ export const db = {
       "Walker"
     ],
     hp: 5,
-    lowTempWarning: 183.0,
-    lowTempFatal: 173.0,
-    highTempWarning: 263.0,
-    highTempFatal: 273.0,
+    low_temp_warning: 183.0,
+    low_temp_fatal: 173.0,
+    high_temp_warning: 263.0,
+    high_temp_fatal: 273.0,
     mass: 5.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature",
+    decor_radius: 5.0,
+    primary_element: "Creature",
     age: 2.0,
-    spacePerCritter: 4.0,
+    space_per_critter: 4.0,
     happy: 4.0,
     glum: -1.0
   },
   DivergentBeetleBaby: {
     tag: "DivergentBeetleBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -49959,7 +49763,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 9.0,
+    menu_order: 9.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -49968,19 +49772,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -49988,8 +49792,8 @@ export const db = {
   CrabFreshWaterBaby: {
     tag: "CrabFreshWaterBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50048,7 +49852,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -50058,19 +49862,19 @@ export const db = {
       "Amphibious"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 373.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     friends: [
       "CrabFriend"
     ],
@@ -50081,8 +49885,8 @@ export const db = {
   DreckoBaby: {
     tag: "DreckoBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50142,7 +49946,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 2.0,
+    menu_order: 2.0,
     tags: [
       "Walker",
       "Creature",
@@ -50151,19 +49955,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 308.15,
-    lowTempFatal: 288.15,
-    highTempWarning: 363.15,
-    highTempFatal: 383.15,
+    low_temp_warning: 308.15,
+    low_temp_fatal: 288.15,
+    high_temp_warning: 363.15,
+    high_temp_fatal: 383.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50171,8 +49975,8 @@ export const db = {
   HatchBaby: {
     tag: "HatchBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50232,7 +50036,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -50241,19 +50045,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50261,8 +50065,8 @@ export const db = {
   CrabWoodBaby: {
     tag: "CrabWoodBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50321,7 +50125,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -50331,19 +50135,19 @@ export const db = {
       "Amphibious"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 373.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     friends: [
       "CrabFriend"
     ],
@@ -50354,8 +50158,8 @@ export const db = {
   CrabBaby: {
     tag: "CrabBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50414,7 +50218,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 5.0,
+    menu_order: 5.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -50425,19 +50229,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 373.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     friends: [
       "CrabFriend"
     ],
@@ -50448,8 +50252,8 @@ export const db = {
   LightBugBaby: {
     tag: "LightBugBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50513,7 +50317,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -50523,19 +50327,19 @@ export const db = {
       "LightSource"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 30.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature",
+    decor_radius: 5.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50543,8 +50347,8 @@ export const db = {
   HatchMetalBaby: {
     tag: "HatchMetalBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50604,7 +50408,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -50612,19 +50416,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 400,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50632,8 +50436,8 @@ export const db = {
   PuftOxyliteBaby: {
     tag: "PuftOxyliteBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50694,7 +50498,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -50702,19 +50506,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 303.15,
-    lowTempFatal: 258.15,
-    highTempWarning: 338.15,
-    highTempFatal: 388.15,
+    low_temp_warning: 303.15,
+    low_temp_fatal: 258.15,
+    high_temp_warning: 338.15,
+    high_temp_fatal: 388.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50722,8 +50526,8 @@ export const db = {
   SquirrelHugBaby: {
     tag: "SquirrelHugBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50783,7 +50587,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -50791,19 +50595,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 25.0,
-    decorRadius: 4.0,
-    primaryElement: "Creature",
+    decor_radius: 4.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 4.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 4.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50811,8 +50615,8 @@ export const db = {
   PuftBaby: {
     tag: "PuftBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50874,7 +50678,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -50883,19 +50687,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 288.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 328.15,
-    highTempFatal: 378.15,
+    low_temp_warning: 288.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 328.15,
+    high_temp_fatal: 378.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50903,8 +50707,8 @@ export const db = {
   PuftBleachstoneBaby: {
     tag: "PuftBleachstoneBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -50965,7 +50769,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -50973,19 +50777,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 258.15,
-    lowTempFatal: 213.15,
-    highTempWarning: 308.15,
-    highTempFatal: 358.15,
+    low_temp_warning: 258.15,
+    low_temp_fatal: 213.15,
+    high_temp_warning: 308.15,
+    high_temp_fatal: 358.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -50993,8 +50797,8 @@ export const db = {
   StaterpillarBaby: {
     tag: "StaterpillarBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51053,7 +50857,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Walker",
       "Amphibious",
@@ -51063,19 +50867,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51083,8 +50887,8 @@ export const db = {
   PuftAlphaBaby: {
     tag: "PuftAlphaBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51146,7 +50950,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 4.0,
+    menu_order: 4.0,
     tags: [
       "Creature",
       "Flyer",
@@ -51154,19 +50958,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 258.15,
-    lowTempFatal: 213.15,
-    highTempWarning: 338.15,
-    highTempFatal: 388.15,
+    low_temp_warning: 258.15,
+    low_temp_fatal: 213.15,
+    high_temp_warning: 338.15,
+    high_temp_fatal: 388.15,
     mass: 50.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1200000.0,
-    caloriesLoss: -333.333344,
-    milkConsummer: true,
-    spacePerCritter: 16.0,
+    calories_max: 1200000.0,
+    calories_loss: -333.333344,
+    milk_consummer: true,
+    space_per_critter: 16.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51174,8 +50978,8 @@ export const db = {
   PacuTropicalBaby: {
     tag: "PacuTropicalBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51233,7 +51037,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SwimmingCreature",
       "Swimmer",
@@ -51242,18 +51046,18 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 303.15,
-    lowTempFatal: 283.15,
-    highTempWarning: 353.15,
-    highTempFatal: 373.15,
+    low_temp_warning: 303.15,
+    low_temp_fatal: 283.15,
+    high_temp_warning: 353.15,
+    high_temp_fatal: 373.15,
     mass: 200.0,
     decor: 25.0,
-    decorRadius: 5.0,
-    primaryElement: "Creature",
+    decor_radius: 5.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 500000.0,
-    caloriesLoss: -166.666672,
-    spacePerCritter: 8.0,
+    calories_max: 500000.0,
+    calories_loss: -166.666672,
+    space_per_critter: 8.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51261,8 +51065,8 @@ export const db = {
   PacuBaby: {
     tag: "PacuBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51320,7 +51124,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SwimmingCreature",
       "Swimmer",
@@ -51329,18 +51133,18 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 273.15,
-    lowTempFatal: 253.15,
-    highTempWarning: 333.15,
-    highTempFatal: 353.15,
+    low_temp_warning: 273.15,
+    low_temp_fatal: 253.15,
+    high_temp_warning: 333.15,
+    high_temp_fatal: 353.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 500000.0,
-    caloriesLoss: -166.666672,
-    spacePerCritter: 8.0,
+    calories_max: 500000.0,
+    calories_loss: -166.666672,
+    space_per_critter: 8.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51348,8 +51152,8 @@ export const db = {
   PacuCleanerBaby: {
     tag: "PacuCleanerBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51407,7 +51211,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 3.0,
+    menu_order: 3.0,
     tags: [
       "SwimmingCreature",
       "Swimmer",
@@ -51416,18 +51220,18 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 243.15,
-    lowTempFatal: 223.15,
-    highTempWarning: 278.15,
-    highTempFatal: 298.15,
+    low_temp_warning: 243.15,
+    low_temp_fatal: 223.15,
+    high_temp_warning: 278.15,
+    high_temp_fatal: 298.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 500000.0,
-    caloriesLoss: -166.666672,
-    spacePerCritter: 8.0,
+    calories_max: 500000.0,
+    calories_loss: -166.666672,
+    space_per_critter: 8.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51435,8 +51239,8 @@ export const db = {
   OilfloaterHighTempBaby: {
     tag: "OilfloaterHighTempBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51497,7 +51301,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Hoverer",
       "Creature",
@@ -51505,19 +51309,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 363.15,
-    lowTempFatal: 348.15,
-    highTempWarning: 523.15,
-    highTempFatal: 543.15,
+    low_temp_warning: 363.15,
+    low_temp_fatal: 348.15,
+    high_temp_warning: 523.15,
+    high_temp_fatal: 543.15,
     mass: 50.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
+    decor_radius: 2.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 600000.0,
-    caloriesLoss: -200.0,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 600000.0,
+    calories_loss: -200.0,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51525,8 +51329,8 @@ export const db = {
   StaterpillarGasBaby: {
     tag: "StaterpillarGasBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51586,7 +51390,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Walker",
       "Amphibious",
@@ -51595,19 +51399,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 263.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 363.15,
+    low_temp_warning: 263.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 363.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51615,8 +51419,8 @@ export const db = {
   OilfloaterDecorBaby: {
     tag: "OilfloaterDecorBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51677,7 +51481,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Hoverer",
       "Creature",
@@ -51685,19 +51489,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 268.15,
-    highTempWarning: 343.15,
-    highTempFatal: 363.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 268.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 363.15,
     mass: 50.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 600000.0,
-    caloriesLoss: -200.0,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 600000.0,
+    calories_loss: -200.0,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51705,8 +51509,8 @@ export const db = {
   OilfloaterBaby: {
     tag: "OilfloaterBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51767,7 +51571,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 6.0,
+    menu_order: 6.0,
     tags: [
       "Hoverer",
       "Creature",
@@ -51776,19 +51580,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 323.15,
-    lowTempFatal: 308.15,
-    highTempWarning: 413.15,
-    highTempFatal: 433.15,
+    low_temp_warning: 323.15,
+    low_temp_fatal: 308.15,
+    high_temp_warning: 413.15,
+    high_temp_fatal: 433.15,
     mass: 50.0,
     decor: 15.0,
-    decorRadius: 2.0,
-    primaryElement: "Creature",
+    decor_radius: 2.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 600000.0,
-    caloriesLoss: -200.0,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 600000.0,
+    calories_loss: -200.0,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51796,8 +51600,8 @@ export const db = {
   StaterpillarLiquidBaby: {
     tag: "StaterpillarLiquidBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51857,7 +51661,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 10.0,
+    menu_order: 10.0,
     tags: [
       "Walker",
       "Amphibious",
@@ -51866,19 +51670,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 263.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 343.15,
-    highTempFatal: 363.15,
+    low_temp_warning: 263.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 343.15,
+    high_temp_fatal: 363.15,
     mass: 200.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1E+07,
-    caloriesLoss: -3333.33325,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1E+07,
+    calories_loss: -3333.33325,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51886,8 +51690,8 @@ export const db = {
   MoleDelicacyBaby: {
     tag: "MoleDelicacyBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -51945,7 +51749,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -51954,16 +51758,16 @@ export const db = {
       "Digger"
     ],
     hp: 25,
-    lowTempWarning: 123.149994,
-    lowTempFatal: 73.1499939,
-    highTempWarning: 673.15,
-    highTempFatal: 773.15,
+    low_temp_warning: 123.149994,
+    low_temp_fatal: 73.1499939,
+    high_temp_warning: 673.15,
+    high_temp_fatal: 773.15,
     mass: 25.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 2.4E+07,
-    caloriesLoss: -8000.0,
-    milkConsummer: true,
+    calories_max: 2.4E+07,
+    calories_loss: -8000.0,
+    milk_consummer: true,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -51971,8 +51775,8 @@ export const db = {
   MoleBaby: {
     tag: "MoleBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52030,7 +51834,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 7.0,
+    menu_order: 7.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -52040,16 +51844,16 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 123.149994,
-    lowTempFatal: 73.1499939,
-    highTempWarning: 673.15,
-    highTempFatal: 773.15,
+    low_temp_warning: 123.149994,
+    low_temp_fatal: 73.1499939,
+    high_temp_warning: 673.15,
+    high_temp_fatal: 773.15,
     mass: 25.0,
-    primaryElement: "Creature",
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 4.8E+07,
-    caloriesLoss: -8000.0,
-    milkConsummer: true,
+    calories_max: 4.8E+07,
+    calories_loss: -8000.0,
+    milk_consummer: true,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52057,8 +51861,8 @@ export const db = {
   LightBugPurpleBaby: {
     tag: "LightBugPurpleBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52122,7 +51926,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -52130,19 +51934,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52150,8 +51954,8 @@ export const db = {
   LightBugPinkBaby: {
     tag: "LightBugPinkBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52215,7 +52019,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -52223,19 +52027,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52243,8 +52047,8 @@ export const db = {
   LightBugOrangeBaby: {
     tag: "LightBugOrangeBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52308,7 +52112,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -52316,19 +52120,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52336,8 +52140,8 @@ export const db = {
   LightBugCrystalBaby: {
     tag: "LightBugCrystalBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52401,7 +52205,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -52409,19 +52213,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 200.0,
-    decorRadius: 8.0,
-    primaryElement: "Creature",
+    decor_radius: 8.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52429,8 +52233,8 @@ export const db = {
   LightBugBlueBaby: {
     tag: "LightBugBlueBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52494,7 +52298,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -52502,19 +52306,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 50.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52522,8 +52326,8 @@ export const db = {
   LightBugBlackBaby: {
     tag: "LightBugBlackBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52584,7 +52388,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 0.0,
+    menu_order: 0.0,
     tags: [
       "Creature",
       "Flyer",
@@ -52592,19 +52396,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 5,
-    lowTempWarning: 263.0,
-    lowTempFatal: 253.0,
-    highTempWarning: 313.0,
-    highTempFatal: 323.0,
+    low_temp_warning: 263.0,
+    low_temp_fatal: 253.0,
+    high_temp_warning: 313.0,
+    high_temp_fatal: 323.0,
     mass: 5.0,
     decor: 80.0,
-    decorRadius: 7.0,
-    primaryElement: "Creature",
+    decor_radius: 7.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 320000.0,
-    caloriesLoss: -66.6666641,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 320000.0,
+    calories_loss: -66.6666641,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52612,8 +52416,8 @@ export const db = {
   HatchVeggieBaby: {
     tag: "HatchVeggieBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52673,7 +52477,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -52681,19 +52485,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52701,8 +52505,8 @@ export const db = {
   HatchHardBaby: {
     tag: "HatchHardBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52762,7 +52566,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 1.0,
+    menu_order: 1.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -52770,19 +52574,19 @@ export const db = {
       "CreatureBrain"
     ],
     hp: 200,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 7000000.0,
-    caloriesLoss: -1166.66663,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 7000000.0,
+    calories_loss: -1166.66663,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52790,8 +52594,8 @@ export const db = {
   SquirrelBaby: {
     tag: "SquirrelBaby",
     menu: {
-      category: "Critter",
-      subCategory: "Baby"
+      category: "critter",
+      subCategory: "baby"
     },
     components: [
       "KPrefabID",
@@ -52851,7 +52655,7 @@ export const db = {
       "CreatureSleepMonitor+Def",
       "CallAdultMonitor+Def"
     ],
-    menuOrder: 8.0,
+    menu_order: 8.0,
     tags: [
       "Creature",
       "BagableCreature",
@@ -52860,19 +52664,19 @@ export const db = {
       "OriginalCreature"
     ],
     hp: 25,
-    lowTempWarning: 283.15,
-    lowTempFatal: 243.15,
-    highTempWarning: 293.15,
-    highTempFatal: 343.15,
+    low_temp_warning: 283.15,
+    low_temp_fatal: 243.15,
+    high_temp_warning: 293.15,
+    high_temp_fatal: 343.15,
     mass: 100.0,
     decor: 10.0,
-    decorRadius: 1.0,
-    primaryElement: "Creature",
+    decor_radius: 1.0,
+    primary_element: "Creature",
     age: 5.0,
-    caloriesMax: 1000000.0,
-    caloriesLoss: -166.666672,
-    milkConsummer: true,
-    spacePerCritter: 12.0,
+    calories_max: 1000000.0,
+    calories_loss: -166.666672,
+    milk_consummer: true,
+    space_per_critter: 12.0,
     happy: 4.0,
     glum: -1.0,
     miserable: -10.0
@@ -52880,8 +52684,8 @@ export const db = {
   Atmo_Suit: {
     tag: "Atmo_Suit",
     menu: {
-      category: "Equipment",
-      subCategory: "Suit"
+      category: "equipment",
+      subCategory: "suit"
     },
     components: [
       "KPrefabID",
@@ -52905,20 +52709,20 @@ export const db = {
       "AtmoSuit",
       "SuitDiseaseHandler"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable",
       "AirtightSuit"
     ],
     mass: 200.0,
-    primaryElement: "Dirt"
+    primary_element: "Dirt"
   },
   Worn_Atmo_Suit: {
     tag: "Worn_Atmo_Suit",
     menu: {
-      category: "Equipment",
-      subCategory: "Worn"
+      category: "equipment",
+      subCategory: "worn"
     },
     components: [
       "KPrefabID",
@@ -52937,7 +52741,7 @@ export const db = {
       "RepairableEquipment",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Suit",
       "Clothes",
@@ -52945,13 +52749,13 @@ export const db = {
       "AirtightSuit"
     ],
     mass: 200.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Cool_Vest: {
     tag: "Cool_Vest",
     menu: {
-      category: "Equipment",
-      subCategory: "Clothes"
+      category: "equipment",
+      subCategory: "clothes"
     },
     components: [
       "KPrefabID",
@@ -52969,19 +52773,19 @@ export const db = {
       "Movable",
       "Equippable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Carbon"
+    primary_element: "Carbon"
   },
   CustomClothing: {
     tag: "CustomClothing",
     menu: {
-      category: "Equipment",
-      subCategory: "Clothes"
+      category: "equipment",
+      subCategory: "clothes"
     },
     components: [
       "KPrefabID",
@@ -52999,19 +52803,19 @@ export const db = {
       "Movable",
       "Equippable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable"
     ],
     mass: 7.0,
-    primaryElement: "Carbon"
+    primary_element: "Carbon"
   },
   Funky_Vest: {
     tag: "Funky_Vest",
     menu: {
-      category: "Equipment",
-      subCategory: "Clothes"
+      category: "equipment",
+      subCategory: "clothes"
     },
     components: [
       "KPrefabID",
@@ -53029,19 +52833,19 @@ export const db = {
       "Movable",
       "Equippable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Carbon"
+    primary_element: "Carbon"
   },
   Jet_Suit: {
     tag: "Jet_Suit",
     menu: {
-      category: "Equipment",
-      subCategory: "Suit"
+      category: "equipment",
+      subCategory: "suit"
     },
     components: [
       "KPrefabID",
@@ -53066,20 +52870,20 @@ export const db = {
       "AtmoSuit",
       "SuitDiseaseHandler"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable",
       "AirtightSuit"
     ],
     mass: 200.0,
-    primaryElement: "Steel"
+    primary_element: "Steel"
   },
   Worn_Jet_Suit: {
     tag: "Worn_Jet_Suit",
     menu: {
-      category: "Equipment",
-      subCategory: "Worn"
+      category: "equipment",
+      subCategory: "worn"
     },
     components: [
       "KPrefabID",
@@ -53098,19 +52902,19 @@ export const db = {
       "RepairableEquipment",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Suit",
       "Clothes"
     ],
     mass: 200.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Lead_Suit: {
     tag: "Lead_Suit",
     menu: {
-      category: "Equipment",
-      subCategory: "Suit"
+      category: "equipment",
+      subCategory: "suit"
     },
     components: [
       "KPrefabID",
@@ -53135,20 +52939,20 @@ export const db = {
       "AtmoSuit",
       "SuitDiseaseHandler"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable",
       "AirtightSuit"
     ],
     mass: 200.0,
-    primaryElement: "Dirt"
+    primary_element: "Dirt"
   },
   Worn_Lead_Suit: {
     tag: "Worn_Lead_Suit",
     menu: {
-      category: "Equipment",
-      subCategory: "Worn"
+      category: "equipment",
+      subCategory: "worn"
     },
     components: [
       "KPrefabID",
@@ -53167,19 +52971,19 @@ export const db = {
       "RepairableEquipment",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Suit",
       "Clothes"
     ],
     mass: 200.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   Oxygen_Mask: {
     tag: "Oxygen_Mask",
     menu: {
-      category: "Equipment",
-      subCategory: "Suit"
+      category: "equipment",
+      subCategory: "suit"
     },
     components: [
       "KPrefabID",
@@ -53201,19 +53005,19 @@ export const db = {
       "Durability",
       "SuitDiseaseHandler"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable"
     ],
     mass: 15.0,
-    primaryElement: "Dirt"
+    primary_element: "Dirt"
   },
   Worn_Oxygen_Mask: {
     tag: "Worn_Oxygen_Mask",
     menu: {
-      category: "Equipment",
-      subCategory: "Worn"
+      category: "equipment",
+      subCategory: "worn"
     },
     components: [
       "KPrefabID",
@@ -53232,19 +53036,19 @@ export const db = {
       "RepairableEquipment",
       "SymbolOverrideController"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Suit",
       "Clothes"
     ],
     mass: 15.0,
-    primaryElement: "Creature"
+    primary_element: "Creature"
   },
   SleepClinicPajamas: {
     tag: "SleepClinicPajamas",
     menu: {
-      category: "Equipment",
-      subCategory: "Clothes"
+      category: "equipment",
+      subCategory: "clothes"
     },
     components: [
       "KPrefabID",
@@ -53263,19 +53067,19 @@ export const db = {
       "Equippable",
       "ClinicDreamable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Carbon"
+    primary_element: "Carbon"
   },
   Warm_Vest: {
     tag: "Warm_Vest",
     menu: {
-      category: "Equipment",
-      subCategory: "Clothes"
+      category: "equipment",
+      subCategory: "clothes"
     },
     components: [
       "KPrefabID",
@@ -53293,12 +53097,12 @@ export const db = {
       "Movable",
       "Equippable"
     ],
-    menuOrder: 177013.0,
+    menu_order: 177013.0,
     tags: [
       "Clothes",
       "PedestalDisplayable"
     ],
     mass: 4.0,
-    primaryElement: "Carbon"
+    primary_element: "Carbon"
   }
 }

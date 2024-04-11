@@ -4706,5 +4706,6 @@
   "Warm_Vest": {
     "name": "Pull Chaud",
     "desc": "Protège le porteur du Froid en augmentant son isolation"
-  }
+  },
+  "Minion": {}
 }

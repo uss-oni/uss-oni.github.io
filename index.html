@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>USS-Oni</title>
+  <link rel='icon' type='image/png' href="favicon.png">
+  <link rel="stylesheet" type="text/css" target="_blank" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body lang="fr">
+  <script type="module">
+    import init from '../pkg/uss_oni.js';
+    async function run() {
+      await init();
+    }
+    run();
+  </script>
+  <div id="top">
+    <select id="selectCategory" onChange="onChangeSelect(this.options[this.selectedIndex].dataset.ui)">
+      <option data-ui="Element">Éléments</option>
+      <option data-ui="Building">Constructions</option>
+      <option data-ui="Food">Aliments</option>
+      <option data-ui="Critter">Créatures</option>
+      <option data-ui="Plant">Plantes</option>
+      <option data-ui="Geyser">Geysers</option>
+      <option data-ui="Space">Espace</option>
+      <option data-ui="Equipment">Équipement</option>
+      <option data-ui="Artifact">Artefacts</option>
+      <option data-ui="Misc">Divers</option>
+      <option data-ui="NONE">NONE</option>
+    </select>
+  </div>
+  <div id="options">
+    <select onChange="selectDegree(this.options[this.selectedIndex].value)">
+      <option value="°C">°C</option>
+      <option value="K">K</option>
+      <option value="°F">°F</option>
+    </select>
+    <select id="selectTranslation" onChange="setTranslation(this.options[this.selectedIndex].value)">
+    </select>
+  </div>
+  <div id="list"></div>
+  <img id="descimg" src="images/Icon/codex_critter_emotions.png" />
+  <div id="desc">Un Site Sur Oxygen Not Included</div>
+  <div id="properties"></div>
+  <div id="bot">
+    <div>Un Site Sur Oxygen Not Included</div>
+  </div>
+</body>
+
+</html>
