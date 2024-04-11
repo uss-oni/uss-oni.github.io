@@ -2,7 +2,7 @@ use crate::lang::Ui;
 
 pub fn translate(ui: Ui) -> &'static str {
   match ui {
-    Ui::CategoryBuilding => "Batiments",
+    Ui::CategoryBuilding => "Bâtiments",
     Ui::CategoryElement => "Éléments",
     Ui::CategorySpace => "Espace",
     Ui::CategoryArtifact => "Artefacts",
@@ -68,7 +68,7 @@ pub fn translate(ui: Ui) -> &'static str {
     Ui::TitleProperties => "Propriétés",
     Ui::TitleObtainingPhaseChange => "Obtention : changement de phases",
     Ui::TitleBuildingMaterials => "Construction",
-    
+
     Ui::PhaseCooking => "Cuisson",
     Ui::PhaseMelting => "Fusion",
     Ui::PhaseFreezing => "Solidification",
