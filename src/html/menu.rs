@@ -1,5 +1,5 @@
 use wasm_bindgen::{closure::Closure, JsCast};
-use web_sys::HtmlElement;
+use web_sys::{window, HtmlElement};
 
 use crate::category::*;
 
@@ -22,13 +22,19 @@ impl SubCategory {
       let d = the_box.add_div(Some("align"));
       let p = d.add_p();
       p.set_inner_text(String::from(&item.name() as &str).to_lowercase().as_str());
-      //if p.offset_width() > 75 {
-        let _ = p.style().set_property("hyphens", "auto");
-      //}
+      let _ = p.style().set_property("hyphens", "auto");
+      let container_clone = container.clone();
       unsafe {
         // Blah blah mutex blah blah
         CLOSURES.push(Closure::<dyn Fn()>::new(move || {
           display_properties(item);
+          let _ = container_clone.style().set_property("display", "none");
+          let cc = container_clone.clone();
+          let c = Closure::<dyn Fn()>::new(move || {
+            let _ = cc.style().remove_property("display");
+          });
+          let _ = window().unwrap().set_timeout_with_callback_and_timeout_and_arguments_0(c.as_ref().unchecked_ref(), 100);
+          c.forget();
         }));
         let click = CLOSURES.last().unwrap_unchecked();
         the_box.set_onclick(Some(click.as_ref().unchecked_ref()));
