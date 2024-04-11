@@ -1,9 +1,13 @@
+use std::cell::RefCell;
 use wasm_bindgen::{closure::Closure, JsCast};
-use web_sys::{window, HtmlElement};
+use web_sys::{window, HtmlDivElement, HtmlElement};
 
 use crate::category::*;
 
-use super::{display_properties, document::ExtendDocument};
+use super::{
+  display_properties,
+  document::{self, ExtendDocument},
+};
 
 impl SubCategory {
   pub fn create_html(self: &Self, container: &HtmlElement) {
@@ -37,10 +41,38 @@ impl SubCategory {
 impl Category {
   pub fn create_html(self: &Self, container: &HtmlElement) {
     for sub in self.sub_categories {
-      let menu = container.add_div(Some("menu"));
-      menu.add_div(Some("menuChoice")).add_text(&sub.ui);
-      let list = menu.add_div(Some("category"));
+      let div = container.add_div(Some("menuSubcategory"));
+      div.add_div(Some("menuChoice")).add_text(&sub.ui);
+      let list = div.add_div(Some("category"));
       sub.create_html(&list);
     }
+  }
+}
+
+thread_local! {
+  static MENU_CATEGORY: RefCell<Option<HtmlDivElement>> = RefCell::new(None);
+}
+
+pub fn display_menu() {
+  let categories: [&Category; 10] = [&element, &building, &food, &critter, &plant, &geyser, &space, &equipment, &artifact, &misc];
+  let list: HtmlDivElement = document::get_element("menu");
+  for category in categories {
+    let cat = list.add_div(Some("menuCategory"));
+    cat.add_div(Some("menuCategoryChoice")).add_text(&category.ui);
+    let sub = cat.add_div(Some("menuContainer"));
+    category.create_html(&sub);
+
+    let clone = cat.clone();
+    let enter = Closure::<dyn Fn()>::new(move || {
+      MENU_CATEGORY.with(|old| {
+        if let Some(ref old) = *old.borrow() {
+          let _ = old.class_list().remove_1("menuChosen".into());
+        }
+        *old.borrow_mut() = Some(clone.clone());
+      });
+      let _ = clone.class_list().add_1("menuChosen");
+    });
+    cat.set_onmouseenter(Some(enter.as_ref().unchecked_ref()));
+    enter.forget();
   }
 }

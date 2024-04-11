@@ -23,6 +23,7 @@ features = [
   'HtmlSelectElement',
   'HtmlOptionElement',
   'Text',
+  'DomTokenList',
   'CssStyleDeclaration',
   'Event',
   'EventTarget',

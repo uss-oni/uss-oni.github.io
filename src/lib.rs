@@ -9,7 +9,7 @@ pub mod icon;
 
 use std::sync::Mutex;
 
-use html::{display_properties, document, CURRENT_ENTITY};
+use html::{display_properties, document, menu::display_menu, CURRENT_ENTITY};
 use units::{Degree, Time};
 use wasm_bindgen::prelude::*;
 use web_sys::{HtmlDivElement, HtmlSelectElement};
@@ -60,9 +60,6 @@ fn main() -> Result<(), JsValue> {
   let langage_closure = Closure::<dyn Fn(web_sys::Event)>::new(move |event: web_sys::Event| {
     let language = get_language_from_select(&event.target().unwrap().dyn_into::<HtmlSelectElement>().unwrap());
     Options::set_language(language);
-    let categories: HtmlSelectElement = document::get_element("selectCategory");
-    let list: HtmlDivElement = document::get_element("list");
-    change_category(&list, categories.value().as_str());
     unsafe {
       if let Some(entity) = CURRENT_ENTITY {
         display_properties(entity);
@@ -99,16 +96,7 @@ fn main() -> Result<(), JsValue> {
   });
   times.set_onchange(Some(time_closure.as_ref().unchecked_ref()));
   time_closure.forget(); // ...
-
-  let categories: HtmlSelectElement = document::get_element("selectCategory");
-  let list: HtmlDivElement = document::get_element("list");
-  change_category(&list, categories.value().as_str());
-  let category_closure = Closure::<dyn Fn(web_sys::Event)>::new(move |event: web_sys::Event| {
-    change_category(&list, event.target().unwrap().dyn_into::<HtmlSelectElement>().unwrap().value().as_str());
-  });
-  categories.set_onchange(Some(category_closure.as_ref().unchecked_ref()));
-  category_closure.forget(); // Really ?
-
+  display_menu();
   Ok(())
 }
 
@@ -116,22 +104,5 @@ fn get_language_from_select<'a, 'b>(select: &'a HtmlSelectElement) -> &'b lang::
   match lang::LIST.iter().find(|l| l.name == select.value().as_str()) {
     Some(language) => language,
     None => panic!("Keuwa ?"),
-  }
-}
-
-fn change_category(list: &HtmlDivElement, cat: &str) {
-  list.replace_children_with_node_0();
-  match cat {
-    "Element" => category::element.create_html(&list),
-    "Building" => category::building.create_html(&list),
-    "Food" => category::food.create_html(&list),
-    "Critter" => category::critter.create_html(&list),
-    "Plant" => category::plant.create_html(&list),
-    "Geyser" => category::geyser.create_html(&list),
-    "Space" => category::space.create_html(&list),
-    "Equipment" => category::equipment.create_html(&list),
-    "Artifact" => category::artifact.create_html(&list),
-    "Misc" => category::misc.create_html(&list),
-    _ => unreachable!(),
   }
 }

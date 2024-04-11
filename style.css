@@ -15,9 +15,9 @@ body {
   display: grid;
   grid-template-areas:
     "top  top top  top top options"
-    "menu2 menu imgd desc prop nothing"
-    "menu2 menu rec  rec  rec nothing"
-    "menu2 menu rec  rec  rec nothing"
+    "menu menu2 imgd desc prop nothing"
+    "menu menu2 rec  rec  rec nothing"
+    "menu menu2 rec  rec  rec nothing"
     "bot  bot bot  bot  bot bot";
   grid-template-rows: 30px 160px 1fr 20px;
   grid-template-columns: 140px 150px 140px 300px 1fr 300px;
@@ -51,18 +51,12 @@ body {
 }
 
 #list {
-  position: relative;
-  grid-area: menu;
+  grid-area: menu2;
   background-color: #00000020;
-
-  h3 {
-    color: white;
-    text-align: center;
-  }
 }
 
-#menu2 {
-  grid-area: menu2;
+#menu {
+  grid-area: menu;
   background-color: #00000040;
 }
 
@@ -74,39 +68,60 @@ body {
   left: 150px;
   row-gap: 5px;
   max-width: calc(100vw - 400px);
-  /* Marignan */
-  min-width: 0px;
-  left: 150px;
   margin-top: -10px;
 }
 
-.menu {
-  display: flex;
-  width: 100%;
+.menuSubcategory {
+  display: none;
+  flex-direction: column;
+  width: 150px;
 }
 
-.menuChoice {
+.menuContainer {
+  position: absolute;
+  left: 140px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuCategoryChoice {
   width: inherit;
   padding: 5px;
   display: flex;
   justify-content: space-between;
 }
 
-.menu:hover .menuChoice::after {
+.menuChoice {
+  width: 140;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuChosen .menuCategoryChoice::after {
   text-align: right;
   content: "►";
 }
 
-.menu2:hover .menuChoice::after {
+.menuChosen .menuSubcategory {
+  display: flex;
+}
+
+.menuChosen {
+  background-color: #1d1f29;
+}
+
+.menuSubcategory:hover .menuChoice::after {
   text-align: right;
   content: "►";
 }
 
-.menu:hover .category {
+.menuSubcategory:hover .category {
   display: grid;
 }
 
-.menu:hover {
+.menuSubcategory:hover {
   background-color: #1d1f29;
 }
 
