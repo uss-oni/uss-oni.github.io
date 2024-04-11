@@ -2,8 +2,8 @@ use crate::html::*;
 use crate::db;
 
 impl db::ElementSolid {
-  pub fn create_html(self: &Self, container: &HtmlElement, entity: &Entity) {
-    display_phases(container, entity);
+  pub fn create_html(self: &Self, container: &HtmlElement, _entity: &Entity) {
+    //display_phases(container, entity);
     display_shc(container, &self.shc);
     display_thermal_conductivity(container, &self.thermal_conductivity);
     display_molar_mass(container, &self.molar_mass);
@@ -14,8 +14,8 @@ impl db::ElementSolid {
 }
 
 impl db::ElementLiquid {
-  pub fn create_html(self: &Self, container: &HtmlElement, entity: &Entity) {
-    display_phases(container, entity);
+  pub fn create_html(self: &Self, container: &HtmlElement, _entity: &Entity) {
+    //display_phases(container, entity);
     display_shc(container, &self.shc);
     display_thermal_conductivity(container, &self.thermal_conductivity);
     display_molar_mass(container, &self.molar_mass);
@@ -25,8 +25,8 @@ impl db::ElementLiquid {
 }
 
 impl db::ElementGas {
-  pub fn create_html(self: &Self, container: &HtmlElement, entity: &Entity) {
-    display_phases(container, entity);
+  pub fn create_html(self: &Self, container: &HtmlElement, _entity: &Entity) {
+    //display_phases(container, entity);
     display_shc(container, &self.shc);
     display_thermal_conductivity(container, &self.thermal_conductivity);
     display_molar_mass(container, &self.molar_mass);

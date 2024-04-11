@@ -195,7 +195,7 @@ pub fn translate(game: Game) -> &'static str {
                   typeName = "&'static [Tag]";
                   break;
                 case "dlc":
-                  typeName = "&'static [crate::dlc::Dlc]";
+                  typeName = "&'static [crate::db::Dlc]";
                   break;
                 case "location_rule":
                   typeName = "LocationRule";
@@ -618,6 +618,18 @@ pub enum MaterialCategory {
   Solid(&'static Entity),
   Tag(Tag)
 }
+
+pub enum Hp {
+  Invincible,
+  Hp(i32),
+}
+
+pub enum Dlc {
+  Vanilla,
+  SpaceOut,
+}
+
+
 """
         );
 

@@ -14,14 +14,14 @@ body {
 body {
   display: grid;
   grid-template-areas:
-    "top  top  options"
-    "list imgd desc"
-    "list prop prop"
-    "list rec  rec"
-    "bot  bot  bot ";
-  grid-template-rows: 30px 140px 1fr 20px;
-  grid-template-columns: 1fr 140px 360px;
-  background-color: #363a4c;
+    "top  top top  top top options"
+    "menu2 menu imgd desc prop nothing"
+    "menu2 menu rec  rec  rec nothing"
+    "menu2 menu rec  rec  rec nothing"
+    "bot  bot bot  bot  bot bot";
+  grid-template-rows: 30px 160px 1fr 20px;
+  grid-template-columns: 140px 150px 140px 300px 1fr 300px;
+  background-color: #3e4357;
   color: white;
 }
 
@@ -51,8 +51,9 @@ body {
 }
 
 #list {
-  grid-area: list;
-  overflow: auto;
+  position: relative;
+  grid-area: menu;
+  background-color: #00000020;
 
   h3 {
     color: white;
@@ -60,17 +61,77 @@ body {
   }
 }
 
+#menu2 {
+  grid-area: menu2;
+  background-color: #00000040;
+}
+
 .category {
+  position: absolute;
+  display: none;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, 80px);
+  left: 150px;
+  row-gap: 5px;
+  max-width: calc(100vw - 600px);
+  /* Marignan */
+  min-width: 0px;
+  top: 0px;
+  left: 150px;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menuChoice {
+  width: inherit;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu:hover .menuChoice::after {
+  text-align: right;
+  content: "►";
+}
+
+.menu2:hover .menuChoice::after {
+  text-align: right;
+  content: "►";
+}
+
+.menu:hover .category {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 75px);
-  justify-content: center;
-  gap: 5px;
-  margin-right: 10px;
+}
+
+.menu:hover {
+  background-color: #1d1f29;
+}
+
+.boxContainer {
+  position: relative;
+}
+
+.boxBorder {
+  position: absolute;
+  width: 75px;
+  height: 130px;
+  padding: 10px;
+  background-color: #1d1f29;
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .box {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
   display: grid;
   border-radius: 5px;
+  width: 75px;
 
   grid-template-rows: 75px 55px;
   background-color: #3e4357;
@@ -114,17 +175,18 @@ body {
 }
 
 #properties {
+  padding-top: 5px;
   grid-area: prop;
   display: grid;
   grid-auto-flow: row;
   /* spacing icon label spacing value amount spacing*/
-  grid-template-columns: 10px 30px 183px 5px 1fr max-content 10px;
+  grid-template-columns: 10px 30px 200px 5px 1fr max-content 10px;
   grid-auto-rows: min-content;
   row-gap: 3px;
   width: 100%;
   background-color: #3e4357;
   overflow: auto;
-  font-size: 14px;
+  font-size: 16px;
 
   .label {
     grid-column: 3;
@@ -440,17 +502,17 @@ details[open]>summary::before {
 #desc {
   grid-area: desc;
   text-align: center;
-  padding: 2%;
+  justify-content: center;
   background-color: #3e4357;
-  width: 96%;
-  height: 96%;
+  width: 100%;
+  height: 100%;
 }
 
 #descimg {
   grid-area: imgd;
   object-fit: contain;
   padding: 5%;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-color: #3e4357;
 }

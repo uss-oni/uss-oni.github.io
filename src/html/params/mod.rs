@@ -11,14 +11,12 @@ mod space;
 
 use web_sys::HtmlElement;
 
-use super::document::ExtendDocument;
 use crate::db::Params;
 use crate::entity::Entity;
-use crate::lang::Ui;
 
 impl Params {
   pub fn create_html(self: &Self, container: &HtmlElement, entity: &Entity) {
-    container.add_h3(&Ui::TitleProperties);
+    //container.add_h3(&Ui::TitleProperties);
     match &self {
       Params::BuildingMedical(value) => value.create_html(container, entity),
       Params::BuildingEquipment(value) => value.create_html(container, entity),
