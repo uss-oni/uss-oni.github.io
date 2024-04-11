@@ -76,8 +76,8 @@ body {
   max-width: calc(100vw - 600px);
   /* Marignan */
   min-width: 0px;
-  top: 0px;
   left: 150px;
+  margin-top: -10px;
 }
 
 .menu {
