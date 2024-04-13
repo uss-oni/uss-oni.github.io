@@ -3,12 +3,11 @@ use std::cmp;
 
 use web_sys::HtmlElement;
 
-use super::document::ExtendDocument;
+use super::document::ExtendHtml;
 use crate::entity::{Entity, EntityImage};
 use crate::icon::{self, Image};
 use crate::lang::{self, Text};
-use crate::units::*;
-use crate::Options;
+use crate::{units::*, App};
 
 pub struct Line<'a> {
   container: &'a HtmlElement,
@@ -44,7 +43,7 @@ impl Value for &str {
 
 impl Value for Text {
   fn set(self: &Self, container: &HtmlElement) {
-    container.add_text(self);
+    //container.add_text(self);
   }
 }
 
@@ -68,22 +67,22 @@ impl Value for &GramPerMole {
 
 impl Value for &Temperature {
   fn set(self: &Self, container: &HtmlElement) {
-    let degree = Options::degree();
-    container.add_text(&(round_float(degree.convert(self.0)) + " " + degree.to_string()));
+    // let degree = Options::degree();
+    // container.add_text(&(round_float(degree.convert(self.0)) + " " + degree.to_string()));
   }
 }
 
 impl Value for &DtuPerGramPerDegree {
   fn set(self: &Self, container: &HtmlElement) {
-    let degree = Options::degree();
-    container.add_text(&(round_float(degree.convert_ratio(self.0)) + " (DTU/g)/" + degree.to_string()));
+    //  let degree = Options::degree();
+    //  container.add_text(&(round_float(degree.convert_ratio(self.0)) + " (DTU/g)/" + degree.to_string()));
   }
 }
 
 impl Value for &DtuPerMetreSecondPerDegree {
   fn set(self: &Self, container: &HtmlElement) {
-    let degree = Options::degree();
-    container.add_text(&(round_float(degree.convert_ratio(self.0)) + " (DTU/(m.s))/" + degree.to_string()));
+    // let degree = Options::degree();
+    // container.add_text(&(round_float(degree.convert_ratio(self.0)) + " (DTU/(m.s))/" + degree.to_string()));
   }
 }
 
@@ -104,7 +103,11 @@ impl Line<'_> {
   }
 
   pub fn label(self: &Self, text: Text) -> &Line {
-    self.container.add_div(Some("propLabel")).set_inner_text(&text);
+    let lang = App::get().language.value();
+    let datas = text.tag();
+    let t = self.container.add_div(Some("propLabel"));
+    t.set_inner_text(lang.to_str(text));
+    t.dataset().set(datas.0, &datas.1.to_string()).unwrap();
     self
   }
 
@@ -297,11 +300,10 @@ impl Drop for Align {
   }
 }
 
-
 #[derive(Clone)]
 pub struct Line2 {
   container: HtmlElement,
-  counter: i32
+  counter: i32,
 }
 
 impl Line2 {
@@ -390,11 +392,16 @@ impl Line2 {
   }
 
   pub fn new(container: &HtmlElement) -> Line2 {
-    Line2 { container: container.clone(), counter: 1 }
+    Line2 {
+      container: container.clone(),
+      counter: 1,
+    }
   }
 
   pub fn inc(self: &Self) -> Line2 {
-    Line2 { container: self.container.clone(), counter: self.counter + 1 }
+    Line2 {
+      container: self.container.clone(),
+      counter: self.counter + 1,
+    }
   }
 }
-

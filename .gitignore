@@ -4,3 +4,4 @@ bin
 images2
 ./db
 target/
+docs/

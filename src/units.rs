@@ -1,3 +1,7 @@
+use std::str::FromStr;
+
+use crate::choice::Choices;
+
 pub struct Size {
   pub width: i32,
   pub height: i32,
@@ -31,42 +35,69 @@ pub enum Time {
   Cycle,
 }
 
-impl Time {
-  pub fn from_str(s: &str) -> Time {
+impl FromStr for Time {
+  type Err = &'static str;
+
+  fn from_str(s: &str) -> Result<Self, Self::Err> {
     match s {
-      "second" => Time::Second,
-      "cycle" => Time::Cycle,
+      "second" => Ok(Time::Second),
+      "cycle" => Ok(Time::Cycle),
       _ => unreachable!(),
-    }
-  }
-
-  pub fn convert(self: &Self, time: f32) -> f32 {
-    match self {
-        Time::Second => time,
-        Time::Cycle => time / 600.0,
-    }
-  }
-
-  pub fn to_string(self: &Self) -> &str {
-    match self {
-        Time::Second => "s",
-        Time::Cycle => " peuchies",
     }
   }
 }
 
+impl Choices for Time {
+  fn choices() -> Vec<(&'static str, &'static str)> {
+    vec![("second", "Seconde"), ("cycle", "Cycle")]
+  }
 
-impl Degree {
-  pub fn from_str(s: &str) -> Degree {
+  fn name() -> &'static str {
+    "Time"
+  }
+}
+
+impl FromStr for Degree {
+  type Err = &'static str;
+
+  fn from_str(s: &str) -> Result<Self, Self::Err> {
     match s {
-      "C" => Degree::C,
-      "K" => Degree::K,
-      "F" => Degree::F,
+      "C" => Ok(Degree::C),
+      "K" => Ok(Degree::K),
+      "F" => Ok(Degree::F),
       _ => unreachable!(),
     }
   }
+}
 
-  pub fn convert(self: &Self, deg: f32) -> f32 {
+impl Choices for Degree {
+  fn choices() -> Vec<(&'static str, &'static str)> {
+    vec![("C", "°C"), ("K", "K"), ("F", "°F")]
+  }
+
+  fn name() -> &'static str {
+    "Degree"
+  }
+}
+
+impl Time {
+  pub fn convert(&self, time: f32) -> f32 {
+    match self {
+      Time::Second => time,
+      Time::Cycle => time / 600.0,
+    }
+  }
+
+  pub fn to_string(&self) -> &str {
+    match self {
+      Time::Second => "s",
+      Time::Cycle => " peuchies",
+    }
+  }
+}
+
+impl Degree {
+  pub fn convert(self, deg: f32) -> f32 {
     match self {
       Degree::C => deg - 273.15,
       Degree::K => deg,
@@ -74,7 +105,7 @@ impl Degree {
     }
   }
 
-  pub fn convert_ratio(self: &Self, deg: f32) -> f32 {
+  pub fn convert_ratio(self, deg: f32) -> f32 {
     match self {
       Degree::C => deg,
       Degree::K => deg,
@@ -82,7 +113,7 @@ impl Degree {
     }
   }
 
-  pub fn to_string(self: &Self) -> &str {
+  pub fn to_string(self) -> &'static str {
     match self {
       Degree::C => "°C",
       Degree::K => "K",

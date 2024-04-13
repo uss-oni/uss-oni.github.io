@@ -1,23 +1,16 @@
 mod en;
 mod fr;
 
-pub static LIST: [&Language; 2] = [&fr::LANGAGE, &en::LANGAGE];
+pub static LIST: [Language; 2] = [fr::LANGAGE, en::LANGAGE];
 
 mod game;
 mod ui;
-use std::ops::Deref;
+use std::{mem::transmute, str::FromStr};
 
 pub use game::Game;
 pub use ui::Ui;
 
-use crate::{db, Options};
-
-#[derive(Debug, Clone, Copy)]
-pub enum Text {
-  Ui(Ui),
-  Game(Game),
-  Desc(Game),
-}
+use crate::{choice::Choices, db};
 
 pub const PROPERTY_MOLAR_MASS: Text = Text::Ui(Ui::PropertyMolarMass);
 pub const PROPERTY_SHC: Text = Text::Ui(Ui::PropertySHC);
@@ -47,35 +40,77 @@ pub const VALUE_INVINCIBLE: Text = Text::Ui(Ui::ValueInvincible);
 impl db::recipe::PhaseType {
   pub fn to_text(self: &Self) -> Text {
     match self {
-        db::recipe::PhaseType::Cooking => Text::Ui(Ui::PhaseCooking),
-        db::recipe::PhaseType::Melting => Text::Ui(Ui::PhaseMelting),
-        db::recipe::PhaseType::Solidification => Text::Ui(Ui::PhaseTransmutation),
-        db::recipe::PhaseType::Vaporization => Text::Ui(Ui::PhaseVaporization),
-        db::recipe::PhaseType::Freezing => Text::Ui(Ui::PhaseFreezing),
-        db::recipe::PhaseType::Sublimation => Text::Ui(Ui::PhaseSublimation),
-        db::recipe::PhaseType::Condensation => Text::Ui(Ui::PhaseCondensation),
-        db::recipe::PhaseType::Transmutation => Text::Ui(Ui::PhaseTransmutation),
+      db::recipe::PhaseType::Cooking => Text::Ui(Ui::PhaseCooking),
+      db::recipe::PhaseType::Melting => Text::Ui(Ui::PhaseMelting),
+      db::recipe::PhaseType::Solidification => Text::Ui(Ui::PhaseTransmutation),
+      db::recipe::PhaseType::Vaporization => Text::Ui(Ui::PhaseVaporization),
+      db::recipe::PhaseType::Freezing => Text::Ui(Ui::PhaseFreezing),
+      db::recipe::PhaseType::Sublimation => Text::Ui(Ui::PhaseSublimation),
+      db::recipe::PhaseType::Condensation => Text::Ui(Ui::PhaseCondensation),
+      db::recipe::PhaseType::Transmutation => Text::Ui(Ui::PhaseTransmutation),
     }
   }
 }
 
-impl Deref for Text {
-  type Target = str;
+#[derive(Clone, Copy)]
+pub enum Text {
+  Ui(Ui),
+  Game(Game),
+  Desc(Game),
+}
 
-  fn deref(&self) -> &Self::Target {
-    let current_language = Options::language();
+impl Text {
+  pub fn tag(&self) -> (&'static str, i32) {
     match self {
-      Text::Game(game) => (current_language.game)(*game),
-      Text::Desc(desc) => (current_language.desc)(*desc),
-      Text::Ui(ui) => (current_language.ui)(*ui),
+      Text::Ui(ui) => ("ui", *ui as i32),
+      Text::Game(game) => ("game", *game as i32),
+      Text::Desc(desc) => ("desc", *desc as i32),
+    }
+  }
+
+  pub fn get(t: &str, id: i32) -> Text {
+    match t {
+      "ui" => Text::Ui( unsafe { transmute(id as i32) }),
+      "game" => Text::Game( unsafe { transmute(id as i32) }),
+      "desc" => Text::Desc( unsafe { transmute(id as i32) }),
+      _ => panic!()
     }
   }
 }
 
+#[derive(Clone, Copy)]
 pub struct Language {
   pub name: &'static str,
+  flag: &'static str,
   game: fn(game: Game) -> &'static str,
   desc: fn(game: Game) -> &'static str,
   ui: fn(ui: Ui) -> &'static str,
 }
 
+impl Language {
+  pub fn to_str(&self, text: Text) -> &'static str {
+    match text {
+      Text::Ui(ui) => (self.ui)(ui),
+      Text::Game(game) => (self.game)(game),
+      Text::Desc(desc) => (self.desc)(desc),
+    }
+  }
+}
+
+impl FromStr for &Language {
+  type Err = &'static str;
+
+  fn from_str(s: &str) -> Result<Self, Self::Err> {
+    LIST.iter().find(|p| p.name == s).ok_or("Keuwa ?")
+  }
+}
+
+impl Choices for &Language {
+  fn choices() -> Vec<(&'static str, &'static str)> {
+    LIST.map(|l| (l.name, l.flag)).to_vec()
+  }
+
+  fn name() -> &'static str {
+    "Translation"
+  }
+}

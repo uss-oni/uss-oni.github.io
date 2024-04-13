@@ -2,13 +2,12 @@ use std::cell::RefCell;
 use wasm_bindgen::{closure::Closure, JsCast};
 use web_sys::{window, HtmlDivElement, HtmlElement};
 
-use crate::category::*;
-
+use crate::menu::*;
 use super::{
   display_properties,
-  document::{self, ExtendDocument},
+  document::ExtendHtml, node::Div,
 };
-
+/* 
 impl SubCategory {
   pub fn create_html(self: &Self, container: &HtmlElement) {
     let mut sorted = self.items.to_vec();
@@ -20,7 +19,7 @@ impl SubCategory {
       the_box.add_img(&item.img());
       let d = the_box.add_div(Some("align"));
       let p = d.add_p();
-      p.set_inner_text(String::from(&item.name() as &str).to_lowercase().as_str());
+    //  p.set_inner_text(String::from(&item.name() as &str).to_lowercase().as_str());
       let _ = p.style().set_property("hyphens", "auto");
       let container_clone = container.clone();
       let click = Closure::<dyn Fn()>::new(move || {
@@ -40,9 +39,9 @@ impl SubCategory {
 
 impl Category {
   pub fn create_html(self: &Self, container: &HtmlElement) {
-    for sub in self.sub_categories {
+    for sub in &self.sub_categories {
       let div = container.add_div(Some("menuSubcategory"));
-      div.add_div(Some("menuChoice")).add_text(&sub.ui);
+     // div.add_div(Some("menuChoice")).add_text(&sub.name);
       let list = div.add_div(Some("category"));
       sub.create_html(&list);
     }
@@ -53,26 +52,29 @@ thread_local! {
   static MENU_CATEGORY: RefCell<Option<HtmlDivElement>> = RefCell::new(None);
 }
 
-pub fn display_menu() {
-  let categories: [&Category; 10] = [&element, &building, &food, &critter, &plant, &geyser, &space, &equipment, &artifact, &misc];
-  let list: HtmlDivElement = document::get_element("menu");
-  for category in categories {
-    let cat = list.add_div(Some("menuCategory"));
-    cat.add_div(Some("menuCategoryChoice")).add_text(&category.ui);
-    let sub = cat.add_div(Some("menuContainer"));
-    category.create_html(&sub);
-
-    let clone = cat.clone();
-    let enter = Closure::<dyn Fn()>::new(move || {
-      MENU_CATEGORY.with(|old| {
-        if let Some(ref old) = *old.borrow() {
-          let _ = old.class_list().remove_1("menuChosen".into());
-        }
-        *old.borrow_mut() = Some(clone.clone());
-      });
-      let _ = clone.class_list().add_1("menuChosen");
-    });
-    cat.set_onmouseenter(Some(enter.as_ref().unchecked_ref()));
-    enter.forget();
+pub fn display_menu<T>(menu: &Menu, div: &Div) {
+  //let list = renderer.get_element_by_id("menu");
+  for category in &menu.categories {
+    //let cat = list.add_div();
+    //cat.class("menuCategory");
+   //// cat.add_div().class("menuCategoryChoice").add_text(&category.name);
+   // let sub = cat.add_div().class("menuContainer");
   }
 }
+    //category.create_html(&sub);
+
+//  let clone = cat.clone();
+//  let enter = Closure::<dyn Fn()>::new(move || {
+//    MENU_CATEGORY.with(|old| {
+//      if let Some(ref old) = *old.borrow() {
+//        let _ = old.class_list().remove_1("menuChosen".into());
+//      }
+//      *old.borrow_mut() = Some(clone.clone());
+//    });
+//    let _ = clone.class_list().add_1("menuChosen");
+//  });
+//  cat.set_onmouseenter(Some(enter.as_ref().unchecked_ref()));
+//  enter.forget();
+//}
+
+*/

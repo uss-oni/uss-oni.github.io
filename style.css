@@ -17,7 +17,6 @@ body {
     "top  top top  top top options"
     "menu menu2 imgd desc prop nothing"
     "menu menu2 rec  rec  rec nothing"
-    "menu menu2 rec  rec  rec nothing"
     "bot  bot bot  bot  bot bot";
   grid-template-rows: 30px 160px 1fr 20px;
   grid-template-columns: 140px 150px 140px 300px 1fr 300px;
@@ -99,16 +98,16 @@ body {
   justify-content: space-between;
 }
 
-.menuChosen .menuCategoryChoice::after {
+#menuChosen .menuCategoryChoice::after {
   text-align: right;
   content: "►";
 }
 
-.menuChosen .menuSubcategory {
+#menuChosen .menuSubcategory {
   display: flex;
 }
 
-.menuChosen {
+#menuChosen {
   background-color: #1d1f29;
 }
 
@@ -167,7 +166,6 @@ body {
     min-height: 55px;
 
     p {
-      text-transform: lowercase;
       width: 100%;
       color: rgba(255, 255, 255, 0.9);
       width: inherit;

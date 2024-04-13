@@ -1,8 +1,5 @@
-use std::ops::Deref;
-
-use crate::Options;
-
-#[derive(Debug, Clone, Copy)]
+#[derive(Clone, Copy)]
+#[repr(i32)]
 pub enum Ui {
   CategoryBuilding,
   CategoryElement,
@@ -103,12 +100,4 @@ pub enum Ui {
   TitleBuildingMaterials,
 
   ValueInvincible,
-}
-
-impl Deref for Ui {
-  type Target = str;
-
-  fn deref(&self) -> &Self::Target {
-    (Options::language().ui)(*self)
-  }
 }

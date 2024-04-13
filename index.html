@@ -17,25 +17,11 @@
     async function run() {
       await init();
     }
-    run();
+    run().catch(console.error);
   </script>
   <div id="top">Barre de recherche par ici ?</div>
   <div id="menu"></div>
-  <div id="options">
-    <select id="selectDegree">
-      <option value="C">°C</option>
-      <option value="K">K</option>
-      <option value="F">°F</option>
-    </select>
-    <select id="selectTime">
-      <option value="second">Seconde</option>
-      <option value="cycle">Cycle</option>
-    </select>
-    <select id="selectTranslation">
-      <option value="fr">🇫🇷</option>
-      <option value="en">🇬🇧</option>
-    </select>
-  </div>
+  <div id="options"></div>
   <div id="list"></div>
   <img id="descimg" src="images/Icon/codex_critter_emotions.png" />
   <div id="desc">Un Site Sur Oxygen Not Included</div>

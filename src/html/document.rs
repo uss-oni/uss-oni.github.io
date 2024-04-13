@@ -1,11 +1,11 @@
 use std::i32;
 
 use wasm_bindgen::JsCast;
-use web_sys::{HtmlDivElement, HtmlElement, HtmlHeadingElement, HtmlImageElement, HtmlOptionElement, HtmlParagraphElement};
+use web_sys::{Document, HtmlDivElement, HtmlElement, HtmlHeadingElement, HtmlImageElement, HtmlOptionElement, HtmlParagraphElement};
 
 use crate::icon::Image;
 
-pub trait ExtendDocument {
+pub trait ExtendHtml {
   fn add_div(self: &Self, class: Option<&str>) -> HtmlDivElement;
   fn add_img(self: &Self, img: &dyn Image) -> HtmlImageElement;
   fn add_p(self: &Self) -> HtmlParagraphElement;
@@ -15,7 +15,7 @@ pub trait ExtendDocument {
   fn set_width(self: &Self, width: i32);
 }
 
-impl ExtendDocument for HtmlElement {
+impl ExtendHtml for HtmlElement {
   fn add_div(self: &Self, class: Option<&str>) -> HtmlDivElement {
     let ret = create::<HtmlDivElement>("div");
     let _ = self.append_child(&ret);
@@ -53,25 +53,32 @@ impl ExtendDocument for HtmlElement {
 
   fn add_option(self: &Self, value: &str, label: &str) -> HtmlOptionElement {
     let ret = create::<HtmlOptionElement>("option");
-    let _ = ret.set_attribute("value", &value);
+    let _ = ret.set_attribute("value", value);
     ret.set_text(label);
     let _ = self.append_child(&ret);
     ret
   }
-  
+
   fn set_width(self: &Self, width: i32) {
-    let _ = self.style().set_property("width", &(width.to_string() + "px"));    }
+    let _ = self.style().set_property("width", &(width.to_string() + "px"));
+  }
 }
 
 fn create<T: wasm_bindgen::JsCast>(s: &str) -> T {
-  web_sys::window().unwrap().document().unwrap().create_element(s).unwrap().dyn_into::<T>().unwrap()
+ web_sys::window().unwrap().document().unwrap().create_element(s).unwrap().dyn_into::<T>().unwrap()
 }
 
-pub fn get_element<T: wasm_bindgen::JsCast>(id: &str) -> T {
-  web_sys::window().unwrap().document().unwrap().get_element_by_id(id).unwrap().dyn_into::<T>().unwrap()
+pub trait ExtendDocument {
+  fn get_element<T: wasm_bindgen::JsCast>(self: &Self, id: &str) -> T;
+  fn get_body(self: &Self) -> HtmlElement;
 }
 
-pub fn body() -> HtmlElement {
-  web_sys::window().unwrap().document().unwrap().body().unwrap()
-}
+impl ExtendDocument for Document {
+  fn get_element<T: wasm_bindgen::JsCast>(self: &Self, id: &str) -> T {
+    self.get_element_by_id(id).unwrap().dyn_into::<T>().unwrap()
+  }
 
+  fn get_body(self: &Self) -> HtmlElement {
+    self.body().unwrap()
+  }
+}
