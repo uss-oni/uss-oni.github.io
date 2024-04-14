@@ -1,6 +1,5 @@
 mod builder;
 pub mod document;
-pub mod menu;
 mod params;
 pub mod recipe;
 pub mod node;
@@ -17,7 +16,8 @@ use wasm_bindgen::JsCast;
 use web_sys::{HtmlDivElement, HtmlElement, HtmlImageElement, HtmlOptionElement, HtmlParagraphElement, HtmlSelectElement};
 
 pub fn display_properties(entity: &'static Entity) {
-  let document = &App::get().document;
+  let binding = App::get();
+  let document = &binding.document;
   get_element_by_id(document, "desc").set_text(entity.desc());
   document.get_element::<HtmlImageElement>("descimg").set_src(&entity.img().path());
   let properties: HtmlDivElement = document.get_element("properties");

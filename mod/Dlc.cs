@@ -35,6 +35,7 @@ namespace USS
        || tag == "POIFacilityDoor"
        )
         return true;
+        
       var asset = Assets.GetPrefab(tag);
       if (asset is null)
         return true;

@@ -1,5 +1,6 @@
 pub mod category;
 pub mod choice;
+pub mod css;
 pub mod db;
 pub mod dlc;
 pub mod entity;
@@ -7,18 +8,23 @@ pub mod html;
 pub mod icon;
 pub mod lang;
 pub mod menu;
+pub mod node;
+pub mod text_node;
 pub mod units;
 
+use node::Node;
+use node::Renderer;
 use std::cell::OnceCell;
+use std::cell::RefCell;
 use std::rc::Rc;
 
 use choice::Choice;
-use html::{document, node::get_element_by_id, Render};
+use html::{node::get_element_by_id, Render};
 use lang::{Language, Text};
 use menu::Menu;
 use units::{Degree, Time};
 use wasm_bindgen::prelude::*;
-use web_sys::{console, window, HtmlDivElement, HtmlElement, HtmlParagraphElement};
+use web_sys::{console, window, HtmlDivElement, HtmlElement};
 
 struct App {
   menu: Menu,
@@ -26,6 +32,7 @@ struct App {
   degree: Choice<Degree>,
   time: Choice<Time>,
   document: web_sys::Document,
+  node: RefCell<Option<Node>>,
 }
 
 impl App {
@@ -41,6 +48,7 @@ impl App {
         degree,
         time,
         document: window().unwrap().document().unwrap(),
+        node: None.into(),
       };
       let _ = rc.set(app.into());
     });
@@ -50,8 +58,19 @@ impl App {
     Self::INSTANCE.with(|app| app.get().unwrap().clone())
   }
 
+  pub fn set_node(node: Node) {
+    Self::INSTANCE.with(|app| {
+      let mut n = app.get().unwrap().node.borrow_mut();
+      if n.is_none() {
+        console::log_1(&"data_1".into());
+        *n = Some(node);
+      }
+    });
+  }
+
   pub fn on_language_update(lang: &Language) {
-    let document = &App::get().document;
+    let app = App::get();
+    let document = &app.document;
     let list = document.query_selector_all("[data-ui]").unwrap();
     for i in 0..list.length() {
       let item = list.item(i).unwrap();
@@ -87,6 +106,7 @@ impl App {
 #[wasm_bindgen(start)]
 fn main() -> Result<(), JsValue> {
   console_error_panic_hook::set_once();
+  console::log_1(&"Loading".into());
 
   let language = Choice::new(&lang::LIST[0], App::on_language_update);
   let degree = Choice::new(Degree::C, App::on_degree_update);
@@ -103,6 +123,9 @@ fn render() {
   app.degree.render(&options);
   app.time.render(&options);
   app.language.render(&options);
-  let menu = get_element_by_id(&app.document, "menu");
-  app.menu.render(&menu);
+  //let menu = get_element_by_id(&app.document, "menu");
+  let node = node::Node::from_element(&app.document.get_element_by_id("menu").unwrap().dyn_into().unwrap());
+  let renderer = std::rc::Rc::new(Renderer { document: app.document.clone() });
+  App::set_node(app.menu.render(renderer, node));
+  console::log_1(&App::get().node.borrow().as_ref().unwrap().nodes.len().to_string().into());
 }

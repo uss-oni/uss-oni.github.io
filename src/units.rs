@@ -1,7 +1,8 @@
-use std::str::FromStr;
+use std::{marker::PhantomData, str::FromStr};
 
 use crate::choice::Choices;
 
+#[derive(Clone, Copy)]
 pub struct Size {
   pub width: i32,
   pub height: i32,

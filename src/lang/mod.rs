@@ -70,9 +70,9 @@ impl Text {
 
   pub fn get(t: &str, id: i32) -> Text {
     match t {
-      "ui" => Text::Ui( unsafe { transmute(id as i32) }),
-      "game" => Text::Game( unsafe { transmute(id as i32) }),
-      "desc" => Text::Desc( unsafe { transmute(id as i32) }),
+      "ui" => Text::Ui( unsafe { transmute(id) }),
+      "game" => Text::Game( unsafe { transmute(id) }),
+      "desc" => Text::Desc( unsafe { transmute(id) }),
       _ => panic!()
     }
   }

@@ -5,7 +5,7 @@ use super::*;
 
 pub struct Div<'a> {
   document: &'a Document,
-  node: HtmlDivElement,
+  pub node: HtmlDivElement,
 }
 
 pub fn get_element_by_id<'a>(document: &'a web_sys::Document, id: &str) -> Div<'a> {
