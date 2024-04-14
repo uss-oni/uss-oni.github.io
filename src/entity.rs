@@ -12,15 +12,15 @@ impl Entity {
     Entity { name, tag, order, params }
   }
 
-  pub const fn img(self: &Self) -> EntityImage {
+  pub const fn img(&self) -> EntityImage {
     EntityImage {name: self.tag}
   }
 
-  pub const fn desc(self: &'static Self) -> Text {
+  pub const fn desc(&'static self) -> Text {
     lang::Text::Desc(self.name)
   }
 
-  pub const fn name(self: &'static Self) -> Text {
+  pub const fn name(&'static self) -> Text {
     lang::Text::Game(self.name)
   }
 }
@@ -30,7 +30,7 @@ pub struct EntityImage {
 }
 
 impl Image for EntityImage {
-  fn path(self: &Self) -> String {
+  fn path(&self) -> String {
     let mut ret = String::from("images/");
     ret.push(self.name.chars().nth(0).unwrap().to_ascii_uppercase());
     ret.push('/');

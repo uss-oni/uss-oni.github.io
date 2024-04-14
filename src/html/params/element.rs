@@ -2,7 +2,7 @@ use crate::html::*;
 use crate::db;
 
 impl db::ElementSolid {
-  pub fn create_html(self: &Self, container: &HtmlElement, _entity: &Entity) {
+  pub fn create_html(&self, container: &HtmlElement, _entity: &Entity) {
     //display_phases(container, entity);
     display_shc(container, &self.shc);
     display_thermal_conductivity(container, &self.thermal_conductivity);
@@ -14,7 +14,7 @@ impl db::ElementSolid {
 }
 
 impl db::ElementLiquid {
-  pub fn create_html(self: &Self, container: &HtmlElement, _entity: &Entity) {
+  pub fn create_html(&self, container: &HtmlElement, _entity: &Entity) {
     //display_phases(container, entity);
     display_shc(container, &self.shc);
     display_thermal_conductivity(container, &self.thermal_conductivity);
@@ -25,7 +25,7 @@ impl db::ElementLiquid {
 }
 
 impl db::ElementGas {
-  pub fn create_html(self: &Self, container: &HtmlElement, _entity: &Entity) {
+  pub fn create_html(&self, container: &HtmlElement, _entity: &Entity) {
     //display_phases(container, entity);
     display_shc(container, &self.shc);
     display_thermal_conductivity(container, &self.thermal_conductivity);
@@ -36,6 +36,6 @@ impl db::ElementGas {
 }
 
 impl db::ElementOther {
-  pub fn create_html(self: &Self, _container: &HtmlElement, _: &Entity) {
+  pub fn create_html(&self, _container: &HtmlElement, _: &Entity) {
   }
 }

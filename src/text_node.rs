@@ -2,7 +2,7 @@ use crate::{
   lang::{self, Text},
   units::*,
 };
-use std::{borrow::Cow};
+use std::borrow::Cow;
 
 enum TextUpdatable {
   Float(f32),
@@ -72,7 +72,7 @@ impl TextNode {
     }
   }
 
-  pub fn new(node: web_sys::Text, value: TextUpdatable) {}
+  pub fn new(_node: web_sys::Text, _value: TextUpdatable) {}
 }
 
 fn round_float(f: f32) -> String {

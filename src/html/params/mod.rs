@@ -15,7 +15,7 @@ use crate::db::Params;
 use crate::entity::Entity;
 
 impl Params {
-  pub fn create_html(self: &Self, container: &HtmlElement, entity: &Entity) {
+  pub fn create_html(&self, container: &HtmlElement, entity: &Entity) {
     //container.add_h3(&Ui::TitleProperties);
     match &self {
       Params::BuildingMedical(value) => value.create_html(container, entity),

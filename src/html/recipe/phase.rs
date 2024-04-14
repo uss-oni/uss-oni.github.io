@@ -34,7 +34,7 @@ pub fn display_phases(container: &HtmlElement, entity: &Entity) {
 
 pub fn get_other_phases(entity: &Entity) -> Vec<&Phase>{
   recipes.iter().filter_map(|r| match r {
-    Recipe::Phase(ret @ Phase { output: other, .. }) if other.iter().find(|o| std::ptr::eq(entity, o.entity)).is_some() => Some(ret),
+    Recipe::Phase(ret @ Phase { output: other, .. }) if other.iter().any(|o| std::ptr::eq(entity, o.entity)) => Some(ret),
     _ => None,
   }).collect::<Vec<_>>()
 }

@@ -37,13 +37,13 @@ impl<'a> Select<'a> {
     self
   }
 
-  pub fn add_option(self: &Self, value: &str, label: &str) -> Option {
+  pub fn add_option(&self, value: &str, label: &str) -> Option {
     let ret = Option::new(self.document, value, label);
     ret.set_parent(&self.node);
     ret
   }
 
-  pub fn set_oninput(self: &Self, f: std::option::Option<&web_sys::js_sys::Function>) -> &Self {
+  pub fn set_oninput(&self, f: std::option::Option<&web_sys::js_sys::Function>) -> &Self {
     self.node.set_oninput(f);
     self
   }

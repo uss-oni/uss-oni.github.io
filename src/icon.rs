@@ -21,11 +21,11 @@ pub struct Icon {
 }
 
 pub trait Image {
-  fn path(self: &Self) -> String;
+  fn path(&self) -> String;
 }
 
 impl Image for Icon {
-  fn path(self: &Self) -> String {
+  fn path(&self) -> String {
     let mut ret = String::from("images/Icon/");
     ret += self.name;
     ret += ".png";

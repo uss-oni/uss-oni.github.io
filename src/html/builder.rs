@@ -14,80 +14,80 @@ pub struct Line<'a> {
 }
 
 pub trait Value {
-  fn set(self: &Self, container: &HtmlElement);
+  fn set(&self, container: &HtmlElement);
 }
 
 impl Value for EntityImage {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_img(self).set_class_name("image");
   }
 }
 
 impl Value for f32 {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(&round_float(*self));
   }
 }
 
 impl Value for i32 {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(&self.to_string());
   }
 }
 
 impl Value for &str {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(self);
   }
 }
 
 impl Value for Text {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, _container: &HtmlElement) {
     //container.add_text(self);
   }
 }
 
 impl Value for &Kg {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(&(round_float(self.0) + " kg"));
   }
 }
 
 impl Value for &Percent {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(&(round_float(self.0 * 100.0).to_string() + " %"));
   }
 }
 
 impl Value for &GramPerMole {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(&(round_float(self.0) + " g/mol"));
   }
 }
 
 impl Value for &Temperature {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, _container: &HtmlElement) {
     // let degree = Options::degree();
     // container.add_text(&(round_float(degree.convert(self.0)) + " " + degree.to_string()));
   }
 }
 
 impl Value for &DtuPerGramPerDegree {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, _container: &HtmlElement) {
     //  let degree = Options::degree();
     //  container.add_text(&(round_float(degree.convert_ratio(self.0)) + " (DTU/g)/" + degree.to_string()));
   }
 }
 
 impl Value for &DtuPerMetreSecondPerDegree {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, _container: &HtmlElement) {
     // let degree = Options::degree();
     // container.add_text(&(round_float(degree.convert_ratio(self.0)) + " (DTU/(m.s))/" + degree.to_string()));
   }
 }
 
 impl Value for &Size {
-  fn set(self: &Self, container: &HtmlElement) {
+  fn set(&self, container: &HtmlElement) {
     container.add_text(&(self.width.to_string() + " x " + &self.height.to_string()));
   }
 }
@@ -97,12 +97,12 @@ fn round_float(f: f32) -> String {
 }
 
 impl Line<'_> {
-  pub fn icon(self: &Self, icon: &dyn Image) -> &Line {
+  pub fn icon(&self, icon: &dyn Image) -> &Line {
     self.container.add_div(Some("propIcon")).add_img(icon);
     self
   }
 
-  pub fn label(self: &Self, text: Text) -> &Line {
+  pub fn label(&self, text: Text) -> &Line {
     let lang = App::get().language.value();
     let datas = text.tag();
     let t = self.container.add_div(Some("propLabel"));
@@ -111,7 +111,7 @@ impl Line<'_> {
     self
   }
 
-  pub fn label_custom<F>(self: &Self, func: F) -> &Line
+  pub fn label_custom<F>(&self, func: F) -> &Line
   where
     F: for<'a> Fn(&'a Line) -> &'a Line<'a>,
   {
@@ -120,7 +120,7 @@ impl Line<'_> {
     func(&new_line);
     self
   }
-  pub fn labels<F>(self: &Self, func: F) -> &Line
+  pub fn labels<F>(&self, func: F) -> &Line
   where
     F: for<'a> Fn(&'a Line) -> &'a Line<'a>,
   {
@@ -130,12 +130,12 @@ impl Line<'_> {
     self
   }
 
-  pub fn img(self: &Self, class: &str, image: &dyn Image) -> &Line {
+  pub fn img(&self, class: &str, image: &dyn Image) -> &Line {
     self.container.add_img(image).set_class_name(class);
     self
   }
 
-  pub fn foreach<T, Item, F>(self: &Self, iterator: T, func: F) -> &Line
+  pub fn foreach<T, Item, F>(&self, iterator: T, func: F) -> &Line
   where
     T: IntoIterator<Item = Item>,
     F: for<'a> Fn(&'a Line<'a>, &'a Item) -> &'a Line<'a>,
@@ -146,7 +146,7 @@ impl Line<'_> {
     self
   }
 
-  pub fn value<T>(self: &Self, class: &str, value: T) -> &Line
+  pub fn value<T>(&self, class: &str, value: T) -> &Line
   where
     T: Value,
   {
@@ -154,7 +154,7 @@ impl Line<'_> {
     self
   }
 
-  pub fn value_align<T>(self: &Self, class: &str, value: T, align: &RefCell<Align>) -> &Line
+  pub fn value_align<T>(&self, class: &str, value: T, align: &RefCell<Align>) -> &Line
   where
     T: Value,
   {
@@ -164,7 +164,7 @@ impl Line<'_> {
     self
   }
 
-  pub fn values<F>(self: &Self, class: &str, func: F) -> &Line
+  pub fn values<F>(&self, class: &str, func: F) -> &Line
   where
     F: for<'a> Fn(&'a Line) -> &'a Line<'a>,
   {
@@ -174,7 +174,7 @@ impl Line<'_> {
     self
   }
 
-  pub fn value_filter<T>(self: &Self, class: &str, value: T, filter: bool) -> &Line
+  pub fn value_filter<T>(&self, class: &str, value: T, filter: bool) -> &Line
   where
     T: Value,
   {
@@ -248,7 +248,7 @@ pub fn display_hp(container: &HtmlElement, hp: &Option<i32>, invincible: &Option
 }
 
 pub fn display_gravity(container: &HtmlElement, gravity: Option<f32>) {
-  if let Some(_) = gravity {
+  if gravity.is_some() {
     simple_line(container, &icon::GRAVITY, lang::PROPERTY_GRAVITY_AFFECTED, "");
   }
 }
@@ -285,7 +285,7 @@ impl Align {
     RefCell::new(Align { list: vec![], counter: 0 })
   }
 
-  pub fn add(self: &mut Self, element: HtmlElement) {
+  pub fn add(&mut self, element: HtmlElement) {
     let value = element.offset_width();
     self.counter = cmp::max(self.counter, value);
     self.list.push(element);
@@ -307,19 +307,19 @@ pub struct Line2 {
 }
 
 impl Line2 {
-  pub fn icons<const T: usize>(self: &Self, icons: [&dyn Image; T]) -> &Line2 {
+  pub fn icons<const T: usize>(&self, icons: [&dyn Image; T]) -> &Line2 {
     for icon in icons {
       self.container.add_div(Some("icon")).add_img(icon);
     }
     self
   }
 
-  pub fn icon(self: &Self, icon: &dyn Image) -> &Line2 {
+  pub fn icon(&self, icon: &dyn Image) -> &Line2 {
     self.container.add_div(Some("icon")).add_img(icon);
     self
   }
 
-  pub fn label<const T: usize>(self: &Self, values: [&dyn Value; T]) -> &Line2 {
+  pub fn label<const T: usize>(&self, values: [&dyn Value; T]) -> &Line2 {
     let label = self.container.add_div(Some("label"));
     for value in values {
       value.set(&label);
@@ -327,7 +327,7 @@ impl Line2 {
     self
   }
 
-  pub fn labels<F>(self: &Self, func: F) -> &Line2
+  pub fn labels<F>(&self, func: F) -> &Line2
   where
     F: for<'a> Fn(&'a Line2) -> &Line2,
   {
@@ -337,12 +337,12 @@ impl Line2 {
     self
   }
 
-  pub fn img(self: &Self, image: &dyn Image) -> Line2 {
+  pub fn img(&self, image: &dyn Image) -> Line2 {
     self.container.add_img(image).set_class_name("image");
     self.inc()
   }
 
-  pub fn foreach<T, Item, F, U>(self: &Self, iterator: T, func: F) -> Line2
+  pub fn foreach<T, Item, F, U>(&self, iterator: T, func: F) -> Line2
   where
     T: IntoIterator<Item = Item>,
     F: for<'a> Fn(Line2, &'a Item) -> U,
@@ -353,7 +353,7 @@ impl Line2 {
     self.clone()
   }
 
-  pub fn value<T>(self: &Self, value: T) -> Line2
+  pub fn value<T>(&self, value: T) -> Line2
   where
     T: Value,
   {
@@ -361,7 +361,7 @@ impl Line2 {
     self.inc()
   }
 
-  pub fn value_align<T>(self: &Self, value: T, align: &RefCell<Align>) -> Line2
+  pub fn value_align<T>(&self, value: T, align: &RefCell<Align>) -> Line2
   where
     T: Value,
   {
@@ -371,7 +371,7 @@ impl Line2 {
     self.inc()
   }
 
-  pub fn values<F, U>(self: &Self, class: &str, func: F) -> &Line2
+  pub fn values<F, U>(&self, class: &str, func: F) -> &Line2
   where
     F: for<'a> Fn(&'a Line2) -> U,
   {
@@ -381,7 +381,7 @@ impl Line2 {
     self
   }
 
-  pub fn value_filter<T>(self: &Self, value: T, filter: bool) -> Line2
+  pub fn value_filter<T>(&self, value: T, filter: bool) -> Line2
   where
     T: Value,
   {
@@ -398,7 +398,7 @@ impl Line2 {
     }
   }
 
-  pub fn inc(self: &Self) -> Line2 {
+  pub fn inc(&self) -> Line2 {
     Line2 {
       container: self.container.clone(),
       counter: self.counter + 1,

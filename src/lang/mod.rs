@@ -38,7 +38,7 @@ pub const PROPERTY_PRIMARY_ELEMENT: Text = Text::Ui(Ui::PropertyPrimaryElement);
 pub const VALUE_INVINCIBLE: Text = Text::Ui(Ui::ValueInvincible);
 
 impl db::recipe::PhaseType {
-  pub fn to_text(self: &Self) -> Text {
+  pub fn to_text(&self) -> Text {
     match self {
       db::recipe::PhaseType::Cooking => Text::Ui(Ui::PhaseCooking),
       db::recipe::PhaseType::Melting => Text::Ui(Ui::PhaseMelting),

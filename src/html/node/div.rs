@@ -64,7 +64,7 @@ impl<'a> Div<'a> {
   }
 
   pub fn remove_id(&self, id: &str) -> &Self {
-    self.node.remove_attribute(id);
+    let _ = self.node.remove_attribute(id);
     self
   }
 
@@ -106,12 +106,12 @@ impl<'a> Div<'a> {
   //   ret
   // }
 
-  pub fn set_onmouseenter(self: &Self, f: std::option::Option<&web_sys::js_sys::Function>) -> &Self {
+  pub fn set_onmouseenter(&self, f: std::option::Option<&web_sys::js_sys::Function>) -> &Self {
     self.node.set_onmouseenter(f);
     self
   }
 
-  pub fn set_onclick(self: &Self, f: std::option::Option<&web_sys::js_sys::Function>) -> &Self {
+  pub fn set_onclick(&self, f: std::option::Option<&web_sys::js_sys::Function>) -> &Self {
     self.node.set_onclick(f);
     self
   }

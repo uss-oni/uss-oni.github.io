@@ -47,7 +47,7 @@ impl P {
 
   pub fn set_hyphens(&self) {
     //if self.node.offset_width() > 75 {
-      self.node.style().set_property("hyphens", "auto");
+      let _ = self.node.style().set_property("hyphens", "auto");
     //}
   }
 }

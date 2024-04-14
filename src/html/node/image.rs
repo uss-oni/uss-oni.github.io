@@ -1,4 +1,4 @@
-use web_sys::{HtmlDivElement, HtmlElement, HtmlImageElement};
+use web_sys::{HtmlElement, HtmlImageElement};
 use crate::icon;
 
 use super::*;
