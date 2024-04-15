@@ -5,11 +5,13 @@ pub struct Entity {
   tag: &'static str,
   pub order: f32,
   pub params: db::Params,
+  pub vanilla: bool,
+  pub space_out: bool,
 }
 
 impl Entity { 
   pub const fn new(name: lang::Game, tag: &'static str, order: f32, params: db::Params) -> Entity {
-    Entity { name, tag, order, params }
+    Entity { name, tag, order, params, vanilla: true, space_out:true }
   }
 
   pub const fn img(&self) -> EntityImage {

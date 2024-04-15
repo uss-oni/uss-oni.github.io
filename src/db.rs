@@ -4,6 +4,7 @@
 
 use crate::entity::Entity;
 pub struct BuildingMedical{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -26,6 +27,8 @@ crate::lang::Game::AdvancedDoctorStation,
 "AdvancedDoctorStation",
 6.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::Clinic,
 ],
@@ -54,6 +57,8 @@ crate::lang::Game::Apothecary,
 "Apothecary",
 4.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -81,6 +86,8 @@ crate::lang::Game::DecontaminationShower,
 "DecontaminationShower",
 3.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -107,6 +114,8 @@ crate::lang::Game::DoctorStation,
 "DoctorStation",
 5.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::Clinic,
 ],
@@ -133,6 +142,8 @@ crate::lang::Game::Grave,
 "Grave",
 9.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -158,6 +169,8 @@ crate::lang::Game::HandSanitizer,
 "HandSanitizer",
 2.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::WashStation,
 Tag::AdvancedWashStation,
@@ -185,6 +198,8 @@ crate::lang::Game::MassageTable,
 "MassageTable",
 8.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::DeStressingBuilding,
 ],
@@ -213,6 +228,8 @@ crate::lang::Game::MedicalCot,
 "MedicalCot",
 7.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::Clinic,
 Tag::BedType,
@@ -240,6 +257,8 @@ crate::lang::Game::WashBasin,
 "WashBasin",
 0.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::WashStation,
 ],
@@ -266,6 +285,8 @@ crate::lang::Game::WashSink,
 "WashSink",
 1.000,
 Params::BuildingMedical(BuildingMedical{
+dlc: &[
+],
 tags: &[
 Tag::WashStation,
 Tag::AdvancedWashStation,
@@ -289,6 +310,7 @@ enableable: true,
 decor: Some(crate::units::Decor {value: 10, radius: 2}),
 }));
 pub struct BuildingEquipment{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -314,6 +336,8 @@ crate::lang::Game::AdvancedResearchCenter,
 "AdvancedResearchCenter",
 1.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -343,8 +367,10 @@ only_in_rocket: None,
 pub static ArtifactAnalysisStation:Entity = Entity::new(
 crate::lang::Game::ArtifactAnalysisStation,
 "ArtifactAnalysisStation",
-13.000,
+15.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -373,8 +399,10 @@ only_in_rocket: None,
 pub static ClothingAlterationStation:Entity = Entity::new(
 crate::lang::Game::ClothingAlterationStation,
 "ClothingAlterationStation",
-17.000,
+19.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -403,8 +431,10 @@ only_in_rocket: None,
 pub static ClothingFabricator:Entity = Entity::new(
 crate::lang::Game::ClothingFabricator,
 "ClothingFabricator",
-16.000,
+18.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -430,11 +460,46 @@ rotations: None,
 work_time: None,
 only_in_rocket: None,
 }));
+pub static CosmicResearchCenter:Entity = Entity::new(
+crate::lang::Game::CosmicResearchCenter,
+"CosmicResearchCenter",
+4.000,
+Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
+tags: &[
+Tag::ScienceBuilding,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
+location_rule: LocationRule::OnFloor,
+material_category: &[
+MaterialCategory::Tag(Tag::Metal),
+],
+electrity_consummation: Some(&[
+Some(120.000),
+]),
+external_heat: Some(0.500),
+internal_heat: Some(4.000),
+size: crate::units::Size {width: 4, height: 4},
+hp: 30,
+high_temp_warning: Some(crate::units::Temperature(348.150)),
+high_temp_fatal: Some(crate::units::Temperature(533.150)),
+mass: crate::units::Kg(400.000),
+flood_threshold: crate::units::Percent(0.350),
+deconstructable: true,
+enableable: true,
+decor: None,
+rotations: None,
+work_time: None,
+only_in_rocket: None,
+}));
 pub static CraftingTable:Entity = Entity::new(
 crate::lang::Game::CraftingTable,
 "CraftingTable",
-15.000,
+17.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -463,8 +528,10 @@ only_in_rocket: None,
 pub static DLC1CosmicResearchCenter:Entity = Entity::new(
 crate::lang::Game::DLC1CosmicResearchCenter,
 "DLC1CosmicResearchCenter",
-4.000,
+5.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -494,8 +561,10 @@ only_in_rocket: None,
 pub static FarmStation:Entity = Entity::new(
 crate::lang::Game::FarmStation,
 "FarmStation",
-7.000,
+9.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::FarmStationType,
 ],
@@ -523,8 +592,10 @@ only_in_rocket: None,
 pub static GeneticAnalysisStation:Entity = Entity::new(
 crate::lang::Game::GeneticAnalysisStation,
 "GeneticAnalysisStation",
-8.000,
+10.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -554,8 +625,10 @@ only_in_rocket: None,
 pub static GeoTuner:Entity = Entity::new(
 crate::lang::Game::GeoTuner,
 "GeoTuner",
-5.000,
+7.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -585,8 +658,10 @@ only_in_rocket: None,
 pub static JetSuitLocker:Entity = Entity::new(
 crate::lang::Game::JetSuitLocker,
 "JetSuitLocker",
-24.000,
+26.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -615,8 +690,10 @@ only_in_rocket: None,
 pub static JetSuitMarker:Entity = Entity::new(
 crate::lang::Game::JetSuitMarker,
 "JetSuitMarker",
-23.000,
+25.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::JetSuitBlocker,
 ],
@@ -644,8 +721,10 @@ only_in_rocket: None,
 pub static LeadSuitLocker:Entity = Entity::new(
 crate::lang::Game::LeadSuitLocker,
 "LeadSuitLocker",
-26.000,
+28.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -674,8 +753,10 @@ only_in_rocket: None,
 pub static LeadSuitMarker:Entity = Entity::new(
 crate::lang::Game::LeadSuitMarker,
 "LeadSuitMarker",
-25.000,
+27.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::JetSuitBlocker,
 ],
@@ -703,8 +784,10 @@ only_in_rocket: None,
 pub static MilkingStation:Entity = Entity::new(
 crate::lang::Game::MilkingStation,
 "MilkingStation",
-11.000,
+13.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::RanchStationType,
 ],
@@ -733,8 +816,10 @@ only_in_rocket: None,
 pub static MissileFabricator:Entity = Entity::new(
 crate::lang::Game::MissileFabricator,
 "MissileFabricator",
-14.000,
+16.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -766,6 +851,8 @@ crate::lang::Game::NuclearResearchCenter,
 "NuclearResearchCenter",
 2.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -797,6 +884,8 @@ crate::lang::Game::OrbitalResearchCenter,
 "OrbitalResearchCenter",
 3.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 Tag::RocketInteriorBuilding,
@@ -827,8 +916,10 @@ only_in_rocket: Some(true),
 pub static OxygenMaskLocker:Entity = Entity::new(
 crate::lang::Game::OxygenMaskLocker,
 "OxygenMaskLocker",
-20.000,
+22.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -855,8 +946,10 @@ only_in_rocket: None,
 pub static OxygenMaskMarker:Entity = Entity::new(
 crate::lang::Game::OxygenMaskMarker,
 "OxygenMaskMarker",
-19.000,
+21.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::JetSuitBlocker,
 ],
@@ -884,8 +977,10 @@ only_in_rocket: None,
 pub static PowerControlStation:Entity = Entity::new(
 crate::lang::Game::PowerControlStation,
 "PowerControlStation",
-6.000,
+8.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::PowerStation,
 Tag::IndustrialMachinery,
@@ -914,8 +1009,10 @@ only_in_rocket: None,
 pub static RanchStation:Entity = Entity::new(
 crate::lang::Game::RanchStation,
 "RanchStation",
-9.000,
+11.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::RanchStationType,
 ],
@@ -945,6 +1042,8 @@ crate::lang::Game::ResearchCenter,
 "ResearchCenter",
 0.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -974,8 +1073,10 @@ only_in_rocket: None,
 pub static ResetSkillsStation:Entity = Entity::new(
 crate::lang::Game::ResetSkillsStation,
 "ResetSkillsStation",
-12.000,
+14.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::NotRoomAssignable,
@@ -1006,8 +1107,10 @@ only_in_rocket: None,
 pub static ShearingStation:Entity = Entity::new(
 crate::lang::Game::ShearingStation,
 "ShearingStation",
-10.000,
+12.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::RanchStationType,
 ],
@@ -1037,8 +1140,10 @@ only_in_rocket: None,
 pub static SuitFabricator:Entity = Entity::new(
 crate::lang::Game::SuitFabricator,
 "SuitFabricator",
-18.000,
+20.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -1068,8 +1173,10 @@ only_in_rocket: None,
 pub static SuitLocker:Entity = Entity::new(
 crate::lang::Game::SuitLocker,
 "SuitLocker",
-22.000,
+24.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1098,8 +1205,10 @@ only_in_rocket: None,
 pub static SuitMarker:Entity = Entity::new(
 crate::lang::Game::SuitMarker,
 "SuitMarker",
-21.000,
+23.000,
 Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
 tags: &[
 Tag::JetSuitBlocker,
 ],
@@ -1124,7 +1233,41 @@ rotations: Some(Rotation::FlipH),
 work_time: None,
 only_in_rocket: None,
 }));
+pub static Telescope:Entity = Entity::new(
+crate::lang::Game::Telescope,
+"Telescope",
+6.000,
+Params::BuildingEquipment(BuildingEquipment{
+dlc: &[
+],
+tags: &[
+Tag::ScienceBuilding,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
+location_rule: LocationRule::OnFloor,
+material_category: &[
+MaterialCategory::Tag(Tag::Metal),
+],
+electrity_consummation: Some(&[
+Some(120.000),
+]),
+external_heat: Some(0.125),
+internal_heat: None,
+size: crate::units::Size {width: 4, height: 6},
+hp: 30,
+high_temp_warning: Some(crate::units::Temperature(348.150)),
+high_temp_fatal: Some(crate::units::Temperature(533.150)),
+mass: crate::units::Kg(400.000),
+flood_threshold: crate::units::Percent(0.350),
+deconstructable: true,
+enableable: true,
+decor: None,
+rotations: None,
+work_time: None,
+only_in_rocket: None,
+}));
 pub struct BuildingFood{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -1149,6 +1292,8 @@ crate::lang::Game::AirBorneCritterCondo,
 "AirBorneCritterCondo",
 24.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::RanchStationType,
 ],
@@ -1177,6 +1322,8 @@ crate::lang::Game::CookingStation,
 "CookingStation",
 1.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::CookTop,
 ],
@@ -1207,6 +1354,8 @@ crate::lang::Game::CreatureFeeder,
 "CreatureFeeder",
 14.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1234,6 +1383,8 @@ crate::lang::Game::CritterCondo,
 "CritterCondo",
 22.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::RanchStationType,
 ],
@@ -1263,6 +1414,8 @@ crate::lang::Game::CritterDropOff,
 "CritterDropOff",
 12.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::CreatureRelocator,
 ],
@@ -1291,6 +1444,8 @@ crate::lang::Game::CritterPickUp,
 "CritterPickUp",
 11.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::CreatureRelocator,
 ],
@@ -1319,6 +1474,8 @@ crate::lang::Game::EggCracker,
 "EggCracker",
 18.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1346,6 +1503,8 @@ crate::lang::Game::EggIncubator,
 "EggIncubator",
 17.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1375,6 +1534,8 @@ crate::lang::Game::FarmTile,
 "FarmTile",
 7.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::FarmTiles,
 ],
@@ -1403,6 +1564,8 @@ crate::lang::Game::FishDeliveryPoint,
 "FishDeliveryPoint",
 13.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::CreatureRelocator,
 ],
@@ -1431,6 +1594,8 @@ crate::lang::Game::FishFeeder,
 "FishFeeder",
 15.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1458,6 +1623,8 @@ crate::lang::Game::FoodDehydrator,
 "FoodDehydrator",
 4.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -1487,6 +1654,8 @@ crate::lang::Game::FoodRehydrator,
 "FoodRehydrator",
 5.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1517,6 +1686,8 @@ crate::lang::Game::GourmetCookingStation,
 "GourmetCookingStation",
 2.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::CookTop,
 ],
@@ -1547,6 +1718,8 @@ crate::lang::Game::HydroponicFarm,
 "HydroponicFarm",
 8.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::FarmTiles,
 ],
@@ -1575,6 +1748,8 @@ crate::lang::Game::MicrobeMusher,
 "MicrobeMusher",
 0.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1604,6 +1779,8 @@ crate::lang::Game::MilkFeeder,
 "MilkFeeder",
 16.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::RanchStationType,
 ],
@@ -1632,6 +1809,8 @@ crate::lang::Game::PlanterBox,
 "PlanterBox",
 6.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1659,6 +1838,8 @@ crate::lang::Game::RationBox,
 "RationBox",
 9.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1686,6 +1867,8 @@ crate::lang::Game::Refrigerator,
 "Refrigerator",
 10.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1716,6 +1899,8 @@ crate::lang::Game::SpiceGrinder,
 "SpiceGrinder",
 3.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 Tag::SpiceStation,
 ],
@@ -1744,6 +1929,8 @@ crate::lang::Game::UnderwaterCritterCondo,
 "UnderwaterCritterCondo",
 23.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1771,6 +1958,8 @@ crate::lang::Game::CreatureAirTrap,
 "CreatureAirTrap",
 21.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1800,6 +1989,8 @@ crate::lang::Game::CreatureGroundTrap,
 "CreatureGroundTrap",
 19.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1831,6 +2022,8 @@ crate::lang::Game::WaterTrap,
 "WaterTrap",
 20.000,
 Params::BuildingFood(BuildingFood{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1856,6 +2049,7 @@ Tag::Swimmer,
 ]),
 }));
 pub struct BuildingUtilities{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -1879,6 +2073,8 @@ crate::lang::Game::AirConditioner,
 "AirConditioner",
 4.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(5.000),
@@ -1907,6 +2103,8 @@ crate::lang::Game::IceCooledFan,
 "IceCooledFan",
 2.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1933,6 +2131,8 @@ crate::lang::Game::IceMachine,
 "IceMachine",
 3.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -1961,6 +2161,8 @@ crate::lang::Game::LiquidConditioner,
 "LiquidConditioner",
 5.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -1990,6 +2192,8 @@ crate::lang::Game::LiquidHeater,
 "LiquidHeater",
 1.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2018,6 +2222,8 @@ crate::lang::Game::OilWellCap,
 "OilWellCap",
 7.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2031,7 +2237,7 @@ Some(240.000),
 ]),
 size: crate::units::Size {width: 4, height: 4},
 hp: 100,
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(200.000),
 flood_threshold: None,
@@ -2046,6 +2252,8 @@ crate::lang::Game::OreScrubber,
 "OreScrubber",
 6.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2073,6 +2281,8 @@ crate::lang::Game::SpaceHeater,
 "SpaceHeater",
 0.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2101,6 +2311,8 @@ crate::lang::Game::SweepBotStation,
 "SweepBotStation",
 9.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2129,6 +2341,8 @@ crate::lang::Game::ThermalBlock,
 "ThermalBlock",
 8.000,
 Params::BuildingUtilities(BuildingUtilities{
+dlc: &[
+],
 tags: &[
 Tag::Backwall,
 ],
@@ -2152,6 +2366,7 @@ internal_heat: None,
 decor: None,
 }));
 pub struct BuildingOxygen{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -2175,6 +2390,8 @@ crate::lang::Game::AirFilter,
 "AirFilter",
 3.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2203,6 +2420,8 @@ crate::lang::Game::AlgaeHabitat,
 "AlgaeHabitat",
 2.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2229,6 +2448,8 @@ crate::lang::Game::CO2Scrubber,
 "CO2Scrubber",
 4.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2258,6 +2479,8 @@ crate::lang::Game::Electrolyzer,
 "Electrolyzer",
 5.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2287,6 +2510,8 @@ crate::lang::Game::MineralDeoxidizer,
 "MineralDeoxidizer",
 0.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2315,6 +2540,8 @@ crate::lang::Game::RustDeoxidizer,
 "RustDeoxidizer",
 6.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2344,6 +2571,8 @@ crate::lang::Game::SublimationStation,
 "SublimationStation",
 1.000,
 Params::BuildingOxygen(BuildingOxygen{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2368,6 +2597,7 @@ decor: Some(crate::units::Decor {value: -10, radius: 2}),
 rotations: None,
 }));
 pub struct BuildingRefining{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -2391,6 +2621,8 @@ crate::lang::Game::AlgaeDistillery,
 "AlgaeDistillery",
 4.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2420,6 +2652,8 @@ crate::lang::Game::Chlorinator,
 "Chlorinator",
 14.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2449,6 +2683,8 @@ crate::lang::Game::Compost,
 "Compost",
 0.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2475,6 +2711,8 @@ crate::lang::Game::DiamondPress,
 "DiamondPress",
 16.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2504,6 +2742,8 @@ crate::lang::Game::EthanolDistillery,
 "EthanolDistillery",
 5.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2533,6 +2773,8 @@ crate::lang::Game::FertilizerMaker,
 "FertilizerMaker",
 3.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2562,6 +2804,8 @@ crate::lang::Game::GlassForge,
 "GlassForge",
 10.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2590,6 +2834,8 @@ crate::lang::Game::Kiln,
 "Kiln",
 7.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2617,6 +2863,8 @@ crate::lang::Game::MetalRefinery,
 "MetalRefinery",
 9.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2646,6 +2894,8 @@ crate::lang::Game::MilkFatSeparator,
 "MilkFatSeparator",
 17.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2675,6 +2925,8 @@ crate::lang::Game::MilkPress,
 "MilkPress",
 18.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2701,6 +2953,8 @@ crate::lang::Game::OilRefinery,
 "OilRefinery",
 11.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2730,6 +2984,8 @@ crate::lang::Game::OxyliteRefinery,
 "OxyliteRefinery",
 13.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2760,6 +3016,8 @@ crate::lang::Game::Polymerizer,
 "Polymerizer",
 12.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2789,6 +3047,8 @@ crate::lang::Game::RockCrusher,
 "RockCrusher",
 6.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2818,6 +3078,8 @@ crate::lang::Game::SludgePress,
 "SludgePress",
 8.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2847,6 +3109,8 @@ crate::lang::Game::SupermaterialRefinery,
 "SupermaterialRefinery",
 15.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -2875,6 +3139,8 @@ crate::lang::Game::WaterPurifier,
 "WaterPurifier",
 1.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayBackLayer,
@@ -2905,6 +3171,8 @@ crate::lang::Game::Desalinator,
 "Desalinator",
 2.000,
 Params::BuildingRefining(BuildingRefining{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -2930,6 +3198,7 @@ high_temp_warning: Some(crate::units::Temperature(348.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 }));
 pub struct BuildingFurniture{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -2954,6 +3223,8 @@ crate::lang::Game::ArcadeMachine,
 "ArcadeMachine",
 9.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -2984,6 +3255,8 @@ crate::lang::Game::BeachChair,
 "BeachChair",
 16.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3013,6 +3286,8 @@ crate::lang::Game::Bed,
 "Bed",
 0.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::BedType,
 ],
@@ -3041,6 +3316,8 @@ crate::lang::Game::Canvas,
 "Canvas",
 31.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3070,6 +3347,8 @@ crate::lang::Game::CanvasTall,
 "CanvasTall",
 33.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3099,6 +3378,8 @@ crate::lang::Game::CanvasWide,
 "CanvasWide",
 32.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3128,6 +3409,8 @@ crate::lang::Game::CeilingLight,
 "CeilingLight",
 4.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::LightSource,
 ],
@@ -3158,6 +3441,8 @@ crate::lang::Game::CornerMoulding,
 "CornerMoulding",
 30.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3186,6 +3471,8 @@ crate::lang::Game::CrownMoulding,
 "CrownMoulding",
 29.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3214,6 +3501,8 @@ crate::lang::Game::DiningTable,
 "DiningTable",
 6.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::MessTable,
 ],
@@ -3242,6 +3531,8 @@ crate::lang::Game::EspressoMachine,
 "EspressoMachine",
 10.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3272,6 +3563,8 @@ crate::lang::Game::FloorLamp,
 "FloorLamp",
 3.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::LightSource,
 ],
@@ -3302,6 +3595,8 @@ crate::lang::Game::FlowerVase,
 "FlowerVase",
 20.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3330,6 +3625,8 @@ crate::lang::Game::FlowerVaseHanging,
 "FlowerVaseHanging",
 22.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3358,6 +3655,8 @@ crate::lang::Game::FlowerVaseHangingFancy,
 "FlowerVaseHangingFancy",
 23.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3386,6 +3685,8 @@ crate::lang::Game::FlowerVaseWall,
 "FlowerVaseWall",
 21.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3414,6 +3715,8 @@ crate::lang::Game::HotTub,
 "HotTub",
 11.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3445,6 +3748,8 @@ crate::lang::Game::IceSculpture,
 "IceSculpture",
 26.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3473,6 +3778,8 @@ crate::lang::Game::ItemPedestal,
 "ItemPedestal",
 34.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3501,6 +3808,8 @@ crate::lang::Game::Juicer,
 "Juicer",
 14.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3531,6 +3840,8 @@ crate::lang::Game::LadderBed,
 "LadderBed",
 2.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::BedType,
 ],
@@ -3559,6 +3870,8 @@ crate::lang::Game::LuxuryBed,
 "LuxuryBed",
 1.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::BedType,
 Tag::LuxuryBedType,
@@ -3588,6 +3901,8 @@ crate::lang::Game::MarbleSculpture,
 "MarbleSculpture",
 27.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3616,6 +3931,8 @@ crate::lang::Game::MechanicalSurfboard,
 "MechanicalSurfboard",
 12.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3646,6 +3963,8 @@ crate::lang::Game::MetalSculpture,
 "MetalSculpture",
 28.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3674,6 +3993,8 @@ crate::lang::Game::MonumentBottom,
 "MonumentBottom",
 35.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -3686,7 +4007,7 @@ electrity_consummation: None,
 internal_heat: None,
 size: crate::units::Size {width: 5, height: 5},
 hp: None,
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(10000.000),
 flood_threshold: None,
@@ -3702,6 +4023,8 @@ crate::lang::Game::MonumentMiddle,
 "MonumentMiddle",
 36.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -3715,7 +4038,7 @@ electrity_consummation: None,
 internal_heat: None,
 size: crate::units::Size {width: 5, height: 5},
 hp: None,
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(10000.000),
 flood_threshold: None,
@@ -3731,6 +4054,8 @@ crate::lang::Game::MonumentTop,
 "MonumentTop",
 37.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -3744,7 +4069,7 @@ electrity_consummation: None,
 internal_heat: None,
 size: crate::units::Size {width: 5, height: 5},
 hp: None,
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(10000.000),
 flood_threshold: None,
@@ -3760,6 +4085,8 @@ crate::lang::Game::ParkSign,
 "ParkSign",
 38.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Park,
 ],
@@ -3788,6 +4115,8 @@ crate::lang::Game::Phonobox,
 "Phonobox",
 8.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3818,6 +4147,8 @@ crate::lang::Game::PixelPack,
 "PixelPack",
 18.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Backwall,
 Tag::OverlayBackLayer,
@@ -3850,6 +4181,8 @@ crate::lang::Game::Sauna,
 "Sauna",
 13.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3881,6 +4214,8 @@ crate::lang::Game::Sculpture,
 "Sculpture",
 25.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3909,6 +4244,8 @@ crate::lang::Game::SmallSculpture,
 "SmallSculpture",
 24.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::Decoration,
 ],
@@ -3937,6 +4274,8 @@ crate::lang::Game::SodaFountain,
 "SodaFountain",
 15.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -3967,6 +4306,8 @@ crate::lang::Game::SunLamp,
 "SunLamp",
 5.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::LightSource,
 ],
@@ -3998,6 +4339,8 @@ crate::lang::Game::Telephone,
 "Telephone",
 19.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -4028,6 +4371,8 @@ crate::lang::Game::VerticalWindTunnel,
 "VerticalWindTunnel",
 17.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -4058,6 +4403,8 @@ crate::lang::Game::WaterCooler,
 "WaterCooler",
 7.000,
 Params::BuildingFurniture(BuildingFurniture{
+dlc: &[
+],
 tags: &[
 Tag::RecBuilding,
 ],
@@ -4082,6 +4429,7 @@ external_heat: None,
 invincible: None,
 }));
 pub struct BuildingRocketModule{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -4103,6 +4451,8 @@ crate::lang::Game::ArtifactCargoBay,
 "ArtifactCargoBay",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4114,7 +4464,7 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 1},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4129,6 +4479,8 @@ crate::lang::Game::BatteryModule,
 "BatteryModule",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4140,7 +4492,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 2},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(400.000),
 deconstructable: true,
@@ -4155,6 +4507,8 @@ crate::lang::Game::CO2Engine,
 "CO2Engine",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4166,9 +4520,37 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 2},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(500.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static CommandModule:Entity = Entity::new(
+crate::lang::Game::CommandModule,
+"CommandModule",
+15.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(200.000),
 deconstructable: true,
 enableable: true,
 generator_wattage_rating: None,
@@ -4181,6 +4563,8 @@ crate::lang::Game::GasCargoBayCluster,
 "GasCargoBayCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4192,7 +4576,35 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(1000.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static GasCargoBay:Entity = Entity::new(
+crate::lang::Game::GasCargoBay,
+"GasCargoBay",
+13.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(1000.000),
 deconstructable: true,
@@ -4207,6 +4619,8 @@ crate::lang::Game::GasCargoBaySmall,
 "GasCargoBaySmall",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4218,7 +4632,7 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4233,6 +4647,8 @@ crate::lang::Game::HEPEngine,
 "HEPEngine",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4244,7 +4660,7 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(500.000),
 deconstructable: true,
@@ -4259,6 +4675,8 @@ crate::lang::Game::HabitatModuleMedium,
 "HabitatModuleMedium",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::LaunchButtonRocketModule,
@@ -4271,7 +4689,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 5, height: 4},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(500.000),
 deconstructable: true,
@@ -4286,6 +4704,8 @@ crate::lang::Game::HabitatModuleSmall,
 "HabitatModuleSmall",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::NoseRocketModule,
@@ -4299,7 +4719,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4314,6 +4734,8 @@ crate::lang::Game::HydrogenEngineCluster,
 "HydrogenEngineCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4325,7 +4747,7 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 7, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(500.000),
 deconstructable: true,
@@ -4335,11 +4757,41 @@ work_time: None,
 num_capsules: None,
 range_max: None,
 }));
+pub static HydrogenEngine:Entity = Entity::new(
+crate::lang::Game::HydrogenEngine,
+"HydrogenEngine",
+19.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::OnFloor,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 7, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(500.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
 pub static KeroseneEngineCluster:Entity = Entity::new(
 crate::lang::Game::KeroseneEngineCluster,
 "KeroseneEngineCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4351,7 +4803,7 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 7, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4366,6 +4818,8 @@ crate::lang::Game::KeroseneEngineClusterSmall,
 "KeroseneEngineClusterSmall",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4377,7 +4831,7 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 4},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4387,11 +4841,41 @@ work_time: None,
 num_capsules: None,
 range_max: None,
 }));
+pub static KeroseneEngine:Entity = Entity::new(
+crate::lang::Game::KeroseneEngine,
+"KeroseneEngine",
+7.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::OnFloor,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 7, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(200.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
 pub static LiquidCargoBayCluster:Entity = Entity::new(
 crate::lang::Game::LiquidCargoBayCluster,
 "LiquidCargoBayCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4403,7 +4887,35 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(1000.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static LiquidCargoBay:Entity = Entity::new(
+crate::lang::Game::LiquidCargoBay,
+"LiquidCargoBay",
+14.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(1000.000),
 deconstructable: true,
@@ -4418,6 +4930,8 @@ crate::lang::Game::LiquidCargoBaySmall,
 "LiquidCargoBaySmall",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4429,7 +4943,7 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4444,6 +4958,8 @@ crate::lang::Game::LiquidFuelTankCluster,
 "LiquidFuelTankCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4455,7 +4971,35 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(100.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static LiquidFuelTank:Entity = Entity::new(
+crate::lang::Game::LiquidFuelTank,
+"LiquidFuelTank",
+9.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(100.000),
 deconstructable: true,
@@ -4470,6 +5014,8 @@ crate::lang::Game::NoseconeBasic,
 "NoseconeBasic",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::NoseRocketModule,
@@ -4483,7 +5029,7 @@ MaterialCategory::Tag(Tag::Insulator),
 ],
 size: crate::units::Size {width: 5, height: 2},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(600.000),
 deconstructable: true,
@@ -4498,6 +5044,8 @@ crate::lang::Game::NoseconeHarvest,
 "NoseconeHarvest",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::NoseRocketModule,
@@ -4511,7 +5059,7 @@ MaterialCategory::Tag(Tag::Plastic),
 ],
 size: crate::units::Size {width: 5, height: 4},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(600.000),
 deconstructable: true,
@@ -4526,6 +5074,8 @@ crate::lang::Game::OrbitalCargoModule,
 "OrbitalCargoModule",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4537,7 +5087,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 2},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(400.000),
 deconstructable: true,
@@ -4552,6 +5102,8 @@ crate::lang::Game::OxidizerTankCluster,
 "OxidizerTankCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4563,7 +5115,35 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(100.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static OxidizerTank:Entity = Entity::new(
+crate::lang::Game::OxidizerTank,
+"OxidizerTank",
+10.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(100.000),
 deconstructable: true,
@@ -4578,6 +5158,8 @@ crate::lang::Game::OxidizerTankLiquidCluster,
 "OxidizerTankLiquidCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4589,7 +5171,35 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 2},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(100.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static OxidizerTankLiquid:Entity = Entity::new(
+crate::lang::Game::OxidizerTankLiquid,
+"OxidizerTankLiquid",
+11.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(100.000),
 deconstructable: true,
@@ -4604,6 +5214,8 @@ crate::lang::Game::PioneerModule,
 "PioneerModule",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4615,7 +5227,35 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(200.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static ResearchModule:Entity = Entity::new(
+crate::lang::Game::ResearchModule,
+"ResearchModule",
+17.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4630,6 +5270,8 @@ crate::lang::Game::ScannerModule,
 "ScannerModule",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4642,7 +5284,7 @@ MaterialCategory::Solid(&Polypropylene),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(1350.000),
 deconstructable: true,
@@ -4657,6 +5299,8 @@ crate::lang::Game::ScoutModule,
 "ScoutModule",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4668,7 +5312,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4683,6 +5327,8 @@ crate::lang::Game::SmallOxidizerTank,
 "SmallOxidizerTank",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4694,7 +5340,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 2},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4709,6 +5355,8 @@ crate::lang::Game::SolarPanelModule,
 "SolarPanelModule",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4720,7 +5368,7 @@ MaterialCategory::Solid(&Glass),
 ],
 size: crate::units::Size {width: 3, height: 1},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4730,11 +5378,41 @@ work_time: None,
 num_capsules: None,
 range_max: None,
 }));
+pub static SolidBooster:Entity = Entity::new(
+crate::lang::Game::SolidBooster,
+"SolidBooster",
+8.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 7, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(200.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
 pub static CargoBayCluster:Entity = Entity::new(
 crate::lang::Game::CargoBayCluster,
 "CargoBayCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4746,9 +5424,38 @@ MaterialCategory::Solid(&Steel),
 ],
 size: crate::units::Size {width: 5, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(1000.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static CargoBay:Entity = Entity::new(
+crate::lang::Game::CargoBay,
+"CargoBay",
+12.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Tag(Tag::BuildableRaw),
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(2000.000),
 deconstructable: true,
 enableable: true,
 generator_wattage_rating: None,
@@ -4761,6 +5468,8 @@ crate::lang::Game::SolidCargoBaySmall,
 "SolidCargoBaySmall",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4772,7 +5481,7 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4787,6 +5496,8 @@ crate::lang::Game::SpecialCargoBayCluster,
 "SpecialCargoBayCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4798,9 +5509,37 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 3, height: 1},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
+pub static SpecialCargoBay:Entity = Entity::new(
+crate::lang::Game::SpecialCargoBay,
+"SpecialCargoBay",
+18.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(1000.000),
 deconstructable: true,
 enableable: true,
 generator_wattage_rating: None,
@@ -4813,6 +5552,8 @@ crate::lang::Game::SteamEngineCluster,
 "SteamEngineCluster",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4824,7 +5565,7 @@ MaterialCategory::Tag(Tag::RefinedMetal),
 ],
 size: crate::units::Size {width: 7, height: 5},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(200.000),
 deconstructable: true,
@@ -4834,11 +5575,41 @@ work_time: None,
 num_capsules: None,
 range_max: None,
 }));
+pub static SteamEngine:Entity = Entity::new(
+crate::lang::Game::SteamEngine,
+"SteamEngine",
+6.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::OnFloor,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 7, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(2000.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
 pub static SugarEngine:Entity = Entity::new(
 crate::lang::Game::SugarEngine,
 "SugarEngine",
 177013.000,
 Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::RocketModule,
@@ -4850,7 +5621,7 @@ MaterialCategory::Tag(Tag::Metal),
 ],
 size: crate::units::Size {width: 3, height: 3},
 invincible: true,
-high_temp_warning: crate::units::Temperature(2_273.15),
+high_temp_warning: crate::units::Temperature(2273.150),
 high_temp_fatal: crate::units::Temperature(533.150),
 mass: crate::units::Kg(500.000),
 deconstructable: true,
@@ -4860,7 +5631,36 @@ work_time: None,
 num_capsules: None,
 range_max: None,
 }));
+pub static TouristModule:Entity = Entity::new(
+crate::lang::Game::TouristModule,
+"TouristModule",
+16.000,
+Params::BuildingRocketModule(BuildingRocketModule{
+dlc: &[
+],
+tags: &[
+Tag::IndustrialMachinery,
+Tag::RocketModule,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.100),
+location_rule: LocationRule::BuildingAttachPoint,
+material_category: &[
+MaterialCategory::Solid(&Steel),
+],
+size: crate::units::Size {width: 5, height: 5},
+invincible: true,
+high_temp_warning: crate::units::Temperature(2273.150),
+high_temp_fatal: crate::units::Temperature(533.150),
+mass: crate::units::Kg(200.000),
+deconstructable: true,
+enableable: true,
+generator_wattage_rating: None,
+work_time: None,
+num_capsules: None,
+range_max: None,
+}));
 pub struct BuildingConveyance{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -4886,6 +5686,8 @@ crate::lang::Game::AutoMiner,
 "AutoMiner",
 12.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -4917,6 +5719,8 @@ crate::lang::Game::ModularLaunchpadPortSolid,
 "ModularLaunchpadPortSolid",
 13.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::ModularLaunchpadPort,
@@ -4935,7 +5739,7 @@ Some(240.000),
 internal_heat: Some(1.000),
 size: crate::units::Size {width: 2, height: 2},
 hp: 1000,
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(400.000),
 decor: None,
@@ -4954,6 +5758,8 @@ crate::lang::Game::ModularLaunchpadPortSolidUnloader,
 "ModularLaunchpadPortSolidUnloader",
 14.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::ModularLaunchpadPort,
@@ -4972,7 +5778,7 @@ Some(240.000),
 internal_heat: Some(1.000),
 size: crate::units::Size {width: 2, height: 3},
 hp: 1000,
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(400.000),
 decor: None,
@@ -4991,6 +5797,8 @@ crate::lang::Game::SolidConduitBridge,
 "SolidConduitBridge",
 2.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5019,6 +5827,8 @@ crate::lang::Game::SolidConduit,
 "SolidConduit",
 1.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5047,6 +5857,8 @@ crate::lang::Game::SolidConduitInbox,
 "SolidConduitInbox",
 3.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5077,6 +5889,8 @@ crate::lang::Game::SolidConduitOutbox,
 "SolidConduitOutbox",
 4.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5105,6 +5919,8 @@ crate::lang::Game::SolidConduitDiseaseSensor,
 "SolidConduitDiseaseSensor",
 9.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5134,6 +5950,8 @@ crate::lang::Game::SolidConduitElementSensor,
 "SolidConduitElementSensor",
 10.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5162,6 +5980,8 @@ crate::lang::Game::SolidConduitTemperatureSensor,
 "SolidConduitTemperatureSensor",
 11.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5190,6 +6010,8 @@ crate::lang::Game::SolidFilter,
 "SolidFilter",
 5.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5221,6 +6043,8 @@ crate::lang::Game::SolidLimitValve,
 "SolidLimitValve",
 8.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5252,6 +6076,8 @@ crate::lang::Game::SolidLogicValve,
 "SolidLogicValve",
 7.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5282,6 +6108,8 @@ crate::lang::Game::SolidTransferArm,
 "SolidTransferArm",
 0.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5312,6 +6140,8 @@ crate::lang::Game::SolidVent,
 "SolidVent",
 6.000,
 Params::BuildingConveyance(BuildingConveyance{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5336,6 +6166,7 @@ links: None,
 mode: None,
 }));
 pub struct BuildingPower{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -5359,6 +6190,8 @@ crate::lang::Game::Battery,
 "Battery",
 16.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5385,6 +6218,8 @@ crate::lang::Game::BatteryMedium,
 "BatteryMedium",
 17.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5411,6 +6246,8 @@ crate::lang::Game::BatterySmart,
 "BatterySmart",
 18.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5437,6 +6274,8 @@ crate::lang::Game::Generator,
 "Generator",
 1.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5464,6 +6303,8 @@ crate::lang::Game::HydrogenGenerator,
 "HydrogenGenerator",
 3.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5491,6 +6332,8 @@ crate::lang::Game::LogicPowerRelay,
 "LogicPowerRelay",
 22.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -5518,6 +6361,8 @@ crate::lang::Game::ManualGenerator,
 "ManualGenerator",
 0.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5545,6 +6390,8 @@ crate::lang::Game::MethaneGenerator,
 "MethaneGenerator",
 4.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5572,6 +6419,8 @@ crate::lang::Game::PetroleumGenerator,
 "PetroleumGenerator",
 5.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5599,6 +6448,8 @@ crate::lang::Game::PowerTransformer,
 "PowerTransformer",
 20.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5626,6 +6477,8 @@ crate::lang::Game::PowerTransformerSmall,
 "PowerTransformerSmall",
 19.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5653,6 +6506,8 @@ crate::lang::Game::SolarPanel,
 "SolarPanel",
 7.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5680,6 +6535,8 @@ crate::lang::Game::SteamTurbine2,
 "SteamTurbine2",
 6.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5693,7 +6550,7 @@ external_heat: None,
 internal_heat: Some(4.000),
 size: crate::units::Size {width: 5, height: 3},
 hp: 30,
-high_temp_warning: Some(crate::units::Temperature(1_273.15)),
+high_temp_warning: Some(crate::units::Temperature(1273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(1000.000),
 flood_threshold: Some(crate::units::Percent(0.350)),
@@ -5708,6 +6565,8 @@ crate::lang::Game::Switch,
 "Switch",
 21.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5734,6 +6593,8 @@ crate::lang::Game::WireBridge,
 "WireBridge",
 9.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5760,6 +6621,8 @@ crate::lang::Game::WireBridgeHighWattage,
 "WireBridgeHighWattage",
 11.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::WireBridges,
 ],
@@ -5787,6 +6650,8 @@ crate::lang::Game::Wire,
 "Wire",
 8.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.050),
@@ -5813,6 +6678,8 @@ crate::lang::Game::HighWattageWire,
 "HighWattageWire",
 10.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.050),
@@ -5839,6 +6706,8 @@ crate::lang::Game::WireRefinedBridge,
 "WireRefinedBridge",
 13.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -5865,6 +6734,8 @@ crate::lang::Game::WireRefinedBridgeHighWattage,
 "WireRefinedBridgeHighWattage",
 15.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::WireBridges,
 ],
@@ -5892,6 +6763,8 @@ crate::lang::Game::WireRefined,
 "WireRefined",
 12.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.050),
@@ -5918,6 +6791,8 @@ crate::lang::Game::WireRefinedHighWattage,
 "WireRefinedHighWattage",
 14.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(0.050),
@@ -5944,6 +6819,8 @@ crate::lang::Game::WoodGasGenerator,
 "WoodGasGenerator",
 2.000,
 Params::BuildingPower(BuildingPower{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -5967,6 +6844,7 @@ generator_wattage_rating: Some(300.000),
 rotations: None,
 }));
 pub struct BuildingPlumbing{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -5993,6 +6871,8 @@ crate::lang::Game::BottleEmptier,
 "BottleEmptier",
 5.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -6022,6 +6902,8 @@ crate::lang::Game::LiquidConduitDiseaseSensor,
 "LiquidConduitDiseaseSensor",
 18.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6053,6 +6935,8 @@ crate::lang::Game::LiquidConduitElementSensor,
 "LiquidConduitElementSensor",
 17.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6083,6 +6967,8 @@ crate::lang::Game::LiquidConduitTemperatureSensor,
 "LiquidConduitTemperatureSensor",
 19.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6113,6 +6999,8 @@ crate::lang::Game::ContactConductivePipeBridge,
 "ContactConductivePipeBridge",
 22.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(2.000),
@@ -6142,6 +7030,8 @@ crate::lang::Game::FlushToilet,
 "FlushToilet",
 1.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::ToiletType,
 Tag::FlushToiletType,
@@ -6173,6 +7063,8 @@ crate::lang::Game::InsulatedLiquidConduit,
 "InsulatedLiquidConduit",
 7.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::Pipes,
 ],
@@ -6203,6 +7095,8 @@ crate::lang::Game::LiquidConduitBridge,
 "LiquidConduitBridge",
 9.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -6232,6 +7126,8 @@ crate::lang::Game::LiquidConduit,
 "LiquidConduit",
 6.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::Pipes,
 ],
@@ -6262,6 +7158,8 @@ crate::lang::Game::LiquidConduitRadiant,
 "LiquidConduitRadiant",
 8.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::Pipes,
 ],
@@ -6292,6 +7190,8 @@ crate::lang::Game::LiquidFilter,
 "LiquidFilter",
 13.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayFrontLayer,
@@ -6325,6 +7225,8 @@ crate::lang::Game::LiquidLimitValve,
 "LiquidLimitValve",
 16.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6358,6 +7260,8 @@ crate::lang::Game::LiquidLogicValve,
 "LiquidLogicValve",
 15.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6390,6 +7294,8 @@ crate::lang::Game::LiquidMiniPump,
 "LiquidMiniPump",
 11.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::CorrosionProof,
@@ -6424,6 +7330,8 @@ crate::lang::Game::LiquidPump,
 "LiquidPump",
 10.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::CorrosionProof,
@@ -6458,6 +7366,8 @@ crate::lang::Game::LiquidPumpingStation,
 "LiquidPumpingStation",
 4.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::CorrosionProof,
 ],
@@ -6488,6 +7398,8 @@ crate::lang::Game::LiquidValve,
 "LiquidValve",
 14.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6518,6 +7430,8 @@ crate::lang::Game::LiquidVent,
 "LiquidVent",
 12.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6548,6 +7462,8 @@ crate::lang::Game::ModularLaunchpadPortLiquid,
 "ModularLaunchpadPortLiquid",
 20.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::ModularLaunchpadPort,
@@ -6572,7 +7488,7 @@ electrity_consummation: Some(&[
 Some(240.000),
 ]),
 internal_heat: Some(1.000),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 not_in_rocket: Some(true),
 links: Some(&[
@@ -6586,6 +7502,8 @@ crate::lang::Game::ModularLaunchpadPortLiquidUnloader,
 "ModularLaunchpadPortLiquidUnloader",
 21.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::ModularLaunchpadPort,
@@ -6610,7 +7528,7 @@ electrity_consummation: Some(&[
 Some(240.000),
 ]),
 internal_heat: Some(1.000),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 not_in_rocket: Some(true),
 links: Some(&[
@@ -6624,6 +7542,8 @@ crate::lang::Game::Outhouse,
 "Outhouse",
 0.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::ToiletType,
 ],
@@ -6654,6 +7574,8 @@ crate::lang::Game::Shower,
 "Shower",
 3.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::WashStation,
 Tag::AdvancedWashStation,
@@ -6685,6 +7607,8 @@ crate::lang::Game::WallToilet,
 "WallToilet",
 2.000,
 Params::BuildingPlumbing(BuildingPlumbing{
+dlc: &[
+],
 tags: &[
 Tag::ToiletType,
 Tag::FlushToiletType,
@@ -6712,6 +7636,7 @@ links: None,
 mode: None,
 }));
 pub struct BuildingHvac{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -6738,6 +7663,8 @@ crate::lang::Game::BottleEmptierGas,
 "BottleEmptierGas",
 13.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -6767,6 +7694,8 @@ crate::lang::Game::GasConduitDiseaseSensor,
 "GasConduitDiseaseSensor",
 17.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6798,6 +7727,8 @@ crate::lang::Game::GasConduitElementSensor,
 "GasConduitElementSensor",
 16.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6828,6 +7759,8 @@ crate::lang::Game::GasConduitTemperatureSensor,
 "GasConduitTemperatureSensor",
 18.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -6858,6 +7791,8 @@ crate::lang::Game::GasBottler,
 "GasBottler",
 12.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -6888,6 +7823,8 @@ crate::lang::Game::GasConduitBridge,
 "GasConduitBridge",
 3.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -6917,6 +7854,8 @@ crate::lang::Game::GasConduit,
 "GasConduit",
 0.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::Vents,
 ],
@@ -6947,6 +7886,8 @@ crate::lang::Game::GasConduitRadiant,
 "GasConduitRadiant",
 2.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::Vents,
 ],
@@ -6977,6 +7918,8 @@ crate::lang::Game::GasFilter,
 "GasFilter",
 8.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayFrontLayer,
@@ -7010,6 +7953,8 @@ crate::lang::Game::GasLimitValve,
 "GasLimitValve",
 11.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -7043,6 +7988,8 @@ crate::lang::Game::GasLogicValve,
 "GasLogicValve",
 10.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -7075,6 +8022,8 @@ crate::lang::Game::GasMiniPump,
 "GasMiniPump",
 5.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayBackLayer,
@@ -7108,6 +8057,8 @@ crate::lang::Game::GasPump,
 "GasPump",
 4.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayBackLayer,
@@ -7141,6 +8092,8 @@ crate::lang::Game::GasValve,
 "GasValve",
 9.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -7171,6 +8124,8 @@ crate::lang::Game::GasVent,
 "GasVent",
 6.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -7201,6 +8156,8 @@ crate::lang::Game::GasVentHighPressure,
 "GasVentHighPressure",
 7.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayFrontLayer,
@@ -7233,6 +8190,8 @@ crate::lang::Game::InsulatedGasConduit,
 "InsulatedGasConduit",
 1.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::Vents,
 ],
@@ -7263,6 +8222,8 @@ crate::lang::Game::ModularLaunchpadPortGas,
 "ModularLaunchpadPortGas",
 14.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::ModularLaunchpadPort,
@@ -7281,7 +8242,7 @@ mass: crate::units::Kg(400.000),
 decor: None,
 deconstructable: true,
 enableable: Some(true),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 electrity_consummation: Some(&[
 Some(240.000),
@@ -7301,6 +8262,8 @@ crate::lang::Game::ModularLaunchpadPortGasUnloader,
 "ModularLaunchpadPortGasUnloader",
 15.000,
 Params::BuildingHvac(BuildingHvac{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::ModularLaunchpadPort,
@@ -7319,7 +8282,7 @@ mass: crate::units::Kg(400.000),
 decor: None,
 deconstructable: true,
 enableable: Some(true),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 electrity_consummation: Some(&[
 Some(240.000),
@@ -7335,6 +8298,7 @@ Link::ModularLaunchpadPort,
 mode: Some(Mode::Unload),
 }));
 pub struct BuildingBase{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -7358,6 +8322,8 @@ crate::lang::Game::BunkerDoor,
 "BunkerDoor",
 18.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::Bunker,
 ],
@@ -7372,7 +8338,7 @@ Some(120.000),
 ]),
 size: crate::units::Size {width: 4, height: 1},
 hp: 1000,
-high_temp_warning: Some(crate::units::Temperature(1_273.15)),
+high_temp_warning: Some(crate::units::Temperature(1273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(500.000),
 flood_threshold: Some(crate::units::Percent(0.350)),
@@ -7387,6 +8353,8 @@ crate::lang::Game::BunkerTile,
 "BunkerTile",
 11.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::Bunker,
 Tag::FloorTiles,
@@ -7415,6 +8383,8 @@ crate::lang::Game::CarpetTile,
 "CarpetTile",
 12.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 Tag::Carpeted,
@@ -7444,6 +8414,8 @@ crate::lang::Game::Door,
 "Door",
 15.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7470,6 +8442,8 @@ crate::lang::Game::ExobaseHeadquarters,
 "ExobaseHeadquarters",
 14.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::Telepad,
 Tag::LightSource,
@@ -7499,6 +8473,8 @@ crate::lang::Game::ExteriorWall,
 "ExteriorWall",
 13.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::Backwall,
 ],
@@ -7526,6 +8502,8 @@ crate::lang::Game::FirePole,
 "FirePole",
 1.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7552,6 +8530,8 @@ crate::lang::Game::GasPermeableMembrane,
 "GasPermeableMembrane",
 4.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -7579,6 +8559,8 @@ crate::lang::Game::GasReservoir,
 "GasReservoir",
 22.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -7606,6 +8588,8 @@ crate::lang::Game::GlassTile,
 "GlassTile",
 9.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::Window,
 Tag::FloorTiles,
@@ -7634,6 +8618,8 @@ crate::lang::Game::InsulationTile,
 "InsulationTile",
 6.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -7661,6 +8647,8 @@ crate::lang::Game::Ladder,
 "Ladder",
 0.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7687,6 +8675,8 @@ crate::lang::Game::LadderFast,
 "LadderFast",
 2.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7713,6 +8703,8 @@ crate::lang::Game::LiquidReservoir,
 "LiquidReservoir",
 21.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -7740,6 +8732,8 @@ crate::lang::Game::ManualPressureDoor,
 "ManualPressureDoor",
 16.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7766,6 +8760,8 @@ crate::lang::Game::MeshTile,
 "MeshTile",
 5.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -7793,6 +8789,8 @@ crate::lang::Game::MetalTile,
 "MetalTile",
 8.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -7820,6 +8818,8 @@ crate::lang::Game::ObjectDispenser,
 "ObjectDispenser",
 23.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7848,6 +8848,8 @@ crate::lang::Game::PlasticTile,
 "PlasticTile",
 7.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -7875,6 +8877,8 @@ crate::lang::Game::PressureDoor,
 "PressureDoor",
 17.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7903,6 +8907,8 @@ crate::lang::Game::StorageLocker,
 "StorageLocker",
 19.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7929,6 +8935,8 @@ crate::lang::Game::StorageLockerSmart,
 "StorageLockerSmart",
 20.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -7957,6 +8965,8 @@ crate::lang::Game::StorageTile,
 "StorageTile",
 10.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -7985,6 +8995,8 @@ crate::lang::Game::Tile,
 "Tile",
 3.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::FloorTiles,
 ],
@@ -8012,6 +9024,8 @@ crate::lang::Game::TravelTube,
 "TravelTube",
 24.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8038,6 +9052,8 @@ crate::lang::Game::TravelTubeEntrance,
 "TravelTubeEntrance",
 25.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8066,6 +9082,8 @@ crate::lang::Game::TravelTubeWallBridge,
 "TravelTubeWallBridge",
 26.000,
 Params::BuildingBase(BuildingBase{
+dlc: &[
+],
 tags: &[
 Tag::TravelTubeBridges,
 ],
@@ -8089,6 +9107,7 @@ transparent: None,
 external_heat: None,
 }));
 pub struct BuildingAutomation{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -8111,6 +9130,8 @@ crate::lang::Game::Checkpoint,
 "Checkpoint",
 27.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8138,6 +9159,8 @@ crate::lang::Game::CometDetector,
 "CometDetector",
 28.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::OverlayBackLayer,
@@ -8167,6 +9190,8 @@ crate::lang::Game::FloorSwitch,
 "FloorSwitch",
 26.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8193,6 +9218,8 @@ crate::lang::Game::LogicAlarm,
 "LogicAlarm",
 20.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8219,6 +9246,8 @@ crate::lang::Game::LogicCounter,
 "LogicCounter",
 19.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8245,6 +9274,8 @@ crate::lang::Game::LogicCritterCountSensor,
 "LogicCritterCountSensor",
 16.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8271,6 +9302,8 @@ crate::lang::Game::LogicDiseaseSensor,
 "LogicDiseaseSensor",
 13.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8298,6 +9331,8 @@ crate::lang::Game::LogicDuplicantSensor,
 "LogicDuplicantSensor",
 5.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8324,6 +9359,8 @@ crate::lang::Game::LogicElementSensorGas,
 "LogicElementSensorGas",
 14.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8349,6 +9386,8 @@ crate::lang::Game::LogicElementSensorLiquid,
 "LogicElementSensorLiquid",
 15.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8375,6 +9414,8 @@ crate::lang::Game::LogicGateAND,
 "LogicGateAND",
 30.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8401,6 +9442,8 @@ crate::lang::Game::LogicGateOR,
 "LogicGateOR",
 31.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8427,6 +9470,8 @@ crate::lang::Game::LogicGateXOR,
 "LogicGateXOR",
 34.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8453,6 +9498,8 @@ crate::lang::Game::LogicGateNOT,
 "LogicGateNOT",
 29.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8479,6 +9526,8 @@ crate::lang::Game::LogicGateBUFFER,
 "LogicGateBUFFER",
 32.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8505,6 +9554,8 @@ crate::lang::Game::LogicGateFILTER,
 "LogicGateFILTER",
 33.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8531,6 +9582,8 @@ crate::lang::Game::LogicGateMultiplexer,
 "LogicGateMultiplexer",
 36.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8557,6 +9610,8 @@ crate::lang::Game::LogicGateDemultiplexer,
 "LogicGateDemultiplexer",
 37.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8583,6 +9638,8 @@ crate::lang::Game::LogicHEPSensor,
 "LogicHEPSensor",
 18.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8609,6 +9666,8 @@ crate::lang::Game::LogicHammer,
 "LogicHammer",
 21.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8637,6 +9696,8 @@ crate::lang::Game::LogicInterasteroidReceiver,
 "LogicInterasteroidReceiver",
 23.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8662,6 +9723,8 @@ crate::lang::Game::LogicInterasteroidSender,
 "LogicInterasteroidSender",
 22.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8687,6 +9750,8 @@ crate::lang::Game::LogicLightSensor,
 "LogicLightSensor",
 9.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8714,6 +9779,8 @@ crate::lang::Game::LogicMemory,
 "LogicMemory",
 35.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayBackLayer,
 ],
@@ -8740,6 +9807,8 @@ crate::lang::Game::LogicPressureSensorGas,
 "LogicPressureSensorGas",
 6.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8766,6 +9835,8 @@ crate::lang::Game::LogicPressureSensorLiquid,
 "LogicPressureSensorLiquid",
 7.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8792,6 +9863,8 @@ crate::lang::Game::LogicRadiationSensor,
 "LogicRadiationSensor",
 17.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8818,6 +9891,8 @@ crate::lang::Game::LogicRibbonBridge,
 "LogicRibbonBridge",
 3.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8843,6 +9918,8 @@ crate::lang::Game::LogicRibbon,
 "LogicRibbon",
 2.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -8868,6 +9945,8 @@ crate::lang::Game::LogicRibbonReader,
 "LogicRibbonReader",
 24.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8894,6 +9973,8 @@ crate::lang::Game::LogicRibbonWriter,
 "LogicRibbonWriter",
 25.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8920,6 +10001,8 @@ crate::lang::Game::LogicSwitch,
 "LogicSwitch",
 4.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8946,6 +10029,8 @@ crate::lang::Game::LogicTemperatureSensor,
 "LogicTemperatureSensor",
 8.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8972,6 +10057,8 @@ crate::lang::Game::LogicTimeOfDaySensor,
 "LogicTimeOfDaySensor",
 11.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -8998,6 +10085,8 @@ crate::lang::Game::LogicTimerSensor,
 "LogicTimerSensor",
 12.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -9024,6 +10113,8 @@ crate::lang::Game::LogicWattageSensor,
 "LogicWattageSensor",
 10.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 Tag::OverlayFrontLayer,
 ],
@@ -9050,6 +10141,8 @@ crate::lang::Game::LogicWireBridge,
 "LogicWireBridge",
 1.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -9075,6 +10168,8 @@ crate::lang::Game::LogicWire,
 "LogicWire",
 0.000,
 Params::BuildingAutomation(BuildingAutomation{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -9096,6 +10191,7 @@ enableable: None,
 flood_threshold: None,
 }));
 pub struct BuildingRocketry{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -9132,6 +10228,8 @@ crate::lang::Game::ClusterTelescope,
 "ClusterTelescope",
 0.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -9174,6 +10272,8 @@ crate::lang::Game::ClusterTelescopeEnclosed,
 "ClusterTelescopeEnclosed",
 1.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -9214,8 +10314,10 @@ scan_right: None,
 pub static Gantry:Entity = Entity::new(
 crate::lang::Game::Gantry,
 "Gantry",
-4.000,
+5.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -9229,7 +10331,7 @@ Some(1200.000),
 external_heat: Some(1.000),
 size: crate::units::Size {width: 6, height: 2},
 hp: Some(30),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(200.000),
 flood_threshold: Some(crate::units::Percent(0.350)),
@@ -9255,8 +10357,10 @@ scan_right: None,
 pub static LandingBeacon:Entity = Entity::new(
 crate::lang::Game::LandingBeacon,
 "LandingBeacon",
-16.000,
+31.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -9297,8 +10401,10 @@ scan_right: None,
 pub static LaunchPad:Entity = Entity::new(
 crate::lang::Game::LaunchPad,
 "LaunchPad",
-3.000,
+4.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::NotRocketInteriorBuilding,
@@ -9312,7 +10418,7 @@ electrity_consummation: None,
 external_heat: None,
 size: crate::units::Size {width: 7, height: 2},
 hp: Some(1000),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(800.000),
 flood_threshold: None,
@@ -9341,8 +10447,10 @@ scan_right: None,
 pub static LogicClusterLocationSensor:Entity = Entity::new(
 crate::lang::Game::LogicClusterLocationSensor,
 "LogicClusterLocationSensor",
-13.000,
+28.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 Tag::OverlayFrontLayer,
@@ -9382,8 +10490,10 @@ scan_right: None,
 pub static MissileLauncher:Entity = Entity::new(
 crate::lang::Game::MissileLauncher,
 "MissileLauncher",
-17.000,
+32.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -9424,8 +10534,54 @@ scan_right: None,
 pub static MissionControlCluster:Entity = Entity::new(
 crate::lang::Game::MissionControlCluster,
 "MissionControlCluster",
+3.000,
+Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
+tags: &[
+Tag::ScienceBuilding,
+],
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
+location_rule: LocationRule::OnFloor,
+material_category: &[
+MaterialCategory::Tag(Tag::RefinedMetal),
+],
+electrity_consummation: Some(&[
+Some(960.000),
+]),
+external_heat: Some(0.500),
+size: crate::units::Size {width: 3, height: 3},
+hp: Some(100),
+high_temp_warning: Some(crate::units::Temperature(348.150)),
+high_temp_fatal: Some(crate::units::Temperature(533.150)),
+mass: crate::units::Kg(400.000),
+flood_threshold: Some(crate::units::Percent(0.350)),
+deconstructable: true,
+enableable: Some(true),
+provides_o2: None,
+range_max: None,
+rotations: None,
+internal_heat: Some(2.000),
+invincible: None,
+decor: Some(crate::units::Decor {value: -5, radius: 1}),
+not_in_rocket: None,
+links: None,
+only_in_rocket: None,
+lauch_speed: None,
+rotation_speed: None,
+range_min: None,
+scanning_angle: None,
+max_angle: None,
+scan_left: Some(1.000),
+scan_right: Some(1.000),
+}));
+pub static MissionControl:Entity = Entity::new(
+crate::lang::Game::MissionControl,
+"MissionControl",
 2.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::ScienceBuilding,
 ],
@@ -9466,8 +10622,10 @@ scan_right: Some(1.000),
 pub static ModularLaunchpadPortBridge:Entity = Entity::new(
 crate::lang::Game::ModularLaunchpadPortBridge,
 "ModularLaunchpadPortBridge",
-18.000,
+33.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::ModularConduitPort,
 Tag::NotRocketInteriorBuilding,
@@ -9482,7 +10640,7 @@ electrity_consummation: None,
 external_heat: None,
 size: crate::units::Size {width: 1, height: 2},
 hp: Some(1000),
-high_temp_warning: Some(crate::units::Temperature(2_273.15)),
+high_temp_warning: Some(crate::units::Temperature(2273.150)),
 high_temp_fatal: Some(crate::units::Temperature(533.150)),
 mass: crate::units::Kg(200.000),
 flood_threshold: None,
@@ -9511,8 +10669,10 @@ scan_right: None,
 pub static RailGun:Entity = Entity::new(
 crate::lang::Game::RailGun,
 "RailGun",
-14.000,
+29.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -9553,8 +10713,10 @@ scan_right: None,
 pub static RailGunPayloadOpener:Entity = Entity::new(
 crate::lang::Game::RailGunPayloadOpener,
 "RailGunPayloadOpener",
-15.000,
+30.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -9594,8 +10756,10 @@ scan_right: None,
 pub static RocketControlStation:Entity = Entity::new(
 crate::lang::Game::RocketControlStation,
 "RocketControlStation",
-5.000,
+20.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 Tag::UniquePerWorld,
@@ -9636,8 +10800,10 @@ scan_right: None,
 pub static RocketInteriorGasInput:Entity = Entity::new(
 crate::lang::Game::RocketInteriorGasInput,
 "RocketInteriorGasInput",
-9.000,
+24.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9676,8 +10842,10 @@ scan_right: None,
 pub static RocketInteriorGasOutput:Entity = Entity::new(
 crate::lang::Game::RocketInteriorGasOutput,
 "RocketInteriorGasOutput",
-10.000,
+25.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9718,8 +10886,10 @@ scan_right: None,
 pub static RocketInteriorLiquidInput:Entity = Entity::new(
 crate::lang::Game::RocketInteriorLiquidInput,
 "RocketInteriorLiquidInput",
-7.000,
+22.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9758,8 +10928,10 @@ scan_right: None,
 pub static RocketInteriorLiquidOutput:Entity = Entity::new(
 crate::lang::Game::RocketInteriorLiquidOutput,
 "RocketInteriorLiquidOutput",
-8.000,
+23.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9800,8 +10972,10 @@ scan_right: None,
 pub static RocketInteriorPowerPlug:Entity = Entity::new(
 crate::lang::Game::RocketInteriorPowerPlug,
 "RocketInteriorPowerPlug",
-6.000,
+21.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9840,8 +11014,10 @@ scan_right: None,
 pub static RocketInteriorSolidInput:Entity = Entity::new(
 crate::lang::Game::RocketInteriorSolidInput,
 "RocketInteriorSolidInput",
-11.000,
+26.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9880,8 +11056,10 @@ scan_right: None,
 pub static RocketInteriorSolidOutput:Entity = Entity::new(
 crate::lang::Game::RocketInteriorSolidOutput,
 "RocketInteriorSolidOutput",
-12.000,
+27.000,
 Params::BuildingRocketry(BuildingRocketry{
+dlc: &[
+],
 tags: &[
 Tag::RocketInteriorBuilding,
 ],
@@ -9920,6 +11098,7 @@ scan_left: None,
 scan_right: None,
 }));
 pub struct BuildingGravitas{
+pub dlc: Option<&'static [crate::db::Dlc]>,
 pub tags: &'static [Tag],
 pub thermal_conductivity: Option<crate::units::DtuPerMetreSecondPerDegree>,
 pub location_rule: Option<LocationRule>,
@@ -9946,6 +11125,8 @@ crate::lang::Game::FacilityBackWallWindow,
 "FacilityBackWallWindow",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::BuildableAny,
 Tag::Transparent,
@@ -9980,6 +11161,8 @@ crate::lang::Game::FossilDig,
 "FossilDig",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -10012,6 +11195,8 @@ crate::lang::Game::GravitasContainer,
 "GravitasContainer",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 ],
@@ -10042,6 +11227,8 @@ crate::lang::Game::GravitasCreatureManipulator,
 "GravitasCreatureManipulator",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::IndustrialMachinery,
 Tag::Metal,
@@ -10077,6 +11264,8 @@ crate::lang::Game::GravitasDoor,
 "GravitasDoor",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 ],
@@ -10107,6 +11296,8 @@ crate::lang::Game::GravitasLabLight,
 "GravitasLabLight",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 ],
@@ -10137,6 +11328,8 @@ crate::lang::Game::GravitasPedestal,
 "GravitasPedestal",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Decoration,
 ],
@@ -10167,6 +11360,8 @@ crate::lang::Game::Headquarters,
 "Headquarters",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Telepad,
 Tag::LightSource,
@@ -10199,6 +11394,8 @@ crate::lang::Game::MassiveHeatSink,
 "MassiveHeatSink",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::IndustrialMachinery,
 Tag::BuildableAny,
@@ -10232,6 +11429,8 @@ crate::lang::Game::MegaBrainTank,
 "MegaBrainTank",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::IndustrialMachinery,
 Tag::Gravitas,
@@ -10268,6 +11467,8 @@ crate::lang::Game::MorbRoverMaker,
 "MorbRoverMaker",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -10303,6 +11504,8 @@ crate::lang::Game::POIDoorInternal,
 "POIDoorInternal",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 ],
@@ -10333,6 +11536,8 @@ crate::lang::Game::PropGravitasLabWall,
 "PropGravitasLabWall",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::BuildableAny,
 Tag::Transparent,
@@ -10367,6 +11572,8 @@ crate::lang::Game::PropGravitasLabWindow,
 "PropGravitasLabWindow",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::BuildableAny,
 Tag::Transparent,
@@ -10401,6 +11608,8 @@ crate::lang::Game::PropGravitasLabWindowHorizontal,
 "PropGravitasLabWindowHorizontal",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::BuildableAny,
 Tag::Transparent,
@@ -10435,6 +11644,8 @@ crate::lang::Game::PropGravitasWall,
 "PropGravitasWall",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Plumbable,
 Tag::Crushable,
@@ -10471,6 +11682,8 @@ crate::lang::Game::RocketEnvelopeWindowTile,
 "RocketEnvelopeWindowTile",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Window,
 Tag::Bunker,
@@ -10504,6 +11717,8 @@ crate::lang::Game::RocketInteriorGasInputPort,
 "RocketInteriorGasInputPort",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Bunker,
 Tag::FloorTiles,
@@ -10536,6 +11751,8 @@ crate::lang::Game::RocketInteriorGasOutputPort,
 "RocketInteriorGasOutputPort",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Bunker,
 Tag::FloorTiles,
@@ -10568,6 +11785,8 @@ crate::lang::Game::RocketInteriorLiquidInputPort,
 "RocketInteriorLiquidInputPort",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Bunker,
 Tag::FloorTiles,
@@ -10600,6 +11819,8 @@ crate::lang::Game::RocketInteriorLiquidOutputPort,
 "RocketInteriorLiquidOutputPort",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Bunker,
 Tag::FloorTiles,
@@ -10632,6 +11853,8 @@ crate::lang::Game::TeleportalPad,
 "TeleportalPad",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Solid,
 Tag::Special,
@@ -10665,6 +11888,8 @@ crate::lang::Game::WarpConduitReceiver,
 "WarpConduitReceiver",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Solid,
 Tag::Special,
@@ -10697,6 +11922,8 @@ crate::lang::Game::WarpConduitSender,
 "WarpConduitSender",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -10729,6 +11956,7 @@ crate::lang::Game::ClustercraftInteriorDoor,
 "ClustercraftInteriorDoor",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::NotRoomAssignable,
@@ -10760,6 +11988,7 @@ crate::lang::Game::PropLadder,
 "PropLadder",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Antiseptic,
@@ -10793,6 +12022,7 @@ crate::lang::Game::GeneShuffler,
 "GeneShuffler",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::NotRoomAssignable,
@@ -10824,6 +12054,7 @@ crate::lang::Game::FossilRock,
 "FossilRock",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -10854,6 +12085,7 @@ crate::lang::Game::FossilResin,
 "FossilResin",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -10884,6 +12116,7 @@ crate::lang::Game::FossilIce,
 "FossilIce",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -10914,6 +12147,7 @@ crate::lang::Game::PropGravitasLabTable,
 "PropGravitasLabTable",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -10948,6 +12182,7 @@ crate::lang::Game::PropGravitasJar2,
 "PropGravitasJar2",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -10982,6 +12217,7 @@ crate::lang::Game::PropGravitasJar1,
 "PropGravitasJar1",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11016,6 +12252,7 @@ crate::lang::Game::PropGravitasHandScanner,
 "PropGravitasHandScanner",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11050,6 +12287,7 @@ crate::lang::Game::PropGravitasFloorRobot,
 "PropGravitasFloorRobot",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11084,6 +12322,7 @@ crate::lang::Game::PropGravitasFirstAidKit,
 "PropGravitasFirstAidKit",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11118,6 +12357,7 @@ crate::lang::Game::PropGravitasDisplay4,
 "PropGravitasDisplay4",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11152,6 +12392,7 @@ crate::lang::Game::PropGravitasRobitcTable,
 "PropGravitasRobitcTable",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11186,6 +12427,7 @@ crate::lang::Game::PropGravitasDeskPodium,
 "PropGravitasDeskPodium",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11220,6 +12462,7 @@ crate::lang::Game::PropGravitasCreaturePoster,
 "PropGravitasCreaturePoster",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11254,6 +12497,7 @@ crate::lang::Game::PropGravitasCeilingRobot,
 "PropGravitasCeilingRobot",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11288,6 +12532,7 @@ crate::lang::Game::PropFacilityWallDegree,
 "PropFacilityWallDegree",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11322,6 +12567,7 @@ crate::lang::Game::PropFacilityTable,
 "PropFacilityTable",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -11355,6 +12601,7 @@ crate::lang::Game::PropFacilityStatue,
 "PropFacilityStatue",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11389,6 +12636,7 @@ crate::lang::Game::PropFacilityPainting,
 "PropFacilityPainting",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11423,6 +12671,7 @@ crate::lang::Game::PropFacilityHangingLight,
 "PropFacilityHangingLight",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -11456,6 +12705,7 @@ crate::lang::Game::PropGravitasDecorativeWindow,
 "PropGravitasDecorativeWindow",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::BuildableAny,
@@ -11488,6 +12738,7 @@ crate::lang::Game::PropFacilityGlobeDroors,
 "PropFacilityGlobeDroors",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11522,6 +12773,7 @@ crate::lang::Game::PropGravitasShelf,
 "PropGravitasShelf",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -11556,6 +12808,7 @@ crate::lang::Game::PropReceptionDesk,
 "PropReceptionDesk",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -11589,6 +12842,7 @@ crate::lang::Game::WarpReceiver,
 "WarpReceiver",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::NotRoomAssignable,
 Tag::WarpTech,
@@ -11621,6 +12875,7 @@ crate::lang::Game::WarpPortal,
 "WarpPortal",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::NotRoomAssignable,
 Tag::WarpTech,
@@ -11653,6 +12908,7 @@ crate::lang::Game::VendingMachine,
 "VendingMachine",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11683,6 +12939,7 @@ crate::lang::Game::SetLocker,
 "SetLocker",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11713,6 +12970,7 @@ crate::lang::Game::PropGravitasSmallSeedLocker,
 "PropGravitasSmallSeedLocker",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11743,6 +13001,7 @@ crate::lang::Game::CryoTank,
 "CryoTank",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Solid,
 Tag::Special,
@@ -11772,6 +13031,7 @@ crate::lang::Game::PropLight,
 "PropLight",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -11805,6 +13065,7 @@ crate::lang::Game::PropTallPlant,
 "PropTallPlant",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Antiseptic,
@@ -11838,6 +13099,7 @@ crate::lang::Game::PropTable,
 "PropTable",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11868,6 +13130,7 @@ crate::lang::Game::PropSurfaceSatellite3,
 "PropSurfaceSatellite3",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11898,6 +13161,7 @@ crate::lang::Game::PropSurfaceSatellite2,
 "PropSurfaceSatellite2",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11928,6 +13192,7 @@ crate::lang::Game::PropSurfaceSatellite1,
 "PropSurfaceSatellite1",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11958,6 +13223,7 @@ crate::lang::Game::PropSkeleton,
 "PropSkeleton",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -11987,6 +13253,7 @@ crate::lang::Game::PropFacilityDisplay,
 "PropFacilityDisplay",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -12020,6 +13287,7 @@ crate::lang::Game::PropFacilityDisplay2,
 "PropFacilityDisplay2",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -12053,6 +13321,7 @@ crate::lang::Game::PropFacilityDisplay3,
 "PropFacilityDisplay3",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -12086,6 +13355,7 @@ crate::lang::Game::PropFacilityDesk,
 "PropFacilityDesk",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -12120,6 +13390,7 @@ crate::lang::Game::PropFacilityCouch,
 "PropFacilityCouch",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -12154,6 +13425,7 @@ crate::lang::Game::PropFacilityChandelier,
 "PropFacilityChandelier",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -12187,6 +13459,7 @@ crate::lang::Game::PropFacilityChairFlip,
 "PropFacilityChairFlip",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -12221,6 +13494,7 @@ crate::lang::Game::PropFacilityChair,
 "PropFacilityChair",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Plumbable,
@@ -12255,6 +13529,7 @@ crate::lang::Game::PropElevator,
 "PropElevator",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -12288,6 +13563,7 @@ crate::lang::Game::PropDesk,
 "PropDesk",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Metal,
@@ -12321,6 +13597,7 @@ crate::lang::Game::PropClock,
 "PropClock",
 177013.000,
 Params::BuildingGravitas(BuildingGravitas{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -12347,6 +13624,7 @@ transparent: None,
 electrity_consummation: None,
 }));
 pub struct BuildingHep{
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree,
 pub location_rule: LocationRule,
@@ -12374,6 +13652,8 @@ crate::lang::Game::HEPBattery,
 "HEPBattery",
 6.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -12406,6 +13686,8 @@ crate::lang::Game::HEPBridgeTile,
 "HEPBridgeTile",
 7.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 Tag::HEPPassThrough,
 ],
@@ -12437,6 +13719,8 @@ crate::lang::Game::HighEnergyParticleRedirector,
 "HighEnergyParticleRedirector",
 5.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -12467,6 +13751,8 @@ crate::lang::Game::HighEnergyParticleSpawner,
 "HighEnergyParticleSpawner",
 4.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -12499,6 +13785,8 @@ crate::lang::Game::ManualHighEnergyParticleSpawner,
 "ManualHighEnergyParticleSpawner",
 1.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -12529,6 +13817,8 @@ crate::lang::Game::NuclearReactor,
 "NuclearReactor",
 2.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 Tag::CorrosionProof,
@@ -12561,6 +13851,8 @@ crate::lang::Game::RadiationLight,
 "RadiationLight",
 0.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 ],
 thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(1.000),
@@ -12593,6 +13885,8 @@ crate::lang::Game::UraniumCentrifuge,
 "UraniumCentrifuge",
 3.000,
 Params::BuildingHep(BuildingHep{
+dlc: &[
+],
 tags: &[
 Tag::IndustrialMachinery,
 ],
@@ -12623,6 +13917,7 @@ high_temp_fatal: None,
 flood_threshold: Some(crate::units::Percent(0.350)),
 }));
 pub struct BuildingQuest{
+pub dlc: Option<&'static [crate::db::Dlc]>,
 pub tags: &'static [Tag],
 pub thermal_conductivity: Option<crate::units::DtuPerMetreSecondPerDegree>,
 pub location_rule: Option<LocationRule>,
@@ -12647,6 +13942,8 @@ crate::lang::Game::LonelyMinionHouse,
 "LonelyMinionHouse",
 177013.000,
 Params::BuildingQuest(BuildingQuest{
+dlc: Some(&[
+]),
 tags: &[
 ],
 thermal_conductivity: Some(crate::units::DtuPerMetreSecondPerDegree(1.000)),
@@ -12676,6 +13973,8 @@ crate::lang::Game::LonelyMailBox,
 "LonelyMailBox",
 177013.000,
 Params::BuildingQuest(BuildingQuest{
+dlc: Some(&[
+]),
 tags: &[
 ],
 thermal_conductivity: Some(crate::units::DtuPerMetreSecondPerDegree(1.000)),
@@ -12703,6 +14002,8 @@ crate::lang::Game::TemporalTearOpener,
 "TemporalTearOpener",
 177013.000,
 Params::BuildingQuest(BuildingQuest{
+dlc: Some(&[
+]),
 tags: &[
 Tag::Solid,
 Tag::Special,
@@ -12732,6 +14033,7 @@ crate::lang::Game::FossilBitsLarge,
 "FossilBitsLarge",
 177013.000,
 Params::BuildingQuest(BuildingQuest{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -12760,6 +14062,7 @@ crate::lang::Game::FossilBitsSmall,
 "FossilBitsSmall",
 177013.000,
 Params::BuildingQuest(BuildingQuest{
+dlc: None,
 tags: &[
 Tag::Gravitas,
 Tag::Solid,
@@ -12788,6 +14091,7 @@ crate::lang::Game::SapTree,
 "SapTree",
 177013.000,
 Params::BuildingQuest(BuildingQuest{
+dlc: None,
 tags: &[
 Tag::Decoration,
 ],
@@ -12798,7 +14102,7 @@ electrity_consummation: None,
 size: None,
 hp: None,
 high_temp_warning: Some(crate::units::Temperature(373.150)),
-high_temp_fatal: Some(crate::units::Temperature(1_023.15)),
+high_temp_fatal: Some(crate::units::Temperature(1023.150)),
 mass: crate::units::Kg(1.000),
 flood_threshold: None,
 decor: crate::units::Decor {value: 35, radius: 6},
@@ -12841,7 +14145,7 @@ primary_element: &Creature,
 deconstructable: true,
 }));
 pub struct ElementSolid{
-pub dlc: &'static [crate::dlc::Dlc],
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub molar_mass: crate::units::GramPerMole,
 pub hardness: f32,
@@ -12860,8 +14164,8 @@ crate::lang::Game::Algae,
 1.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Life,
@@ -12886,8 +14190,8 @@ crate::lang::Game::BleachStone,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -12912,8 +14216,8 @@ crate::lang::Game::OxyRock,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -12939,8 +14243,8 @@ crate::lang::Game::SlimeMold,
 1.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -12965,8 +14269,8 @@ crate::lang::Game::ToxicSand,
 1.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -12991,8 +14295,8 @@ crate::lang::Game::CrushedIce,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -13017,8 +14321,8 @@ crate::lang::Game::Diamond,
 12.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13045,8 +14349,8 @@ crate::lang::Game::Isoresin,
 10.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13071,7 +14375,7 @@ crate::lang::Game::Sucrose,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13095,8 +14399,8 @@ crate::lang::Game::MilkFat,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13120,8 +14424,8 @@ crate::lang::Game::Niobium,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13148,8 +14452,8 @@ crate::lang::Game::MilkIce,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -13174,8 +14478,8 @@ crate::lang::Game::Cuprite,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13201,8 +14505,8 @@ crate::lang::Game::Copper,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13221,14 +14525,40 @@ clearable: true,
 default_mass: crate::units::Kg(900.000),
 min_horizontal_flow: None,
 }));
+pub static CrushedRock:Entity = Entity::new(
+crate::lang::Game::CrushedRock,
+"CrushedRock",
+15.000,
+Params::ElementSolid(ElementSolid{
+dlc: &[
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
+],
+tags: &[
+Tag::PedestalDisplayable,
+Tag::Unstable,
+Tag::Solid,
+Tag::BuildableProcessed,
+],
+molar_mass: crate::units::GramPerMole(50.000),
+hardness: 10.000,
+shc: crate::units::DtuPerGramPerDegree(0.200),
+strength: Some(0.700),
+radiation_absorption_factor: crate::units::Percent(0.700),
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(2.000),
+decor: crate::units::Decor {value: -10, radius: 1},
+clearable: true,
+default_mass: crate::units::Kg(1000.000),
+min_horizontal_flow: Some(50.000),
+}));
 pub static SuperInsulator:Entity = Entity::new(
 crate::lang::Game::SuperInsulator,
 "SuperInsulator",
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13257,8 +14587,8 @@ crate::lang::Game::BrineIce,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -13283,8 +14613,8 @@ crate::lang::Game::SolidViscoGel,
 9.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Plastic,
@@ -13308,8 +14638,8 @@ crate::lang::Game::Ceramic,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13337,7 +14667,7 @@ crate::lang::Game::Cobaltite,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13363,8 +14693,8 @@ crate::lang::Game::Fertilizer,
 3.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13389,8 +14719,8 @@ crate::lang::Game::SolidCrudeOil,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -13413,8 +14743,8 @@ crate::lang::Game::Wolframite,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13440,8 +14770,8 @@ crate::lang::Game::Polypropylene,
 9.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13468,8 +14798,8 @@ crate::lang::Game::SolidNaphtha,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -13492,8 +14822,8 @@ crate::lang::Game::Tungsten,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13519,8 +14849,8 @@ crate::lang::Game::RefinedCarbon,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13545,8 +14875,8 @@ crate::lang::Game::Steel,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13573,8 +14903,8 @@ crate::lang::Game::Phosphorite,
 3.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13599,8 +14929,8 @@ crate::lang::Game::SolidHydrogen,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -13623,8 +14953,8 @@ crate::lang::Game::Lead,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13649,8 +14979,8 @@ crate::lang::Game::Sulfur,
 12.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13674,8 +15004,8 @@ crate::lang::Game::Lime,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13699,8 +15029,8 @@ crate::lang::Game::SolidChlorine,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -13723,7 +15053,7 @@ crate::lang::Game::SolidNuclearWaste,
 12.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13748,8 +15078,8 @@ crate::lang::Game::Obsidian,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13777,8 +15107,8 @@ crate::lang::Game::SolidPetroleum,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -13801,8 +15131,8 @@ crate::lang::Game::SolidSuperCoolant,
 9.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -13825,8 +15155,8 @@ crate::lang::Game::IgneousRock,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13853,7 +15183,7 @@ crate::lang::Game::EnrichedUranium,
 9.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13877,8 +15207,8 @@ crate::lang::Game::Gold,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13903,8 +15233,8 @@ crate::lang::Game::Rust,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13928,7 +15258,7 @@ crate::lang::Game::Corium,
 12.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13952,8 +15282,8 @@ crate::lang::Game::Phosphorus,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -13978,8 +15308,8 @@ crate::lang::Game::Granite,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14007,8 +15337,8 @@ crate::lang::Game::SolidCarbonDioxide,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -14031,7 +15361,7 @@ crate::lang::Game::Cobalt,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14056,7 +15386,7 @@ crate::lang::Game::UraniumOre,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14082,8 +15412,8 @@ crate::lang::Game::AluminumOre,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14109,8 +15439,8 @@ crate::lang::Game::SedimentaryRock,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14137,8 +15467,8 @@ crate::lang::Game::Fullerene,
 10.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14162,8 +15492,8 @@ crate::lang::Game::GoldAmalgam,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14189,8 +15519,8 @@ crate::lang::Game::Salt,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14214,8 +15544,8 @@ crate::lang::Game::Sand,
 3.500,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14240,8 +15570,8 @@ crate::lang::Game::Snow,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -14266,8 +15596,8 @@ crate::lang::Game::SandStone,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14294,8 +15624,8 @@ crate::lang::Game::Glass,
 9.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14321,8 +15651,8 @@ crate::lang::Game::Clay,
 2.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14347,8 +15677,8 @@ crate::lang::Game::Ice,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -14373,7 +15703,7 @@ crate::lang::Game::Graphite,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14397,7 +15727,7 @@ crate::lang::Game::ToxicMud,
 1.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14422,7 +15752,7 @@ crate::lang::Game::Mud,
 1.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14447,8 +15777,8 @@ crate::lang::Game::Carbon,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14474,8 +15804,8 @@ crate::lang::Game::SolidOxygen,
 11.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -14498,8 +15828,8 @@ crate::lang::Game::Creature,
 15.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14522,7 +15852,7 @@ crate::lang::Game::DepletedUranium,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14547,8 +15877,8 @@ crate::lang::Game::Katairite,
 12.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14572,8 +15902,8 @@ crate::lang::Game::SolidMethane,
 6.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -14596,8 +15926,8 @@ crate::lang::Game::HardPolypropylene,
 9.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14624,8 +15954,8 @@ crate::lang::Game::MaficRock,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14650,8 +15980,8 @@ crate::lang::Game::Iron,
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14676,8 +16006,8 @@ crate::lang::Game::Regolith,
 3.500,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14702,7 +16032,7 @@ crate::lang::Game::SolidResin,
 1.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Solid,
@@ -14725,8 +16055,8 @@ crate::lang::Game::TempConductorSolid,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14754,8 +16084,8 @@ crate::lang::Game::IronOre,
 5.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14781,8 +16111,8 @@ crate::lang::Game::Dirt,
 2.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14807,8 +16137,8 @@ crate::lang::Game::DirtyIce,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -14834,8 +16164,8 @@ crate::lang::Game::Fossil,
 7.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14859,8 +16189,8 @@ crate::lang::Game::Unobtanium,
 12.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14884,8 +16214,8 @@ crate::lang::Game::SolidEthanol,
 8.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::IceOre,
@@ -14904,14 +16234,41 @@ clearable: true,
 default_mass: crate::units::Kg(100.000),
 min_horizontal_flow: None,
 }));
+pub static FoolsGold:Entity = Entity::new(
+crate::lang::Game::FoolsGold,
+"FoolsGold",
+5.000,
+Params::ElementSolid(ElementSolid{
+dlc: &[
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
+],
+tags: &[
+Tag::PedestalDisplayable,
+Tag::Ore,
+Tag::BuildableAny,
+Tag::Solid,
+Tag::Metal,
+],
+molar_mass: crate::units::GramPerMole(95.610),
+hardness: 25.000,
+shc: crate::units::DtuPerGramPerDegree(0.386),
+strength: Some(0.700),
+radiation_absorption_factor: crate::units::Percent(0.700),
+thermal_conductivity: crate::units::DtuPerMetreSecondPerDegree(4.500),
+decor: crate::units::Decor {value: -10, radius: 1},
+clearable: true,
+default_mass: crate::units::Kg(800.000),
+min_horizontal_flow: None,
+}));
 pub static Aluminum:Entity = Entity::new(
 crate::lang::Game::Aluminum,
 "Aluminum",
 4.000,
 Params::ElementSolid(ElementSolid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14931,7 +16288,7 @@ default_mass: crate::units::Kg(200.000),
 min_horizontal_flow: None,
 }));
 pub struct ElementLiquid{
-pub dlc: &'static [crate::dlc::Dlc],
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub molar_mass: crate::units::GramPerMole,
 pub shc: crate::units::DtuPerGramPerDegree,
@@ -14952,8 +16309,8 @@ crate::lang::Game::DirtyWater,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -14980,7 +16337,7 @@ crate::lang::Game::NuclearWaste,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -15005,8 +16362,8 @@ crate::lang::Game::LiquidOxygen,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Oxidizer,
@@ -15031,8 +16388,8 @@ crate::lang::Game::ViscoGel,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15057,8 +16414,8 @@ crate::lang::Game::MoltenAluminum,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15085,8 +16442,8 @@ crate::lang::Game::MoltenLead,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15113,8 +16470,8 @@ crate::lang::Game::LiquidCarbonDioxide,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15138,8 +16495,8 @@ crate::lang::Game::CrudeOil,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15164,8 +16521,8 @@ crate::lang::Game::MoltenGlass,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -15190,8 +16547,8 @@ crate::lang::Game::LiquidSulfur,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15215,8 +16572,8 @@ crate::lang::Game::MoltenGold,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15243,8 +16600,8 @@ crate::lang::Game::Magma,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -15269,8 +16626,8 @@ crate::lang::Game::Chlorine,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15294,8 +16651,8 @@ crate::lang::Game::LiquidHydrogen,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15319,7 +16676,7 @@ crate::lang::Game::Resin,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15344,8 +16701,8 @@ crate::lang::Game::MoltenTungsten,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15371,8 +16728,8 @@ crate::lang::Game::Petroleum,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15398,8 +16755,8 @@ crate::lang::Game::MoltenSalt,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15423,7 +16780,7 @@ crate::lang::Game::MoltenCobalt,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15450,8 +16807,8 @@ crate::lang::Game::Brine,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15477,8 +16834,8 @@ crate::lang::Game::SuperCoolant,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15503,8 +16860,8 @@ crate::lang::Game::Ethanol,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15530,8 +16887,8 @@ crate::lang::Game::Milk,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15556,8 +16913,8 @@ crate::lang::Game::LiquidMethane,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15581,8 +16938,8 @@ crate::lang::Game::MoltenIron,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15609,8 +16966,8 @@ crate::lang::Game::MoltenCarbon,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15634,8 +16991,8 @@ crate::lang::Game::Naphtha,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15661,7 +17018,7 @@ crate::lang::Game::MoltenSucrose,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Liquid,
@@ -15685,8 +17042,8 @@ crate::lang::Game::LiquidPhosphorus,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -15711,8 +17068,8 @@ crate::lang::Game::MoltenSteel,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15739,8 +17096,8 @@ crate::lang::Game::MoltenNiobium,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15767,8 +17124,8 @@ crate::lang::Game::Water,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15794,8 +17151,8 @@ crate::lang::Game::SaltWater,
 15.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15821,7 +17178,7 @@ crate::lang::Game::MoltenUranium,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15848,8 +17205,8 @@ crate::lang::Game::MoltenCopper,
 5.000,
 Params::ElementLiquid(ElementLiquid{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15871,7 +17228,7 @@ light_absorption: crate::units::Percent(1.000),
 default_mass: crate::units::Kg(900.000),
 }));
 pub struct ElementGas{
-pub dlc: &'static [crate::dlc::Dlc],
+pub dlc: &'static [crate::db::Dlc],
 pub tags: &'static [Tag],
 pub molar_mass: crate::units::GramPerMole,
 pub shc: crate::units::DtuPerGramPerDegree,
@@ -15889,8 +17246,8 @@ crate::lang::Game::SulfurGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Gas,
@@ -15912,8 +17269,8 @@ crate::lang::Game::SaltGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Gas,
@@ -15935,8 +17292,8 @@ crate::lang::Game::NiobiumGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -15961,8 +17318,8 @@ crate::lang::Game::Oxygen,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -15985,7 +17342,7 @@ crate::lang::Game::CobaltGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16010,8 +17367,8 @@ crate::lang::Game::SteelGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16037,8 +17394,8 @@ crate::lang::Game::ChlorineGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -16061,8 +17418,8 @@ crate::lang::Game::Hydrogen,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -16085,8 +17442,8 @@ crate::lang::Game::SourGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -16109,8 +17466,8 @@ crate::lang::Game::Steam,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Gas,
@@ -16132,8 +17489,8 @@ crate::lang::Game::Methane,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -16157,8 +17514,8 @@ crate::lang::Game::GoldGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16183,8 +17540,8 @@ crate::lang::Game::EthanolGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Gas,
@@ -16206,8 +17563,8 @@ crate::lang::Game::RockGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -16230,8 +17587,8 @@ crate::lang::Game::CarbonGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -16254,8 +17611,8 @@ crate::lang::Game::SuperCoolantGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Gas,
@@ -16277,8 +17634,8 @@ crate::lang::Game::AluminumGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16303,8 +17660,8 @@ crate::lang::Game::TungstenGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16328,8 +17685,8 @@ crate::lang::Game::ContaminatedOxygen,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -16352,8 +17709,8 @@ crate::lang::Game::LeadGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16378,7 +17735,7 @@ crate::lang::Game::Fallout,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -16401,8 +17758,8 @@ crate::lang::Game::IronGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -16427,8 +17784,8 @@ crate::lang::Game::PhosphorusGas,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::EmitsLight,
@@ -16451,8 +17808,8 @@ crate::lang::Game::CarbonDioxide,
 15.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::PedestalDisplayable,
@@ -16475,8 +17832,8 @@ crate::lang::Game::CopperGas,
 5.000,
 Params::ElementGas(ElementGas{
 dlc: &[
-crate::dlc::Dlc::Vanilla,
-crate::dlc::Dlc::SpaceOut,
+crate::db::Dlc::Vanilla,
+crate::db::Dlc::SpaceOut,
 ],
 tags: &[
 Tag::Metal,
@@ -23241,6 +24598,7 @@ pub enum Tag {
   Other,
   RareMaterials,
   Ore,
+  BuildableProcessed,
   Insulator,
   Agriculture,
   EmitsLight,
@@ -23341,6 +24699,18 @@ pub enum MaterialCategory {
   Solid(&'static Entity),
   Tag(Tag)
 }
+
+pub enum Hp {
+  Invincible,
+  Hp(i32),
+}
+
+pub enum Dlc {
+  Vanilla,
+  SpaceOut,
+}
+
+
 pub enum Params {
   BuildingMedical(BuildingMedical),
   BuildingEquipment(BuildingEquipment),
@@ -23528,7 +24898,7 @@ SublimateLiquid(SublimateLiquid),
 SublimateSolid(SublimateSolid),
 }
 
-pub static recipes: &[Recipe] = &[
+pub static recipes: &'static[Recipe] = &[
 Recipe::Building(Building {
 input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::RefinedMetal), amount: crate::units::Kg(200.000)},
@@ -23788,6 +25158,13 @@ output: &CometDetector,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(200.000)},
+],
+time: crate::units::Duration(60.000),
+output: &CommandModule,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::BuildableRaw), amount: crate::units::Kg(800.000)},
 ],
 time: crate::units::Duration(30.000),
@@ -23857,6 +25234,13 @@ EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::BuildableRaw), amount: crate::un
 ],
 time: crate::units::Duration(30.000),
 output: &CornerMoulding,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg(400.000)},
+],
+time: crate::units::Duration(30.000),
+output: &CosmicResearchCenter,
 }),
 Recipe::Building(Building {
 input: &[
@@ -24137,6 +25521,13 @@ output: &GasCargoBayCluster,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(1000.000)},
+],
+time: crate::units::Duration(60.000),
+output: &GasCargoBay,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::RefinedMetal), amount: crate::units::Kg(200.000)},
 ],
 time: crate::units::Duration(30.000),
@@ -24399,6 +25790,13 @@ output: &HydrogenEngineCluster,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(500.000)},
+],
+time: crate::units::Duration(60.000),
+output: &HydrogenEngine,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg(800.000)},
 ],
 time: crate::units::Duration(120.000),
@@ -24497,6 +25895,13 @@ output: &KeroseneEngineClusterSmall,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(200.000)},
+],
+time: crate::units::Duration(60.000),
+output: &KeroseneEngine,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg(200.000)},
 ],
 time: crate::units::Duration(30.000),
@@ -24560,6 +25965,13 @@ output: &LiquidCargoBayCluster,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(1000.000)},
+],
+time: crate::units::Duration(60.000),
+output: &LiquidCargoBay,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::RefinedMetal), amount: crate::units::Kg(200.000)},
 ],
 time: crate::units::Duration(30.000),
@@ -24606,6 +26018,13 @@ EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(
 ],
 time: crate::units::Duration(60.000),
 output: &LiquidFuelTankCluster,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(100.000)},
+],
+time: crate::units::Duration(60.000),
+output: &LiquidFuelTank,
 }),
 Recipe::Building(Building {
 input: &[
@@ -25117,6 +26536,13 @@ output: &MissionControlCluster,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::RefinedMetal), amount: crate::units::Kg(400.000)},
+],
+time: crate::units::Duration(30.000),
+output: &MissionControl,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::RefinedMetal), amount: crate::units::Kg(200.000)},
 ],
 time: crate::units::Duration(60.000),
@@ -25288,7 +26714,21 @@ input: &[
 EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(100.000)},
 ],
 time: crate::units::Duration(60.000),
+output: &OxidizerTank,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(100.000)},
+],
+time: crate::units::Duration(60.000),
 output: &OxidizerTankLiquidCluster,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(100.000)},
+],
+time: crate::units::Duration(60.000),
+output: &OxidizerTankLiquid,
 }),
 Recipe::Building(Building {
 input: &[
@@ -25480,6 +26920,13 @@ EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg
 ],
 time: crate::units::Duration(30.000),
 output: &ResearchCenter,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(200.000)},
+],
+time: crate::units::Duration(60.000),
+output: &ResearchModule,
 }),
 Recipe::Building(Building {
 input: &[
@@ -25681,10 +27128,25 @@ output: &SolarPanelModule,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(200.000)},
+],
+time: crate::units::Duration(480.000),
+output: &SolidBooster,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(1000.000)},
 ],
 time: crate::units::Duration(60.000),
 output: &CargoBayCluster,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::BuildableRaw), amount: crate::units::Kg(1000.000)},
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(1000.000)},
+],
+time: crate::units::Duration(60.000),
+output: &CargoBay,
 }),
 Recipe::Building(Building {
 input: &[
@@ -25795,6 +27257,13 @@ output: &SpecialCargoBayCluster,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(1000.000)},
+],
+time: crate::units::Duration(480.000),
+output: &SpecialCargoBay,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg(400.000)},
 ],
 time: crate::units::Duration(30.000),
@@ -25806,6 +27275,13 @@ EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::RefinedMetal), amount: crate::un
 ],
 time: crate::units::Duration(60.000),
 output: &SteamEngineCluster,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(2000.000)},
+],
+time: crate::units::Duration(480.000),
+output: &SteamEngine,
 }),
 Recipe::Building(Building {
 input: &[
@@ -25917,6 +27393,13 @@ output: &TeleportalPad,
 }),
 Recipe::Building(Building {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg(400.000)},
+],
+time: crate::units::Duration(30.000),
+output: &Telescope,
+}),
+Recipe::Building(Building {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::Metal), amount: crate::units::Kg(800.000)},
 ],
 time: crate::units::Duration(120.000),
@@ -25935,6 +27418,13 @@ EntityOrTagAmount{entity: EntityOrTag::Tag(Tag::BuildableRaw), amount: crate::un
 ],
 time: crate::units::Duration(3.000),
 output: &Tile,
+}),
+Recipe::Building(Building {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Steel), amount: crate::units::Kg(200.000)},
+],
+time: crate::units::Duration(60.000),
+output: &TouristModule,
 }),
 Recipe::Building(Building {
 input: &[
@@ -26340,6 +27830,14 @@ temp: crate::units::Temperature(1357.000),
 type_of: PhaseType::Melting,
 output: &[
 EntityPercent{entity: &MoltenCopper, percent: crate::units::Percent(1.000)},
+]
+}),
+Recipe::Phase(Phase {
+input: &CrushedRock,
+temp: crate::units::Temperature(1683.000),
+type_of: PhaseType::Melting,
+output: &[
+EntityPercent{entity: &Magma, percent: crate::units::Percent(1.000)},
 ]
 }),
 Recipe::Phase(Phase {
@@ -26867,6 +28365,14 @@ EntityPercent{entity: &Ethanol, percent: crate::units::Percent(1.000)},
 ]
 }),
 Recipe::Phase(Phase {
+input: &FoolsGold,
+temp: crate::units::Temperature(1357.000),
+type_of: PhaseType::Melting,
+output: &[
+EntityPercent{entity: &MoltenIron, percent: crate::units::Percent(1.000)},
+]
+}),
+Recipe::Phase(Phase {
 input: &Aluminum,
 temp: crate::units::Temperature(933.450),
 type_of: PhaseType::Melting,
@@ -26916,7 +28422,7 @@ EntityPercent{entity: &Aluminum, percent: crate::units::Percent(1.000)},
 }),
 Recipe::Phase(Phase {
 input: &MoltenAluminum,
-temp: crate::units::Temperature(2_743.15),
+temp: crate::units::Temperature(2743.150),
 type_of: PhaseType::Vaporization,
 output: &[
 EntityPercent{entity: &AluminumGas, percent: crate::units::Percent(1.000)},
@@ -26932,7 +28438,7 @@ EntityPercent{entity: &Lead, percent: crate::units::Percent(1.000)},
 }),
 Recipe::Phase(Phase {
 input: &MoltenLead,
-temp: crate::units::Temperature(2_022.15),
+temp: crate::units::Temperature(2022.150),
 type_of: PhaseType::Vaporization,
 output: &[
 EntityPercent{entity: &LeadGas, percent: crate::units::Percent(1.000)},
@@ -27538,7 +29044,7 @@ EntityPercent{entity: &SuperCoolant, percent: crate::units::Percent(1.000)},
 }),
 Recipe::Phase(Phase {
 input: &AluminumGas,
-temp: crate::units::Temperature(2_743.15),
+temp: crate::units::Temperature(2743.150),
 type_of: PhaseType::Condensation,
 output: &[
 EntityPercent{entity: &MoltenAluminum, percent: crate::units::Percent(1.000)},
@@ -27562,7 +29068,7 @@ EntityPercent{entity: &LiquidOxygen, percent: crate::units::Percent(1.000)},
 }),
 Recipe::Phase(Phase {
 input: &LeadGas,
-temp: crate::units::Temperature(2_022.15),
+temp: crate::units::Temperature(2022.150),
 type_of: PhaseType::Condensation,
 output: &[
 EntityPercent{entity: &MoltenLead, percent: crate::units::Percent(1.000)},
@@ -28840,6 +30346,17 @@ EntityOrTagAmount{entity: EntityOrTag::Entity(&Copper), amount: crate::units::Kg
 }),
 Recipe::Complex(Complex {
 input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&FoolsGold), amount: crate::units::Kg(100.000)},
+],
+time: crate::units::Duration(40.000),
+temperature: crate::units::Temperature(2.000),
+converter: &MetalRefinery,
+output: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Iron), amount: crate::units::Kg(100.000)},
+],
+}),
+Recipe::Complex(Complex {
+input: &[
 EntityOrTagAmount{entity: EntityOrTag::Entity(&GoldAmalgam), amount: crate::units::Kg(100.000)},
 ],
 time: crate::units::Duration(40.000),
@@ -29138,6 +30655,18 @@ temperature: crate::units::Temperature(2.000),
 converter: &RockCrusher,
 output: &[
 EntityOrTagAmount{entity: EntityOrTag::Entity(&Lime), amount: crate::units::Kg(5.000)},
+],
+}),
+Recipe::Complex(Complex {
+input: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&FoolsGold), amount: crate::units::Kg(100.000)},
+],
+time: crate::units::Duration(40.000),
+temperature: crate::units::Temperature(2.000),
+converter: &RockCrusher,
+output: &[
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Iron), amount: crate::units::Kg(50.000)},
+EntityOrTagAmount{entity: EntityOrTag::Entity(&Sand), amount: crate::units::Kg(50.000)},
 ],
 }),
 Recipe::Complex(Complex {

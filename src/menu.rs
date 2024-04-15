@@ -1,5 +1,6 @@
 use std::rc::Rc;
 
+use wasm_bindgen::JsValue;
 use web_sys::HtmlDivElement;
 
 use crate::{
@@ -7,7 +8,8 @@ use crate::{
   entity::Entity,
   html::display_properties,
   lang::Text,
-  node::{Node, NodeRef, Renderer}, App,
+  node::{Html, Node, NodeRef},
+  App,
 };
 
 struct Item {
@@ -25,7 +27,7 @@ struct Category {
 }
 
 pub struct Menu {
-  categories: Vec<Category>
+  categories: Vec<Category>,
 }
 
 impl Default for Menu {
@@ -51,7 +53,7 @@ impl Menu {
           &category::misc,
         ]
         .map(Category::new),
-      )
+      ),
     }
   }
 }
@@ -75,65 +77,68 @@ impl SubCategory {
 }
 
 impl Menu {
-  pub fn render(&self, html: std::rc::Rc<Renderer>, node: Node, app: Rc<App>) -> Node {
-    let current = NodeRef::<HtmlDivElement>::new();
-    node.children(&self.categories, |cat| cat.render(html.clone(), current.clone(), app.clone()))
+  pub fn render<'a>(&'a self, html: &'a Html<'a>, node: Node<'a>, app: Rc<App>) -> Result<Node<'a>, JsValue> {
+    let current = Rc::new(NodeRef::<HtmlDivElement>::new());
+    Ok(node.children(&self.categories, |cat| Ok(cat.render(html, current.clone(), app.clone())?))?)
   }
 }
 
 impl Category {
-  pub fn render(&self, html: std::rc::Rc<Renderer>, chosen: NodeRef<HtmlDivElement>, app: Rc<App>) -> Node {
+  pub fn render<'a>(&'a self, html: &'a Html<'a>, chosen: Rc<NodeRef<HtmlDivElement>>, app: Rc<App>) -> Result<Node<'a>, JsValue> {
     let chosen_clone = chosen.clone();
-    let mut current = NodeRef::<HtmlDivElement>::new();
+    let mut current = Rc::new(NodeRef::<HtmlDivElement>::new());
     let current_clone = current.clone();
 
     let node = html
-      .div("menuCategory")
-      .get_ref(&mut current)
+      .div("menuCategory")?
+      .get_ref(&mut current)?
       .on_mouseenter(move |_| {
-        let _ = chosen_clone.get().remove_attribute("id");
-        current_clone.get().set_id("menuChosen");
-        chosen_clone.set(&current_clone.get());
+        let _ = chosen_clone.get()?.remove_attribute("id");
+        current_clone.get()?.set_id("menuChosen");
+        chosen_clone.set(current_clone.get()?);
+        Ok(())
       })
-      .child(html.div("menuCategoryChoice").text(self.name))
-      .child(html.div("menuContainer").children(&self.sub_categories, |sub| sub.render(html.clone(), app.clone())));
+      .child(html.div("menuCategoryChoice")?.text(self.name)?)
+      .child(html.div("menuContainer")?.children(&self.sub_categories, |sub| sub.render(html, app.clone()))?);
 
     if !chosen.initialized() {
-      chosen.set(&current.get());
-      chosen.get().set_id("menuChosen");
+      chosen.set(current.get()?);
+      chosen.get()?.set_id("menuChosen");
     }
-    node
+    Ok(node)
   }
 }
 
 impl SubCategory {
-  fn render(&self, html: std::rc::Rc<Renderer>, app: Rc<App>) -> Node {
-    let mut category = NodeRef::<HtmlDivElement>::new();
-    html
-      .div("menuSubcategory")
-      .child(html.div("menuChoice").text(self.name))
-      .child(html.div("category").get_ref(&mut category).children(&self.items, |item| {
-        html
-          .div("boxContainer")
-          .child(html.div("boxBorder"))
-          .child(
-            html
-              .div("box")
-              .child(html.img(item.entity.img()))
-              .child(html.div("align").child(html.p().text(item.entity.name()).set_hyphens())),
-          )
-          .on_click({
-            let entity = item.entity;
-            let html = html.clone();
-            let category = category.clone();
-            let app = app.clone();
-            move |_| {
-              display_properties(entity, &app);
-              let _ = category.get().style().set_property("display", "none");
+  fn render<'a>(&'a self, html: &'a Html<'a>, app: Rc<App>) -> Result<Node, JsValue> {
+    let category = Rc::new(NodeRef::<HtmlDivElement>::new());
+    Ok(
+      html
+        .div("menuSubcategory")?
+        .child(html.div("menuChoice")?.text(self.name)?)
+        .child(html.div("category")?.get_ref(&category)?.children(&self.items, |item| {
+          Ok(html
+            .div("boxContainer")?
+            .child(html.div("boxBorder")?)
+            .child(
+              html
+                .div("box")?
+                .child(html.img(item.entity.img())?)
+                .child(html.div("align")?.child(html.p()?.text(item.entity.name())?.set_hyphens())),
+            )
+            .on_click({
+              let entity = item.entity;
               let category = category.clone();
-              html.wait(100, move || category.get().remove_attribute("style").unwrap())
-            }
-          })
-      }))
+              let app = app.clone();
+              move |_| {
+                //display_properties(entity, &app);
+                let _ = category.get()?.style().set_property("display", "none");
+                let category = category.clone();
+                Html::wait(100, move || category.get()?.remove_attribute("style"))?; // Y a p't'etre mieux comme technique :|
+                Ok(())
+              }
+            }))
+        })?),
+    )
   }
 }

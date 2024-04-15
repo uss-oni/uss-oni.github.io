@@ -258,6 +258,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 200.0
+    },
+    time: 60.0,
+    dest: "CommandModule"
+  },
+  {
+    origin: {
       BuildableRaw: 800.0
     },
     time: 30.0,
@@ -327,6 +334,13 @@ export const recipes = [
     },
     time: 30.0,
     dest: "CornerMoulding"
+  },
+  {
+    origin: {
+      Metal: 400.0
+    },
+    time: 30.0,
+    dest: "CosmicResearchCenter"
   },
   {
     origin: {
@@ -663,6 +677,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 1000.0
+    },
+    time: 60.0,
+    dest: "GasCargoBay"
+  },
+  {
+    origin: {
       RefinedMetal: 200.0
     },
     time: 30.0,
@@ -925,6 +946,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 500.0
+    },
+    time: 60.0,
+    dest: "HydrogenEngine"
+  },
+  {
+    origin: {
       Metal: 800.0
     },
     time: 120.0,
@@ -1023,6 +1051,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 200.0
+    },
+    time: 60.0,
+    dest: "KeroseneEngine"
+  },
+  {
+    origin: {
       Metal: 200.0
     },
     time: 30.0,
@@ -1086,6 +1121,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 1000.0
+    },
+    time: 60.0,
+    dest: "LiquidCargoBay"
+  },
+  {
+    origin: {
       RefinedMetal: 200.0
     },
     time: 30.0,
@@ -1132,6 +1174,13 @@ export const recipes = [
     },
     time: 60.0,
     dest: "LiquidFuelTankCluster"
+  },
+  {
+    origin: {
+      Steel: 100.0
+    },
+    time: 60.0,
+    dest: "LiquidFuelTank"
   },
   {
     origin: {
@@ -1643,6 +1692,13 @@ export const recipes = [
   },
   {
     origin: {
+      RefinedMetal: 400.0
+    },
+    time: 30.0,
+    dest: "MissionControl"
+  },
+  {
+    origin: {
       RefinedMetal: 200.0
     },
     time: 60.0,
@@ -1814,7 +1870,21 @@ export const recipes = [
       Steel: 100.0
     },
     time: 60.0,
+    dest: "OxidizerTank"
+  },
+  {
+    origin: {
+      Steel: 100.0
+    },
+    time: 60.0,
     dest: "OxidizerTankLiquidCluster"
+  },
+  {
+    origin: {
+      Steel: 100.0
+    },
+    time: 60.0,
+    dest: "OxidizerTankLiquid"
   },
   {
     origin: {
@@ -2023,6 +2093,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 200.0
+    },
+    time: 60.0,
+    dest: "ResearchModule"
+  },
+  {
+    origin: {
       Metal: 400.0
     },
     time: 30.0,
@@ -2228,10 +2305,25 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 200.0
+    },
+    time: 480.0,
+    dest: "SolidBooster"
+  },
+  {
+    origin: {
       Steel: 1000.0
     },
     time: 60.0,
     dest: "CargoBayCluster"
+  },
+  {
+    origin: {
+      BuildableRaw: 1000.0,
+      Steel: 1000.0
+    },
+    time: 60.0,
+    dest: "CargoBay"
   },
   {
     origin: {
@@ -2342,6 +2434,13 @@ export const recipes = [
   },
   {
     origin: {
+      Steel: 1000.0
+    },
+    time: 480.0,
+    dest: "SpecialCargoBay"
+  },
+  {
+    origin: {
       Metal: 400.0
     },
     time: 30.0,
@@ -2374,6 +2473,13 @@ export const recipes = [
     },
     time: 60.0,
     dest: "SteamEngineCluster"
+  },
+  {
+    origin: {
+      Steel: 2000.0
+    },
+    time: 480.0,
+    dest: "SteamEngine"
   },
   {
     origin: {
@@ -2485,6 +2591,13 @@ export const recipes = [
   },
   {
     origin: {
+      Metal: 400.0
+    },
+    time: 30.0,
+    dest: "Telescope"
+  },
+  {
+    origin: {
       Metal: 800.0
     },
     time: 120.0,
@@ -2510,6 +2623,13 @@ export const recipes = [
     },
     time: 30.0,
     dest: "TilePOI"
+  },
+  {
+    origin: {
+      Steel: 200.0
+    },
+    time: 60.0,
+    dest: "TouristModule"
   },
   {
     origin: {
@@ -2915,6 +3035,14 @@ export const recipes = [
     temp: 1357.0,
     dest: {
       MoltenCopper: 1.0
+    }
+  },
+  {
+    origin: "CrushedRock",
+    type: "melting",
+    temp: 1683.0,
+    dest: {
+      Magma: 1.0
     }
   },
   {
@@ -3439,6 +3567,14 @@ export const recipes = [
     temp: 159.1,
     dest: {
       Ethanol: 1.0
+    }
+  },
+  {
+    origin: "FoolsGold",
+    type: "melting",
+    temp: 1357.0,
+    dest: {
+      MoltenIron: 1.0
     }
   },
   {
@@ -5415,6 +5551,17 @@ export const recipes = [
   },
   {
     origin: {
+      FoolsGold: 100.0
+    },
+    time: 40.0,
+    converter: "MetalRefinery",
+    temperature: 2.0,
+    dest: {
+      Iron: 100.0
+    }
+  },
+  {
+    origin: {
       GoldAmalgam: 100.0
     },
     time: 40.0,
@@ -5713,6 +5860,18 @@ export const recipes = [
     temperature: 2.0,
     dest: {
       Lime: 5.0
+    }
+  },
+  {
+    origin: {
+      FoolsGold: 100.0
+    },
+    time: 40.0,
+    converter: "RockCrusher",
+    temperature: 2.0,
+    dest: {
+      Iron: 50.0,
+      Sand: 50.0
     }
   },
   {

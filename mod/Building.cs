@@ -38,6 +38,8 @@ namespace USS
         translations[building.Tag] = (building.Name, building.Desc);
 
         var entity = db[building.Tag];
+        entity.dlc ??= []; 
+        entity.dlc.Append(building.RequiredDlcIds ?? []);
         // entity.type = "Building";
 
         foreach (var attribute in building.attributes)

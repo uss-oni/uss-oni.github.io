@@ -45,6 +45,7 @@ export const db = {
       "DoctorStationDoctorWorkable"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "Clinic"
     ],
@@ -117,6 +118,7 @@ export const db = {
       "PoweredController+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -181,6 +183,7 @@ export const db = {
       "CritterCondo+Def"
     ],
     menu_order: 24.0,
+    dlc: [],
     tags: [
       "RanchStationType"
     ],
@@ -253,6 +256,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 5.0,
     location_rule: "OnFloor",
@@ -322,6 +326,7 @@ export const db = {
       "ActiveController+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -391,6 +396,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -460,6 +466,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -530,6 +537,7 @@ export const db = {
       "PoweredActiveStoppableController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -597,6 +605,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -669,7 +678,8 @@ export const db = {
     smdef: [
       "ArtifactAnalysisStation+Def"
     ],
-    menu_order: 13.0,
+    menu_order: 15.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -739,6 +749,7 @@ export const db = {
       "ArtifactHarvestModule+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -801,6 +812,7 @@ export const db = {
       "RangeVisualizer"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -866,6 +878,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -926,6 +939,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -990,6 +1004,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -1049,6 +1064,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -1111,6 +1127,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -1173,6 +1190,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "BedType"
     ],
@@ -1228,6 +1246,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -1283,6 +1302,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -1341,6 +1361,7 @@ export const db = {
       "ZoneTile"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [
       "Bunker"
     ],
@@ -1394,6 +1415,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "Bunker",
       "FloorTiles"
@@ -1460,6 +1482,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -1531,6 +1554,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -1593,6 +1617,7 @@ export const db = {
       "Painting"
     ],
     menu_order: 31.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -1649,6 +1674,7 @@ export const db = {
       "Painting"
     ],
     menu_order: 33.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -1705,6 +1731,7 @@ export const db = {
       "Painting"
     ],
     menu_order: 32.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -1756,6 +1783,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "FloorTiles",
       "Carpeted"
@@ -1819,6 +1847,7 @@ export const db = {
       "LightController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "LightSource"
     ],
@@ -1883,6 +1912,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 27.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -1957,6 +1987,7 @@ export const db = {
       "Chlorinator+Def"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -2032,7 +2063,8 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menu_order: 17.0,
+    menu_order: 19.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -2101,7 +2133,8 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menu_order: 16.0,
+    menu_order: 18.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -2168,6 +2201,7 @@ export const db = {
       "PoweredController+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -2241,6 +2275,7 @@ export const db = {
       "ClusterTelescope+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -2308,6 +2343,7 @@ export const db = {
       "ClusterCometDetector+Def"
     ],
     menu_order: 28.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
@@ -2327,6 +2363,74 @@ export const db = {
     flood_threshold: 0.35,
     decor: -5.0,
     decor_radius: 1.0,
+    deconstructable: true,
+    enableable: true
+  },
+  CommandModule: {
+    tag: "CommandModule",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "LaunchConditionManager",
+      "Storage",
+      "CommandModule",
+      "CommandModuleWorkable",
+      "RocketCommandConditions",
+      "MinionStorage",
+      "ArtifactFinder",
+      "LaunchableRocket",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "LogicPorts",
+      "RocketModule",
+      "Ownable",
+      "CharacterOverlay"
+    ],
+    menu_order: 15.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 200.0,
     deconstructable: true,
     enableable: true
   },
@@ -2371,6 +2475,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -2422,6 +2527,7 @@ export const db = {
       "ConduitDiseaseSensor"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -2472,6 +2578,7 @@ export const db = {
       "ConduitDiseaseSensor"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -2523,6 +2630,7 @@ export const db = {
       "ConduitElementSensor"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -2573,6 +2681,7 @@ export const db = {
       "ConduitElementSensor"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -2622,6 +2731,7 @@ export const db = {
       "ConduitTemperatureSensor"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -2671,6 +2781,7 @@ export const db = {
       "ConduitTemperatureSensor"
     ],
     menu_order: 19.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -2727,6 +2838,7 @@ export const db = {
       "ContactConductivePipeBridge+Def"
     ],
     menu_order: 22.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 2.0,
     location_rule: "NoLiquidConduitAtOrigin",
@@ -2795,6 +2907,7 @@ export const db = {
       "PoweredController+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "CookTop"
     ],
@@ -2853,6 +2966,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 30.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -2868,6 +2982,79 @@ export const db = {
     mass: 100.0,
     decor: 5.0,
     decor_radius: 3.0,
+    deconstructable: true,
+    enableable: true
+  },
+  CosmicResearchCenter: {
+    tag: "CosmicResearchCenter",
+    menu: {
+      category: "building",
+      subCategory: "equipment"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "Storage",
+      "ManualDeliveryKG",
+      "ResearchCenter",
+      "ElementConverter",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "EnergyConsumer",
+      "RequireInputs",
+      "Floodable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "LogicPorts",
+      "LogicOperationalController",
+      "BuildingCellVisualizer",
+      "Toggleable",
+      "Notifier"
+    ],
+    smdef: [
+      "PoweredController+Def"
+    ],
+    menu_order: 4.0,
+    dlc: [],
+    tags: [
+      "ScienceBuilding"
+    ],
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
+      "Metal"
+    ],
+    electrity_consummation: [
+      120.0
+    ],
+    external_heat: 0.5,
+    internal_heat: 4.0,
+    width: 4,
+    height: 4,
+    hp: 30,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
+    mass: 400.0,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
@@ -2920,7 +3107,8 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menu_order: 15.0,
+    menu_order: 17.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -2985,6 +3173,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -3044,6 +3233,7 @@ export const db = {
       "CritterCondo+Def"
     ],
     menu_order: 22.0,
+    dlc: [],
     tags: [
       "RanchStationType"
     ],
@@ -3108,6 +3298,7 @@ export const db = {
       "LogicPorts"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "CreatureRelocator"
     ],
@@ -3172,6 +3363,7 @@ export const db = {
       "FixedCapturePoint+Def"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "CreatureRelocator"
     ],
@@ -3227,6 +3419,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 29.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -3292,7 +3485,8 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menu_order: 4.0,
+    menu_order: 5.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -3364,6 +3558,7 @@ export const db = {
       "AutoStorageDropper+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -3389,6 +3584,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3408,6 +3604,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "NotInTiles",
     material_category: [
@@ -3425,6 +3622,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3441,6 +3639,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3459,6 +3658,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3475,6 +3675,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3491,6 +3692,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3507,6 +3709,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -3570,6 +3773,7 @@ export const db = {
       "SymbolOverrideController"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -3637,6 +3841,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "MessTable"
     ],
@@ -3695,6 +3900,7 @@ export const db = {
       "DoctorStationDoctorWorkable"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "Clinic"
     ],
@@ -3751,6 +3957,7 @@ export const db = {
       "ZoneTile"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Tile",
@@ -3814,6 +4021,7 @@ export const db = {
       "LogicOperationalController"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -3877,6 +4085,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -3949,6 +4158,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -4022,6 +4232,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -4096,6 +4307,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -4160,6 +4372,7 @@ export const db = {
       "Notifier"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [
       "Telepad",
       "LightSource",
@@ -4212,6 +4425,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "Backwall"
     ],
@@ -4266,6 +4480,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "BuildableAny",
       "Transparent",
@@ -4329,7 +4544,8 @@ export const db = {
       "TinkerStation",
       "RoomTracker"
     ],
-    menu_order: 7.0,
+    menu_order: 9.0,
+    dlc: [],
     tags: [
       "FarmStationType"
     ],
@@ -4383,6 +4599,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "FarmTiles"
     ],
@@ -4451,6 +4668,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -4509,6 +4727,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -4567,6 +4786,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "CreatureRelocator"
     ],
@@ -4636,6 +4856,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -4699,6 +4920,7 @@ export const db = {
       "LightController+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "LightSource"
     ],
@@ -4757,6 +4979,7 @@ export const db = {
       "LogicMassSensor"
     ],
     menu_order: 26.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -4811,6 +5034,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 20.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -4864,6 +5088,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 22.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -4917,6 +5142,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 23.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -4972,6 +5198,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 21.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -5037,6 +5264,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "ToiletType",
       "FlushToiletType"
@@ -5114,6 +5342,7 @@ export const db = {
       "FoodDehydrator+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -5187,6 +5416,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -5257,6 +5487,7 @@ export const db = {
       "FossilHuntInitializer+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas",
       "Solid",
@@ -5322,7 +5553,8 @@ export const db = {
     smdef: [
       "MakeBaseSolid+Def"
     ],
-    menu_order: 4.0,
+    menu_order: 5.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -5387,6 +5619,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -5449,12 +5682,77 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
     thermal_conductivity: 0.1,
     location_rule: "Anywhere",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 1000.0,
+    deconstructable: true,
+    enableable: true
+  },
+  GasCargoBay: {
+    tag: "GasCargoBay",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "RequireOutputs",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "BuildingCellVisualizer",
+      "AttachableBuilding",
+      "Toggleable",
+      "CargoBay",
+      "Storage",
+      "ConduitDispenser",
+      "RocketModule"
+    ],
+    menu_order: 13.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
     material_category: [
       "Steel"
     ],
@@ -5511,6 +5809,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -5565,6 +5864,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Conduit",
@@ -5610,6 +5910,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "Vents"
     ],
@@ -5656,6 +5957,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "Vents"
     ],
@@ -5722,6 +6024,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayFrontLayer"
@@ -5793,6 +6096,7 @@ export const db = {
       "PoweredActiveTransitionController+Def"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -5858,6 +6162,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -5931,6 +6236,7 @@ export const db = {
       "OperationalController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
@@ -5990,6 +6296,7 @@ export const db = {
       "ZoneTile"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -6056,6 +6363,7 @@ export const db = {
       "OperationalController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
@@ -6129,6 +6437,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 22.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -6188,6 +6497,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -6254,6 +6564,7 @@ export const db = {
       "VentController+Def"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -6318,6 +6629,7 @@ export const db = {
       "VentController+Def"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayFrontLayer"
@@ -6385,6 +6697,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -6458,7 +6771,8 @@ export const db = {
       "GeneticAnalysisStation+Def",
       "PoweredActiveController+Def"
     ],
-    menu_order: 8.0,
+    menu_order: 10.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -6531,7 +6845,8 @@ export const db = {
     smdef: [
       "GeoTuner+Def"
     ],
-    menu_order: 5.0,
+    menu_order: 7.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -6611,6 +6926,7 @@ export const db = {
       "PoweredActiveStoppableController+Def"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -6665,6 +6981,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [
       "Window",
       "FloorTiles"
@@ -6740,6 +7057,7 @@ export const db = {
       "PoweredActiveStoppableController+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "CookTop"
     ],
@@ -6799,6 +7117,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -6850,6 +7169,7 @@ export const db = {
       "Demolishable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas"
     ],
@@ -6908,6 +7228,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "Metal",
@@ -6969,6 +7290,7 @@ export const db = {
       "LogicPorts"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas"
     ],
@@ -7020,6 +7342,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas"
     ],
@@ -7075,6 +7398,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -7136,6 +7460,7 @@ export const db = {
       "HEPBattery+Def"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -7200,6 +7525,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "HEPPassThrough"
     ],
@@ -7264,6 +7590,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -7345,6 +7672,7 @@ export const db = {
       "SimpleDoorController+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "LaunchButtonRocketModule",
@@ -7427,6 +7755,7 @@ export const db = {
       "SimpleDoorController+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "NoseRocketModule",
@@ -7492,6 +7821,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "WashStation",
       "AdvancedWashStation"
@@ -7553,6 +7883,7 @@ export const db = {
       "Notifier"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Telepad",
       "LightSource",
@@ -7613,6 +7944,7 @@ export const db = {
       "LogicPorts"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "NotInTiles",
@@ -7673,6 +8005,7 @@ export const db = {
       "HighEnergyParticlePort"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "NotInTiles",
@@ -7746,6 +8079,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -7814,6 +8148,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -7824,6 +8159,65 @@ export const db = {
       "Steel"
     ],
     generator_wattage_rating: 600.0,
+    width: 7,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 500.0,
+    deconstructable: true,
+    enableable: true
+  },
+  HydrogenEngine: {
+    tag: "HydrogenEngine",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "RocketEngine",
+      "RocketModule"
+    ],
+    menu_order: 19.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "OnFloor",
+    material_category: [
+      "Steel"
+    ],
     width: 7,
     height: 5,
     invincible: true,
@@ -7883,6 +8277,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -7952,6 +8347,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "FarmTiles"
     ],
@@ -8011,6 +8407,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -8072,6 +8469,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -8129,6 +8527,7 @@ export const db = {
       "Sculpture"
     ],
     menu_order: 26.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -8179,6 +8578,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "Vents"
     ],
@@ -8227,6 +8627,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "Pipes"
     ],
@@ -8277,6 +8678,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -8330,6 +8732,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 34.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -8395,7 +8798,8 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menu_order: 24.0,
+    menu_order: 26.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -8457,7 +8861,8 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menu_order: 23.0,
+    menu_order: 25.0,
+    dlc: [],
     tags: [
       "JetSuitBlocker"
     ],
@@ -8532,6 +8937,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -8598,6 +9004,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -8666,6 +9073,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -8678,6 +9086,65 @@ export const db = {
     generator_wattage_rating: 240.0,
     width: 3,
     height: 4,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 200.0,
+    deconstructable: true,
+    enableable: true
+  },
+  KeroseneEngine: {
+    tag: "KeroseneEngine",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "RocketEngine",
+      "RocketModule"
+    ],
+    menu_order: 7.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "OnFloor",
+    material_category: [
+      "Steel"
+    ],
+    width: 7,
+    height: 5,
     invincible: true,
     high_temp_warning: 2273.15,
     high_temp_fatal: 533.15,
@@ -8734,6 +9201,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -8801,6 +9269,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "BedType"
     ],
@@ -8851,6 +9320,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -8898,6 +9368,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -8956,7 +9427,8 @@ export const db = {
     smdef: [
       "LandingBeacon+Def"
     ],
-    menu_order: 16.0,
+    menu_order: 31.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -9026,7 +9498,8 @@ export const db = {
       "ChainedBuilding+Def",
       "LaunchPadMaterialDistributor+Def"
     ],
-    menu_order: 3.0,
+    menu_order: 4.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "NotRocketInteriorBuilding"
@@ -9098,7 +9571,8 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menu_order: 26.0,
+    menu_order: 28.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -9160,7 +9634,8 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menu_order: 25.0,
+    menu_order: 27.0,
+    dlc: [],
     tags: [
       "JetSuitBlocker"
     ],
@@ -9225,12 +9700,77 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
     thermal_conductivity: 0.1,
     location_rule: "Anywhere",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 1000.0,
+    deconstructable: true,
+    enableable: true
+  },
+  LiquidCargoBay: {
+    tag: "LiquidCargoBay",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "RequireOutputs",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "BuildingCellVisualizer",
+      "AttachableBuilding",
+      "Toggleable",
+      "CargoBay",
+      "Storage",
+      "ConduitDispenser",
+      "RocketModule"
+    ],
+    menu_order: 14.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
     material_category: [
       "Steel"
     ],
@@ -9287,6 +9827,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -9355,6 +9896,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -9412,6 +9954,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Conduit",
@@ -9457,6 +10000,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "Pipes"
     ],
@@ -9503,6 +10047,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "Pipes"
     ],
@@ -9569,6 +10114,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayFrontLayer"
@@ -9643,12 +10189,80 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
     thermal_conductivity: 0.1,
     location_rule: "Anywhere",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 100.0,
+    deconstructable: true,
+    enableable: true
+  },
+  LiquidFuelTank: {
+    tag: "LiquidFuelTank",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "ConduitConsumer",
+      "RequireInputs",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "BuildingCellVisualizer",
+      "AttachableBuilding",
+      "Toggleable",
+      "Storage",
+      "FuelTank",
+      "CopyBuildingSettings",
+      "DropToUserCapacity",
+      "ManualDeliveryKG",
+      "RocketModule"
+    ],
+    menu_order: 9.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
     material_category: [
       "Steel"
     ],
@@ -9705,6 +10319,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -9774,6 +10389,7 @@ export const db = {
       "PoweredActiveTransitionController+Def"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -9839,6 +10455,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -9911,6 +10528,7 @@ export const db = {
       "OperationalController+Def"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "CorrosionProof",
@@ -9986,6 +10604,7 @@ export const db = {
       "OperationalController+Def"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "CorrosionProof",
@@ -10049,6 +10668,7 @@ export const db = {
       "FakeFloorAdder"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "CorrosionProof"
     ],
@@ -10115,6 +10735,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 21.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -10174,6 +10795,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10240,6 +10862,7 @@ export const db = {
       "VentController+Def"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10290,6 +10913,7 @@ export const db = {
       "LogicAlarm"
     ],
     menu_order: 20.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10338,7 +10962,8 @@ export const db = {
       "LogicPorts",
       "LogicClusterLocationSensor"
     ],
-    menu_order: 13.0,
+    menu_order: 28.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding",
       "OverlayFrontLayer"
@@ -10391,6 +11016,7 @@ export const db = {
       "LogicCounter"
     ],
     menu_order: 19.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10441,6 +11067,7 @@ export const db = {
       "LogicCritterCountSensor"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10490,6 +11117,7 @@ export const db = {
       "LogicDiseaseSensor"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10542,6 +11170,7 @@ export const db = {
       "RangeVisualizer"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10597,6 +11226,7 @@ export const db = {
       "LogicElementSensor"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -10650,6 +11280,7 @@ export const db = {
       "LogicElementSensor"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -10700,6 +11331,7 @@ export const db = {
       "LogicGate"
     ],
     menu_order: 30.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -10750,6 +11382,7 @@ export const db = {
       "LogicGate"
     ],
     menu_order: 31.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -10800,6 +11433,7 @@ export const db = {
       "LogicGate"
     ],
     menu_order: 34.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -10850,6 +11484,7 @@ export const db = {
       "LogicGate"
     ],
     menu_order: 29.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -10900,6 +11535,7 @@ export const db = {
       "LogicGateBuffer"
     ],
     menu_order: 32.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -10950,6 +11586,7 @@ export const db = {
       "LogicGateFilter"
     ],
     menu_order: 33.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -11000,6 +11637,7 @@ export const db = {
       "LogicGate"
     ],
     menu_order: 36.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -11050,6 +11688,7 @@ export const db = {
       "LogicGate"
     ],
     menu_order: 37.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -11100,6 +11739,7 @@ export const db = {
       "LogicHEPSensor"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11156,6 +11796,7 @@ export const db = {
       "LogicHammer"
     ],
     menu_order: 21.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11214,6 +11855,7 @@ export const db = {
       "SkyVisibilityVisualizer"
     ],
     menu_order: 23.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -11267,6 +11909,7 @@ export const db = {
       "SkyVisibilityVisualizer"
     ],
     menu_order: 22.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -11315,6 +11958,7 @@ export const db = {
       "LogicLightSensor"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11366,6 +12010,7 @@ export const db = {
       "LogicMemory"
     ],
     menu_order: 35.0,
+    dlc: [],
     tags: [
       "OverlayBackLayer"
     ],
@@ -11416,6 +12061,7 @@ export const db = {
       "OperationalControlledSwitch"
     ],
     menu_order: 22.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11463,6 +12109,7 @@ export const db = {
       "LogicPressureSensor"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11512,6 +12159,7 @@ export const db = {
       "LogicPressureSensor"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11561,6 +12209,7 @@ export const db = {
       "LogicRadiationSensor"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11613,6 +12262,7 @@ export const db = {
       "LogicRibbonBridge"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "LogicBridge",
@@ -11660,6 +12310,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -11708,6 +12359,7 @@ export const db = {
       "LogicRibbonReader"
     ],
     menu_order: 24.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11759,6 +12411,7 @@ export const db = {
       "LogicRibbonWriter"
     ],
     menu_order: 25.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11809,6 +12462,7 @@ export const db = {
       "LogicSwitch"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11856,6 +12510,7 @@ export const db = {
       "LogicTemperatureSensor"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11905,6 +12560,7 @@ export const db = {
       "LogicTimeOfDaySensor"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -11954,6 +12610,7 @@ export const db = {
       "LogicTimerSensor"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -12003,6 +12660,7 @@ export const db = {
       "LogicWattageSensor"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [
       "OverlayFrontLayer"
     ],
@@ -12054,6 +12712,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "LogicBridge",
@@ -12101,6 +12760,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -12158,6 +12818,7 @@ export const db = {
       "LonelyMinionHouse+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -12215,6 +12876,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -12271,6 +12933,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "BedType",
       "LuxuryBedType"
@@ -12336,6 +12999,7 @@ export const db = {
       "Klei.AI.Effects"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -12406,6 +13070,7 @@ export const db = {
       "LogicPorts"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -12457,6 +13122,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Tile",
@@ -12508,6 +13174,7 @@ export const db = {
       "Sculpture"
     ],
     menu_order: 27.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -12571,6 +13238,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "DeStressingBuilding"
     ],
@@ -12641,6 +13309,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "BuildableAny",
@@ -12716,6 +13385,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -12779,6 +13449,7 @@ export const db = {
       "Ownable"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "Clinic",
       "BedType"
@@ -12842,6 +13513,7 @@ export const db = {
       "ElementConverter"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "Gravitas",
@@ -12901,6 +13573,7 @@ export const db = {
       "ZoneTile"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -12975,6 +13648,7 @@ export const db = {
       "PoweredActiveStoppableController+Def"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -13035,6 +13709,7 @@ export const db = {
       "Sculpture"
     ],
     menu_order: 28.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -13085,6 +13760,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -13153,6 +13829,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -13229,6 +13906,7 @@ export const db = {
       "PoweredController+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -13304,6 +13982,7 @@ export const db = {
       "MilkSeparator+Def"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -13386,6 +14065,7 @@ export const db = {
       "MilkFeeder+Def"
     ],
     menu_order: 16.0,
+    dlc: [],
     tags: [
       "RanchStationType"
     ],
@@ -13459,6 +14139,7 @@ export const db = {
       "SymbolOverrideController"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -13523,7 +14204,8 @@ export const db = {
     smdef: [
       "RanchStation+Def"
     ],
-    menu_order: 11.0,
+    menu_order: 13.0,
+    dlc: [],
     tags: [
       "RanchStationType"
     ],
@@ -13593,6 +14275,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -13665,7 +14348,8 @@ export const db = {
     smdef: [
       "MissileLauncher+Def"
     ],
-    menu_order: 17.0,
+    menu_order: 32.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -13744,7 +14428,8 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menu_order: 14.0,
+    menu_order: 16.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -13817,7 +14502,85 @@ export const db = {
       "SkyVisibilityMonitor+Def",
       "MissionControlCluster+Def"
     ],
+    menu_order: 3.0,
+    dlc: [],
+    tags: [
+      "ScienceBuilding"
+    ],
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
+      "RefinedMetal"
+    ],
+    electrity_consummation: [
+      960.0
+    ],
+    external_heat: 0.5,
+    internal_heat: 2.0,
+    width: 3,
+    height: 3,
+    hp: 100,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
+    mass: 400.0,
+    flood_threshold: 0.35,
+    decor: -5.0,
+    decor_radius: 1.0,
+    deconstructable: true,
+    enableable: true,
+    scan_left: 1.0,
+    scan_right: 1.0
+  },
+  MissionControl: {
+    tag: "MissionControl",
+    menu: {
+      category: "building",
+      subCategory: "rocketry"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "MissionControlWorkable",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "EnergyConsumer",
+      "RequireInputs",
+      "Floodable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "LogicPorts",
+      "LogicOperationalController",
+      "BuildingCellVisualizer",
+      "Toggleable",
+      "RoomTracker",
+      "SkyVisibilityVisualizer"
+    ],
+    smdef: [
+      "PoweredController+Def",
+      "SkyVisibilityMonitor+Def",
+      "MissionControl+Def"
+    ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -13882,7 +14645,8 @@ export const db = {
     smdef: [
       "ChainedBuilding+Def"
     ],
-    menu_order: 18.0,
+    menu_order: 33.0,
+    dlc: [],
     tags: [
       "ModularConduitPort",
       "NotRocketInteriorBuilding",
@@ -13954,6 +14718,7 @@ export const db = {
       "ChainedBuilding+Def"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
@@ -14035,6 +14800,7 @@ export const db = {
       "ChainedBuilding+Def"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
@@ -14113,6 +14879,7 @@ export const db = {
       "ChainedBuilding+Def"
     ],
     menu_order: 20.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
@@ -14194,6 +14961,7 @@ export const db = {
       "ChainedBuilding+Def"
     ],
     menu_order: 21.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
@@ -14272,6 +15040,7 @@ export const db = {
       "ChainedBuilding+Def"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
@@ -14353,6 +15122,7 @@ export const db = {
       "ChainedBuilding+Def"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "ModularLaunchpadPort",
@@ -14424,6 +15194,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 35.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -14483,6 +15254,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 36.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "BuildingAttachPoint",
@@ -14542,6 +15314,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 37.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "BuildingAttachPoint",
@@ -14611,6 +15384,7 @@ export const db = {
       "MorbRoverMakerDisplay+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas",
       "Metal",
@@ -14674,6 +15448,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "NoseRocketModule",
@@ -14738,6 +15513,7 @@ export const db = {
       "ResourceHarvestModule+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "NoseRocketModule",
@@ -14802,6 +15578,7 @@ export const db = {
       "LogicPorts"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "CorrosionProof"
@@ -14867,6 +15644,7 @@ export const db = {
       "PoweredController+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -14932,6 +15710,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 23.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -15002,6 +15781,7 @@ export const db = {
       "OilRefinery+WorkableTarget"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -15076,6 +15856,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "BuildingAttachPoint",
@@ -15142,6 +15923,7 @@ export const db = {
       "OrbitalDeployCargoModule+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -15212,6 +15994,7 @@ export const db = {
       "ComplexFabricatorSM"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "ScienceBuilding",
       "RocketInteriorBuilding"
@@ -15282,6 +16065,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -15347,6 +16131,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "ToiletType"
     ],
@@ -15411,12 +16196,76 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
     ],
     thermal_conductivity: 0.1,
     location_rule: "Anywhere",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 100.0,
+    deconstructable: true,
+    enableable: true
+  },
+  OxidizerTank: {
+    tag: "OxidizerTank",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "Storage",
+      "FlatTagFilterable",
+      "OxidizerTank",
+      "CopyBuildingSettings",
+      "DropToUserCapacity",
+      "RocketModule"
+    ],
+    menu_order: 10.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
     material_category: [
       "Steel"
     ],
@@ -15477,6 +16326,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -15488,6 +16338,72 @@ export const db = {
     ],
     width: 5,
     height: 2,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 100.0,
+    deconstructable: true,
+    enableable: true
+  },
+  OxidizerTankLiquid: {
+    tag: "OxidizerTankLiquid",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "ConduitConsumer",
+      "RequireInputs",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "BuildingCellVisualizer",
+      "AttachableBuilding",
+      "Toggleable",
+      "Storage",
+      "OxidizerTank",
+      "CopyBuildingSettings",
+      "DropToUserCapacity",
+      "RocketModule"
+    ],
+    menu_order: 11.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
     invincible: true,
     high_temp_warning: 2273.15,
     high_temp_fatal: 533.15,
@@ -15539,7 +16455,8 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menu_order: 20.0,
+    menu_order: 22.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -15598,7 +16515,8 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menu_order: 19.0,
+    menu_order: 21.0,
+    dlc: [],
     tags: [
       "JetSuitBlocker"
     ],
@@ -15669,6 +16587,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -15699,6 +16618,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -15747,6 +16667,7 @@ export const db = {
       "LogicPorts"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas"
     ],
@@ -15770,6 +16691,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
     material_category: [
@@ -15817,6 +16739,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 38.0,
+    dlc: [],
     tags: [
       "Park"
     ],
@@ -15885,6 +16808,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -15954,6 +16878,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -16027,6 +16952,7 @@ export const db = {
       "JettisonableCargoModule+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -16087,6 +17013,7 @@ export const db = {
       "PixelPack"
     ],
     menu_order: 18.0,
+    dlc: [],
     tags: [
       "Backwall",
       "OverlayBackLayer"
@@ -16150,6 +17077,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -16197,6 +17125,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -16267,6 +17196,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -16330,7 +17260,8 @@ export const db = {
       "TinkerStation",
       "RoomTracker"
     ],
-    menu_order: 6.0,
+    menu_order: 8.0,
+    dlc: [],
     tags: [
       "PowerStation",
       "IndustrialMachinery"
@@ -16394,6 +17325,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 20.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -16463,6 +17395,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 19.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -16528,6 +17461,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Tile",
@@ -16582,6 +17516,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "BuildableAny",
       "Transparent",
@@ -16640,6 +17575,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "BuildableAny",
       "Transparent",
@@ -16697,6 +17633,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "BuildableAny",
       "Transparent",
@@ -16755,6 +17692,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Plumbable",
       "Crushable",
@@ -16828,6 +17766,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnWall",
@@ -16893,7 +17832,8 @@ export const db = {
       "Storage",
       "SkyVisibilityVisualizer"
     ],
-    menu_order: 14.0,
+    menu_order: 29.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -16957,7 +17897,8 @@ export const db = {
       "Toggleable",
       "DropAllWorkable"
     ],
-    menu_order: 15.0,
+    menu_order: 30.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -17016,7 +17957,8 @@ export const db = {
     smdef: [
       "RanchStation+Def"
     ],
-    menu_order: 9.0,
+    menu_order: 11.0,
+    dlc: [],
     tags: [
       "RanchStationType"
     ],
@@ -17077,6 +18019,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -17142,6 +18085,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -17213,6 +18157,7 @@ export const db = {
       "PoweredController+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "ScienceBuilding"
     ],
@@ -17233,6 +18178,65 @@ export const db = {
     high_temp_fatal: 533.15,
     mass: 400.0,
     flood_threshold: 0.35,
+    deconstructable: true,
+    enableable: true
+  },
+  ResearchModule: {
+    tag: "ResearchModule",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "ResearchModule",
+      "BuildingAttachPoint",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "RocketModule"
+    ],
+    menu_order: 17.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 200.0,
     deconstructable: true,
     enableable: true
   },
@@ -17278,7 +18282,8 @@ export const db = {
       "BuildingCellVisualizer",
       "Toggleable"
     ],
-    menu_order: 12.0,
+    menu_order: 14.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "NotRoomAssignable"
@@ -17354,6 +18359,7 @@ export const db = {
       "SymbolOverrideController"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -17417,7 +18423,8 @@ export const db = {
     smdef: [
       "PoweredController+Def"
     ],
-    menu_order: 5.0,
+    menu_order: 20.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding",
       "UniquePerWorld",
@@ -17470,6 +18477,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Window",
       "Bunker",
@@ -17532,7 +18540,8 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menu_order: 9.0,
+    menu_order: 24.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -17590,6 +18599,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Bunker",
       "FloorTiles",
@@ -17655,7 +18665,8 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menu_order: 10.0,
+    menu_order: 25.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -17715,6 +18726,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Bunker",
       "FloorTiles",
@@ -17775,7 +18787,8 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menu_order: 7.0,
+    menu_order: 22.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -17833,6 +18846,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Bunker",
       "FloorTiles",
@@ -17898,7 +18912,8 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menu_order: 8.0,
+    menu_order: 23.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -17958,6 +18973,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Bunker",
       "FloorTiles",
@@ -18014,7 +19030,8 @@ export const db = {
     smdef: [
       "OperationalController+Def"
     ],
-    menu_order: 6.0,
+    menu_order: 21.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -18075,7 +19092,8 @@ export const db = {
     smdef: [
       "ActiveController+Def"
     ],
-    menu_order: 11.0,
+    menu_order: 26.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -18142,7 +19160,8 @@ export const db = {
     smdef: [
       "PoweredActiveController+Def"
     ],
-    menu_order: 12.0,
+    menu_order: 27.0,
+    dlc: [],
     tags: [
       "RocketInteriorBuilding"
     ],
@@ -18172,6 +19191,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Tile",
     material_category: [
@@ -18232,6 +19252,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -18309,6 +19330,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -18377,6 +19399,7 @@ export const db = {
       "ScannerModule+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -18444,6 +19467,7 @@ export const db = {
       "JettisonableCargoModule+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -18498,6 +19522,7 @@ export const db = {
       "Sculpture"
     ],
     menu_order: 25.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -18561,7 +19586,8 @@ export const db = {
     smdef: [
       "RanchStation+Def"
     ],
-    menu_order: 10.0,
+    menu_order: 12.0,
+    dlc: [],
     tags: [
       "RanchStationType"
     ],
@@ -18633,6 +19659,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "WashStation",
       "AdvancedWashStation"
@@ -18707,6 +19734,7 @@ export const db = {
       "SymbolOverrideController"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -18777,6 +19805,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -18831,6 +19860,7 @@ export const db = {
       "Sculpture"
     ],
     menu_order: 24.0,
+    dlc: [],
     tags: [
       "Decoration"
     ],
@@ -18900,6 +19930,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -18966,6 +19997,7 @@ export const db = {
       "MakeBaseSolid+Def"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -19031,6 +20063,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -19043,6 +20076,68 @@ export const db = {
     generator_wattage_rating: 60.0,
     width: 3,
     height: 1,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 200.0,
+    deconstructable: true,
+    enableable: true
+  },
+  SolidBooster: {
+    tag: "SolidBooster",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "SolidBooster",
+      "Storage",
+      "ManualDeliveryKG",
+      "ManualDeliveryKG",
+      "RocketModule"
+    ],
+    menu_order: 8.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "Steel"
+    ],
+    width: 7,
+    height: 5,
     invincible: true,
     high_temp_warning: 2273.15,
     high_temp_fatal: 533.15,
@@ -19093,6 +20188,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -19108,6 +20204,71 @@ export const db = {
     high_temp_warning: 2273.15,
     high_temp_fatal: 533.15,
     mass: 1000.0,
+    deconstructable: true,
+    enableable: true
+  },
+  CargoBay: {
+    tag: "CargoBay",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "RequireOutputs",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "BuildingCellVisualizer",
+      "AttachableBuilding",
+      "Toggleable",
+      "CargoBay",
+      "Storage",
+      "RocketModule",
+      "SolidConduitDispenser"
+    ],
+    menu_order: 12.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "BuildableRaw",
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 2000.0,
     deconstructable: true,
     enableable: true
   },
@@ -19155,6 +20316,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -19209,6 +20371,7 @@ export const db = {
       "SolidConduitBridge"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Conduit",
@@ -19254,6 +20417,7 @@ export const db = {
       "EmptySolidConduitWorkable"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19314,6 +20478,7 @@ export const db = {
       "SolidConduitDispenser"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19376,6 +20541,7 @@ export const db = {
       "Automatable"
     ],
     menu_order: 4.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19424,6 +20590,7 @@ export const db = {
       "ConduitDiseaseSensor"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19473,6 +20640,7 @@ export const db = {
       "ConduitElementSensor"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19520,6 +20688,7 @@ export const db = {
       "ConduitTemperatureSensor"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19583,6 +20752,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -19650,6 +20820,7 @@ export const db = {
       "PoweredActiveTransitionController+Def"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19712,6 +20883,7 @@ export const db = {
       "SolidLogicValve"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19774,6 +20946,7 @@ export const db = {
       "RangeVisualizer"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19838,6 +21011,7 @@ export const db = {
       "Storage"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -19898,6 +21072,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -19970,6 +21145,7 @@ export const db = {
       "SpecialCargoBayCluster+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -19985,6 +21161,66 @@ export const db = {
     high_temp_warning: 2273.15,
     high_temp_fatal: 533.15,
     mass: 200.0,
+    deconstructable: true,
+    enableable: true
+  },
+  SpecialCargoBay: {
+    tag: "SpecialCargoBay",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "CargoBay",
+      "Storage",
+      "RocketModule"
+    ],
+    menu_order: 18.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 1000.0,
     deconstructable: true,
     enableable: true
   },
@@ -20034,6 +21270,7 @@ export const db = {
       "SpiceGrinder+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "SpiceStation"
     ],
@@ -20056,6 +21293,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFoundationRotatable",
     material_category: [
@@ -20075,6 +21313,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFoundationRotatable",
     material_category: [
@@ -20091,6 +21330,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFoundationRotatable",
     material_category: [
@@ -20150,6 +21390,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -20166,6 +21407,72 @@ export const db = {
     high_temp_warning: 2273.15,
     high_temp_fatal: 533.15,
     mass: 200.0,
+    deconstructable: true,
+    enableable: true
+  },
+  SteamEngine: {
+    tag: "SteamEngine",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "BuildingAttachPoint",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "ConduitConsumer",
+      "RequireInputs",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "BuildingCellVisualizer",
+      "AttachableBuilding",
+      "Toggleable",
+      "RocketEngine",
+      "Storage",
+      "FuelTank",
+      "CopyBuildingSettings",
+      "RocketModule"
+    ],
+    menu_order: 6.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "OnFloor",
+    material_category: [
+      "Steel"
+    ],
+    width: 7,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 2000.0,
     deconstructable: true,
     enableable: true
   },
@@ -20219,6 +21526,7 @@ export const db = {
       "RangeVisualizer"
     ],
     menu_order: 6.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -20283,6 +21591,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 19.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -20344,6 +21653,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 20.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -20403,6 +21713,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -20476,6 +21787,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -20546,6 +21858,7 @@ export const db = {
       "ReorderableBuilding"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "RocketModule"
@@ -20614,7 +21927,8 @@ export const db = {
       "Toggleable",
       "ComplexFabricatorSM"
     ],
-    menu_order: 18.0,
+    menu_order: 20.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -20683,7 +21997,8 @@ export const db = {
       "SuitLocker+ReturnSuitWorkable",
       "SymbolOverrideController"
     ],
-    menu_order: 22.0,
+    menu_order: 24.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -20745,7 +22060,8 @@ export const db = {
       "LogicPorts",
       "LogicOperationalController"
     ],
-    menu_order: 21.0,
+    menu_order: 23.0,
+    dlc: [],
     tags: [
       "JetSuitBlocker"
     ],
@@ -20812,6 +22128,7 @@ export const db = {
       "LightController+Def"
     ],
     menu_order: 5.0,
+    dlc: [],
     tags: [
       "LightSource"
     ],
@@ -20888,6 +22205,7 @@ export const db = {
       "ComplexFabricatorSM"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -20957,6 +22275,7 @@ export const db = {
       "StorageController+Def"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -21014,6 +22333,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 21.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -21073,6 +22393,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 19.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -21138,6 +22459,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Solid",
       "Special"
@@ -21159,6 +22481,78 @@ export const db = {
     decor: 30.0,
     decor_radius: 6.0,
     primary_element: "Unobtanium",
+    deconstructable: true,
+    enableable: true
+  },
+  Telescope: {
+    tag: "Telescope",
+    menu: {
+      category: "building",
+      subCategory: "equipment"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "Telescope",
+      "Storage",
+      "ConduitConsumer",
+      "Repairable",
+      "BuildingConduitEndpoints",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "EnergyConsumer",
+      "RequireInputs",
+      "Floodable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "LogicPorts",
+      "LogicOperationalController",
+      "BuildingCellVisualizer",
+      "Toggleable",
+      "SkyVisibilityVisualizer"
+    ],
+    smdef: [
+      "PoweredController+Def"
+    ],
+    menu_order: 6.0,
+    dlc: [],
+    tags: [
+      "ScienceBuilding"
+    ],
+    thermal_conductivity: 1.0,
+    location_rule: "OnFloor",
+    material_category: [
+      "Metal"
+    ],
+    electrity_consummation: [
+      120.0
+    ],
+    external_heat: 0.125,
+    width: 4,
+    height: 6,
+    hp: 30,
+    high_temp_warning: 348.15,
+    high_temp_fatal: 533.15,
+    mass: 400.0,
+    flood_threshold: 0.35,
     deconstructable: true,
     enableable: true
   },
@@ -21204,6 +22598,7 @@ export const db = {
       "TemporalTearOpener+Def"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Solid",
       "Special"
@@ -21262,6 +22657,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [
       "Backwall"
     ],
@@ -21309,6 +22705,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "FloorTiles"
     ],
@@ -21331,6 +22728,7 @@ export const db = {
       subCategory: "none"
     },
     menu_order: 177013.0,
+    dlc: [],
     thermal_conductivity: 1.0,
     location_rule: "Tile",
     material_category: [
@@ -21340,6 +22738,70 @@ export const db = {
     height: 1,
     mass: 100.0,
     debug: true
+  },
+  TouristModule: {
+    tag: "TouristModule",
+    menu: {
+      category: "building",
+      subCategory: "rocketModule"
+    },
+    components: [
+      "KPrefabID",
+      "KSelectable",
+      "Klei.AI.Modifiers",
+      "PrimaryElement",
+      "BuildingComplete",
+      "StateMachineController",
+      "Deconstructable",
+      "Reconstructable",
+      "SaveLoadRoot",
+      "OccupyArea",
+      "DecorProvider",
+      "Operational",
+      "BuildingEnabledButton",
+      "Prioritizable",
+      "BuildingHP",
+      "LoopingSounds",
+      "InvalidPortReporter",
+      "TouristModule",
+      "CommandModuleWorkable",
+      "ArtifactFinder",
+      "BuildingAttachPoint",
+      "Storage",
+      "MinionStorage",
+      "Repairable",
+      "KBatchedAnimController",
+      "KBoxCollider2D",
+      "BuildingFacade",
+      "Breakable",
+      "AutoDisinfectable",
+      "Disinfectable",
+      "Overheatable",
+      "Structure",
+      "AttachableBuilding",
+      "Toggleable",
+      "RocketModule",
+      "Ownable"
+    ],
+    menu_order: 16.0,
+    dlc: [],
+    tags: [
+      "IndustrialMachinery",
+      "RocketModule"
+    ],
+    thermal_conductivity: 0.1,
+    location_rule: "BuildingAttachPoint",
+    material_category: [
+      "Steel"
+    ],
+    width: 5,
+    height: 5,
+    invincible: true,
+    high_temp_warning: 2273.15,
+    high_temp_fatal: 533.15,
+    mass: 200.0,
+    deconstructable: true,
+    enableable: true
   },
   TravelTube: {
     tag: "TravelTube",
@@ -21373,6 +22835,7 @@ export const db = {
       "KAnimGraphTileVisualizer"
     ],
     menu_order: 24.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "NotInTiles",
@@ -21431,6 +22894,7 @@ export const db = {
       "Toggleable"
     ],
     menu_order: 25.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -21487,6 +22951,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 26.0,
+    dlc: [],
     tags: [
       "TravelTubeBridges"
     ],
@@ -21542,6 +23007,7 @@ export const db = {
       "CritterCondo+Def"
     ],
     menu_order: 23.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -21612,6 +23078,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 3.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -21684,6 +23151,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 17.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -21756,6 +23224,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "ToiletType",
       "FlushToiletType"
@@ -21812,6 +23281,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Solid",
       "Special",
@@ -21870,6 +23340,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 177013.0,
+    dlc: [],
     tags: [
       "Gravitas",
       "Solid",
@@ -21930,6 +23401,7 @@ export const db = {
       "CopyBuildingSettings"
     ],
     menu_order: 0.0,
+    dlc: [],
     tags: [
       "WashStation"
     ],
@@ -22000,6 +23472,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "WashStation",
       "AdvancedWashStation"
@@ -22062,6 +23535,7 @@ export const db = {
       "RocketUsageRestriction+Def"
     ],
     menu_order: 7.0,
+    dlc: [],
     tags: [
       "RecBuilding"
     ],
@@ -22133,6 +23607,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 1.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery",
       "OverlayBackLayer"
@@ -22193,6 +23668,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 9.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "WireBridge",
@@ -22244,6 +23720,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 11.0,
+    dlc: [],
     tags: [
       "WireBridges"
     ],
@@ -22293,6 +23770,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 8.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 0.05,
     location_rule: "Anywhere",
@@ -22339,6 +23817,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 10.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 0.05,
     location_rule: "NotInTiles",
@@ -22387,6 +23866,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 13.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "WireBridge",
@@ -22438,6 +23918,7 @@ export const db = {
       "BuildingCellVisualizer"
     ],
     menu_order: 15.0,
+    dlc: [],
     tags: [
       "WireBridges"
     ],
@@ -22487,6 +23968,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 12.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 0.05,
     location_rule: "Anywhere",
@@ -22531,6 +24013,7 @@ export const db = {
       "Disinfectable"
     ],
     menu_order: 14.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 0.05,
     location_rule: "NotInTiles",
@@ -22593,6 +24076,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -22662,6 +24146,7 @@ export const db = {
       "Lure+Def"
     ],
     menu_order: 21.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -22736,6 +24221,7 @@ export const db = {
       "PoweredActiveController+Def"
     ],
     menu_order: 2.0,
+    dlc: [],
     tags: [
       "IndustrialMachinery"
     ],
@@ -22803,6 +24289,7 @@ export const db = {
       "ReusableTrap+Def"
     ],
     menu_order: 19.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "OnFloor",
@@ -22872,6 +24359,7 @@ export const db = {
       "Lure+Def"
     ],
     menu_order: 20.0,
+    dlc: [],
     tags: [],
     thermal_conductivity: 1.0,
     location_rule: "Anywhere",
@@ -24025,6 +25513,55 @@ export const db = {
     primary_element: "Copper",
     clearable: true,
     default_mass: 900.0
+  },
+  CrushedRock: {
+    tag: "CrushedRock",
+    menu: {
+      category: "element",
+      subCategory: "solid"
+    },
+    components: [
+      "KPrefabID",
+      "PrimaryElement",
+      "Pickupable",
+      "KSelectable",
+      "SaveLoadRoot",
+      "StateMachineController",
+      "Clearable",
+      "Prioritizable",
+      "KBatchedAnimController",
+      "SimTemperatureTransfer",
+      "Klei.AI.Modifiers",
+      "Movable",
+      "OccupyArea",
+      "DecorProvider",
+      "ElementChunk",
+      "KCircleCollider2D"
+    ],
+    menu_order: 15.0,
+    dlc: [
+      "Base",
+      "Space Out"
+    ],
+    tags: [
+      "PedestalDisplayable",
+      "Unstable",
+      "Solid",
+      "BuildableProcessed"
+    ],
+    molar_mass: 50.0,
+    hardness: 10.0,
+    shc: 0.2,
+    strength: 0.7,
+    min_horizontal_flow: 50.0,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 2.0,
+    mass: 1.0,
+    decor: -10.0,
+    decor_radius: 1.0,
+    primary_element: "CrushedRock",
+    clearable: true,
+    default_mass: 1000.0
   },
   SuperInsulator: {
     tag: "SuperInsulator",
@@ -27141,6 +28678,55 @@ export const db = {
     primary_element: "SolidEthanol",
     clearable: true,
     default_mass: 100.0
+  },
+  FoolsGold: {
+    tag: "FoolsGold",
+    menu: {
+      category: "element",
+      subCategory: "solid"
+    },
+    components: [
+      "KPrefabID",
+      "PrimaryElement",
+      "Pickupable",
+      "KSelectable",
+      "SaveLoadRoot",
+      "StateMachineController",
+      "Clearable",
+      "Prioritizable",
+      "KBatchedAnimController",
+      "SimTemperatureTransfer",
+      "Klei.AI.Modifiers",
+      "Movable",
+      "OccupyArea",
+      "DecorProvider",
+      "ElementChunk",
+      "KCircleCollider2D"
+    ],
+    menu_order: 5.0,
+    dlc: [
+      "Base",
+      "Space Out"
+    ],
+    tags: [
+      "PedestalDisplayable",
+      "Ore",
+      "BuildableAny",
+      "Solid",
+      "Metal"
+    ],
+    molar_mass: 95.61,
+    hardness: 25.0,
+    shc: 0.386,
+    strength: 0.7,
+    radiation_absorption_factor: 0.7,
+    thermal_conductivity: 4.5,
+    mass: 1.0,
+    decor: -10.0,
+    decor_radius: 1.0,
+    primary_element: "FoolsGold",
+    clearable: true,
+    default_mass: 800.0
   },
   Aluminum: {
     tag: "Aluminum",
