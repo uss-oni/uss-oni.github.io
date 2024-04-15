@@ -26,7 +26,7 @@ use units::{Degree, Time};
 use wasm_bindgen::prelude::*;
 use web_sys::{console, window, HtmlElement};
 
-struct App {
+pub struct App {
   menu: Menu,
   language: Choice<&'static Language>,
   degree: Choice<Degree>,
@@ -36,33 +36,21 @@ struct App {
 }
 
 impl App {
-  thread_local! {
-    static INSTANCE: OnceCell<Rc<App>> = const { OnceCell::new() };
-  }
-
-  fn init(menu: Menu, language: Choice<&'static Language>, degree: Choice<Degree>, time: Choice<Time>) {
-    Self::INSTANCE.with(|rc| {
-      let document = window().unwrap().document().unwrap();
-      let body = document.body().unwrap().dyn_into::<HtmlElement>().unwrap();
-      let app = App {
-        menu,
-        language,
-        degree,
-        time,
-        document,
-        node: node::Node::from_element(body).into(),
-      };
-      let _ = rc.set(app.into());
-    });
-  }
-
-  fn get() -> Rc<App> {
-    Self::INSTANCE.with(|app| app.get().unwrap().clone())
+  fn new(menu: Menu, language: Choice<&'static Language>, degree: Choice<Degree>, time: Choice<Time>) -> Self {
+    let document = window().unwrap().document().unwrap();
+    let body = document.body().unwrap().dyn_into::<HtmlElement>().unwrap();
+    App {
+      menu,
+      language,
+      degree,
+      time,
+      document,
+      node: node::Node::from_element(body).into(),
+    }
   }
 
   pub fn on_language_update(lang: &Language) {
-    let app = App::get();
-    app.node.borrow().visit_text(&visitor_all(app.degree.value(), app.time.value(), lang));
+//    app.node.borrow().visit_text(&visitor_all(app.degree.value(), app.time.value(), lang));
   }
 
   pub fn on_degree_update(t: Degree) {
@@ -82,14 +70,15 @@ fn main() -> Result<(), JsValue> {
   let degree = Choice::new(Degree::C);
   let time = Choice::new(Time::Second);
   let menu = menu::Menu::new();
-  App::init(menu, language, degree, time);
-  render(&App::get())
+  let app = Rc::new(App::new(menu, language, degree, time));
+  render(&app)
 }
 
-fn render(app: &App) -> Result<(), JsValue> {
+fn render(app: &Rc<App>) -> Result<(), JsValue> {
   let html = std::rc::Rc::new(Renderer::new(app.document.clone()));
-  let menu = app.menu.render(html.clone(), html.div_id("menu"));
-  let options = html.div_id("options")
+  let menu = app.menu.render(html.clone(), html.div_id("menu"), app.clone());
+  let options = html
+    .div_id("options")
     .child(app.degree.render(html.clone(), App::on_degree_update))
     .child(app.time.render(html.clone(), App::on_time_update))
     .child(app.language.render(html.clone(), App::on_language_update));

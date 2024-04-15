@@ -1,3 +1,5 @@
+use std::rc::Rc;
+
 use web_sys::HtmlDivElement;
 
 use crate::{
@@ -5,7 +7,7 @@ use crate::{
   entity::Entity,
   html::display_properties,
   lang::Text,
-  node::{Node, NodeRef, Renderer},
+  node::{Node, NodeRef, Renderer}, App,
 };
 
 struct Item {
@@ -73,14 +75,14 @@ impl SubCategory {
 }
 
 impl Menu {
-  pub fn render(&self, html: std::rc::Rc<Renderer>, node: Node) -> Node {
+  pub fn render(&self, html: std::rc::Rc<Renderer>, node: Node, app: Rc<App>) -> Node {
     let current = NodeRef::<HtmlDivElement>::new();
-    node.children(&self.categories, |cat| cat.render(html.clone(), current.clone()))
+    node.children(&self.categories, |cat| cat.render(html.clone(), current.clone(), app.clone()))
   }
 }
 
 impl Category {
-  pub fn render(&self, html: std::rc::Rc<Renderer>, chosen: NodeRef<HtmlDivElement>) -> Node {
+  pub fn render(&self, html: std::rc::Rc<Renderer>, chosen: NodeRef<HtmlDivElement>, app: Rc<App>) -> Node {
     let chosen_clone = chosen.clone();
     let mut current = NodeRef::<HtmlDivElement>::new();
     let current_clone = current.clone();
@@ -94,7 +96,7 @@ impl Category {
         chosen_clone.set(&current_clone.get());
       })
       .child(html.div("menuCategoryChoice").text(self.name))
-      .child(html.div("menuContainer").children(&self.sub_categories, |sub| sub.render(html.clone())));
+      .child(html.div("menuContainer").children(&self.sub_categories, |sub| sub.render(html.clone(), app.clone())));
 
     if !chosen.initialized() {
       chosen.set(&current.get());
@@ -105,7 +107,7 @@ impl Category {
 }
 
 impl SubCategory {
-  fn render(&self, html: std::rc::Rc<Renderer>) -> Node {
+  fn render(&self, html: std::rc::Rc<Renderer>, app: Rc<App>) -> Node {
     let mut category = NodeRef::<HtmlDivElement>::new();
     html
       .div("menuSubcategory")
@@ -124,8 +126,9 @@ impl SubCategory {
             let entity = item.entity;
             let html = html.clone();
             let category = category.clone();
+            let app = app.clone();
             move |_| {
-              display_properties(entity);
+              display_properties(entity, &app);
               let _ = category.get().style().set_property("display", "none");
               let category = category.clone();
               html.wait(100, move || category.get().remove_attribute("style").unwrap())

@@ -15,8 +15,7 @@ pub use recipe::*;
 
 use web_sys::{HtmlDivElement, HtmlElement, HtmlImageElement};
 
-pub fn display_properties(entity: &'static Entity) {
-  let binding = App::get();
+pub fn display_properties(entity: &'static Entity, binding: &App) {
   let document = &binding.document;
   get_element_by_id(document, "desc").set_text(entity.desc());
   document.get_element::<HtmlImageElement>("descimg").set_src(&entity.img().path());
