@@ -15,7 +15,6 @@ use node::Node;
 use node::NodeText;
 use node::Renderer;
 use std::borrow::Cow;
-use std::cell::OnceCell;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -49,8 +48,8 @@ impl App {
     }
   }
 
-  pub fn on_language_update(lang: &Language) {
-//    app.node.borrow().visit_text(&visitor_all(app.degree.value(), app.time.value(), lang));
+  pub fn on_language_update(node: &Node, lang: &Language, degree: Degree, time: Time) {
+   node.visit_text(&visitor_all(degree, time, lang));
   }
 
   pub fn on_degree_update(t: Degree) {
@@ -81,7 +80,10 @@ fn render(app: &Rc<App>) -> Result<(), JsValue> {
     .div_id("options")
     .child(app.degree.render(html.clone(), App::on_degree_update))
     .child(app.time.render(html.clone(), App::on_time_update))
-    .child(app.language.render(html.clone(), App::on_language_update));
+    .child(app.language.render(html.clone(), {
+      let app = app.clone();
+      move |lang| App::on_language_update(&app.node.borrow(), lang, app.degree.value(), app.time.value())
+    }));
   let body = node::Node::from_element(app.document.body().unwrap());
 
   *app.node.borrow_mut() = body.child(menu).child(options);

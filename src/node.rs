@@ -1,4 +1,4 @@
-use std::{borrow::Cow, cell::{Ref, RefCell}, marker::PhantomData, ops::Deref, rc::Rc};
+use std::{borrow::Cow, cell::{Ref, RefCell}, rc::Rc};
 
 use wasm_bindgen::closure::Closure;
 use wasm_bindgen::JsCast;
