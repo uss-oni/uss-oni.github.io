@@ -1,4 +1,4 @@
-use std::{borrow::Cow, cell::OnceCell, ops::Deref, rc::Rc};
+use std::{borrow::Cow, cell::{Ref, RefCell}, marker::PhantomData, ops::Deref, rc::Rc};
 
 use wasm_bindgen::closure::Closure;
 use wasm_bindgen::JsCast;
@@ -168,7 +168,7 @@ impl Node {
   where
     T: wasm_bindgen::JsCast,
   {
-    let _ = r.element.set(self.element.clone().dyn_into().unwrap());
+    *r.element.borrow_mut() = Some(self.element.clone().dyn_into().unwrap());
     self
   }
 
@@ -196,27 +196,34 @@ impl Node {
   pub fn from_element(element: HtmlElement) -> Node {
     Node {
       nodes: vec![],
-      element: element,
+      element,
       text: None,
       closure: vec![],
     }
   }
 }
 
+#[derive(Clone)]
 pub struct NodeRef<T> {
-  element: Rc<OnceCell<T>>,
+  pub element: Rc<RefCell<Option<T>>>
 }
 
-impl<T> NodeRef<T> {
+impl<T> NodeRef<T>
+where T: Clone {
   pub fn new() -> Self {
-    Self { element: OnceCell::new().into() }
+    Self { element: RefCell::new(None).into() }
   }
-}
 
-impl<T> Deref for NodeRef<T> {
-  type Target = T;
+  pub fn initialized(&self) -> bool {
+    self.element.borrow().is_some()
+  }
 
-  fn deref(&self) -> &Self::Target {
-    &self.element.get().unwrap()
+  pub fn set(&self, t: &T) {
+    *self.element.borrow_mut() = Some(t.clone());
+  }
+
+  pub fn get(&self) -> Ref<'_, T>
+  {
+    Ref::map(self.element.borrow(), |e| e.as_ref().unwrap())
   }
 }

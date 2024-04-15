@@ -103,10 +103,10 @@ impl Line<'_> {
   }
 
   pub fn label(&self, text: Text) -> &Line {
-    let lang = App::get().language.value();
+   // let lang = App::get().language.value();
     let datas = text.tag();
     let t = self.container.add_div(Some("propLabel"));
-    t.set_inner_text(lang.to_str(text));
+   // t.set_inner_text(lang.to_str(text));
     t.dataset().set(datas.0, &datas.1.to_string()).unwrap();
     self
   }

@@ -20,11 +20,11 @@ use std::cell::RefCell;
 use std::rc::Rc;
 
 use choice::Choice;
-use lang::{Language, Text};
+use lang::Language;
 use menu::Menu;
 use units::{Degree, Time};
 use wasm_bindgen::prelude::*;
-use web_sys::{console, window, HtmlDivElement, HtmlElement};
+use web_sys::{console, window, HtmlElement};
 
 struct App {
   menu: Menu,
@@ -62,29 +62,7 @@ impl App {
 
   pub fn on_language_update(lang: &Language) {
     let app = App::get();
-    let document = &app.document;
-    let list = document.query_selector_all("[data-ui]").unwrap();
-    for i in 0..list.length() {
-      let item = list.item(i).unwrap();
-      let text = Text::get("ui", item.dyn_ref::<HtmlElement>().unwrap().dataset().get("ui").unwrap().parse().unwrap());
-      item.set_text_content(Some(lang.to_str(text)));
-    }
-    let list = document.query_selector_all("[data-game]").unwrap();
-    for i in 0..list.length() {
-      let item = list.item(i).unwrap();
-      let text = Text::get("game", item.dyn_ref::<HtmlElement>().unwrap().dataset().get("game").unwrap().parse().unwrap());
-      item.set_text_content(Some(lang.to_str(text)));
-    }
-    let list = document.query_selector_all("[data-desc]").unwrap();
-    for i in 0..list.length() {
-      let item = list.item(i).unwrap().dyn_into::<HtmlDivElement>().unwrap();
-      let text = Text::get("desc", item.dyn_ref::<HtmlElement>().unwrap().dataset().get("desc").unwrap().parse().unwrap());
-      item.replace_children_with_node_0();
-      let div: HtmlDivElement = document.create_element("div").unwrap().dyn_into().unwrap();
-      let _ = item.append_child(&div);
-      div.set_outer_html(lang.to_str(text));
-    }
-    app.node.borrow().visit_text(&visitor_all(app.degree.value(), app.time.value(), &app.language.value()));
+    app.node.borrow().visit_text(&visitor_all(app.degree.value(), app.time.value(), lang));
   }
 
   pub fn on_degree_update(t: Degree) {

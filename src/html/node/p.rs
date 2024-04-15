@@ -38,8 +38,8 @@ impl P {
   }
 
   pub fn add_text(&self, text: Text) -> &Self {
-    let lang = App::get().language.value();
-    self.node.set_text_content(Some(lang.to_str(text).to_lowercase().as_str()));
+   // let lang = App::get().language.value();
+   // self.node.set_text_content(Some(lang.to_str(text).to_lowercase().as_str()));
     let datas = text.tag();
     let _ = self.node.dataset().set(datas.0, &datas.1.to_string());
     self

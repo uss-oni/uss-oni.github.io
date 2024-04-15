@@ -1,12 +1,11 @@
 use web_sys::HtmlDivElement;
 
 use crate::{
-  category::{self, *},
+  category,
   entity::Entity,
   html::display_properties,
   lang::Text,
   node::{Node, NodeRef, Renderer},
-  App,
 };
 
 struct Item {
@@ -24,8 +23,7 @@ struct Category {
 }
 
 pub struct Menu {
-  categories: Vec<Category>,
-  pub current_category_idx: usize,
+  categories: Vec<Category>
 }
 
 impl Default for Menu {
@@ -37,8 +35,21 @@ impl Default for Menu {
 impl Menu {
   pub fn new() -> Self {
     Self {
-      categories: Vec::from([&element, &building, &food, &critter, &plant, &geyser, &space, &equipment, &artifact, &misc].map(Category::new)),
-      current_category_idx: 0,
+      categories: Vec::from(
+        [
+          &category::element,
+          &category::building,
+          &category::food,
+          &category::critter,
+          &category::plant,
+          &category::geyser,
+          &category::space,
+          &category::equipment,
+          &category::artifact,
+          &category::misc,
+        ]
+        .map(Category::new),
+      )
     }
   }
 }
@@ -63,24 +74,33 @@ impl SubCategory {
 
 impl Menu {
   pub fn render(&self, html: std::rc::Rc<Renderer>, node: Node) -> Node {
-    node.children(&self.categories, |cat| cat.render(html.clone()))
+    let current = NodeRef::<HtmlDivElement>::new();
+    node.children(&self.categories, |cat| cat.render(html.clone(), current.clone()))
   }
 }
 
 impl Category {
-  pub fn render(&self, html: std::rc::Rc<Renderer>) -> Node {
+  pub fn render(&self, html: std::rc::Rc<Renderer>, chosen: NodeRef<HtmlDivElement>) -> Node {
+    let chosen_clone = chosen.clone();
     let mut current = NodeRef::<HtmlDivElement>::new();
-    html
+    let current_clone = current.clone();
+
+    let node = html
       .div("menuCategory")
       .get_ref(&mut current)
       .on_mouseenter(move |_| {
-        if let Some(div) = App::get().document.get_element_by_id("menuChosen") {
-          let _ = div.remove_attribute("id");
-        }
-        current.set_id("menuChosen");
+        let _ = chosen_clone.get().remove_attribute("id");
+        current_clone.get().set_id("menuChosen");
+        chosen_clone.set(&current_clone.get());
       })
       .child(html.div("menuCategoryChoice").text(self.name))
-      .child(html.div("menuContainer").children(&self.sub_categories, |sub| sub.render(html.clone())))
+      .child(html.div("menuContainer").children(&self.sub_categories, |sub| sub.render(html.clone())));
+
+    if !chosen.initialized() {
+      chosen.set(&current.get());
+      chosen.get().set_id("menuChosen");
+    }
+    node
   }
 }
 
@@ -106,9 +126,9 @@ impl SubCategory {
             let category = category.clone();
             move |_| {
               display_properties(entity);
-              let _ = category.style().set_property("display", "none");
+              let _ = category.get().style().set_property("display", "none");
               let category = category.clone();
-              html.wait(100, move || category.remove_attribute("style").unwrap())
+              html.wait(100, move || category.get().remove_attribute("style").unwrap())
             }
           })
       }))

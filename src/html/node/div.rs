@@ -81,9 +81,9 @@ impl<'a> Div<'a> {
   }
 
   pub fn add_text(&self, text: Text) -> &Self {
-    let lang = App::get().language.value();
+   // let lang = App::get().language.value();
     let div:HtmlDivElement = self.document.create_element("div").unwrap().dyn_into().unwrap();
-    div.set_inner_text(lang.to_str(text));
+   // div.set_inner_text(lang.to_str(text));
     let datas = text.tag();
     let _ = div.dataset().set(datas.0, &datas.1.to_string());
     let _ = self.node.append_child(&div);
@@ -91,11 +91,11 @@ impl<'a> Div<'a> {
   }
 
   pub fn set_text(self, text: Text) -> Self {
-    let lang = App::get().language.value();
+   // let lang = App::get().language.value();
     self.node.replace_children_with_node_0();
     let div:HtmlDivElement = self.document.create_element("div").unwrap().dyn_into().unwrap();
     let _ = self.node.append_child(&div);
-    div.set_outer_html(lang.to_str(text));
+   // div.set_outer_html(lang.to_str(text));
     let datas = text.tag();
     let _ = self.node.dataset().set(datas.0, &datas.1.to_string());
     self
