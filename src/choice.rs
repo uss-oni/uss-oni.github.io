@@ -1,6 +1,6 @@
 use std::{cell::Cell, rc::Rc, str::FromStr};
 
-use crate::html::{option, select, HtmlState, Img, Input, Render, Select};
+use crate::html::{option, select, HtmlState, Input, Render, Select};
 
 pub struct Choice<T> {
   choice: Rc<Cell<T>>,
@@ -17,11 +17,10 @@ where
   T: FromStr + 'static + Copy + Choices
 {
   pub fn new(choice: T) -> Self {
-    let ret = Self {
+    Self {
       choice: Rc::new(choice.into()),
       state: Default::default()
-    };
-    ret
+    }
   }
 
   pub fn value(&self) -> T {
@@ -36,12 +35,12 @@ where
   type Node = Select;
 
   fn render(self) -> Self::Node {
-    let choices:Vec<_> = T::choices().iter().map(|(value, name)| {
+    let choices:Vec<_> = T::choices().iter().map(|(value, _name)| {
       option().set_value(value).text()}).collect();
     select()
       .children(choices)
-      .on_event(|msg: Input, target| {
-        let choice = target.value();
+      .on_event(|_: Input, _target| {
+        //let choice = target.value();
         //clone.set(choice.parse().unwrap_throw());
         //send(choice);
       })

@@ -1,10 +1,8 @@
-use std::cell::OnceCell;
-
 use crate::{
   category,
   entity::Entity,
-  html::{self, div, p, wait, Div, HtmlState, MouseClick, MouseEnter, Render},
-  lang::{self, Text},
+  html::{div, p, wait, Div, HtmlState, MouseClick, MouseEnter, Render},
+  lang::Text,
 };
 
 pub mod event {
@@ -14,9 +12,9 @@ pub mod event {
     phantom: PhantomData<T>,
   }
 
-  pub fn recv<T, F>(f: F) -> Receiver<T>
+  pub fn recv<T, F>(_f: F) -> Receiver<T>
   where
-    F: Fn(&T) -> (),
+    F: Fn(&T),
   {
     Receiver {
       phantom: PhantomData,
@@ -24,29 +22,22 @@ pub mod event {
   }
 }
 
-fn send<T>(msg: T) {}
+fn send<T>(_msg: T) {}
 
 enum Msg {
   Hide,
   Unhide,
 }
 
-struct Lang {}
-
-struct UpdatableText {
-  text: lang::Game,
-  node: html::Text,
-  update: event::Receiver<Lang>,
-}
 struct Item {
-  entity: &'static Entity,
+  _entity: &'static Entity,
   state: HtmlState,
 }
 
 impl Item {
   pub fn new(entity: &'static Entity) -> Self {
     Self {
-      entity,
+      _entity: entity,
       state: Default::default(),
     }
   }
@@ -56,12 +47,11 @@ impl Render for &Item {
   type Node = Div;
 
   fn render(self) -> Self::Node {
-    let b: Option<()> = None;
     div()
       .class("boxContainer")
       .child(div().class("boxBorder"))
       .child(div().child(div().child(p().text().hyphens())))
-      .on_event(|event: MouseClick, _| {
+      .on_event(|_: MouseClick, _| {
         send(Msg::Hide);
         wait(100, || send(Msg::Unhide)); // Y a p't'etre mieux comme technique :|
       })
@@ -70,13 +60,13 @@ impl Render for &Item {
 }
 
 struct SubCategory {
-  name: Text,
+  _name: Text,
   items: Vec<Item>,
-  state: HtmlState,
+  _state: HtmlState,
 }
 
 struct Category {
-  name: Text,
+  _name: Text,
   sub_categories: Vec<SubCategory>,
   state: HtmlState,
 }
@@ -116,7 +106,7 @@ impl Menu {
 impl Category {
   fn new(cat: &category::Category) -> Category {
     Self {
-      name: cat.ui,
+      _name: cat.ui,
       sub_categories: Vec::from_iter(cat.sub_categories.iter().map(SubCategory::new)),
       state: Default::default(),
     }
@@ -129,9 +119,9 @@ impl SubCategory {
     sorted.sort_by(|a, b| a.order.total_cmp(&b.order));
     let items = sorted.iter().map(|i| Item::new(i)).collect();
     Self {
-      name: sub.ui,
+      _name: sub.ui,
       items,
-      state: Default::default(),
+      _state: Default::default(),
     }
   }
 }
@@ -152,7 +142,7 @@ impl Render for &Category {
       .class("menuCategory")
       .child(div().class("menuCategoryChoice").text())
       .child(div().class("menuContainer").children(&self.sub_categories))
-      .on_event(|event: MouseEnter, div| {
+      .on_event(|_: MouseEnter, div| {
         send(RemoveChosen {});
         div.set_id("menuChosen");
         //target.on_once(|msg: RemoveChosen, &target| target.remove_attribute("id"))

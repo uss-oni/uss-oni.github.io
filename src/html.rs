@@ -128,7 +128,7 @@ where
     let _ = self
       .element
       .unchecked_ref::<HtmlElement>()
-      .append_child(&node.element.as_ref());
+      .append_child(node.element.as_ref());
     self
   }
 
@@ -170,12 +170,12 @@ where
       let _ = self
         .element
         .unchecked_ref::<HtmlElement>()
-        .append_child(&node.element.as_ref());
+        .append_child(node.element.as_ref());
     }
     self
   }
 
-  pub fn on_event<F: Fn(U, &NodeStateless<T>) -> () + 'static, U: Event>(
+  pub fn on_event<F: Fn(U, &NodeStateless<T>) + 'static, U: Event>(
     self,
     f: F,
   ) -> Node<T, (Closure<dyn Fn(U::Inner)>, State)>
@@ -189,13 +189,13 @@ where
     let closure: Closure<dyn Fn(U::Inner) + 'static> =
       Closure::new(move |u| f(U::from_inner(u), &clone));
     U::set(
-      &self.element.unchecked_ref(),
+      self.element.unchecked_ref(),
       Some(closure.as_ref().unchecked_ref()),
     );
     self.add_state(closure)
   }
 
-  pub fn on_msg<F: Fn(U, &Self), U>(self, f: F) -> Self {
+  pub fn on_msg<F: Fn(U, &Self), U>(self, _f: F) -> Self {
     self
   }
 
@@ -208,7 +208,7 @@ where
 
   pub fn new(tag: &'static str) -> NodeStateless<T> {
     NodeStateless::<T> {
-      element: document().create_element(&tag).unwrap().dyn_into().unwrap(),
+      element: document().create_element(tag).unwrap().dyn_into().unwrap(),
       state: (),
     }
   }
@@ -330,7 +330,7 @@ pub struct Ref<T> {
 impl<T> Ref<T> {
   pub fn new() -> Self {
     Self {
-      element: None.into(),
+      element: None,
     }
   }
 
@@ -350,8 +350,8 @@ impl<T> Deref for Ref<T> {
   type Target = T;
 
   fn deref(&self) -> &Self::Target {
-    &*self.element.as_ref().unwrap()
+    self.element.as_ref().unwrap()
   }
 }
 
-pub fn wait<F>(time: i32, f: F) {}
+pub fn wait<F>(_time: i32, _f: F) {}
