@@ -30,6 +30,8 @@ features = [
   'CssStyleDeclaration',
   'Event',
   'EventTarget',
+  'MouseEvent',
+  'InputEvent',
   'Node',
   'Window',
 ]

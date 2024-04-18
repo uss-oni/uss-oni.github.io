@@ -1,6 +1,6 @@
 use web_sys::{HtmlElement, HtmlParagraphElement};
 
-use crate::{lang::Text, App};
+use crate::lang::Text;
 
 use super::*;
 

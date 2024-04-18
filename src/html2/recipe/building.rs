@@ -1,5 +1,5 @@
 use crate::db::recipe::*;
-use crate::html::*;
+use crate::html2::*;
 
 pub fn get_construction_materials(entity: &Entity) -> Vec<&Building> {
   recipes

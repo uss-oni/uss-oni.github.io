@@ -1,14 +1,10 @@
 use std::{cell::Cell, rc::Rc, str::FromStr};
 
-use std::fmt::Debug;
-
-use wasm_bindgen::{JsCast, JsValue};
-use web_sys::HtmlSelectElement;
-
-use crate::node::{Html, Node};
+use crate::html::{option, select, HtmlState, Img, Input, Render, Select};
 
 pub struct Choice<T> {
   choice: Rc<Cell<T>>,
+  state: HtmlState
 }
 
 pub trait Choices {
@@ -18,11 +14,14 @@ pub trait Choices {
 
 impl<T> Choice<T>
 where
-  T: FromStr + 'static + Copy + Choices,
-  <T as FromStr>::Err: Debug,
+  T: FromStr + 'static + Copy + Choices
 {
   pub fn new(choice: T) -> Self {
-    Self { choice: Rc::new(choice.into()) }
+    let ret = Self {
+      choice: Rc::new(choice.into()),
+      state: Default::default()
+    };
+    ret
   }
 
   pub fn value(&self) -> T {
@@ -30,26 +29,22 @@ where
   }
 }
 
-impl<T> Choice<T>
+impl<T> Render for &Choice<T>
 where
-  T: Choices + std::str::FromStr + Copy + 'static,
+  T: Choices,
 {
-  pub fn render<'a, U>(&'a self, html: &'a Html<'a>, f: U) -> Result<Node<'a>, JsValue>
-  where
-    U: Fn() + 'static,
-    <T as FromStr>::Err: Debug,
-    wasm_bindgen::JsValue: From<<T as FromStr>::Err>
-  {
-    let clone = self.choice.clone();
-    Ok(
-      html
-        .select(T::name())?
-        .children(&T::choices(), |(value, name)| Ok(html.option(value)?.text(*name)?))?
-        .on_input(move |event: web_sys::Event| {
-          let choice = &event.target().ok_or(concat!(file!(), line!()))?.dyn_into::<HtmlSelectElement>()?.value();
-          clone.set(choice.parse()?);
-          Ok(f())
-        }),
-    )
+  type Node = Select;
+
+  fn render(self) -> Self::Node {
+    let choices:Vec<_> = T::choices().iter().map(|(value, name)| {
+      option().set_value(value).text()}).collect();
+    select()
+      .children(choices)
+      .on_event(|msg: Input, target| {
+        let choice = target.value();
+        //clone.set(choice.parse().unwrap_throw());
+        //send(choice);
+      })
+      .store_state(&self.state)
   }
 }

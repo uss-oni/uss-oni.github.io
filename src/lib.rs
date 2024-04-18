@@ -4,17 +4,20 @@ pub mod db;
 pub mod dlc;
 pub mod entity;
 pub mod html;
+pub mod html2;
 pub mod icon;
 pub mod lang;
 pub mod menu;
-pub mod node;
+pub mod nodeuu;
 pub mod text_node;
 pub mod units;
 
-use node::NodeText;
-use node::Html;
-use node::State;
-use node::TextElement;
+use html::body;
+use html::div;
+use html::Body;
+use nodeuu::NodeText;
+use nodeuu::State;
+use nodeuu::TextElement;
 use std::borrow::Cow;
 use std::rc::Rc;
 
@@ -23,7 +26,7 @@ use lang::Language;
 use menu::Menu;
 use units::{Degree, Time};
 use wasm_bindgen::prelude::*;
-use web_sys::{console, window};
+use web_sys::window;
 
 pub struct Options {
   language: Choice<&'static Language>,
@@ -46,24 +49,16 @@ pub struct App {
 impl App {
   fn new(menu: Menu, options: Rc<Options>) -> Result<Self, JsValue> {
     let document = window().ok_or(concat!(file!(), line!()))?.document().ok_or(concat!(file!(), line!()))?;
-    Ok(App {
-      menu,
-      options,
-      document,
-    })
+    Ok(App { menu, options, document })
   }
 
   pub fn on_language_update(node: &[TextElement], options: &Options) {
     //node.visit_text(&visitor_all(degree, time, lang));
   }
 
-  pub fn on_degree_update(node: &[TextElement], options: &Options) {
+  pub fn on_degree_update(node: &[TextElement], options: &Options) {}
 
-  }
-
-  pub fn on_time_update(node: &[TextElement], options: &Options) {
-
-  }
+  pub fn on_time_update(node: &[TextElement], options: &Options) {}
 }
 
 #[wasm_bindgen(start)]
@@ -100,32 +95,21 @@ fn render(app: Rc<App>, options: Rc<Options>) -> Result<(), JsValue> {
     let options = options.clone();
     move |text: &_| writer(text, &options)
   };
-  let html = Rc::new(Html::new(
-    app.document.clone(),
-    &write,
-    &state,
-  ));
-  let menu = app.menu.render(&html, html.div_id("menu")?, app.clone())?;
-  let options_div = html
-    .div_id("options")?
-    .child(options.degree.render(&html, {
-      let state = state.clone();
-      let options = options.clone();
-      move || visit_all(&state, &options)
-    })?)
-    .child(options.time.render(&html, {
-      let state = state.clone();
-      let options = options.clone();
-      move || visit_all(&state, &options)
-    })?)
-    .child(options.language.render(&html, {
-      let state = state.clone();
-      let options = options.clone();
-      move || visit_all(&state, &options)
-    })?);
-  let body = node::Node::from_element(&html, app.document.body().ok_or(concat!(file!(), line!()))?);
+  //  let menu = app.menu.render(&html, html.div_id("menu")?, app.clone())?;
+  let body: Body = body().into();
+  let body = body.child(
+    div()
+      .class("options")
+      .child(&options.degree)
+      .child(&options.time)
+      .child(&options.language)
+  );
+  
+  //let body = nodeuu::Node::from_element(&html, app.document.body().ok_or(concat!(file!(), line!()))?);
 
-  body.child(menu).child(options_div);
+  let body = body.child(app.menu.render()); //.child(options_div);
+
   visit_all(&state, &options);
+  std::mem::forget(Box::new(app.clone()));
   Ok(())
 }

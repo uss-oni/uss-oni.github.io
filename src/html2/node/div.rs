@@ -1,4 +1,4 @@
-use crate::{icon, lang::Text, App};
+use crate::{icon, lang::Text};
 use web_sys::{Document, HtmlDivElement, HtmlElement};
 
 use super::*;

@@ -1,5 +1,5 @@
 use crate::db::recipe::*;
-use crate::html::*;
+use crate::html2::*;
 use crate::icon;
 
 pub fn display_phases(container: &HtmlElement, entity: &Entity) {

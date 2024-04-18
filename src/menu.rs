@@ -1,29 +1,84 @@
-use std::rc::Rc;
-
-use wasm_bindgen::JsValue;
-use web_sys::HtmlDivElement;
+use std::cell::OnceCell;
 
 use crate::{
   category,
   entity::Entity,
-  html::display_properties,
-  lang::Text,
-  node::{Html, Node, NodeRef},
-  App,
+  html::{self, div, p, wait, Div, HtmlState, MouseClick, MouseEnter, Render},
+  lang::{self, Text},
 };
 
+pub mod event {
+  use std::marker::PhantomData;
+
+  pub struct Receiver<T> {
+    phantom: PhantomData<T>,
+  }
+
+  pub fn recv<T, F>(f: F) -> Receiver<T>
+  where
+    F: Fn(&T) -> (),
+  {
+    Receiver {
+      phantom: PhantomData,
+    }
+  }
+}
+
+fn send<T>(msg: T) {}
+
+enum Msg {
+  Hide,
+  Unhide,
+}
+
+struct Lang {}
+
+struct UpdatableText {
+  text: lang::Game,
+  node: html::Text,
+  update: event::Receiver<Lang>,
+}
 struct Item {
-  pub entity: &'static Entity,
+  entity: &'static Entity,
+  state: HtmlState,
+}
+
+impl Item {
+  pub fn new(entity: &'static Entity) -> Self {
+    Self {
+      entity,
+      state: Default::default(),
+    }
+  }
+}
+
+impl Render for &Item {
+  type Node = Div;
+
+  fn render(self) -> Self::Node {
+    let b: Option<()> = None;
+    div()
+      .class("boxContainer")
+      .child(div().class("boxBorder"))
+      .child(div().child(div().child(p().text().hyphens())))
+      .on_event(|event: MouseClick, _| {
+        send(Msg::Hide);
+        wait(100, || send(Msg::Unhide)); // Y a p't'etre mieux comme technique :|
+      })
+      .store_state(&self.state)
+  }
 }
 
 struct SubCategory {
   name: Text,
   items: Vec<Item>,
+  state: HtmlState,
 }
 
 struct Category {
   name: Text,
   sub_categories: Vec<SubCategory>,
+  state: HtmlState,
 }
 
 pub struct Menu {
@@ -63,6 +118,7 @@ impl Category {
     Self {
       name: cat.ui,
       sub_categories: Vec::from_iter(cat.sub_categories.iter().map(SubCategory::new)),
+      state: Default::default(),
     }
   }
 }
@@ -71,74 +127,51 @@ impl SubCategory {
   fn new(sub: &&category::SubCategory) -> SubCategory {
     let mut sorted: Vec<_> = sub.items.iter().collect();
     sorted.sort_by(|a, b| a.order.total_cmp(&b.order));
-    let items = sorted.iter().map(|i| Item { entity: i }).collect();
-    Self { name: sub.ui, items }
+    let items = sorted.iter().map(|i| Item::new(i)).collect();
+    Self {
+      name: sub.ui,
+      items,
+      state: Default::default(),
+    }
   }
 }
 
 impl Menu {
-  pub fn render<'a>(&'a self, html: &'a Html<'a>, node: Node<'a>, app: Rc<App>) -> Result<Node<'a>, JsValue> {
-    let current = Rc::new(NodeRef::<HtmlDivElement>::new());
-    Ok(node.children(&self.categories, |cat| Ok(cat.render(html, current.clone(), app.clone())?))?)
+  pub fn render(&self) -> Div {
+    div().class("menu").children(&self.categories)
   }
 }
 
-impl Category {
-  pub fn render<'a>(&'a self, html: &'a Html<'a>, chosen: Rc<NodeRef<HtmlDivElement>>, app: Rc<App>) -> Result<Node<'a>, JsValue> {
-    let chosen_clone = chosen.clone();
-    let mut current = Rc::new(NodeRef::<HtmlDivElement>::new());
-    let current_clone = current.clone();
+struct RemoveChosen {}
 
-    let node = html
-      .div("menuCategory")?
-      .get_ref(&mut current)?
-      .on_mouseenter(move |_| {
-        let _ = chosen_clone.get()?.remove_attribute("id");
-        current_clone.get()?.set_id("menuChosen");
-        chosen_clone.set(current_clone.get()?);
-        Ok(())
+impl Render for &Category {
+  type Node = Div;
+
+  fn render(self) -> Div {
+    div()
+      .class("menuCategory")
+      .child(div().class("menuCategoryChoice").text())
+      .child(div().class("menuContainer").children(&self.sub_categories))
+      .on_event(|event: MouseEnter, div| {
+        send(RemoveChosen {});
+        div.set_id("menuChosen");
+        //target.on_once(|msg: RemoveChosen, &target| target.remove_attribute("id"))
       })
-      .child(html.div("menuCategoryChoice")?.text(self.name)?)
-      .child(html.div("menuContainer")?.children(&self.sub_categories, |sub| sub.render(html, app.clone()))?);
-
-    if !chosen.initialized() {
-      chosen.set(current.get()?);
-      chosen.get()?.set_id("menuChosen");
-    }
-    Ok(node)
+      .store_state(&self.state)
   }
 }
 
-impl SubCategory {
-  fn render<'a>(&'a self, html: &'a Html<'a>, app: Rc<App>) -> Result<Node, JsValue> {
-    let category = Rc::new(NodeRef::<HtmlDivElement>::new());
-    Ok(
-      html
-        .div("menuSubcategory")?
-        .child(html.div("menuChoice")?.text(self.name)?)
-        .child(html.div("category")?.get_ref(&category)?.children(&self.items, |item| {
-          Ok(html
-            .div("boxContainer")?
-            .child(html.div("boxBorder")?)
-            .child(
-              html
-                .div("box")?
-                .child(html.img(item.entity.img())?)
-                .child(html.div("align")?.child(html.p()?.text(item.entity.name())?.set_hyphens())),
-            )
-            .on_click({
-              let entity = item.entity;
-              let category = category.clone();
-              let app = app.clone();
-              move |_| {
-                //display_properties(entity, &app);
-                let _ = category.get()?.style().set_property("display", "none");
-                let category = category.clone();
-                Html::wait(100, move || category.get()?.remove_attribute("style"))?; // Y a p't'etre mieux comme technique :|
-                Ok(())
-              }
-            }))
-        })?),
-    )
+impl Render for &SubCategory {
+  type Node = Div;
+
+  fn render(self) -> Div {
+    div()
+      .class("menuSubcategory")
+      .child(div().class("menuChoice").text())
+      .child(div().class("category").children(&self.items))
+      .on_msg(|msg: Msg, div| match msg {
+        Msg::Hide => div.style().set_property("display", "none").unwrap(),
+        Msg::Unhide => div.remove_attribute("style").unwrap(),
+      })
   }
 }

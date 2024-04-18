@@ -7,7 +7,7 @@ use super::document::ExtendHtml;
 use crate::entity::{Entity, EntityImage};
 use crate::icon::{self, Image};
 use crate::lang::{self, Text};
-use crate::{units::*, App};
+use crate::units::*;
 
 pub struct Line<'a> {
   container: &'a HtmlElement,
