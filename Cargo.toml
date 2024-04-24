@@ -9,6 +9,7 @@ crate-type = ["cdylib"]
 [dependencies]
 console_error_panic_hook = "0.1.7"
 wasm-bindgen = "*"
+slotmap = "1.0"
 
 [dependencies.web-sys]
 version = "*"
@@ -32,6 +33,8 @@ features = [
   'EventTarget',
   'MouseEvent',
   'InputEvent',
+  'HashChangeEvent',
+  'History',
   'Node',
   'Window',
 ]

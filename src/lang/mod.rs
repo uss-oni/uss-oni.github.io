@@ -10,7 +10,7 @@ use std::{mem::transmute, str::FromStr};
 pub use game::Game;
 pub use ui::Ui;
 
-use crate::{choice::Choices, db};
+use crate::db;
 
 pub const PROPERTY_MOLAR_MASS: Text = Text::Ui(Ui::PropertyMolarMass);
 pub const PROPERTY_SHC: Text = Text::Ui(Ui::PropertySHC);
@@ -81,7 +81,7 @@ impl Text {
 #[derive(Clone, Copy)]
 pub struct Language {
   pub name: &'static str,
-  flag: &'static str,
+  pub flag: &'static str,
   game: fn(game: Game) -> &'static str,
   desc: fn(game: Game) -> &'static str,
   ui: fn(ui: Ui) -> &'static str,
@@ -97,20 +97,10 @@ impl Language {
   }
 }
 
-impl FromStr for &Language {
+impl FromStr for Language {
   type Err = &'static str;
 
   fn from_str(s: &str) -> Result<Self, Self::Err> {
-    LIST.iter().find(|p| p.name == s).ok_or("Keuwa ?")
-  }
-}
-
-impl Choices for &Language {
-  fn choices() -> Vec<(&'static str, &'static str)> {
-    LIST.map(|l| (l.name, l.flag)).to_vec()
-  }
-
-  fn name() -> &'static str {
-    "Translation"
+    LIST.iter().find(|p| p.name == s).ok_or("Keuwa ?").copied()
   }
 }

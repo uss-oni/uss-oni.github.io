@@ -1,44 +1,22 @@
+use std::{cell::Cell, rc::Rc};
+
+
 use crate::{
-  category,
-  entity::Entity,
-  html::{div, p, wait, Div, HtmlState, MouseClick, MouseEnter, Render},
-  lang::Text,
+  category, entity::Entity, html::{self, div, img, Div, HtmlState, MouseClick, MouseEnter, MouseLeave, Render}, icon::Image, lang::Text, msg::{send, Key}, properties::DisplayEntity, route::Route, text::{HyphenatedText, UiText}
 };
 
-pub mod event {
-  use std::marker::PhantomData;
-
-  pub struct Receiver<T> {
-    phantom: PhantomData<T>,
-  }
-
-  pub fn recv<T, F>(_f: F) -> Receiver<T>
-  where
-    F: Fn(&T),
-  {
-    Receiver {
-      phantom: PhantomData,
-    }
-  }
-}
-
-fn send<T>(_msg: T) {}
-
-enum Msg {
-  Hide,
-  Unhide,
-}
-
 struct Item {
-  _entity: &'static Entity,
+  entity: &'static Entity,
   state: HtmlState,
+  text: HyphenatedText,
 }
 
 impl Item {
   pub fn new(entity: &'static Entity) -> Self {
     Self {
-      _entity: entity,
+      entity,
       state: Default::default(),
+      text: HyphenatedText::new(Text::Game(entity.name)),
     }
   }
 }
@@ -50,25 +28,19 @@ impl Render for &Item {
     div()
       .class("boxContainer")
       .child(div().class("boxBorder"))
-      .child(div().child(div().child(p().text().hyphens())))
+      .child(
+        div()
+          .class("box")
+          .child(div().class("align").child(&self.text))
+          .child(img().set_src(&self.entity.img().path())),
+      )
       .on_event(|_: MouseClick, _| {
-        send(Msg::Hide);
-        wait(100, || send(Msg::Unhide)); // Y a p't'etre mieux comme technique :|
+        send(Hide {});
+        send(Route::new(self.entity.tag));
+        send(DisplayEntity {entity: self.entity});
       })
       .store_state(&self.state)
   }
-}
-
-struct SubCategory {
-  _name: Text,
-  items: Vec<Item>,
-  _state: HtmlState,
-}
-
-struct Category {
-  _name: Text,
-  sub_categories: Vec<SubCategory>,
-  state: HtmlState,
 }
 
 pub struct Menu {
@@ -103,14 +75,54 @@ impl Menu {
   }
 }
 
+impl Menu {
+  pub fn render(&self) -> Div {
+    div().id("menu").children(&self.categories)
+  }
+}
+
+struct Category {
+  name: UiText,
+  sub_categories: Vec<SubCategory>,
+  state: HtmlState,
+}
+
 impl Category {
   fn new(cat: &category::Category) -> Category {
     Self {
-      _name: cat.ui,
+      name: UiText::new(cat.ui),
       sub_categories: Vec::from_iter(cat.sub_categories.iter().map(SubCategory::new)),
       state: Default::default(),
     }
   }
+}
+
+impl Render for &Category {
+  type Node = Div;
+
+  fn render(self) -> Div {
+    div()
+      .class("menuCategory")
+      .child(div().class("menuCategoryChoice").child(&self.name))
+      .child(div().class("menuContainer").children(&self.sub_categories))
+      .on_event(|_: MouseEnter, div| {
+        send(RemoveChosen {});
+        div.set_id("menuChosen");
+      })
+      .on_msg(|_: &RemoveChosen, target| {
+        let _ = target.remove_attribute("id");
+      })
+      .store_state(&self.state)
+  }
+}
+
+struct RemoveChosen {}
+struct Hide {}
+
+struct SubCategory {
+  name: UiText,
+  items: Vec<Item>,
+  state: HtmlState,
 }
 
 impl SubCategory {
@@ -119,35 +131,10 @@ impl SubCategory {
     sorted.sort_by(|a, b| a.order.total_cmp(&b.order));
     let items = sorted.iter().map(|i| Item::new(i)).collect();
     Self {
-      _name: sub.ui,
+      name: UiText::new(sub.ui),
       items,
-      _state: Default::default(),
+      state: Default::default(),
     }
-  }
-}
-
-impl Menu {
-  pub fn render(&self) -> Div {
-    div().class("menu").children(&self.categories)
-  }
-}
-
-struct RemoveChosen {}
-
-impl Render for &Category {
-  type Node = Div;
-
-  fn render(self) -> Div {
-    div()
-      .class("menuCategory")
-      .child(div().class("menuCategoryChoice").text())
-      .child(div().class("menuContainer").children(&self.sub_categories))
-      .on_event(|_: MouseEnter, div| {
-        send(RemoveChosen {});
-        div.set_id("menuChosen");
-        //target.on_once(|msg: RemoveChosen, &target| target.remove_attribute("id"))
-      })
-      .store_state(&self.state)
   }
 }
 
@@ -155,13 +142,24 @@ impl Render for &SubCategory {
   type Node = Div;
 
   fn render(self) -> Div {
+    let children: Rc<Cell<Option<html::Node<_, (Key<Hide>, ())>>>> = Cell::new(None).into();
+    let children_clone = children.clone();
+
     div()
       .class("menuSubcategory")
-      .child(div().class("menuChoice").text())
-      .child(div().class("category").children(&self.items))
-      .on_msg(|msg: Msg, div| match msg {
-        Msg::Hide => div.style().set_property("display", "none").unwrap(),
-        Msg::Unhide => div.remove_attribute("style").unwrap(),
+      .child(div().class("menuChoice").child(&self.name))
+      .on_event(move |_: MouseEnter, target| {
+        let c = div()
+          .class("category")
+          .children(&self.items)
+          .on_msg(move |_: &Hide, div| div.style().set_property("display", "none").unwrap());
+        target.child(c.clone());
+        children.replace(Some(c));
       })
+      .on_event(move |_: MouseLeave, _| {
+        let target = children_clone.replace(None);
+        target.unwrap().remove();
+      })
+      .store_state(&self.state)
   }
 }

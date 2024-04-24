@@ -1,8 +1,8 @@
 use crate::{db, icon::Image, lang::{self, Text}};
 
 pub struct Entity {
-  name: lang::Game,
-  tag: &'static str,
+  pub name: lang::Game,
+  pub tag: &'static str,
   pub order: f32,
   pub params: db::Params,
   pub vanilla: bool,

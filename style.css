@@ -14,12 +14,11 @@ body {
 body {
   display: grid;
   grid-template-areas:
-    "top  top top  top top options"
-    "menu menu2 imgd desc prop nothing"
-    "menu menu2 rec  rec  rec nothing"
-    "bot  bot bot  bot  bot bot";
-  grid-template-rows: 30px 160px 1fr 20px;
-  grid-template-columns: 140px 150px 140px 300px 1fr 300px;
+    "top  top   top  options"
+    "menu menu2 prop prop"
+    "bot  bot   bot  bot";
+  grid-template-rows: 30px 1fr 20px;
+  grid-template-columns: 140px 150px 1fr 300px;
   background-color: #3e4357;
   color: white;
 }
@@ -61,7 +60,7 @@ body {
 
 .category {
   position: absolute;
-  display: none;
+  display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(auto-fill, 80px);
   left: 150px;
@@ -116,10 +115,6 @@ body {
   content: "►";
 }
 
-.menuSubcategory:hover .category {
-  display: grid;
-}
-
 .menuSubcategory:hover {
   background-color: #1d1f29;
 }
@@ -149,42 +144,42 @@ body {
 
   grid-template-rows: 75px 55px;
   background-color: #3e4357;
+}
 
-  img {
-    grid-row: 1;
-    object-fit: contain;
-    margin: 5%;
-    width: 90%;
-    height: 90%;
-  }
+.box img {
+  grid-row: 1;
+  object-fit: contain;
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+}
 
-  .align {
-    width: inherit;
-    align-self: end;
-    grid-row: 2;
-    display: table;
-    min-height: 55px;
+.box .align {
+  width: inherit;
+  align-self: end;
+  grid-row: 2;
+  display: table;
+  min-height: 55px;
+}
 
-    p {
-      width: 100%;
-      color: rgba(255, 255, 255, 0.9);
-      width: inherit;
-      height: inherit;
-      background-color: rgba(0, 0, 0, 0.4);
-      font-size: 14px;
-      text-align: center;
-      display: table-cell;
-      vertical-align: middle;
-      margin: 0px;
-      padding-left: 2px;
-      padding-right: 2px;
-      border-radius: 0px 0px 5px 5px;
-    }
+.box .align .hyphen {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 0px 0px 5px 5px;
+}
 
-    p:first-letter {
-      text-transform: capitalize;
-    }
-  }
+.box .align .hyphen:first-letter {
+  text-transform: capitalize;
 }
 
 #properties {
