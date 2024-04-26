@@ -11,10 +11,15 @@ pub struct Decor {
 
 pub struct Temperature(pub f32);
 pub struct Kg(pub f32);
+
+#[derive(Clone, Copy, Default)]
 pub struct DtuPerMetreSecondPerDegree(pub f32);
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Default)]
 pub struct Percent(pub f32);
+#[derive(Clone, Copy, Default)]
 pub struct DtuPerGramPerDegree(pub f32);
+#[derive(Clone, Copy, Default)]
 pub struct GramPerMole(pub f32);
+#[derive(Clone, Copy, Default)]
 pub struct Duration(pub f32);

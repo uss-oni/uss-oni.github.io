@@ -63,7 +63,7 @@ pub enum Ui {
   CategoryEquipmentSuit,
   CategoryEquipmentWorn,
   CategoryEquipmentClothes,
-  
+
   PhaseCooking,
   PhaseMelting,
   PhaseFreezing,
@@ -95,7 +95,7 @@ pub enum Ui {
   PropertyQuality,
   PropertyMoralBonus,
   PropertyPrimaryElement,
-  
+
   TitleObtainingPhaseChange,
   TitleBuildingMaterials,
 

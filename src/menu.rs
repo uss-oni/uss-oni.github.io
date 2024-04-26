@@ -1,9 +1,16 @@
-use std::{cell::Cell, rc::Rc};
+use std::cell::Cell;
+use std::rc::Rc;
 
-
-use crate::{
-  category, entity::Entity, html::{self, div, img, Div, HtmlState, MouseClick, MouseEnter, MouseLeave, Render}, icon::Image, lang::Text, msg::{send, Key}, properties::DisplayEntity, route::Route, text::{HyphenatedText, UiText}
-};
+use crate::category;
+use crate::entity::Entity;
+use crate::html::{div, img, HtmlState, MouseClick, MouseEnter, MouseLeave};
+use crate::html::{Html, HtmlRender};
+use crate::icon::Image;
+use crate::lang::Text;
+use crate::msg::send;
+use crate::properties::DisplayEntity;
+use crate::route::Route;
+use crate::text::{HyphenatedText, UiText};
 
 struct Item {
   entity: &'static Entity,
@@ -21,10 +28,8 @@ impl Item {
   }
 }
 
-impl Render for &Item {
-  type Node = Div;
-
-  fn render(self) -> Self::Node {
+impl HtmlRender for Item {
+  fn render(&self) -> impl Html {
     div()
       .class("boxContainer")
       .child(div().class("boxBorder"))
@@ -37,7 +42,9 @@ impl Render for &Item {
       .on_event(|_: MouseClick, _| {
         send(Hide {});
         send(Route::new(self.entity.tag));
-        send(DisplayEntity {entity: self.entity});
+        send(DisplayEntity {
+          entity: self.entity,
+        });
       })
       .store_state(&self.state)
   }
@@ -73,10 +80,23 @@ impl Menu {
       ),
     }
   }
+
+  pub fn get_entity(&self, entity: &str) -> Option<&'static Entity> {
+    for category in &self.categories {
+      for sub_category in &category.sub_categories {
+        for item in &sub_category.items {
+          if item.entity.tag == entity {
+            return Some(item.entity);
+          }
+        }
+      }
+    }
+    None
+  }
 }
 
-impl Menu {
-  pub fn render(&self) -> Div {
+impl HtmlRender for Menu {
+  fn render(&self) -> impl Html {
     div().id("menu").children(&self.categories)
   }
 }
@@ -96,11 +116,8 @@ impl Category {
     }
   }
 }
-
-impl Render for &Category {
-  type Node = Div;
-
-  fn render(self) -> Div {
+impl HtmlRender for Category {
+  fn render(&self) -> impl Html {
     div()
       .class("menuCategory")
       .child(div().class("menuCategoryChoice").child(&self.name))
@@ -137,12 +154,9 @@ impl SubCategory {
     }
   }
 }
-
-impl Render for &SubCategory {
-  type Node = Div;
-
-  fn render(self) -> Div {
-    let children: Rc<Cell<Option<html::Node<_, (Key<Hide>, ())>>>> = Cell::new(None).into();
+impl HtmlRender for SubCategory {
+  fn render(&self) -> impl Html {
+    let children: Rc<_> = Cell::new(None).into();
     let children_clone = children.clone();
 
     div()

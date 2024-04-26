@@ -1,4 +1,8 @@
-use crate::{db, icon::Image, lang::{self, Text}};
+use crate::db;
+use crate::icon::Image;
+use crate::lang::{
+  Text, {self},
+};
 
 pub struct Entity {
   pub name: lang::Game,
@@ -9,13 +13,20 @@ pub struct Entity {
   pub space_out: bool,
 }
 
-impl Entity { 
+impl Entity {
   pub const fn new(name: lang::Game, tag: &'static str, order: f32, params: db::Params) -> Entity {
-    Entity { name, tag, order, params, vanilla: true, space_out:true }
+    Entity {
+      name,
+      tag,
+      order,
+      params,
+      vanilla: true,
+      space_out: true,
+    }
   }
 
   pub const fn img(&self) -> EntityImage {
-    EntityImage {name: self.tag}
+    EntityImage { name: self.tag }
   }
 
   pub const fn desc(&'static self) -> Text {
@@ -28,7 +39,7 @@ impl Entity {
 }
 
 pub struct EntityImage {
-  name: &'static str
+  name: &'static str,
 }
 
 impl Image for EntityImage {
@@ -41,4 +52,3 @@ impl Image for EntityImage {
     ret
   }
 }
-

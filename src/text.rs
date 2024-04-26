@@ -1,6 +1,7 @@
-use web_sys::HtmlDivElement;
 
-use crate::{html::{self, div, Render}, lang::{Game, Text}, msg, options::{options, LanguageChange}};
+use crate::html::{self, div, Html, HtmlRender};
+use crate::lang::{Game, Text};
+use crate::options::{options, LanguageChange};
 
 pub struct UiText {
   text: Text,
@@ -12,19 +13,39 @@ impl UiText {
   }
 }
 
-impl Render for &UiText {
-  type Node = html::Node<web_sys::Text, (msg::Key<LanguageChange>, ())>;
-
-  fn render(self) -> Self::Node {
+impl HtmlRender for UiText {
+  fn render(&self) -> impl Html {
     let language = &options().language;
     let text = html::text();
-    text.set_data(&language.to_str(self.text));
+    text.set_data(language.to_str(self.text));
+    let clone = self.text;
+    text.on_msg(move |lang: &LanguageChange, text| text.set_data(lang.language.to_str(clone)))
+  }
+}
+
+pub struct DescText {
+  text: Text,
+}
+
+impl DescText {
+  pub fn new(text: Text) -> Self {
+    Self { text }
+  }
+}
+
+impl HtmlRender for DescText {
+  fn render(&self) -> impl Html {
+    let language = &options().language;
+    let text = div().id("propertiesDesc");
+    let _ = text.insert_adjacent_html("afterBegin", language.to_str(self.text));
     let clone = self.text;
     text.on_msg(move |lang: &LanguageChange, text| {
-      text.set_data(lang.language.to_str(clone))
+      text.replace_children_with_node_0();
+      let _ = text.insert_adjacent_html("afterBegin", lang.language.to_str(clone));
     })
   }
 }
+
 
 pub struct GameText {
   text: Text,
@@ -32,24 +53,21 @@ pub struct GameText {
 
 impl GameText {
   pub fn new(text: Game) -> Self {
-    Self { text: Text::Game(text) }
+    Self {
+      text: Text::Game(text),
+    }
   }
 }
 
-impl Render for &GameText {
-  type Node = html::Node<web_sys::Text, (msg::Key<LanguageChange>, ())>;
-
-  fn render(self) -> Self::Node {
+impl HtmlRender for GameText {
+  fn render(&self) -> impl Html {
     let language = &options().language;
     let text = html::text();
-    text.set_data(&language.to_str(self.text));
+    text.set_data(language.to_str(self.text));
     let clone = self.text;
-    text.on_msg(move |lang: &LanguageChange, text| {
-      text.set_data(lang.language.to_str(clone))
-    })
+    text.on_msg(move |lang: &LanguageChange, text| text.set_data(lang.language.to_str(clone)))
   }
 }
-
 
 pub struct StaticText {
   text: &'static str,
@@ -59,14 +77,10 @@ impl StaticText {
   pub fn new(text: &'static str) -> Self {
     Self { text }
   }
-}
 
-impl Render for &StaticText {
-  type Node = html::Text;
-
-  fn render(self) -> Self::Node {
+  pub fn render(self) -> impl Html {
     let text = html::text();
-    text.set_data(&self.text);
+    text.set_data(self.text);
     text
   }
 }
@@ -81,10 +95,8 @@ impl HyphenatedText {
   }
 }
 
-impl Render for &HyphenatedText {
-  type Node = html::Node<HtmlDivElement, ((), ())>;
-
-  fn render(self) -> Self::Node {
+impl HtmlRender for HyphenatedText {
+  fn render(&self) -> impl Html {
     let language = &options().language;
     let text = html::text();
     text.set_data(&language.to_str(self.text).to_lowercase());

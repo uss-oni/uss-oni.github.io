@@ -34,7 +34,8 @@ pub static building: Category = Category {
     &building_gravitas,
     &building_quest,
     &building_lander,
-]};
+  ],
+};
 pub static element: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryElement),
   sub_categories: &[
@@ -42,7 +43,8 @@ pub static element: Category = Category {
     &element_liquid,
     &element_gas,
     &element_other,
-]};
+  ],
+};
 pub static space: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategorySpace),
   sub_categories: &[
@@ -50,7 +52,8 @@ pub static space: Category = Category {
     &space_comet,
     &space_shower,
     &space_artifact,
-]};
+  ],
+};
 pub static artifact: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryArtifact),
   sub_categories: &[
@@ -58,7 +61,8 @@ pub static artifact: Category = Category {
     &artifact_space,
     &artifact_any,
     &artifact_quest,
-]};
+  ],
+};
 pub static misc: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryMisc),
   sub_categories: &[
@@ -67,14 +71,12 @@ pub static misc: Category = Category {
     &misc_other,
     &misc_quest,
     &misc_dupe,
-]};
+  ],
+};
 pub static food: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryFood),
-  sub_categories: &[
-    &food_cooked,
-    &food_ingredient,
-    &food_dehydrated,
-]};
+  sub_categories: &[&food_cooked, &food_ingredient, &food_dehydrated],
+};
 pub static critter: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryCritter),
   sub_categories: &[
@@ -82,7 +84,8 @@ pub static critter: Category = Category {
     &critter_baby,
     &critter_egg,
     &critter_robot,
-]};
+  ],
+};
 pub static plant: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryPlant),
   sub_categories: &[
@@ -91,19 +94,16 @@ pub static plant: Category = Category {
     &plant_decor,
     &plant_cropseed,
     &plant_decorseed,
-]};
+  ],
+};
 pub static geyser: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryGeyser),
-  sub_categories: &[
-    &geyser_geyser,
-]};
+  sub_categories: &[&geyser_geyser],
+};
 pub static equipment: Category = Category {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryEquipment),
-  sub_categories: &[
-    &equipment_clothes,
-    &equipment_suit,
-    &equipment_worn,
-]};
+  sub_categories: &[&equipment_clothes, &equipment_suit, &equipment_worn],
+};
 pub static building_medical: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingMedical),
   items: &[
@@ -117,7 +117,8 @@ pub static building_medical: SubCategory = SubCategory {
     &crate::db::MedicalCot,
     &crate::db::WashBasin,
     &crate::db::WashSink,
-]};
+  ],
+};
 pub static building_equipment: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingEquipment),
   items: &[
@@ -150,7 +151,8 @@ pub static building_equipment: SubCategory = SubCategory {
     &crate::db::SuitLocker,
     &crate::db::SuitMarker,
     &crate::db::Telescope,
-]};
+  ],
+};
 pub static building_food: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingFood),
   items: &[
@@ -179,7 +181,8 @@ pub static building_food: SubCategory = SubCategory {
     &crate::db::CreatureAirTrap,
     &crate::db::CreatureGroundTrap,
     &crate::db::WaterTrap,
-]};
+  ],
+};
 pub static building_utilities: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingUtilities),
   items: &[
@@ -193,7 +196,8 @@ pub static building_utilities: SubCategory = SubCategory {
     &crate::db::SpaceHeater,
     &crate::db::SweepBotStation,
     &crate::db::ThermalBlock,
-]};
+  ],
+};
 pub static building_oxygen: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingOxygen),
   items: &[
@@ -204,7 +208,8 @@ pub static building_oxygen: SubCategory = SubCategory {
     &crate::db::MineralDeoxidizer,
     &crate::db::RustDeoxidizer,
     &crate::db::SublimationStation,
-]};
+  ],
+};
 pub static building_refining: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingRefining),
   items: &[
@@ -227,7 +232,8 @@ pub static building_refining: SubCategory = SubCategory {
     &crate::db::SupermaterialRefinery,
     &crate::db::WaterPurifier,
     &crate::db::Desalinator,
-]};
+  ],
+};
 pub static building_furniture: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingFurniture),
   items: &[
@@ -270,7 +276,8 @@ pub static building_furniture: SubCategory = SubCategory {
     &crate::db::Telephone,
     &crate::db::VerticalWindTunnel,
     &crate::db::WaterCooler,
-]};
+  ],
+};
 pub static building_rocketmodule: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingRocketModule),
   items: &[
@@ -317,7 +324,8 @@ pub static building_rocketmodule: SubCategory = SubCategory {
     &crate::db::SteamEngine,
     &crate::db::SugarEngine,
     &crate::db::TouristModule,
-]};
+  ],
+};
 pub static building_conveyance: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingConveyance),
   items: &[
@@ -336,7 +344,8 @@ pub static building_conveyance: SubCategory = SubCategory {
     &crate::db::SolidLogicValve,
     &crate::db::SolidTransferArm,
     &crate::db::SolidVent,
-]};
+  ],
+};
 pub static building_power: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingPower),
   items: &[
@@ -363,7 +372,8 @@ pub static building_power: SubCategory = SubCategory {
     &crate::db::WireRefined,
     &crate::db::WireRefinedHighWattage,
     &crate::db::WoodGasGenerator,
-]};
+  ],
+};
 pub static building_plumbing: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingPlumbing),
   items: &[
@@ -390,7 +400,8 @@ pub static building_plumbing: SubCategory = SubCategory {
     &crate::db::Outhouse,
     &crate::db::Shower,
     &crate::db::WallToilet,
-]};
+  ],
+};
 pub static building_hvac: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingHvac),
   items: &[
@@ -413,7 +424,8 @@ pub static building_hvac: SubCategory = SubCategory {
     &crate::db::InsulatedGasConduit,
     &crate::db::ModularLaunchpadPortGas,
     &crate::db::ModularLaunchpadPortGasUnloader,
-]};
+  ],
+};
 pub static building_base: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingBase),
   items: &[
@@ -444,7 +456,8 @@ pub static building_base: SubCategory = SubCategory {
     &crate::db::TravelTube,
     &crate::db::TravelTubeEntrance,
     &crate::db::TravelTubeWallBridge,
-]};
+  ],
+};
 pub static building_automation: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingAutomation),
   items: &[
@@ -486,7 +499,8 @@ pub static building_automation: SubCategory = SubCategory {
     &crate::db::LogicWattageSensor,
     &crate::db::LogicWireBridge,
     &crate::db::LogicWire,
-]};
+  ],
+};
 pub static building_rocketry: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingRocketry),
   items: &[
@@ -510,7 +524,8 @@ pub static building_rocketry: SubCategory = SubCategory {
     &crate::db::RocketInteriorPowerPlug,
     &crate::db::RocketInteriorSolidInput,
     &crate::db::RocketInteriorSolidOutput,
-]};
+  ],
+};
 pub static building_gravitas: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingGravitas),
   items: &[
@@ -588,7 +603,8 @@ pub static building_gravitas: SubCategory = SubCategory {
     &crate::db::PropElevator,
     &crate::db::PropDesk,
     &crate::db::PropClock,
-]};
+  ],
+};
 pub static building_hep: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingHep),
   items: &[
@@ -600,7 +616,8 @@ pub static building_hep: SubCategory = SubCategory {
     &crate::db::NuclearReactor,
     &crate::db::RadiationLight,
     &crate::db::UraniumCentrifuge,
-]};
+  ],
+};
 pub static building_quest: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingQuest),
   items: &[
@@ -610,13 +627,12 @@ pub static building_quest: SubCategory = SubCategory {
     &crate::db::FossilBitsLarge,
     &crate::db::FossilBitsSmall,
     &crate::db::SapTree,
-]};
+  ],
+};
 pub static building_lander: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryBuildingLander),
-  items: &[
-    &crate::db::ScoutLander,
-    &crate::db::PioneerLander,
-]};
+  items: &[&crate::db::ScoutLander, &crate::db::PioneerLander],
+};
 pub static element_solid: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryElementSolid),
   items: &[
@@ -702,7 +718,8 @@ pub static element_solid: SubCategory = SubCategory {
     &crate::db::SolidEthanol,
     &crate::db::FoolsGold,
     &crate::db::Aluminum,
-]};
+  ],
+};
 pub static element_liquid: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryElementLiquid),
   items: &[
@@ -741,7 +758,8 @@ pub static element_liquid: SubCategory = SubCategory {
     &crate::db::SaltWater,
     &crate::db::MoltenUranium,
     &crate::db::MoltenCopper,
-]};
+  ],
+};
 pub static element_gas: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryElementGas),
   items: &[
@@ -770,12 +788,12 @@ pub static element_gas: SubCategory = SubCategory {
     &crate::db::PhosphorusGas,
     &crate::db::CarbonDioxide,
     &crate::db::CopperGas,
-]};
+  ],
+};
 pub static element_other: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryElementOther),
-  items: &[
-    &crate::db::HighEnergyParticle,
-]};
+  items: &[&crate::db::HighEnergyParticle],
+};
 pub static space_comet: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategorySpaceComet),
   items: &[
@@ -796,7 +814,8 @@ pub static space_comet: SubCategory = SubCategory {
     &crate::db::NuclearWasteComet,
     &crate::db::DustComet,
     &crate::db::SnowballComet,
-]};
+  ],
+};
 pub static space_artifact: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategorySpaceArtifact),
   items: &[
@@ -809,7 +828,8 @@ pub static space_artifact: SubCategory = SubCategory {
     &crate::db::ArtifactSpacePOI_GravitasSpaceStation7,
     &crate::db::ArtifactSpacePOI_GravitasSpaceStation8,
     &crate::db::ArtifactSpacePOI_RussellsTeapot,
-]};
+  ],
+};
 pub static space_harvestable: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategorySpaceHarvestable),
   items: &[
@@ -835,7 +855,8 @@ pub static space_harvestable: SubCategory = SubCategory {
     &crate::db::HarvestableSpacePOI_RadioactiveAsteroidField,
     &crate::db::HarvestableSpacePOI_OxygenRichAsteroidField,
     &crate::db::HarvestableSpacePOI_InterstellarOcean,
-]};
+  ],
+};
 pub static space_shower: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategorySpaceShower),
   items: &[
@@ -852,7 +873,8 @@ pub static space_shower: SubCategory = SubCategory {
     &crate::db::ClusterMapMeteorShower_Regolith,
     &crate::db::ClusterMapMeteorShower_Oxylite,
     &crate::db::ClusterMapMeteorShower_BleachStone,
-]};
+  ],
+};
 pub static artifact_any: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryArtifactAny),
   items: &[
@@ -869,7 +891,8 @@ pub static artifact_any: SubCategory = SubCategory {
     &crate::db::artifact_plasmalamp,
     &crate::db::artifact_moodring,
     &crate::db::artifact_reactormodel,
-]};
+  ],
+};
 pub static artifact_terrestrial: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryArtifactTerrestrial),
   items: &[
@@ -883,7 +906,8 @@ pub static artifact_terrestrial: SubCategory = SubCategory {
     &crate::db::artifact_stethoscope,
     &crate::db::artifact_oracle,
     &crate::db::artifact_dnamodel,
-]};
+  ],
+};
 pub static artifact_space: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryArtifactSpace),
   items: &[
@@ -897,7 +921,8 @@ pub static artifact_space: SubCategory = SubCategory {
     &crate::db::artifact_pacupercolator,
     &crate::db::artifact_solarsystem,
     &crate::db::artifact_moonmoonmoon,
-]};
+  ],
+};
 pub static artifact_quest: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryArtifactQuest),
   items: &[
@@ -906,7 +931,8 @@ pub static artifact_quest: SubCategory = SubCategory {
     &crate::db::keepsake_lonelyminion,
     &crate::db::keepsake_fossilhunt,
     &crate::db::keepsake_morbrovermaker,
-]};
+  ],
+};
 pub static misc_medicine: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryMiscMedicine),
   items: &[
@@ -917,7 +943,8 @@ pub static misc_medicine: SubCategory = SubCategory {
     &crate::db::BasicBooster,
     &crate::db::Antihistamine,
     &crate::db::AdvancedCure,
-]};
+  ],
+};
 pub static misc_industrial: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryMiscIndustrial),
   items: &[
@@ -933,7 +960,8 @@ pub static misc_industrial: SubCategory = SubCategory {
     &crate::db::GeneShufflerRecharge,
     &crate::db::BasicFabric,
     &crate::db::GingerConfig,
-]};
+  ],
+};
 pub static misc_other: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryMiscOther),
   items: &[
@@ -943,17 +971,16 @@ pub static misc_other: SubCategory = SubCategory {
     &crate::db::EggShell,
     &crate::db::GasGrassHarvested,
     &crate::db::RotPile,
-]};
+  ],
+};
 pub static misc_quest: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryMiscQuest),
-  items: &[
-    &crate::db::DreamJournal,
-]};
+  items: &[&crate::db::DreamJournal],
+};
 pub static misc_dupe: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryMiscDupe),
-  items: &[
-    &crate::db::Minion,
-]};
+  items: &[&crate::db::Minion],
+};
 pub static food_cooked: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryFoodCooked),
   items: &[
@@ -999,7 +1026,8 @@ pub static food_cooked: SubCategory = SubCategory {
     &crate::db::SwampForagePlant,
     &crate::db::BasicPlantFood,
     &crate::db::BasicPlantBar,
-]};
+  ],
+};
 pub static food_dehydrated: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryFoodDehydrated),
   items: &[
@@ -1012,19 +1040,20 @@ pub static food_dehydrated: SubCategory = SubCategory {
     &crate::db::DehydratedMushroomWrap,
     &crate::db::DehydratedBerryPie,
     &crate::db::DehydratedCurry,
-]};
+  ],
+};
 pub static food_ingredient: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryFoodIngredient),
-  items: &[
-    &crate::db::SpiceNut,
-]};
+  items: &[&crate::db::SpiceNut],
+};
 pub static critter_robot: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryCritterRobot),
   items: &[
     &crate::db::SweepBot,
     &crate::db::ScoutRover,
     &crate::db::MorbRover,
-]};
+  ],
+};
 pub static critter_egg: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryCritterEgg),
   items: &[
@@ -1063,7 +1092,8 @@ pub static critter_egg: SubCategory = SubCategory {
     &crate::db::DivergentWormEgg,
     &crate::db::HatchMetalEgg,
     &crate::db::PacuEgg,
-]};
+  ],
+};
 pub static critter_critter: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryCritterCritter),
   items: &[
@@ -1106,7 +1136,8 @@ pub static critter_critter: SubCategory = SubCategory {
     &crate::db::DivergentWorm,
     &crate::db::HatchMetal,
     &crate::db::Pacu,
-]};
+  ],
+};
 pub static critter_baby: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryCritterBaby),
   items: &[
@@ -1146,7 +1177,8 @@ pub static critter_baby: SubCategory = SubCategory {
     &crate::db::HatchVeggieBaby,
     &crate::db::HatchHardBaby,
     &crate::db::SquirrelBaby,
-]};
+  ],
+};
 pub static plant_cropseed: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryPlantCropSeed),
   items: &[
@@ -1167,7 +1199,8 @@ pub static plant_cropseed: SubCategory = SubCategory {
     &crate::db::SwampLilySeed,
     &crate::db::WormPlantSeed,
     &crate::db::MushroomSeed,
-]};
+  ],
+};
 pub static plant_crop: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryPlantCrop),
   items: &[
@@ -1187,14 +1220,16 @@ pub static plant_crop: SubCategory = SubCategory {
     &crate::db::SwampLily,
     &crate::db::WormPlant,
     &crate::db::MushroomPlant,
-]};
+  ],
+};
 pub static plant_forage: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryPlantForage),
   items: &[
     &crate::db::BasicForagePlantPlanted,
     &crate::db::ForestForagePlantPlanted,
     &crate::db::SwampForagePlantPlanted,
-]};
+  ],
+};
 pub static plant_decorseed: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryPlantDecorSeed),
   items: &[
@@ -1206,7 +1241,8 @@ pub static plant_decorseed: SubCategory = SubCategory {
     &crate::db::WineCupsSeed,
     &crate::db::ToePlantSeed,
     &crate::db::LeafyPlantSeed,
-]};
+  ],
+};
 pub static plant_decor: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryPlantDecor),
   items: &[
@@ -1220,7 +1256,8 @@ pub static plant_decor: SubCategory = SubCategory {
     &crate::db::WineCups,
     &crate::db::ToePlant,
     &crate::db::LeafyPlant,
-]};
+  ],
+};
 pub static geyser_geyser: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryGeyserGeyser),
   items: &[
@@ -1250,7 +1287,8 @@ pub static geyser_geyser: SubCategory = SubCategory {
     &crate::db::GeyserGeneric_oil_drip,
     &crate::db::GeyserGeneric_liquid_sulfur,
     &crate::db::OilWell,
-]};
+  ],
+};
 pub static equipment_suit: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryEquipmentSuit),
   items: &[
@@ -1258,7 +1296,8 @@ pub static equipment_suit: SubCategory = SubCategory {
     &crate::db::Jet_Suit,
     &crate::db::Lead_Suit,
     &crate::db::Oxygen_Mask,
-]};
+  ],
+};
 pub static equipment_worn: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryEquipmentWorn),
   items: &[
@@ -1266,7 +1305,8 @@ pub static equipment_worn: SubCategory = SubCategory {
     &crate::db::Worn_Jet_Suit,
     &crate::db::Worn_Lead_Suit,
     &crate::db::Worn_Oxygen_Mask,
-]};
+  ],
+};
 pub static equipment_clothes: SubCategory = SubCategory {
   ui: crate::lang::Text::Ui(crate::lang::Ui::CategoryEquipmentClothes),
   items: &[
@@ -1275,4 +1315,5 @@ pub static equipment_clothes: SubCategory = SubCategory {
     &crate::db::Funky_Vest,
     &crate::db::SleepClinicPajamas,
     &crate::db::Warm_Vest,
-]};
+  ],
+};

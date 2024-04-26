@@ -1,4 +1,4 @@
-pub static TODO: Icon = Icon { name: "noIdea"};
+pub static TODO: Icon = Icon { name: "noIdea" };
 pub static ATOM: Icon = Icon { name: "atom" };
 pub static DECOR: Icon = Icon { name: "decor" };
 pub static SIZE: Icon = Icon { name: "size" };
@@ -32,4 +32,3 @@ impl Image for Icon {
     ret
   }
 }
-

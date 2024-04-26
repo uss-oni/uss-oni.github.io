@@ -76,7 +76,7 @@ pub fn translate(ui: Ui) -> &'static str {
     Ui::TitleProperties => "Properties",
     Ui::PropertyMolarMass => "Molar mass",
     Ui::PropertySHC => "Specific heat capacity",
-    Ui::PropertyThermalConductivity =>"Thermal conductivity",
+    Ui::PropertyThermalConductivity => "Thermal conductivity",
     Ui::PropertyTileCreation => "Tile creation",
     Ui::PropertyRadiationAbsorption => "Radiation absorption",
     Ui::PropertyHardness => "Hardness",

@@ -5,20 +5,19 @@ pub mod html;
 pub mod icon;
 pub mod lang;
 pub mod menu;
-mod options;
-pub mod text_node;
-pub mod units;
 pub mod msg;
+mod options;
+pub mod properties;
 pub mod route;
 pub mod text;
-pub mod properties;
+pub mod text_node;
+pub mod units;
 
-use html::body;
-use html::Body;
-use properties::Properties;
 use std::rc::Rc;
 
+use html::{body, Body};
 use menu::Menu;
+use properties::Properties;
 use wasm_bindgen::prelude::*;
 
 pub struct App {
@@ -46,14 +45,14 @@ fn main() -> Result<(), JsValue> {
   let properties = properties::Properties::new();
   let app = Rc::new(App::new(menu, properties));
   render(app.clone());
-  route::init();
+  route::init(app.clone());
   std::mem::forget(app);
   Ok(())
 }
 
 fn render(app: Rc<App>) {
   let body: Body = body().into();
-  let body = body.child(options::RenderOptions {});
-  let body = body.child(app.properties.render());
-  let _body = body.child(app.menu.render());
+  let body = body.child(&options::RenderOptions {});
+  let body = body.child(&app.properties);
+  let _body = body.child(&app.menu);
 }

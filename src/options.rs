@@ -1,10 +1,12 @@
-use std::{cell::Cell, str::FromStr};
+use std::cell::Cell;
+use std::str::FromStr;
 
-use web_sys::console;
-
-use crate::{
-  html::{div, option, select, text, Div, Input, Render}, lang::{self, Language}, msg::send, text
+use crate::html::{div, option, select, Html, HtmlRender, Input};
+use crate::lang::{
+  Language, {self},
 };
+use crate::msg::send;
+use crate::text;
 
 thread_local! {
   static OPTIONS: Cell<Options> = Options::new().into();
@@ -42,39 +44,39 @@ impl Options {
 }
 
 pub struct LanguageChange {
-  pub language: lang::Language
+  pub language: lang::Language,
 }
 
 pub struct RenderOptions {}
 
 impl RenderOptions {}
 
-impl Render for RenderOptions {
-  type Node = Div;
-
-  fn render(self) -> Self::Node {
+impl HtmlRender for RenderOptions {
+  fn render(&self) -> impl Html {
     let language = select()
       .children(lang::LIST.iter().map(|l| {
         option()
           .set_value(l.name)
-          .child(&text::StaticText::new(l.flag))
+          .child(text::StaticText::new(l.flag).render())
       }))
       .on_event(|_: Input, target| {
         options_with_mut(|options| options.language = target.value().parse().unwrap());
-        send(LanguageChange {language: options().language});
+        send(LanguageChange {
+          language: options().language,
+        });
       });
 
-    let degree = select().children(
-      Degree::choices()
-        .iter()
-        .map(|d| option().set_value(d.0).child(&text::StaticText::new(d.1))),
-    );
+    let degree = select().children(Degree::choices().iter().map(|d| {
+      option()
+        .set_value(d.0)
+        .child(text::StaticText::new(d.1).render())
+    }));
 
-    let time = select().children(
-      Time::choices()
-        .iter()
-        .map(|t| option().set_value(t.0).child(&text::StaticText::new(t.1))),
-    );
+    let time = select().children(Time::choices().iter().map(|t| {
+      option()
+        .set_value(t.0)
+        .child(text::StaticText::new(t.1).render())
+    }));
 
     let state = None.into();
     let div = div()

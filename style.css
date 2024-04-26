@@ -183,67 +183,63 @@ body {
 }
 
 #properties {
-  padding-top: 5px;
   grid-area: prop;
   display: grid;
-  grid-auto-flow: row;
-  /* spacing icon label spacing value amount spacing*/
-  grid-template-columns: 10px 30px 200px 5px 1fr max-content 10px;
-  grid-auto-rows: min-content;
-  row-gap: 3px;
+  grid-template-areas:
+    "attr    propBox"
+    "attr  charts "
+    "nothing nothing";
+  grid-template-columns: 1fr 600px;
+  grid-template-rows: min-content min-content 1fr;
   width: 100%;
-  background-color: #3e4357;
-  overflow: auto;
-  font-size: 16px;
+}
 
-  .label {
-    grid-column: 3;
-    justify-content: right;
-    border-radius: 0px 5px 5px 0px;
-    padding-right: 5px;
-    display: flex;
-    background-color: #363a4c;
-  }
+#propertiesChart {
+  grid-area: charts;
+  margin: 5px;
+  border: 6px ridge #874566;
+  width: 580px;
+}
 
-  .grid {
-    grid-column: 5;
-    display: grid;
-    grid-template-columns: min-content;
-    gap: 3px;
-    background-color: #363a4c;
-  }
+#propertiesChart img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
 
-  .g1 {
-    grid-column: 1;
-  }
+#propertiesBox {
+  display: grid;
+  grid-area: propBox;
+  grid-template-areas:
+    "imgd desc desc"
+    "name name value";
+  grid-template-rows: 140px min-content;
+  grid-template-columns: 140px 110px 1fr;
+  margin: 20px;
+  border: 6px ridge #874566;
+}
 
-  .g2 {
-    grid-column: 2;
-  }
+#propertiesImg {
+  grid-area: imgd;
+  padding-top: 2px;
+  height: 140px;
+  width: 140px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
 
-  .g3 {
-    grid-column: 3;
-  }
+#propertiesDesc {
+  grid-area: desc;
+}
 
-  .g4 {
-    grid-column: 4;
-  }
+.propertiesName {
+  grid-area: name;
+}
 
-  .g5 {
-    grid-column: 5;
-  }
-
-  img {
-    height: 19px;
-    width: 23px;
-    margin-top: -1px;
-    object-fit: contain;
-  }
-
-  .icon {
-    border-radius: 5px 0px 0px 5px;
-    background-color: #363a4c;
-  }
+.propertiesValue {
+  grid-area: value;
 }
 
 .propValuePhase {

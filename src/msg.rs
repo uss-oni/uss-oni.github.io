@@ -1,9 +1,12 @@
-use slotmap::{self, DefaultKey};
 use std::any::{Any, TypeId};
 use std::cell::{Cell, RefCell};
 use std::collections::HashMap;
 use std::marker::PhantomData;
 use std::rc::Rc;
+
+use slotmap::{
+  DefaultKey, {self},
+};
 
 #[derive(Default)]
 struct TypeMap {
@@ -39,6 +42,7 @@ thread_local! {
   static FLAG: Cell<bool> = false.into();
 }
 
+#[derive(Default)]
 pub struct Router {
   map: TypeMap,
 }
@@ -73,13 +77,13 @@ impl Router {
 
   pub fn new() -> Self {
     Self {
-      map: Default::default(),
+      ..Default::default()
     }
   }
 
   pub fn get_send<Msg: 'static>(&self) -> Vec<Rc<dyn Listener<Msg>>> {
     if let Some(slot) = self.map.get::<MapListener<Msg>>() {
-      slot.values().map(|it| it.clone()).collect()
+      slot.values().cloned().collect()
     } else {
       vec![]
     }
@@ -114,7 +118,7 @@ where
   F: Fn(&Msg, State) + 'static,
   State: Clone + 'static,
 {
-  pub fn new(state: State, f: F) -> Key<Msg> {
+  pub fn register(state: State, f: F) -> Key<Msg> {
     ROUTER.with_borrow_mut(|router| {
       router.register(Box::new(Self {
         state,

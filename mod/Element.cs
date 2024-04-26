@@ -27,8 +27,9 @@ namespace USS
       //    .Where(e => !e.disabled)
       //    .Where(e => !e.IsVacuum)
       //  {
+        
+        
       translations[element.tag] = (element.name, element.description);
-
       var entity = db[element.tag];
       entity.dlc = Dlc.Get(element.dlcId);
       entity.menu_order = order.Count + 1;

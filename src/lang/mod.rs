@@ -5,7 +5,8 @@ pub static LIST: [Language; 2] = [fr::LANGAGE, en::LANGAGE];
 
 mod game;
 mod ui;
-use std::{mem::transmute, str::FromStr};
+use std::mem::transmute;
+use std::str::FromStr;
 
 pub use game::Game;
 pub use ui::Ui;
@@ -70,10 +71,10 @@ impl Text {
 
   pub fn get(t: &str, id: i32) -> Text {
     match t {
-      "ui" => Text::Ui( unsafe { transmute(id) }),
-      "game" => Text::Game( unsafe { transmute(id) }),
-      "desc" => Text::Desc( unsafe { transmute(id) }),
-      _ => panic!()
+      "ui" => Text::Ui(unsafe { transmute(id) }),
+      "game" => Text::Game(unsafe { transmute(id) }),
+      "desc" => Text::Desc(unsafe { transmute(id) }),
+      _ => panic!(),
     }
   }
 }

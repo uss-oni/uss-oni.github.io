@@ -1,6 +1,10 @@
-use std::{any::Any, cell::Cell, ops::Deref};
+use std::any::Any;
+use std::cell::Cell;
+use std::ops::Deref;
 
-use wasm_bindgen::{closure::Closure, convert::FromWasmAbi, JsCast, UnwrapThrowExt};
+use wasm_bindgen::closure::Closure;
+use wasm_bindgen::convert::FromWasmAbi;
+use wasm_bindgen::{JsCast, UnwrapThrowExt};
 use web_sys::{
   HtmlDivElement, HtmlElement, HtmlImageElement, HtmlOptionElement, HtmlParagraphElement,
   HtmlSelectElement,
@@ -26,20 +30,61 @@ pub fn body() -> web_sys::HtmlElement {
   BODY.with(|value| value.clone())
 }
 
-pub trait Render {
-  type Node;
-
-  fn render(self) -> Self::Node;
+pub trait HtmlRender {
+  fn render(&self) -> impl Html;
 }
 
-impl<T, State> Render for Node<T, State> {
-  type Node = Node<T, State>;
-
-  fn render(self) -> Self::Node {
-    self
+impl<U: HtmlRender> Html for &U {
+  fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState) {
+    U::render(&self).into_html()
   }
 }
 
+pub trait Html {
+  fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState);
+}
+
+impl<T, State: 'static> Html for Node<T, State>
+where
+  T: std::convert::AsRef<web_sys::Node>,
+  Node<web_sys::Node, ()>: From<Node<T, ()>>,
+{
+  fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState) {
+    let save= Default::default();
+    let ret = self.store_state(&save);
+    (ret.into(), save)
+  }
+}
+
+impl From<Node<web_sys::HtmlDivElement, ()>> for Node<web_sys::Node, ()> {
+  fn from(value: Node<web_sys::HtmlDivElement, ()>) -> Self {
+    Self { element: value.element.into(), state: () }
+  }
+}
+
+impl From<Node<web_sys::Text, ()>> for Node<web_sys::Node, ()> {
+  fn from(value: Node<web_sys::Text, ()>) -> Self {
+    Self { element: value.element.into(), state: () }
+  }
+}
+
+impl From<Node<web_sys::HtmlSelectElement, ()>> for Node<web_sys::Node, ()> {
+  fn from(value: Node<web_sys::HtmlSelectElement, ()>) -> Self {
+    Self { element: value.element.into(), state: () }
+  }
+}
+
+impl From<Node<web_sys::HtmlImageElement, ()>> for Node<web_sys::Node, ()> {
+  fn from(value: Node<web_sys::HtmlImageElement, ()>) -> Self {
+    Self { element: value.element.into(), state: () }
+  }
+}
+
+impl From<Node<web_sys::HtmlOptionElement, ()>> for Node<web_sys::Node, ()> {
+  fn from(value: Node<web_sys::HtmlOptionElement, ()>) -> Self {
+    Self { element: value.element.into(), state: () }
+  }
+}
 type Callback<'a> = std::option::Option<&'a web_sys::js_sys::Function>;
 pub trait Event {
   type Inner;
@@ -123,11 +168,16 @@ pub struct Node<T, State> {
 
 type NodeStateless<T> = Node<T, ()>;
 
-impl<T> Clone for NodeStateless<T> 
-where T: Clone {
-    fn clone(&self) -> Self {
-        Self { element: self.element.clone(), state: () }
+impl<T> Clone for NodeStateless<T>
+where
+  T: Clone,
+{
+  fn clone(&self) -> Self {
+    Self {
+      element: self.element.clone(),
+      state: (),
     }
+  }
 }
 
 impl<T, State> Node<T, State>
@@ -152,23 +202,17 @@ where
   }
 
   pub fn id(self, id: &'static str) -> Self {
-    self
-      .element
-      .unchecked_ref::<HtmlElement>()
-      .set_id(id);
+    self.element.unchecked_ref::<HtmlElement>().set_id(id);
     self
   }
-  pub fn child<U, R, S>(self, node: U) -> Node<T, (S, State)>
-  where
-    U: Render<Node = Node<R, S>>,
-    R: wasm_bindgen::JsCast + Clone + AsRef<web_sys::Node>,
-  {
-    let node = node.render();
+
+  pub fn child(self, node: impl Html) -> Node<T, (HtmlState, State)> {
+    let node = node.into_html();
     let _ = self
       .element
       .unchecked_ref::<HtmlElement>()
-      .append_child(node.element.as_ref());
-    self.add_state(node.state)
+      .append_child(&node.0.element);
+    self.add_state::<HtmlState>(node.1)
   }
 
   pub fn text(self) -> Self {
@@ -184,19 +228,20 @@ where
     self
   }
 
-  pub fn children<C, U: Render<Node = Node<V, S>>, V, S>(self, list: C) -> Self
+  pub fn children<C, U: Html>(self, list: C) -> Node<T, (Vec<Cell<std::prelude::v1::Option<Box<dyn Any>>>>, State)>
   where
-    V: wasm_bindgen::JsCast + AsRef<web_sys::Node>,
     C: IntoIterator<Item = U>,
   {
+    let mut states = vec![];
     for item in list.into_iter() {
-      let node = item.render();
+      let node = item.into_html();
       let _ = self
         .element
         .unchecked_ref::<HtmlElement>()
-        .append_child(node.element.as_ref());
+        .append_child(&node.0.element);
+      states.push(node.1);
     }
-    self
+    self.add_state(states)
   }
 
   pub fn on_event<F: Fn(U, NodeStateless<T>), U: Event>(
@@ -208,14 +253,9 @@ where
     <U as Event>::Inner: FromWasmAbi + 'static, // I don't know why I need it, but it makes the compiler happy :)
   {
     let clone = self.clone();
-    let the_happy_box = Box::new(move |u| {
-      f(U::from_inner(u), clone.clone())
-    });
+    let the_happy_box = Box::new(move |u| f(U::from_inner(u), clone.clone()));
     let the_dragons_box = unsafe {
-      std::mem::transmute::<
-        Box<dyn Fn(U::Inner)>,
-        Box<dyn Fn(U::Inner) + 'static>,
-      >(the_happy_box)
+      std::mem::transmute::<Box<dyn Fn(U::Inner)>, Box<dyn Fn(U::Inner) + 'static>>(the_happy_box)
     };
     let closure: Closure<dyn Fn(U::Inner) + 'static> = Closure::wrap(the_dragons_box);
     U::set(
@@ -225,8 +265,11 @@ where
     self.add_state(closure)
   }
 
-  pub fn on_msg<F: Fn(&U, NodeStateless<T>) + 'static, U: 'static>(self, f: F) -> Node<T, (msg::Key<U>, State)> {
-    let receiver = msg::Receiver::new(self.clone(), f);
+  pub fn on_msg<F: Fn(&U, NodeStateless<T>) + 'static, U: 'static>(
+    self,
+    f: F,
+  ) -> Node<T, (msg::Key<U>, State)> {
+    let receiver = msg::Receiver::register(self.clone(), f);
     self.add_state(receiver)
   }
 

@@ -37,6 +37,7 @@ features = [
   'History',
   'Node',
   'Window',
+  'Location',
 ]
 
 [profile.release]
