@@ -4,10 +4,9 @@ use std::ops::Deref;
 
 use wasm_bindgen::closure::Closure;
 use wasm_bindgen::convert::FromWasmAbi;
-use wasm_bindgen::{JsCast, UnwrapThrowExt};
+use wasm_bindgen::JsCast;
 use web_sys::{
-  HtmlDivElement, HtmlElement, HtmlImageElement, HtmlOptionElement, HtmlParagraphElement,
-  HtmlSelectElement,
+  HtmlDivElement, HtmlElement, HtmlHeadingElement, HtmlImageElement, HtmlOptionElement, HtmlParagraphElement, HtmlSelectElement
 };
 
 use crate::msg;
@@ -34,55 +33,92 @@ pub trait HtmlRender {
   fn render(&self) -> impl Html;
 }
 
-impl<U: HtmlRender> Html for &U {
+impl<U: HtmlRender> Html for U {
   fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState) {
     U::render(&self).into_html()
+  }
+
+  fn class(self, name: &'static str) -> (Node<web_sys::Node, ()>, HtmlState) {
+    U::render(&self).class(name)
   }
 }
 
 pub trait Html {
   fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState);
+  fn class(self, name: &'static str) -> (Node<web_sys::Node, ()>, HtmlState);
+}
+
+impl Html for (Node<web_sys::Node, ()>, HtmlState)
+{
+  fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState) {
+    self
+  }
+
+  fn class(self, name: &'static str) -> (Node<web_sys::Node, ()>, HtmlState) {
+    (self.0.class(name), self.1)
+  }
 }
 
 impl<T, State: 'static> Html for Node<T, State>
 where
-  T: std::convert::AsRef<web_sys::Node>,
+  T: wasm_bindgen::JsCast + Clone + std::convert::AsRef<web_sys::Node> + 'static,
   Node<web_sys::Node, ()>: From<Node<T, ()>>,
 {
   fn into_html(self) -> (Node<web_sys::Node, ()>, HtmlState) {
-    let save= Default::default();
+    let save = Default::default();
     let ret = self.store_state(&save);
+    (ret.into(), save)
+  }
+
+  fn class(self, name: &'static str) -> (Node<web_sys::Node, ()>, HtmlState) {
+    let save = Default::default();
+    let ret = Node::<T, State>::class(self, name).store_state(&save);
     (ret.into(), save)
   }
 }
 
 impl From<Node<web_sys::HtmlDivElement, ()>> for Node<web_sys::Node, ()> {
   fn from(value: Node<web_sys::HtmlDivElement, ()>) -> Self {
-    Self { element: value.element.into(), state: () }
+    Self {
+      element: value.element.into(),
+      state: (),
+    }
   }
 }
 
 impl From<Node<web_sys::Text, ()>> for Node<web_sys::Node, ()> {
   fn from(value: Node<web_sys::Text, ()>) -> Self {
-    Self { element: value.element.into(), state: () }
+    Self {
+      element: value.element.into(),
+      state: (),
+    }
   }
 }
 
 impl From<Node<web_sys::HtmlSelectElement, ()>> for Node<web_sys::Node, ()> {
   fn from(value: Node<web_sys::HtmlSelectElement, ()>) -> Self {
-    Self { element: value.element.into(), state: () }
+    Self {
+      element: value.element.into(),
+      state: (),
+    }
   }
 }
 
 impl From<Node<web_sys::HtmlImageElement, ()>> for Node<web_sys::Node, ()> {
   fn from(value: Node<web_sys::HtmlImageElement, ()>) -> Self {
-    Self { element: value.element.into(), state: () }
+    Self {
+      element: value.element.into(),
+      state: (),
+    }
   }
 }
 
 impl From<Node<web_sys::HtmlOptionElement, ()>> for Node<web_sys::Node, ()> {
   fn from(value: Node<web_sys::HtmlOptionElement, ()>) -> Self {
-    Self { element: value.element.into(), state: () }
+    Self {
+      element: value.element.into(),
+      state: (),
+    }
   }
 }
 type Callback<'a> = std::option::Option<&'a web_sys::js_sys::Function>;
@@ -197,7 +233,7 @@ where
       .unchecked_ref::<HtmlElement>()
       .class_list()
       .add_1(class)
-      .unwrap_throw();
+      .unwrap();
     self
   }
 
@@ -206,7 +242,7 @@ where
     self
   }
 
-  pub fn child(self, node: impl Html) -> Node<T, (HtmlState, State)> {
+  pub fn child(self, node: &dyn Html) -> Node<T, (HtmlState, State)> {
     let node = node.into_html();
     let _ = self
       .element
@@ -228,9 +264,12 @@ where
     self
   }
 
-  pub fn children<C, U: Html>(self, list: C) -> Node<T, (Vec<Cell<std::prelude::v1::Option<Box<dyn Any>>>>, State)>
+  pub fn children<'a, C, U: Html + 'a>(
+    self,
+    list: C,
+  ) -> Node<T, (Vec<Cell<std::prelude::v1::Option<Box<dyn Any>>>>, State)>
   where
-    C: IntoIterator<Item = U>,
+    C:  IntoIterator<Item = U>,
   {
     let mut states = vec![];
     for item in list.into_iter() {
@@ -371,6 +410,21 @@ pub fn select() -> Select {
 pub type Option = NodeStateless<HtmlOptionElement>;
 pub fn option() -> Option {
   NodeStateless::<HtmlOptionElement>::new("option")
+}
+
+pub type H1 = NodeStateless<HtmlHeadingElement>;
+pub fn h1() -> H1 {
+  NodeStateless::<HtmlHeadingElement>::new("h1")
+}
+
+pub type H2 = NodeStateless<HtmlHeadingElement>;
+pub fn h2() -> H2 {
+  NodeStateless::<HtmlHeadingElement>::new("h2")
+}
+
+pub type H3 = NodeStateless<HtmlHeadingElement>;
+pub fn h3() -> H3 {
+  NodeStateless::<HtmlHeadingElement>::new("h3")
 }
 
 pub type Text = NodeStateless<web_sys::Text>;

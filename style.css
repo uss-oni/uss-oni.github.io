@@ -194,6 +194,10 @@ body {
   width: 100%;
 }
 
+.properties {
+  display: contents;
+}
+
 #propertiesChart {
   grid-area: charts;
   margin: 5px;
@@ -214,8 +218,9 @@ body {
   grid-template-areas:
     "imgd desc desc"
     "name name value";
-  grid-template-rows: 140px min-content;
+  grid-auto-rows: min-content;
   grid-template-columns: 140px 110px 1fr;
+  grid-auto-flow: row;
   margin: 20px;
   border: 6px ridge #874566;
 }
@@ -234,12 +239,16 @@ body {
   grid-area: desc;
 }
 
-.propertiesName {
-  grid-area: name;
+.property {
+  display: contents;
 }
 
-.propertiesValue {
-  grid-area: value;
+.propertyName {
+  grid-column: name;
+}
+
+.propertyValue {
+  grid-column: value;
 }
 
 .propValuePhase {

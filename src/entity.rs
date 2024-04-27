@@ -1,3 +1,5 @@
+use std::cmp::Ordering;
+
 use crate::db;
 use crate::icon::Image;
 use crate::lang::{
@@ -8,7 +10,7 @@ pub struct Entity {
   pub name: lang::Game,
   pub tag: &'static str,
   pub order: f32,
-  pub params: db::Params,
+  pub params: Vec<db::Param>,
   pub vanilla: bool,
   pub space_out: bool,
 }
@@ -37,6 +39,14 @@ impl Entity {
     lang::Text::Game(self.name)
   }
 }
+
+impl PartialEq for Entity {
+  fn eq(&self, other: &Self) -> bool {
+    self.tag == other.tag
+  }
+}
+
+impl Eq for Entity {}
 
 pub struct EntityImage {
   name: &'static str,

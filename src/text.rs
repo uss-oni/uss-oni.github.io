@@ -100,7 +100,7 @@ impl HtmlRender for HyphenatedText {
     let language = &options().language;
     let text = html::text();
     text.set_data(&language.to_str(self.text).to_lowercase());
-    let div = div().class("hyphen").child(text);
+    let div = div().class("hyphen").child(&text);
     //if div.offset_width() > 75 {
     let _ = div.set_attribute("style", "hyphens:auto;");
     //}

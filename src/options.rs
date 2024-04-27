@@ -47,6 +47,10 @@ pub struct LanguageChange {
   pub language: lang::Language,
 }
 
+pub struct DegreeChange {
+  pub degree: Degree,
+}
+
 pub struct RenderOptions {}
 
 impl RenderOptions {}
@@ -57,7 +61,7 @@ impl HtmlRender for RenderOptions {
       .children(lang::LIST.iter().map(|l| {
         option()
           .set_value(l.name)
-          .child(text::StaticText::new(l.flag).render())
+          .child(&text::StaticText::new(l.flag).render())
       }))
       .on_event(|_: Input, target| {
         options_with_mut(|options| options.language = target.value().parse().unwrap());
@@ -66,24 +70,31 @@ impl HtmlRender for RenderOptions {
         });
       });
 
-    let degree = select().children(Degree::choices().iter().map(|d| {
-      option()
-        .set_value(d.0)
-        .child(text::StaticText::new(d.1).render())
-    }));
+    let degree = select()
+      .children(Degree::choices().iter().map(|d| {
+        option()
+          .set_value(d.0)
+          .child(&text::StaticText::new(d.1).render())
+      }))
+      .on_event(|_: Input, target| {
+        options_with_mut(|options| options.degree = target.value().parse().unwrap());
+        send(DegreeChange {
+          degree: options().degree,
+        });
+      });
 
     let time = select().children(Time::choices().iter().map(|t| {
       option()
         .set_value(t.0)
-        .child(text::StaticText::new(t.1).render())
+        .child(&text::StaticText::new(t.1).render())
     }));
 
     let state = None.into();
     let div = div()
       .id("options")
-      .child(language)
-      .child(degree)
-      .child(time)
+      .child(&language)
+      .child(&degree)
+      .child(&time)
       .store_state(&state);
     std::mem::forget(state);
     div

@@ -28,16 +28,16 @@ impl Item {
   }
 }
 
-impl HtmlRender for Item {
+impl HtmlRender for &Item {
   fn render(&self) -> impl Html {
     div()
       .class("boxContainer")
-      .child(div().class("boxBorder"))
+      .child(&div().class("boxBorder"))
       .child(
-        div()
+        &div()
           .class("box")
-          .child(div().class("align").child(&self.text))
-          .child(img().set_src(&self.entity.img().path())),
+          .child(&div().class("align").child(&self.text))
+          .child(&img().set_src(&self.entity.img().path())),
       )
       .on_event(|_: MouseClick, _| {
         send(Hide {});
@@ -116,12 +116,12 @@ impl Category {
     }
   }
 }
-impl HtmlRender for Category {
+impl HtmlRender for &Category {
   fn render(&self) -> impl Html {
     div()
       .class("menuCategory")
-      .child(div().class("menuCategoryChoice").child(&self.name))
-      .child(div().class("menuContainer").children(&self.sub_categories))
+      .child(&div().class("menuCategoryChoice").child(&self.name))
+      .child(&div().class("menuContainer").children(&self.sub_categories))
       .on_event(|_: MouseEnter, div| {
         send(RemoveChosen {});
         div.set_id("menuChosen");
@@ -154,20 +154,20 @@ impl SubCategory {
     }
   }
 }
-impl HtmlRender for SubCategory {
+impl HtmlRender for &SubCategory {
   fn render(&self) -> impl Html {
     let children: Rc<_> = Cell::new(None).into();
     let children_clone = children.clone();
 
     div()
       .class("menuSubcategory")
-      .child(div().class("menuChoice").child(&self.name))
+      .child(&div().class("menuChoice").child(&self.name))
       .on_event(move |_: MouseEnter, target| {
         let c = div()
           .class("category")
           .children(&self.items)
           .on_msg(move |_: &Hide, div| div.style().set_property("display", "none").unwrap());
-        target.child(c.clone());
+        target.child(&c.clone());
         children.replace(Some(c));
       })
       .on_event(move |_: MouseLeave, _| {

@@ -4,10 +4,12 @@ use std::rc::Rc;
 
 use element::*;
 
-use crate::entity::{self, Entity};
+use crate::db::recipe::{Phase, Recipe};
+use crate::entity::Entity;
 use crate::html::{div, img, Html, HtmlRender, HtmlState};
 use crate::icon::Image;
-use crate::text;
+use crate::text::GameText;
+use crate::{db, text};
 
 pub struct DisplayEntity {
   pub entity: &'static Entity,
@@ -36,25 +38,48 @@ impl HtmlRender for Properties {
         let entity = entity.entity;
         prop.replace_children_with_node_0();
         prop
-        //  .child(
-        //    div()
-        //      .id("propertiesChart")
-        //      .child(img().set_src("images/test.png")),
-        //  )
+          //  .child(
+          //    div()
+          //      .id("propertiesChart")
+          //      .child(img().set_src("images/test.png")),
+          //  )
           .child(
-            div()
+            &div()
               .id("propertiesBox")
-              .child(img().id("propertiesImg").set_src(&entity.img().path()))
+              .child(&img().id("propertiesImg").set_src(&entity.img().path()))
               .child(&text::DescText::new(entity.desc()))
               .child(display_properties(entity)),
           )
+          .child(&display_phases(entity))
           .store_state(&state);
       })
       .store_state(&self.div_state)
   }
 }
 
-fn display_properties(entity: &Entity) -> impl Html {
+fn display_phases(entity: &Entity) -> impl Html {
+  let recipes = db::recipe::recipes
+    .iter()
+    .filter_map(|recipe| match recipe {
+      Recipe::Phase(phase) => Some(phase),
+      _ => None,
+    }).filter(|phase| phase.input == entity || phase.output.iter().any(|p| p.entity == entity));
+  let div = div();
+  div.children(recipes)
+}
+
+impl HtmlRender for &Phase {
+  fn render(&self) -> impl Html {
+    div().child(&GameText::new(self.input.name)).child(&self.temp)
+  }
+}
+
+fn display_none<'a>(div: impl Html) -> &'a dyn Html {
+  &div
+}
+
+fn display_properties(entity: &Entity) -> &dyn Html {
+  let div = div().class("properties");
   match &entity.params {
     crate::db::Params::BuildingMedical(_) => todo!(),
     crate::db::Params::BuildingEquipment(_) => todo!(),
@@ -75,8 +100,8 @@ fn display_properties(entity: &Entity) -> impl Html {
     crate::db::Params::BuildingHep(_) => todo!(),
     crate::db::Params::BuildingQuest(_) => todo!(),
     crate::db::Params::BuildingLander(_) => todo!(),
-    crate::db::Params::ElementSolid(solid) => display_element_solid(entity, solid),
-    crate::db::Params::ElementLiquid(_) => todo!(),
+    crate::db::Params::ElementSolid(solid) => display_element_solid(div, entity, solid),
+    crate::db::Params::ElementLiquid(_) => display_none(div),
     crate::db::Params::ElementGas(_) => todo!(),
     crate::db::Params::ElementOther(_) => todo!(),
     crate::db::Params::SpaceComet(_) => todo!(),
