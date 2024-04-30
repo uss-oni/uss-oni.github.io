@@ -186,9 +186,9 @@ body {
   grid-area: prop;
   display: grid;
   grid-template-areas:
-    "attr    propBox"
+    "attr  propBox"
     "attr  charts "
-    "nothing nothing";
+    "attr nothing";
   grid-template-columns: 1fr 600px;
   grid-template-rows: min-content min-content 1fr;
   width: 100%;
@@ -196,6 +196,10 @@ body {
 
 .properties {
   display: contents;
+}
+
+#properties table {
+  grid-area: attr;
 }
 
 #propertiesChart {

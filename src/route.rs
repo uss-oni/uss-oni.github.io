@@ -20,9 +20,11 @@ impl Route {
 
 fn pop(app: &Rc<App>) {
   if let Ok(hash) = window().location().hash() {
-    let hash = &hash[1..];
-    if let Some(entity) = app.menu.get_entity(hash) {
-      send(DisplayEntity { entity });
+    if hash.len() > 0 {
+      let hash = &hash[1..];
+      if let Some(entity) = app.menu.get_entity(hash) {
+        send(DisplayEntity { entity });
+      }
     }
   }
 }
