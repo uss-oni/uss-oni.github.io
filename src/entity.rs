@@ -1,5 +1,3 @@
-use std::cmp::Ordering;
-
 use crate::db;
 use crate::icon::Image;
 use crate::lang::{
@@ -10,7 +8,7 @@ pub struct Entity {
   pub name: lang::Game,
   pub tag: &'static str,
   pub order: f32,
-  pub params: Vec<db::Param>,
+  pub params: db::Params,
   pub vanilla: bool,
   pub space_out: bool,
 }

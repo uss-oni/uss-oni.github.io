@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using Database;
 using STRINGS;
 
 namespace USS
@@ -10,7 +11,7 @@ namespace USS
   }
   public class Db<T> where T : new()
   {
-
+    
     public Dictionary<string, T> dico = [];
     public T this[string id]
     {

@@ -1,16 +1,16 @@
 use std::cell::Cell;
 use std::rc::Rc;
 
-use crate::category;
 use crate::entity::Entity;
-use crate::html::{div, img, HtmlState, MouseClick, MouseEnter, MouseLeave};
-use crate::html::{Html, HtmlRender};
+use crate::html::HtmlRender;
+use crate::html::{div, img, HtmlState, MouseClick, MouseEnter, MouseLeave, Node};
 use crate::icon::Image;
 use crate::lang::Text;
 use crate::msg::send;
 use crate::properties::DisplayEntity;
 use crate::route::Route;
 use crate::text::{HyphenatedText, UiText};
+use crate::category;
 
 struct Item {
   entity: &'static Entity,
@@ -29,24 +29,25 @@ impl Item {
 }
 
 impl HtmlRender for &Item {
-  fn render(&self) -> impl Html {
+  fn render(&self) -> Node {
+    let tag = self.entity.tag;
+    let entity = self.entity;
     div()
       .class("boxContainer")
-      .child(&div().class("boxBorder"))
+      .child(div().class("boxBorder"))
       .child(
-        &div()
+        div()
           .class("box")
-          .child(&div().class("align").child(&self.text))
-          .child(&img().set_src(&self.entity.img().path())),
+          .child(div().class("align").child(&self.text))
+          .child(img().set_src(&self.entity.img().path())),
       )
       .on_event(|_: MouseClick, _| {
         send(Hide {});
-        send(Route::new(self.entity.tag));
-        send(DisplayEntity {
-          entity: self.entity,
-        });
+        send(Route::new(tag));
+        send(DisplayEntity { entity });
       })
       .store_state(&self.state)
+      .into()
   }
 }
 
@@ -95,9 +96,9 @@ impl Menu {
   }
 }
 
-impl HtmlRender for Menu {
-  fn render(&self) -> impl Html {
-    div().id("menu").children(&self.categories)
+impl HtmlRender for &Menu {
+  fn render(&self) -> Node {
+    div().id("menu").children(&self.categories).into()
   }
 }
 
@@ -117,11 +118,11 @@ impl Category {
   }
 }
 impl HtmlRender for &Category {
-  fn render(&self) -> impl Html {
+  fn render(&self) -> Node {
     div()
       .class("menuCategory")
-      .child(&div().class("menuCategoryChoice").child(&self.name))
-      .child(&div().class("menuContainer").children(&self.sub_categories))
+      .child(div().class("menuCategoryChoice").child(&self.name))
+      .child(div().class("menuContainer").children(&self.sub_categories))
       .on_event(|_: MouseEnter, div| {
         send(RemoveChosen {});
         div.set_id("menuChosen");
@@ -130,6 +131,7 @@ impl HtmlRender for &Category {
         let _ = target.remove_attribute("id");
       })
       .store_state(&self.state)
+      .into()
   }
 }
 
@@ -155,19 +157,19 @@ impl SubCategory {
   }
 }
 impl HtmlRender for &SubCategory {
-  fn render(&self) -> impl Html {
+  fn render(&self) -> Node {
     let children: Rc<_> = Cell::new(None).into();
     let children_clone = children.clone();
-
+    let items:Vec<_> = self.items.iter().map(|item| Item {entity: item.entity, state: Default::default(), text: item.text}).collect();
     div()
       .class("menuSubcategory")
-      .child(&div().class("menuChoice").child(&self.name))
+      .child(div().class("menuChoice").child(&self.name))
       .on_event(move |_: MouseEnter, target| {
         let c = div()
           .class("category")
-          .children(&self.items)
+          .children(&items)
           .on_msg(move |_: &Hide, div| div.style().set_property("display", "none").unwrap());
-        target.child(&c.clone());
+        target.child(c.clone());
         children.replace(Some(c));
       })
       .on_event(move |_: MouseLeave, _| {
@@ -175,5 +177,6 @@ impl HtmlRender for &SubCategory {
         target.unwrap().remove();
       })
       .store_state(&self.state)
+      .into()
   }
 }

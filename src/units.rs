@@ -1,4 +1,4 @@
-use crate::{html::{self, Html, HtmlRender}, options::{options, Degree, DegreeChange}};
+use crate::{html::{self, HtmlRender, Node}, options::{options, Degree, DegreeChange}};
 
 #[derive(Clone, Copy)]
 pub struct Size {
@@ -31,11 +31,11 @@ impl Temperature {
 }
 
 impl HtmlRender for Temperature {
-  fn render(&self) -> impl Html {
-    let clone = self.clone();
+  fn render(&self) -> Node {
+    let clone = *self;
     let text = html::text();
     text.set_data(&self.to_string(options().degree));
-    text.on_msg(move |degree: &DegreeChange, text| text.set_data(&clone.to_string(degree.degree)))
+    text.on_msg(move |degree: &DegreeChange, text| text.set_data(&clone.to_string(degree.degree))).into()
   }
 }
 
@@ -50,11 +50,11 @@ impl DtuPerGramPerDegree {
 }
 
 impl HtmlRender for DtuPerGramPerDegree {
-  fn render(&self) -> impl Html {
-    let clone = self.clone();
+  fn render(&self) -> Node {
+    let clone = *self;
     let text = html::text();
     text.set_data(&self.to_string(options().degree));
-    text.on_msg(move |degree: &DegreeChange, text| text.set_data(&clone.to_string(degree.degree)))
+    text.on_msg(move |degree: &DegreeChange, text| text.set_data(&clone.to_string(degree.degree))).into()
   }
 }
 
@@ -68,11 +68,11 @@ impl DtuPerMetreSecondPerDegree {
 }
 
 impl HtmlRender for DtuPerMetreSecondPerDegree {
-  fn render(&self) -> impl Html {
-    let clone = self.clone();
+  fn render(&self) -> Node {
+    let clone = *self;
     let text = html::text();
     text.set_data(&self.to_string(options().degree));
-    text.on_msg(move |degree: &DegreeChange, text| text.set_data(&clone.to_string(degree.degree)))
+    text.on_msg(move |degree: &DegreeChange, text| text.set_data(&clone.to_string(degree.degree))).into()
   }
 }
 

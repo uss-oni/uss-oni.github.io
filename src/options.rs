@@ -1,7 +1,7 @@
 use std::cell::Cell;
 use std::str::FromStr;
 
-use crate::html::{div, option, select, Html, HtmlRender, Input};
+use crate::html::{div, option, select, HtmlRender, Input, Node};
 use crate::lang::{
   Language, {self},
 };
@@ -38,7 +38,7 @@ impl Options {
       language: lang::LIST[0],
       degree: Degree::C,
       time: Time::Cycle,
-      dlc: Dlc { space_out: true },
+      dlc: Dlc { _space_out: true },
     }
   }
 }
@@ -56,54 +56,62 @@ pub struct RenderOptions {}
 impl RenderOptions {}
 
 impl HtmlRender for RenderOptions {
-  fn render(&self) -> impl Html {
-    let language = select()
-      .children(lang::LIST.iter().map(|l| {
+  fn render(&self) -> Node {
+    let children: Vec<_> = lang::LIST
+      .iter()
+      .map(|l| {
         option()
           .set_value(l.name)
-          .child(&text::StaticText::new(l.flag).render())
-      }))
-      .on_event(|_: Input, target| {
-        options_with_mut(|options| options.language = target.value().parse().unwrap());
-        send(LanguageChange {
-          language: options().language,
-        });
+          .child(&text::StaticText::new(l.flag))
+      })
+      .collect();
+    let language = select().children(children).on_event(|_: Input, target| {
+      options_with_mut(|options| options.language = target.value().parse().unwrap());
+      send(LanguageChange {
+        language: options().language,
       });
+    });
 
-    let degree = select()
-      .children(Degree::choices().iter().map(|d| {
+    let children: Vec<_> = Degree::choices()
+      .iter()
+      .map(|d| {
         option()
           .set_value(d.0)
-          .child(&text::StaticText::new(d.1).render())
-      }))
-      .on_event(|_: Input, target| {
-        options_with_mut(|options| options.degree = target.value().parse().unwrap());
-        send(DegreeChange {
-          degree: options().degree,
-        });
+          .child(&text::StaticText::new(d.1))
+      })
+      .collect();
+    let degree = select().children(children).on_event(|_: Input, target| {
+      options_with_mut(|options| options.degree = target.value().parse().unwrap());
+      send(DegreeChange {
+        degree: options().degree,
       });
+    });
 
-    let time = select().children(Time::choices().iter().map(|t| {
-      option()
-        .set_value(t.0)
-        .child(&text::StaticText::new(t.1).render())
-    }));
+    let children: Vec<_> = Time::choices()
+      .iter()
+      .map(|t| {
+        option()
+          .set_value(t.0)
+          .child(&text::StaticText::new(t.1))
+      })
+      .collect();
+    let time = select().children(children);
 
     let state = None.into();
     let div = div()
       .id("options")
-      .child(&language)
-      .child(&degree)
-      .child(&time)
+      .child(language)
+      .child(degree)
+      .child(time)
       .store_state(&state);
     std::mem::forget(state);
-    div
+    div.into()
   }
 }
 
 #[derive(Clone, Copy)]
 pub struct Dlc {
-  space_out: bool,
+  _space_out: bool,
 }
 
 #[derive(Clone, Copy)]
@@ -149,14 +157,14 @@ impl Time {
     vec![("second", "Seconde"), ("cycle", "Cycle")]
   }
 
-  pub fn convert(self, time: f32) -> f32 {
+  pub fn _convert(self, time: f32) -> f32 {
     match self {
       Time::Second => time,
       Time::Cycle => time / 600.0,
     }
   }
 
-  pub fn to_string(self) -> &'static str {
+  pub fn _to_string(self) -> &'static str {
     match self {
       Time::Second => "s",
       Time::Cycle => " peuchies",

@@ -21,7 +21,7 @@ impl Route {
 fn pop(app: &Rc<App>) {
   if let Ok(hash) = window().location().hash() {
     let hash = &hash[1..];
-    if let Some(entity) = app.menu.get_entity(&hash) {
+    if let Some(entity) = app.menu.get_entity(hash) {
       send(DisplayEntity { entity });
     }
   }
@@ -29,7 +29,7 @@ fn pop(app: &Rc<App>) {
 
 pub fn init(app: Rc<App>) {
   pop(&app);
-  let closure = Closure::<dyn Fn() -> ()>::new(move || pop(&app));
+  let closure = Closure::<dyn Fn()>::new(move || pop(&app));
   window().set_onpopstate(Some(closure.as_ref().unchecked_ref()));
   let receiver = msg::Receiver::register((), add_to_history);
   forget(receiver);

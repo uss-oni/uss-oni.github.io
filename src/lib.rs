@@ -52,7 +52,7 @@ fn main() -> Result<(), JsValue> {
 
 fn render(app: Rc<App>) {
   let body: Body = body().into();
-  let body = body.child(&options::RenderOptions {});
+  let body = body.child(options::RenderOptions {});
   let body = body.child(&app.properties);
   let _body = body.child(&app.menu);
 }
