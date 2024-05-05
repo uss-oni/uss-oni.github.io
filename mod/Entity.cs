@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace USS
 {
   public class Entity
@@ -91,6 +93,31 @@ namespace USS
     public float? light_absorption; // 
     public float? default_mass; //
     public List<string> trap_critters; //
-    
+    public int? add_tiles;
+    public int? add_tiles_max_height;
+    public int? add_tiles_min_height;
+    public int? add_disease_count;
+    public bool? affected_by_difficulty;
+    public float? bunker_damage_multiplier;
+    public int? entity_damage;
+    public bool? can_hit_duplicants;
+    public byte? disease_idx;
+    public float? element_replace_tile_temperature_range_min;
+    public float? element_replace_tile_temperature_range_max;
+    public string[] loot_on_destroyed_by_missile;
+    public float? window_damage_multiplier;
+    public float? temperature_range_min;
+    public float? temperature_range_max;
+    public float? total_tile_damage;
+    public float? mass_range_min;    
+    public float? mass_range_max;
+    public float? spawn_angle_min;
+    public float? spawn_angle_max;
+    public float? spawn_velocity_min;
+    public float? spawn_velocity_max;
+    public float? explosion_temperature_range_min;
+    public float? explosion_temperature_range_max;
+    public float? exhaust_rate;
+    public string exhaust_element;
   }
 }

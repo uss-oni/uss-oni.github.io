@@ -66,7 +66,7 @@ pub fn translate(ui: Ui) -> &'static str {
     Ui::CategoryEquipmentClothes => "Vêtements",
 
     Ui::TitleProperties => "Propriétés",
-    Ui::TitleObtainingPhaseChange => "Obtention : changement de phases",
+    Ui::TitlePhaseChange => "Changement de phases",
     Ui::TitleBuildingMaterials => "Construction",
 
     Ui::PhaseCooking => "Cuisson",

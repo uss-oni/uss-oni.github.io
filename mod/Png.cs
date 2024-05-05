@@ -9,6 +9,7 @@ namespace USS
 
     public static void Create(string name, Sprite source, Color color)
     {
+      return;
       RenderTexture renderTexture = RenderTexture.GetTemporary(
         source.texture.width,
         source.texture.height,

@@ -96,7 +96,7 @@ pub enum Ui {
   PropertyMoralBonus,
   PropertyPrimaryElement,
 
-  TitleObtainingPhaseChange,
+  TitlePhaseChange,
   TitleBuildingMaterials,
 
   ValueInvincible,

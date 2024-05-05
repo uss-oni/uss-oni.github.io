@@ -1,5 +1,10 @@
+use wasm_bindgen::closure::Closure;
+use wasm_bindgen::JsCast;
+use web_sys::ResizeObserver;
+
 use crate::html::{self, div, HtmlRender, Node};
 use crate::lang::{Game, Text};
+use crate::msg::send;
 use crate::options::{options, LanguageChange};
 
 pub struct UiText {
@@ -102,15 +107,30 @@ impl HyphenatedText {
   }
 }
 
+thread_local! {
+pub static RESIZE_OBSERVER: ResizeObserver = {
+  let closure = Closure::<dyn Fn()>::new(|| {send(Resize{})});
+  let ret = ResizeObserver::new(closure.as_ref().unchecked_ref()).unwrap();
+  closure.forget();
+  ret
+}}
+
 impl HtmlRender for &HyphenatedText {
   fn render(&self) -> Node {
     let language = &options().language;
     let text = html::text();
     text.set_data(&language.to_str(self.text).to_lowercase());
-    let div = div().class("hyphen").child(text);
-    //if div.offset_width() > 75 {
-    let _ = div.set_attribute("style", "hyphens:auto;");
-    //}
+    let div = div()
+      .class("hyphen")
+      .child(text)
+      .on_msg(|_: &Resize, target| {
+        if target.offset_width() > 75 {
+          let _ = target.set_attribute("style", "hyphens:auto;");
+        }
+      });
+    RESIZE_OBSERVER.with(|obs| obs.observe(&div));
     div.into()
   }
 }
+
+struct Resize {}

@@ -14,8 +14,6 @@ pub struct Decor {
 pub struct Kg(pub f32);
 
 #[derive(Clone, Copy, Default)]
-pub struct Percent(pub f32);
-#[derive(Clone, Copy, Default)]
 pub struct GramPerMole(pub f32);
 #[derive(Clone, Copy, Default)]
 pub struct Duration(pub f32);
@@ -78,4 +76,16 @@ impl HtmlRender for DtuPerMetreSecondPerDegree {
 
 fn round_float(f: f32) -> String {
   format!("{}", (f * 1000.0).round() / 1000.0)
+}
+
+
+#[derive(Clone, Copy, Default)]
+pub struct Percent(pub f32);
+
+impl HtmlRender for Percent {
+    fn render(&self) -> Node {
+      let text = html::text();
+      text.set_data(&(round_float(100.0 * self.0) + "%"));
+      text.into()
+    }
 }

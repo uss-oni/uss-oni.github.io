@@ -117,6 +117,15 @@ impl From<HtmlNode<web_sys::HtmlOptionElement>> for HtmlNode<web_sys::Node> {
   }
 }
 
+impl From<HtmlNode<web_sys::HtmlHeadingElement>> for HtmlNode<web_sys::Node> {
+  fn from(value: HtmlNode<web_sys::HtmlHeadingElement>) -> Self {
+    Self {
+      element: value.element.into(),
+      state: value.state,
+    }
+  }
+}
+
 impl From<HtmlNode<web_sys::SvgElement>> for HtmlNode<web_sys::Node> {
   fn from(value: HtmlNode<web_sys::SvgElement>) -> Self {
     Self {

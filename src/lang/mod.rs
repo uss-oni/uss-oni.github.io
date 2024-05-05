@@ -38,6 +38,7 @@ pub const PROPERTY_PRIMARY_ELEMENT: Text = Text::Ui(Ui::PropertyPrimaryElement);
 
 pub const VALUE_INVINCIBLE: Text = Text::Ui(Ui::ValueInvincible);
 
+pub const TITLE_PHASE_PHASE: Text = Text::Ui(Ui::TitlePhaseChange);
 impl db::recipe::PhaseType {
   pub fn to_text(&self) -> Text {
     match self {

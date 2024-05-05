@@ -164,7 +164,7 @@ namespace USS
     {
       foreach (var recipe in component.GetRecipes())
       {
-        
+
         bool flag = false;
         foreach (var i in recipe.ingredients)
         {
@@ -473,12 +473,39 @@ namespace USS
       {
         translations[entity.tag] = (TagManager.GetProperName(entity.tag), component.description);
       }
+      
     }
     public static void Get(Entity entity, ClustercraftInteriorDoor component) { }
     public static void Get(Entity entity, Comet component)
     {
       translations[entity.tag] = (TagManager.GetProperName(entity.tag), TagManager.GetProperName(entity.tag));
       entity.menu = Category.Space.Comet;
+      entity.entity_damage = component.entityDamage;
+      entity.add_tiles = component.addTiles;
+      entity.add_tiles_max_height = component.addTilesMaxHeight;
+      entity.add_tiles_min_height = component.addTilesMinHeight;
+      entity.add_disease_count = component.addDiseaseCount;
+      entity.affected_by_difficulty = component.affectedByDifficulty;
+      entity.bunker_damage_multiplier = component.bunkerDamageMultiplier;
+      entity.can_hit_duplicants = component.canHitDuplicants;
+      entity.disease_idx = component.diseaseIdx;
+      entity.element_replace_tile_temperature_range_min = component.elementReplaceTileTemperatureRange.x;
+      entity.element_replace_tile_temperature_range_max = component.elementReplaceTileTemperatureRange.y;
+      entity.loot_on_destroyed_by_missile = component.lootOnDestroyedByMissile;
+      entity.window_damage_multiplier = component.windowDamageMultiplier;
+      entity.total_tile_damage = component.totalTileDamage;
+      entity.temperature_range_min = component.temperatureRange.x;
+      entity.explosion_temperature_range_max = component.explosionTemperatureRange.y;
+      entity.explosion_temperature_range_min = component.explosionTemperatureRange.x;
+      entity.mass_range_min = component.massRange.x;
+      entity.spawn_angle_min = component.spawnAngle.x;
+      entity.spawn_velocity_min = component.spawnVelocity.x;
+      entity.temperature_range_max = component.temperatureRange.y;
+      entity.mass_range_max = component.massRange.y;
+      entity.spawn_angle_max = component.spawnAngle.y;
+      entity.spawn_velocity_max = component.spawnVelocity.y;
+      entity.exhaust_rate = component.EXHAUST_RATE;
+      entity.exhaust_element = component.EXHAUST_ELEMENT.CreateTag().ToString();
     }
     public static void Get(Entity entity, SpaceArtifact component)
     {

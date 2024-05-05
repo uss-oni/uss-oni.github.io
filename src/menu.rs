@@ -9,7 +9,7 @@ use crate::lang::Text;
 use crate::msg::send;
 use crate::properties::DisplayEntity;
 use crate::route::Route;
-use crate::text::{HyphenatedText, UiText};
+use crate::text::{self, HyphenatedText, UiText};
 use crate::category;
 
 struct Item {
@@ -158,6 +158,7 @@ impl SubCategory {
 }
 impl HtmlRender for &SubCategory {
   fn render(&self) -> Node {
+    text::RESIZE_OBSERVER.with(|obs| obs.disconnect()); // Remove all the observers from the previous menu
     let children: Rc<_> = Cell::new(None).into();
     let children_clone = children.clone();
     let items:Vec<_> = self.items.iter().map(|item| Item {entity: item.entity, state: Default::default(), text: item.text}).collect();

@@ -147,11 +147,13 @@ body {
 }
 
 .box img {
+  position: relative;
   grid-row: 1;
   object-fit: contain;
   margin: 5%;
   width: 90%;
   height: 90%;
+  z-index: -3;
 }
 
 .box .align {
@@ -163,7 +165,7 @@ body {
 }
 
 .box .align .hyphen {
-  display: block;
+  display: inline-block;
   color: rgba(255, 255, 255, 0.9);
   width: inherit;
   height: inherit;
@@ -176,6 +178,7 @@ body {
   padding-left: 2px;
   padding-right: 2px;
   border-radius: 0px 0px 5px 5px;
+  z-index: 4;
 }
 
 .box .align .hyphen:first-letter {
@@ -200,6 +203,8 @@ body {
 
 #properties table {
   grid-area: attr;
+  height: 1px;
+  width: max-content;
 }
 
 #propertiesChart {
@@ -318,7 +323,6 @@ body {
 }
 
 .phaseRecipeInput img {
-  margin: 4px;
   height: 36px;
   width: 40px;
   object-fit: contain;
@@ -328,7 +332,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  top: -9px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .phaseRecipeElement {
@@ -340,7 +347,6 @@ body {
 }
 
 .phaseRecipeElement img {
-  margin: 4px;
   height: 36px;
   width: 40px;
   object-fit: contain;
@@ -350,7 +356,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  top: -9px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .phaseRecipeOutput {
@@ -362,7 +371,6 @@ body {
 }
 
 .phaseRecipeOutput img {
-  margin: 4px;
   height: 36px;
   width: 40px;
   object-fit: contain;

@@ -6,9 +6,14 @@ use element::*;
 
 use crate::db::recipe::{EntityPercent, Recipe};
 use crate::entity::Entity;
-use crate::html::{div, img, path, svg, table, tbody, td, tr, Html, HtmlRender, HtmlState, Node};
+use crate::html::{
+  div, h2, img, path, svg, table, td, tr, HtmlRender, HtmlState, MouseClick, Node,
+};
 use crate::icon::Image;
-use crate::text::GameText;
+use crate::lang::TITLE_PHASE_PHASE;
+use crate::msg::send;
+use crate::route::Route;
+use crate::text::{GameText, StaticText, UiText};
 use crate::units::Temperature;
 use crate::{db, text};
 
@@ -95,7 +100,7 @@ fn display_phases(entity: &'static Entity) -> Node {
       _ => None,
     })
     .filter(|phase| phase.input == entity)
-    .collect(); // || phase.output.iter().any(|p| p.entity == entity));
+    .collect();
   let mut recipes_to: Vec<_> = db::recipe::recipes
     .iter()
     .filter_map(|recipe| match recipe {
@@ -191,7 +196,14 @@ fn display_phases(entity: &'static Entity) -> Node {
     }
     display.push(to_push);
   }
-  table().children(display).into()
+  if display.len() > 0 {
+    div()
+      .child(h2().child(&UiText::new(TITLE_PHASE_PHASE)))
+      .child(table().children(display))
+      .into()
+  } else {
+    div().into()
+  }
 }
 
 fn draw_arrow(d: &str) -> Node {
@@ -223,13 +235,26 @@ impl HtmlRender for PhaseDisplay {
           div()
             .child(img().set_src(&one.img().path()))
             .child(GameText::new(one.name))
-            .class("phaseRecipeInput"),
+            .class("phaseRecipeInput")
+            .on_event(move |_: MouseClick, _| {
+              send(Route::new(one.tag));
+              send(DisplayEntity { entity: one });
+            }),
         ),
         EntitiesPercent::More(more) => td().children(more.iter().map(|entity| {
           div()
             .child(img().set_src(&entity.entity.img().path()))
             .child(GameText::new(entity.entity.name))
+            .child(&StaticText::new(" ("))
+            .child(entity.percent)
+            .child(&StaticText::new(")"))
             .class("phaseRecipeInput")
+            .on_event(move |_: MouseClick, _| {
+              send(Route::new(entity.entity.tag));
+              send(DisplayEntity {
+                entity: entity.entity,
+              });
+            })
         })),
       });
       ret.child(
@@ -258,14 +283,27 @@ impl HtmlRender for PhaseDisplay {
           div()
             .child(img().set_src(&one.img().path()))
             .child(GameText::new(one.name))
-            .class("phaseRecipeElement"),
+            .class("phaseRecipeElement")
+            .on_event(move |_: MouseClick, _| {
+              send(Route::new(one.tag));
+              send(DisplayEntity { entity: one });
+            }),
         ),
       ),
       EntitiesPercent::More(more) => ret.child(td().children(more.iter().map(|entity| {
         div()
           .child(img().set_src(&entity.entity.img().path()))
           .child(GameText::new(entity.entity.name))
+          .child(&StaticText::new(" ("))
+          .child(entity.percent)
+          .child(&StaticText::new(")"))
           .class("phaseRecipeElement")
+          .on_event(move |_: MouseClick, _| {
+            send(Route::new(entity.entity.tag));
+            send(DisplayEntity {
+              entity: entity.entity,
+            });
+          })
       }))),
     };
     if let Some(right) = &self.right {
@@ -292,14 +330,27 @@ impl HtmlRender for PhaseDisplay {
             div()
               .child(img().set_src(&one.img().path()))
               .child(GameText::new(one.name))
-              .class("phaseRecipeOutput"),
+              .class("phaseRecipeOutput")
+              .on_event(move |_: MouseClick, _| {
+                send(Route::new(one.tag));
+                send(DisplayEntity { entity: one });
+              }),
           ),
         ),
         EntitiesPercent::More(more) => ret.child(td().children(more.iter().map(|entity| {
           td()
             .child(img().set_src(&entity.entity.img().path()))
             .child(GameText::new(entity.entity.name))
+            .child(&StaticText::new(" ("))
+            .child(entity.percent)
+            .child(&StaticText::new(")"))
             .class("phaseRecipeOutput")
+            .on_event(move |_: MouseClick, _| {
+              send(Route::new(entity.entity.tag));
+              send(DisplayEntity {
+                entity: entity.entity,
+              });
+            })
         }))),
       }
     } else {
