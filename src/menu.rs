@@ -156,9 +156,10 @@ impl SubCategory {
     }
   }
 }
+
 impl HtmlRender for &SubCategory {
   fn render(&self) -> Node {
-    text::RESIZE_OBSERVER.with(|obs| obs.disconnect()); // Remove all the observers from the previous menu
+    text::RESIZE_OBSERVER.with(|obs| obs.disconnect());
     let children: Rc<_> = Cell::new(None).into();
     let children_clone = children.clone();
     let items:Vec<_> = self.items.iter().map(|item| Item {entity: item.entity, state: Default::default(), text: item.text}).collect();

@@ -9,12 +9,12 @@ use crate::entity::Entity;
 use crate::html::{
   div, h2, img, path, svg, table, td, tr, HtmlRender, HtmlState, MouseClick, Node,
 };
-use crate::icon::Image;
+use crate::icon::{Image, TEMP_DOWN, TEMP_UP};
 use crate::lang::TITLE_PHASE_PHASE;
 use crate::msg::send;
 use crate::route::Route;
 use crate::text::{GameText, StaticText, UiText};
-use crate::units::Temperature;
+use crate::units::{Percent, Temperature};
 use crate::{db, text};
 
 pub struct DisplayEntity {
@@ -77,7 +77,7 @@ enum Position {
 
 enum EntitiesPercent {
   One(&'static Entity),
-  More(&'static [EntityPercent]),
+  Two((&'static EntityPercent, &'static EntityPercent)),
 }
 
 struct PhaseConversion {
@@ -135,7 +135,7 @@ fn display_phases(entity: &'static Entity) -> Node {
     let one_or_more = if recipe.output.len() == 1 {
       EntitiesPercent::One(recipe.output.first().unwrap().entity)
     } else {
-      EntitiesPercent::More(recipe.output)
+      EntitiesPercent::Two((&recipe.output[0], &recipe.output[1]))
     };
     match position {
       Position::Left => {
@@ -164,11 +164,11 @@ fn display_phases(entity: &'static Entity) -> Node {
       middle: if recipe.output.len() == 1 {
         EntitiesPercent::One(recipe.output.first().unwrap().entity)
       } else {
-        EntitiesPercent::More(recipe.output)
+        EntitiesPercent::Two((&recipe.output[0], &recipe.output[1]))
       },
       right: None,
     };
-    let (position, direction) = match recipe.type_of {
+    let (position, direction) = (Position::Left, Direction::Right) /*match recipe.type_of {
       db::recipe::PhaseType::Cooking => (Position::Left, Direction::Right),
       db::recipe::PhaseType::Melting => (Position::Left, Direction::Right),
       db::recipe::PhaseType::Solidification => (Position::Right, Direction::Left),
@@ -177,7 +177,7 @@ fn display_phases(entity: &'static Entity) -> Node {
       db::recipe::PhaseType::Sublimation => (Position::Left, Direction::Right),
       db::recipe::PhaseType::Condensation => (Position::Right, Direction::Left),
       db::recipe::PhaseType::Transmutation => (Position::Left, Direction::Right),
-    };
+    }*/;
     match position {
       Position::Left => {
         to_push.left = Some(PhaseConversion {
@@ -213,17 +213,32 @@ fn draw_arrow(d: &str) -> Node {
   path_line.set_attribute("stroke", "white").unwrap();
   path_line.set_attribute("d", d).unwrap();
   let svg = svg();
-  svg.set_attribute("width", "92").unwrap();
+  svg.set_attribute("width", "112").unwrap();
   svg.set_attribute("height", "10").unwrap();
   svg.child(path_line).into()
 }
 
 fn draw_arrow_right() -> Node {
-  draw_arrow("M 1,5 91,5 M86,0 91,5 86,10")
+  draw_arrow("M 1,5 111,5 M106,0 111,5 106,10")
 }
 
 fn draw_arrow_left() -> Node {
-  draw_arrow("M 91,5 1,5 M6,0 1,5 6,10")
+  draw_arrow("M 111,5 1,5 M6,0 1,5 6,10")
+}
+
+fn phase_percent(entity: &'static Entity, percent: Percent) -> Node {
+  div()
+    .child(img().set_src(&entity.img().path()))
+    .child(GameText::new(entity.name))
+    .child(&StaticText::new(" ("))
+    .child(percent)
+    .child(&StaticText::new(")"))
+    .class("phaseRecipeInput")
+    .on_event(move |_: MouseClick, _| {
+      send(Route::new(entity.tag));
+      send(DisplayEntity { entity });
+    })
+    .into()
 }
 
 impl HtmlRender for PhaseDisplay {
@@ -241,36 +256,47 @@ impl HtmlRender for PhaseDisplay {
               send(DisplayEntity { entity: one });
             }),
         ),
-        EntitiesPercent::More(more) => td().children(more.iter().map(|entity| {
-          div()
-            .child(img().set_src(&entity.entity.img().path()))
-            .child(GameText::new(entity.entity.name))
-            .child(&StaticText::new(" ("))
-            .child(entity.percent)
-            .child(&StaticText::new(")"))
-            .class("phaseRecipeInput")
-            .on_event(move |_: MouseClick, _| {
-              send(Route::new(entity.entity.tag));
-              send(DisplayEntity {
-                entity: entity.entity,
-              });
-            })
-        })),
+        EntitiesPercent::Two((first, second)) => td()
+          .class("flex")
+          .child(phase_percent(&first.entity, first.percent))
+          .child(div().class("plus").child(&StaticText::new("+")))
+          .child(phase_percent(&second.entity, second.percent)),
       });
       ret.child(
         td().child(match left.direction {
           Direction::Left => div()
-            .child(left.temperature)
             .child(draw_arrow_left())
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_DOWN.path()))
+                .child(div().child(left.temperature - 3.0)),
+            )
             .class("phaseRecipeArrowInput"),
           Direction::Right => div()
-            .child(left.temperature)
             .child(draw_arrow_right())
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_UP.path()))
+                .child(div().child(left.temperature + 3.0)),
+            )
             .class("phaseRecipeArrowInput"),
           Direction::TwoWays => div()
-            .child(left.temperature)
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_UP.path()))
+                .child(div().child(left.temperature + 3.0)),
+            )
             .child(draw_arrow_right())
             .child(draw_arrow_left())
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_DOWN.path()))
+                .child(div().child(left.temperature - 3.0)),
+            )
             .class("phaseRecipeArrowInput"),
         }),
       )
@@ -290,37 +316,50 @@ impl HtmlRender for PhaseDisplay {
             }),
         ),
       ),
-      EntitiesPercent::More(more) => ret.child(td().children(more.iter().map(|entity| {
-        div()
-          .child(img().set_src(&entity.entity.img().path()))
-          .child(GameText::new(entity.entity.name))
-          .child(&StaticText::new(" ("))
-          .child(entity.percent)
-          .child(&StaticText::new(")"))
-          .class("phaseRecipeElement")
-          .on_event(move |_: MouseClick, _| {
-            send(Route::new(entity.entity.tag));
-            send(DisplayEntity {
-              entity: entity.entity,
-            });
-          })
-      }))),
+      EntitiesPercent::Two((first, second)) => ret.child(
+        td()
+          .class("flex")
+          .child(phase_percent(&first.entity, first.percent))
+          .child(div().class("plus").child(&StaticText::new("+")))
+          .child(phase_percent(&second.entity, second.percent)),
+      ),
     };
     if let Some(right) = &self.right {
       let ret = ret.child(
         td().child(match right.direction {
           Direction::Left => div()
-            .child(right.temperature)
             .child(draw_arrow_left())
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_DOWN.path()))
+                .child(div().child(right.temperature - 3.0)),
+            )
             .class("phaseRecipeArrowOutput"),
           Direction::Right => div()
-            .child(right.temperature)
             .child(draw_arrow_right())
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_UP.path()))
+                .child(div().child(right.temperature + 3.0)),
+            )
             .class("phaseRecipeArrowOutput"),
           Direction::TwoWays => div()
-            .child(right.temperature)
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_UP.path()))
+                .child(div().child(right.temperature + 3.0)),
+            )
             .child(draw_arrow_right())
             .child(draw_arrow_left())
+            .child(
+              div()
+                .class("flex")
+                .child(img().set_src(&TEMP_DOWN.path()))
+                .child(div().child(right.temperature - 3.0)),
+            )
             .class("phaseRecipeArrowOutput"),
         }),
       );
@@ -337,21 +376,13 @@ impl HtmlRender for PhaseDisplay {
               }),
           ),
         ),
-        EntitiesPercent::More(more) => ret.child(td().children(more.iter().map(|entity| {
+        EntitiesPercent::Two((first, second)) => ret.child(
           td()
-            .child(img().set_src(&entity.entity.img().path()))
-            .child(GameText::new(entity.entity.name))
-            .child(&StaticText::new(" ("))
-            .child(entity.percent)
-            .child(&StaticText::new(")"))
-            .class("phaseRecipeOutput")
-            .on_event(move |_: MouseClick, _| {
-              send(Route::new(entity.entity.tag));
-              send(DisplayEntity {
-                entity: entity.entity,
-              });
-            })
-        }))),
+            .class("flex")
+            .child(phase_percent(&first.entity, first.percent))
+            .child(div().class("plus").child(&StaticText::new("+")))
+            .child(phase_percent(&second.entity, second.percent)),
+        ),
       }
     } else {
       ret

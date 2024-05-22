@@ -1,3 +1,5 @@
+use std::ops::{Add, Sub};
+
 use crate::{html::{self, HtmlRender, Node}, options::{options, Degree, DegreeChange}};
 
 #[derive(Clone, Copy)]
@@ -25,6 +27,22 @@ pub struct Temperature(pub f32);
 impl Temperature {
   pub fn to_string(self, degree: Degree) -> String{
     round_float(degree.convert(self.0)) + " " + degree.to_string()
+  }
+}
+
+impl Sub<f32> for Temperature {
+    type Output = Temperature;
+
+    fn sub(self, rhs: f32) -> Self::Output {
+      Temperature(self.0 - rhs)
+    }
+}
+
+impl Add<f32> for Temperature {
+  type Output = Temperature;
+
+  fn add(self, rhs: f32) -> Self::Output {
+    Temperature(self.0 + rhs)
   }
 }
 

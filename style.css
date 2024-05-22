@@ -322,6 +322,17 @@ body {
   justify-content: left;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.plus {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 30px;
+}
+
 .phaseRecipeInput img {
   height: 36px;
   width: 40px;
@@ -333,7 +344,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: -9px;
+  top: 9px;
   margin-left: 10px;
   margin-right: 5px;
 }
@@ -344,6 +355,10 @@ body {
   align-items: center;
   justify-content: left;
   flex-shrink: 1;
+}
+
+tr {
+  height: 50px;
 }
 
 .phaseRecipeElement img {
@@ -357,9 +372,21 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: -9px;
+  top: 9px;
   margin-left: 10px;
   margin-right: 5px;
+}
+
+.phaseRecipeArrowOutput img {
+  height: 20px;
+  margin-right: 5px;
+  object-fit: contain;
+}
+
+.phaseRecipeArrowInput img {
+  height: 20px;
+  margin-right: 5px;
+  object-fit: contain;
 }
 
 .phaseRecipeOutput {
